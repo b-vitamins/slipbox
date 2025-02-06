@@ -1,0 +1,232 @@
+:PROPERTIES:
+:ID:       5a808f28-7031-42c9-9a01-8b82f058b2aa
+:END:
+#+TITLE: Mozart 225 The Complete Works Tracklist
+#+FILETAGS: :fleeting:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+* Chamber
+
+| CD   | Contents                                                                                            | Duration |
+|------+-----------------------------------------------------------------------------------------------------+----------|
+| CD1  | Nannerl Notenbuch Excerpts · London Sketchbook                                                      |  1:16:09 |
+| CD2  | Variations K24, K25, K179, K180 · 8 Minuets K315a · Piano Sonata K279                               |  1:12:24 |
+| CD3  | Piano Sonatas K280-K284                                                                             |  1:18:13 |
+| CD4  | Piano Sonatas K309-K311 · Variations K354                                                           |  1:13:09 |
+| CD5  | Variations K264, K265, K352, K353, K398 · Piano Sonata In F K332                                    |  1:23:45 |
+| CD6  | Piano Sonata In C K330 · Piano Sonata In A K331 · Piano Sonata In B♭ K333                           |  1:04:18 |
+| CD7  | Fantasia In C K475 · Piano Sonata In C K457 · Variations K455, K460, K500 · Rondos K485, K494, K511 |  1:25:12 |
+| CD8  | Piano Sonatas K533/494, K545, K570 · Adagio In B K450 · Variations K573                             |  1:24:22 |
+| CD9  | Fantasia K397 · Piano Sonata In D K576 · Adagio In C K356 · Variations K613 · Organ Works           |  1:15:16 |
+| CD10 | Works "for Study": Modulating Preludes · Prelude & Fugue K394 · Suite K399                          |  1:14:10 |
+| CD11 | Violin Sonatas K6-K12                                                                               |  1:08:39 |
+| CD12 | Violin Sonatas K13-K15, K26-K31                                                                     |  1:06:39 |
+| CD13 | Violin Sonatas K46d, K46e · Piano Duets K19d, K381, K358 · Duo For Bassoon And Cello K292           |  1:03:44 |
+| CD14 | Violin Sonatas K296, K301-K305                                                                      |  1:23:00 |
+| CD15 | Violin Sonatas K304, K306, K378, K379                                                               |  1:17:11 |
+| CD16 | Variations K359, K360 · Violin Sonatas K376, K377, K380                                             |  1:17:35 |
+| CD17 | Sonata For 2 Pianos K448 · Violin & Viola Duos K423, K424 · Violin Sonata K454                      |  1:23:42 |
+| CD18 | Violin Sonata K481 · Horn Duos K487 · Sonata For Piano Duet K4997a · Variations K501                |  1:16:48 |
+| CD19 | Sonatas For Piano Duet K357, K521 · Violin Sonatas K526, K547                                       |  1:22:13 |
+| CD20 | Piano Trios K254, K496 · String Trio K266 · Clarinet Trio K498 "Kegelstatt"                         |  1:20:33 |
+| CD21 | Piano Trios K502, K542, K548                                                                        |  1:02:37 |
+| CD22 | Divertimentio K563 · Piano Trio K564                                                                |    53:56 |
+| CD23 | Divertimenti K136-K138 · String Quartets K80, K155, K156                                            |  1:17:34 |
+| CD24 | String Quartets K157-K160, K168, K169                                                               |  1:19:36 |
+| CD25 | String Quartets K170-K173 · Flute Quartet K285                                                      |  1:23:52 |
+| CD26 | Oboe Quartet K370 · String Quartets K387, K421                                                      |  1:18:33 |
+| CD27 | String Quartets K428, K458 "Hunt" & K499 "Hoffmeister"                                              |  1:19:19 |
+| CD28 | String Quartets K464, K465 "Dissonance"                                                             |  1:06:02 |
+| CD29 | Piano Quartets K478, K493 · Flute Quartet K298                                                      |  1:11:54 |
+| CD30 | String Quartets "Prussian" K575, K589, K590                                                         |  1:18:34 |
+| CD31 | String Quintet K174 · Horn Quintet K407 · Piano Quintet                                             |  1:14:24 |
+| CD32 | String Quintet In C K515 · String Quintet In g K516                                                 |  1:13:59 |
+| CD33 | Eine Kleine Nachtmusik K525 · Adagio And Fugue K546 · Clarinet Quintet K581                         |    57:16 |
+| CD34 | String Quintets K593, K614 · Adagio And Rondo K617                                                  |  1:09:00 |
+| CD35 | Divertimenti K205, K186, K166, K188, K251                                                           |  1:20:51 |
+| CD36 | Divertimenti K213, K240, K252, K253, K270                                                           |  1:00:37 |
+| CD37 | Divertimenti L247, K287                                                                             |  1:17:47 |
+| CD38 | March In D K445 · Divertimento In D K334 · Serenade In E♭ K375                                      |  1:19:18 |
+| CD39 | Serenade In C Minor "Nacht Musik" (K388) · Serenade In B♭ "Gran Partita" (K361)                     |  1:12:26 |
+* Chamber -- Period Instruments
+
+| CD  | Contents                                                                             | Duration  |
+|-----+--------------------------------------------------------------------------------------+-----------|
+| CD40| Mozart's Instruments: Works For Fortepiano And Violin                                | 1:22:58   |
+| CD41| Mozart's Instruments: Piano Quartets                                                 | 1:21:24   |
+| CD42| String Quartet K465 "Dissonance" · String Quintet In C K515                          | 1:07:14   |
+| CD43| Quintets For Clarinet, Horn, Piano And Winds                                         | 1:20:56   |
+| CD44| Serenade K375 · Serenade K361                                                        | 1:16:48   |
+* Chamber -- Classic Performances
+
+| CD  | Contents                                                                                                         | Duration  |
+|-----+------------------------------------------------------------------------------------------------------------------+-----------|
+| CD45| Gulda K310 · Haskil K265 · Kempff K331 · Horowitz K485 · Sokolov K332                                            | 1:25:31   |
+| CD46| Gulda K457 · Horowitz K511 · Brendel K540 · Ashkenazy K576 · Britten/Richter K521                                | 1:22:19   |
+| CD47| Grumiaux/Haskil K526 · Kovacevich/Brymer/Ireland K498 · Trio Italiana D'Archi K563                               | 1:21:06   |
+| CD48| London Wind Soloists K388 · Amadeus Quartet K421 · Grumiaux Trio K516                                            | 1:21:12   |
+| CD49| Horn Quintet In E♭ K407 · Piano Quartet In G Minor K478 · Divertimento In D K334                                 | 1:15:42   |
+* Orchestral
+
+| CD   | Contents                                                                                                                         | Duration  |
+|------+----------------------------------------------------------------------------------------------------------------------------------+-----------|
+| CD50 | Symphonies K16, K19, K19a, K22, K43, K45, K45a                                                                                   | 1:21:33   |
+| CD51 | Symphonies K48, K73, K74, K110, K112, K120                                                                                       | 1:25:39   |
+| CD52 | Symphonies Nos. 14–18 (K114, K124, K128-K130)                                                                                    | 1:24:04   |
+| CD53 | Symphonies Nos. 19–21 (K132-K134), K135, K161/K163, No. 26 K184                                                                   | 1:21:59   |
+| CD54 | Symphonies Nos. 22–25 & 27 (K162, K181-K183, K199)                                                                               | 1:11:59   |
+| CD55 | Symphonies Nos. 28–30 (K200-K202)                                                                                                | 1:19:01   |
+| CD56 | Symphonies K121, K204, K102, K250 "Haffner Serenade"                                                                             | 1:19:11   |
+| CD57 | Symphonies Nos. 31–34 (K297 "Paris", K318, K319, K338, K409)                                                                     | 1:13:26   |
+| CD58 | Symphonies K320 "Posthorn Serenade", No. 35 K385 "Haffner", No. 36 K425 "Linz"                                                    | 1:18:11   |
+| CD59 | Symphonies No. 38 K504 "Prague", No. 39 K543                                                                                     | 1:03:28   |
+| CD60 | Symphonies No. 40 in G Minor K550, No. 41 in C K551 "Jupiter"                                                                    | 1:08:10   |
+| CD61 | Symphonies: Alternative Versions No. 19 (K132), No. 31 (K297 "Paris"), No. 40 (K550)                                             | 1:01:00   |
+| CD62 | Serenades & Divertimenti: Gallimathias Musicum K32 · Cassations K63, K100                                                        | 1:11:54   |
+| CD63 | Serenades & Divertimenti: Cassation K99 · Divertimenti K113, K131                                                                | 1:12:47   |
+| CD64 | Serenades & Divertimenti: Serenades K185, K203                                                                                   | 1:17:52   |
+| CD65 | Serenades & Divertimenti: Serenade K204 · Divertimention K251 "Nannerl-Septett"                                                  | 1:08:46   |
+| CD66 | Serenades & Divertimenti: Serenata Notturna K239 · Notturno For 4 Orchestras K286 · Serenade K320 "Posthorn"                      | 1:22:11   |
+| CD67 | Serenades & Divertimenti: Serenade K250 "Haffner"                                                                                | 54:37     |
+| CD68 | Serenades & Divertimenti: Marches K408 · A Musical Joke K522 · Eine Kleine Nachtmusik K525 · Adagio And Fugue K546               | 58:39     |
+| CD69 | Dances: Minuets & Contredanses K16h, K65a, K103-K105, K122, K123                                                                 | 1:24:15   |
+| CD70 | Dances: Minuets & Contredanses K16g II, K101, K164, K176, K267, K363, K461-K463, K534                                            | 1:21:38   |
+| CD71 | Dances: Minuets, German Dances & Contredanses K509, K534-K536, K567, K568                                                        | 1:04:59   |
+| CD72 | Dances: Minuets, German Dances & Contredanses K571, K585-K587                                                                    | 1:04:20   |
+| CD73 | Dances: Minuets, German Dances & Contredanses K599-K607, K609, K610                                                              | 1:09:24   |
+| CD74 | Concertos: Violin Concerto K207 · Piano Concerto K175 · Concertone For 2 Violins K190 · Bassoon Concerto K191                     | 1:23:46   |
+| CD75 | Concertos: Violin Concertos Nos. 2–5 (K211, K216, K218, K219)                                                                    | 1:26:30   |
+| CD76 | Concertos: Piano Concertos Nos. 6–8 (K238, K242, K236)                                                                           | 1:16:40   |
+| CD77 | Concertos: Piano Concerto No. 9 K271 "Jeunehomme" · Oboe Concerto K314 · Flute Concerto K313                                     | 1:13:14   |
+| CD78 | Concertos: Flute & Harp Concerto K299 · Sinfonia Concertante K364                                                                | 53:36     |
+| CD79 | Concertos: Concerto For 2 Pianos K365 · Rondos K371, K373, K382                                                                  | 1:13:01   |
+| CD80 | Concertos: Piano Concertos Nos. 11–13 (K413-K415) · Rondo K386                                                                    | 1:22:20   |
+| CD81 | Concertos: Horn Concerto K417 · Piano Concertos Nos. 14 & 15 (K449 & K450)                                                        | 1:04:42   |
+| CD82 | Concertos: Piano Concertos Nos. 16–18 (K451, K453, K456)                                                                         | 1:24:38   |
+| CD83 | Concertos: Piano Concertos Nos. 19–21 (K459, K466, K467)                                                                         | 1:25:51   |
+| CD84 | Concertos: Piano Concertos Nos. 22 & 23 (K482 & K488)                                                                            | 58:32     |
+| CD85 | Concertos: Piano Concertos Nos. 24 & 25 (K491 & K503)                                                                            | 1:01:42   |
+| CD86 | Concertos: Horn Concertos K447 & K495 · Piano Concerto No. 26 K537 "Coronation"                                                  | 1:01:24   |
+| CD87 | Concertos: Piano Concerto No. 27 K595 · Horn Concertos K412/514 · Clarinet Concerto K622                                         | 1:19:13   |
+| CD88 | Supplementary Performances: Abbado And Orchestra Mozart -- Bassoon Concerto K191 · Symphonies Nos. 29 & 35 (K201 & K385 "Haffner")| 1:08:18   |
+| CD89 | Supplementary Performances: Mutter K126 · Hahn/Järvi K219 · Jussen/Jussen/Marriner K242 · Benedetti K261                          | 1:26:32   |
+| CD90 | Supplemental Performances: Uchida/Tate K271 · Barenboim/Solti K265 · Brown/Suk K364                                              | 1:26:00   |
+| CD91 | Supplementary Performances: Abbado And Orchestra Mozart -- Symphony No. 38 "Prague" K504, Symphony No. 39 K543                    | 1:08:04   |
+| CD92 | Supplementary Performances: Végh & Camerata Academica Salzburg -- Symphony No. 40 K550, Symphony No. 41 "Jupiter" K551            | 1:03:37   |
+| CD93 | Supplementary Performances: Schiff/Végh Piano Concerto No. 16 K451 & Piano Concerto No. 19 K459 · Brendel/Mackerras K466          | 1:21:23   |
+| CD94 | Supplementary Performances: Pires/Abbado Piano Concertos No. 17 K453 & No. 21 K467 · Allegrini/Abbado Horn Concerto K495          | 1:12:14   |
+| CD95 | Supplementary Performances: Brendel/Mackerras Piano Concertos No. 22 K482 & No. 25 K503                                          | 1:09:10   |
+| CD96 | Supplementary Performances: Uchida/The Cleveland Orchestra -- Piano Concerto No. 23 K488 & Piano Concerto No. 24 K491            | 59:47     |
+| CD97 | Supplementary Performances: Ashkenazy -- Piano Concerto No. 26 K537 "Coronation" · Gilels/Böhm Piano Concerto No. 27 K595         | 1:05:18   |
+| CD98 | Supplementary Performances: Pires/Abbado Piano Concerto No. 27 K595 · Allegrini/Abbado Horn Concerto K412/514 · Carbonare/Abbado K622 | 1:03:36   |
+| CD99 | Classic Performances: Maag Serenata Notturna K239 · Jochum Symphony No. 33 K319 · Szell Symphony No. 34 K338 · Bernstein Piano Concerto No. 15 K450 | 1:23:50   |
+| CD100| Classic Performances: Oistrakh/Haitink Violin Concerto No. 1 K207 · Gulda/Abbado: Piano Concerto No. 20 K466 · Anda: Piano Concerto No. 21 K467   | 1:23:01   |
+| CD101| Classic Performances: Böhm/Berliner Philharmoniker Symphony No. 39 K543 · Britten/London Symphony Orchestra Symphony No. 40 K550 · Curzon/Britten Piano Concerto No. 27 K595 | 1:24:07   |
+* Theatre
+
+| CD    | Contents                                                                                                                 | Duration  |
+|-------+--------------------------------------------------------------------------------------------------------------------------+-----------|
+| CD102 | Latin Intermedio: Apollo Et Hyacinthus K38                                                                               | 1:22:27   |
+| CD103 | Opera Buffa: La Finta Semplice K51 -- Act I, Act II / Scenes I-II                                                        | 1:12:15   |
+| CD104 | Opera Buffa: La Finta Semplice K51 -- Act II / Scene III, Act III                                                        | 1:14:52   |
+| CD105 | Singspiele: Bastien Und Bastienne K50 · Der Schauspieldirektor K486                                                      | 1:09:34   |
+| CD106 | Opera Seria: Mitridate, Re di Ponto K87 -- Scene I                                                                       | 1:10:23   |
+| CD107 | Opera Seria: Mitridate, Re di Ponto K87 -- Scene II                                                                      | 1:01:52   |
+| CD108 | Opera Seria: Mitridate, Re di Ponto K87 -- Scene III                                                                     | 46:11     |
+| CD109 | Festa Teatrale: Ascanio In Alba K111 Part I                                                                              | 1:26:08   |
+| CD110 | Festa Teatrale: Ascanio In Alba K111 Part II                                                                             | 1:17:07   |
+| CD111 | Azione Teatrale: Il Sogno di Scipione K126 Nos. 1-7                                                                      | 1:04:54   |
+| CD112 | Azione Teatrale: Il Sogno di Scipione K126 Nos. 8-12                                                                     | 46:43     |
+| CD113 | Opera Seria: Lucio Silla K135 Act I / Scenes I-VIII                                                                      | 1:08:46   |
+| CD114 | Opera Seria: Lucio Silla K135 Act I / Scene IX, Act II / Scenes I-X                                                      | 1:14:24   |
+| CD115 | Opera Seria: Lucio Silla K135 Act II / Scenes X-XIV, Act III                                                             | 59:07     |
+| CD116 | Dramma Giocoso: La Finta Giardiniera K196 Act I / Scenes I-IX                                                            | 1:05:18   |
+| CD117 | Dramma Giocoso: La Finta Giardiniera K196 Act I / Scenes X-XV, Act II / Scenes I-IX                                      | 1:07:43   |
+| CD118 | Dramma Giocoso: La Finta Giardiniera K196 Act II / Scenes X-XIV, Act III                                                 | 1:11:45   |
+| CD119 | Serenata: Il Re Pastore K208 Act I                                                                                       | 54:55     |
+| CD120 | Serenata: Il Re Pastore K208 Act II                                                                                      | 51:45     |
+| CD121 | Singspeil: Zaide K344                                                                                                    | 1:14:22   |
+| CD122 | Opera Seria: Idomeneo K366 Act I, Act II / Scenes I-III                                                                  | 1:17:54   |
+| CD123 | Opera Seria: Idomeneo K366 Act II / Scenes IV-VIII, Act III / Scenes I-VII                                               | 1:10:36   |
+| CD124 | Opera Seria: Idomeneo K366 Act III / Scenes VIII-XI · Ballet Music · Appendix                                            | 1:01:40   |
+| CD125 | Singspiel: Die Entführung Aus Dem Serail K384 Act I, Act II (Beginning)                                                  | 1:15:19   |
+| CD126 | Singspiel: Die Entführung Aus Dem Serail K384 Act II (Conclusion), Act III                                              | 1:08:38   |
+| CD127 | Dramma Giocoso: L'Oca Del Cairo K422 · Opera Buffa: Lo Sposo Deluso K430                                                 | 1:05:33   |
+| CD128 | Opera Buffa: Le Nozze Di Figaro K492 Act I, Act II / Scenes I-IV, Appendix I                                            | 1:04:49   |
+| CD129 | Opera Buffa: Le Nozze Di Figaro K492 Act II / Scenes V-XII, Act III / Scenes I-VIII, Appendix II                        | 1:03:03   |
+| CD130 | Opera Buffa: Le Nozze Di Figaro K492 Act III / Scenes IX-XIII, Act IV, Appendix III                                     | 58:17     |
+| CD131 | Dramma Giocoso: Don Giovanni K527 Act I / Scenes I-XIII                                                                | 59:18     |
+| CD132 | Dramma Giocoso: Don Giovanni K527 Act I / Scenes XIV-XX, Act II / Scenes I-VI                                          | 54:34     |
+| CD133 | Dramma Giocoso: Don Giovanni K527 Act II / Scenes VII-XV                                                              | 58:49     |
+| CD134 | Dramma Giocoso: Così Fan Tutte K588 Act I / Scenes X-XVI, Act II / Scenes I-V                                          | 43:49     |
+| CD135 | Dramma Giocoso: Così Fan Tutte K588 Act I / Scenes X-XVI, Act II / Scenes I-V                                          | 1:08:24   |
+| CD136 | Dramma Giocoso: Così Fan Tutte K588 Act II / Scenes VI-XVIII                                                           | 1:05:51   |
+| CD137 | Singspiel: Die Zauberflöte K620 Act I, Act II / Scenes I-IV                                                             | 1:17:17   |
+| CD138 | Singspiel: Die Zauberflöte K620 Act II / Scenes V-X                                                                    | 1:11:16   |
+| CD139 | Opera Seria: La Clemenza di Tito K621 Act I                                                                             | 1:02:02   |
+| CD140 | Opera Seria: La Clemenza di Tito K621 Act II                                                                            | 1:05:05   |
+| CD141 | Music For Ballet And Stage: Les Petits Riens K299b · Thamos, König In Ägypten · Idomeneo K367                           | 1:26:08   |
+| CD142 | Arias & Scenes: Additional Arias For La Finta Semplice · Mitridate · Die Entführung Aus Dem Serail · Don Giovanni · Così Fan Tutte · Die Zauberflöte | 1:23:03   |
+| CD143 | Arias & Scenes: Insertion Arias (Operas By Sarti, Galuppi, Anfossi, Bianchi, Cimarosa, Paisello, Soler)                 | 1:23:22   |
+| CD144 | Arias & Scenes: Concert Arias (1765-1772)                                                                               | 1:26:24   |
+| CD145 | Arias & Scenes: Concert Arias (1776-1780)                                                                               | 1:23:58   |
+| CD146 | Arias & Scenes: Concert Arias (1781-1791)                                                                               | 1:25:47   |
+| CD147 | Supplementary Performances (Period Instruments) – Bartoli, Bonney, D'Arcangelo, Erdmann, Finley, Gilfry, Jones, Kirkby, Kožená, Von Otter, Pettibon...  | 1:22:17   |
+| CD148 | Supplementary Performances – Famous Arias: Allen, Baker, Bartoli, Caballé, Domingo, Fleming, Garanča, Jo, Kaufmann, Moll, Netrebko...                  | 1:23:49   |
+| CD149 | Classic Performances: Burrows, Fischer-Dieskau, Freni, Gueden, Haefliger, Janowitz, Krause, Mathis, Popp, Prey, Price L, Seefried, Siepi, Simoneau...   | 1:23:08   |
+| CD150 | Classic Performances: Le Nozze di Figaro K492 Act I, Act II / Scenes I-IV – Kleiber                                     | 1:08:44   |
+| CD151 | Classic Performances: Le Nozze di Figaro K492 Act II Scenes V-XI / Act III – Kleiber                                    | 1:02:36   |
+| CD152 | Classic Performances: Le Nozze Di Figaro K492 Act IV – Kleiber                                                          | 40:44     |
+* Sacred
+
+| CD    | Contents                                                                                         | Duration  |
+|-------+--------------------------------------------------------------------------------------------------+-----------|
+| CD153 | Oratorio: Die Schuldigkeit Des Ersten Gebots K35 (beginning)                                     | 54:15     |
+| CD154 | Oratorio: Die Schuldigkeit Des Ersten Gebots K35 (conclusion) · Kommet her, ihr frechen Sünder · Grabmusik K42 | 1:03:15   |
+| CD155 | Oratorio: La Betulia Liberata K118 Part I                                                        | 1:06:53   |
+| CD156 | Oratorio: La Betulia Liberata K118 Part II                                                       | 1:05:03   |
+| CD157 | Cantata And Sacred Song: Davidde Penitente K469 · 2 German Church Hymns K343                      | 48:35     |
+| CD158 | Church Music: Missa Solemnis K139 "Waisenhausmesse" · Missa Brevis K49 · Etc.                    | 1:20:54   |
+| CD159 | Church Music: Missa Brevis K65 · Missa K66 "Dominicus" · Te Deum K141                            | 1:20:46   |
+| CD160 | Church Music: Regina Coeli K108 & K127 · Exsultate, Jubilate K165                                | 1:01:28   |
+| CD161 | Church Music: Litanies K109 & K125 · Mass K167                                                   | 1:19:48   |
+| CD162 | Church Music: Litany K195 · Missa Breves K192 & K194 · Dixit Dominus, Magnificat K193            | 1:22:22   |
+| CD163 | Church Music: Masses K220 "Spatzenmesse", K262, K259 "Organ Solo"                                | 1:14:14   |
+| CD164 | Church Music: Mass K258 "Spaur" · Litany K243 · Vesperae de Dominica K321                        | 1:24:21   |
+| CD165 | Church Music: Missa Brevis K275 · Mass K257 "Credo" · Missa Solemnis K337                        | 1:19:38   |
+| CD166 | Church Music: Mass K317 "Krönungsmesse" (Coronation Mass) · Vesperae Solennes de Confessore K339 | 1:16:30   |
+| CD167 | Church Music: Missa In C Minor K427 "Grosse Messe"                                               | 1:16:23   |
+| CD168 | Church Music: Requiem K626 (Incomplete Fragment And Süssmayr Completion) · Kyrie K341 · Ave Verum Corpus K618 | 1:25:39   |
+| CD169 | Church Music: Epistle Sonatas                                                                    | 1:11:22   |
+| CD170 | Alternative Performances: Vesperae Solennes de Confessore K339 · Requiem K626                    | 1:22:05   |
+* Private
+
+| CD    | Contents                                                                                                                 | Duration  |
+|-------+--------------------------------------------------------------------------------------------------------------------------+-----------|
+| CD171 | Lieder Für Singstimme Und Klavier (Songs For Voice & Piano)                                                             | 1:25:24   |
+| CD172 | Masonic Music: Adagio In Bb K411 · Die Maurerfreude K471 · Maurerische Trauermusik K477 · Kleine Deutsche Kantate · Laut Verkünde Unsre Freude K623 | 1:05:56   |
+| CD173 | Canons & Partsongs: Canons For Mixed Voices · Instrumental Canons · Notturni                                            | 1:08:40   |
+* Supplement
+
+| CD    | Contents                                                                                                                       | Duration |
+|-------+--------------------------------------------------------------------------------------------------------------------------------+----------|
+| CD174 | Fragments & Sketches (1764-1786)                                                                                               |  1:15:08 |
+| CD175 | Fragments & Sketches (1787-1791) · Discoveries & Curios                                                                        |  1:17:38 |
+| CD176 | Completions: Abbé Stadler -- K322, K323, K372, K396, K400-K403, K442, K443, Etc.                                               |  1:24:58 |
+| CD177 | Completions: Robert Levin · Ernst Reichert · Simon Sechter · Erik Smith · Philip Wilby: Early Works (1764-1783)                |  1:19:06 |
+| CD178 | Completions: Franz Bayer · Robert Levin · Erik Smith: Late Works (1783-1791)                                                   |  1:20:38 |
+| CD179 | Arrangements: Raupach, Honauer, Schobert, Eckard, C.P.E. Bach -- Piano Concertos Nos. 1-4 (K37, K39-K41) · Abel: Symphony K18  |  1:13:29 |
+| CD180 | Arrangements: J.C. Bach -- Keyboard Concertos K107 Nos. 1-3 · M. Haydn · Stadlmyr                                              |    55:17 |
+| CD181 | Arrangements: J.S. Bach -- Fugues K405 · Viotti: Violin Concerto K470a · Gluck · M. Haydn                                      |    59:44 |
+| CD182 | Arrangements: Handel -- Acis Und Galatea K566 Act I                                                                            |    40:39 |
+| CD183 | Arrangements: Handel -- Acis Und Galatea K566 Act II                                                                           |    54:54 |
+| CD184 | Arrangements: Handel -- Der Messias K572 (The Messiah) Part I / Part II (beginning)                                            |  1:16:50 |
+| CD185 | Arrangements: Handel -- Der Messias K572 (The Messiah) Part II (conclusion) / Part III                                         |  1:09:01 |
+| CD186 | Arrangements: Handel -- Das Alexander-Fest K591 Part I                                                                         |    56:21 |
+| CD187 | Arrangements: Handel -- Das Alexander-Fest K591 Part II · Ode Auf St. Caecilia K592 (Ode For St Cecilia's Day)                 |  1:17:36 |
+| CD188 | Self-Arrangements: Die Gärtnerin Aus Liebe K196 Act I / Scenes I-IX                                                            |    56:14 |
+| CD189 | Self-Arrangements: Die Gärtnerin Aus Liebe K196 Act I / Scenes X-XV, Act II / Scenes I-XIII                                    |  1:05:35 |
+| CD190 | Self-Arrangements: Die Gärtnerin Aus Liebe K196 Act II / Scene XIV, Act III                                                    |    59:01 |
+| CD191 | Self-Arrangements: Harmoniemusik: Die Entführung Aus Dem Serail K384, Version For Wind Band                                    |  1:02:06 |
+| CD192 | Self-Arrangements: Piano Concertos K413-K415, For Piano & String Quartet                                                       |  1:17:36 |
+| CD193 | Self-Arrangements: Flute Concerto K314 · String Quintet K406 · 12 Minuets K103 · Sonata K547a · Andante & Variations K54, Etc. |  1:19:28 |
+| CD194 | Doubtful Works: Chamber: Sonata In C K19d · Divertimenti K196e, K196f, K289 · Flute Quintet K285b                              |  1:21:30 |

@@ -1,0 +1,403 @@
+:PROPERTIES:
+:ID:       046eeb8f-7f9c-420c-954b-731ed1fafed1
+:END:
+#+TITLE: Mozart mood bins
+#+FILETAGS: :fleeting:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+* Suggested Mozart Mood Bins
+** 1. Energetic/Exuberant
+- Music that's upbeat, bustling, or joyously propulsive---perfect for motivation, "getting things done," or single-minded focus. Often in major keys with brilliant, sparkling orchestration or keyboard writing.
+
+** 2. Dramatic/Intense
+- Works that incorporate minor keys, sharper emotional contrasts, turbulence, or pathos. Good for emotional engagement, a sense of urgency, or gravitas.
+
+** 3. Bright/Lyrical
+- Light, singing, and melodious---often graceful yet not merely "background." Good for a positive lift, with that inimitable Mozartean clarity.
+
+** 4. Serene/Reflective
+- Calmer, sometimes introspective or pastoral. Works that soothe or invite contemplative listening (whether in slow movements or entire compositions).
+
+** 5. Spiritual/Profound
+- Sacred music (Masses, Requiem, Vespers) or other works radiating solemnity, reverence, or transcendent depth.
+
+** 6. Lighthearted/Playful
+- Music written for social occasions (serenades, divertimenti, many early symphonies and dances), or pieces with a distinctly witty, entertaining spirit.
+
+** 7. Operatic/Theatrical
+- All of Mozart's stage works (opera seria, opera buffa, singspiel, serenatas), plus certain dramatic arrangements. Immersive storytelling in music, from comedic to tragic.
+
+** 8. Eclectic/Various
+- Fragments, sketches, completions, or arrangements whose character can range widely. Often a grab-bag of curiosities that don't fit squarely into one of the above "pure" moods.
+
+Note: Some multi-work CDs inevitably contain pieces spanning different moods; the assignment below reflects either the dominant mood or the most characteristic piece(s) on that disc.
+
+* How to Use These Buckets
+** If you're seeking energizing, motivating Mozart
+  Look first to Energetic/Exuberant (Symphonies 31, 35, 36, "Jeunehomme" Concerto K271, 2-Piano Concerto K365, etc.) or the "major" large-scale works that sparkle and drive forward. Some Dramatic/Intense pieces (like Symphony No. 40, Piano Concerto No. 24) can also supercharge a deep-focus session---but they bring a more serious edge.
+** For a general sense of refined, graceful Mozart
+  Explore Bright/Lyrical or Lighthearted/Playful categories, especially the divertimenti, many mid-period concertos, or the typical "sunny" chamber works.
+** For sacred solace or deeper contemplation
+  The Spiritual/Profound sets (Masses, Vespers, the Requiem) are unmatched in their solemn beauty.
+** For Opera lovers
+The Operatic/Theatrical sets will make you discover the full range of comedic sparkle, emotional confrontation, heartbreak, and joy that only Mozart's stage works can deliver.
+
+* Quick Reference by Bucket
+- *Energetic/Exuberant*
+  CD17 (K448, etc.), CD19 (K526), CD57, CD58, CD59, CD77, CD79, CD88, CD91
+
+- *Dramatic/Intense*
+  CDs featuring minor-key sonatas/quartets (e.g. CD4, CD7, CD15, CD26, CD28, CD29, etc.)
+  Key symphonies #25, #40 (CD54, CD60, etc.) and many discs containing those works
+  Piano concertos K466, K491, Sinfonia Concertante K364, Fantasias K475/K397, etc.
+
+- *Bright/Lyrical*
+  Many early-to-mid piano sonatas (CD2, CD5, CD6...), violin concertos, early piano concertos, and so forth
+  A large swath of chamber music in major keys (e.g. K296, K376, etc.)
+
+- *Serene/Reflective*
+  CDs that highlight the more introspective or intimate side (CD20 "Kegelstatt," CD87 with K622, etc.)
+
+- *Spiritual/Profound*
+  CD153--CD170 (Masses, Requiem), plus the Handel oratorio arrangements (CD184--CD187), Masonic music (CD172), and spurious masses on CD200
+
+- *Lighthearted/Playful*
+  Nearly all Divertimenti/Serenades (CD35--CD39, CD62--CD73), Dances (CD69--CD73), many early symphonies (CD50--CD53, CD56), early violin sonatas
+
+- *Operatic/Theatrical*
+  CD102--CD152 (the complete operas, singspiels, serenatas), plus CD182--CD183 (Acis), CD188--CD191 (operatic arrangements)
+
+- *Eclectic/Various*
+  CD174--CD178 (fragments, completions), CD179--CD181 (arrangements from other composers), etc.
+* Mood Placement by CD
+** Piano & Keyboard Works / Early Collections
+- *CD1* (Nannerl Notenbuch Excerpts · London Sketchbook)
+  → Lighthearted/Playful (early childhood keyboard pieces, charming and instructive)
+
+- *CD2* (Variations K24, K25, K179, K180 · 8 Minuets K315a · Piano Sonata K279)
+  → Bright/Lyrical
+
+- *CD3* (Piano Sonatas K280--K284)
+  → Bright/Lyrical (Sonata K283 and the large, extroverted K284 in D major have a lively spirit)
+
+- *CD4* (Piano Sonatas K309--K311 · Variations K354)
+  → Dramatic/Intense (includes K310 in A minor, famously urgent and stormy)
+
+- *CD5* (Variations K264, K265, K352, K353, K398 · Piano Sonata K332)
+  → Bright/Lyrical (K332 in F major is quintessentially tuneful Mozart)
+
+- *CD6* (Piano Sonata K330, K331 "Alla Turca," K333)
+  → Bright/Lyrical
+
+- *CD7* (Fantasia K475, Sonata K457, Variations K455/K460/K500, Rondos K485/K494/K511)
+  → Dramatic/Intense (K475 & K457 in C minor are highly charged)
+
+- *CD8* (Sonatas K533/494, K545, K570, etc.)
+  → Bright/Lyrical (K545 is the "easy" C-major sonata but sparkles with clarity)
+
+- *CD9* (Fantasia K397, Sonata K576, Adagio K356, Variations K613, Organ Works)
+  → Dramatic/Intense (the D-minor Fantasia is darkly colored despite the bright Sonata K576)
+
+- *CD10* (Modulating Preludes, Prelude & Fugue K394, Suite K399)
+  → Serene/Reflective (study-like preludes/fugues and a Baroque-tinged suite)
+
+** Chamber Music (Violin Sonatas, Trios, Quartets, etc.)
+- *CD11* (Violin Sonatas K6--K12)
+  → Lighthearted/Playful (very early "child-prodigy" sonatas)
+
+- *CD12* (Violin Sonatas K13--K15, K26--K31)
+  → Lighthearted/Playful
+
+- *CD13* (Violin Sonatas K46d/K46e, Piano Duets K19d/K381/K358, Bassoon & Cello Duo K292)
+  → Lighthearted/Playful (still quite early)
+
+- *CD14* (Violin Sonatas K296, K301--305)
+  → Bright/Lyrical
+
+- *CD15* (Violin Sonatas K304, K306, K378, K379)
+  → Dramatic/Intense (K304 is in E minor, famously poignant)
+
+- *CD16* (Variations K359/K360, Violin Sonatas K376/K377/K380)
+  → Bright/Lyrical
+
+- *CD17* (Sonata for 2 Pianos K448, Violin & Viola Duos K423/424, Violin Sonata K454)
+  → Energetic/Exuberant (K448 is famously brilliant and uplifting)
+
+- *CD18* (Violin Sonata K481, Horn Duos K487, Sonata for Piano Duet, etc.)
+  → Bright/Lyrical
+
+- *CD19* (Sonatas for Piano Duet K357/K521, Violin Sonatas K526/K547)
+  → Energetic/Exuberant (K526 is dazzling)
+
+- *CD20* (Piano Trios K254/K496, String Trio K266, Clarinet Trio K498 "Kegelstatt")
+  → Serene/Reflective (the "Kegelstatt" Trio is warm and intimate)
+
+- *CD21* (Piano Trios K502/K542/K548)
+  → Bright/Lyrical
+
+- *CD22* (Divertimento K563, Piano Trio K564)
+  → Graceful/Refined (K563 is one of Mozart's most sophisticated chamber works)
+
+- *CD23* (Divertimenti K136--138, String Quartets K80/K155/K156)
+  → Lighthearted/Playful (these "Salzburg" divertimenti are youthful and bright)
+
+- *CD24* (String Quartets K157--160, K168, K169)
+  → Lighthearted/Playful (still early)
+
+- *CD25* (String Quartets K170--173, Flute Quartet K285)
+  → Bright/Lyrical
+
+- *CD26* (Oboe Quartet K370, String Quartets K387, K421)
+  → Dramatic/Intense (K421 in D minor underscores the tension)
+
+- *CD27* (String Quartets K428, K458 "Hunt," K499 "Hoffmeister")
+  → Energetic/Exuberant (the "Hunt" is especially lively)
+
+- *CD28* (String Quartets K464, K465 "Dissonance")
+  → Dramatic/Intense (the dissonant intro of K465, plus big emotional contrasts)
+
+- *CD29* (Piano Quartets K478, K493, Flute Quartet K298)
+  → Dramatic/Intense (K478 in G minor is especially forceful)
+
+- *CD30* (String Quartets "Prussian" K575/K589/K590)
+  → Graceful/Refined
+
+- *CD31* (String Quintet K174, Horn Quintet K407, Piano Quintet)
+  → Lighthearted/Playful
+
+- *CD32* (String Quintets in C K515 & G minor K516)
+  → Dramatic/Intense (K516 is notably dark)
+
+- *CD33* (Eine Kleine Nachtmusik K525, Adagio & Fugue K546, Clarinet Quintet K581)
+  → Lighthearted/Playful (the iconic serenade dominates the disc's flavor)
+
+- *CD34* (String Quintets K593, K614, Adagio & Rondo K617)
+  → Graceful/Refined
+
+** Divertimenti, Serenades, and Other Light Orchestral Works
+- *CD35* (Divertimenti K205, K186, K166, K188, K251)
+  → Lighthearted/Playful
+
+- *CD36* (Divertimenti K213, K240, K252, K253, K270)
+  → Lighthearted/Playful
+
+- *CD37* (Divertimenti L247, K287)
+  → Lighthearted/Playful
+
+- *CD38* (March in D K445, Divertimento in D K334, Serenade in E♭ K375)
+  → Lighthearted/Playful
+
+- *CD39* (Serenade in C minor K388, Serenade in B♭ K361 "Gran Partita")
+  → Dramatic/Intense (K388 in C minor is famously shadowy, though K361 is more radiant)
+
+** Chamber on Period Instruments (CD40--CD44)
+- *CD40*: Fortepiano & violin → Bright/Lyrical
+- *CD41*: Piano Quartets → Dramatic/Intense (K478 reappears)
+- *CD42*: K465 "Dissonance," K515 → Dramatic/Intense
+- *CD43*: Clarinet/Horn/Piano & Winds → Bright/Lyrical
+- *CD44*: Serenade K375, K361 → Lighthearted/Playful
+
+** Chamber -- Classic Performances (CD45--CD49)
+- *CD45* (Gulda K310, Haskil K265, Kempff K331, etc.)
+  → Dramatic/Intense (K310 in A minor stands out)
+
+- *CD46* (Gulda K457, Horowitz K511, etc.)
+  → Dramatic/Intense (K457 in C minor, stormy)
+
+- *CD47* (K526, K498 "Kegelstatt," K563)
+  → Bright/Lyrical
+
+- *CD48* (K388 in C minor, K421 in D minor, K516 in G minor)
+  → Dramatic/Intense
+
+- *CD49* (Horn Quintet K407, Piano Quartet K478, Divertimento K334)
+  → Dramatic/Intense (K478 again tips the scale)
+
+** Symphonies
+- *CD50--CD53* (Early Symphonies K16--K135)
+  Largely Lighthearted/Playful or Bright/Lyrical (they are short, youthful, and buoyant).
+  → CD50--CD52: especially light/early style → Lighthearted/Playful
+  → CD53: bridging to the slightly more developed style → Bright/Lyrical
+
+- *CD54* (Symphonies 22--25 & 27; No. 25 in G minor K183 is key)
+  → Dramatic/Intense (No. 25 is famously "little G minor")
+
+- *CD55* (Symphonies 28--30)
+  → Bright/Lyrical
+
+- *CD56* (Symphonies K121, K204, K102, K250 "Haffner Serenade")
+  → Lighthearted/Playful
+
+- *CD57* (Symphonies 31 "Paris," 32, 33, 34, etc.)
+  → Energetic/Exuberant (the "Paris" is splendidly brassy)
+
+- *CD58* (K320 "Posthorn," No. 35 "Haffner," No. 36 "Linz")
+  → Energetic/Exuberant
+
+- *CD59* (No. 38 "Prague," No. 39)
+  → Energetic/Exuberant
+
+- *CD60* (No. 40 in G minor, No. 41 "Jupiter")
+  → Dramatic/Intense (No. 40's dark urgency, though "Jupiter" ends triumphantly)
+
+- *CD61* (Alternative versions including No. 40)
+  → Dramatic/Intense
+
+** More Orchestral / Serenades & Divertimenti (CD62--CD73)
+All these serenades, cassations, divertimenti, & dances mostly fall into the Lighthearted/Playful bucket. They were written for social occasions, receptions, or general entertainment. So:
+
+- *CD62--CD67, CD69--CD73* → Lighthearted/Playful
+- *CD68* also has A Musical Joke K522 and Eine Kleine Nachtmusik K525 → Lighthearted/Playful
+  (One small note: K546 Adagio & Fugue on CD68 is more intense, but overshadowed by the overall festive vibe of the disc.)
+
+** Concertos
+- *CD74* (Violin Concerto K207, Piano Concerto K175, Concertone K190, Bassoon K191)
+  → Bright/Lyrical (these are early but charming)
+
+- *CD75* (Violin Concertos Nos. 2--5)
+  → Bright/Lyrical
+
+- *CD76* (Piano Concertos Nos. 6--8)
+  → Bright/Lyrical
+
+- *CD77* (Piano Concerto No. 9 "Jeunehomme" K271, Oboe K314, Flute K313)
+  → Energetic/Exuberant (K271 is a milestone of brilliance)
+
+- *CD78* (Flute & Harp Concerto K299, Sinfonia Concertante K364)
+  → Dramatic/Intense (K364's slow movement in C minor is especially emotional)
+
+- *CD79* (Concerto for 2 Pianos K365, various Rondos)
+  → Energetic/Exuberant
+
+- *CD80* (Piano Concertos Nos. 11--13 K413--415)
+  → Bright/Lyrical
+
+- *CD81* (Horn Concerto K417, Piano Concertos Nos. 14 & 15)
+  → Bright/Lyrical
+
+- *CD82* (Piano Concertos Nos. 16--18)
+  → Bright/Lyrical
+
+- *CD83* (Piano Concertos Nos. 19--21, K459/K466/K467)
+  → Dramatic/Intense (K466 in D minor tips the balance)
+
+- *CD84* (Piano Concertos Nos. 22 & 23)
+  → Bright/Lyrical
+
+- *CD85* (Piano Concertos Nos. 24 & 25)
+  → Dramatic/Intense (No. 24 is in C minor)
+
+- *CD86* (Horn Concertos K447 & K495, Piano Concerto No. 26 "Coronation")
+  → Bright/Lyrical
+
+- *CD87* (Piano Concerto No. 27 K595, Horn Concerto K412, Clarinet Concerto K622)
+  → Serene/Reflective (K595 & K622 often evoke a gentle, autumnal quality)
+
+** Supplementary Performances (CD88--CD101)
+Where possible, the presence of a minor-key concerto or stormier symphony usually dictates Dramatic/Intense; otherwise, it is Bright/Lyrical or Energetic/Exuberant:
+
+- *CD88* (Bassoon Concerto, Symphonies #29 & #35)
+  → Energetic/Exuberant (#35 "Haffner" is vibrant)
+
+- *CD89* (Violin Concerto #5 K219, etc.)
+  → Bright/Lyrical
+
+- *CD90* (Uchida K271, Brown/Suk Sinfonia Concertante K364)
+  → Dramatic/Intense (K364 again)
+
+- *CD91* (Abbado: Symphonies #38 & #39)
+  → Energetic/Exuberant
+
+- *CD92* (Vegh: Symphonies #40 & #41)
+  → Dramatic/Intense
+
+- *CD93* (Concertos #16, #19, #20)
+  → Dramatic/Intense (#20 is in D minor)
+
+- *CD94* (Concertos #17, #21, Horn #3)
+  → Bright/Lyrical
+
+- *CD95* (Concertos #22 & #25)
+  → Bright/Lyrical
+
+- *CD96* (Concertos #23 & #24)
+  → Dramatic/Intense (#24 c minor)
+
+- *CD97* (Concerto #26 "Coronation," #27 K595)
+  → Bright/Lyrical
+
+- *CD98* (Pires #27, Clarinet K622)
+  → Serene/Reflective
+
+- *CD99* (Serenata Notturna K239, Sym #33 & #34, PC #15)
+  → Bright/Lyrical
+
+- *CD100* (Violin Concerto #1, PC #20 & #21)
+  → Dramatic/Intense (K466 in D minor)
+
+- *CD101* (Sym #39, #40, PC #27)
+  → Dramatic/Intense (#40 in G minor plus the disc's overall feel)
+
+** Theatre (Operas, Singspiele, Oratorios, etc.)
+From *CD102 to CD152*, Mozart's stage works span the entire emotional spectrum---comic to tragic. However, for simplicity, they live under a single umbrella here:
+
+- *CD102--CD152*
+  → Operatic/Theatrical (includes La Finta Semplice, Mitridate, Idomeneo, Die Entführung, Le Nozze di Figaro, Don Giovanni, Così fan tutte, Die Zauberflöte, La Clemenza di Tito, etc.)
+
+** Sacred Works / Church Music
+- *CD153--CD170*
+  → Spiritual/Profound (e.g. Die Schuldigkeit des ersten Gebots, La Betulia Liberata, multiple Masses---"Waisenhausmesse," "Coronation," the Great C minor Mass K427, and of course the Requiem K626)
+
+** Private & Miscellaneous Vocal
+- *CD171* (Lieder for Voice & Piano)
+  → Serene/Reflective (intimate song repertoire)
+
+- *CD172* (Masonic Music: K411, K471, K477, etc.)
+  → Spiritual/Profound (deeply solemn or ceremonial)
+
+- *CD173* (Canons & Partsongs)
+  → Lighthearted/Playful (many are witty miniatures or social trifles)
+
+** Fragments, Sketches, Completions, and Arrangements
+Because these discs often mix incomplete works of varying moods---some are purely experimental, some solemn, etc.---they form a broad "Eclectic/Various" category, with exceptions when they are clearly sacred or operatic:
+
+- *CD174--CD178* (Fragments & Sketches, Completions)
+  → Eclectic/Various
+
+- *CD179--CD181* (Arrangements of Raupach, Bach, Abel, etc.)
+  → Eclectic/Various (hybrid or "Mozart-as-arranger" curiosity)
+
+- *CD182--CD183* (Handel: Acis und Galatea arrangements)
+  → Operatic/Theatrical (stage-oriented content)
+
+- *CD184--CD185* (Handel: Messiah arr. K572)
+  → Spiritual/Profound (it's an oratorio)
+
+- *CD186--CD187* (Handel: Alexander-Fest, Ode for St. Cecilia's Day)
+  → Spiritual/Profound (the oratorio tradition)
+
+- *CD188--CD190* (Self-arrangements of La Finta Giardiniera / Die Gärtnerin aus Liebe)
+  → Operatic/Theatrical
+
+- *CD191* (Harmoniemusik of Die Entführung aus dem Serail)
+  → Operatic/Theatrical (wind-band opera arrangement)
+
+- *CD192* (Piano Concertos K413--415 arranged for Piano & String Quartet)
+  → Bright/Lyrical
+
+- *CD193* (Flute Concerto K314 arr., Quintet K406, etc.)
+  → Bright/Lyrical
+
+** Doubtful and Spurious Works
+Often these are in the style of early divertimenti or symphonies, so:
+
+- *CD194--CD196* (Doubtful Chamber: Divertimenti, Flute quartets, basset horn trios, etc.)
+  → Lighthearted/Playful
+
+- *CD197--CD198* (Doubtful Orchestral: "extra" symphonies, violin concerto K271a)
+  → Lighthearted/Playful
+
+- *CD199* (Sinfonia Concertante K297b, etc.)
+  → Lighthearted/Playful (though controversial authenticity)
+
+- *CD200* (Doubtful Theatre/Sacred & Song: Mass K140, Tantum Ergo, Regina Coeli K276, etc.)
+  → Spiritual/Profound (contains multiple sacred-style works)
