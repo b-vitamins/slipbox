@@ -1,0 +1,432 @@
+:PROPERTIES:
+:ID:       1309bb10-237b-497a-aed8-add46e23e61a
+:END:
+#+TITLE: BTHVN mood bins
+#+FILETAGS: :fleeting:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+* Suggested Mood Bins
+** 1. Energetic/Heroic
+- Music that feels driving, propulsive, or grandly assertive. Often good for working out, staying motivated, or focusing intensely.
+- Typical examples in Beethoven: Symphony No. 3 ("Eroica"), Symphony No. 5, Symphony No. 7, Overtures such as "Coriolan" & "Egmont," the "Appassionata" Sonata, "Hammerklavier" Sonata, "Kreutzer" Sonata, Piano Concerto No. 5 ("Emperor"), etc.
+
+** 2. Dramatic/Intense
+- Similar energy to "Heroic," but sometimes darker, with more conflict or weight. Good for powerful emotional engagement.
+- Typical examples: Symphony No. 9 (some movements), "Coriolan" Overture, "Pathétique" Sonata, late string quartets with intense contrasts, Grosse Fuge, "Serioso" Quartet.
+
+** 3. Bright/Lyrical
+- Light, singing, often cheerful or gracefully classical. Good for a positive lift without the bombast.
+- Typical examples: Symphony Nos. 1 & 2, the "Spring" Violin Sonata (No. 5), many early piano sonatas, various chamber works for flute or winds.
+
+** 4. Serene/Reflective
+- Calmer, more contemplative or pastoral in character. Good for relaxing, reading, or unwinding.
+- Typical examples: Symphony No. 6 ("Pastoral"), certain middle piano sonatas ("Pastoral" Sonata Op. 28), the slow movements of late string quartets.
+
+** 5. Spiritual/Profound
+- Especially the late works (late piano sonatas, late string quartets, Missa Solemnis), which can be meditative, otherworldly, or transcendently emotional.
+- Typical examples: Piano Sonatas Nos. 30--32, String Quartets Nos. 12--16, Missa Solemnis.
+
+** 6. Lighthearted/Playful
+- Music that's dance-like, witty, or designed for social occasions.
+- Typical examples: Dances & Marches (German Dances, Contredanses), many small variations, some early serenades.
+
+** 7. Folkish/Eclectic
+- Beethoven's arrangements of folk songs or smaller-scale curiosities, combining a lighter spirit with local color.
+- Typical examples: Scottish/Irish/Welsh folksong settings, various minor WoO works, canons, or musical jokes.
+
+* Especially "Energetic" Picks
+If you specifically want activity-/motivation-oriented Beethoven, look for any CD labeled Energetic/Heroic, Fiery/Intense, or Exuberant/Dramatic. Here are some of the most obvious "high-energy" highlights (not an exhaustive list, but a quick reference):
+
+- *Symphonic Energetic*:
+  - CD1, CD2, CD3, CD4, CD5 (modern instrument cycle)
+  - CD7, CD8 (Vienna cycle with #3, #5, #7)
+  - CD12, CD13, CD14, CD15 (period instruments, featuring 3, 5, 7, 9)
+- *Heroic Piano Works*:
+  - CD18 (Piano Concerto #5 "Emperor")
+  - CD22 (another take on #5)
+  - CD37, CD38, CD39, CD42 (Sonatas "Waldstein," "Appassionata," "Hammerklavier")
+- *Fiery Chamber*:
+  - CD54 (Violin Sonatas #7 & #9 "Kreutzer")
+  - CD72 (String Quartet #11 "Serioso," #13 + Grosse Fuge)
+- *Historic Recordings*:
+  - CD102 (Famous conductors' takes on #3, #5, #7, #9)
+  - CD103, CD104 (Furtwängler, Kleiber's intense #5)
+
+Whenever you see "Symphony #5," "Eroica," "Seventh," "Appassionata," "Kreutzer," "Emperor," "Waldstein," or "Hammerklavier," you're in that prime Beethoven energy zone.
+
+Enjoy exploring these "mood bins," and remember that many Beethoven works (especially multi-movement pieces) will include both stormy, intense sections and gentler, reflective moments---so these labels are only an overall guide!
+
+* Mood Placement by CD
+Below you'll find each CD assigned to the one most prominent or "best fit" mood bucket. Keep in mind that many CDs actually straddle more than one mood---especially those that include both a fiery work (like Symphony No. 5) and a gentler one (like Symphony No. 6). When in doubt, the more striking or famous "mood" usually takes precedence.
+** Orchestral Music -- Modern Instruments
+- *CD1*: Symphonies 1 & 2 · Overtures "Prometheus" & "Leonore" No. 3
+  Mood: Energetic/Heroic (bright early symphonies + a dramatic overture)
+
+- *CD2*: Symphonies 3 & 4
+  Mood: Energetic/Heroic ("Eroica" especially defines that heroic quality)
+
+- *CD3*: Symphonies 5 & 6 · "Coriolan" Overture
+  Mood: Dramatic/Intense (No. 5 and "Coriolan" overshadow the gentler Pastoral)
+
+- *CD4*: Symphonies 7 & 8 · Wellington's Victory · "Zur Namensfeier" Overture
+  Mood: Exuberant/Energetic (No. 7 brims with rhythmic drive)
+
+- *CD5*: Symphony No. 9
+  Mood: Grand/Epic (triumphant final movement, monumental scope)
+
+** Orchestral Music -- Vienna Cycle
+- *CD6*: Symphonies 1 & 2 · Egmont
+  Mood: Energetic/Heroic ("Egmont" Overture is especially stirring)
+
+- *CD7*: Symphonies 3 & 4
+  Mood: Energetic/Heroic ("Eroica" again leads the charge)
+
+- *CD8*: Symphonies 5 & 7
+  Mood: Intense/Energetic (both are famously driving)
+
+- *CD9*: Symphonies 6 & 8
+  Mood: Bright/Relaxed (No. 6 is "Pastoral," No. 8 is cheerful)
+
+- *CD10*: Symphony No. 9
+  Mood: Grand/Epic
+
+** Orchestral Music -- Period Instruments
+- *CD11*: Symphonies 1 & 2 (period)
+  Mood: Bright/Energetic
+
+- *CD12*: Symphonies 3 & 4 (period)
+  Mood: Heroic/Energetic
+
+- *CD13*: Symphonies 5 & 6 (period)
+  Mood: Dramatic/Energetic (with a calmer respite in the Pastoral)
+
+- *CD14*: Symphonies 7 & 8 (period)
+  Mood: Exuberant/Energetic
+
+- *CD15*: Symphony No. 9 · Choral Fantasy (period)
+  Mood: Grand/Epic
+
+** Concertos
+- *CD16*: Piano Concertos 1 & 2; Piano Concerto WoO 4
+  Mood: Bright/Classical-Energetic (the early Beethoven concerto style)
+
+- *CD17*: Piano Concertos 3 & 4
+  Mood: Dramatic/Elegant (No. 3 = stormy, No. 4 = more poetic)
+
+- *CD18*: Piano Concerto No. 5 ("Emperor") · Violin Concerto
+  Mood: Heroic/Energetic ("Emperor" plus the grand lyricism of the Violin Concerto)
+
+- *CD19*: Violin Concerto · Romances & Romance Cantabile (another version)
+  Mood: Lyrical/Expressive (the Romances especially are gentle and warm)
+
+- *CD20*: Piano Concertos 2 & 3 · Rondo WoO 6
+  Mood: Refined/Energetic (No. 3's drama spurs it on)
+
+- *CD21*: Piano Concertos 3 & 4 · Choral Fantasy
+  Mood: Dramatic/Epic (the Choral Fantasy's big finish adds grandeur)
+
+- *CD22*: Piano Concerto No. 5 · Piano Concerto in D
+  Mood: Heroic/Energetic ("Emperor" again leads the way)
+
+- *CD23*: Triple Concerto · Violin Concerto Movement · Cadenzas
+  Mood: Grand/Elegant (Triple Concerto has a certain spacious nobility)
+
+** Music for the Stage
+- *CD24*: Ritterballett · The Creatures of Prometheus
+  Mood: Graceful/Energetic (ballet music with a lively spirit)
+
+- *CD25*: Dances and Marches
+  Mood: Lighthearted/Playful (good for a quick pick-me-up)
+
+- *CD26*: Egmont · The Ruins of Athens · Gratulations-Menuett
+  Mood: Dramatic/Energetic (especially "Egmont")
+
+- *CD27*: King Stephen · The Consecration of the House · Tarpeja · Leonore Prohoska
+  Mood: Ceremonial/Grand ("Consecration of the House" is quite festive)
+
+- *CD28*: Leonore (beginning)
+  Mood: Dramatic/Heroic (the original Fidelio opera version)
+
+- *CD29*: Leonore (continued)
+  Mood: Dramatic/Heroic
+
+- *CD30*: Fidelio (beginning)
+  Mood: Dramatic/Heroic (liberation theme)
+
+- *CD31*: Fidelio (continued) · Leonore Overture No. 1 · Arias, etc.
+  Mood: Dramatic/Heroic
+
+** Keyboard Music -- Piano Sonatas
+- *CD32*: Sonatas 1--3
+  Mood: Bright/Early-Energetic
+
+- *CD33*: Sonatas 4--6 & 8 "Pathétique"
+  Mood: Dramatic/Energetic (No. 8 adds extra intensity)
+
+- *CD34*: Sonatas 7, 9--11
+  Mood: Mixed: Dramatic & Lyrical
+
+- *CD35*: Sonatas 12--15 & 19
+  Mood: More Reflective (No. 12 has a funeral march, No. 15 is the "Pastoral")
+
+- *CD36*: Sonatas 16--18 & 20
+  Mood: Dynamic/Energetic (#17 the "Tempest" is quite forceful)
+
+- *CD37*: Sonatas 21--25
+  Mood: Heroic/Energetic (#21 "Waldstein" is a big highlight)
+
+- *CD38*: Sonatas 26 "Les Adieux," 27 & 29 "Hammerklavier"
+  Mood: Epic/Energetic (the "Hammerklavier" is colossal)
+
+- *CD39*: Sonatas 28 & 29 (again)
+  Mood: Epic/Energetic (#29 dominates)
+
+- *CD40*: Sonatas 30--32
+  Mood: Spiritual/Reflective (the late triptych)
+
+** Keyboard Music -- The "Named" & Late Sonatas (Alternate Issues)
+- *CD41*: Named Sonatas: 8 "Pathétique," 14 "Moonlight," 17 "Tempest," 21 "Waldstein"
+  Mood: Dramatic/Passionate (mix of moody and heroic)
+
+- *CD42*: Named Sonatas: 23 "Appassionata," 26 "Les Adieux," 29 "Hammerklavier"
+  Mood: Epic/Fiery ("Appassionata" + "Hammerklavier" = unstoppable energy)
+
+- *CD43*: Last Sonatas: 30--32
+  Mood: Spiritual/Introspective
+
+** Keyboard Music -- Bagatelles, Variations, Misc.
+- *CD44*: Bagatelles Opp. 33, 119, 126, etc.
+  Mood: Gentle/Reflective (short, sometimes playful but often intimate)
+
+- *CD45*: Electoral Sonatas & Sonata Movements
+  Mood: Light/Early-Classical
+
+- *CD46*: Dances & Misc. Works
+  Mood: Lighthearted/Energetic
+
+- *CD47*: Variations WoO 63--66 & 68--71
+  Mood: Playful/Inventive
+
+- *CD48*: Variations Opp. 34, 35, WoO 72, 73, 75--77
+  Mood: Energetic/Inventive (Op. 35 = "Eroica" Variations)
+
+- *CD49*: Variations Opp. 76, 120 & WoO 78--80
+  Mood: Reflective/Inventive
+
+- *CD50*: Diabelli Variations · "Eroica" Variations
+  Mood: Epic/Inventive (Diabelli is a monumental variation set)
+
+- *CD51*: Works for Piano Duet & Other Solo Works
+  Mood: Light/Eclectic
+
+** Chamber Music -- Violin & Cello Sonatas, Duos
+- *CD52*: Violin Sonatas 1--4
+  Mood: Bright/Energetic
+
+- *CD53*: Violin Sonatas 5 "Spring" & 6 · Variations, etc.
+  Mood: Bright/Lyrical
+
+- *CD54*: Violin Sonatas 7 & 9 ("Kreutzer")
+  Mood: Fiery/Intense (especially No. 9)
+
+- *CD55*: Violin Sonatas 8--10
+  Mood: Lively/Graceful
+
+- *CD56*: Cello Sonatas 1 & 2 + Variations
+  Mood: Expressive/Energetic
+
+- *CD57*: Cello Sonatas 3--5 + Variations
+  Mood: Dramatic/Expressive (No. 3 is especially forceful)
+
+- *CD58*: Flute Duos Opp. 105, 107 & WoO 26
+  Mood: Light/Graceful
+
+- *CD59*: Other Duos (Op. 17, WoO 32, 34, 35, etc.)
+  Mood: Light/Eclectic
+
+** Chamber Music -- Trios
+- *CD60*: Piano Trios 1, 2 & 9 + Trio Movement
+  Mood: Bright/Elegant (early trios are classical in feel)
+
+- *CD61*: Piano Trios 3, 5 ("Ghost") & 6
+  Mood: Dramatic/Ethereal ("Ghost" slow movement is spooky; overall quite intense)
+
+- *CD62*: Piano Trios 7 "Archduke," 8, 10 & 11
+  Mood: Grand/Elevated (the "Archduke" especially majestic)
+
+- *CD63*: Piano Trio No. 47 & Trio in E ♭, Op. 38
+  Mood: Refined/Elegant
+
+- *CD64*: Trios with Wind (Op. 87, WoO 28 & 37)
+  Mood: Light/Eclectic
+
+** Chamber Music -- String Trios
+- *CD65*: String Trios 1 & 2 (Op. 9/1--2)
+  Mood: Refined/Elegant (early classical feel)
+
+- *CD66*: String Trios 3--5 (Op. 9/3, etc.)
+  Mood: Graceful/Energetic
+
+- *CD67*: String Trios WoO 9, 15 & Hess 29, Serenade Op. 25
+  Mood: Light/Eclectic
+
+** Chamber Music -- String Quartets
+- *CD68*: String Quartets 1--3 (Op. 18/1--3)
+  Mood: Bright/Energetic (early quartets)
+
+- *CD69*: String Quartets 4--6 (Op. 18/4--6)
+  Mood: Dramatic/Energetic (Op. 18/4 in minor has extra punch)
+
+- *CD70*: String Quartets 7 & 8 (Op. 59/1--2 "Rasumovsky")
+  Mood: Heroic/Energetic (middle period heft)
+
+- *CD71*: String Quartets 9 & 10 (Op. 59/3 & 74 "Harp")
+  Mood: Bold/Energetic
+
+- *CD72*: String Quartets 11 "Serioso" & 13 + Grosse Fuge
+  Mood: Intense/Challenging (the Grosse Fuge is famously knotty)
+
+- *CD73*: String Quartets 12 & 14
+  Mood: Profound/Introspective (late quartets)
+
+- *CD74*: String Quartets 15 & 16
+  Mood: Spiritual/Reflective (Op. 132's "Heiliger Dankgesang")
+
+- *CD75*: String Quartets 12 & 15
+  Mood: Profound/Reflective (again late)
+
+- *CD76*: String Quartets 13 & 14
+  Mood: Intense/Spiritual
+
+- *CD77*: String Quartet 16 & Hess works/Minuet, Preludes & Fugues
+  Mood: Reflective/Introspective (final quartets + small fugues)
+
+** Chamber Music -- Other Ensembles
+- *CD78*: Piano Quartets WoO 36 · 3 Equali WoO 30
+  Mood: Light/Eclectic (early quartets + short trombone pieces)
+
+- *CD79*: Quintets Op. 16, 29, 137, WoO 208, Hess 38 & Unv 7
+  Mood: Refined/Elegant
+
+- *CD80*: Quintets & Sextets: Opp. 4, 104; Wind Sextet Op. 71; WoO 29
+  Mood: Light/Elegant
+
+- *CD81*: Sextet Op. 81b, Septet Op. 20, Octets Op. 103 & WoO 25
+  Mood: Cheerful/Elegant (the Septet was a hugely popular, genial work)
+
+** Lieder & Partsongs
+- *CD82*: Lieder (I)
+  Mood: Intimate/Reflective
+
+- *CD83*: Lieder (II)
+  Mood: Intimate/Expressive
+
+- *CD84*: Lieder (III)
+  Mood: Intimate/Reflective
+
+- *CD85*: Partsongs & Canons (WoO 95, 99, 102--106, etc.)
+  Mood: Social/Lighthearted
+
+** Folksong Settings
+- *CD86*: 25 Scottish Songs Op. 108
+  Mood: Folkish/Lively
+
+- *CD87*: 25 Irish Songs WoO 152 (most)
+  Mood: Folkish/Energetic
+
+- *CD88*: More Irish Songs WoO 152 & 153
+  Mood: Folkish/Lively
+
+- *CD89*: 12 Irish Songs WoO 154 · Songs of Various Nationalities WoO 157
+  Mood: Folkish/Eclectic
+
+- *CD90*: 26 Welsh Songs WoO 155
+  Mood: Folkish/Bright
+
+- *CD91*: 25 Scottish Songs WoO 156, etc.
+  Mood: Folkish/Eclectic
+
+- *CD92*: 23 Songs of Various Nationalities WoO 158a
+  Mood: Folkish/Eclectic
+
+** Vocal Works with Orchestra
+- *CD93*: Works for Solo Voices with Orchestra (Opp. 65, 116, 118, 121b, 122, etc.)
+  Mood: Elevated/Dramatic
+
+- *CD94*: Cantatas: Emperor Cantatas WoO 87 & 88
+  Mood: Ceremonial/Grand
+
+- *CD95*: Der Glorreiche Augenblick · Meeresstille... · Mass in C
+  Mood: Majestic/Spiritual
+
+- *CD96*: Missa Solemnis (Period)
+  Mood: Spiritual/Transcendent
+
+- *CD97*: Missa Solemnis (Modern)
+  Mood: Spiritual/Transcendent
+
+- *CD98*: Oratorio: Christus am Ölberge
+  Mood: Biblical/Expressive
+
+** Rarities
+- *CD99*: Solo Piano & Arrangements for Piano
+  Mood: Eclectic/Curious
+
+- *CD100*: Chamber Music -- Rarities
+  Mood: Eclectic/Curious
+
+- *CD101*: Contrapuntal Studies & Doubtful Works
+  Mood: Academic/Exploratory
+
+** Classic Performances (Historic Recordings)
+- *CD102*: Symphony No. 9 (Scherchen) + Excerpts from Sym. 3, 5, 7 (Karajan, Nikisch...) + Leonore Overtures (Busch, Klemperer)
+  Mood: Heroic/Energetic
+
+- *CD103*: Sym. 5, Grosse Fuge, Overtures "Egmont," "Coriolan," "Leonore" No. 3 (Furtwängler)
+  Mood: Dramatic/Energetic
+
+- *CD104*: Sym. 5 & 6 (Erich Kleiber)
+  Mood: Dramatic/Energetic (with a pastoral breather)
+
+- *CD105*: Sym. 9 & "Egmont" (Fricsay)
+  Mood: Grand/Epic
+
+- *CD106*: Piano Concerto No. 3 (A. Fischer), Violin Concerto (Schneiderhan)
+  Mood: Expressive/Energetic
+
+- *CD107*: Piano Sonatas Nos. 8, 23, 30 & 31 (Arrau, Kempff, Schnabel)
+  Mood: Dramatic/Reflective (mix of "Pathétique," "Appassionata," and late sonatas)
+
+- *CD108*: Piano Sonatas Nos. 11, 18, 28 & 31 (Backhaus, Haskil, Richter, Serkin)
+  Mood: Mixed: Lively & Reflective
+
+- *CD109*: Piano Sonatas Nos. 4, 15, 32 (Gulda, Michelangeli, Pogorelich)
+  Mood: Intense/Reflective (No. 32 is extremely powerful)
+
+- *CD110*: Cello Sonatas Nos. 3 & 5 (Fournier/Kempff, Rostropovich/Richter) + Piano Trio No. 7 "Archduke" (Gilels/Kogan/Rostropovich)
+  Mood: Majestic/Expressive
+
+- *CD111*: String Quartets Nos. 13 & 16 + Grosse Fuge (Busch, Hollywood Quartet, Lindsays)
+  Mood: Intense/Profound (late quartets and the Fugue)
+
+- *CD112*: String Quartets Nos. 6 & 15 (Quartetto Italiano)
+  Mood: Contrast: Early Lively & Late Spiritual
+
+- *CD113*: Lieder (Bartoli, Pavarotti, Schreier) + Fidelio Excerpts (Böhm, Fricsay, Karajan...)
+  Mood: Heroic/Intimate
+
+** Period Instrument Performances (Highlights)
+- *CD114*: Piano Concertos 1 & 2 + Rondo WoO 6 (Levin/Gardiner)
+  Mood: Bright/Energetic
+
+- *CD115*: Piano Concerto No. 4 (Levin/Gardiner) · Violin Concerto & Romance No. 2 (Zehetmair/Brüggen)
+  Mood: Lyrical/Eloquent
+
+- *CD116*: Piano Sonatas 8, 14 & 17 (Lubin), Lieder (von Otter/Tan), Horn Sonata (Halstead/Levin)
+  Mood: Introspective/Dramatic (especially the sonatas)
+
+- *CD117*: "Ghost" Trio (No. 5), String Quartet No. 9, Op. 16 (Levin & AAMCE)
+  Mood: Mysterious/Energetic ("Ghost")
+
+- *CD118*: Chamber Versions of Symphony No. 2 & Piano Concerto No. 4 (Levin), "Ah! Perfido" (Tilling/McCreesh)
+  Mood: Dramatic/Elegant
+
