@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       51fa7c5c-4dfd-40f4-a7db-4c7e3ef52bfa
+:END:
+#+TITLE: Resource Loan Pattern
+#+FILETAGS: :concept:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+

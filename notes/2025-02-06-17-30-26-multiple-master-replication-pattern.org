@@ -1,0 +1,464 @@
+:PROPERTIES:
+:ID:       871a6ea6-a13c-443d-8d64-605c47a8e867
+:END:
+#+TITLE: Multiple-Master Replication Pattern
+#+FILETAGS: :concept:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+* 1. Introduction and Historical Context
+
+In classical replication patterns—like active-passive—only one node (the “master” or “primary”) can accept writes; all other nodes passively track updates, promoting a standby if the master fails. By contrast, Multiple-Master Replication (also known as multi-primary or multi-leader replication) allows several nodes to accept writes concurrently. This can drastically boost write availability or throughput (since multiple nodes handle updates in parallel, each from a different region or partition), but it also brings challenges:
+
+- ***Conflict Resolution***: If two masters accept contradictory writes to the same data, how do you reconcile them?
+- ***Consistency Guarantees***: Because each master can progress independently, the system might exhibit eventual consistency or rely on consensus protocols to keep data in sync.
+- ***Latency***: In some approaches (like Paxos or Raft-based consensus), every write must be acknowledged by a majority to ensure a consistent replicated log, which might slow things down but guarantee correctness.
+- ***Partition Tolerance***: Multi-master systems often handle network splits by letting each partition continue accepting writes, then later merging with conflict resolution, or by halting one side to preserve consistency.
+
+Historically, multi-master replication gained popularity in distributed databases (CouchDB, Cassandra, Riak, etc.), which rely on decentralized writes. It also appears in specialized solutions like synchronous consensus-based replication (e.g., a Raft cluster) or CRDT-based systems that can handle concurrent updates with minimal friction. The pattern also surfaces in microservices that maintain shared domain data but prefer distributed concurrency (with eventual reconciliation).
+
+***1.1 Why Use the Multiple-Master Replication Pattern?***
+
+- **Increased Write Throughput**: By allowing multiple nodes to accept writes, you distribute the load across different machines or regions.
+- **Geo-Distribution**: Each data center can have a local master, reducing latency for local writes. Updates eventually propagate system-wide, possibly with conflict resolution.
+- **High Availability**: If one master fails, others continue serving writes without a complicated failover. The system might degrade performance or partition but doesn’t fully halt.
+- **Partial Autonomy**: Some domain scenarios let different clusters of data be owned by separate masters. Each “shard” or subset can progress independently, merging changes periodically.
+
+***1.2 Common Pitfalls***
+
+- **Conflict Resolution**: Without a single writer, you might have conflicting updates. Systems either require a consensus protocol (so that each write is globally ordered) or rely on domain-specific conflict resolution (like last-writer-wins, CRDT merges, or application-level merges).
+- **Complex Consistency**: Achieving strong consistency across multiple masters often entails synchronous replication, limiting throughput. Asynchronous approaches yield better performance but can cause temporary inconsistencies or “forked” data states.
+- **Operational Complexity**: Monitoring, diagnosing, and recovering multi-master clusters is more intricate than a single primary with standbys.
+- **Split-Brain**: If the network partitions, each side might keep accepting writes. Upon rejoining, you may face heavy merges or data divergence. Alternatively, you can block writes in minority partitions, but then you lose some availability.
+
+Despite these challenges, multi-master replication is attractive for distributed or global-scale systems requiring high availability and decentralized writes. Let’s now explore how this might look in code, at three complexity levels.
+
+* 2. Conceptual Motivation
+
+Imagine a worldwide “user profile” store. Users from the US and Europe want low-latency writes. If you have only one “active” node, writes from Europe must cross the Atlantic. Instead, multiple “masters” in different regions each accept updates locally—like user changes to their profiles. Over time, these updates replicate across regions. However, if a user in the US modifies their display name to “Alice,” while a user in Europe modifies the same record to “Alicia,” a conflict arises. The system must decide how to merge or order these writes. Our examples will reflect these themes, albeit on a smaller scale.
+
+* 3. Beginner Example (Erlang)
+
+***3.1 Motivation and Scenario
+
+Erlang is well-suited to concurrency and distributed messaging. For a “beginner” multi-master example, we’ll create two Erlang processes (representing two masters). Each can accept local increments of a counter. They occasionally send updates to each other to “sync.” If the same counter is incremented concurrently on both, we see a conflict. We’ll adopt a simplistic resolution approach, e.g., a last-write-wins or sum-based approach.
+
+***3.2 Code Example (Erlang, Beginner)
+
+#+BEGIN_SRC erlang
+%%% multi_master.erl
+-module(multi_master).
+-export([start/0, increment_a/1, increment_b/1, get_state_a/0, get_state_b/0]).
+
+-define(MASTER_A, master_a).
+-define(MASTER_B, master_b).
+
+start() ->
+    % spawn two master processes
+    A = spawn(?MODULE, master_loop, [0, undefined]),
+    B = spawn(?MODULE, master_loop, [0, undefined]),
+    register(?MASTER_A, A),
+    register(?MASTER_B, B),
+    io:format("Master A at ~p, Master B at ~p~n", [A, B]),
+    % let them know each other's PID
+    A ! {peer, B},
+    B ! {peer, A},
+    ok.
+
+increment_a(N) ->
+    whereis(?MASTER_A) ! {local_incr, N},
+    ok.
+
+increment_b(N) ->
+    whereis(?MASTER_B) ! {local_incr, N},
+    ok.
+
+get_state_a() ->
+    A = whereis(?MASTER_A),
+    A ! {get_state, self()},
+    receive
+        {state, Val} -> Val
+    end.
+
+get_state_b() ->
+    B = whereis(?MASTER_B),
+    B ! {get_state, self()},
+    receive
+        {state, Val} -> Val
+    end.
+
+master_loop(Count, Peer) ->
+    receive
+        {peer, Pid} ->
+            master_loop(Count, Pid);
+
+        {local_incr, N} ->
+            NewCount = Count + N,
+            io:format("~p: local_incr ~p -> NewCount=~p~n", [self(), N, NewCount]),
+            case Peer of
+                undefined -> ok;
+                P -> P ! {replicate_update, NewCount}
+            end,
+            master_loop(NewCount, Peer);
+
+        {replicate_update, NewVal} ->
+            Resolved = max(Count, NewVal), % or sum
+            io:format("~p: received replicate_update=~p, old=~p => new=~p~n",
+                      [self(), NewVal, Count, Resolved]),
+            master_loop(Resolved, Peer);
+
+        {get_state, From} ->
+            From ! {state, Count},
+            master_loop(Count, Peer);
+
+        _Other ->
+            master_loop(Count, Peer)
+    end.
+#+END_SRC
+
+***3.2.1 Explanation
+
+- **Two Masters**: `start()` spawns two processes, each with a local counter. They share updates with each other.
+- **Local increments**: `increment_a(N)` sends `{local_incr, N}` to Master A. A updates its counter, then replicates that new value to B. B merges it.
+- **Conflict resolution**: On `replicate_update`, we do `max(Count, NewVal)`—like last-writer-wins. Alternatively, we could do `Count + NewVal`.
+- **Usage**: In the Erlang shell, we can increment both A and B and see them converge to a final value.
+
+* 4. Intermediate Example (Rust)
+
+***4.1 Motivation and Scenario
+
+Rust’s concurrency model can illustrate a more explicit multi-master approach, possibly with a small “replication manager” that routes updates among multiple nodes. We might have multiple threads (each “node” is a thread) that accept local writes, store them in a local log, and periodically exchange logs. We can demonstrate how each node merges logs, applying a simple conflict resolution approach.
+
+***4.2 Code Example (Rust, Intermediate)
+
+#+BEGIN_SRC rust
+use std::sync::{mpsc, Arc, Mutex};
+use std::thread;
+use std::time::Duration;
+
+#[derive(Clone, Debug)]
+struct LogEntry {
+    node_id: usize,
+    seq_no: u64,
+    key: String,
+    value: String,
+}
+
+#[derive(Debug)]
+struct NodeState {
+    node_id: usize,
+    seq_counter: u64,
+    log: Vec<LogEntry>,
+    kv_store: std::collections::HashMap<String, String>,
+}
+
+#[derive(Clone, Debug)]
+enum NodeMsg {
+    LocalPut(String, String),     // local write
+    ReplicateLogs(Vec<LogEntry>), // logs from another node
+    GetStore,                     // request to read state
+    Stop,
+}
+
+fn node_main(
+    state: Arc<Mutex<NodeState>>,
+    rx: mpsc::Receiver<NodeMsg>,
+    peers: Vec<mpsc::Sender<NodeMsg>>
+) {
+    let node_id = { state.lock().unwrap().node_id };
+    println!("[Node {}] started with peers: {}", node_id, peers.len());
+    while let Ok(msg) = rx.recv() {
+        match msg {
+            NodeMsg::LocalPut(key, val) => {
+                let mut st = state.lock().unwrap();
+                st.seq_counter += 1;
+                let entry = LogEntry {
+                    node_id,
+                    seq_no: st.seq_counter,
+                    key: key.clone(),
+                    value: val.clone(),
+                };
+                st.log.push(entry.clone());
+                st.kv_store.insert(key.clone(), val.clone());
+                println!("[Node {}] local put {}={}, store={:?}",
+                         node_id, key, val, st.kv_store);
+                // replicate to peers
+                for p in &peers {
+                    let _ = p.send(NodeMsg::ReplicateLogs(vec![entry.clone()]));
+                }
+            }
+
+            NodeMsg::ReplicateLogs(entries) => {
+                let mut st = state.lock().unwrap();
+                for e in entries {
+                    let exists = st.log.iter()
+                                       .any(|x| x.node_id == e.node_id && x.seq_no == e.seq_no);
+                    if !exists {
+                        st.log.push(e.clone());
+                        // naive conflict resolution
+                        st.kv_store.insert(e.key.clone(), e.value.clone());
+                    }
+                }
+                println!("[Node {}] got replicate logs => store={:?}",
+                         node_id, st.kv_store);
+            }
+
+            NodeMsg::GetStore => {
+                let st = state.lock().unwrap();
+                println!("[Node {}] store => {:?}", node_id, st.kv_store);
+            }
+
+            NodeMsg::Stop => {
+                println!("[Node {}] stopping now.", node_id);
+                break;
+            }
+        }
+    }
+    println!("[Node {}] exit thread.", node_id);
+}
+
+fn main() {
+    // We'll create 2 nodes for demonstration
+    let (tx1, rx1) = mpsc::channel();
+    let (tx2, rx2) = mpsc::channel();
+
+    let state1 = Arc::new(Mutex::new(NodeState {
+        node_id: 1,
+        seq_counter: 0,
+        log: vec![],
+        kv_store: std::collections::HashMap::new(),
+    }));
+    let state2 = Arc::new(Mutex::new(NodeState {
+        node_id: 2,
+        seq_counter: 0,
+        log: vec![],
+        kv_store: std::collections::HashMap::new(),
+    }));
+
+    let peers_node1 = vec![tx2.clone()];
+    let peers_node2 = vec![tx1.clone()];
+
+    thread::spawn({
+        let st = state1.clone();
+        move || {
+            node_main(st, rx1, peers_node1);
+        }
+    });
+    thread::spawn({
+        let st = state2.clone();
+        move || {
+            node_main(st, rx2, peers_node2);
+        }
+    });
+
+    // Let node1 do a local put
+    tx1.send(NodeMsg::LocalPut("foo".into(), "bar".into())).unwrap();
+    thread::sleep(Duration::from_millis(500));
+    // Let node2 do a local put
+    tx2.send(NodeMsg::LocalPut("alpha".into(), "beta".into())).unwrap();
+    thread::sleep(Duration::from_millis(500));
+
+    // Let each node read store
+    tx1.send(NodeMsg::GetStore).unwrap();
+    tx2.send(NodeMsg::GetStore).unwrap();
+    thread::sleep(Duration::from_millis(500));
+
+    // Stop nodes
+    tx1.send(NodeMsg::Stop).unwrap();
+    tx2.send(NodeMsg::Stop).unwrap();
+    thread::sleep(Duration::from_millis(500));
+
+    println!("[Main] done demonstration.");
+}
+#+END_SRC
+
+***4.3.1 Explanation
+
+- **Local Writes**: NodeMsg::LocalPut triggers a local log append plus kv_store insert. Then the node replicates the new log entry to peers.
+- **Replication**: On receiving NodeMsg::ReplicateLogs(entries), a node merges any new entries into its log and kv_store. We do a naive approach of “just do it if we haven’t seen that (node_id, seq_no).”
+- **Conflict resolution**: If two nodes concurrently write the same key, the last replication might overwrite the earlier. Real systems can track timestamps or versions for a robust approach.
+
+* 5. Advanced Example (Haskell)
+
+***5.1 Motivation and Scenario
+
+Haskell’s concurrency plus strong type system can illustrate advanced concurrency abstractions. We’ll build a small multi-master approach with 3 node threads, each of which can accept local “writes.” Instead of a custom log-based approach, we’ll simulate conflict resolution with a “last writer wins” policy, storing a (version, value) for each key. Each node uses an integer version that increments on each local write. When replicating, if the incoming version is higher, we overwrite.
+
+***5.2 Code Example (Haskell, Advanced)
+
+#+BEGIN_SRC haskell
+{-# LANGUAGE OverloadedStrings #-}
+module Main where
+
+import Control.Concurrent
+import Control.Concurrent.STM
+import Control.Monad (forM_, forever)
+import Data.Map.Strict (Map)
+import qualified Data.Map.Strict as Map
+import Data.Maybe (fromMaybe)
+import System.Random (randomRIO)
+
+type Key = String
+type Version = Int
+type Value = String
+
+data LocalMsg
+  = LocalPut Key Value
+  | GetStore
+  | Stop
+  deriving (Show)
+
+data RepMsg
+  = ReplicateUpdate Key Version Value
+  deriving (Show)
+
+-- Each node holds a store: Map Key (Version, Value),
+-- plus a local version counter for local writes
+data NodeState = NodeState {
+    nodeId :: Int,
+    store  :: TVar (Map Key (Version, Value)),
+    versionCounter :: TVar Version
+}
+
+nodeMain :: NodeState
+         -> TQueue LocalMsg
+         -> [TQueue RepMsg]
+         -> TQueue RepMsg
+         -> IO ()
+nodeMain st localQ peerQs inQ = do
+  putStrLn $ "[Node " ++ show (nodeId st) ++ "] started."
+  let loopLocal = do
+        msg <- atomically $ readTQueue localQ
+        case msg of
+          LocalPut k v -> do
+            atomically $ do
+              ver <- readTVar (versionCounter st)
+              let newVer = ver + 1
+              writeTVar (versionCounter st) newVer
+              stMap <- readTVar (store st)
+              writeTVar (store st) (Map.insert k (newVer, v) stMap)
+            putStrLn $ "[Node " ++ show (nodeId st) ++ "] local put => " ++ k
+            -- replicate
+            (ver2, val2) <- atomically $ do
+              m <- readTVar (store st)
+              let (vv, vvVal) = fromMaybe (0,"??") (Map.lookup k m)
+              return (vv, vvVal)
+            forM_ peerQs $ \pq ->
+              atomically $ writeTQueue pq (ReplicateUpdate k ver2 val2)
+            loopLocal
+          GetStore -> do
+            m <- atomically $ readTVar (store st)
+            putStrLn $ "[Node " ++ show (nodeId st) ++ "] store => " ++ show m
+            loopLocal
+          Stop -> do
+            putStrLn $ "[Node " ++ show (nodeId st) ++ "] stopping."
+            return ()
+
+  let loopRepl = forever $ do
+        rep <- atomically $ readTQueue inQ
+        case rep of
+          ReplicateUpdate k ver val -> atomically $ do
+            m <- readTVar (store st)
+            case Map.lookup k m of
+              Nothing -> writeTVar (store st) (Map.insert k (ver, val) m)
+              Just (curVer, _curVal) ->
+                if ver > curVer
+                  then do
+                    writeTVar (store st) (Map.insert k (ver, val) m)
+                  else return ()
+
+  replThread <- forkIO loopRepl
+  loopLocal
+  killThread replThread
+  putStrLn $ "[Node " ++ show (nodeId st) ++ "] done."
+
+main :: IO ()
+main = do
+  let nodeCount = 3
+  states <- mapM (\nid -> do
+                     tv <- newTVarIO Map.empty
+                     vc <- newTVarIO 0
+                     return $ NodeState nid tv vc
+                 ) [1..nodeCount]
+
+  localQueues <- replicateM nodeCount newTQueueIO
+  replQueues <- replicateM nodeCount newTQueueIO
+
+  -- create node threads
+  forM_ [0..(nodeCount-1)] $ \i -> do
+    let st = states !! i
+    let lq = localQueues !! i
+    let myrq = replQueues !! i
+    let peers = [ replQueues !! j | j <- [0..(nodeCount-1)], j /= i ]
+    forkIO $ nodeMain st lq peers myrq
+
+  -- simulate random local puts
+  forM_ [1..6] $ \_ -> do
+    n <- randomRIO (0, nodeCount-1)
+    let k = "key" ++ show n
+    let v = "val" ++ show n
+    atomically $ writeTQueue (localQueues !! n) (LocalPut k v)
+    threadDelay 300000
+
+  -- read store on each node
+  forM_ [0..(nodeCount-1)] $ \i -> do
+    atomically $ writeTQueue (localQueues !! i) GetStore
+    threadDelay 200000
+
+  -- stop
+  forM_ [0..(nodeCount-1)] $ \i -> do
+    atomically $ writeTQueue (localQueues !! i) Stop
+
+  threadDelay 1000000
+  putStrLn "[Main] All done."
+#+END_SRC
+
+***5.3.1 Explanation
+
+- We have 3 nodes, each with a NodeState storing a map of Key → (Version, Value). A local versionCounter increments for each local put.
+- On a local put, the node increments its local version, stores (version, value), and replicates to peers. 
+- On replicate, we check if the incoming version is higher than our local version for that key. If so, we overwrite. This yields a last-writer-wins approach to conflicts.
+- The example is advanced in that we handle multiple nodes and a somewhat more robust version-based conflict strategy. Real multi-master might rely on advanced CRDT merges or full consensus.
+
+* 6. Nuances, Variations, and Best Practices
+
+***6.1 Synchronous vs. Asynchronous Replication
+Multi-master replication can be synchronous (involving distributed consensus each write) or asynchronous (faster, but can cause temporary forks).
+
+***6.2 CRDTs
+CRDTs elegantly resolve concurrent conflicts, guaranteeing eventual consistency. For example, a multi-master chat system might rely on CRDT-based data structures ensuring no merges are lost.
+
+***6.3 Sharding
+In large systems, multiple masters can be assigned per partition (shard). Each shard has its own multi-master group, limiting the overhead of merges only to the data subset in question.
+
+***6.4 Conflict Resolution Approaches
+- *Last Writer Wins*: Simple but might lose data if updates represent distinct changes.
+- *Application-Level Merge*: You store multiple versions, let the application logic unify them (like “both name changes are valid, so combine them somehow”).
+- *CRDT Merges or Operational Transformation*: For complex data or real-time collaboration.
+
+***6.5 Consistency Spectrum
+Some systems only do eventual consistency. Others enforce strong consistency with a global consensus. Many adopt a middle ground: read-your-own-writes or a mix of synchronous for certain data, async for others.
+
+***6.6 Partition Tolerance
+Multi-master is designed to keep writing even if some subset of nodes is unreachable, but merges on rejoin can be costly. Alternatively, you block writes in the minority partition to preserve consistency.
+
+***6.7 Implementation Complexity
+Operating a multi-master cluster is non-trivial. Tooling, monitoring, and an operational plan for conflict merges or partial outages is key.
+
+* 7. Real-World Usage
+
+- *Cassandra*: Multi-master ring, each node can accept writes. Conflicts resolved with timestamps (last-write-wins). 
+- *Riak*: A Dynamo-like approach using vector clocks to track concurrency, letting the client or application handle merges if conflict versions appear.
+- *CouchDB*: Offline replicas can rejoin, replicating updates both ways, storing conflicts as different doc revisions.
+- *Git*: A distributed version control that’s effectively multi-master, but merges are done manually by the user. 
+- *Actor-based systems with CRDTs*: Where each actor can perform local updates that replicate to peers, merging conflict-free.
+
+* 8. Conclusion
+
+The Multiple-Master Replication Pattern is a potent choice for systems needing broad write availability, geo-distributed updates, and resilience to partial failures. It allows multiple nodes to concurrently accept writes—raising throughput, boosting local performance, and eliminating single points of update. Yet it introduces complexities: conflict resolution, consistency management, partition handling, and the operational overhead of keeping multiple masters in sync.
+
+We’ve seen:
+
+- **Beginner (Erlang)**: Two processes each acting as “masters” incrementing a counter, merging with a naive approach (e.g., last-write-wins or sum).
+- **Intermediate (Rust)**: A minimal distributed log concept, merging logs from peers, each node storing local writes plus a naive conflict resolution for new entries. 
+- **Advanced (Haskell)**: A version-based approach among three nodes, each adopting last-writer-wins by comparing version numbers, using concurrency with TQueue and STM.
+
+Real production usage typically relies on either established distributed data stores that have hammered out multi-master complexities, or on frameworks that integrate CRDTs or consensus protocols. The pattern’s key advantage—multiple concurrent writers—comes at the price of extra nuance in merges and consistency. In the right domain, though, multi-master can yield high availability, local write speed, and a robust decentralized architecture that gracefully accommodates partial network failures and scale. As always, the trade-off between complexity and concurrency must be weighed against your application’s tolerance for conflict resolution overhead and eventual consistency behaviors.

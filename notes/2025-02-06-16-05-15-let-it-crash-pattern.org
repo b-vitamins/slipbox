@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       504563e3-4d09-4d67-ab90-94129bac453d
+:END:
+#+TITLE: Let-It-Crash Pattern
+#+FILETAGS: :concept:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+

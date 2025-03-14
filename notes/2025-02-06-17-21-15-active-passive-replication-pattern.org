@@ -1,0 +1,436 @@
+:PROPERTIES:
+:ID:       24d48fcc-9292-43ec-8bf0-01aa884fa60b
+:END:
+#+TITLE: Active Passive Replication Pattern
+#+FILETAGS: :concept:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+* 1. Introduction and Historical Context
+
+Active-Passive Replication is a classical architectural pattern in high-availability systems. It designates a single active (or primary) node as the authoritative source for all writes or critical updates. Meanwhile, one or more passive (or standby) nodes receive updates—often via logs or incremental messages—from the active node. The motive is straightforward: if the active node fails, a passive node takes over with minimal downtime and minimal data loss, because it already holds an up-to-date copy (or near up-to-date) of the state.
+
+The lineage of active-passive replication stretches back to mainframe-era fault tolerance and early database mirror techniques. Major database systems (like Oracle, MySQL, or PostgreSQL) implement this pattern in forms of “primary-replica” setups. Message brokers (RabbitMQ, Kafka in mirror mode) or in-memory caches (Redis Sentinel) rely on a single “master,” which replicates state to one or more “slaves.” Despite the sometimes-old-fashioned “master/slave” terminology, the concept remains widely relevant: a single authoritative node avoids concurrency conflicts, while the standbys track the active node’s state in real time.
+
+Because only one node is active at a time, the system is simpler than multi-master or active-active replication in terms of conflict resolution. On the flip side, it can become a bottleneck for write scalability, since all writes funnel through the single active node. Still, for many domains requiring high availability without extreme concurrency demands, active-passive is the sweet spot—balancing consistency, performance, and failover simplicity.
+
+** 1.1 Why Use the Active-Passive Replication Pattern?
+
+- **High Availability**: If the active node fails, the passive node can quickly step in. This drastically reduces downtime compared to cold standby or full restore from backups.
+
+- **Consistent Writes**: By restricting write operations to a single node, you avoid conflicts or the need for distributed consensus on every transaction (as in multi-master setups).
+
+- **Simplicity of Mind**: The replication flow is unidirectional (active → passive). The passive node doesn’t have to reconcile merges or handle conflicting updates.
+
+- **Ease of Conceptualization**: Many system operators find it easier to reason about “one node is the source of truth” plus “others are purely mirrors” than more complicated topologies.
+
+** 1.2 Common Pitfalls
+
+- **Split-Brain**: If the network partitions so that the passive node believes the active is offline, it might promote itself to active, resulting in two actives. Re-joining can lead to data divergence. External consensus (via e.g. etcd, ZooKeeper, or manual intervention) is often needed.
+
+- **Replication Lag**: If replication is asynchronous, the passive node might be slightly behind. In a failure scenario, the newly promoted node may not have the very latest changes (leading to minor data loss).
+
+- **Failover Orchestration**: Automatic failover might be tricky; you must ensure clients redirect to the new active, that the old active doesn’t keep writing if it comes back up, etc.
+
+- **Single Point of Write Scalability**: All writes flow to the active node. If your system requires massive write throughput, a single node might not suffice. Active-passive is typically chosen for availability, not horizontal write-scaling.
+
+Still, active-passive remains popular for mission-critical systems where downtime must be minimized and conflict resolution is an unwanted overhead. Let’s dive into the code in three distinct languages, each illustrating the pattern at escalating levels of complexity.
+
+* 2. Conceptual Motivation
+
+To keep these examples thematically coherent, let’s imagine a scenario around maintaining a small “critical data store” that’s updated frequently. The active node receives user or system updates, applies them, and replicates them to the passive node. The passive node stands by, continuously applying incoming changes. If the active fails, a “failover mechanism” (which might be manual or automatic in production) promotes the passive node to become the new active.
+
+* 3. Beginner Example (Erlang)
+
+** 3.1 Why Erlang?
+
+Erlang is a natural fit for illustrating replication and failover at a small scale because of its concurrency model and “supervisor tree” approach. However, for active-passive, we can keep it simpler by just focusing on two processes: an active process and a passive process. We’ll show how the active replicates changes to the passive. If the active stops, the passive has the latest data.
+
+** 3.2 Example Scenario
+
+A naive example might store a counter or dictionary within a single Erlang process (the active). Another process (the passive) receives replication messages. We demonstrate how the active broadcasts updates and how the passive logs them. Actual failover can be triggered manually (e.g., forcibly killing the active) and letting the passive hold final state or get promoted.
+
+** 3.3 Code Example (Erlang, Beginner)
+#+BEGIN_SRC erlang
+%%% File: active_passive.erl
+-module(active_passive).
+-export([start/0, stop_active/0, become_active/0, get_active_pid/0]).
+
+-define(ACTIVE_REG_NAME, active_process).
+-define(PASSIVE_REG_NAME, passive_process).
+
+start() ->
+    % Spawn Passive
+    PassivePid = spawn(?MODULE, passive_main, []),
+    register(?PASSIVE_REG_NAME, PassivePid),
+    io:format("Passive started at ~p~n", [PassivePid]),
+
+    % Spawn Active
+    ActivePid = spawn(?MODULE, active_main, [PassivePid]),
+    register(?ACTIVE_REG_NAME, ActivePid),
+    io:format("Active started at ~p~n", [ActivePid]),
+    ok.
+
+get_active_pid() ->
+    whereis(?ACTIVE_REG_NAME).
+
+stop_active() ->
+    ActivePid = whereis(?ACTIVE_REG_NAME),
+    exit(ActivePid, kill),
+    io:format("Active forcibly killed.~n", []),
+    ok.
+
+become_active() ->
+    PassivePid = whereis(?PASSIVE_REG_NAME),
+    exit(whereis(?ACTIVE_REG_NAME), kill),
+    unregister(?ACTIVE_REG_NAME),
+    spawn(?MODULE, adopt_passive_state, [PassivePid]).
+
+active_main(PassivePid) ->
+    loop(0, PassivePid).
+
+loop(CurrentValue, PassivePid) ->
+    receive
+        {incr, N} ->
+            NewValue = CurrentValue + N,
+            io:format("Active: increment by ~p, newValue=~p~n", [N, NewValue]),
+            PassivePid ! {replicate, NewValue},
+            loop(NewValue, PassivePid);
+        stop ->
+            io:format("Active stopping gracefully.~n", []),
+            ok;
+        _Other ->
+            io:format("Active received unknown message~n", []),
+            loop(CurrentValue, PassivePid)
+    end.
+
+passive_main() ->
+    PassiveLoop(0).
+
+PassiveLoop(Value) ->
+    receive
+        {replicate, NewVal} ->
+            io:format("Passive: replicated value=~p~n", [NewVal]),
+            PassiveLoop(NewVal);
+        _Other ->
+            PassiveLoop(Value)
+    end.
+
+adopt_passive_state(PassivePid) ->
+    io:format("Promoting passive to active: but we don't have the real data, so we reset to 0~n", []),
+    exit(PassivePid, kill),
+    NewActivePid = spawn(?MODULE, active_main, [self()]),
+    register(?ACTIVE_REG_NAME, NewActivePid),
+    io:format("New active at ~p, resetting value=0~n", [NewActivePid]).
+#+END_SRC
+
+** 3.3.1 Explanation
+
+- The active process manages a simple integer. For {incr, N}, it updates CurrentValue and notifies the passive via {replicate, NewValue}.
+- The passive process just loops in PassiveLoop, storing the last known value. Actual data is ephemeral here. A real system might keep it in a state record or database.
+- The function stop_active/0 forcibly kills the active. The passive remains with the final known value. become_active/0 is a naive approach that kills the old active, kills the old passive, and spawns a new active (with value 0). Real systems would do better to retrieve the real value from the old passive.
+
+* 4. Intermediate Example (Rust)
+
+** 4.1 Why Rust?
+
+Rust’s concurrency and ownership model allow us to replicate data between threads (or processes) with explicit control over synchronization. We can demonstrate an “active thread” that updates a shared data structure while pushing changes to the “passive thread.” Our example is slightly more advanced, featuring a small key-value store and a more explicit approach to “promoting” the passive if the active fails.
+
+** 4.2 Example Scenario
+
+Suppose we have an in-memory key-value store (like a mini cache). The active node receives “put” commands from some external source. It updates its store, then sends replication messages to the passive node. If the active node is forcibly stopped, the passive node has a near-exact copy of the store. We’ll demonstrate the logic in a single process with multiple threads.
+
+** 4.3 Code Example (Rust, Intermediate)
+#+BEGIN_SRC rust
+use std::collections::HashMap;
+use std::sync::{Arc, Mutex, mpsc};
+use std::thread;
+use std::time::Duration;
+
+#[derive(Debug, Clone)]
+enum ActiveMsg {
+    Put(String, String),
+    Stop,
+}
+
+#[derive(Debug, Clone)]
+enum PassiveMsg {
+    Replicate(String, String),
+    Stop,
+}
+
+#[derive(Debug)]
+struct Store {
+    data: HashMap<String, String>,
+}
+
+impl Store {
+    fn new() -> Self {
+        Store { data: HashMap::new() }
+    }
+    fn put(&mut self, key: String, value: String) {
+        self.data.insert(key, value);
+    }
+}
+
+fn active_main(
+    store: Arc<Mutex<Store>>,
+    rx: mpsc::Receiver<ActiveMsg>,
+    rep_tx: mpsc::Sender<PassiveMsg>,
+) {
+    println!("[Active] Started.");
+    while let Ok(msg) = rx.recv() {
+        match msg {
+            ActiveMsg::Put(k, v) => {
+                {
+                    let mut s = store.lock().unwrap();
+                    s.put(k.clone(), v.clone());
+                    println!("[Active] Put {}={}, store={:?}", k, v, s.data);
+                }
+                // replicate
+                if let Err(e) = rep_tx.send(PassiveMsg::Replicate(k, v)) {
+                    println!("[Active] Failed to replicate: {}", e);
+                }
+            }
+            ActiveMsg::Stop => {
+                println!("[Active] Stopping now.");
+                break;
+            }
+        }
+    }
+    println!("[Active] Exiting.");
+}
+
+fn passive_main(store: Arc<Mutex<Store>>, rep_rx: mpsc::Receiver<PassiveMsg>) {
+    println!("[Passive] Started.");
+    while let Ok(msg) = rep_rx.recv() {
+        match msg {
+            PassiveMsg::Replicate(k, v) => {
+                let mut s = store.lock().unwrap();
+                s.put(k.clone(), v.clone());
+                println!("[Passive] Replicated {}={}, store={:?}", k, v, s.data);
+            }
+            PassiveMsg::Stop => {
+                println!("[Passive] Stopping now.");
+                break;
+            }
+        }
+    }
+    println!("[Passive] Exiting.");
+}
+
+fn main() {
+    // The store for active
+    let store_active = Arc::new(Mutex::new(Store::new()));
+    // The store for passive
+    let store_passive = Arc::new(Mutex::new(Store::new()));
+
+    // Channels
+    let (active_tx, active_rx) = mpsc::channel::<ActiveMsg>();
+    let (passive_tx, passive_rx) = mpsc::channel::<PassiveMsg>();
+
+    // Spawn passive
+    {
+        let s_passive = store_passive.clone();
+        thread::spawn(move || {
+            passive_main(s_passive, passive_rx);
+        });
+    }
+    // Spawn active
+    {
+        let s_active = store_active.clone();
+        let rep_tx = passive_tx.clone();
+        thread::spawn(move || {
+            active_main(s_active, active_rx, rep_tx);
+        });
+    }
+
+    // Simulate some commands
+    active_tx.send(ActiveMsg::Put("foo".into(), "bar".into())).unwrap();
+    thread::sleep(Duration::from_millis(300));
+    active_tx.send(ActiveMsg::Put("alpha".into(), "beta".into())).unwrap();
+    thread::sleep(Duration::from_millis(300));
+
+    // Now forcibly "stop" the active
+    println!("Main: stopping active.");
+    active_tx.send(ActiveMsg::Stop).unwrap();
+    thread::sleep(Duration::from_secs(1));
+
+    // The passive has last known data. 
+    // Let's read final store from the passive:
+    {
+        let final_passive = store_passive.lock().unwrap();
+        println!("[Main] Passive store after active stop: {:?}", final_passive.data);
+    }
+
+    // Clean up passive
+    println!("Main: stopping passive next.");
+    passive_tx.send(PassiveMsg::Stop).unwrap();
+    thread::sleep(Duration::from_secs(1));
+
+    println!("Main: done demonstration.");
+}
+#+END_SRC
+
+** 4.3.1 Explanation
+
+- Active node uses store_active for local data. On each “Put” command, it modifies the store, then replicates via PassiveMsg to the passive.
+- Passive node uses store_passive, applying each replication to maintain a mirror copy.
+- We forcibly stop the active by sending ActiveMsg::Stop. The passive remains with final data. If we wanted to “promote” the passive, we’d let it accept new writes or spawn a new active from its data.
+
+* 5. Advanced Example (Haskell)
+
+** 5.1 Why Haskell?
+
+Haskell’s concurrency model (lightweight threads, STM, etc.) and purely functional style can highlight how we might approach replication in a more declarative manner. We’ll illustrate a slightly more advanced scenario: the active node runs a tiny command loop that processes “put” requests. Each time it replicates to the passive node’s store via TQueue messages. If the active is forcibly terminated, the passive node’s store remains. A real system might perform a more dynamic “promotion,” but we’ll keep it simple.
+
+** 5.2 Example Scenario
+
+We have an Active node reading commands from an input TQueue. Each command is a (Key, Value) pair. The active node updates its local store and replicates. The passive node receives replication messages in another TQueue. If the active node stops, the passive node has the last known copy. That’s effectively an active-passive pattern in memory, demonstrative of how you might build a more advanced approach with network or persistent storage in real Haskell code.
+
+** 5.3 Code Example (Haskell, Advanced)
+#+BEGIN_SRC haskell
+{-# LANGUAGE OverloadedStrings #-}
+module Main where
+
+import Control.Concurrent
+import Control.Concurrent.STM
+import Control.Monad (forever)
+import qualified Data.Map.Strict as Map
+import Data.Map.Strict (Map)
+import Text.Printf
+
+type Key = String
+type Value = String
+
+data ActiveMsg = Put Key Value | StopActive
+data PassiveMsg = Replicate Key Value | StopPassive
+
+-- We'll store data in a TVar (thread-safe via STM)
+type Store = TVar (Map Key Value)
+
+activeNode :: Store -> TQueue ActiveMsg -> TQueue PassiveMsg -> IO ()
+activeNode store activeQ passiveQ = do
+  putStrLn "[Active] Started."
+  let loop = do
+        msg <- atomically $ readTQueue activeQ
+        case msg of
+          Put k v -> do
+            atomically $ do
+              currentMap <- readTVar store
+              let newMap = Map.insert k v currentMap
+              writeTVar store newMap
+            printf "[Active] Put %s=%s\n" k v
+            -- replicate
+            atomically $ writeTQueue passiveQ (Replicate k v)
+            loop
+          StopActive -> do
+            putStrLn "[Active] Stopping now."
+  loop
+  putStrLn "[Active] Exiting."
+
+passiveNode :: Store -> TQueue PassiveMsg -> IO ()
+passiveNode store passiveQ = do
+  putStrLn "[Passive] Started."
+  let loop = do
+        msg <- atomically $ readTQueue passiveQ
+        case msg of
+          Replicate k v -> do
+            atomically $ do
+              currentMap <- readTVar store
+              let newMap = Map.insert k v currentMap
+              writeTVar store newMap
+            printf "[Passive] Replicated %s=%s\n" k v
+            loop
+          StopPassive -> do
+            putStrLn "[Passive] Stopping now."
+  loop
+  putStrLn "[Passive] Exiting."
+
+main :: IO ()
+main = do
+  activeStore <- newTVarIO Map.empty
+  passiveStore <- newTVarIO Map.empty
+
+  activeQ <- newTQueueIO
+  passiveQ <- newTQueueIO
+
+  -- spawn active
+  _ <- forkIO $ activeNode activeStore activeQ passiveQ
+  -- spawn passive
+  _ <- forkIO $ passiveNode passiveStore passiveQ
+
+  -- simulate commands
+  threadDelay 500000
+  atomically $ writeTQueue activeQ (Put "foo" "bar")
+  threadDelay 300000
+  atomically $ writeTQueue activeQ (Put "alpha" "beta")
+  threadDelay 300000
+
+  putStrLn "[Main] Stopping active node."
+  atomically $ writeTQueue activeQ StopActive
+  threadDelay 1000000
+
+  -- read final data from passive
+  finalMap <- atomically $ readTVar passiveStore
+  putStrLn $ "[Main] Passive store after active stop: " ++ show finalMap
+
+  -- stop passive
+  putStrLn "[Main] Stopping passive node."
+  atomically $ writeTQueue passiveQ StopPassive
+  threadDelay 500000
+
+  putStrLn "[Main] Done demonstration."
+#+END_SRC
+
+** 5.3.1 Explanation
+
+- Active reads ActiveMsg from activeQ. On Put, it updates store + replicates. We keep no direct concurrency logic aside from STM. The node terminates on StopActive.
+- Passive reads PassiveMsg from passiveQ. On Replicate, it updates store. Terminates on StopPassive.
+- We forcibly stop the active after a few puts, then examine the passive. It has the final data—this is a minimal demonstration of active-passive in a purely functional concurrency environment.
+
+* 6. Nuances, Variations, and Best Practices
+
+** 6.1 Synchronous vs. Asynchronous Replication
+
+- Synchronous: The active node waits for the passive node to confirm each write. No data loss if the active fails, but higher latency.
+- Asynchronous: The active node commits locally, then replicates. This is faster but might lose recent writes if the active crashes before replication.
+
+** 6.2 Failover Mechanism
+
+- Manual: An operator kills the old active, promotes the passive to become the new active.
+- Automatic: Using a consensus or heartbeat approach, if the active is unresponsive, the passive declares itself active. Must guard against split-brain (two actives).
+
+** 6.3 Handling Large or Complex State
+
+- If your state is large, you might replicate logs or partial snapshots to reduce overhead.
+- The pattern remains the same: a single writer node, multiple replicas for failover.
+
+** 6.4 Multiple Passives
+
+- You can scale read throughput or redundancy by having multiple standbys. Each receives the same replication feed from the active node.
+- Only one is promoted at a time in a failure scenario.
+
+** 6.5 Potential Bottleneck
+
+- All writes pass through the single active. For extremely high write volume, this can be a bottleneck. Active-passive typically suits high availability more than write scalability.
+
+** 6.6 Testing
+
+- Simulate active crashes to see if the passive has consistent data.
+- Introduce network partitions or concurrency to ensure your pattern handles real failure modes.
+
+* 7. Real-World Usage
+
+- **Databases**: Primary–standby replication is a core example (MySQL, Postgres).
+- **In-memory Data Stores**: Redis supports a “master–replica” mode. The replica can be promoted if the master fails (Redis Sentinel).
+- **Message Brokers**: RabbitMQ mirrored queues have a single master queue, one or more passive mirrors. On master failure, a mirror is promoted.
+- **Actor Systems**: Where a single actor is the “main aggregator,” with a secondary actor receiving replicate messages. On aggregator death, the secondary takes over.
+
+* 8. Conclusion
+
+The Active-Passive Replication Pattern remains a foundational approach for high availability in distributed systems. It ensures a single authoritative node for writes, while one or more standby nodes mirror updates. If the active fails, a standby quickly takes over with minimal downtime and data loss. We saw how:
+
+- **Beginner (Erlang)**: We keep a simple counter in an “active” process, replicate to a “passive” process. On active kill, the passive has last known state.
+- **Intermediate (Rust)**: A small key-value store approach, with an active thread funneling writes to the store and replicating to a passive. Stopping the active leaves the passive with final data.
+- **Advanced (Haskell)**: Using STM and concurrency channels, we replicate a map from active to passive, showing a purely functional concurrency example. On active stop, the passive holds the final state.
+
+In real systems, you’ll typically add robust failover logic, ensuring that once the active is down, the passive is automatically (or manually) promoted, and clients redirect seamlessly. Yet even in more complex settings, the core principle remains: one node is the single writer, the rest are replicas. That simplicity yields strong consistency and easier failover—major reasons why active-passive is a go-to pattern in mission-critical deployments worldwide.
