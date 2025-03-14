@@ -5,11 +5,13 @@
 #+FILETAGS: :dlfc:literature:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 #+BEGIN: clocktable :maxlevel 3 :scope nil :emphasize nil
-#+CAPTION: Clock summary at [2024-11-25 Mon 12:12]
+#+CAPTION: Clock summary at [2025-03-01 Sat 07:49]
 | Headline                                 |    Time |      |      |
 |------------------------------------------+---------+------+------|
-| *Total time*                             | *31:08* |      |      |
+| *Total time*                             | *33:05* |      |      |
 |------------------------------------------+---------+------+------|
+| Probabilities                            |    1:57 |      |      |
+| \_  The Rules of Probability             |         | 1:57 |      |
 | Deep Neural Networks                     |   29:44 |      |      |
 | \_  Limitations of Fixed Basis Functions |         | 7:53 |      |
 | \_    The curse of dimensionality        |         |      | 4:22 |
@@ -113,6 +115,9 @@
 ** The Rules of Probability
 :PROPERTIES:
 :ID:       97265842-89f6-42b4-855e-56ad61426639
+:END:
+:LOGBOOK:
+CLOCK: [2025-03-01 Sat 03:52]--[2025-03-01 Sat 05:49] =>  1:57
 :END:
 *** A medical screening example
 :PROPERTIES:

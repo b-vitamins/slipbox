@@ -12,13 +12,15 @@ Since heat is not a function of state, the path by which it is supplied must als
 1) the heat capacities at *constant volume*, denoted by \(C_{V}=\mathrm{đ} Q /\left.\mathrm{d} T\right|_{V}\)
 
 \[
-C_{V}=\left.\frac{\mathrm{đ} Q}{\mathrm{~d} T}\right|_{V}=\left.\frac{\mathrm{d} E-\mathrm{đ} W}{\mathrm{~d} T}\right|_{V}=\left.\frac{\mathrm{d} E+P \mathrm{~d} V}{\mathrm{~d} T}\right|_{V}=(\partial_T E)_{V}. \tag{1}
+C_{V}=\left.\frac{\mathrm{đ} Q}{\mathrm{~d} T}\right|_{V}=\left.\frac{\mathrm{d} E-\mathrm{đ} W}{\mathrm{~d} T}\right|_{V}=\left.\frac{\mathrm{d} E+P \mathrm{~d} V}{\mathrm{~d} T}\right|_{V}=(\partial_T E)_{V}.
+\tag{1}
 \]
 
 2) the heat capacities at constant pressure, denoted by \(C_{V}=\mathrm{đ} Q /\left.\mathrm{d} T\right|_{P}\)
 
 \[
-C_{P}=\left.\frac{\mathrm{đ} Q}{\mathrm{~d} T}\right|_{P}=\left.\frac{\mathrm{d} E-\mathrm{đ} W}{\mathrm{~d} T}\right|_{P}=\left.\frac{\mathrm{d} E+P \mathrm{~d} V}{\mathrm{~d} T}\right|_{P}=(\partial_T E)_{P} + P (\partial_T V)_{P}. \tag{2}
+C_{P}=\left.\frac{\mathrm{đ} Q}{\mathrm{~d} T}\right|_{P}=\left.\frac{\mathrm{d} E-\mathrm{đ} W}{\mathrm{~d} T}\right|_{P}=\left.\frac{\mathrm{d} E+P \mathrm{~d} V}{\mathrm{~d} T}\right|_{P}=(\partial_T E)_{P} + P (\partial_T V)_{P}.
+\tag{2}
 \]
 
 The latter is larger since some of the heat is used up in the work done in changes of volume.

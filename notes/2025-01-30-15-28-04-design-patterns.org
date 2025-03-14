@@ -1038,75 +1038,137 @@ class ChatActor extends Actor {
 
 In actor systems, each actor’s “receive” method is triggered per message, guaranteeing sequential handling. The concurrency is message-driven, scaling well for big distributed systems.
 
-** 7. Event Sourcing
+** 7. Bulkhead
 
-The [[id:8c049207-bee5-439f-a1fc-2b8626836b7c][Event Sourcing Pattern]] stores all changes to application state as a sequence of events, rather than overwriting the current state. The system replays events to rebuild or project current state. Commonly used in microservices or domain-driven design to handle auditable, time-travel, or ephemeral data reconstruction.
+The [[id:61d06010-35bc-4b1d-b351-28901e2ef1f8][Bulkhead Pattern]] pattern isolates resources so a failure or overload in one part does not cascade. It might mean separate thread pools for each subsystem, or distinct connection pools, ensuring each subsystem’s problems remain contained.
 
-*** 7.1 Why Use Event Sourcing?
-- Audit log: you have the entire history of changes, enabling retroactive queries or debugging.
-- Rebuild state: if the system crashes or you need a new read model, replay events from the log.
-- Natural approach: many business domains revolve around events (transactions, reservations, etc.).
+*** 10.1 Why Use Bulkhead?
+- Limit blast radius: If “inventory” is overloaded, “payment” can still proceed with its own dedicated resources.
+- Controlled resource usage: Each partition has a concurrency limit or thread pool, preventing one subsystem from starving the rest.
 
-*** 7.2 Typical Scenario
-A banking system might store each deposit or withdrawal as an event. The “account balance” is derived by summing the relevant deposit/withdraw events. Overwrites of the account’s row are avoided.
+*** 10.2 Typical Scenario
+Microservice calls: you might define an “inventoryPool” with 10 threads and “paymentPool” with 5 threads. If inventory requests spike, they fill up the 10 threads, but payment stays unaffected with its own 5.
 
-*** 7.3 Example (Conceptual)
+*** 10.3 Example (Conceptual)
 #+BEGIN_SRC java
-public class Event {
-   public String type;
-   public Map<String, Object> data;
-   public long timestamp;
+ExecutorService paymentPool = Executors.newFixedThreadPool(5);
+ExecutorService inventoryPool = Executors.newFixedThreadPool(10);
+
+public void handlePayment(Runnable r) {
+   paymentPool.submit(r);
 }
 
-public class EventStore {
-   private List<Event> events = new ArrayList<>();
-   public void append(Event e) { events.add(e); }
-   public List<Event> replay() { return events; }
+public void handleInventory(Runnable r) {
+   inventoryPool.submit(r);
 }
 #+END_SRC
 
-When you want the state, you read all events relevant to that entity, applying them in order. This fosters strong auditability and “time travel” for debugging or analytics.
+If inventory usage surges, it blocks only that pool, leaving the payment pool healthy.
 
-** 8. Saga
+* Reactive programming
+In the realm of distributed systems and event-driven architectures, *Reactive programming* addresses challenges related to high concurrency, partial failures, nonblocking I/O, and eventual consistency. Below, we outline a broad set of reactive patterns—many drawn from *Reactive Design Patterns*. Each pattern tackles a recurring problem in building responsive, resilient, and elastic software. True to the style shown under “Object-oriented-programming” and “Asynchronous programming,” each pattern here includes a short conceptual overview, along with the “Why Use …?”, “Typical Scenario,” and “Example (Conceptual)” subheadings for consistency.
 
-A [[id:1a801cd0-bd5b-4036-9bc2-61ba621ddba0][Saga Pattern]] handles distributed transactions in a microservice setting. Each step is a local transaction in one service. If a step fails, the saga runs compensating transactions in reverse order for the successfully completed steps, ensuring system-wide consistency without a global transaction manager.
+** 1. Simple Component Pattern
+A “[[id:918a2a4f-24ec-4dea-9bca-f7f93c517654][Simple Component]]” is an isolated, single-responsibility module that processes messages or requests in a straightforward manner. It holds minimal or no internal state, letting it scale out easily. The goal is to keep each component’s logic small and composable, so that failures or resource bottlenecks remain localized.
 
-*** 8.1 Why Use Saga?
-- Solve the “distributed transaction” challenge: no global lock or 2-phase commit, but you can define partial rollback logic for each step.
-- Resilience: if step 3 fails, you revert steps 1-2 with “compensate” calls.
-- Common in order booking, travel booking, or any multi-service workflow.
+*** 1.1 Why Use The Simple Component pattern?
+- **Maintainability**: By limiting scope, the logic stays comprehensible and testable.  
+- **Resilience**: If each component stands alone, unexpected failures do not cascade widely.  
+- **Scalability**: With little internal state, scaling components horizontally is simpler—just add more instances.
 
-*** 8.2 Typical Scenario
-Booking a flight, hotel, and rental car. Each sub-reservation is a local transaction. If the rental step fails, you cancel flight, hotel, or do partial compensation.
+*** 1.2 Typical Scenario
+Microservices or actor-based systems often employ many small, single-purpose actors or services. One might handle incoming data transformations, another might persist logs to storage, and so forth. If any one service fails, it can be restarted or replaced easily without dragging down the entire system.
 
-*** 8.3 Example (Conceptual)
-#+BEGIN_SRC java
-class SagaStep {
-   boolean execute();
-   void compensate();
-}
+*** 1.3 Example (Conceptual)
+Suppose you have an actor that simply receives “TranslateText” messages and returns the translated string:
 
-class SagaCoordinator {
-   boolean runSaga(List<SagaStep> steps) {
-       List<SagaStep> executed = new ArrayList<>();
-       for(SagaStep step: steps){
-           if(step.execute()) {
-               executed.add(step);
-           } else {
-               for(int i=executed.size()-1; i>=0; i--){
-                   executed.get(i).compensate();
-               }
-               return false;
-           }
-       }
-       return true;
-   }
+#+BEGIN_SRC scala
+class TranslatorActor extends Actor {
+  def receive = {
+    case TranslateText(text, lang) =>
+      val translation = doTranslate(text, lang)
+      sender() ! TranslationResult(translation)
+  }
+
+  private def doTranslate(text: String, lang: String): String = {
+    // Some simple lookup or external API call
+    text.toUpperCase + s" in $lang"
+  }
 }
 #+END_SRC
 
-The pattern ensures partial failures do not leave the system in an inconsistent state.
+Here, the actor does one job—translating text—and holds no external mutable state. This simplicity eases testing and scaling: run multiple =TranslatorActor= instances behind a router, for example, to handle more load.
 
-** 9. Circuit Breaker
+---
+
+** 2. Error Kernel Pattern
+Under the [[id:a3e37a21-7f53-4d93-9a09-3722e572f221][Error Kernel Pattern]], the most critical logic or data is encapsulated in a “kernel” component with heightened resilience and minimal exposure to external failures. Less critical child components can crash or be restarted without jeopardizing the kernel’s integrity.
+
+*** 2.1 Why Use The Error Kernel pattern?
+- **Safeguard essential data**: If peripheral tasks fail, the kernel keeps core state consistent.  
+- **Hierarchical fault management**: The kernel may supervise children, isolating their failures from spreading upward.  
+- **Reliability**: Mission-critical computations remain “shielded” from routine errors.
+
+*** 2.2 Typical Scenario
+An online gaming server might keep authoritative game state in an error kernel. Auxiliary modules—like analytics or social feed updaters—can crash or restart under high load without risking the primary game logic.
+
+*** 2.3 Example (Conceptual)
+#+BEGIN_SRC scala
+class GameEngineKernel extends Actor {
+  override def receive: Receive = {
+    case UpdatePosition(player, coords) =>
+      // Validate & update critical game state
+    case msg =>
+      // Possibly forward lesser tasks to child actors
+  }
+
+  override val supervisorStrategy = OneForOneStrategy() {
+    case _: Exception => Restart
+  }
+}
+#+END_SRC
+
+Children in the hierarchy might do noncritical tasks. If a child fails, the kernel restarts it. The essential engine state remains safely guarded in the kernel.
+
+---
+
+** 3. Let-It-Crash Pattern
+The [[id:504563e3-4d09-4d67-ab90-94129bac453d][Let-It-Crash Pattern]] (famed in Erlang and the Akka toolkit) advocates embracing failures at runtime rather than exhaustively defensive-coding every possibility. Components are designed with narrow responsibilities and can be restarted quickly upon crashes, ensuring the system as a whole self-heals.
+
+*** 3.1 Why Use The Let-It-Crash pattern?
+- **Simplicity**: Instead of writing complex error handling for every edge case, let the runtime supervision handle restarts.  
+- **Fault Tolerance**: Crashes are localized; the failing component restarts in a clean state.  
+- **Resilience**: The system recovers automatically, often faster than if code attempted complicated fallback paths.
+
+*** 3.2 Typical Scenario
+An Erlang/Elixir or Akka-based system processes high volumes of messages. If one actor runs into an unforeseen exception, it simply dies. The supervisor restarts it with minimal disruption.
+
+*** 3.3 Example (Conceptual)
+#+BEGIN_SRC erlang
+-module(transient_worker).
+-behaviour(gen_server).
+
+init(_) ->
+    {ok, #state{}}.
+
+handle_call(Request, _From, State) ->
+    case do_work(Request) of
+        {ok, Result} -> {reply, Result, State};
+        error        -> exit(crash)
+    end.
+#+END_SRC
+
+The server does minimal local error handling. If =do_work/1= fails, it simply calls =exit(crash)=. A higher-level supervisor restarts this process under a known good state.
+
+**** 3.3.1 Heartbeat pattern (corollary)
+A *Heartbeat* check helps detect unresponsive or hung processes. If a process fails to send periodic “I’m alive” signals, its supervisor can assume it’s stuck and force a restart.
+
+**** 3.3.2 Proactive Failure Signal pattern (corollary)
+Instead of waiting passively to crash, a component sensing its own degraded condition explicitly signals its supervisor or peers that it’s about to fail, allowing graceful takeover or remediation.
+
+---
+
+** 4. Circuit Breaker Pattern
 
 A [[id:793b024f-d927-43ce-a0f9-352d032c1c96][Circuit Breaker Pattern]] prevents a service from making repeated calls to a failing or slow resource. Once a threshold of failures is reached, the breaker “opens,” and further calls immediately fail or return a fallback. After a timeout, the system tries again (the “half-open” state). If successful, the circuit closes again.
 
@@ -1158,30 +1220,605 @@ class CircuitBreaker:
         self.next_try_time = time.time() + self.timeout
 #+END_SRC
 
-** 10. Bulkhead
+** 5. Active-Passive Replication Pattern
+In [[id:24d48fcc-9292-43ec-8bf0-01aa884fa60b][Active Passive Replication Pattern]], one instance of a component (the “active”) handles all requests, while one or more “passive” standbys keep their state updated. If the active fails, a passive is promoted to active.
 
-The [[id:61d06010-35bc-4b1d-b351-28901e2ef1f8][Bulkhead Pattern]] pattern isolates resources so a failure or overload in one part does not cascade. It might mean separate thread pools for each subsystem, or distinct connection pools, ensuring each subsystem’s problems remain contained.
+*** 5.1 Why Use The Active-Passive Replication pattern?
+- **High Availability**: Ensures there is always at least one hot or warm standby available.  
+- **Simplicity**: The primary does the main work; secondaries mainly mirror state changes.  
+- **Controlled Failover**: Clear failover logic makes recovery predictable.
 
-*** 10.1 Why Use Bulkhead?
-- Limit blast radius: If “inventory” is overloaded, “payment” can still proceed with its own dedicated resources.
-- Controlled resource usage: Each partition has a concurrency limit or thread pool, preventing one subsystem from starving the rest.
+*** 5.2 Typical Scenario
+Databases often run a primary node with one or more replicas in standby, replicating logs or snapshots. When the primary crashes, a replica steps up to become the new primary.
 
-*** 10.2 Typical Scenario
-Microservice calls: you might define an “inventoryPool” with 10 threads and “paymentPool” with 5 threads. If inventory requests spike, they fill up the 10 threads, but payment stays unaffected with its own 5.
+*** 5.3 Example (Conceptual)
+#+BEGIN_SRC pseudo
+primaryInstance.processRequest(req)
+secondaryInstance.receiveLog(req.operation)
 
-*** 10.3 Example (Conceptual)
-#+BEGIN_SRC java
-ExecutorService paymentPool = Executors.newFixedThreadPool(5);
-ExecutorService inventoryPool = Executors.newFixedThreadPool(10);
+if primaryInstance.detectsFailure() then
+   secondaryInstance.promoteToPrimary()
+end
+#+END_SRC
 
-public void handlePayment(Runnable r) {
-   paymentPool.submit(r);
-}
+The passive keeps up-to-date by replaying the same inputs or state changes, ensuring minimal downtime upon failover.
 
-public void handleInventory(Runnable r) {
-   inventoryPool.submit(r);
+---
+
+** 6. Multiple-Master Replication Patterns
+The [[id:871a6ea6-a13c-443d-8d64-605c47a8e867][Multiple-Master Replication Pattern]] setups allow multiple “primary” nodes to accept writes concurrently. Variations include consensus-based replication, conflict detection/resolution, or CRDTs.
+
+*** 6.1 Consensus-based replication
+A consensus protocol (e.g., Raft or Paxos) ensures a majority agreement before accepting any state change.
+- **Why Use**: Strong consistency across nodes.
+- **Scenario**: Leader-based replication for databases or configuration stores.
+- **Example**: Raft-based cluster elects a leader. Writes must gain majority acknowledgment to commit.
+
+*** 6.2 Replication with conflict detection and resolution
+Nodes may accept writes independently, then detect conflicts asynchronously, resolving them via timestamps or custom merge logic.
+- **Why Use**: Looser consistency but better availability.
+- **Scenario**: Multi-region data with occasional network splits.
+- **Example**: Detecting “last writer wins,” or merging versions based on domain logic.
+
+*** 6.3 Conflict-free replicated data types (CRDTs)
+Data structures designed to converge automatically even if updates arrive in different orders.
+- **Why Use**: True “eventual consistency” with minimal manual conflict resolution.
+- **Scenario**: Collaborative editing or distributed counters.
+- **Example**: A G-Counter that merges increments from multiple nodes, guaranteeing monotonic growth.
+
+---
+
+** 7. Active-Active Replication Pattern
+In [[id:8f2c01fd-3a40-42aa-aad4-9f208b426c57][Active-Active Replication Pattern]], all replicas actively process requests. Clients may be routed to any node. The system relies on replication protocols to maintain consistent or eventually consistent state.
+
+*** 7.1 Why Use The Active-Active Replication pattern?
+- **Maximal Throughput**: All nodes are utilized rather than sitting passively.  
+- **Geographical Distribution**: Users connect to the closest active node.  
+- **Resilience**: If one node fails, others continue serving without explicit failover steps.
+
+*** 7.2 Typical Scenario
+A global distributed database cluster where each datacenter runs an “active” node. Writes propagate among nodes, with mechanisms to handle conflicts.
+
+*** 7.3 Example (Conceptual)
+#+BEGIN_SRC pseudo
+for each activeNode in cluster:
+    activeNode.applyWriteLocally(req)
+    replicateToPeers(req)
+#+END_SRC
+
+All active nodes coordinate updates. Conflicts may be resolved via timestamp rules or CRDT merges.
+
+---
+
+** 8. Resource Encapsulation Pattern
+in [[id:536c6ca9-6da8-4074-a55b-c2d025f7a40f][Resource Encapsulation Pattern]], each component with exclusive access to a critical resource (file system, database connection, hardware) manages that resource internally, exposing only message-based or method-based interfaces. This prevents shared-memory contention.
+
+*** 8.1 Why Use The Resource Encapsulation pattern?
+- **Avoid Race Conditions**: A single authority controls a resource, so concurrency mistakes vanish.  
+- **Modularity**: The resource’s usage policy lives in one place.  
+- **Ease of Supervision**: If the component fails, the resource can be reclaimed or re-initialized cleanly.
+
+*** 8.2 Typical Scenario
+An actor dedicated to managing a hardware sensor might accept “ReadSensor” or “Calibrate” messages, ensuring consistent usage of the device.
+
+*** 8.3 Example (Conceptual)
+#+BEGIN_SRC scala
+class SensorManagerActor extends Actor {
+  private var sensorHandle: SensorHandle = initializeSensor()
+  def receive = {
+    case ReadSensor => sender() ! sensorHandle.readData()
+    case Calibrate  => sensorHandle.calibrate()
+  }
 }
 #+END_SRC
 
-If inventory usage surges, it blocks only that pool, leaving the payment pool healthy.
+Client code never manipulates the sensor directly, preventing concurrency issues.
+
+---
+
+** 9. Resource Loan Pattern
+In [[id:51fa7c5c-4dfd-40f4-a7db-4c7e3ef52bfa][Resource Loan Pattern]], “lending” a resource to a client for a short period, but with explicit constraints to ensure correct usage and safe return. The resource owner remains in charge.
+
+*** 9.1 Why Use The Resource Loan pattern?
+- **Controlled Sharing**: Temporary usage is authorized without permanent transfer.  
+- **Safe Lifecycle**: The owner reclaims resources if the borrower fails or times out.  
+- **Modularity**: The borrowing logic is standardized, preventing ad hoc hacks.
+
+*** 9.2 Typical Scenario
+A database-connection actor that “loans” a connection to a worker actor for a single query, after which the connection must be returned or automatically revoked.
+
+*** 9.3 Example (Conceptual)
+#+BEGIN_SRC pseudo
+dbManagerActor ! LoanConnection(requestId)
+
+...
+
+// Inside dbManagerActor
+onMessage(LoanConnection(requestId)) {
+    val conn = pool.take()
+    sender() ! ConnectionGranted(requestId, conn)
+    scheduleTimeout(requestId, 5.seconds)
+}
+onMessage(ReturnConnection(requestId, conn)) {
+    pool.release(conn)
+}
+#+END_SRC
+
+If the borrower never returns the connection, the manager forcibly reclaims it upon timeout.
+
+---
+
+** 10. Complex Command Pattern
+When a single request triggers a multi-step sequence or requires orchestrating multiple resources, the “Complex Command” encapsulates that workflow in a dedicated component or message-driven process.
+
+*** 10.1 Why Use The Complex Command pattern?
+- **Sequential Logic**: Keep multi-step processes cohesive while still nonblocking.  
+- **Reusability**: The same command logic can be run repeatedly with different parameters.  
+- **Failure Management**: If a step fails, the command can apply a known compensation or abort.
+
+*** 10.2 Typical Scenario
+Placing an e-commerce order triggers checking inventory, charging a credit card, generating shipping labels, and sending a confirmation email. Encapsulating these tasks in one orchestrator actor or workflow keeps the logic cohesive.
+
+*** 10.3 Example (Conceptual)
+#+BEGIN_SRC scala
+class OrderPlacementCommand(orderId: String) extends Actor {
+  def receive = {
+    case StartOrder =>
+      context.actorOf(Props[InventoryActor]) ! CheckInventory(orderId)
+    case InventoryOk =>
+      context.actorOf(Props[PaymentActor]) ! ChargeCard(orderId)
+    case PaymentConfirmed =>
+      // Next step...
+  }
+}
+#+END_SRC
+
+---
+
+** 11. The Resource Pool Pattern
+A set of reusable resources—connections, threads, or GPU contexts—are maintained in a pool. Components acquire from the pool when needed and return once done.
+
+*** 11.1 Why Use The Resource Pool pattern?
+- **Efficiency**: Avoid the overhead of frequently creating and destroying expensive resources.  
+- **Throughput Control**: The pool can impose maximum concurrency or usage.  
+- **Scalability**: Adding resources to the pool can handle higher load without redesign.
+
+*** 11.2 Typical Scenario
+A classic example is a connection pool for a database. Each request borrows a connection from the pool, uses it briefly, then returns it, ensuring the system never spawns excessive connections.
+
+*** 11.3 Example (Conceptual)
+#+BEGIN_SRC java
+public class ConnectionPool {
+    private BlockingQueue<DBConnection> pool;
+
+    public ConnectionPool(int size) {
+        pool = new LinkedBlockingQueue<>(size);
+        // initialize connections
+    }
+
+    public DBConnection acquire() throws InterruptedException {
+        return pool.take();
+    }
+
+    public void release(DBConnection conn) throws InterruptedException {
+        pool.put(conn);
+    }
+}
+#+END_SRC
+
+---
+
+** 12. Patterns for managed blocking
+When certain operations must block (e.g., waiting on a legacy API or file system call), “managed blocking” ensures these blocks do not stall critical threads. Typically, special threads or a dedicated dispatcher is used.
+
+*** 12.1 Why Use Patterns for managed blocking?
+- **Prevent Starvation**: Keeping event-loop or core dispatcher threads unblocked is crucial for responsiveness.  
+- **Isolation**: Blocking calls go to a dedicated pool, so the rest of the system remains nonblocking.  
+- **Compatibility**: Allows bridging reactive code with nonreactive, blocking libraries.
+
+*** 12.2 Typical Scenario
+An Akka-based service might dispatch a blocking call to a specialized “blocking” dispatcher. Meanwhile, the main actors remain on a nonblocking dispatcher.
+
+*** 12.3 Example (Conceptual)
+#+BEGIN_SRC scala
+blockingDispatcher.execute(() => {
+  val result = blockingIOCall()
+  originalSender ! result
+})
+#+END_SRC
+
+This isolates blocking I/O from actors using an event-driven loop, preserving system responsiveness.
+
+---
+
+** 13. The Request-Response Pattern
+In a message-driven environment, Request-Response is a straightforward exchange: a client sends a request message, then awaits a one-time response.
+
+*** 13.1 Why Use The Request-Response pattern?
+- **Familiarity**: Mimics typical call-and-reply semantics in a fully asynchronous setting.  
+- **Controlled Communication**: Ensures the client explicitly receives a correlated reply.  
+- **Common**: Used anywhere a single answer to a query is needed.
+
+*** 13.2 Typical Scenario
+An actor queries another service for user data (“GetUserProfile(userId)”) and expects exactly one “UserProfile” response.
+
+*** 13.3 Example (Conceptual)
+#+BEGIN_SRC scala
+val future = userProfileActor ? GetUserProfile(id)
+future.map {
+  case UserProfile(user) => println(s"Name: ${user.name}")
+}
+#+END_SRC
+
+Here, “?” (ask) sends a request message and returns a future. The response is handled asynchronously.
+
+---
+
+** 14. The Self-Contained Message Pattern
+A message that includes all data needed for processing, avoiding external lookups or shared mutable state. This ensures the recipient can act on it in isolation.
+
+*** 14.1 Why Use The Self-Contained Message pattern?
+- **Loose Coupling**: No hidden dependencies on external data structures.  
+- **Reliability**: If the message arrives, the recipient has everything needed to do its job.  
+- **Scalability**: Minimizes back-and-forth or concurrency conflicts over shared state.
+
+*** 14.2 Typical Scenario
+Publishing an event like “OrderPlaced” with full details (order items, user info) so that any subscriber can handle it without subsequent queries.
+
+*** 14.3 Example (Conceptual)
+#+BEGIN_SRC json
+{
+  "type": "OrderPlaced",
+  "orderId": "A123",
+  "items": [ {"sku":"book-999","qty":1} ],
+  "userId": "user42"
+}
+#+END_SRC
+
+Receiving services can process the message end-to-end, needing no additional shared context.
+
+---
+
+** 15. The Ask Pattern
+“Ask” is a request-response style that returns a future or promise, commonly used in actor systems. It’s effectively a specialized request-response with strongly typed replies and a direct future handle.
+
+*** 15.1 Why Use The Ask pattern?
+- **Ease of Composition**: Futures or promises can be chained, mapped, or aggregated.  
+- **Async Syntax**: Encourages writing code that looks synchronous but executes asynchronously.  
+- **Type Safety**: The future can carry typed responses rather than raw messages.
+
+*** 15.2 Typical Scenario
+In Akka, “ask” is “actorRef ? Message,” returning a Scala Future. This is used when the sender must handle or transform the reply programmatically before proceeding.
+
+*** 15.3 Example (Conceptual)
+#+BEGIN_SRC scala
+val replyFuture: Future[UserProfile] = userActor ? FetchUserProfile(userId)
+replyFuture.onComplete {
+  case Success(profile) => println("User name: " + profile.name)
+  case Failure(ex)      => println("Error: " + ex.getMessage)
+}
+#+END_SRC
+
+---
+
+** 16. The Forward Flow Pattern
+A pipeline approach where messages or data flow unidirectionally through a chain of processing components, each forwarding results to the next stage.
+
+*** 16.1 Why Use The Forward Flow pattern?
+- **Streamlined Data Pipeline**: Each stage transforms or filters data, then passes it on.  
+- **Isolation**: Stages can be added, removed, or replaced without altering the overall flow structure.  
+- **Scalability**: Easy to parallelize or replicate certain stages.
+
+*** 16.2 Typical Scenario
+In a streaming analytics system, logs are collected, parsed, enriched, and ultimately stored. Each step runs in a separate actor or service, forwarding the processed output to the next.
+
+*** 16.3 Example (Conceptual)
+#+BEGIN_SRC pseudo
+logCollector -> parserActor -> enrichmentActor -> storageActor
+#+END_SRC
+
+Each actor reads from the previous stage’s output and sends transformed messages downstream.
+
+---
+
+** 17. The Aggregator Pattern
+An aggregator collects partial results from multiple upstream sources or parallel computations, merging them into a single outcome.
+
+*** 17.1 Why Use The Aggregator pattern?
+- **Parallel Decomposition**: Different shards or services compute partial data, aggregator merges them.  
+- **Loose Coupling**: Each subtask runs independently, aggregator coordinates final assembly.  
+- **Scalable**: If partial tasks are numerous, aggregator can handle them asynchronously.
+
+*** 17.2 Typical Scenario
+A microservice aggregator that queries multiple downstream services (inventory, pricing, shipping) to build a single composite response for a user’s checkout process.
+
+*** 17.3 Example (Conceptual)
+#+BEGIN_SRC scala
+class CheckoutAggregator extends Actor {
+  var inventoryData: Option[Inventory] = None
+  var pricingData: Option[Pricing]     = None
+
+  def receive = {
+    case InvResponse(inv) => inventoryData = Some(inv)
+    case PriceResponse(pr) => pricingData  = Some(pr)
+    case "Merge" =>
+      if (inventoryData.isDefined && pricingData.isDefined) {
+        sender() ! CheckoutInfo(inventoryData.get, pricingData.get)
+      }
+  }
+}
+#+END_SRC
+
+---
+
+** 18. The Saga Pattern
+
+A [[id:1a801cd0-bd5b-4036-9bc2-61ba621ddba0][Saga Pattern]] handles distributed transactions in a microservice setting. Each step is a local transaction in one service. If a step fails, the saga runs compensating transactions in reverse order for the successfully completed steps, ensuring system-wide consistency without a global transaction manager.
+
+*** 8.1 Why Use Saga?
+- Solve the “distributed transaction” challenge: no global lock or 2-phase commit, but you can define partial rollback logic for each step.
+- Resilience: if step 3 fails, you revert steps 1-2 with “compensate” calls.
+- Common in order booking, travel booking, or any multi-service workflow.
+
+*** 8.2 Typical Scenario
+Booking a flight, hotel, and rental car. Each sub-reservation is a local transaction. If the rental step fails, you cancel flight, hotel, or do partial compensation.
+
+*** 8.3 Example (Conceptual)
+#+BEGIN_SRC java
+class SagaStep {
+   boolean execute();
+   void compensate();
+}
+
+class SagaCoordinator {
+   boolean runSaga(List<SagaStep> steps) {
+       List<SagaStep> executed = new ArrayList<>();
+       for(SagaStep step: steps){
+           if(step.execute()) {
+               executed.add(step);
+           } else {
+               for(int i=executed.size()-1; i>=0; i--){
+                   executed.get(i).compensate();
+               }
+               return false;
+           }
+       }
+       return true;
+   }
+}
+#+END_SRC
+
+The pattern ensures partial failures do not leave the system in an inconsistent state.
+
+** 19. The Business Handshake Pattern
+The Business Handshake Pattern (a.k.a. Reliable Delivery Pattern) pattern ensures a message was truly received and processed by having the recipient explicitly acknowledge it (a handshake). If no ack arrives, the sender retries or triggers a compensating flow.
+
+*** 19.1 Why Use The Business Handshake pattern?
+- **Reliability**: Overcomes unreliable networks or message loss.  
+- **Idempotency**: Typically combined with idempotent message handling to avoid duplicates.  
+- **Transactional Guarantees**: Achieves exactly-once or at-least-once semantics in distributed systems.
+
+*** 19.2 Typical Scenario
+A payment service sends “DebitAccount” to a ledger. The ledger processes the debit, then sends “DebitConfirmed.” If the payment service sees no ack, it might resend the debit request—protected by idempotent logic.
+
+*** 19.3 Example (Conceptual)
+#+BEGIN_SRC pseudo
+sender -> “DebitAccount(txId=123, amount=50)”
+receiver -> processes transaction
+receiver -> “DebitConfirmed(txId=123)”
+#+END_SRC
+
+The handshake ensures final consistency; if the ack fails to return, the sender can retry safely.
+
+---
+
+** 20. The Pull Pattern
+Consumers request (“pull”) data on demand rather than being pushed data unboundedly. This exerts backpressure to avoid overwhelming downstream components.
+
+*** 20.1 Why Use The Pull pattern?
+- **Backpressure**: The consumer controls the pace, preventing queue overflow.  
+- **Resource Management**: Only fetch data when ready to handle it.  
+- **Better Responsiveness**: Avoids saturating the consumer with data bursts.
+
+*** 20.2 Typical Scenario
+A reactive streams implementation: a consumer requests N items from a publisher, which then emits only that many items, pausing until the consumer asks for more.
+
+*** 20.3 Example (Conceptual)
+#+BEGIN_SRC scala
+val publisher: Publisher[String] = ...
+val subscriber: Subscriber[String] = new Subscriber(...) {
+  override def onSubscribe(s: Subscription): Unit = {
+    s.request(10) // pull 10 items
+  }
+  ...
+}
+#+END_SRC
+
+---
+
+** 21. The Managed Queue Pattern
+A queue stands between producer and consumer, imposing an upper bound or policy on enqueueing. If the queue is full, producers may block, drop, or wait, ensuring stable resource usage.
+
+*** 21.1 Why Use The Managed Queue pattern?
+- **Load Shedding**: Prevent infinite growth of in-flight tasks.  
+- **Isolation**: Each subsystem has its own queue capacity.  
+- **Predictability**: A maximum queue length gives the operator a known upper bound on resource usage.
+
+*** 21.2 Typical Scenario
+A message broker with a limited queue size. If too many messages arrive, the broker either rejects new messages or applies an overflow policy.
+
+*** 21.3 Example (Conceptual)
+#+BEGIN_SRC java
+BlockingQueue<Job> jobQueue = new ArrayBlockingQueue<>(100);
+
+public void submitJob(Job j) throws InterruptedException {
+   if(!jobQueue.offer(j, 2, TimeUnit.SECONDS)) {
+       // handle full queue
+   }
+}
+#+END_SRC
+
+---
+
+** 22. The Drop Pattern
+Under overload, the system can drop messages or requests preemptively rather than bog down or crash. This is a deliberate acceptance of partial data loss for preserving overall responsiveness.
+
+*** 22.1 Why Use The Drop pattern?
+- **Resiliency Under Load**: Better to drop some requests than to degrade entirely.  
+- **Latency Control**: Maintaining consistent response times by discarding extra load.  
+- **Appropriate for Some Domains**: Realtime analytics or telemetry might accept data loss as an acceptable trade-off.
+
+*** 22.2 Typical Scenario
+A streaming system that receives sensor data at extremely high rates. If the consumer falls behind, older sensor readings are discarded to keep up with real-time signals.
+
+*** 22.3 Example (Conceptual)
+#+BEGIN_SRC pseudo
+if queue.size() >= MAX_QUEUE_SIZE:
+  drop new message
+else:
+  queue.add(msg)
+#+END_SRC
+
+---
+
+** 23. The Throttling Pattern
+Throttling limits the rate of requests or messages sent to a component, often to avoid saturating external services or to enforce fair usage.
+
+*** 23.1 Why Use The Throttling pattern?
+- **Load Regulation**: Keep outgoing traffic under a known rate limit.  
+- **Protection**: External APIs or subsystems with usage quotas need a safe request pace.  
+- **Fairness**: Distribute resources among multiple tenants equally.
+
+*** 23.2 Typical Scenario
+An API gateway that applies a token bucket or leaky bucket algorithm to ensure each client only sends a certain number of requests per second.
+
+*** 23.3 Example (Conceptual)
+#+BEGIN_SRC python
+class TokenBucket:
+    def __init__(self, rate, burst):
+        self.tokens = burst
+        self.rate = rate
+        self.last_refill = time.time()
+
+    def allow(self):
+        now = time.time()
+        elapsed = now - self.last_refill
+        # Refill tokens based on elapsed time
+        self.tokens = min(self.tokens + elapsed * self.rate, self.rate)
+        self.last_refill = now
+        if self.tokens >= 1:
+            self.tokens -= 1
+            return True
+        return False
+#+END_SRC
+
+---
+
+** 24. The Domain Object Pattern
+A domain object encapsulates both data and domain-specific logic. In a reactive context, it might be an actor holding the domain state, reacting to commands and emitting events.
+
+*** 24.1 Why Use The Domain Object pattern?
+- **Bounded Context**: Each object enforces invariants for a specific business concept.  
+- **Clarity**: The object’s methods express the ubiquitous language of the domain.  
+- **Reactivity**: The domain object can asynchronously handle commands, produce events.
+
+*** 24.2 Typical Scenario
+In a DDD-based system, each aggregate (e.g., “Order,” “Account”) is modeled as a domain object, controlling all modifications to that entity’s state.
+
+*** 24.3 Example (Conceptual)
+#+BEGIN_SRC scala
+class AccountActor extends Actor {
+  var balance: BigDecimal = 0
+
+  def receive = {
+    case Deposit(amount) =>
+      balance += amount
+      sender() ! Deposited(amount, balance)
+    case Withdraw(amount) if balance >= amount =>
+      balance -= amount
+      sender() ! Withdrawn(amount, balance)
+  }
+}
+#+END_SRC
+
+---
+
+** 25. The Sharding Pattern
+Sharding splits large data sets or workloads across multiple actors or nodes, each responsible for a portion (“shard”) of the overall domain. This improves both scalability and fault isolation.
+
+*** 25.1 Why Use The Sharding pattern?
+- **Distribute Load**: Large user or data sets are broken up for parallel processing.  
+- **Memory & CPU Efficiency**: Each shard holds only part of the data, fitting in local memory.  
+- **Fault Containment**: If one shard fails or restarts, others remain unaffected.
+
+*** 25.2 Typical Scenario
+A chat application with millions of users might shard by user ID, so each shard actor handles chat state for a subset of users.
+
+*** 25.3 Example (Conceptual)
+#+BEGIN_SRC scala
+val shardRegion: ActorRef = ClusterSharding(system).start(
+  typeName = "ChatSharding",
+  entityProps = Props[ChatActor](),
+  settings = ClusterShardingSettings(system),
+  extractEntityId = {
+    case msg @ ChatMessage(userId, text) => (userId.toString, msg)
+  },
+  extractShardId = {
+    case ChatMessage(userId, _) => (userId % numberOfShards).toString
+  }
+)
+#+END_SRC
+
+---
+
+** 26. The Event Sourcing Pattern
+
+The [[id:8c049207-bee5-439f-a1fc-2b8626836b7c][Event Sourcing Pattern]] stores all changes to application state as a sequence of events, rather than overwriting the current state. The system replays events to rebuild or project current state. Commonly used in microservices or domain-driven design to handle auditable, time-travel, or ephemeral data reconstruction.
+
+*** 7.1 Why Use Event Sourcing?
+- Audit log: you have the entire history of changes, enabling retroactive queries or debugging.
+- Rebuild state: if the system crashes or you need a new read model, replay events from the log.
+- Natural approach: many business domains revolve around events (transactions, reservations, etc.).
+
+*** 7.2 Typical Scenario
+A banking system might store each deposit or withdrawal as an event. The “account balance” is derived by summing the relevant deposit/withdraw events. Overwrites of the account’s row are avoided.
+
+*** 7.3 Example (Conceptual)
+#+BEGIN_SRC java
+public class Event {
+   public String type;
+   public Map<String, Object> data;
+   public long timestamp;
+}
+
+public class EventStore {
+   private List<Event> events = new ArrayList<>();
+   public void append(Event e) { events.add(e); }
+   public List<Event> replay() { return events; }
+}
+#+END_SRC
+
+When you want the state, you read all events relevant to that entity, applying them in order. This fosters strong auditability and “time travel” for debugging or analytics.
+
+** 27. The Event Stream Pattern
+An extension of event sourcing and pub-sub, the Event Stream pattern broadcasts a continuous flow of domain or system events. Subscribers can join and process events in real time or from the beginning of the stream.
+
+*** 27.1 Why Use The Event Stream pattern?
+- **Real-Time Processing**: Analytics or monitoring services respond immediately to newly published events.  
+- **Loose Coupling**: Producers publish events without knowing who consumes them.  
+- **Replay**: Some implementations let new consumers replay historical events for a consistent view.
+
+*** 27.2 Typical Scenario
+A Kafka-based system streams domain events—like “OrderCreated,” “PaymentAuthorized”—to multiple consumer groups, each performing different tasks (fraud detection, notifications, etc.).
+
+*** 27.3 Example (Conceptual)
+#+BEGIN_SRC pseudo
+producer.send("orders-topic", OrderCreated("A123", time=...))
+
+// Meanwhile, a consumer group:
+consumer.subscribe("orders-topic")
+while true:
+  record = consumer.poll()
+  handleOrderCreated(record.eventData)
+#+END_SRC
 

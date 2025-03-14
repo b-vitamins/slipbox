@@ -349,31 +349,89 @@ satisfies the time-independent Schrödinger equation with energy \(E_{k}=\hbar^{
 
 The time-indepdendent Schrodinger equation is
 
+\[
+H \;=\; -\,\frac{\hbar^2}{2m}\,\frac{\mathrm{d}^2}{\mathrm{d}x^2}
+\;-\;\frac{\hbar^2}{m\,a^2\,\cosh^2(x/a)}
+\]
+
 \begin{align*}
-H \psi
-& = - \dfrac{\hbar^{2}}{2m} \dfrac{\partial^{2}}{\partial x^{2}} \left[ \left ( 1 + \frac{i}{k a} \tanh{x/a} \right ) \exp \{i k x \} \right] \\
-&- \dfrac{\hbar^{2}}{m a^{2} \cosh^{2} \left( \frac{x}{a} \right)} \left[ \left ( 1 + \frac{i}{k a} \tanh{\frac{x}{a}} \right ) \exp \{i k x \} \right] \\
-& = - \dfrac{\hbar^{2}}{2m} \dfrac{\partial^{2}}{\partial x^{2}} \exp \left \lbrace i kx  \right \rbrace
-- \dfrac{\hbar^{2}}{2m} \dfrac{\partial^{2}}{\partial x^{2}} \left[ \frac{i}{k a} \tanh{\frac{x}{a}} \exp \{i k x \} \right] \\
-&- \dfrac{\hbar^{2}}{m a^{2} \cosh^{2} \left( \frac{x}{a} \right)} \exp \left \lbrace i k x  \right \rbrace
-- \dfrac{\hbar^{2}}{m a^{2} \cosh^{2} \left( \frac{x}{a} \right)} \left[ \frac{i}{k a} \tanh{\frac{x}{a}} \exp \{i k x \} \right] \\
-&= \dfrac{\hbar^2 k^2}{2m} \exp \left \lbrace i k x  \right \rbrace
-- \dfrac{\hbar^2}{2m} \dfrac{\partial}{\partial x}  \left[ \dfrac{i}{k a^2 \cosh^2 (x/a)} \exp \left \lbrace i kx  \right \rbrace \\
-&- \dfrac{1}{a} \tanh (x/a) \exp \left \lbrace i k x  \right \rbrace \right] \\
-&- \dfrac{\hbar^{2}}{m a^{2} \cosh^{2} \left( \frac{x}{a} \right)} \exp \left \lbrace i k x  \right \rbrace
-- \dfrac{\hbar^{2}}{m a^{2} \cosh^{2} \left( \frac{x}{a} \right)} \left[ \frac{i}{k a} \tanh{\frac{x}{a}} \exp \{i k x \} \right] \\
-&= \dfrac{\hbar^2 k^2}{2m} \exp \left \lbrace i k x  \right \rbrace
-- \dfrac{\hbar^2}{2m}
-\left[ - \frac{1}{a^2 \cosh^2 (x/a)} \exp \left \lbrace i kx  \right \rbrace \\
-&- \dfrac{i}{k a^3} \dfrac{\tanh (x/a)}{\cosh^2 (x/a)} \exp \left \lbrace i kx  \right \rbrace \\
-&- \dfrac{i k}{a} \tanh(x/a) \exp \left \lbrace i k x  \right \rbrace
-- \dfrac{1}{a^2} \dfrac{1}{\cosh (x/a)} \exp \left \lbrace i k x  \right \rbrace \right] \\
-&- \dfrac{\hbar^{2}}{m a^{2} \cosh^{2} \left( \frac{x}{a} \right)} \exp \left \lbrace i k x  \right \rbrace
-- \dfrac{\hbar^{2}}{m a^{2} \cosh^{2} \left( \frac{x}{a} \right)} \left[ \frac{i}{k a} \tanh{x/a} \exp \{i k x \} \right] \\
-&= \dfrac{\hbar^2 k^2}{2m} \exp \left \lbrace i k x  \right \rbrace + \dfrac{i k}{a} \tanh(x/a) \exp \left \lbrace i k x  \right \rbrace \\
-&= \dfrac{\hbar^2 k^2}{2m} \left[ \left( 1 + \dfrac{i k}{a} \tanh(x/a) \right)  \exp \left \lbrace i k x  \right \rbrace \right] \\
-&= \dfrac{\hbar^2 k^2}{2m} \psi.
+H \,\psi
+&= -\,\frac{\hbar^2}{2m}\,
+   \frac{\partial^2}{\partial x^2}\Bigl[
+     \bigl(1 + \tfrac{i}{k\,a}\,\tanh(x/a)\bigr)\,e^{i k x}
+   \Bigr]
+ \;-\;
+   \frac{\hbar^2}{m\,a^2\,\cosh^2(x/a)}\,
+   \Bigl[
+     \bigl(1 + \tfrac{i}{k\,a}\,\tanh(x/a)\bigr)\,e^{i k x}
+   \Bigr]
+\\[6pt]
+&= -\,\frac{\hbar^2}{2m}\,\frac{\partial^2}{\partial x^2}\,e^{i k x}
+ \;-\;
+   \frac{\hbar^2}{2m}\,\frac{\partial^2}{\partial x^2}\Bigl[
+     \tfrac{i}{k\,a}\,\tanh\bigl(\tfrac{x}{a}\bigr)\,e^{i k x}
+   \Bigr]
+ \;-\;
+   \frac{\hbar^2}{m\,a^2\,\cosh^2\bigl(x/a\bigr)}\,e^{i k x}
+ \;-\;
+   \frac{\hbar^2}{m\,a^2\,\cosh^2\bigl(x/a\bigr)}\,
+   \Bigl[
+     \tfrac{i}{k\,a}\,\tanh\bigl(\tfrac{x}{a}\bigr)\,e^{i k x}
+   \Bigr]
+\\[6pt]
+&=\;
+  \frac{\hbar^2 k^2}{2m}\,e^{i k x}
+ \;-\;
+  \frac{\hbar^2}{2m}\,\frac{\partial}{\partial x}\biggl[
+    \frac{i}{k\,a^2\,\cosh^2(x/a)}\,e^{i k x}
+    \;-\;
+    \frac{1}{a}\,\tanh\bigl(\tfrac{x}{a}\bigr)\,e^{i k x}
+  \biggr]
+\\[4pt]
+&\quad
+ -\,\frac{\hbar^2}{m\,a^2\,\cosh^2(x/a)}\,e^{i k x}
+ \;-\;
+   \frac{\hbar^2}{m\,a^2\,\cosh^2\bigl(x/a\bigr)}\,
+   \Bigl[
+     \tfrac{i}{k\,a}\,\tanh\bigl(\tfrac{x}{a}\bigr)\,e^{i k x}
+   \Bigr]
+\\[6pt]
+&=\;
+ \frac{\hbar^2 k^2}{2m}\,e^{i k x}
+ \;-\;
+ \frac{\hbar^2}{2m}\biggl[
+   - \,\frac{1}{a^2\,\cosh^2(x/a)}\,e^{i k x}
+   \;-\;
+   \frac{i}{k\,a^3}\,\frac{\tanh(x/a)}{\cosh^2(x/a)}\,e^{i k x}
+\\
+&\qquad\quad
+   - \,\frac{i\,k}{a}\,\tanh\bigl(\tfrac{x}{a}\bigr)\,e^{i k x}
+   \;-\;
+   \frac{1}{a^2\,\cosh(x/a)}\,e^{i k x}
+ \biggr]
+ \;-\;
+ \frac{\hbar^2}{m\,a^2\,\cosh^2(x/a)}\,e^{i k x}
+ \;-\;
+ \frac{\hbar^2}{m\,a^2\,\cosh^2(x/a)}\,
+   \Bigl[
+     \tfrac{i}{k\,a}\,\tanh\bigl(\tfrac{x}{a}\bigr)\,e^{i k x}
+   \Bigr]
+\\[8pt]
+&=\;
+ \frac{\hbar^2 k^2}{2m}\,e^{i k x}
+ \;+\;
+ \frac{i\,k}{a}\,\tanh\bigl(\tfrac{x}{a}\bigr)\,e^{i k x}
+\\[4pt]
+&=\;
+ \frac{\hbar^2 k^2}{2m}\,\Bigl[
+   \Bigl(1 + \tfrac{i}{k\,a}\,\tanh\bigl(\tfrac{x}{a}\bigr)\Bigr)\,e^{i k x}
+ \Bigr]
+\\[3pt]
+&=\;
+ \frac{\hbar^2 k^2}{2m}\,\psi(x).
 \end{align*}
+
+Hence, \(\psi(x)\) is an eigenfunction of \(H\) with eigenvalue \(\frac{\hbar^2 k^2}{2m}\).
 
 ** SOLVED Part II
 CLOSED: [2022-11-20 Sun 23:54]
@@ -541,29 +599,60 @@ assuming that \(\psi(x, t)\) is normalised. Show that \(<x>\) varies with time a
 In the first step we have 1) used \(x = \dfrac{\hbar}{2 m \omega } \left( a + a^{\dagger} \right)\), 2) identified a characteristic length \(x_{0} = \sqrt{\dfrac{\hbar}{m \omega}}\) in the problem, 3) used \(\left( a, b + c \right) = \left( a, b \right) + \left( a, c \right)\), and 4) used \(\left( a^{\dagger} \right)^{\dagger} = a\). In the second step, we have substituted \(\alpha(t) = \left \lvert \alpha  \right \rvert \exp \left \lbrace - i \left( \omega t - \delta \right)  \right \rbrace\) and simplified after using Euler's formula \(\exp \left \lbrace i \theta  \right \rbrace = \cos \theta + i \sin \theta\). Thus, \(\left \langle x  \right \rangle\) varies in time according to the classical equation of motion for a harmonic oscillator.
 
 \begin{align*}
-\left \langle x^{2}  \right \rangle
-&\equiv \left( \psi \left( x, t \right), x^{2} \thinspace \psi \left( x, t \right) \right) \\
-&= \dfrac{x_{0}^{2}}{2} \left( \psi \left( x, t \right), \left( a + a^{\dagger} \right)^{2} \psi \left( x, t \right) \right) \\
-&= \dfrac{x_{0}^{2}}{2} \left( \psi \left( x, t \right), \left( a a  + a a^{\dagger} + a^{\dagger} a + a^{\dagger} a^{\dagger} \right) \psi \left( x, t \right) \right) \\
-&= \dfrac{x_{0}^{2}}{2} \left[ \left( \psi \left( x, t \right), a a \psi \left( x, t \right) \right) + \left( \psi \left( x, t \right), a^{\dagger} a^{\dagger} \psi \left( x, t \right) \right) \\
-&+ \left( \psi \left( x, t \right), \left( a a^{\dagger} \right) \psi \left( x, t \right) \right) + \left( \psi \left( x, t \right), \left( a^{\dagger} a \right) \psi \left( x, t \right) \right) \right].
+\langle x^{2} \rangle
+&\equiv \bigl(\,\psi(x,t),\, x^{2}\,\psi(x,t)\bigr) 
+\\[6pt]
+&= \frac{x_{0}^{2}}{2}\,\bigl(\,\psi(x,t),\,\bigl(a + a^{\dagger}\bigr)^{2}\,\psi(x,t)\bigr)
+\\[6pt]
+&= \frac{x_{0}^{2}}{2}\,\bigl(\,\psi(x,t),\,\bigl(a\,a + a\,a^{\dagger} + a^{\dagger}\,a + a^{\dagger}\,a^{\dagger}\bigr)\,\psi(x,t)\bigr)
+\\[6pt]
+&= \frac{x_{0}^{2}}{2}\Bigl[
+     \bigl(\psi(x,t),\,a\,a\,\psi(x,t)\bigr)
+   + \bigl(\psi(x,t),\,a^{\dagger}\,a^{\dagger}\,\psi(x,t)\bigr)
+\\[-3pt]
+&\hspace*{4em}
+   + \bigl(\psi(x,t),\,a\,a^{\dagger}\,\psi(x,t)\bigr)
+   + \bigl(\psi(x,t),\,a^{\dagger}\,a\,\psi(x,t)\bigr)
+\Bigr].
 \end{align*}
 
-Using the commutator relation \(a a^{\dagger} - a^{\dagger} a = 1\)
+Using the commutator relation \(\,a\,a^{\dagger} - a^{\dagger}\,a = 1,\)
 
 \begin{align*}
-\left \langle x^{2}  \right \rangle
-&= \dfrac{x_{0}^{2}}{2} \left[ \left( \psi \left( x, t \right), a a \psi \left( x, t \right) \right) + \left( \psi \left( x, t \right), a^{\dagger} a^{\dagger} \psi \left( x, t \right) \right) \\
-&+ \left( \psi \left( x, t \right), \left[ 1 +  a^{\dagger} a \right] \psi \left( x, t \right) \right) + \left( \psi \left( x, t \right), \left( a^{\dagger} a \right) \psi \left( x, t \right) \right) \right] \\
-&= \dfrac{x_{0}^{2}}{2} \left[ \alpha(t) \alpha (t) + \alpha^{\ast} (t) \alpha^{\ast}(t) + 1 + 2 \alpha^{\ast} (t) \alpha (t) \right] \\
-&= \dfrac{x_{0}^{2}}{2} \left[ \left( a(t) + a^{\dagger}(t) \right)^{2} + 1 \right].
+\langle x^{2} \rangle
+&= \frac{x_{0}^{2}}{2}\Bigl[
+     \bigl(\psi(x,t),\,a\,a\,\psi(x,t)\bigr)
+   + \bigl(\psi(x,t),\,a^{\dagger}\,a^{\dagger}\,\psi(x,t)\bigr)
+\\
+&\hspace*{4em}
+   + \bigl(\psi(x,t),\,[\,1 + a^{\dagger}a\,]\,\psi(x,t)\bigr)
+   + \bigl(\psi(x,t),\,a^{\dagger}a\,\psi(x,t)\bigr)
+\Bigr]
+\\[6pt]
+&= \frac{x_{0}^{2}}{2}\Bigl[
+     \alpha(t)\,\alpha(t)
+   + \alpha^{\ast}(t)\,\alpha^{\ast}(t)
+   + 1
+   + 2\,\alpha^{\ast}(t)\,\alpha(t)
+\Bigr]
+\\[3pt]
+&= \frac{x_{0}^{2}}{2}\Bigl[
+     \bigl(a(t) + a^{\dagger}(t)\bigr)^{2} + 1
+\Bigr].
 \end{align*}
 
-Using \(\left( \Delta x \right)^2 = \left \langle x^{2}  \right \rangle - \left \langle x  \right \rangle^{2}\)
-
-\begin{equation*}
-\Delta x = \dfrac{x_{0}}{\sqrt{2}}.
-\end{equation*}
+Using 
+\[
+(\Delta x )^{2}
+\;=\;
+\langle x^{2}\rangle \;-\; \langle x\rangle^{2},
+\]
+we obtain
+\[
+\Delta x
+\;=\;
+\frac{x_{0}}{\sqrt{2}}.
+\]
 
 Thus, \(\Delta x\) does not change at all as a function of time.
 
@@ -1022,7 +1111,7 @@ Raising both sides to power \(1/2\) and identifying \(\left \langle \psi \left \
 \Delta A \thinspace \Delta B \geq \dfrac{1}{2} \left \lvert \left \langle [A, B] \right \rangle  \right \rvert.
 \end{equation*}
 
-Because \([A, B] = i C\), \(\left \lvert \left \langle [A, B]  \right \rangle \rvert = \left \lvert \left \langle i C  \right \rangle  \right \rvert = \left \lvert \left \langle \psi \left \lvert i C  \right \rvert \psi \right \rangle  \right \rvert = \left \lvert i \lambda \right \rvert = \left \lvert \lambda  \right \rvert\), which when substituted in the previous inequality yields the ask
+Because \([A, B] = i C\), \(\lvert \langle [A, B]  \rangle \rvert = \lvert \langle i C  \rangle  \rvert = \lvert \langle \psi \lvert i C  \rvert \psi \rangle \rvert = \lvert i \lambda \rvert = \lvert \lambda  \rvert\), which when substituted in the previous inequality yields the ask
 
 \begin{equation*}
 \Delta A \thinspace \Delta B \geq \dfrac{1}{2} \left \lvert \lambda  \right \rvert.

@@ -189,7 +189,7 @@ Since spectrals show all the data in a file, they are helpful tools to use when 
 *Click on any of the spectrals below to view it in a higher resolution.*
 ** CD / Lossless
 Songs on a retail CD and lossless songs have frequencies that extend all the way to 22 kHz. Since lossless to lossless transcoding preserves all of the data in a music file, the spectral of a lossless song will look the same in FLAC, WAV (PCM), ALAC, etc.
-[[file:pictures/.images/Guide-FLAC.jpg][Lossless (FLAC) Spectral]]
+[[file:pictures/.images/Guide-FLAC.jpg][Lossless (FLAC) Spectral]
 However, different genres have different-looking spectrals. The example above was a pop song, so most of the frequencies were represented. But look at this classical piano song.
 [[file:~/pictures/.images/Guide-MP3-320-CBR.jpg][Lossless (FLAC) Spectral]]
 It looks much different, right? But it's still a lossless spectral! Notice how "white noise" (the light purple) still extends to 22 kHz, even though those frequencies aren't used.

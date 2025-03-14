@@ -10,6 +10,6 @@ The definition of *orthogonal vectors* depends on the notion of a [[id:bd078855-
 #+NAME: Orthogonality
 #+ATTR_LATEX: :environment definition
 #+begin_definition
-\(|V\rangle\) and \(|W\rangle\) are called orthogonal (to each other) iff \(\langle V \mid W\rangle=0\).
+\(|V\rangle\) and \(|W\rangle\) are called orthogonal (to each other) iff \(\langle V \mid W \rangle = 0\).
 #+end_definition
 

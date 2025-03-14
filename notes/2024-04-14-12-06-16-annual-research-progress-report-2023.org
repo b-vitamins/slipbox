@@ -13,7 +13,7 @@ We model Deep Boltzmann Machines (DBMs) as disordered systems of Ising spins on 
 #+BEGIN_CENTER
 + /Does a deep and narrow architecture, with \(M_0, M_1, \ldots, M_K\) units (\(M = \sum_{k=0}^{K} M_{k} \) total units) such that \(M_k \sim\mathcal{O}(M_{0})\) achieve a representational capacity \(\Sigma (\{M_{k}\})\) at par or better in comparison to a shallow and wide architecture with \(N_0, N_1, \ldots, N_L\) units (\(N = \sum_{l=0}^{L} N_{l}\) total units) such that \(N_l \sim \mathcal{O} (N_{0}^{p})\) with \(p \geq 1\)? In other words, for \(K > L\) but \(M \ll N\), is  \(\Sigma (\{M_{k}\}) \gg \Sigma (\{N_{l}\})\)?/
 
-+ /With the total number of hidden layers \(L\) fixed, how does \(\Sigma \(\{N_l\})\) respond to an unbounded increase in the units of the last hidden layer \(N_{L} \to \infty\)? [cite:@bansal2018isc] demonstrate for the \(L=1\) case (called the restricted Boltzmann machine) that the complexity in fact saturates i.e., 
++ With the total number of hidden layers \(L\) fixed, how does \(\Sigma (\{N_l\})\) respond to an unbounded increase in the units of the last hidden layer \(N_{L} \to \infty\)? [cite:@bansal2018isc] demonstrate for the \(L=1\) case (called the restricted Boltzmann machine) that the complexity in fact saturates i.e., 
 
   \begin{align*}
   \lim_{N_{1} \to \infty}\Sigma (N_{0}, N_{1}) \sim \mathcal{O} (1)
@@ -92,7 +92,7 @@ We /assume/ that coefficients for the exchange interactions between the spins of
 P(J_{ijl}) \equiv \sqrt{\dfrac{\widehat{N}_{l}}{2 \pi J^2}} \exp \left \lbrace - \dfrac{\widehat{N}_{l}}{2 J^2} \left( J_{ijl} - \dfrac{J_0}{\widehat{N}_{l}} \right)^{2} \right \rbrace
 \end{equation*}
 
-where \(\widehat{N}_{l} \equiv \sqrt{N_l N_{l+1}\).We will denote with respect to this distribution using \([\cdots]\). For later use, we introduce a number of geometric parameters - the /total spin number/, the /layer density/ and two-way /inter-layer ratios/
+where \(\widehat{N}_{l} \equiv \sqrt{N_l N_{l+1}}\).We will denote with respect to this distribution using \([\cdots]\). For later use, we introduce a number of geometric parameters - the /total spin number/, the /layer density/ and two-way /inter-layer ratios/
 
 \begin{equation*}
 N \equiv \sum_{l=0}^{L} N_l,
