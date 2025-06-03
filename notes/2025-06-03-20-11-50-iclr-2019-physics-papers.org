@@ -1,0 +1,104 @@
+:PROPERTIES:
+:ID:       f1ebd056-b03f-47c4-8565-e858ac872135
+:END:
+#+TITLE: ICLR 2019 Physics papers
+#+AUTHOR: Ayan Das
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+ICLR 2019 marks explosive growth with the formal emergence of equivariant neural networks, first diffusion-related methods, and PDEs for neural networks. This represents the largest absolute increase in physics-related papers and shows the field reaching maturity.
+
+Compared to previous years:
+- Largest growth in conference history (+60%)
+- Equivariant models emerge as major category (7 papers)
+- First diffusion-related paper (Langevin diffusion)
+- First explicit PDE solver with neural networks
+- Optimal transport continues strong presence
+- Mean field theory applications expand
+- Gauge theory enters ML (Gauge Equivariant Mesh CNNs)
+
+* Diffusion Models and Score-Based Methods (1 papers)
+
+1. Accelerating Nonconvex Learning via Replica Exchange Langevin diffusion
+
+* Energy-Based Models and Statistical Mechanics (3 papers)
+
+2. A Mean Field Theory of Batch Normalization
+3. On Random Deep Weight-Tied Autoencoders: Exact Asymptotic Analysis, Phase Transitions, and Implications to Training
+4. Critical Learning Periods in Deep Networks
+
+* Physics-Informed Neural Networks and PDEs (1 papers)
+
+5. Learning Neural PDE Solvers with Convergence Guarantees
+
+* Equivariant and Symmetric Models (7 papers)
+
+6. Invariant and Equivariant Graph Networks
+7. On the Approximation Properties of Recurrent Encoder-Decoder Architectures
+8. Whitening and Coloring Batch Transform for GANs
+9. Discovering Latent Concepts Learned in BERT
+10. Expressive Power of Invariant and Equivariant Graph Neural Networks
+11. The Lie Derivative for Measuring Learned Equivariance
+12. Gauge Equivariant Mesh CNNs: Anisotropic Convolutions on Geometric Graphs
+
+* Hamiltonian and Dynamical Systems (2 papers)
+
+13. AntisymmetricRNN: A Dynamical System View on Recurrent Neural Networks
+14. Kernel Change-point Detection with Auxiliary Deep Generative Models
+
+* Variational Methods and Inference (15 papers)
+
+15. Auxiliary Variational MCMC
+16. Deep Variational Implicit Processes
+17. An analytic theory of generalization dynamics and transfer learning in deep linear networks
+18. Information asymmetry in KL-regularized RL
+19. Variational Autoencoder with Arbitrary Conditioning
+20. Sliced Wasserstein Auto-Encoders
+21. Variational Discriminator Bottleneck: Improving Imitation Learning, Inverse RL, and GANs by Constraining Information Flow
+22. Variational Smoothing in Recurrent Neural Network Language Models
+23. A Variational Inequality Perspective on Generative Adversarial Networks
+24. MAE: Mutual Posterior-Divergence Regularization for Variational AutoEncoders
+25. Diagnosing and Enhancing VAE Models
+26. Preventing Posterior Collapse with delta-VAEs
+27. Lagging Inference Networks and Posterior Collapse in Variational Autoencoders
+28. Functional variational Bayesian Neural Networks
+29. Variational Predictive Routing with Nested Subjective Timescales
+
+* Markov Processes and Stochastic Methods (11 papers)
+
+30. Probabilistic Planning with Sequential Monte Carlo Methods
+31. Meta-Learning For Stochastic Gradient MCMC
+32. Stochastic Optimization of Sorting Networks via Continuous Relaxations
+33. The Deep Weight Prior
+34. Efficient Multi-Objective Neural Architecture Search via Lamarckian Evolution
+35. signSGD with Majority Vote is Communication Efficient and Fault Tolerant
+36. A Closer Look at Deep Learning Heuristics: Learning rate restarts, Warmup and Distillation
+37. Stochastic Gradient/Mirror Descent: Minimax Optimality and Implicit Regularization
+38. Stochastic Prediction of Multi-Agent Interactions from Partial Observations
+39. Latent Convergent Cross Mapping
+40. Gradient Descent Aligns the Layers of Deep Linear Networks
+
+* Optimal Transport and Geometric Methods (7 papers)
+
+41. Optimal Transport Maps For Distribution Preserving Operations on Latent Spaces of Generative Models
+42. A Higher Precision Algorithm for Computing the 1-Wasserstein Distance
+43. Learning to Solve Circuit-SAT: An Unsupervised Differentiable Approach
+44. Approximating CNNs with Bag-of-local-Features models works surprisingly well on ImageNet
+45. Neural tangent kernels, transportation mappings, and universal approximation
+46. Generalized Kernel Thinning
+47. Semi-relaxed Gromov-Wasserstein divergence with applications on graphs
+
+* Other Physics-Inspired Methods (1 papers)
+
+48. Spreading vectors for similarity search
+
+* Key Insights for 2019
+
+- Record growth: 60% increase (18 new papers)
+- Equivariant models emerge strongly (14.6% of papers)
+- Variational methods peak at 31.3% of papers
+- First neural PDE solver with convergence guarantees
+- Gauge theory concepts enter deep learning
+- Physics formalism increasingly sophisticated
+- Mean field theory provides new insights into batch normalization
+- Optimal transport remains strong (14.6% of papers)
