@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       08cde710-5ec9-497a-8ed5-e7b32c99449e
+:END:
+#+TITLE: NeurIPS 2021 Physics papers
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
