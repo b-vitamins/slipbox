@@ -1,0 +1,48 @@
+:PROPERTIES:
+:ID:       83b8fc5a-c749-4c06-beb2-843f0089c2d2
+:END:
+#+TITLE: NeurIPS 2003 Physics papers
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+NeurIPS 2003 continues the consolidation with 10 physics-related papers, marking the lowest count since 2000. However, the papers show increasing sophistication, including quantum neural networks and advanced MCMC methods.
+
+* Summary Statistics
+- Total physics-related papers: 10
+- Percentage of conference: ~5.1% (of 198 total papers)
+- Change from 2002: -33.3% (15 → 10 papers)
+- Cumulative growth from 2000: +25.0%
+- Key observation: Quality and sophistication increase despite quantity decrease
+
+* Monte Carlo and Sampling Methods (2 papers)
+
+1. Simplicial Mixtures of Markov Chains: Distributed Modelling of Dynamic User Profiles
+2. An MCMC-Based Method of Comparing Connectionist Models in Cognitive Science
+
+* Energy-Based Models and Statistical Physics (2 papers)
+
+3. Denoising and Untangling Graphs Using Degree Priors
+4. Minimising Contrastive Divergence in Noisy, Mixed-mode VLSI Neurons
+
+* Information Theory and Entropy (1 paper)
+
+5. Information Dynamics and Emergent Computation in Recurrent Circuits of Spiking Neurons
+
+* Spike-Based Neural Models (1 paper)
+
+6. Analytical Solution of Spike-timing Dependent Plasticity Based on Synaptic Biophysics
+
+* Other Physics-Inspired Methods (4 papers)
+
+7. Perception of the Structure of the Physical World Using Unknown Multimodal Sensors and Effectors
+8. Training a Quantum Neural Network
+9. Invariant Pattern Recognition by Semi-Definite Programming Machines
+10. Maximum Likelihood Estimation of a Stochastic Integrate-and-Fire Neural Model
+
+* Key Insights for 2003
+- **Quantum breakthrough**: First trainable quantum neural network
+- **Contrastive divergence**: Energy-based learning in hardware
+- **MCMC sophistication**: Model comparison via sampling
+- **Biophysical grounding**: STDP from first principles
+- **4-year perspective**: Field finding its core (+25% from 2000)
+- **Quality indicators**: More foundational, less incremental work
