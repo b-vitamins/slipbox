@@ -1,0 +1,131 @@
+:PROPERTIES:
+:ID:       e0fff101-d5c1-427f-b60e-06464614012f
+:END:
+#+TITLE: Physics in Machine Learning at ICLR
+#+AUTHOR: Ayan Das
+#+DATE: 2024
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Over the past decade (2013-2023), physics-inspired approaches in machine learning have evolved from a niche interest to a fundamental paradigm. This synthesis analyzes 641 physics-related papers across 11 years.
+
+* Year-by-Year
+- 2013 :: [[id:b17268bb-a77e-4304-bfe5-a46f63a256b1][ICLR 2013 (17 papers)]]
+- 2014 :: [[id:b4f0022b-9200-4f92-ad2d-e07e8a5acc82][ICLR 2014 (19 papers)]]
+- 2015 :: [[id:af5c9cd7-2898-4884-8d55-3f4488002c6a][ICLR 2015 (18 papers)]]
+- 2016 :: [[id:641e4e8c-f874-4321-b3de-4e346a387f5e][ICLR 2016 (25 papers)]]
+- 2017 :: [[id:34477e77-ecb1-44b5-9670-61e6f37686dd][ICLR 2017 (23 papers)]]
+- 2018 :: [[id:7a7ec3f7-d55e-4d9f-983a-a60872f22fef][ICLR 2018 (30 papers)]]
+- 2019 :: [[id:f1ebd056-b03f-47c4-8565-e858ac872135][ICLR 2019 (48 papers)]]
+- 2020 :: [[id:9ab45d2e-5fd4-4303-b869-687bbd29578c][ICLR 2020 (57 papers)]]
+- 2021 :: [[id:86697044-fea1-4a43-a452-4885189cd80c][ICLR 2021 (85 papers)]]
+- 2022 :: [[id:7400bed6-76e8-4c3a-9e62-a9c0e2e80641][ICLR 2022 (127 papers)]]
+- 2023 :: [[id:630678dc-e0f7-4799-bf52-35c317b8167f][ICLR 2023 (192 papers)]]
+
+* Growth Trajectory
+- 2013: 17 papers (baseline)
+- 2023: 192 papers (11.3x increase)
+- Total papers: 641
+- Average annual growth rate: 27.4%
+- Peak growth years: 2019 (+60%), 2021 (+49.1%), 2022 (+49.4%), 2023 (+51.2%)
+
+* Category Distribution (2023 snapshot)
+1. Equivariant/Symmetric Models: 39 papers (20.3%)
+2. Diffusion Models: 27 papers (14.1%)
+3. Markov/Stochastic Methods: 20 papers (10.4%)
+4. Variational Methods: 15 papers (7.8%)
+5. Molecular Applications: 14 papers (7.3%)
+6. Energy-Based Models: 13 papers (6.8%)
+7. PDEs/Physics-Informed: 11 papers (5.7%)
+8. Other Physics-Inspired: 61 papers (31.8%)
+
+* Major Paradigm Shifts
+** Phase 1: Foundations (2013-2015)
+- Focus on statistical mechanics (Boltzmann machines, Gibbs sampling)
+- Introduction of Variational Autoencoders (2014)
+- Adam optimizer revolutionizes training (2015)
+- Core insight: Energy landscapes and probabilistic frameworks
+
+** Phase 2: Geometric Awakening (2016-2018)
+- First explicit physics simulations (billiards, 2016)
+- Normalizing flows emerge (Real NVP, 2017)
+- Optimal transport enters ML (Wasserstein GANs, 2018)
+- Neural Tangent Kernel bridges theory gaps (2018)
+- Core insight: Geometry and dynamics matter
+
+** Phase 3: Symmetry Revolution (2019-2021)
+- Equivariant neural networks explode (2019)
+- Molecular applications emerge (2020)
+- Diffusion models revolutionize generation (2021)
+- Score-based SDEs unify frameworks (2021)
+- Core insight: Respecting physical symmetries improves everything
+
+** Phase 4: Maturation and Proliferation (2022-2023)
+- Physics principles become mainstream
+- Every category shows substantial growth
+- Interdisciplinary applications flourish
+- Theoretical foundations solidify
+- Core insight: Physics is fundamental to intelligence
+
+* Transformative Contributions
+** Theoretical Breakthroughs
+1. **Neural Tangent Kernel (2018)**: Connected neural network training to kernel methods
+2. **Score-Based SDEs (2021)**: Unified diffusion models with stochastic differential equations
+3. **Equivariant Networks (2019+)**: Showed how symmetry constraints improve sample efficiency
+4. **Mean Field Theory of Deep Learning**: Explained batch normalization and network dynamics
+
+** Methodological Innovations
+1. **Variational Autoencoders (2014)**: Probabilistic generative modeling
+2. **Normalizing Flows (2017)**: Exact likelihood computation for complex distributions
+3. **Diffusion Models (2021)**: State-of-the-art generation through physics-inspired denoising
+4. **Physics-Informed Neural Networks**: Direct incorporation of physical laws
+
+** Application Domains
+1. **Molecular Design**: From 0 papers (2013-2019) to major category (14 papers, 2023)
+2. **Protein Folding**: Geometric deep learning revolutionizes structural biology
+3. **Climate Modeling**: PDEs and conservation laws improve predictions
+4. **Robotics**: Hamiltonian and Lagrangian networks for control
+
+* Key Insights and Trends
+** Persistent Themes
+1. **Energy-Based Thinking**: From Boltzmann machines to modern EBMs
+2. **Variational Principles**: Consistent presence across all years
+3. **Stochastic Dynamics**: Foundation for optimization and generation
+4. **Geometric Structure**: Increasingly recognized as fundamental
+
+** Emergent Patterns
+1. **Symmetry Awareness**: SE(3) equivariance becomes standard for 3D tasks
+2. **Conservation Laws**: Neural networks that respect physics constraints
+3. **Differential Equations**: Neural ODEs/PDEs as modeling paradigm
+4. **Optimal Transport**: Geometric view of probability distributions
+
+** Future Directions
+1. **Quantum-Classical Hybrids**: Still nascent (3 papers in 2023)
+2. **Multi-Scale Physics**: Bridging microscopic to macroscopic
+3. **Causal Physical Models**: Beyond correlation to mechanism
+4. **Embodied Physics**: Learning through physical interaction
+
+* Impact on Machine Learning
+** Theoretical Understanding
+- Physics provides principled frameworks for understanding deep learning
+- Conservation laws explain training dynamics
+- Statistical mechanics illuminates generalization
+
+** Practical Improvements
+- Equivariant models reduce data requirements by orders of magnitude
+- Physics constraints improve out-of-distribution generalization
+- Energy-based perspectives enable stable training
+
+** New Capabilities
+- Molecular design with chemical accuracy
+- Long-term physical system prediction
+- Inverse problems in imaging and sensing
+- Controllable generation through diffusion
+
+* Conclusions
+Key lessons from this decade:
+1. **Symmetry is not optional**: Incorporating known symmetries dramatically improves performance
+2. **Energy landscapes matter**: Thinking in terms of energy provides powerful abstractions
+3. **Dynamics reveal structure**: Temporal evolution exposes hidden patterns
+4. **Physics constraints generalize**: Laws of physics provide strong inductive biases
+5. **Geometry is fundamental**: Curved spaces and manifolds are natural for learning
