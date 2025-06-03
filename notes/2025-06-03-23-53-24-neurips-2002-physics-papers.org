@@ -1,0 +1,53 @@
+:PROPERTIES:
+:ID:       5094d225-7b4b-471f-9777-29f9c20f82dd
+:END:
+#+TITLE: NeurIPS 2002 Physics papers
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+NeurIPS 2002 consolidates with 15 physics-related papers, showing a strategic focus on core areas. The slight decrease from 2001's peak suggests field maturation and quality focus over quantity.
+
+* Summary Statistics
+- Total physics-related papers: 15
+- Percentage of conference: ~7.2% (of 207 total papers)
+- Change from 2001: -21.1% (19 → 15 papers)
+- Cumulative growth from 2000: +87.5%
+- Notable trend: Consolidation in established categories
+
+* Monte Carlo and Sampling Methods (2 papers)
+
+1. Bayesian Monte Carlo
+2. Interpreting Neural Response Variability as Monte Carlo Sampling of the Posterior
+
+* Energy-Based Models and Statistical Physics (3 papers)
+
+3. Critical Lines in Symmetry of Mixture Models and its Application to Component Splitting
+4. Rate Distortion Function in the Spin Glass State: A Toy Model
+5. Mean Field Approach to a Probabilistic Model in Information Retrieval
+
+* Information Theory and Entropy (2 papers)
+
+6. An Information Theoretic Approach to the Functional Classification of Neurons
+7. Selectivity and Metaplasticity in a Unified Calcium-Dependent Model
+
+* Dynamical Systems and Temporal Models (2 papers)
+
+8. Derivative Observations in Gaussian Process Models of Dynamic Systems
+9. Circuit Model of Short-Term Synaptic Dynamics
+
+* Other Physics-Inspired Methods (6 papers)
+
+10. Going Metric: Denoising Pairwise Data
+11. Fast Transformation-Invariant Factor Analysis
+12. Optoelectronic Implementation of a FitzHugh-Nagumo Neural Model
+13. A Neural Edge-Detection Model for Enhanced Auditory Sensitivity in Modulated Noise
+14. The Stability of Kernel Principal Components Analysis and its Relation to the Process Eigenspectrum
+15. Spike-timing Dependent Plasticity in the Address Domain
+
+* Key Insights for 2002
+- **Consolidation phase**: Quality over quantity (-21.1% papers)
+- **Monte Carlo maturity**: Bayesian MC and posterior sampling
+- **Spin glass connections**: Deep links to disordered systems
+- **Hardware implementations**: FitzHugh-Nagumo in optoelectronics
+- **STDP emergence**: Spike-timing dependent plasticity gains traction
+- **3-year trend**: Sustained growth despite yearly fluctuation (+87.5% from baseline)
