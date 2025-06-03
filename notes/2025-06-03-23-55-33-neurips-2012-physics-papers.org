@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       15399998-730f-4d1b-a535-a4f20d44ff8f
+:END:
+#+TITLE: NeurIPS 2012 Physics papers
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
