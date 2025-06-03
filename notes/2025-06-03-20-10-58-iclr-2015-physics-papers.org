@@ -1,0 +1,54 @@
+:PROPERTIES:
+:ID:       af5c9cd7-2898-4884-8d55-3f4488002c6a
+:END:
+#+TITLE: ICLR 2015 Physics papers
+#+AUTHOR: Ayan Das
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+ICLR 2015 marks a pivotal year with the introduction of key optimization methods (Adam optimizer) and adversarial approaches. While total physics-related papers slightly decreased, the impact and sophistication of contributions increased significantly.
+
+Compared to previous years:
+- Introduction of Adam optimizer - a landmark contribution
+- First adversarial methods appear
+- Continued theoretical analysis of deep networks
+- Slight decrease in total papers but higher impact contributions
+- Growing computational focus (FFT methods, CP-decomposition)
+
+* Energy-Based Models and Statistical Mechanics (3 papers)
+
+1. Deep Narrow Boltzmann Machines are Universal Approximators
+2. Zero-bias autoencoders and the benefits of co-adapting features
+3. Techniques for Learning Binary Stochastic Feedforward Neural Networks
+
+* Variational Methods and Inference (4 papers)
+
+4. Generative Modeling of Convolutional Neural Networks
+5. Word Representations via Gaussian Embedding
+6. Embedding Entities and Relations for Learning and Inference in Knowledge Bases
+7. A Unified Perspective on Multi-Domain and Multi-Task Learning
+
+* Markov Processes and Stochastic Methods (4 papers)
+
+8. Qualitatively characterizing neural network optimization problems
+9. Adam: A Method for Stochastic Optimization
+10. Automatic Discovery and Optimization of Parts for Image Classification
+11. Explaining and Harnessing Adversarial Examples
+
+* Other Physics-Inspired Methods (7 papers)
+
+12. Modeling Compositionality with Multiplicative Recurrent Neural Networks
+13. Deep Captioning with Multimodal Recurrent Neural Networks (m-RNN)
+14. Leveraging Monolingual Data for Crosslingual Compositional Word Representations
+15. Speeding-up Convolutional Neural Networks Using Fine-tuned CP-Decomposition
+16. Move Evaluation in Go Using Deep Convolutional Neural Networks
+17. Very Deep Convolutional Networks for Large-Scale Image Recognition
+18. Fast Convolutional Nets With fbfft: A GPU Performance Evaluation
+
+* Key Insights for 2015
+- Adam optimizer introduced - becomes dominant optimization method
+- Adversarial examples first studied systematically
+- Energy-based models show theoretical depth (universal approximation)
+- Computational efficiency becomes a theme (FFT, decomposition methods)
+- Variational methods: 22.2% (down from 36.8% in 2014)
+- Stochastic methods maintain steady presence at 22.2%
