@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       b1230fcc-4f66-43d0-b704-6ac65931c274
+:END:
+#+TITLE: NeurIPS 2022 Physics papers
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
