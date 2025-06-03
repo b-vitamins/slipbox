@@ -1,0 +1,71 @@
+:PROPERTIES:
+:ID:       66935f4f-e2db-4b22-bbe6-888c97fa1874
+:END:
+#+TITLE: NeurIPS 2013 Physics papers
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+NeurIPS 2013 maintains momentum with 26 physics-related papers, showing consolidation at a high level. The field demonstrates maturity with sophisticated applications of statistical physics, including neural spike dynamics and advanced optimization methods.
+
+* Summary Statistics
+- Total physics-related papers: 26
+- Percentage of conference: ~7.2% (of 360 total papers)
+- Change from 2012: -7.1% (28 → 26 papers)
+- Cumulative growth from 2000: +225.0%
+- Notable: First neural spike dynamics category
+
+* Monte Carlo and Sampling Methods (6 papers)
+
+1. Convergence of Monte Carlo Tree Search in Simultaneous Move Games
+2. Bayesian Inference and Learning in Gaussian Process State-Space Models with Particle MCMC
+3. On Sampling from the Gibbs Distribution with Random Maximum A-Posteriori Perturbations
+4. Approximate inference in latent Gaussian-Markov models from continuous time observations
+5. Auxiliary-variable Exact Hamiltonian Monte Carlo Samplers for Binary Distributions
+6. Real-Time Inference for a Gamma Process Model of Neural Spiking
+
+* Energy-Based Models and Statistical Physics (6 papers)
+
+7. Multi-Prediction Deep Boltzmann Machines
+8. Generalized Denoising Auto-Encoders as Generative Models
+9. Projecting Ising Model Parameters for Fast Mixing
+10. Accelerating Stochastic Gradient Descent using Predictive Variance Reduction
+11. Sinkhorn Distances: Lightspeed Computation of Optimal Transport
+12. Density estimation from unweighted k-nearest neighbor graphs: a roadmap
+
+* Stochastic Processes and SDEs (2 papers)
+
+13. Approximate Gaussian process inference for the drift function in stochastic differential equations
+14. Stochastic Gradient Riemannian Langevin Dynamics on the Probability Simplex
+
+* Neural Spike Dynamics (1 paper)
+
+15. Inferring neural population dynamics from multiple partial recordings of the same neural circuit
+
+* Information Theory and Entropy (1 paper)
+
+16. Distributional Semantics Beyond Concrete Concepts
+
+* Dynamical Systems and Temporal Models (2 papers)
+
+17. It is all in the noise: Efficient multi-task Gaussian process inference with structured residuals
+18. On the Representational Efficiency of Restricted Boltzmann Machines
+
+* Other Physics-Inspired Methods (8 papers)
+
+19. Fast Algorithms for Gaussian Noise Invariant Independent Component Analysis
+20. Capacity of strong attractor patterns to model behavioural and cognitive prototypes
+21. Statistical analysis of coupled time series with Kernel Cross-Spectral Density operators
+22. A Determinantal Point Process Latent Variable Model for Inhibition in Neural Spiking Data
+23. Recurrent networks of coupled Winner-Take-All oscillators for solving constraint satisfaction problems
+24. Noise-Enhanced Associative Memories
+25. Bayesian entropy estimation for binary spike train data using parametric prior knowledge
+26. How to Hedge an Option Against an Adversary: Black-Scholes Pricing is Minimax Optimal
+
+* Key Insights for 2013
+- **Optimal transport emerges**: Sinkhorn distances introduced
+- **Neural spike focus**: Dedicated category for spike dynamics
+- **Deep Boltzmann advances**: Multi-prediction architectures
+- **Stochastic gradient innovation**: Predictive variance reduction
+- **Financial physics**: Black-Scholes as minimax solution
+- **13-year status**: Sustained high level (225% above baseline)
+- **Interdisciplinary breadth**: From neuroscience to finance
