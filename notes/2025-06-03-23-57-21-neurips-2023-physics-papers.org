@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       60cdadfd-d3af-432a-bc21-2b3daa1440ef
+:END:
+#+TITLE: NeurIPS 2023 Physics papers
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
