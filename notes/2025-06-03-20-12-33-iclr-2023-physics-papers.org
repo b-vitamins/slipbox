@@ -1,0 +1,283 @@
+:PROPERTIES:
+:ID:       630678dc-e0f7-4799-bf52-35c317b8167f
+:END:
+#+TITLE: ICLR 2023 Physics papers
+#+AUTHOR: Ayan Das
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+ICLR 2023 sets a new record with 192 physics-related papers, showing physics principles are now fundamental to machine learning. Diffusion models reach full maturity with 27 papers, equivariant models continue dominance with 39 papers, and every physics category shows substantial representation. This represents a 1029% increase from 2013.
+
+Compared to previous years:
+- New record: 192 papers (51.2% growth)
+- Diffusion models peak at 27 papers (14.1%)
+- Equivariant models reach 39 papers (20.3%)
+- Variational methods show resurgence (15 papers)
+- PDEs/Physics-informed solidify (11 papers)
+- Molecular applications stabilize (14 papers)
+- "Other" category largest ever (61 papers) showing breadth
+
+* Diffusion Models and Score-Based Methods (27 papers)
+
+1. Score-based Continuous-time Discrete Diffusion Models
+2. DDM2: Self-Supervised Diffusion MRI Denoising with Generative Diffusion Models
+3. Sampling is as Easy as Learning the Score: Theory for Diffusion Models with Minimal Data Assumptions
+4. Analog Bits: Generating Discrete Data using Diffusion Models with Self-Conditioning
+5. Denoising Diffusion Error Correction Codes
+6. DiffEdit: Diffusion-based semantic image editing with mask guidance
+7. ChiroDiff: Modelling chirographic data with Diffusion Models
+8. Markup-to-Image Diffusion Models with Scheduled Sampling
+9. Information-Theoretic Diffusion
+10. Diffusion Models Already Have A Semantic Latent Space
+11. Diffusion-based Image Translation Using Disentangled Style and Content Representation
+12. CogVideo: Large-scale Pretraining for Text-to-Video Generation via Transformers
+13. Understanding DDPM Latent Codes Through Optimal Transport
+14. Diffusion Adversarial Representation Learning for Self-supervised Vessel Segmentation
+15. Stable Target Field for Reduced Variance Score Estimation in Diffusion Models
+16. DFlow: Learning to Synthesize Better Optical Flow Datasets via a Differentiable Pipeline
+17. Discrete Predictor-Corrector Diffusion Models for Image Synthesis
+18. Generative Modeling with Inverse Heat Dissipation
+19. Novel View Synthesis with Diffusion Models
+20. Perfectly Secure Steganography Using Minimum Entropy Coupling
+21. Accelerating Guided Diffusion Sampling with Splitting Numerical Methods
+22. Defending against Adversarial Audio via Diffusion Model
+23. Pseudoinverse-Guided Diffusion Models for Inverse Problems
+24. Dual Diffusion Implicit Bridges for Image-to-Image Translation
+25. Diffusion Policies as an Expressive Policy Class for Offline Reinforcement Learning
+26. Diffusion-GAN: Training GANs with Diffusion
+27. Unified Discrete Diffusion for Simultaneous Vision-Language Generation
+
+* Energy-Based Models and Statistical Mechanics (13 papers)
+
+1. Equivariant Descriptor Fields: SE(3)-Equivariant Energy-Based Models for End-to-End Visual Robotic Manipulation Learning
+2. Simplicial Hopfield Networks
+3. Sparse Distributed Memory is a Continual Learner
+4. DINO as a von Mises-Fisher mixture model
+5. The surprising computational power of Nondeterministic Stack RNNs
+6. Denoising Masked Autoencoders Help Robust Classification
+7. Energy-based Out-of-Distribution Detection for Graph Neural Networks
+8. DensePure: Understanding Diffusion Models for Adversarial Robustness
+9. Energy-Based Test Sample Adaptation for Domain Generalization
+10. Energy-Inspired Self-Supervised Pretraining for Vision Models
+11. Gradient-Guided Importance Sampling for Learning Binary Energy-Based Models
+12. Robust and Controllable Object-Centric Learning through Energy-based Models
+13. Feature selection and low test error in shallow low-rotation ReLU networks
+
+* Normalizing Flows and Flow-Based Models (2 papers)
+
+14. Building Normalizing Flows with Stochastic Interpolants
+15. Flow Matching for Generative Modeling
+
+* Physics-Informed Neural Networks and PDEs (11 papers)
+
+16. Improved Training of Physics-Informed Neural Networks Using Energy-Based Priors: a Study on Electrical Impedance Tomography
+17. Bi-level Physics-Informed Neural Networks for PDE Constrained Optimization using Broyden's Hypergradients
+18. A Stable and Scalable Method for Solving Initial Value PDEs with Neural Networks
+19. Continuous PDE Dynamics Forecasting with Implicit Neural Representations
+20. Competitive Physics Informed Networks
+21. A Theoretical Framework for Inference and Learning in Predictive Coding Networks
+22. Differentiable Mathematical Programming for Object-Centric Representation Learning
+23. Domain-Indexing Variational Bayes: Interpretable Domain Index for Domain Adaptation
+24. CROM: Continuous Reduced-Order Modeling of PDEs Using Implicit Neural Representations
+25. Nonlinear Reconstruction for Operator Learning of PDEs with Discontinuities
+26. Guiding continuous operator learning through Physics-based boundary constraints
+
+* Equivariant and Symmetric Models (39 papers)
+
+27. The Surprising Effectiveness of Equivariant Models in Domains with Latent Symmetry
+28. Molecular Geometry Pretraining with SE(3)-Invariant Denoising Distance Matching
+29. Equivariant Energy-Guided SDE for Inverse Molecular Design
+30. Equivariant Shape-Conditioned Generation of 3D Molecules for Ligand-Based Drug Design
+31. ExpressivE: A Spatio-Functional Embedding For Knowledge Graph Completion
+32. EquiMod: An Equivariance Module to Improve Visual Instance Discrimination
+33. Learning rigid dynamics with face interaction graph networks
+34. SE(3)-Equivariant Attention Networks for Shape Reconstruction in Function Space
+35. Effects of Graph Convolutions in Multi-layer Networks
+36. Enhancing the Inductive Biases of Graph Neural ODE for Modeling Physical Systems
+37. Anti-Symmetric DGN: a stable architecture for Deep Graph Networks
+38. The Lie Derivative for Measuring Learned Equivariance
+39. Reversible Column Networks
+40. 3D Equivariant Diffusion for Target-Aware Molecule Generation and Affinity Prediction
+41. A General Framework For Proving The Equivariant Strong Lottery Ticket Hypothesis
+42. Amortised Invariance Learning for Contrastive Self-Supervision
+43. Git Re-Basin: Merging Models Modulo Permutation Symmetries
+44. Reparameterization through Spatial Gradient Scaling
+45. Symmetric Pruning in Quantum Neural Networks
+46. Spherical Sliced-Wasserstein
+47. Scalable and Equivariant Spherical CNNs by Discrete-Continuous (DISCO) Convolutions
+48. Empowering Networks With Scale and Rotation Equivariance Using A Similarity Convolution
+49. Spatial Attention Kinetic Networks with E(n)-Equivariance
+50. Equiformer: Equivariant Graph Attention Transformer for 3D Atomistic Graphs
+51. Sign and Basis Invariant Networks for Spectral Graph Representation Learning
+52. Neural Radiance Field Codebooks
+53. What shapes the loss landscape of self-supervised learning?
+54. Equivariant Hypergraph Diffusion Neural Operators
+55. Self-Distillation for Further Pre-training of Transformers
+56. Anisotropic Message Passing: Graph Neural Networks with Directional and Long-Range Interactions
+57. Conditional Antibody Design as 3D Equivariant Graph Translation
+58. Protein Sequence and Structure Co-Design with Equivariant Translation
+59. Proactive Multi-Camera Collaboration for 3D Human Pose Estimation
+60. Contextual Convolutional Networks
+61. Equivariance-aware Architectural Optimization of Neural Networks
+62. Neural-based classification rule learning for sequential data
+63. Where to Begin? On the Impact of Pre-Training and Initialization in Federated Learning
+64. Neuromechanical Autoencoders: Learning to Couple Elastic and Neural Network Nonlinearity
+65. On Representing Linear Programs by Graph Neural Networks
+
+* Molecular and Chemical Applications (14 papers)
+
+66. PiFold: Toward effective and efficient protein inverse folding
+67. Sampling-free Inference for Ab-Initio Potential Energy Surface Networks
+68. De Novo Molecular Generation via Connection-aware Motif Mining
+69. A Self-Attention Ansatz for Ab-initio Quantum Chemistry
+70. 3D generation on ImageNet
+71. Diffusion Probabilistic Modeling of Protein Backbones in 3D for the motif-scaffolding problem
+72. Matching receptor to odorant with protein language and graph neural networks
+73. E3Bind: An End-to-End Equivariant Network for Protein-Ligand Docking
+74. Molecule Generation For Target Protein Binding with Structural Motifs
+75. Multi-skill Mobile Manipulation for Object Rearrangement
+76. Learning Hierarchical Protein Representations via Complete 3D Graph Networks
+77. Multi-level Protein Structure Pre-training via Prompt Learning
+78. On Pre-training Language Model for Antibody
+79. HotProtein: A Novel Framework for Protein Thermostability Prediction and Editing
+
+* Hamiltonian and Dynamical Systems (3 papers)
+
+80. Accelerating Hamiltonian Monte Carlo via Chebyshev Integration Time
+81. Lagrangian Neural Networks
+82. Protein Representation Learning by Geometric Structure Pretraining
+
+* Variational Methods and Inference (15 papers)
+
+83. Semi-Implicit Variational Inference via Score Matching
+84. Wasserstein Auto-encoded MDPs: Formal Verification of Efficiently Distilled RL Policies with Many-sided Guarantees
+85. Variational Latent Branching Model for Off-Policy Evaluation
+86. Identifiability Results for Multimodal Contrastive Learning
+87. Building a Subspace of Policies for Scalable Continual Learning
+88. Simplifying Model-Based RL: Learning Representations, Latent-space Models, and Policies with One Objective
+89. Few-shot Backdoor Attacks via Neural Tangent Kernels
+90. A VAE for Transformers with Nonparametric Variational Information Bottleneck
+91. Dirichlet-based Uncertainty Calibration for Active Domain Adaptation
+92. Deep Variational Implicit Processes
+93. A Minimalist Dataset for Systematic Generalization of Perception, Syntax, and Semantics
+94. How Does Semi-supervised Learning with Pseudo-labelers Work? A Case Study
+95. TVSPrune - Pruning Non-discriminative filters via Total Variation separability of intermediate representations without fine tuning
+96. Trading Information Between Latents in Hierarchical Variational Autoencoders
+97. MMVAE+: Enhancing the Generative Quality of Multimodal VAEs without Compromises
+
+* Markov Processes and Stochastic Methods (20 papers)
+
+98. Scale-invariant Bayesian Neural Networks with Connectivity Tangent Kernel
+99. Uniform-in-time propagation of chaos for the mean-field gradient Langevin dynamics
+100. Pre-training via Denoising for Molecular Property Prediction
+101. Contrastive Meta-Learning for Partially Observable Few-Shot Learning
+102. Asynchronous Gradient Play in Zero-Sum Multi-Agent Games
+103. Broken Neural Scaling Laws
+104. On the Onset of Variance-Limited Behavior for Networks in the Lazy and Rich Regimes
+105. Excess Risk of Two-Layer ReLU Neural Networks in Teacher-Student Settings and its Superiority to Kernel Methods
+106. Heterogeneous Neuronal and Synaptic Dynamics for Spike-Efficient Unsupervised Learning: Theory and Design Principles
+107. Latent Bottlenecked Attentive Neural Processes
+108. Implicit Bias in Leaky ReLU Networks Trained on High-Dimensional Data
+109. Hungry Hungry Hippos: Towards Language Modeling with State Space Models
+110. DeBERTaV3: Improving DeBERTa using ELECTRA-Style Pre-Training with Gradient-Disentangled Embedding Sharing
+111. EAGLE: Large-scale Learning of Turbulent Fluid Dynamics with Mesh Transformers
+112. Unsupervised Model Selection for Time Series Anomaly Detection
+113. How to Train your HIPPO: State Space Models with Generalized Orthogonal Basis Projections
+114. Learning Input-agnostic Manipulation Directions in StyleGAN with Text Guidance
+115. Stochastic Multi-Person 3D Motion Forecasting
+116. Policy Pre-training for Autonomous Driving via Self-supervised Geometric Modeling
+117. Diversify and Disambiguate: Out-of-Distribution Robustness via Disagreement
+118. Martingale Posterior Neural Processes
+119. Koopman Neural Operator Forecaster for Time-series with Temporal Distributional Shifts
+
+* Optimal Transport and Geometric Methods (8 papers)
+
+120. A Higher Precision Algorithm for Computing the 1-Wasserstein Distance
+121. On amortizing convex conjugates for optimal transport
+122. Spherical Sliced-Wasserstein
+123. Ollivier-Ricci Curvature for Hypergraphs: A Unified Framework
+124. Hierarchical Sliced Wasserstein Distance
+125. Latent Graph Inference using Product Manifolds
+126. Riemannian Metric Learning via Optimal Transport
+127. Volumetric Optimal Transportation by Fast Fourier Transform
+
+* Quantum and Quantum-Inspired Methods (3 papers)
+
+128. QuAnt: Quantum Annealing with Learnt Couplings
+129. Classically Approximating Variational Quantum Machine Learning with Random Fourier Features
+130. NTFields: Neural Time Fields for Physics-Informed Robot Motion Planning
+
+* Other Physics-Inspired Methods (61 papers)
+
+131. Quantifying and Mitigating the Impact of Label Errors on Model Disparity Metrics
+132. SIMPLE: A Gradient Estimator for k-Subset Sampling
+133. Is Conditional Generative Modeling All You Need for Decision Making?
+134. What Learning Algorithm is In-Context Learning? Investigations with Linear Models
+135. Beyond Calibration: Estimating the Grouping Loss of Modern Neural Networks
+136. CrAM: A Compression-Aware Minimizer
+137. DASHA: Distributed Nonconvex Optimization with Communication Compression and Optimal Oracle Complexity
+138. Jointly Learning Visual and Auditory Speech Representations from Raw Data
+139. Kernel Neural Optimal Transport
+140. Neural Optimal Transport
+141. A View From Somewhere: Human-Centric Face Representations
+142. LS-IQ: Implicit Reward Regularization for Inverse Reinforcement Learning
+143. FiT: Parameter Efficient Few-shot Transfer Learning for Personalized and Federated Image Classification
+144. Forward Super-Resolution: How Can GANs Learn Hierarchical Generative Models for Real-World Distributions
+145. Towards Understanding Ensemble, Knowledge Distillation and Self-Distillation in Deep Learning
+146. Mind the Pool: Convolutional Neural Networks Can Overfit Input Size
+147. Provably Efficient Lifelong Reinforcement Learning with Linear Representation
+148. Easy Differentially Private Linear Regression
+149. SMART: Sentences as Basic Units for Text Evaluation
+150. Does Deep Learning Learn to Abstract? A Systematic Probing Framework
+151. Efficient recurrent architectures through activity sparsity and sparse back-propagation through time
+152. Unicom: Universal and Compact Representation Learning for Image Retrieval
+153. The Curious Case of Benign Memorization
+154. Guiding Safe Exploration with Weakest Preconditions
+155. Sampling-based inference for large linear models, with application to linearised Laplace
+156. Ask Me Anything: A simple strategy for prompting language models
+157. The Augmented Image Prior: Distilling 1000 Classes by Extrapolating from a Single Image
+158. NeRN: Learning Neural Representations for Neural Networks
+159. Causal Reasoning in the Presence of Latent Confounders via Neural ADMG Learning
+160. The hidden uniform cluster prior in self-supervised learning
+161. Multi-lingual Evaluation of Code Generation Models
+162. Time to augment self-supervised visual representation learning
+163. Training language models to summarize narratives improves brain alignment
+164. Agnostic Learning of General ReLU Activation Using Gradient Descent
+165. Global Explainability of GNNs via Logic Combination of Learned Concepts
+166. Meta Temporal Point Processes
+167. Multi-Rate VAE: Train Once, Get the Full Rate-Distortion Curve
+168. Concept Gradient: Concept-based Interpretation Without Linear Assumption
+169. On the Effectiveness of Out-of-Distribution Data in Self-Supervised Long-Tail Learning
+170. Temporal Domain Generalization with Drift-Aware Dynamic Neural Networks
+171. Mastering the Game of No-Press Diplomacy via Human-Regularized Reinforcement Learning and Planning
+172. Subquadratic Algorithms for Kernel Matrices via Kernel Density Estimation
+173. A probabilistic framework for task-aligned intra- and inter-area neural manifold estimation
+174. Restricted Strong Convexity of Deep Learning Models with Smooth Activations
+175. wav2tok: Deep Sequence Tokenizer for Audio Retrieval
+176. Unbiased Supervised Contrastive Learning
+177. Decision S4: Efficient Sequence-Based RL via State Spaces Layers
+178. A Kernel Perspective of Skip Connections in Convolutional Networks
+179. PD-MORL: Preference-Driven Multi-Objective Reinforcement Learning Algorithm
+180. Hard-Meta-Dataset++: Towards Understanding Few-Shot Performance on Difficult Tasks
+181. Robust Active Distillation
+182. Dual Student Networks for Data-Free Model Stealing
+183. Continuous-time identification of dynamic state-space models by deep subspace encoding
+184. Simple Initialization and Parametrization of Sinusoidal Networks via Their Kernel Bandwidth
+185. Iterative Patch Selection for High-Resolution Image Recognition
+186. Multifactor Sequential Disentanglement via Structured Koopman Autoencoders
+187. Learning ReLU networks to high uniform accuracy is intractable
+188. Continuous Pseudo-Labeling from the Start
+189. Neural Implicit Shape Editing using Boundary Sensitivity
+190. Task-Aware Information Routing from Common Representation Space in Lifelong Learning
+191. BALTO: fast tensor program optimization with diversity-based active learning
+192. Static Prediction of Runtime Errors by Learning to Execute Programs with External Resource Descriptions
+
+* Key Insights for 2023
+- Record-breaking year: 192 papers (51.2% growth)
+- Diffusion models reach maturity (14.1% of papers)
+- Equivariant models remain dominant (20.3% of papers)
+- Physics principles now pervasive across ML
+- Every category shows healthy representation
+- "Other" category size (31.8%) indicates continued innovation
+- 10-year growth: 1029% increase from 2013
+- Average annual growth rate: 27.4% over decade
