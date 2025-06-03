@@ -5,3 +5,238 @@
 #+FILETAGS: :literature:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
+NeurIPS 2021 shows continued growth with 176 physics-related papers. Diffusion models mature rapidly with 12 papers including variational perspectives, while geometric and equivariant methods expand significantly with 14 papers.
+
+* Summary Statistics
+- Total physics-related papers: 176
+- Percentage of conference: ~7.5% (of 2334 total papers)
+- Change from 2020: -7.4% (190 → 176 papers)
+- Cumulative growth from 2000: +2100.0%
+- Notable: First decline since 2014, but consolidation at high level
+
+* Diffusion Models and Score-Based Methods (12 papers)
+
+1. Autoregressive Diffusion Models
+2. CSDI: Conditional Score-based Diffusion Models for Probabilistic Time Series Imputation
+3. D2C: Diffusion-Decoding Models for Few-Shot Conditional Generation
+4. Deep Archimedean Copulas
+5. Diffusion Models Beat GANs on Image Synthesis
+6. GeoDiff: A Geometric Diffusion Model for Molecular Conformation Generation
+7. On Contrastive Representations of Stochastic Processes
+8. Score-based Generative Modeling in Latent Space
+9. Structured Denoising Diffusion Models in Discrete State-Spaces
+10. Variational Diffusion Models
+11. A Variational Perspective on Diffusion-Based Generative Models and Score Matching
+12. Implicit Normalizing Flows
+
+* Energy-Based Models and Statistical Physics (7 papers)
+
+13. Adversarial Energy Disaggregation for Non-intrusive Load Monitoring
+14. Contrastive Active Inference
+15. How Should Pre-Trained Language Models Be Fine-Tuned Towards Adversarial Robustness?
+16. Kernel Functional Optimisation
+17. Learning Energy Networks with Generalized Fenchel-Young Losses
+18. No MCMC for me: Amortized sampling for fast and stable training of energy-based models
+19. Tractable Density Estimation on Learned Manifolds with Conformal Embedding Flows
+
+* Neural Differential Equations and Dynamical Systems (34 papers)
+
+20. A flow-based latent state generative model of neural population responses to natural images
+21. A universal probabilistic spike count model reveals ongoing modulation of neural variability
+22. Bridging Explicit and Implicit Deep Generative Models via Neural Stein Estimators
+23. Charting and Navigating the Space of Solutions for Recurrent Neural Networks
+24. Coordinates Are NOT Lonely - Codebook Prior Helps Implicit Neural 3D representations
+25. Deep Equilibrium Based Neural Operators for Steady-State PDEs
+26. Deep learning is adaptive to intrinsic dimensionality of model smoothness in anisotropic Besov space
+27. Deep neural networks as point estimates for deep Gaussian processes
+28. Don't Generate Me: Training Differentially Private Generative Models with Sinkhorn Divergence
+29. Efficient and accurate gradients for neural SDEs
+30. Functional Regularization for Reinforcement Learning via Learned Fourier Features
+31. Going Beyond Linear Transformers with Recurrent Fast Weight Programmers
+32. HyperSPNs: Compact and Expressive Probabilistic Circuits
+33. Imitation with Neural Density Models
+34. Learning One Representation to Optimize All Rewards
+35. Learning to Accelerate Partial Differential Equations via Latent Global Evolution
+36. Meta-Learning the Search Distribution of Black-Box Random Search Based Adversarial Attacks
+37. Neural Ideal Large Eddy Simulation: Modeling Turbulence with Neural Stochastic Differential Equations
+38. Neural Stochastic Dual Dynamic Programming
+39. Newton-LESS: Sparsification without Trade-offs for the Sketched Newton Update
+40. On Episodes, Prototypical Networks, and Few-shot Learning
+41. On Training Implicit Models
+42. On the Role of Optimization in Double Descent: A Least Squares Study
+43. On the Validity of Modeling SGD with Stochastic Differential Equations (SDEs)
+44. Perturbation-based Regret Analysis of Predictive Control in Linear Time Varying Systems
+45. Physics-Integrated Variational Autoencoders for Robust and Interpretable Generative Modeling
+46. Randomized Sparse Neural Galerkin Schemes for Solving Evolution Equations with Deep Networks
+47. Recurrence along Depth: Deep Convolutional Neural Networks with Recurrent Layer Aggregation
+48. S³: Sign-Sparse-Shift Reparametrization for Effective Training of Low-bit Shift Networks
+49. SBO-RNN: Reformulating Recurrent Neural Networks via Stochastic Bilevel Optimization
+50. Soft Calibration Objectives for Neural Networks
+51. Stochastic Solutions for Linear Inverse Problems using the Prior Implicit in a Denoiser
+52. Volume Rendering of Neural Implicit Surfaces
+53. What can linearized neural networks actually say about generalization?
+
+* Quantum Computing and Quantum Physics (4 papers)
+
+54. Provably efficient multi-task reinforcement learning with model transfer
+55. Quantum Entropy Scoring for Fast Robust Mean Estimation and Improved Outlier Detection
+56. Quantum algorithms for sampling log-concave distributions and estimating normalizing constants
+57. Solving Partial Differential Equations with Point Source Based on Physics-Informed Neural Networks
+
+* Geometric and Equivariant Methods (14 papers)
+
+58. E(n) Equivariant Normalizing Flows
+59. A PAC-Bayes Analysis of Adversarial Robustness
+60. Approximately Equivariant Networks for Imperfectly Symmetric Dynamics
+61. E(n) Equivariant Graph Neural Networks
+62. Equivariant Manifold Flows
+63. Equivariant message passing for the prediction of tensorial properties and molecular spectra
+64. Frame Averaging for Invariant and Equivariant Network Design
+65. Gauge Equivariant Mesh CNNs: Anisotropic convolutions on geometric graphs
+66. GemNet: Universal Directional Graph Neural Networks for Molecules
+67. Learning Equivariant Energy Based Models with Equivariant Stein Variational Gradient Descent
+68. Natural Graph Networks
+69. SE(3)-Equivariant Prediction of Molecular Wavefunctions and Electronic Densities
+70. Sign and Basis Invariant Networks for Spectral Graph Representation Learning
+71. The Power of Differentiable Learning versus PAC and SQ Learning
+
+* Optimal Transport and Gradient Flows (25 papers)
+
+72. A Theory of the Distortion-Perception Tradeoff in Wasserstein Space
+73. Accurate Point Cloud Registration with Robust Optimal Transport
+74. Averaging on the Bures-Wasserstein manifold: dimension-free convergence of gradient descent
+75. Deconditional Downscaling with Gaussian Processes
+76. Deep Optimal Transport: A Practical Algorithm for Photo-realistic Image Restoration
+77. Do Neural Optimal Transport Solvers Work? A Continuous Wasserstein-2 Benchmark
+78. Fast Approximation of the Sliced-Wasserstein Distance Using Concentration of Random Projections
+79. Flow Network based Generative Models for Non-Iterative Diverse Candidate Generation
+80. Gradient Flows and Proximal Splitting Methods: A Unified Perspective on Accelerated and Stochastic Optimization
+81. Large-Scale Wasserstein Gradient Flows
+82. Low-Rank Sinkhorn Factorization
+83. Mirror Langevin Monte Carlo: the Case Under Isoperimetry
+84. On Riemannian Optimization over Positive Definite Matrices with the Bures-Wasserstein Geometry
+85. On the interplay between data structure and loss function in classification problems
+86. Optimal underdamped Langevin MCMC Method
+87. Outlier-Robust Optimal Transport
+88. Particle Gradient Descent Model for Point Process Generation
+89. Pooling by Sliced-Wasserstein Embedding
+90. Profiling Pareto Front With Multi-Objective Stein Variational Gradient Descent
+91. Sliced Mutual Information: A Scalable Measure of Statistical Dependence
+92. The Unbalanced Gromov Wasserstein Distance: Conic Formulation and Relaxation
+93. Time-Reversed Dissipation Induces Duality Between Minimizing Gradient Norm and Function Value
+94. Wasserstein Flow Meets Replicator Dynamics: A Mean-Field Analysis of Representation Learning in Actor-Critic
+95. k-Sliced Mutual Information: A Quantitative Study of Scalability with Dimension
+96. Learning Generalized Gumbel-max Causal Mechanisms
+
+* Sampling Methods and MCMC (9 papers)
+
+97. A Damped Newton Method Achieves Global O(1/k²) and Local Quadratic Convergence Rate
+98. Conditional Generation Using Polynomial Expansions
+99. Fast Certified Robust Training with Short Warmup
+100. Fixed-Distance Hamiltonian Monte Carlo
+101. Hamiltonian Monte Carlo for efficient Gaussian sampling: long and random steps
+102. MCMC Variational Inference via Uncorrected Hamiltonian Annealing
+103. Sifting through the noise: Universal first-order methods for stochastic variational inequalities
+104. Simple steps are all you need: Frank-Wolfe and generalized self-concordant functions
+105. Unbiased constrained sampling with Self-Concordant Barrier Hamiltonian Monte Carlo
+
+* Conservation Laws and Symmetries (2 papers)
+
+106. Conservation-aware Reinforcement Learning
+107. Instance-dependent Label-noise Learning under a Structural Causal Model
+
+* Statistical Mechanics and Phase Transitions (8 papers)
+
+108. Modern Hopfield Networks and Attention for Immune Repertoire Classification
+109. On Margin-Based Cluster Recovery with Oracle Queries
+110. On Optimal Robustness to Adversarial Corruption in Online Decision Problems
+111. On Sparse Modern Hopfield Model
+112. Partition Function Estimation: A Quantitative Study
+113. Recurrent Bayesian Classifier Chains for Exact Multi-Label Classification
+114. ResNEsts and DenseNEsts: Block-based DNN Models with Improved Representation Guarantees
+115. Stationary Kernels and Gaussian Processes on Lie Groups and their Homogeneous Spaces I: the compact case
+
+* Hamiltonian and Lagrangian Methods (3 papers)
+
+116. Extending Lagrangian and Hamiltonian Neural Networks with Differentiable Contact Models
+117. Noether's Learning Dynamics: Role of Symmetry Breaking in Neural Networks
+118. Stein Variational Inference as Gradient Flow
+
+* Stochastic Processes and SDEs (24 papers)
+
+119. Decentralized Q-learning in Zero-sum Markov Games
+120. Deep Markov Factor Analysis: Towards Concurrent Temporal and Spatial Analysis of fMRI Data
+121. Efficient Bayesian network structure learning via local Markov boundary search
+122. Exit-time Analysis for Approximations of Gradient Descent Trajectories Around Saddle Points
+123. Exploiting Data Sparsity in Secure Cross-Platform Social Recommendation
+124. Gaussian gated linear networks
+125. Gradient Descent on Two-layer Nets: Margin Maximization and Simplicity Bias
+126. Information Constraints and the Precision of Adaptation: Sex, Population Size and the Cost of Complexity
+127. Logarithmic Regret in Feature-based Dynamic Pricing
+128. Momentum Centering and Asynchronous Update for Adaptive Gradient Methods
+129. Near-optimal Offline and Streaming Algorithms for Learning Non-Linear Dynamical Systems
+130. Neural Routing by Memory
+131. On Learning Domain-Invariant Representations for Transfer Learning with Multiple Sources
+132. Online false discovery rate control for anomaly detection in time series
+133. Online Sign Identification: Minimization of the Number of Errors in Thresholding Bandits
+134. Opening the Blackbox: Accelerating Neural Differential Equations by Regularizing Internal Solver Heuristics
+135. Reconstruction for Powerful Graph Representations
+136. SGD: The Role of Implicit Regularization, Batch-size and Multiple-epochs
+137. Selective Sampling for Online Best-arm Identification
+138. Stochastic Bias-Reduced Gradient Methods
+139. Stochastic Collapse: How Gradient Noise Attracts SGD Dynamics Towards Simpler Subnetworks
+140. Stochastic Optimization of Areas Under Precision-Recall Curves with Provable Convergence
+141. Understanding Negative Samples in Instance Discriminative Self-supervised Representation Learning
+142. Uniform Convergence of Interpolators: Gaussian Width, Norm Bounds and Benign Overfitting
+
+* Entropy and Information Theory (4 papers)
+
+143. An Information-theoretic Approach to Distribution Shifts
+144. Functional Renyi Differential Privacy for Generative Modeling
+145. Neural Distance Embeddings for Biological Sequences
+146. On the Properties of Kullback-Leibler Divergence Between Multivariate Gaussian Distributions
+
+* Neural Tangent Kernels and Mean Field Theory (9 papers)
+
+147. Analyzing the Generalization Capability of SGLD Using Properties of Gaussian Channels
+148. Deep learning: a statistical viewpoint
+149. Feature learning in neural networks and kernel machines that recursively learn features
+150. Improved Deep Neural Network Generalization Using m-Sharpness-Aware Minimization
+151. Mean-field Analysis of Two-layer Neural Networks: Non-asymptotic Rates and Generalization Bounds
+152. On the Expected Complexity of Maxout Networks
+153. Scaling Neural Tangent Kernels via Sketching and Random Features
+154. Self-Consistent Dynamical Field Theory of Kernel Evolution in Wide Neural Networks
+155. The Neural Tangent Kernel in High Dimensions: Triple Descent and a Multi-Scale Theory of Generalization
+
+* Other Physics-Inspired Methods (21 papers)
+
+156. A Gaussian Process-Bayesian Bernoulli Mixture Model for Multi-Label Active Learning
+157. Adaptive wavelet distillation from neural networks through interpretations
+158. Binary Graph Neural Networks
+159. Can contrastive learning avoid shortcut solutions?
+160. Compressive Visual Representations
+161. Contrastive Laplacian Eigenmaps
+162. Entropic Desired Dynamics for Intrinsic Control
+163. Fast Projection onto the Capped Simplex with Applications to Sparse Regression in Bioinformatics
+164. Greedy and Random Quasi-Newton Methods with Faster Explicit Superlinear Convergence
+165. Learning to Learn Kernels with Variational Random Features
+166. Machine learning structure preserving brackets for forecasting irreversible processes
+167. Neural Additive Models: Interpretable Machine Learning with Neural Nets
+168. Neural Trees for Learning on Graphs
+169. Particle Dual Averaging: Optimization of Mean Field Neural Network with Global Convergence Rate Analysis
+170. PLUR: A Unifying, Graph-Based View of Program Learning, Understanding, and Repair
+171. Raw Audio for Depression Detection Can Be More Robust Against Gender Imbalance than Mel-Spectrogram Features
+172. Structured Dropout Variational Inference for Bayesian Neural Networks
+173. TacticZero: Learning to Prove Theorems from Scratch with Deep Reinforcement Learning
+174. The Neural Covariance SDE: Shaped Infinite Depth-and-Width Networks at Initialization
+175. Unifying Gradient Estimators for Meta-Reinforcement Learning via Off-Policy Evaluation
+176. coVariance Neural Networks
+
+* Key Insights for 2021
+- **Diffusion maturity**: Beat GANs, discrete state-spaces, molecular generation
+- **Equivariant explosion**: E(n) and SE(3) methods become standard
+- **Neural SDEs advance**: Efficient gradients, turbulence modeling
+- **Conservation principles**: First papers on conservation-aware RL
+- **NTK theory deepens**: Triple descent, multi-scale phenomena
+- **21-year status**: 2100% growth, slight consolidation
+- **Physics ubiquity**: Methods span from molecules to turbulence
