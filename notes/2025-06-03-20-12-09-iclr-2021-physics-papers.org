@@ -1,0 +1,146 @@
+:PROPERTIES:
+:ID:       86697044-fea1-4a43-a452-4885189cd80c
+:END:
+#+TITLE: ICLR 2021 Physics papers
+#+AUTHOR: Ayan Das
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+ICLR 2021 marks a watershed moment with the emergence of diffusion models as a major paradigm, including the seminal score-based SDE paper. Equivariant models explode in popularity, and molecular applications expand significantly. This represents the second-largest growth year in conference history.
+
+Compared to previous years:
+- Diffusion models emerge as major category (7 papers)
+- Equivariant models reach new heights (18 papers, 21.2%)
+- Energy-based models remain strong (12 papers)
+- Molecular applications double (4 papers)
+- PDEs and physics-informed methods grow
+- Record diversity across all physics categories
+- Score-based generative modeling revolutionizes the field
+
+* Diffusion Models and Score-Based Methods (7 papers)
+
+1. Score-Based Generative Modeling through Stochastic Differential Equations
+2. Denoising Diffusion Implicit Models
+3. Anytime Sampling for Autoregressive Models via Ordered Autoencoding
+4. DiffWave: A Versatile Diffusion Model for Audio Synthesis
+5. Discrete Denoising Flows
+6. Adversarial score matching and improved sampling for image generation
+7. Maximum Likelihood Training of Score-Based Diffusion Models
+
+* Energy-Based Models and Statistical Mechanics (12 papers)
+
+8. On the mapping between Hopfield networks and Restricted Boltzmann Machines
+9. No MCMC for Me: Amortized Sampling for Fast and Stable Training of Energy-Based Models
+10. Generalized Energy Based Models
+11. Learning Energy-Based Models by Diffusion Recovery Likelihood
+12. Large Associative Memory Problem in Neurobiology and Machine Learning
+13. VAEBM: A Symbiosis between Variational Autoencoders and Energy-based Models
+14. EigenGame: PCA as a Nash Equilibrium
+15. Hopfield Networks is All You Need
+16. The Hidden Convex Optimization Landscape of Regularized Two-Layer ReLU Networks: an Exact Characterization of the Optimal Solutions
+17. Learning with AMIGo: Adversarially Motivated Intrinsic Goals
+18. Differentiable Trust Region Layers for Deep Reinforcement Learning
+19. Training with Quantization Noise for Extreme Model Compression
+
+* Normalizing Flows and Flow-Based Models (4 papers)
+
+20. Projected Latent Markov Chain Monte Carlo: Conditional Sampling of Normalizing Flows
+21. Building Normalizing Flows with Stochastic Interpolants
+22. Convex Potential Flows: Universal Probability Distributions with Optimal Transport and Convex Optimization
+23. Wasserstein-2 Generative Networks
+
+* Physics-Informed Neural Networks and PDEs (4 papers)
+
+24. Learning continuous-time PDEs from sparse data with graph neural networks
+25. PDE-Driven Spatiotemporal Disentanglement
+26. Neural ODE Processes
+27. Neural Jump Ordinary Differential Equations: Consistent Continuous-Time Prediction and Filtering
+
+* Equivariant and Symmetric Models (18 papers)
+
+28. Gauge Equivariant Mesh CNNs: Anisotropic Convolutions on Geometric Graphs
+29. Neural Mechanics: Symmetry and Broken Conservation Laws in Deep Learning Dynamics
+30. Expressive Power of Invariant and Equivariant Graph Neural Networks
+31. Learning to Represent Action Values as a Hypergraph on the Action Vertices
+32. A Wigner-Eckart Theorem for Group Equivariant Convolution Kernels
+33. Group Equivariant Generative Adversarial Networks
+34. Isometric Transformation Invariant and Equivariant Graph Convolutional Networks
+35. Why Are Convolutional Nets More Sample-Efficient than Fully-Connected Nets?
+36. On the role of planning in model-based deep reinforcement learning
+37. The Recurrent Neural Tangent Kernel
+38. What Matters for On-Policy Deep Actor-Critic Methods? A Large-Scale Study
+39. Exploring the Uncertainty Properties of Neural Networks' Implicit Priors in the Infinite-Width Limit
+40. Understanding Over-parameterization in Generative Adversarial Networks
+41. On the Universality of Rotation Equivariant Point Cloud Networks
+42. Analyzing the Expressive Power of Graph Neural Networks in a Spectral Perspective
+43. Globally Stable Neural Imitation Policies
+44. Recurrent Independent Mechanisms
+45. Group Equivariant Conditional Neural Processes
+
+* Molecular and Chemical Applications (4 papers)
+
+46. Conformation-Guided Molecular Representation with Hamiltonian Neural Networks
+47. Intrinsic-Extrinsic Convolution and Pooling for Learning on 3D Protein Structures
+48. Learning Molecular Representations for Medicinal Chemistry
+49. Learning from Protein Structure with Geometric Vector Perceptrons
+
+* Hamiltonian and Dynamical Systems (1 papers)
+
+50. Deconstructing the Inductive Biases of Hamiltonian Neural Networks
+
+* Variational Methods and Inference (8 papers)
+
+51. Variational Information Bottleneck for Effective Low-Resource Fine-Tuning
+52. Regularized Inverse Reinforcement Learning
+53. Disentangled Recurrent Wasserstein Autoencoder
+54. Learning Hyperbolic Representations of Topological Features
+55. Deep Variational Implicit Processes
+56. A Unified Approach to Interpreting and Boosting Adversarial Transferability
+57. Representation learning for improved interpretability and classification accuracy of clinical factors from EEG
+58. Adaptive Universal Generalized PageRank Graph Neural Network
+
+* Markov Processes and Stochastic Methods (13 papers)
+
+59. Contrastive Divergence Learning Is a Time Reversal Adversarial Game
+60. Gradient Origin Networks
+61. Greedy-GQ with Variance Reduction: Finite-time Analysis and Improved Complexity
+62. Latent Convergent Cross Mapping
+63. Global optimality of softmax policy gradient with single hidden layer neural networks in the mean-field regime
+64. Implicit Gradient Regularization
+65. Gradient Descent on Neural Networks Typically Occurs at the Edge of Stability
+66. A Diffusion Theory For Deep Learning Dynamics: Stochastic Gradient Descent Exponentially Favors Flat Minima
+67. Neural Networks with Stochastic Weights
+68. Understanding and Improving Lexical Choice in Non-Autoregressive Translation
+69. Learning Generalizable Visual Representations via Interactive Gameplay
+70. Accelerating Convergence of Replica Exchange Stochastic Gradient MCMC via Variance Reduction
+71. Simple Spectral Graph Convolution
+
+* Optimal Transport and Geometric Methods (11 papers)
+
+72. Continuous Wasserstein-2 Barycenter Estimation without Minimax Optimization
+73. Distributional Sliced-Wasserstein and Applications to Generative Modeling
+74. Wasserstein Embedding for Graph Learning
+75. On the Bottleneck of Graph Neural Networks and Its Practical Implications
+76. Sliced Kernelized Stein Discrepancy
+77. Spatio-Temporal Graph Scattering Transform
+78. Towards Nonlinear Disentanglement in Natural Data with Temporal Sparse Coding
+79. Topological Graph Neural Networks
+80. Uniform-in-time propagation of chaos for the mean-field gradient Langevin dynamics
+81. Learning to live with Dale's principle: ANNs with separate excitatory and inhibitory units
+
+* Other Physics-Inspired Methods (3 papers)
+
+82. Deep Networks and the Multiple Manifold Problem
+83. Heteroskedastic and Imbalanced Deep Learning with Adaptive Regularization
+84. Improving Relational Regularized Autoencoders with Spherical Sliced Fused Gromov Wasserstein
+85. Neural representation and generation for RNA secondary structures
+
+* Key Insights for 2021
+- Diffusion models emerge as transformative paradigm (8.2% of papers)
+- Equivariant models reach peak prominence (21.2% of papers)
+- Score-based SDEs unify diffusion approaches
+- Energy-based models remain strong (14.1% of papers)
+- Molecular applications continue growth trajectory
+- Optimal transport methods diversify (12.9% of papers)
+- Second-highest growth year: +49.1%
+- Physics formalism reaches new sophistication levels
