@@ -5,3 +5,72 @@
 #+FILETAGS: :literature:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
+NeurIPS 2012 marks a watershed year with 28 physics-related papers, doubling from 2011. Monte Carlo methods reach new heights with 10 papers, while energy-based models and information theory show significant growth.
+
+* Summary Statistics
+- Total physics-related papers: 28
+- Percentage of conference: ~7.6% (of 369 total papers)
+- Change from 2011: +100.0% (14 → 28 papers)
+- Cumulative growth from 2000: +250.0%
+- Milestone: Highest count since tracking began
+
+* Monte Carlo and Sampling Methods (10 papers)
+
+1. Efficient Monte Carlo Counterfactual Regret Minimization in Games with Many Player Actions
+2. Ancestor Sampling for Particle Gibbs
+3. Sparse Approximate Manifolds for Differential Geometric MCMC
+4. Adaptive Stratified Sampling for Monte-Carlo integration of Differentiable functions
+5. MCMC for continuous-time discrete-state systems
+6. Truly Nonparametric Online Variational Inference for Hierarchical Dirichlet Processes
+7. Slice sampling normalized kernel-weighted completely random measure mixture models
+8. A Stochastic Gradient Method with an Exponential Convergence Rate for Finite Training Sets
+9. Monte Carlo Methods for Maximum Margin Supervised Topic Models
+10. Fast Variational Inference in the Conjugate Exponential Family
+
+* Energy-Based Models and Statistical Physics (5 papers)
+
+11. The Bethe Partition Function of Log-supermodular Graphical Models
+12. Efficient high dimensional maximum entropy modeling via symmetric partition functions
+13. Learning Invariant Representations of Molecules for Atomization Energy Prediction
+14. Energy Disaggregation via Discriminative Sparse Coding
+15. Natural Images, Gaussian Mixtures and Dead Leaves
+
+* Boltzmann Machines (3 papers)
+
+16. Deep Learning of Invariant Features via Simulated Fixations in Video
+17. Cardinality Restricted Boltzmann Machines
+18. A Better Way to Pretrain Deep Boltzmann Machines
+
+* Stochastic Processes and SDEs (1 paper)
+
+19. The Coloured Noise Expansion and Parameter Estimation of Diffusion Processes
+
+* Variational Methods and Inference (1 paper)
+
+20. Bayesian estimation of discrete entropy with mixtures of stick-breaking priors
+
+* Information Theory and Entropy (2 papers)
+
+21. Learning the Dependency Structure of Latent Factors
+22. Entropy Estimations Using Correlated Symmetric Stable Random Projections
+
+* Dynamical Systems and Temporal Models (2 papers)
+
+23. Phoneme Classification using Constrained Variational Gaussian Process Dynamical System
+24. Continuous Relaxations for Discrete Hamiltonian Monte Carlo
+
+* Other Physics-Inspired Methods (4 papers)
+
+25. Learning visual motion in recurrent neural networks
+26. Efficient and direct estimation of a neural subunit model for sensory coding
+27. How Prior Probability Influences Decision Making: A Unifying Probabilistic Model
+28. Angular Quantization-based Binary Codes for Fast Similarity Search
+
+* Key Insights for 2012
+- **Historic peak**: 250% growth from baseline, 100% YoY
+- **Monte Carlo dominance**: 36% of papers, sophisticated variants
+- **Energy renaissance**: Molecular applications emerge
+- **Stochastic gradients**: Exponential convergence rates proven
+- **Hamiltonian MC**: Discrete and continuous relaxations
+- **12-year trend**: Field reaches critical mass
+- **Method maturity**: Established techniques get theoretical backing
