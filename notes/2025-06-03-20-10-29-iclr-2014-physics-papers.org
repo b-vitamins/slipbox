@@ -1,0 +1,57 @@
+:PROPERTIES:
+:ID:       b4f0022b-9200-4f92-ad2d-e07e8a5acc82
+:END:
+#+TITLE: ICLR 2014 Physics papers
+#+AUTHOR: Ayan Das
+#+FILETAGS: :literature:iclr:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+ICLR 2014 shows growth in physics-inspired approaches with the emergence of variational autoencoders (VAEs) as a major theme. The conference demonstrates increasing sophistication in optimization methods and the first signs of what will become geometric deep learning.
+
+Compared to 2013:
+- Continued strength in variational methods
+- Emergence of more sophisticated generative models
+- Growing interest in sparse representations
+- First appearance of papers analyzing deep networks from theoretical physics perspectives
+
+* Energy-Based Models and Statistical Mechanics (1 papers)
+
+1. Intriguing properties of neural networks
+
+* Variational Methods and Inference (7 papers)
+
+2. Deep Convolutional Ranking for Multilabel Image Annotation
+3. Auto-Encoding Variational Bayes
+4. A Generative Product-of-Filters Model of Audio
+5. Group-sparse Embeddings in Collective Matrix Factorization
+6. k-Sparse Autoencoders
+7. Sparse similarity-preserving hashing
+8. Zero-Shot Learning by Convex Combination of Semantic Embeddings
+
+* Markov Processes and Stochastic Methods (2 papers)
+
+9. Revisiting Natural Gradient for Deep Networks
+10. Unit Tests for Stochastic Optimization
+
+* Optimal Transport and Geometric Methods (2 papers)
+
+11. On the number of inference regions of deep feed forward networks with piece-wise linear activations
+12. Learning Transformations for Classification Forests
+
+* Other Physics-Inspired Methods (7 papers)
+
+13. Multi-View Priors for Learning Detectors from Sparse Viewpoint Data
+14. Some Improvements on Deep Convolutional Neural Network Based Image Classification
+15. Deep and Wide Multiscale Recursive Networks for Robust Image Labeling
+16. Network In Network
+17. Fast Training of Convolutional Networks through FFTs
+18. How to Construct Deep Recurrent Neural Networks
+19. OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks
+
+* Key Insights for 2014
+- VAEs emerge as a fundamental contribution (Auto-Encoding Variational Bayes)
+- Variational methods dominate (36.8% of papers, up from 29.4%)
+- First geometric analysis of neural networks appears
+- Energy-based perspective remains limited but present
+- Sparse methods gain prominence
+- Year-over-year growth: +11.8% in physics-related papers
