@@ -1,0 +1,71 @@
+:PROPERTIES:
+:ID:       a4dfd743-fc77-461a-a748-b52e29d5989c
+:END:
+#+TITLE: NeurIPS 2016 Physics papers
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+NeurIPS 2016 maintains strong momentum with 26 physics-related papers. The year shows balanced growth across categories, with Monte Carlo methods remaining dominant and optimal transport gaining traction through Wasserstein distances.
+
+* Summary Statistics
+- Total physics-related papers: 26
+- Percentage of conference: ~4.6% (of 569 total papers)
+- Change from 2015: -3.7% (27 → 26 papers)
+- Cumulative growth from 2000: +225.0%
+- Key trend: Wasserstein methods enter mainstream
+
+* Monte Carlo and Sampling Methods (8 papers)
+
+1. Stochastic Gradient Richardson-Romberg Markov Chain Monte Carlo
+2. Measuring the reliability of MCMC inference with bidirectional Monte Carlo
+3. Synthesis of MCMC and Belief Propagation
+4. Towards Unifying Hamiltonian Monte Carlo and Slice Sampling
+5. Stochastic Gradient Geodesic MCMC Methods
+6. Breaking the Bandwidth Barrier: Geometrical Adaptive Entropy Estimation
+7. Fast Mixing Markov Chains for Strongly Rayleigh Measures, DPPs, and Constrained Sampling
+8. Stochastic Gradient MCMC with Stale Gradients
+
+* Energy-Based Models and Statistical Physics (4 papers)
+
+9. Approximate maximum entropy principles via Goemans-Williamson with applications to provable variational methods
+10. Maximizing Influence in an Ising Network: A Mean-Field Optimal Solution
+11. Dense Associative Memory for Pattern Recognition
+12. Dense Associative Memory is Robust to Adversarial Inputs
+
+* Stochastic Processes and SDEs (3 papers)
+
+13. Sequential Neural Models with Stochastic Layers
+14. Diffusion-Convolutional Neural Networks
+15. Stochastic Variational Deep Kernel Learning
+
+* Variational Methods and Inference (1 paper)
+
+16. Variational Bayes on Monte Carlo Steroids
+
+* Physics-Inspired Neural Networks (1 paper)
+
+17. Interaction Networks for Learning about Objects, Relations and Physics
+
+* Dynamical Systems and Temporal Models (2 papers)
+
+18. Rényi Divergence Variational Inference
+19. Mixed vine copulas as joint models of spike counts and local field potentials
+
+* Other Physics-Inspired Methods (7 papers)
+
+20. Neurally-Guided Procedural Models: Amortized Inference for Procedural Graphics Programs using Neural Networks
+21. Mutual information for symmetric rank-one matrix estimation: A proof of the replica formula
+22. Minimax Estimation of Maximum Mean Discrepancy with Radial Kernels
+23. Kronecker Determinantal Point Processes
+24. Stein Variational Gradient Descent: A General Purpose Bayesian Inference Algorithm
+25. Variance Reduction in Stochastic Gradient Langevin Dynamics
+26. Wasserstein Training of Restricted Boltzmann Machines
+
+* Key Insights for 2016
+- **Stein's method arrives**: SVGD revolutionizes Bayesian inference
+- **Dense associative memory**: Physics of robust pattern storage
+- **Interaction networks**: Learning physics from data
+- **Wasserstein emergence**: Optimal transport enters RBM training
+- **Diffusion on graphs**: Neural networks on non-Euclidean domains
+- **16-year status**: Stable at high level (225% above baseline)
+- **Method synthesis**: MCMC meets belief propagation
