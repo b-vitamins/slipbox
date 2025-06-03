@@ -1,0 +1,59 @@
+:PROPERTIES:
+:ID:       dd580ef9-9b45-41e3-99da-a4a12911c77f
+:END:
+#+TITLE: NeurIPS 2001 Physics papers
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+NeurIPS 2001 shows significant growth with 19 physics-related papers, introducing quantum methods and expanding spike-based models. This 137.5% increase from 2000 signals growing recognition of physics principles in neural computation.
+
+* Summary Statistics
+- Total physics-related papers: 19
+- Percentage of conference: ~9.6% (of 197 total papers)
+- Growth from 2000: +137.5% (8 → 19 papers)
+- New categories: Quantum models, expanded spike-based methods
+
+* Monte Carlo and Sampling Methods (2 papers)
+
+1. Tempo tracking and rhythm quantization by sequential Monte Carlo
+2. Rao-Blackwellised Particle Filtering via Data Augmentation
+
+* Energy-Based Models and Statistical Physics (4 papers)
+
+3. The Method of Quantum Clustering
+4. TAP Gibbs Free Energy, Belief Propagation and Sparsity
+5. Information Geometrical Framework for Analyzing Belief Propagation Decoder
+6. Scaling Laws and Local Minima in Hebbian ICA
+
+* Information Theory and Entropy (3 papers)
+
+7. Small-World Phenomena and the Dynamics of Information
+8. Entropy and Inference, Revisited
+9. Information-Geometrical Significance of Sparsity in Gallager Codes
+
+* Dynamical Systems and Temporal Models (5 papers)
+
+10. Optimising Synchronisation Times for Mobile Devices
+11. Why Neuronal Dynamics Should Control Synaptic Learning Rules
+12. A Variational Approach to Learning Curves
+13. Stochastic Mixed-Signal VLSI Architecture for High-Dimensional Kernel Machines
+14. The Emergence of Multiple Movement Units in the Presence of Noise and Feedback Delay
+
+* Spike-Based Neural Models (4 papers)
+
+15. Spike timing and the coding of naturalistic sounds in a central auditory area of songbirds
+16. Learning Spike-Based Correlations and Conditional Probabilities in Silicon
+17. Exact differential equation population dynamics for integrate-and-fire neurons
+18. A Neural Implementation of Bayesian Inference in Population Codes
+
+* Other Physics-Inspired Methods (1 paper)
+
+19. On the Concentration of Spectral Properties
+
+* Key Insights for 2001
+- **Quantum emergence**: First quantum-inspired method appears
+- **Spike timing precision**: Physics of neural timing becomes central
+- **Information geometry**: Geometric view of information theory
+- **TAP equations**: Statistical physics tools enter ML
+- **Growth acceleration**: 137.5% increase signals field expansion
+- **Biological realism**: More papers connecting to actual neural physics
