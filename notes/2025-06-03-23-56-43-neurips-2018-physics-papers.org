@@ -1,0 +1,168 @@
+:PROPERTIES:
+:ID:       716212b1-5c03-4a9c-a22d-d32397065c5d
+:END:
+#+TITLE: NeurIPS 2018 Physics papers
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+NeurIPS 2018 continues explosive growth with 102 physics-related papers, introducing Neural ODEs as a paradigm shift and establishing the Neural Tangent Kernel. This year marks physics principles becoming fundamental to deep learning theory.
+
+* Summary Statistics
+- Total physics-related papers: 102
+- Percentage of conference: ~10.1% (of 1009 total papers)
+- Change from 2017: +64.5% (62 → 102 papers)
+- Cumulative growth from 2000: +1175.0%
+- Milestone: Breaks 100 papers, 10% of conference
+
+* Diffusion Models and Score-Based Methods (1 paper)
+
+1. Learning Energy-based Model via Dual-MCMC Teaching
+
+* Neural Differential Equations and Dynamical Systems (13 papers)
+
+2. A probabilistic population code based on neural samples
+3. Adaptive Path-Integral Autoencoders: Representation Learning and Planning for Dynamical Systems
+4. Distilled Wasserstein Learning for Word Embedding and Topic Modeling
+5. Dynamical Isometry and a Mean Field Theory of RNNs: Gating Enables Signal Propagation in Recurrent Neural Networks
+6. Efficient Neural Network Robustness Certification with General Activation Functions
+7. FastGRNN: A Fast, Accurate, Stable and Tiny Kilobyte Sized Gated Recurrent Neural Network
+8. Improving Explorability in Variational Inference with Annealed Variational Objectives
+9. Neural Ordinary Differential Equations
+10. On the Local Hessian in Back-propagation
+11. SLAYER: Spike Layer Error Reassignment in Time
+12. Stochastic Adaptive Activation Function
+13. TD Convergence: An Optimization Perspective
+14. Two Sides of The Same Coin: Bridging Deep Equilibrium Models and Neural ODEs via Homotopy Continuation
+
+* Quantum Computing and Quantum Physics (1 paper)
+
+15. Towards Understanding the Role of Over-Parametrization in Generalization of Neural Networks
+
+* Geometric and Equivariant Methods (2 papers)
+
+16. HolStep: A Machine Learning Dataset for Higher-order Logic Theorem Proving
+17. KONG: Kernels for ordered-neighborhood graphs
+
+* Optimal Transport and Gradient Flows (13 papers)
+
+18. A Convex Duality Framework for GANs
+19. Binary Classification from Positive-Confidence Data
+20. Gradient Descent Meets Shift-and-Invert Preconditioning for Eigenvector Computation
+21. Large-Scale Stochastic Sampling from the Probability Simplex
+22. Markovian Sliced Wasserstein Distances: Beyond Independent Projections
+23. Mirror Descent View for Neural Network Quantization
+24. Online Adaptive Methods, Universality and Acceleration
+25. Optimal Algorithms for Non-Smooth Distributed Optimization in Networks
+26. Proximal SCOPE for Distributed Sparse Learning
+27. Statistical Optimal Transport via Factored Couplings
+28. Structured Optimal Transport
+29. The promises and pitfalls of Stochastic Gradient Langevin Dynamics
+30. Wasserstein Distributionally Robust Kalman Filtering
+
+* Sampling Methods and MCMC (14 papers)
+
+31. Bayesian Pose Graph Optimization via Bingham Distributions and Tempered Geodesic MCMC
+32. Beyond Log-concavity: Provable Guarantees for Sampling Multi-modal Distributions using Simulated Tempering Langevin Monte Carlo
+33. Dimensionally Tight Bounds for Second-Order Hamiltonian Monte Carlo
+34. Do Less, Get More: Streaming Submodular Maximization with Subsampling
+35. Fixed-Distance Hamiltonian Monte Carlo
+36. Graphical model inference: Sequential Monte Carlo meets deterministic approximations
+37. Greedy Poisson Rejection Sampling
+38. Learning Overparameterized Neural Networks via Stochastic Gradient Descent on Structured Data
+39. Log-normality and Skewness of Estimated State/Action Values in Reinforcement Learning
+40. Memory Replay GANs: Learning to Generate New Categories without Forgetting
+41. On Markov Chain Gradient Descent
+42. Statistical and Computational Trade-Offs in Kernel K-Means
+43. Stein Points
+44. SUMO: Unbiased Estimation of Log Marginal Probability for Latent Variable Models
+
+* Statistical Mechanics and Phase Transitions (3 papers)
+
+45. A Mean Field Theory of Quantized Deep Networks: The Quantization-Depth Trade-Off
+46. Hopfield Networks is All You Need
+47. Modern Hopfield Networks and Attention for Immune Repertoire Classification
+
+* Hamiltonian and Lagrangian Methods (2 papers)
+
+48. Hamiltonian Variational Auto-Encoder
+49. Simplifying Hamiltonian and Lagrangian Neural Networks via Explicit Constraints
+
+* Stochastic Processes and SDEs (13 papers)
+
+50. An Off-policy Policy Gradient Theorem Using Emphatic Weightings
+51. Coordinate Descent with Bandit Sampling
+52. Fixed-Rank Approximation of a Positive-Semidefinite Matrix from Streaming Data
+53. GradiVeQ: Vector Quantization for Bandwidth-Efficient Gradient Aggregation in Distributed CNN Training
+54. Life-Long Disentangled Representation Learning with Cross-Domain Latent Homologies
+55. On Learning Markov Chains
+56. On the Global Convergence of Gradient Descent for Over-parameterized Models using Optimal Transport
+57. Recurrent Transformer Networks for Semantic Correspondence
+58. Representer Point Selection for Explaining Deep Neural Networks
+59. Stochastic Chebyshev Gradient Descent for Spectral Optimization
+60. Stochastic Expectation Maximization with Variance Reduction
+61. Stochastic Nested Variance Reduction for Nonconvex Optimization
+62. The Lingering of Gradients: How to Reuse Gradients Over Time
+
+* Entropy and Information Theory (8 papers)
+
+63. A Unified View of Piecewise Linear Neural Network Verification
+64. Adversarial vulnerability for any classifier
+65. Differential Privacy for Growing Databases
+66. Entropy Rate Estimation for Markov Chains with Large State Space
+67. Gaussian Process Conditional Density Estimation
+68. Information Constraints on Auto-Encoding Variational Bayes
+69. On the Dimensionality of Word Embedding
+70. On the Properties of Kullback-Leibler Divergence Between Multivariate Gaussian Distributions
+
+* Neural Tangent Kernels and Mean Field Theory (2 papers)
+
+71. Mean Field for the Stochastic Blockmodel: Optimization Landscape and Convergence Issues
+72. Neural Tangent Kernel: Convergence and Generalization in Neural Networks
+
+* Spectral Methods and Matrix Analysis (7 papers)
+
+73. Almost Optimal Algorithms for Linear Stochastic Bandits with Heavy-Tailed Payoffs
+74. Entropy and mutual information in models of deep neural networks
+75. Global Geometry of Multichannel Sparse Blind Deconvolution on the Sphere
+76. Legendre Memory Units: Continuous-Time Representation in Recurrent Neural Networks
+77. Spectral Filtering for General Linear Dynamical Systems
+78. The Spectrum of the Fisher Information Matrix of a Single-Hidden-Layer Neural Network
+79. Why Is My Classifier Discriminatory?
+
+* Flow-Based Models (2 papers)
+
+80. Glow: Generative Flow with Invertible 1x1 Convolutions
+81. Normalizing Flows on Tori and Spheres
+
+* Other Physics-Inspired Methods (21 papers)
+
+82. A Stein variational Newton method
+83. Adaptive Learning with Unknown Information Flows
+84. Adaptive Skip Intervals: Temporal Abstraction for Recurrent Dynamical Models
+85. Are GANs Created Equal? A Large-Scale Study
+86. Causal Inference via Kernel Deviance Measures
+87. Compact Representation of Uncertainty in Clustering
+88. Deep Homogeneous Mixture Models: Representation, Separation, and Approximation
+89. Deep State Space Models for Time Series Forecasting
+90. Evolved Policy Gradients
+91. Learning Latent Subspaces in Variational Autoencoders
+92. Learning to Optimize Tensor Programs
+93. Manifold Structured Prediction
+94. Mesh-TensorFlow: Deep Learning for Supercomputers
+95. Multi-scale Diffusion Denoised Smoothing
+96. Neural Processes with Stability
+97. Norm matters: efficient and accurate normalization schemes in deep networks
+98. PCA of high dimensional random walks with comparison to neural network training
+99. SEGA: Variance Reduction via Gradient Sketching
+100. Third-order Smoothness Helps: Faster Stochastic Optimization Algorithms for Finding Local Minima
+101. Transfer of Deep Reactive Policies for MDP Planning
+102. Which Neural Net Architectures Give Rise to Exploding and Vanishing Gradients?
+
+* Key Insights for 2018
+- **Neural ODEs revolution**: Continuous-depth networks introduced
+- **Neural Tangent Kernel**: Bridges neural networks and kernel methods
+- **100+ papers milestone**: Physics becomes core to ML
+- **Hamiltonian neural nets**: Physics-inspired architectures
+- **Modern Hopfield networks**: Connect to transformer attention
+- **Optimal transport explosion**: 13 papers on Wasserstein methods
+- **18-year perspective**: 1175% growth, complete transformation
