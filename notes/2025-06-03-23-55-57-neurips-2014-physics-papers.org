@@ -1,0 +1,55 @@
+:PROPERTIES:
+:ID:       10eaf1af-d856-4483-8a98-30eb3eb227e9
+:END:
+#+TITLE: NeurIPS 2014 Physics papers
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+NeurIPS 2014 shows consolidation with 16 physics-related papers, focusing on quality over quantity. The year introduces physics-inspired neural networks as a distinct category and demonstrates sophisticated Hamiltonian methods.
+
+* Summary Statistics
+- Total physics-related papers: 16
+- Percentage of conference: ~3.9% (of 411 total papers)
+- Change from 2013: -38.5% (26 → 16 papers)
+- Cumulative growth from 2000: +100.0%
+- Key development: Physics-inspired neural architectures emerge
+
+* Monte Carlo and Sampling Methods (5 papers)
+
+1. Sequential Monte Carlo for Graphical Models
+2. Asynchronous Anytime Sequential Monte Carlo
+3. Sampling for Inference in Probabilistic Models with Fast Bayesian Quadrature
+4. Stochastic Gradient Hamiltonian Monte Carlo
+5. Firefly Monte Carlo: Exact MCMC with Subsets of Data
+
+* Energy-Based Models and Statistical Physics (4 papers)
+
+6. PEWA: Patch-based Exponentially Weighted Aggregation for image denoising
+7. On the Information Theoretic Limits of Learning Ising Models
+8. Restricted Boltzmann machines modeling human choice
+9. Distributed Estimation, Information Loss and Exponential Families
+
+* Physics-Inspired Neural Networks (1 paper)
+
+10. Learning Neural Network Policies with Guided Policy Search under Unknown Dynamics
+
+* Dynamical Systems and Temporal Models (1 paper)
+
+11. Variational Gaussian Process State-Space Models
+
+* Other Physics-Inspired Methods (5 papers)
+
+12. Optimal prior-dependent neural population codes under shared input noise
+13. Optimal Neural Codes for Control and Estimation
+14. Semi-Separable Hamiltonian Monte Carlo for Inference in Bayesian Hierarchical Models
+15. Positive Curvature and Hamiltonian Monte Carlo
+16. Deep Symmetry Networks
+
+* Key Insights for 2014
+- **Quality focus**: Fewer papers but high impact
+- **Hamiltonian sophistication**: Curvature-aware and semi-separable methods
+- **Firefly innovation**: MCMC with data subsets
+- **Neural coding theory**: Optimal codes for control/estimation
+- **Symmetry principles**: Deep networks with built-in symmetries
+- **14-year perspective**: Field matured, 100% above baseline
+- **Theoretical depth**: Information limits and optimality results
