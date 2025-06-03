@@ -1,0 +1,50 @@
+:PROPERTIES:
+:ID:       c73fc946-2fae-46cd-855d-e88c3219ddce
+:END:
+#+TITLE: NeurIPS 2006 Physics papers
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+NeurIPS 2006 shows steady growth with 12 physics-related papers, introducing variational methods as a distinct category. This marks the beginning of modern variational inference approaches that will dominate future years.
+
+* Summary Statistics
+- Total physics-related papers: 12
+- Percentage of conference: ~5.9% (of 204 total papers)
+- Change from 2005: +9.1% (11 → 12 papers)
+- Cumulative growth from 2000: +50.0%
+- Key innovation: Variational methods emerge as distinct category
+
+* Energy-Based Models and Statistical Physics (2 papers)
+
+1. Kernel Maximum Entropy Data Transformation and an Enhanced Spectral Clustering Algorithm
+2. Efficient Learning of Sparse Representations with an Energy-Based Model
+
+* Variational Methods and Inference (3 papers)
+
+3. Unified Inference for Variational Bayesian Linear Gaussian State-Space Models
+4. A Collapsed Variational Bayesian Inference Algorithm for Latent Dirichlet Allocation
+5. Parameter Expanded Variational Bayesian Methods
+
+* Stochastic Processes and Dynamics (3 papers)
+
+6. A Bayesian Approach to Diffusion Models of Decision-Making and Response Time
+7. Stochastic Relational Models for Discriminative Link Prediction
+8. Effects of Stress and Genotype on Meta-parameter Dynamics in Reinforcement Learning
+
+* Dynamical Systems (2 papers)
+
+9. A Kernel Subspace Method by Stochastic Realization for Learning Nonlinear Dynamical Systems
+10. A Novel Gaussian Sum Smoother for Approximate Inference in Switching Linear Dynamical Systems
+
+* Other Physics-Inspired Methods (2 papers)
+
+11. Information Bottleneck Optimization and Independent Component Extraction with Spiking Neurons
+12. Dynamic Foreground/Background Extraction from Images and Videos using Random Patches
+
+* Key Insights for 2006
+- **Variational emergence**: Modern VI methods take shape
+- **Diffusion decisions**: Physics of decision-making processes
+- **Energy efficiency**: Sparse coding via energy minimization
+- **Stochastic dynamics**: Growing sophistication in random processes
+- **7-year perspective**: Steady growth trajectory (+50% from 2000)
+- **Method diversification**: Clear category differentiation emerging
