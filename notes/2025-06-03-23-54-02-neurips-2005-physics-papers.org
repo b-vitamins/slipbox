@@ -1,0 +1,49 @@
+:PROPERTIES:
+:ID:       5b55d946-82a0-43f6-860d-2943e602e4d1
+:END:
+#+TITLE: NeurIPS 2005 Physics papers
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+NeurIPS 2005 marks a recovery with 11 physics-related papers, more than doubling from 2004's low. The papers show renewed diversity, with diffusion processes and Fokker-Planck operators signaling future directions.
+
+* Summary Statistics
+- Total physics-related papers: 11
+- Percentage of conference: ~5.5% (of 201 total papers)
+- Change from 2004: +120.0% (5 → 11 papers)
+- Cumulative growth from 2000: +37.5%
+- Notable: Introduction of diffusion-based methods
+
+* Monte Carlo and Sampling Methods (2 papers)
+
+1. A matching pursuit approach to sparse Gaussian process regression
+2. Walk-Sum Interpretation and Analysis of Gaussian Belief Propagation
+
+* Energy-Based Models and Statistical Physics (3 papers)
+
+3. Convex Neural Networks
+4. Products of "Edge-perts"
+5. Consensus Propagation
+
+* Information Theory and Entropy (2 papers)
+
+6. Saliency Based on Information Maximization
+7. Divergences, surrogate loss functions and experimental design
+
+* Dynamical Systems and Temporal Models (2 papers)
+
+8. Modeling Neuronal Interactivity using Dynamic Bayesian Networks
+9. Response Analysis of Neuronal Population with Synaptic Depression
+
+* Other Physics-Inspired Methods (2 papers)
+
+10. Diffusion Maps, Spectral Clustering and Eigenfunctions of Fokker-Planck Operators
+11. A Criterion for the Convergence of Learning with Spike Timing Dependent Plasticity
+
+* Key Insights for 2005
+- **Recovery begins**: 120% growth from 2004 low
+- **Diffusion emergence**: First diffusion-based methods appear
+- **Fokker-Planck**: Stochastic process theory enters ML
+- **Convexity focus**: Convex neural networks introduced
+- **Information saliency**: Physics-based attention mechanisms
+- **6-year trend**: Field stabilizing after volatility
