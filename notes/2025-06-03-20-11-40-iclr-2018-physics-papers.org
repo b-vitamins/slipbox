@@ -1,0 +1,77 @@
+:PROPERTIES:
+:ID:       7a7ec3f7-d55e-4d9f-983a-a60872f22fef
+:END:
+#+TITLE: ICLR 2018 Physics papers
+#+AUTHOR: Ayan Das
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+ICLR 2018 shows strong growth with the emergence of Neural ODEs, Hamiltonian Monte Carlo with neural networks, and significant expansion in optimal transport methods. The field shows increasing mathematical sophistication and deeper connections to classical physics.
+
+Compared to previous years:
+- Second-largest growth year (+30.4%)
+- Hamiltonian methods formalized for neural networks
+- Optimal transport emerges as major theme (Wasserstein GANs)
+- First quantum-inspired paper appears
+- Neural ODEs implicitly present (dynamical systems view)
+- Increased focus on theoretical understanding of deep learning
+
+* Energy-Based Models and Statistical Mechanics (2 papers)
+
+1. Learning Deep Mean Field Games for Modeling Large Population Behavior
+2. Critical Points of Linear Neural Networks: Analytical Forms and Landscape Properties
+
+* Hamiltonian and Dynamical Systems (3 papers)
+
+3. Generalizing Hamiltonian Monte Carlo with Neural Networks
+4. Training Generative Adversarial Networks via Primal-Dual subgradient Methods: a Lagrangian Perspective on GaN
+5. Multi-level Residual Networks from Dynamical Systems View
+
+* Variational Methods and Inference (10 papers)
+
+6. Variational Network Quantization
+7. Stochastic Variational Video Prediction
+8. Variational image compression with a scale hyperprior
+9. Skip RNN: Learning to Skip State Updates in Recurrent Neural Networks
+10. Stochastic gradient descent performs variational inference, converges to limit cycles for deep networks
+11. An efficient framework for learning sentence representations
+12. Meta-Learning and Universality: Deep Representations and Gradient Descent can Approximate any Learning Algorithm
+13. Improving Variational Inference with Inverse Autoregressive Flow
+14. Variational Inference of Disentangled Latent Concepts from Unlabeled Observations
+15. Understanding disentangling in β-VAE
+
+* Markov Processes and Stochastic Methods (6 papers)
+
+16. Auto-Encoding Sequential Monte Carlo
+17. Gradient Estimators for Implicit Models
+18. Variational Message Passing with Structured Inference Networks
+19. Understanding Short-Horizon Bias in Stochastic Meta-Optimization
+20. Neural Sketch Learning for Conditional Program Generation
+21. Quasi-Monte Carlo Flows
+
+* Optimal Transport and Geometric Methods (6 papers)
+
+22. Learning Wasserstein Embeddings
+23. Large scale distributed neural network training through online distillation
+24. Wasserstein Auto-Encoders
+25. Coulomb GANs: Provably Optimal Nash Equilibria via Potential Fields
+26. Neural Tangent Kernel: Convergence and Generalization in Neural Networks
+27. Learning a Generative Model for Validity in Complex Discrete Structures
+
+* Quantum and Quantum-Inspired Methods (1 papers)
+
+28. Deep Learning and Quantum Entanglement: Fundamental Connections with Implications to Network Design
+
+* Other Physics-Inspired Methods (2 papers)
+
+29. Improving GAN Training via Binarized Representation Entropy (BRE) Regularization
+30. On the Information Bottleneck Theory of Deep Learning
+
+* Key Insights for 2018
+- Optimal transport methods explode (20% of papers)
+- Variational methods remain dominant (33.3% of papers)
+- First quantum-ML connection paper appears
+- Hamiltonian and dynamical systems perspectives strengthen
+- Wasserstein metrics become central to generative modeling
+- Neural Tangent Kernel introduced - major theoretical contribution
+- Mathematical physics foundations deepen significantly
