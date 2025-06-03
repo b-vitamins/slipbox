@@ -1,0 +1,188 @@
+:PROPERTIES:
+:ID:       7400bed6-76e8-4c3a-9e62-a9c0e2e80641
+:END:
+#+TITLE: ICLR 2022 Physics papers
+#+AUTHOR: Ayan Das
+#+FILETAGS: :literature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+ICLR 2022 represents peak growth with physics-inspired methods now mainstream. Diffusion models mature rapidly, equivariant models dominate geometric learning, molecular applications explode, and physics-informed neural networks establish as a major category. This is the highest paper count in conference history.
+
+Compared to previous years:
+- Highest absolute paper count (127 papers)
+- Diffusion models mature with 10 papers
+- Equivariant models reach 29 papers (22.8%)
+- PDEs/Physics-informed methods explode (15 papers)
+- Molecular applications grow 7.5x (15 papers)
+- Every physics category well-represented
+- Quantum methods stabilize (2 papers)
+
+* Diffusion Models and Score-Based Methods (10 papers)
+
+1. Denoising Likelihood Score Matching for Conditional Score-based Data Generation
+2. Score-Based Generative Modeling with Critically-Damped Langevin Diffusion
+3. BDDM: Bilateral Denoising Diffusion Models for Fast and High-Quality Speech Synthesis
+4. PriorGrad: Improving Conditional Denoising Diffusion Models with Data-Dependent Adaptive Prior
+5. Pseudo Numerical Methods for Diffusion Models on Manifolds
+6. Autoregressive Diffusion Models
+7. Progressive Distillation for Fast Sampling of Diffusion Models
+8. Analytic-DPM: an Analytic Estimate of the Optimal Reverse Variance in Diffusion Probabilistic Models
+9. SDEdit: Guided Image Synthesis and Editing with Stochastic Differential Equations
+10. Solving Inverse Problems in Medical Imaging with Score-Based Generative Models
+
+* Energy-Based Models and Statistical Mechanics (4 papers)
+
+11. A Tale of Two Flows: Cooperative Learning of Langevin Flow and Normalizing Flow Toward Energy-Based Model
+12. Exposing the Implicit Energy Networks behind Masked Language Models via Metropolis–Hastings
+13. The Hidden Convex Optimization Landscape of Regularized Two-Layer ReLU Networks: an Exact Characterization of Optimal Solutions
+14. Energy-Based Learning for Cooperative Games, with Applications to Valuation Problems in Machine Learning
+
+* Physics-Informed Neural Networks and PDEs (15 papers)
+
+15. Message Passing Neural PDE Solvers
+16. Learning to Solve PDE-constrained Inverse Problems with Graph Networks
+17. PDEBench: An Extensive Benchmark for Scientific Machine Learning
+18. Constrained Physical-Statistics Models for Dynamical System Identification and Prediction
+19. NeuPL: Neural Population Learning
+20. Continuous-Time Meta-Learning with Forward Mode Differentiation
+21. Efficiently Modeling Long Sequences with Structured State Spaces
+22. Deep Attentive Variational Inference
+23. Non-Parametric Regression Viewpoint: Generalization of Overparametrized Deep RELU Network Under Noisy Observations
+24. Deep ReLU Networks Preserve Expected Length
+25. On Evaluation Metrics for Graph Generative Models
+26. Blaschke Product Neural Networks (BPNN): A Physics-Infused Neural Network for Phase Retrieval of Meromorphic Functions
+27. GATSBI: Generative Adversarial Training for Simulation-Based Inference
+28. Neural Tangent Kernel Perspective of Infinite Tree Ensembles
+29. Fine-grained Differentiable Physics: A Yarn-level Model for Fabrics
+
+* Equivariant and Symmetric Models (29 papers)
+
+30. Independent SE(3)-Equivariant Models for End-to-End Rigid Protein Docking
+31. Geometric and Physical Quantities improve E(3) Equivariant Message Passing
+32. Equivariant Subgraph Aggregation Networks
+33. A Program to Build E(N)-Equivariant Steerable CNNs
+34. Graph Neural Networks with Learnable Structural and Positional Representations
+35. Simple GNN Regularisation for 3D Molecular Property Prediction and Beyond
+36. Equivariant Self-Supervised Learning: Encouraging Equivariance in Representations
+37. You are AllSet: A Multiset Function Framework for Hypergraph Neural Networks
+38. Equivariant Graph Mechanics Networks with Constraints
+39. Deconstructing the Inductive Biases of Hamiltonian Neural Networks
+40. Steerable Partial Differential Operators for Equivariant Neural Networks
+41. The Lie Derivative for Measuring Learned Equivariance
+42. Spherical Message Passing for 3D Molecular Graphs
+43. On the Approximation Properties of Recurrent Encoder-Decoder Architectures
+44. E(n) Equivariant Graph Neural Networks
+45. Frame Averaging for Invariant and Equivariant Network Design
+46. Generalized Kernel Thinning
+47. Einops: Clear and Reliable Tensor Manipulations with Einstein-like Notation
+48. Conditional Contrastive Learning with Kernel
+49. The Evolution of Uncertainty of Learning in Games
+50. Capacity of Group-invariant Linear Readouts from Equivariant Representations: How Many Objects can be Linearly Classified Under All Possible Views?
+51. Topological Graph Neural Networks
+52. Anti-Symmetric DGN: a stable architecture for Deep Graph Networks
+53. HyperDQN: A Randomized Exploration Method for Deep Reinforcement Learning
+54. Equivariant Transformers for Neural Network based Molecular Potentials
+55. Equivariant and Stable Positional Encoding for More Powerful Graph Neural Networks
+56. Group Equivariant Neural Posterior Estimation
+57. Discovering Latent Concepts Learned in BERT
+58. On the Convergence of the Monte Carlo Exploring Starts Algorithm for Reinforcement Learning
+
+* Molecular and Chemical Applications (15 papers)
+
+59. GeoDiff: A Geometric Diffusion Model for Molecular Conformation Generation
+60. Ab-Initio Potential Energy Surfaces by Pairing GNNs with Neural Wave Functions
+61. Amortized Tree Generation for Bottom-up Synthesis Planning and Synthesizable Molecular Design
+62. Independent SE(3)-Equivariant Models for End-to-End Rigid Protein Docking
+63. Geometric and Physical Quantities improve E(3) Equivariant Message Passing
+64. Simple GNN Regularisation for 3D Molecular Property Prediction and Beyond
+65. Spherical Message Passing for 3D Molecular Graphs
+66. Energy-Inspired Molecular Conformation Optimization
+67. Data-Efficient Graph Grammar Learning for Molecular Generation
+68. Differentiable Scaffolding Tree for Molecule Optimization
+69. Spanning Tree-based Graph Generation for Molecules
+70. Pre-training Molecular Graph Representation with 3D Geometry
+71. MoReL: Multi-omics Relational Learning
+72. Chemical-Reaction-Aware Molecule Representation Learning
+73. Crystal Diffusion Variational Autoencoder for Periodic Material Generation
+
+* Hamiltonian and Dynamical Systems (1 papers)
+
+74. Deconstructing the Inductive Biases of Hamiltonian Neural Networks
+
+* Variational Methods and Inference (12 papers)
+
+75. Deep Variational Implicit Processes
+76. A VAE for Transformers with Nonparametric Variational Information Bottleneck
+77. Trading Information Between Latents in Hierarchical Variational Autoencoders
+78. Semi-Implicit Variational Inference via Score Matching
+79. Variational Methods for Simulation-Based Inference
+80. Deep Attentive Variational Inference
+81. A Deep Variational Approach to Clustering Survival Data
+82. Variational Predictive Routing with Nested Subjective Timescales
+83. Variational Neural Cellular Automata
+84. Variational Oracle Guiding for Reinforcement Learning
+85. iLQR-VAE : control-based learning of input-driven dynamics with applications to neural data
+86. Scale-invariant Bayesian Neural Networks with Connectivity Tangent Kernel
+
+* Markov Processes and Stochastic Methods (14 papers)
+
+87. Sqrt(d) Dimension Dependence of Langevin Monte Carlo
+88. MCMC Should Mix: Learning Energy-Based Model with Neural Transport Latent Space MCMC
+89. Interacting Contour Stochastic Gradient Langevin Dynamics
+90. Temporal Efficient Training of Spiking Neural Network via Gradient Re-weighting
+91. Resonance in Weight Space: Covariate Shift Can Drive Divergence of SGD with Momentum
+92. How Attentive are Graph Attention Networks?
+93. Excess Risk of Two-Layer ReLU Neural Networks in Teacher-Student Settings and its Superiority to Kernel Methods
+94. Sampling with Mirrored Stein Operators
+95. The Three Stages of Learning Dynamics in High-dimensional Kernel Methods
+96. Language modeling via stochastic processes
+97. High Probability Bounds for a Class of Nonconvex Algorithms with AdaGrad Stepsize
+98. Stochastic Training is Not Necessary for Generalization
+99. CLEVA-Compass: A Continual Learning Evaluation Assessment Compass to Promote Research Transparency and Comparability
+100. Martingale Posterior Neural Processes
+
+* Optimal Transport and Geometric Methods (7 papers)
+
+101. Augmented Sliced Wasserstein Distances
+102. Do Not Escape From the Manifold: Discovering the Local Coordinates on the Latent Space of GANs
+103. On Non-Random Missing Labels in Semi-Supervised Learning
+104. Learning Strides in Convolutional Neural Networks
+105. Semi-relaxed Gromov-Wasserstein divergence and applications on graphs
+106. Scale Efficiently: Insights from Pretraining and Finetuning Transformers
+107. Partial Wasserstein Adversarial Network for Non-rigid Point Set Registration
+
+* Quantum and Quantum-Inspired Methods (2 papers)
+
+108. Critical Points in Quantum Generative Models
+109. Classically Approximating Variational Quantum Machine Learning with Random Fourier Features
+
+* Other Physics-Inspired Methods (41 papers)
+
+110. Latent Bottlenecked Attentive Neural Processes
+111. Implicit Bias of MSE Gradient Optimization in Underparameterized Neural Networks
+112. Neural Methods for Logical Reasoning over Knowledge Graphs
+113. Non-Linear Operator Approximations for Initial Value Problems
+114. Sparse DETR: Efficient End-to-End Object Detection with Learnable Sparsity
+115. A Statistical Framework for Efficient Out of Distribution Detection in Deep Neural Networks
+116. Stein Latent Optimization for Generative Adversarial Networks
+117. Large Learning Rate Tames Homogeneity: Convergence and Balancing Effect
+118. Transition to Linearity of Wide Neural Networks is an Emerging Property of Assembling Weak Models
+119. The Inductive Bias of In-Context Learning: Rethinking Pretraining Example Design
+120. Gradient Step Denoiser for Convergent Plug-and-Play
+121. Fast Differentiable Matrix Square Root
+122. What's Wrong with Deep Learning in Tree Search for Combinatorial Optimization
+123. Information Gain Propagation: a New Way to Graph Active Learning with Soft Labels
+124. Strength of Minibatch Noise in SGD
+125. The Unreasonable Effectiveness of Random Pruning: Return of the Most Naive Baseline for Sparse Training
+126. Feature Kernel Distillation
+127. On the Optimal Memorization Power of ReLU Neural Networks
+
+* Key Insights for 2022
+- Peak year: 127 papers (49.4% growth)
+- Equivariant models dominate (22.8% of papers)
+- Molecular applications explode (11.8% of papers)
+- PDEs/Physics-informed methods mature (11.8% of papers)
+- Diffusion models reach maturity (7.9% of papers)
+- Every physics category well-represented
+- Cumulative growth: 687% since 2013
+- Physics principles now central to ML research
