@@ -1,9 +1,7 @@
 :PROPERTIES:
 :ID:       e0fff101-d5c1-427f-b60e-06464614012f
 :END:
-#+TITLE: Physics in Machine Learning at ICLR
-#+AUTHOR: Ayan Das
-#+DATE: 2024
+#+TITLE: ICLR
 #+FILETAGS: :literature:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
