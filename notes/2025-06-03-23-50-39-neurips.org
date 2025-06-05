@@ -2,7 +2,6 @@
 :ID:       d9eb52b8-a6fa-4cc5-aedd-b4932f9500b2
 :END:
 #+TITLE: Physics in Machine Learning at NeurIPS
-#+AUTHOR: Ayan Das
 #+FILETAGS: :literature:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
