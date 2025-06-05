@@ -1,0 +1,295 @@
+:PROPERTIES:
+:ID:       c5d6e7f8-a9b0-4c1d-2e3f-4a5b6c7d8e9f
+:END:
+#+TITLE: Git Investigation Tools - Advanced History and Code Analysis
+#+FILETAGS: :git:debugging:history:analysis:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Git provides powerful tools for investigating code history, understanding changes, and debugging issues. This note covers advanced features of =git blame=, =git log=, and other investigation tools highlighted in the "So you think you know Git" talk.
+
+* Git Blame - Advanced Usage
+
+** Basic Blame
+#+begin_src bash
+# Show who last modified each line
+git blame filename.txt
+#+end_src
+
+** Blame Specific Lines (-L flag)
+Instead of blaming an entire file, focus on specific lines:
+#+begin_src bash
+# Blame lines 10-20
+git blame -L 10,20 filename.txt
+
+# Blame from line 10 for 15 lines
+git blame -L 10,+15 filename.txt
+
+# Blame a function (Git tries to detect boundaries)
+git blame -L :functionName filename.txt
+#+end_src
+
+** Ignore Whitespace and Movements
+GitHub and most GUIs don't do this by default, but it's incredibly useful:
+
+#+begin_src bash
+# Ignore whitespace changes
+git blame -w filename.txt
+
+# Detect moved/copied lines within the file
+git blame -M filename.txt
+
+# Detect moved/copied lines from other files in the commit
+git blame -C filename.txt
+
+# Detect moved/copied lines from any commit
+git blame -CCC filename.txt
+#+end_src
+
+** Recommended Blame Alias
+#+begin_src bash
+# Smart blame that ignores refactoring
+git config --global alias.blame-smart 'blame -w -CCC'
+#+end_src
+
+** Understanding -C Levels
+- =-C= : Detect lines moved/copied within the same commit
+- =-CC= : Also check the commit that created the file
+- =-CCC= : Check all commits (more expensive but more accurate)
+
+* Git Log - Powerful Filtering and Display
+
+** Line History in Log Format
+View the history of specific lines (not just who last touched them):
+#+begin_src bash
+# Show commits that touched lines 10-20
+git log -L 10,20:filename.txt
+
+# Show commits that touched a function
+git log -L :functionName:filename.txt
+#+end_src
+
+This shows the actual changes to those lines over time, giving you the full story.
+
+** Pickaxe Search (-S flag)
+Find commits that added or removed a specific string:
+#+begin_src bash
+# Find when 'API_KEY' was added or removed
+git log -S "API_KEY"
+
+# Include diff output
+git log -S "API_KEY" -p
+
+# Search with regex
+git log -G "api_[a-z]+_key" --regexp
+#+end_src
+
+** Filter by Content Changes
+#+begin_src bash
+# Show commits that changed the number of occurrences
+git log -S "function_name" --pickaxe-all
+
+# Show commits where the diff contains pattern
+git log -G "TODO|FIXME"
+#+end_src
+
+** Advanced Log Formatting
+#+begin_src bash
+# Custom format with graph
+git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+
+# Show file changes summary
+git log --stat
+
+# Show actual changes
+git log -p
+
+# Limit to specific paths
+git log -- path/to/file
+
+# Show merge commits only
+git log --merges
+
+# Show non-merge commits only
+git log --no-merges
+#+end_src
+
+* Reflog - Your Safety Net
+
+The reflog tracks where HEAD has been, providing a safety net for recovery:
+
+#+begin_src bash
+# Show reflog for HEAD
+git reflog
+
+# Show reflog for a specific branch
+git reflog show branch-name
+
+# Recover from bad reset
+git reflog  # Find the commit before reset
+git reset --hard HEAD@{2}  # Go back to that state
+#+end_src
+
+** Reflog Entry Types
+- =checkout=: Moving between branches
+- =commit=: New commits
+- =reset=: Reset operations
+- =merge=: Merge operations
+- =rebase=: Each step of a rebase
+
+* Word Diff - Better Difference Visibility
+
+** Using Word Diff
+Especially useful for long lines or prose:
+#+begin_src bash
+# Show word-based diff
+git diff --word-diff
+
+# Show character-based diff
+git diff --word-diff=color --word-diff-regex=.
+
+# For specific file types
+git diff --word-diff=color --word-diff-regex='[^[:space:]]|([[:alnum:]]|UTF_8_GUARD)+'
+#+end_src
+
+** Word Diff Modes
+- =color= : Highlight changes with color
+- =plain= : Show with [- old -] {+ new +} markers
+- =porcelain= : Machine-readable format
+- =none= : Disable word diff
+
+* Finding Lost Commits
+
+** Using Reflog and Log Together
+#+begin_src bash
+# Find all commits, including unreachable ones
+git reflog expire --expire=never --all
+git log --reflog --oneline --graph
+
+# Find dangling commits
+git fsck --full --no-reflogs | grep commit
+
+# Search through all commits for content
+git log --all --full-history -- "**/filename.*"
+#+end_src
+
+* Re-re-re (Reuse Recorded Resolution)
+
+** Enable Re-re-re
+Automatically record and reuse merge conflict resolutions:
+#+begin_src bash
+# Enable globally
+git config --global rerere.enabled true
+
+# Enable auto-staging of resolved conflicts
+git config --global rerere.autoupdate true
+#+end_src
+
+** How Re-re-re Works
+1. When you encounter a merge conflict, Git records the "pre-image"
+2. After you resolve it, Git records the resolution
+3. Next time the same conflict occurs, Git automatically applies the resolution
+
+** Managing Re-re-re
+#+begin_src bash
+# See what re-re-re has recorded
+git rerere status
+
+# Forget specific resolution
+git rerere forget path/to/file
+
+# Clear all recorded resolutions
+git rerere clear
+#+end_src
+
+* Investigation Workflows
+
+** Debugging a Bug Introduction
+1. Find when bug was introduced:
+   #+begin_src bash
+   # Binary search through history
+   git bisect start
+   git bisect bad  # Current version is bad
+   git bisect good v1.0  # v1.0 was good
+   # Git checks out commits for you to test
+   #+end_src
+
+2. Find what changed in the problematic area:
+   #+begin_src bash
+   git log -S "problematic_function" -p
+   #+end_src
+
+3. See who touched the code:
+   #+begin_src bash
+   git blame -w -CCC problematic_file.js
+   #+end_src
+
+** Understanding Code Evolution
+#+begin_src bash
+# See how a file evolved
+git log --follow -p -- path/to/file
+
+# See when functions were added/removed
+git log -L :function_name:file.c
+
+# Find deleted code
+git log -S "deleted_function" --source --all
+#+end_src
+
+* Useful Investigation Aliases
+
+#+begin_src bash
+# Better blame
+git config --global alias.who 'blame -w -CCC'
+
+# Find deleted files
+git config --global alias.deleted 'log --diff-filter=D --summary'
+
+# Search commits
+git config --global alias.search 'log -S'
+
+# Show file history with patches
+git config --global alias.file-history 'log --follow -p --'
+
+# Recent commits on all branches
+git config --global alias.recent 'for-each-ref --sort=-committerdate refs/heads/ --format="%(committerdate:short) %(authorname) %(refname:short)"'
+#+end_src
+
+* Tips for Effective Investigation
+
+1. **Combine tools**: Use blame to find commits, then log to understand context
+2. **Use word-diff**: For documentation or prose changes
+3. **Don't fear reflog**: It's your safety net for recovering work
+4. **Set up rerere**: Save time on repeated conflict resolution
+5. **Create investigation aliases**: Standardize your investigation workflow
+
+* Advanced Patterns
+
+** Finding Who Introduced a Pattern
+#+begin_src bash
+# First occurrence of a pattern
+git log --reverse -S "pattern" --oneline | head -1
+
+# All introductions (additions only)
+git log --diff-filter=A -S "pattern"
+#+end_src
+
+** Analyzing Code Movement
+#+begin_src bash
+# Track code as it moves between files
+git log --follow -M90% -C -C -p -- current/path/to/file
+#+end_src
+
+** Complex Blame Analysis
+#+begin_src bash
+# Blame with commit summaries
+git blame -w -CCC file | git log --no-walk --stdin --oneline
+
+# Statistical blame (who wrote most lines)
+git blame -w file | awk '{print $3}' | sort | uniq -c | sort -rn
+#+end_src
+
+* Related Notes
+- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c[Git Fundamentals]] - Basic Git concepts
+- [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e[Git Configuration and Aliases]] - Setting up Git
+- [[id:d6e7f8a9-b0c1-4d2e-3f4a-5b6c7d8e9fa0[Git Collaboration Features]] - Working with others
