@@ -1,0 +1,256 @@
+:PROPERTIES:
+:ID:       c1d2e3f4-a5b6-4c7d-8e9f-a0b1c2d3e4f5
+:END:
+#+TITLE: Git Quick Reference - Essential Commands and Setup
+#+FILETAGS: :git:reference:quickstart:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+This quick reference consolidates the most important Git commands and configurations from the "So you think you know Git" talk. Copy these configurations to immediately improve your Git workflow.
+
+* Essential One-Time Setup
+
+** Performance Boost (Do This Today!)
+#+begin_src bash
+# In every repository you work with regularly:
+git maintenance start
+
+# For large repositories:
+scalar clone <url>  # Instead of git clone
+#+end_src
+
+** Global Configuration
+#+begin_src bash
+# Better display
+git config --global column.ui auto
+git config --global branch.sort -committerdate
+
+# Safety
+git config --global alias.pushf 'push --force-with-lease'
+git config --global rerere.enabled true
+
+# Performance
+git config --global fetch.writeCommitGraph true
+git config --global core.fsmonitor true  # For large repos
+
+# Rebase improvements
+git config --global rebase.autosquash true
+git config --global rebase.updateRefs true
+#+end_src
+
+* Must-Know Commands from the Talk
+
+** Investigation
+#+begin_src bash
+# Blame with intelligence
+git blame -w -CCC file.txt  # Ignores whitespace and moved code
+
+# History of specific lines
+git log -L 10,20:file.txt
+git log -L :functionName:file.txt
+
+# Find when something was added/removed
+git log -S "search term"
+
+# Better diff for prose
+git diff --word-diff
+#+end_src
+
+** Safe Collaboration
+#+begin_src bash
+# Safe force push
+git push --force-with-lease
+
+# Sign with SSH (easier than GPG)
+git config --global gpg.format ssh
+git config --global user.signingkey ~/.ssh/id_ed25519.pub
+#+end_src
+
+** Clean History Workflow
+#+begin_src bash
+# Fix review feedback in the right commit
+git commit --fixup=COMMIT_SHA
+git rebase -i --autosquash
+
+# Work on multiple branches
+git worktree add ../hotfix hotfix-branch
+#+end_src
+
+* Power User Aliases
+
+#+begin_src bash
+# Add these to ~/.gitconfig
+[alias]
+    # Essentials
+    st = status -sb
+    co = checkout
+    br = branch
+    
+    # From the talk
+    stasha = stash --all
+    who = blame -w -CCC
+    pushf = push --force-with-lease
+    
+    # History exploration
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+    file-history = log --follow -p --
+    
+    # Workflow helpers
+    update = !git fetch origin && git rebase origin/main
+    cleanup = !git branch --merged | grep -v "\\*" | xargs -n 1 git branch -d
+    recent = for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(refname:short)'
+#+end_src
+
+* Modern Git Commands
+
+Instead of overloaded =checkout=:
+#+begin_src bash
+# For branches
+git switch main
+git switch -c new-branch
+
+# For files  
+git restore file.txt
+git restore --staged file.txt
+git restore --source=HEAD~3 file.txt
+#+end_src
+
+* Large Repository Setup
+
+For repositories with 100k+ files:
+#+begin_src bash
+# Option 1: Use Scalar (recommended)
+scalar clone <url>
+
+# Option 2: Manual setup
+git clone --filter=blob:none <url>
+git sparse-checkout init --cone
+git sparse-checkout set <directories>
+git maintenance start
+git config core.fsmonitor true
+#+end_src
+
+* Hook Management
+
+** Using pre-commit
+#+begin_src yaml
+# .pre-commit-config.yaml
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: check-added-large-files
+#+end_src
+
+#+begin_src bash
+pre-commit install
+#+end_src
+
+** Using Husky (Node.js)
+#+begin_src bash
+npx husky-init && npm install
+npx husky add .husky/pre-commit "npm test"
+#+end_src
+
+* Git Attributes Essential
+
+#+begin_src text
+# .gitattributes
+* text=auto
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Git LFS
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+
+# Better diffs
+*.md diff=markdown
+*.tex diff=tex
+#+end_src
+
+* Conditional Configuration
+
+#+begin_src bash
+# ~/.gitconfig
+[includeIf "gitdir:~/work/"]
+    path = ~/.gitconfig-work
+    
+[includeIf "gitdir:~/personal/"]
+    path = ~/.gitconfig-personal
+#+end_src
+
+* Emergency Commands
+
+#+begin_src bash
+# Recover from bad reset
+git reflog
+git reset --hard HEAD@{2}
+
+# Fix wrong commit author
+git commit --amend --author="Name <email>"
+
+# Find lost commits
+git fsck --full --no-reflogs | grep commit
+
+# Skip hooks when needed
+git commit --no-verify
+#+end_src
+
+* Key Takeaways from the Talk
+
+1. **Git hasn't changed its core model since 2005** but adds features constantly
+2. **Most people use ~20% of Git's capabilities** - there's always more to learn
+3. **Performance features exist for huge repos** - Microsoft made Windows work with Git
+4. **Modern alternatives exist** for confusing commands (switch/restore vs checkout)
+5. **Automation is key** - use hooks, maintenance, and aliases
+6. **Git is still actively developed** - 9 commits per day average
+
+* The Speaker's Recommendations
+
+> "If you thought that was interesting and want to hear 10 other things of random shit that Git does, you can go to our YouTube channel"
+
+- Scott Chacon, author of Pro Git
+- Created GitHub's implementation of Git features
+- Now working on Git Butler (virtual branches)
+
+* Complete Setup Script
+
+Save and run this for optimal Git configuration:
+#+begin_src bash
+#!/bin/bash
+# optimal-git-setup.sh
+
+# Display improvements
+git config --global column.ui auto
+git config --global branch.sort -committerdate
+
+# Safety features
+git config --global rerere.enabled true
+
+# Performance
+git config --global fetch.writeCommitGraph true
+
+# Better defaults
+git config --global rebase.autosquash true
+git config --global rebase.updateRefs true
+git config --global diff.algorithm histogram
+
+# Aliases
+git config --global alias.pushf 'push --force-with-lease'
+git config --global alias.stasha 'stash --all'
+git config --global alias.who 'blame -w -CCC'
+
+echo "Run 'git maintenance start' in your repositories!"
+#+end_src
+
+* Related Notes
+- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c[Git Fundamentals]] - Start here if new
+- [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e[Git Configuration]] - Detailed configuration
+- [[id:c5d6e7f8-a9b0-4c1d-2e3f-4a5b6c7d8e9f[Git Investigation Tools]] - Deep diving into history
+- [[id:d6e7f8a9-b0c1-4d2e-3f4a-5b6c7d8e9fa0[Git Collaboration]] - Team workflows
+- [[id:e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9fa0b1[Git Performance]] - Large repositories
+- [[id:f8a9b0c1-d2e3-4f4a-5b6c-7d8e9fa0b1c2[Git Advanced Workflows]] - Power user features
+- [[id:a9b0c1d2-e3f4-4a5b-6c7d-8e9fa0b1c2d3[Git Hooks]] - Automation
+- [[id:b0c1d2e3-f4a5-4b6c-7d8e-9fa0b1c2d3e4[Git Attributes]] - File handling
