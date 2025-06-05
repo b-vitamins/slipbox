@@ -1,0 +1,535 @@
+:PROPERTIES:
+:ID:       f8a9b0c1-d2e3-4f4a-5b6c-7d8e9fa0b1c2
+:END:
+#+TITLE: Git Advanced Workflows - Tips, Tricks, and Modern Features
+#+FILETAGS: :git:workflows:advanced:tips:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+This note captures additional Git features, modern workflows, and tips from the "So you think you know Git" talk that enhance daily Git usage. These range from quality-of-life improvements to powerful features for specific use cases.
+
+* New Display Features
+
+** Column Display
+Make Git output more readable with automatic columns:
+
+#+begin_src bash
+# Enable columns globally
+git config --global column.ui auto
+
+# Or for specific commands
+git config --global column.branch auto
+git config --global column.status auto
+git config --global column.tag auto
+
+# Manual column formatting
+git branch | git column
+#+end_src
+
+** Branch Sorting
+Show branches in more useful order:
+
+#+begin_src bash
+# Sort by most recently committed to
+git config --global branch.sort -committerdate
+
+# Now 'git branch' shows active branches first!
+
+# Other sort options:
+# authordate, creatordate, taggerdate
+# Use '-' prefix for reverse order
+#+end_src
+
+** Better Branch Display
+Create a powerful branch listing alias:
+
+#+begin_src bash
+git config --global alias.branches '!git for-each-ref --sort=-committerdate refs/heads/ --format="%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))"'
+#+end_src
+
+* Working with Stash
+
+** Stash Everything (Including Untracked)
+#+begin_src bash
+# Standard stash leaves untracked files
+git stash
+
+# Better: stash everything
+git stash --all
+# or
+git stash -a
+
+# Alias for convenience
+git config --global alias.stasha 'stash --all'
+#+end_src
+
+** Advanced Stash Usage
+#+begin_src bash
+# Stash with message
+git stash push -m "WIP: refactoring auth module"
+
+# Stash specific files
+git stash push -m "temporary debug" -- src/debug.js
+
+# Stash interactively
+git stash push -p
+
+# List stashes with more detail
+git stash list --format="%gd: %Cblue%h%Creset %s"
+#+end_src
+
+* Modern Git Commands
+
+** git switch and git restore
+From the talk: "checkout is very overloaded" - it can switch branches, revert files, and do many other operations. Git introduced clearer, purpose-specific commands:
+
+*** git switch - For Branches Only
+#+begin_src bash
+# Instead of: git checkout branch-name
+git switch branch-name
+
+# Create and switch (replaces checkout -b)
+git switch -c new-branch
+
+# Force switch (discard local changes)
+git switch --force branch-name
+
+# Switch to previous branch
+git switch -
+#+end_src
+
+*** git restore - For Files Only
+#+begin_src bash
+# Restore file to match index (unstage changes)
+git restore --staged file.txt
+
+# Restore file to match HEAD (discard changes)
+git restore file.txt
+
+# Restore from specific commit
+git restore --source=HEAD~3 file.txt
+
+# Interactive restore (like checkout -p)
+git restore -p file.txt
+
+# Restore entire directory
+git restore .
+#+end_src
+
+*** Complete Comparison Chart
+As shown in the talk:
+- **checkout & switch**: Switch branches
+- **restore & checkout**: Undo unstaged changes
+- **restore & reset**: Undo staged changes
+- **reset & switch**: Move HEAD reference
+- **All of them**: Can accidentally delete work!
+
+** Why Use Them?
+The speaker emphasized that when teaching Git to newcomers, it's better to teach these domain-specific commands rather than the overloaded =checkout= with its five different functions.
+
+* Working with Worktrees
+
+** Multiple Working Directories
+Work on multiple branches simultaneously without stashing:
+
+#+begin_src bash
+# Add a new worktree
+git worktree add ../project-hotfix hotfix-branch
+
+# Create new branch in worktree
+git worktree add -b new-feature ../project-feature
+
+# List worktrees
+git worktree list
+
+# Remove worktree
+git worktree remove ../project-hotfix
+
+# Prune stale worktrees
+git worktree prune
+#+end_src
+
+** Use Cases
+From the talk, worktrees solve the common scenario:
+1. Working on a feature
+2. Urgent bugfix request comes in
+3. Instead of stashing → switching → fixing → switching back
+4. Just create a worktree for the bugfix
+
+Benefits:
+- Emergency hotfix while feature in progress
+- Testing across multiple branches
+- Building different versions simultaneously
+- Code review without disrupting work
+- Shared object database between all worktrees
+
+** How Worktrees Work
+- Each worktree has its own working directory and index
+- All worktrees share the same =.git= repository
+- Changes in any worktree are visible in all others
+- Can't check out the same branch in multiple worktrees
+
+* Interactive Workflows
+
+** Interactive Add Deep Dive
+#+begin_src bash
+# Start interactive add
+git add -i
+
+# Options:
+# 1. status    - show paths with changes
+# 2. update    - add working tree state to staged
+# 3. revert    - revert staged set to HEAD
+# 4. add untracked
+# 5. patch     - pick hunks to stage
+# 6. diff      - view diff of staged
+# 7. quit
+# 8. help
+#+end_src
+
+** Patch Mode Tips
+#+begin_src bash
+# Direct to patch mode
+git add -p
+
+# Commands in patch mode:
+# y - stage this hunk
+# n - don't stage this hunk
+# q - quit
+# a - stage this and all remaining
+# d - don't stage this or remaining
+# s - split hunk into smaller hunks
+# e - manually edit hunk
+# ? - help
+#+end_src
+
+* Git Hooks for Workflows
+
+** Useful Client-Side Hooks
+Create =.git/hooks/pre-commit=:
+#+begin_src bash
+#!/bin/sh
+# Run tests before commit
+npm test
+
+# Check for debugging code
+if git diff --cached | grep -q "console.log"; then
+    echo "Warning: console.log found in staged changes"
+    exit 1
+fi
+#+end_src
+
+Make it executable:
+#+begin_src bash
+chmod +x .git/hooks/pre-commit
+#+end_src
+
+** Share Hooks with Team
+Store in =.githooks/= directory:
+#+begin_src bash
+# Configure Git to use shared hooks
+git config core.hooksPath .githooks
+#+end_src
+
+* Advanced Diffing
+
+** Different Diff Algorithms
+#+begin_src bash
+# Default diff
+git diff
+
+# Patience diff (better for reordered code)
+git diff --patience
+
+# Histogram diff (newest, often best)
+git diff --histogram
+
+# Set default
+git config --global diff.algorithm histogram
+#+end_src
+
+** Useful Diff Options
+#+begin_src bash
+# Show words changed in long lines
+git diff --word-diff
+
+# Ignore whitespace
+git diff -w
+
+# Show function context
+git diff -W
+
+# Show moved lines in different color
+git diff --color-moved=zebra
+
+# Find moved code between files
+git diff --find-copies-harder
+#+end_src
+
+* Git Attributes
+
+** Per-File Settings
+Create =.gitattributes=:
+#+begin_src text
+# Use specific diff driver for SQL files
+*.sql diff=sql
+
+# Mark generated files
+docs/api/* -diff
+*.min.js -diff
+
+# Ensure consistent line endings
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Mark binary files explicitly
+*.png binary
+*.jpg binary
+#+end_src
+
+** Custom Diff Drivers
+#+begin_src bash
+# Configure SQL diff driver
+git config diff.sql.xfuncname "^[[:space:]]*(CREATE|ALTER|DROP).*"
+#+end_src
+
+* Time-Saving Aliases Collection
+
+#+begin_src bash
+# Navigation
+git config --global alias.root 'rev-parse --show-toplevel'
+git config --global alias.exec '!exec '
+
+# Inspection
+git config --global alias.file-log 'log --follow -p --'
+git config --global alias.branch-diff 'diff @{upstream}..HEAD'
+git config --global alias.incoming 'log ..@{upstream}'
+git config --global alias.outgoing 'log @{upstream}..'
+
+# Cleanup
+git config --global alias.prune-branches '!git remote prune origin && git branch -vv | grep '"'"': gone]'"'"' | awk '"'"'{print $1}'"'"' | xargs -r git branch -D'
+
+# Workflow
+git config --global alias.wip 'commit -am "WIP"'
+git config --global alias.unwip 'reset HEAD~1'
+git config --global alias.amendne 'commit --amend --no-edit'
+
+# Search
+git config --global alias.find 'log --all --full-history --'
+git config --global alias.lost 'fsck --full --no-reflogs --unreachable --lost-found | grep commit | cut -d " " -f3 | xargs -n 1 git log -n 1 --pretty=oneline'
+#+end_src
+
+* Fixup Commits and Autosquash
+
+** The Problem
+The speaker highlighted a common workflow issue:
+1. You push a nice patch series (3 commits) to GitHub
+2. You get review feedback on the first commit
+3. You need to incorporate the feedback
+4. Traditional approach: add a 4th "addressed review" commit
+5. Better approach: amend the specific commit that needs the fix
+
+** Solution: Fixup Commits
+Git provides an elegant solution that only 5 people in the audience knew about:
+
+#+begin_src bash
+# You have commits A, B, C
+# Reviewer says "fix documentation in commit A"
+
+# Make your fix
+git add docs/fixed-file.md
+
+# Create a fixup commit targeting commit A
+git commit --fixup=SHA_OF_COMMIT_A
+
+# This creates a commit with message: "fixup! original commit message"
+#+end_src
+
+** Autosquash: The Magic
+#+begin_src bash
+# After creating one or more fixup commits
+git rebase --autosquash origin/main
+
+# Git automatically:
+# 1. Reorders the fixup commits
+# 2. Squashes them into their targets
+# 3. Maintains a clean history
+#+end_src
+
+** Complete Workflow Example
+#+begin_src bash
+# Initial state: 3 commits
+git log --oneline
+# abc123 Add authentication
+# def456 Add user model  
+# ghi789 Add database schema
+
+# Get review feedback: "Add tests to auth"
+echo "test code" > test_auth.js
+git add test_auth.js
+git commit --fixup=abc123
+
+# More feedback: "Update user model docs"
+echo "docs" > user_docs.md
+git add user_docs.md
+git commit --fixup=def456
+
+# Current state shows fixup commits
+git log --oneline
+# fixup! Add user model
+# fixup! Add authentication
+# abc123 Add authentication
+# def456 Add user model
+# ghi789 Add database schema
+
+# Clean up with autosquash
+git rebase -i --autosquash origin/main
+
+# Result: clean history with fixes incorporated
+# abc124 Add authentication (now includes tests)
+# def457 Add user model (now includes docs)
+# ghi789 Add database schema
+#+end_src
+
+** Other Fixup Options
+#+begin_src bash
+# Just change the commit message
+git commit --squash=SHA -m "New message"
+
+# Interactive rebase will stop to let you edit the message
+git rebase -i --autosquash
+#+end_src
+
+** Make Autosquash Default
+#+begin_src bash
+# Always autosquash when rebasing
+git config --global rebase.autosquash true
+#+end_src
+
+* Special Use Cases
+
+** Bisecting with Automation
+#+begin_src bash
+# Create test script
+cat > test.sh << 'EOF'
+#!/bin/bash
+make && ./run-tests.sh
+EOF
+chmod +x test.sh
+
+# Run automated bisect
+git bisect start
+git bisect bad HEAD
+git bisect good v1.0
+git bisect run ./test.sh
+#+end_src
+
+** Cherry-Pick Ranges
+#+begin_src bash
+# Cherry-pick multiple commits
+git cherry-pick A..B
+
+# Cherry-pick with their changes in conflicts
+git cherry-pick --strategy-option=theirs A..B
+
+# Continue after resolving conflicts
+git cherry-pick --continue
+#+end_src
+
+** Creating Patches
+#+begin_src bash
+# Create patch files
+git format-patch -3  # Last 3 commits
+git format-patch origin/main..HEAD
+
+# Apply patches
+git am *.patch
+
+# With three-way merge
+git am -3 *.patch
+#+end_src
+
+* GitHub CLI Integration
+
+** Working with PRs Locally
+#+begin_src bash
+# Install GitHub CLI first
+# Then:
+
+# Create PR from command line
+gh pr create --title "Feature X" --body "Description"
+
+# Check out PR locally
+gh pr checkout 123
+
+# View PR in browser
+gh pr view --web
+#+end_src
+
+* Scalar - Simplified Large Repository Setup
+
+The speaker mentioned that Microsoft created Scalar as a wrapper that configures all the large repository optimizations automatically. It's now included with Git:
+
+#+begin_src bash
+# Instead of complex setup with multiple configs
+git clone <huge-repo-url>
+git maintenance start
+git config core.fsmonitor true
+git config fetch.writeCommitGraph true
+# ... many more configs ...
+
+# Just use scalar
+scalar clone <huge-repo-url>
+# Everything is configured optimally!
+#+end_src
+
+Scalar automatically enables:
+- Partial clone (blob-less)
+- Sparse checkout
+- File system monitor
+- Commit graph generation
+- Background maintenance
+- Prefetching
+
+For more details, see [[id:e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9fa0b1[Git Performance and Large Repositories]].
+
+* Tips from Both Parts of the Talk
+
+The speaker (Scott Chacon) emphasized several key points across both parts:
+
+1. **Use force-with-lease**: "You guys are wrong" (about merging) "but that's fine" - Always safer than --force
+2. **Enable rerere**: Saves time on repeated conflicts
+3. **Run git maintenance start**: "Everyone do this today" - Free performance boost
+4. **Learn the reflog**: Your safety net for mistakes
+5. **Set up good aliases**: Standardize your workflow
+6. **Use SSH signing**: "A lot of people have sometimes a problem getting GPG to work"
+7. **Try sparse-checkout**: For monorepos
+8. **Update Git regularly**: "Git still averages 9 commits per day"
+9. **Use modern commands**: Teach newcomers switch/restore instead of checkout
+10. **Share hooks with your team**: Use pre-commit or husky
+11. **Explore Git features**: "Most of you probably do... didn't know a lot of the stuff"
+
+The speaker noted that despite using Git for 15+ years and writing the Pro Git book, he still discovers new features. The key is staying curious and occasionally checking what's new.
+
+* Modern Git Philosophy
+
+The presenter emphasized that Git hasn't fundamentally changed its model since 2005, maintaining backward compatibility. However, many quality-of-life improvements have been added:
+
+- Better performance for large repos
+- Clearer command separation (switch/restore)
+- Improved default behaviors
+- Better integration with platforms
+
+The key is to stay curious and occasionally check what's new in Git, as demonstrated by the fact that Git still averages 9 commits per day of development.
+
+* Related Notes
+- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c[Git Fundamentals]] - Start here if new to Git
+- [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e[Git Configuration and Aliases]] - Customize Git
+- [[id:c5d6e7f8-a9b0-4c1d-2e3f-4a5b6c7d8e9f[Git Investigation Tools]] - Debugging and analysis
+- [[id:d6e7f8a9-b0c1-4d2e-3f4a-5b6c7d8e9fa0[Git Collaboration Features]] - Team workflows
+- [[id:e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9fa0b1[Git Performance and Large Repositories]] - Scaling Git
+
+* External Resources
+- [[https://gitbutler.com/blog][Git Butler Blog]] - Where these slides were posted
+- [[https://git-scm.com/book][Pro Git Book]] - Comprehensive reference by Scott Chacon
+- [[https://github.com/GitButlerApp/gitbutler][Git Butler]] - Novel Git client mentioned in talk
