@@ -1,0 +1,123 @@
+:PROPERTIES:
+:ID:       d2e3f4a5-b6c7-4d8e-9fa0-b1c2d3e4f5a6
+:END:
+#+TITLE: Git Knowledge Base - Index
+#+FILETAGS: :git:index:moc:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Git Knowledge Base
+This is a comprehensive Git knowledge base derived from Scott Chacon's "So you think you know Git" talk series. Scott is the author of the Pro Git book, former GitHub employee, and creator of Git Butler.
+
+* Quick Start
+If you're looking for immediate improvements to your Git workflow:
+1. Jump to [[id:c1d2e3f4-a5b6-4c7d-8e9f-a0b1c2d3e4f5[Git Quick Reference]] for essential commands
+2. Run =git maintenance start= in all your repositories (seriously, do this today!)
+3. Set up the [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e[recommended aliases and configuration]]
+
+* Knowledge Map
+
+** 🎯 Core Learning Path
+1. [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c[Git Fundamentals - Core Concepts and Basic Usage]]
+   - Start here if you're new to Git
+   - Covers repositories, commits, branches, remotes
+   - Essential commands and workflows
+
+2. [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e[Git Configuration and Aliases - Customizing Your Workflow]]
+   - Set up Git for productivity
+   - Conditional configurations (work vs personal)
+   - Powerful aliases from the talk
+
+3. [[id:c5d6e7f8-a9b0-4c1d-2e3f-4a5b6c7d8e9f[Git Investigation Tools - Advanced History and Code Analysis]]
+   - Master =git blame= with =-w -CCC= flags
+   - Line history with =git log -L=
+   - Finding deleted code with pickaxe (=-S=)
+
+4. [[id:d6e7f8a9-b0c1-4d2e-3f4a-5b6c7d8e9fa0[Git Collaboration Features - Safe Team Workflows]]
+   - *Force with lease* - safe force pushing
+   - SSH commit signing (easier than GPG)
+   - GitHub/GitLab features
+
+** 🚀 Advanced Topics
+5. [[id:e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9fa0b1[Git Performance and Large Repositories - Optimization Techniques]]
+   - Microsoft's contributions for huge repos
+   - Sparse checkout and partial clone
+   - File system monitor for instant =git status=
+   - Scalar for one-command optimization
+
+6. [[id:f8a9b0c1-d2e3-4f4a-5b6c-7d8e9fa0b1c2[Git Advanced Workflows - Tips, Tricks, and Modern Features]]
+   - =git switch= and =git restore= (modern alternatives to checkout)
+   - Fixup commits and autosquash
+   - Worktrees for parallel development
+   - Update refs for stacked branches
+
+7. [[id:a9b0c1d2-e3f4-4a5b-6c7d-8e9fa0b1c2d3[Git Hooks - Automating Your Workflow]]
+   - 28 available hooks (11 most useful)
+   - Modern tools: pre-commit and Husky
+   - Team-wide hook sharing
+
+8. [[id:b0c1d2e3-f4a5-4b6c-7d8e-9fa0b1c2d3e4[Git Attributes - Custom File Handling]]
+   - Smudge/clean filters
+   - Git LFS for large files
+   - Custom diff drivers
+
+** ⚡ Quick References
+9. [[id:c1d2e3f4-a5b6-4c7d-8e9f-a0b1c2d3e4f5[Git Quick Reference - Essential Commands and Setup]]
+   - Copy-paste configurations
+   - Must-know commands
+   - Emergency recovery
+
+* Key Insights from the Talk
+
+** Things You Probably Didn't Know
+- Git has 145 commands, but only 44 are commonly useful
+- It still receives ~9 commits per day of development
+- Windows (3.5M files, 300GB) runs on Git thanks to Microsoft's optimizations
+- You can sign commits with SSH instead of GPG
+- =git blame= can ignore whitespace and code movement with =-w -CCC=
+- Worktrees let you work on multiple branches simultaneously
+- Git maintenance can run in the background, making everything faster
+
+** The Speaker's Main Points
+1. "Most of you probably didn't know a lot of the stuff" - Even experienced users miss features
+2. "Force with lease" - The worst-named but most useful feature
+3. "Run git maintenance start" - Everyone should do this today
+4. Git's backward compatibility means it never removes features, only adds them
+5. The UI could be better, but aliases and modern commands help
+
+* How to Use This Knowledge Base
+
+** For Beginners
+1. Start with [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c[Git Fundamentals]]
+2. Set up basic [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e[configuration and aliases]]
+3. Learn the [[id:c5d6e7f8-a9b0-4c1d-2e3f-4a5b6c7d8e9f[investigation tools]] as you need them
+
+** For Experienced Users
+1. Jump to [[id:c1d2e3f4-a5b6-4c7d-8e9f-a0b1c2d3e4f5[Quick Reference]] for new commands
+2. Explore [[id:f8a9b0c1-d2e3-4f4a-5b6c-7d8e9fa0b1c2[Advanced Workflows]] for modern features
+3. Optimize large repos with [[id:e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9fa0b1[Performance techniques]]
+
+** For Teams
+1. Implement [[id:a9b0c1d2-e3f4-4a5b-6c7d-8e9fa0b1c2d3[Git Hooks]] for consistency
+2. Standardize on [[id:d6e7f8a9-b0c1-4d2e-3f4a-5b6c7d8e9fa0[collaboration features]]
+3. Share [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e[configuration templates]]
+
+* Talk Information
+- **Speaker**: Scott Chacon
+- **Credentials**: 
+  - Author of Pro Git book (available free online)
+  - Former GitHub employee (implemented many features)
+  - Creator of Git Butler
+  - 15+ years with Git
+- **Talk Style**: "Shotgun buffet" - rapid-fire tips and tricks
+- **Audience**: Developers who think they know Git (but probably don't know everything)
+
+* External Resources
+- [[https://git-scm.com/book][Pro Git Book]] - The speaker's comprehensive Git guide
+- [[https://gitbutler.com/blog][Git Butler Blog]] - Where the talk slides are posted
+- [[https://github.com/GitButlerApp/gitbutler][Git Butler]] - Virtual branches project
+- [[https://www.youtube.com/watch?v=aolI_Rz0ZqY][FOSDEM Talk]] - "10 other things of random shit that Git does"
+
+* Summary
+This knowledge base captures both timeless Git fundamentals and cutting-edge features that even experienced developers often miss. The key is that while Git's core model hasn't changed since 2005, it continuously adds quality-of-life improvements that can significantly enhance your workflow.
+
+Remember: "Git is old enough to drink" but it's still actively developed!
