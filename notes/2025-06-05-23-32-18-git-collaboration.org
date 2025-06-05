@@ -1,0 +1,337 @@
+:PROPERTIES:
+:ID:       d6e7f8a9-b0c1-4d2e-3f4a-5b6c7d8e9fa0
+:END:
+#+TITLE: Git Collaboration Features - Safe Team Workflows
+#+FILETAGS: :git:collaboration:signing:safety:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Working effectively in a team requires understanding Git's collaboration features. This note covers safe force pushing, commit signing, and other collaboration tools from the "So you think you know Git" talk.
+
+* Force with Lease - Safe Force Pushing
+
+** The Problem with Regular Force Push
+Consider this scenario:
+1. Scott commits and pushes
+2. Tom pulls, makes changes, and pushes
+3. Scott amends his commit and force pushes
+4. Tom's changes are lost!
+
+** Solution: --force-with-lease
+Force with lease only force pushes if the remote hasn't changed since you last fetched:
+
+#+begin_src bash
+# Instead of dangerous:
+git push --force
+
+# Use safe:
+git push --force-with-lease
+#+end_src
+
+** How It Works
+- Checks if remote ref matches your remote-tracking branch
+- If they match: proceeds with force push
+- If they don't match: rejects the push (someone else pushed)
+
+** Best Practice Workflow
+#+begin_src bash
+# 1. Make your changes
+git commit --amend  # or rebase
+
+# 2. Fetch latest (without merging)
+git fetch
+
+# 3. Safe force push
+git push --force-with-lease
+
+# If rejected, merge/rebase first:
+git pull --rebase
+git push --force-with-lease
+#+end_src
+
+** Alias for Safety
+#+begin_src bash
+# Never accidentally force push
+git config --global alias.pushf 'push --force-with-lease'
+#+end_src
+
+* Commit Signing
+
+** Why Sign Commits?
+- Verify authorship (anyone can set any email in Git)
+- Required by some organizations
+- Shows as "Verified" on GitHub/GitLab
+
+** SSH Signing (New Alternative to GPG)
+As of Git 2.34, you can sign commits with SSH keys instead of GPG:
+
+*** Configure SSH Signing
+#+begin_src bash
+# Tell Git to use SSH for signing
+git config --global gpg.format ssh
+
+# Specify your SSH key
+git config --global user.signingkey ~/.ssh/id_ed25519.pub
+
+# Auto-sign all commits (optional)
+git config --global commit.gpgsign true
+#+end_src
+
+*** Sign Individual Commits
+#+begin_src bash
+# Sign a commit
+git commit -S -m "Signed commit"
+
+# Verify signatures
+git log --show-signature
+#+end_src
+
+*** Allowed Signers File
+Create =~/.config/git/allowed_signers=:
+#+begin_src text
+you@example.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI...
+colleague@example.com ssh-rsa AAAAB3NzaC1yc2EAAAADA...
+#+end_src
+
+Configure Git to use it:
+#+begin_src bash
+git config --global gpg.ssh.allowedSignersFile ~/.config/git/allowed_signers
+#+end_src
+
+** Traditional GPG Signing
+If you prefer or need GPG:
+
+#+begin_src bash
+# List GPG keys
+gpg --list-secret-keys --keyid-format=long
+
+# Configure Git
+git config --global user.signingkey YOUR_KEY_ID
+git config --global commit.gpgsign true
+
+# Sign commits
+git commit -S -m "GPG signed commit"
+#+end_src
+
+** Push Signing (Advanced)
+You can also sign push certificates (rarely used):
+#+begin_src bash
+# Sign the push itself
+git push --signed
+
+# Note: GitHub/GitLab don't support this
+# Mainly used for kernel.org and custom Git servers
+#+end_src
+
+* Git Maintenance - Automatic Optimization
+
+** Enable Background Maintenance
+Keep your repository optimized automatically:
+#+begin_src bash
+# Enable for current repository
+git maintenance start
+
+# What it does:
+# - Hourly: prefetch from remotes
+# - Daily: commit-graph update, incremental repack
+# - Weekly: full garbage collection
+#+end_src
+
+** Manual Maintenance Tasks
+#+begin_src bash
+# Run all maintenance tasks now
+git maintenance run
+
+# Run specific task
+git maintenance run --task=gc
+git maintenance run --task=commit-graph
+git maintenance run --task=prefetch
+#+end_src
+
+** Benefits
+- Faster operations (especially git log, git blame)
+- Automatic fetching keeps you updated
+- Garbage collection prevents repository bloat
+- No more "Auto packing" interruptions
+
+* Collaboration Workflows
+
+** Feature Branch Workflow
+#+begin_src bash
+# 1. Create feature branch
+git checkout -b feature/new-widget
+
+# 2. Work and commit
+git add .
+git commit -m "Add new widget"
+
+# 3. Keep up to date with main
+git fetch origin
+git rebase origin/main
+
+# 4. Push safely
+git push --force-with-lease origin feature/new-widget
+#+end_src
+
+** Handling Conflicts in Team Settings
+
+*** With Rerere Enabled
+#+begin_src bash
+# Enable rerere globally
+git config --global rerere.enabled true
+
+# First conflict resolution is recorded
+git merge feature-branch
+# Resolve conflicts...
+git add .
+git commit
+
+# Future similar conflicts are auto-resolved
+git rebase main  # Conflicts automatically resolved!
+#+end_src
+
+** Collaborative Aliases
+#+begin_src bash
+# Update branch with latest from main
+git config --global alias.update '!git fetch origin && git rebase origin/main'
+
+# Safe force push
+git config --global alias.pushf 'push --force-with-lease'
+
+# Show who's working on what
+git config --global alias.team '!git for-each-ref --format="%(color:yellow)%(refname:short)%(color:reset) - %(authorname)" refs/remotes/origin'
+#+end_src
+
+* GitHub/GitLab Specific Features
+
+** Repository Settings
+Configure these in your repository settings:
+
+*** Merge Options
+- **Merge commits**: Traditional merge with merge commit
+- **Squash merging**: Combine all commits into one
+- **Rebase merging**: Linear history without merge commits
+
+*** Branch Protection
+- Require pull request reviews
+- Require status checks (CI/CD)
+- Require signed commits
+- Require linear history (no merge commits)
+- Require up-to-date branches
+
+** Auto-merge Feature
+Enable auto-merge on pull requests:
+#+begin_src bash
+# After creating PR, if checks are required:
+# Click "Enable auto-merge"
+# PR merges automatically when all checks pass
+#+end_src
+
+** Working with Pull Request References
+GitHub creates hidden refs for all PRs:
+#+begin_src bash
+# Fetch all PR refs
+git config --global alias.fetch-prs '!git fetch origin +refs/pull/*/head:refs/remotes/origin/pr/*'
+
+# Now you can checkout any PR:
+git checkout origin/pr/123
+
+# Or add to your fetch config permanently:
+git config --add remote.origin.fetch '+refs/pull/*/head:refs/remotes/origin/pr/*'
+#+end_src
+
+* Best Practices for Team Collaboration
+
+** Communication Through Commits
+1. **Write meaningful commit messages**:
+   #+begin_src text
+   feat: Add user authentication
+   
+   - Implement JWT token generation
+   - Add login/logout endpoints
+   - Include refresh token mechanism
+   
+   Closes #123
+   #+end_src
+
+2. **Use conventional commits**: feat:, fix:, docs:, chore:, etc.
+
+** Branch Naming Conventions
+#+begin_src bash
+feature/user-authentication
+bugfix/login-error-handling
+hotfix/security-patch
+chore/update-dependencies
+#+end_src
+
+** Code Review Workflow
+1. Push feature branch
+2. Create pull/merge request
+3. Automated checks run
+4. Team reviews code
+5. Address feedback
+6. Squash or merge based on team preference
+
+* Advanced Collaboration Patterns
+
+** Stacked Pull Requests
+Working on dependent features:
+#+begin_src bash
+# Base feature
+git checkout -b feature/base
+
+# Dependent feature
+git checkout -b feature/dependent
+
+# Keep them in sync
+git rebase feature/base
+#+end_src
+
+** Collaborative Debugging
+#+begin_src bash
+# Share specific commit state
+git format-patch -1 HEAD
+# Email the patch file
+
+# Apply received patch
+git am < received-patch.patch
+#+end_src
+
+** Managing Large Teams
+#+begin_src bash
+# See who's active
+git shortlog -sn --since="1 month ago"
+
+# Find expertise
+git log --author="expert@company" -- path/to/component
+
+# Check review load
+git log --grep="Reviewed-by:" --since="1 week ago" | grep -c "Reviewed-by: Name"
+#+end_src
+
+* Troubleshooting Collaboration Issues
+
+** Recovering from Bad Force Push
+#+begin_src bash
+# If someone force pushed over your work
+git reflog show origin/main
+git push --force-with-lease origin origin/main@{1}:main
+#+end_src
+
+** Fixing Commit Author
+#+begin_src bash
+# For last commit
+git commit --amend --author="Name <email@example.com>"
+
+# For older commits
+git rebase -i HEAD~3
+# Mark commits as 'edit', then for each:
+git commit --amend --author="Name <email@example.com>"
+git rebase --continue
+#+end_src
+
+* Related Notes
+- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c[Git Fundamentals]] - Basic concepts
+- [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e[Git Configuration and Aliases]] - Setup
+- [[id:e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9fa0b1[Git Performance and Large Repositories]] - Scaling Git
+- [[id:f8a9b0c1-d2e3-4f4a-5b6c-7d8e9fa0b1c2[Git Advanced Workflows]] - Complex patterns
