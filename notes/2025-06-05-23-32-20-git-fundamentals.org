@@ -1,0 +1,189 @@
+:PROPERTIES:
+:ID:       a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c
+:END:
+#+TITLE: Git Fundamentals - Core Concepts and Basic Usage
+#+FILETAGS: :git:vcs:fundamentals:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Git is a distributed version control system created by Linus Torvalds in 2005. It tracks changes in your files and coordinates work among multiple people. This note covers the essential concepts and commands you need to start using Git effectively.
+
+* Core Concepts
+
+** Repository (Repo)
+A repository is a directory that Git tracks. It contains all your project files and the entire history of changes.
+
+** Working Directory
+The actual files you see and edit in your file system.
+
+** Staging Area (Index)
+A preparation area where you compose your next commit. Think of it as a "draft" of your next saved version.
+
+** Commit
+A snapshot of your project at a specific point in time. Each commit has:
+- A unique identifier (SHA-1 hash)
+- Author information
+- Timestamp
+- Commit message
+- Pointer to parent commit(s)
+
+** Branch
+A movable pointer to a commit. The default branch is usually called =main= or =master=.
+
+** Remote
+A version of your repository hosted elsewhere (like GitHub, GitLab, etc.).
+
+* Essential Commands
+
+** Initial Setup
+#+begin_src bash
+# Set your identity
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+
+# Initialize a new repository
+git init
+
+# Clone an existing repository
+git clone https://github.com/user/repo.git
+#+end_src
+
+** Basic Workflow
+#+begin_src bash
+# Check status of your working directory
+git status
+
+# Add files to staging area
+git add filename.txt
+git add .  # Add all changed files
+
+# Commit changes
+git commit -m "Descriptive commit message"
+
+# View commit history
+git log
+git log --oneline  # Condensed view
+#+end_src
+
+** Working with Remotes
+#+begin_src bash
+# Add a remote repository
+git remote add origin https://github.com/user/repo.git
+
+# Push changes to remote
+git push origin main
+
+# Pull changes from remote
+git pull origin main
+
+# Fetch changes without merging
+git fetch origin
+#+end_src
+
+** Branching
+#+begin_src bash
+# Create a new branch
+git branch feature-name
+
+# Switch to a branch
+git checkout feature-name
+
+# Create and switch in one command
+git checkout -b feature-name
+
+# List branches
+git branch
+
+# Merge branch into current branch
+git merge feature-name
+
+# Delete a branch
+git branch -d feature-name
+#+end_src
+
+* The Three States
+Files in Git can exist in three states:
+
+1. *Modified* - You've changed the file but haven't staged it
+2. *Staged* - You've marked a modified file to go into your next commit
+3. *Committed* - The data is safely stored in your local database
+
+* Understanding Git's Architecture
+
+** The .git Directory
+When you run =git init=, Git creates a =.git= directory containing:
+- =objects/= - All your data (files, commits, trees)
+- =refs/= - Pointers to commits (branches, tags)
+- =HEAD= - Points to the current branch
+- =config= - Repository-specific configuration
+- =index= - The staging area
+
+** Object Model
+Git stores data as objects:
+- *Blob* - File contents
+- *Tree* - Directory structure
+- *Commit* - Snapshot with metadata
+- *Tag* - Named pointer to a commit
+
+* Common Workflows
+
+** Feature Branch Workflow
+1. Create a feature branch from main
+2. Make changes and commit
+3. Push branch to remote
+4. Create pull/merge request
+5. Review and merge into main
+
+** Fixing Mistakes
+#+begin_src bash
+# Undo last commit but keep changes
+git reset --soft HEAD~1
+
+# Undo last commit and discard changes
+git reset --hard HEAD~1
+
+# Amend the last commit
+git commit --amend -m "New message"
+
+# Discard changes in working directory
+git checkout -- filename.txt
+#+end_src
+
+* Best Practices
+
+1. **Write clear commit messages**: Use present tense, be descriptive
+2. **Commit often**: Small, logical commits are easier to understand
+3. **Pull before push**: Always sync with remote before pushing
+4. **Use branches**: Keep main/master stable, develop in branches
+5. **Review before committing**: Use =git diff= to review changes
+
+* Troubleshooting Tips
+
+** Merge Conflicts
+When Git can't automatically merge changes:
+1. Git marks conflicts in files with =<<<<<<<= , ======= , and =>>>>>>>=
+2. Manually edit files to resolve conflicts
+3. Add resolved files: =git add filename=
+4. Complete merge: =git commit=
+
+** Checking What Changed
+#+begin_src bash
+# See unstaged changes
+git diff
+
+# See staged changes
+git diff --staged
+
+# See changes between commits
+git diff commit1 commit2
+#+end_src
+
+* Next Steps
+- [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e[Git Configuration and Aliases]] - Customize Git for your workflow
+- [[id:c5d6e7f8-a9b0-4c1d-2e3f-4a5b6c7d8e9f[Git Investigation Tools]] - Advanced tools for exploring history
+- [[id:d6e7f8a9-b0c1-4d2e-3f4a-5b6c7d8e9fa0[Git Collaboration Features]] - Working effectively with others
+
+* References
+- [[https://git-scm.com/book][Pro Git Book]] - Comprehensive Git guide
+- [[https://git-scm.com/docs][Official Git Documentation]]
+- Talk: "So you think you know Git" - Advanced Git features and tips
