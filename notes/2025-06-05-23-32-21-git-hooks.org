@@ -1,0 +1,382 @@
+:PROPERTIES:
+:ID:       a9b0c1d2-e3f4-4a5b-6c7d-8e9fa0b1c2d3
+:END:
+#+TITLE: Git Hooks - Automating Your Workflow
+#+FILETAGS: :git:hooks:automation:workflow:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Git hooks are scripts that Git executes before or after events such as commit, push, and receive. They let you customize Git's internal behavior and trigger customizable actions at key points in the development lifecycle. This note covers the 28 available hooks and modern tools for managing them effectively.
+
+* Understanding Git Hooks
+
+** What Are Hooks?
+- Scripts that run automatically at certain points in Git workflow
+- Located in =.git/hooks/= directory
+- Can be written in any scripting language (bash, Python, etc.)
+- Not tracked by Git by default (problem for team sharing)
+
+** Categories of Hooks
+According to the talk, there are 28 hooks total, broken down into:
+
+1. **Client-side hooks** (11 most useful):
+   - Commit workflow hooks
+   - Rewriting/rebasing hooks
+   - Branch switching/pushing hooks
+
+2. **Server-side hooks** (less commonly used)
+3. **Email workflow hooks** (for patch-based workflows)
+4. **Large repository hooks** (Microsoft's additions)
+
+* The 11 Most Useful Client-Side Hooks
+
+** Commit Workflow Hooks
+1. **pre-commit**: Runs before commit message editor
+   - Lint code
+   - Run tests
+   - Check for large files
+   - Ensure no debug code
+
+2. **prepare-commit-msg**: Runs before commit message editor, after default message
+   - Add ticket numbers
+   - Format commit messages
+   - Add co-authors
+
+3. **commit-msg**: Runs after commit message is entered
+   - Validate commit message format
+   - Ensure conventional commits
+
+4. **post-commit**: Runs after commit is complete
+   - Send notifications
+   - Update issue trackers
+
+** Rewriting Hooks
+5. **pre-rebase**: Runs before rebase starts
+   - Prevent rebasing published branches
+   - Backup current state
+
+6. **post-rewrite**: Runs after commits are rewritten (rebase, amend)
+   - Update related systems
+   - Sync with external tools
+
+** Merging Hooks
+7. **post-merge**: Runs after successful merge
+   - Install new dependencies
+   - Rebuild project
+   - Update documentation
+
+** Switching and Pushing Hooks
+8. **post-checkout**: Runs after checkout
+   - Update ctags
+   - Switch tabs/spaces settings
+   - Install packages
+
+9. **pre-push**: Runs before push
+   - Run full test suite
+   - Check for WIP commits
+   - Validate branch names
+
+10. **pre-auto-gc**: Runs before automatic garbage collection
+
+11. **post-update**: Runs after refs are updated
+
+* Traditional Hook Setup
+
+** Manual Installation
+Create executable script in =.git/hooks/=:
+
+#+begin_src bash
+#!/bin/sh
+# .git/hooks/pre-commit
+
+# Check for console.log statements
+if git diff --cached | grep -q "console.log"; then
+    echo "Error: console.log found in staged files"
+    exit 1
+fi
+
+# Run tests
+npm test
+#+end_src
+
+Make it executable:
+#+begin_src bash
+chmod +x .git/hooks/pre-commit
+#+end_src
+
+** Problems with Traditional Approach
+- Not version controlled
+- Hard to share with team
+- No dependency management
+- Platform-specific issues
+
+* Modern Hook Management: Pre-commit
+
+** Installation
+#+begin_src bash
+# Install pre-commit
+pip install pre-commit
+
+# Or with homebrew
+brew install pre-commit
+#+end_src
+
+** Configuration (.pre-commit-config.yaml)
+#+begin_src yaml
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+        args: ['--maxkb=500']
+      
+  - repo: https://github.com/psf/black
+    rev: 23.1.0
+    hooks:
+      - id: black
+        language_version: python3.9
+        
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
+        args: ['--max-line-length=88']
+#+end_src
+
+** Usage
+#+begin_src bash
+# Install hooks
+pre-commit install
+
+# Run on all files (not just staged)
+pre-commit run --all-files
+
+# Update hook versions
+pre-commit autoupdate
+
+# Run specific hook
+pre-commit run black
+#+end_src
+
+** Benefits
+- Configuration in version control
+- Automatic tool installation
+- Language agnostic
+- Large ecosystem of pre-made hooks
+- Pretty output with pass/fail/skip status
+
+* Modern Hook Management: Husky (Node.js)
+
+** Installation
+#+begin_src bash
+# Install husky
+npm install --save-dev husky
+
+# Enable Git hooks
+npx husky install
+
+# Add to package.json
+npm pkg set scripts.prepare="husky install"
+#+end_src
+
+** Creating Hooks
+#+begin_src bash
+# Add pre-commit hook
+npx husky add .husky/pre-commit "npm test"
+
+# Add commit-msg hook
+npx husky add .husky/commit-msg 'npx commitlint --edit "$1"'
+#+end_src
+
+** Example Hook (.husky/pre-commit)
+#+begin_src bash
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Run linter
+npm run lint
+
+# Run tests
+npm test
+
+# Check types
+npm run type-check
+#+end_src
+
+** Benefits
+- Integrates with npm/yarn workflow
+- Hooks in version control
+- Cross-platform compatibility
+- Easy team onboarding
+
+* Practical Hook Examples
+
+** Preventing Large Files
+#+begin_src bash
+#!/bin/sh
+# Check for large files
+for file in $(git diff --cached --name-only); do
+    size=$(stat -c%s "$file" 2>/dev/null || stat -f%z "$file")
+    if [ $size -ge 1048576 ]; then
+        echo "Error: $file is larger than 1MB"
+        exit 1
+    fi
+done
+#+end_src
+
+** Enforcing Branch Names
+#+begin_src bash
+#!/bin/sh
+# pre-push hook
+branch=$(git rev-parse --abbrev-ref HEAD)
+valid_pattern="^(feature|bugfix|hotfix|release)\/[a-z0-9-]+$"
+
+if ! [[ $branch =~ $valid_pattern ]]; then
+    echo "Branch name '$branch' does not follow naming convention"
+    echo "Use: feature/name, bugfix/name, hotfix/name, or release/name"
+    exit 1
+fi
+#+end_src
+
+** Auto-formatting Code
+#+begin_src yaml
+# .pre-commit-config.yaml
+repos:
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.0.0
+    hooks:
+      - id: prettier
+        types_or: [css, javascript, jsx, typescript, tsx, json, markdown]
+#+end_src
+
+** Commit Message Validation
+#+begin_src bash
+#!/bin/sh
+# commit-msg hook
+commit_regex='^(feat|fix|docs|style|refactor|test|chore)(\([a-z]+\))?: .{1,50}'
+
+if ! grep -qE "$commit_regex" "$1"; then
+    echo "Invalid commit message format!"
+    echo "Format: type(scope): subject"
+    echo "Example: feat(auth): add login endpoint"
+    exit 1
+fi
+#+end_src
+
+* Hook Use Cases from the Talk
+
+The speaker mentioned several practical uses:
+
+1. **Commit message formatting**: Ensure consistent commit messages
+2. **Package installation**: Auto-install when package.json changes
+3. **Update ctags**: Keep code navigation current
+4. **Switch tabs/spaces**: Adjust editor settings per project
+5. **Lint code**: Catch issues before commit
+6. **Prevent large files**: Avoid bloating repository
+7. **Run tests**: Ensure code works before commit
+
+* Best Practices
+
+1. **Keep hooks fast**: Long-running hooks frustrate developers
+2. **Make them skippable**: Allow bypass with =--no-verify= when needed
+3. **Fail gracefully**: Provide clear error messages
+4. **Version control hooks**: Use pre-commit or husky
+5. **Document requirements**: Explain what hooks do and why
+6. **Test cross-platform**: Ensure hooks work on all team OSes
+7. **Use existing tools**: Don't reinvent the wheel
+
+* Bypassing Hooks
+
+When necessary, you can skip hooks:
+#+begin_src bash
+# Skip pre-commit and commit-msg hooks
+git commit --no-verify -m "Emergency fix"
+
+# Skip pre-push hook
+git push --no-verify
+#+end_src
+
+* Team Workflow Integration
+
+** Getting Team Buy-in
+1. Start with non-blocking hooks (warnings only)
+2. Gradually add more strict checks
+3. Ensure hooks help, not hinder
+4. Provide good documentation
+5. Make setup automatic
+
+** Example Team Setup
+#+begin_src json
+// package.json
+{
+  "scripts": {
+    "prepare": "husky install",
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"],
+    "*.{json,md}": ["prettier --write"]
+  }
+}
+#+end_src
+
+* Troubleshooting Hooks
+
+** Common Issues
+1. **Hook not executing**: Check file permissions (must be executable)
+2. **Wrong interpreter**: Ensure shebang line is correct
+3. **Path issues**: Hooks run from repository root
+4. **Exit codes**: Non-zero exit prevents Git operation
+
+** Debugging
+#+begin_src bash
+# Debug hook execution
+GIT_TRACE=1 git commit -m "test"
+
+# Test hook manually
+.git/hooks/pre-commit
+
+# Check hook permissions
+ls -la .git/hooks/
+#+end_src
+
+* Advanced Hook Patterns
+
+** Conditional Execution
+#+begin_src bash
+#!/bin/sh
+# Only run on main branch
+branch=$(git rev-parse --abbrev-ref HEAD)
+if [ "$branch" = "main" ]; then
+    npm run extensive-tests
+fi
+#+end_src
+
+** Hook Chaining
+#+begin_src yaml
+# .pre-commit-config.yaml
+repos:
+  - repo: local
+    hooks:
+      - id: tests
+        name: Run tests
+        entry: npm test
+        language: system
+        pass_filenames: false
+        stages: [commit]
+      - id: build
+        name: Build project
+        entry: npm run build
+        language: system
+        pass_filenames: false
+        stages: [push]
+#+end_src
+
+* Related Notes
+- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c[Git Fundamentals]] - Basic Git concepts
+- [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e[Git Configuration and Aliases]] - Git setup
+- [[id:f8a9b0c1-d2e3-4f4a-5b6c-7d8e9fa0b1c2[Git Advanced Workflows]] - Complex patterns
+- [[id:b0c1d2e3-f4a5-4b6c-7d8e-9fa0b1c2d3e4[Git Attributes]] - File handling configuration
