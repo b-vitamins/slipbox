@@ -1,0 +1,274 @@
+:PROPERTIES:
+:ID:       b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e
+:END:
+#+TITLE: Git Configuration and Aliases - Customizing Your Workflow
+#+FILETAGS: :git:configuration:productivity:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Git's configuration system allows you to customize behavior, create shortcuts, and optimize your workflow. This note covers configuration levels, useful aliases, and advanced configuration patterns from the "So you think you know Git" talk.
+
+* Configuration Levels
+
+Git has three configuration levels:
+1. *System* - Applies to all users on the system (=/etc/gitconfig=)
+2. *Global* - Applies to your user account (=~/.gitconfig=)
+3. *Local* - Applies to specific repository (=.git/config=)
+
+Priority: Local > Global > System
+
+* Basic Configuration
+
+** Setting Configuration Values
+#+begin_src bash
+# Set global configuration
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+
+# Set local configuration (repository-specific)
+git config user.email "work@company.com"
+
+# View configuration
+git config --list
+git config user.email  # View specific value
+#+end_src
+
+* Creating Aliases
+
+** Basic Alias Syntax
+#+begin_src bash
+git config --global alias.<shortcut> '<command>'
+#+end_src
+
+** Useful Aliases from the Talk
+#+begin_src bash
+# Stash with untracked files
+git config --global alias.staa 'stash --all'
+
+# Better log output
+git config --global alias.lg 'log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
+
+# Quick status
+git config --global alias.st 'status -sb'
+
+# Amend without editing message
+git config --global alias.amend 'commit --amend --no-edit'
+#+end_src
+
+** Advanced Alias with Shell Commands
+Use =!= to run shell commands:
+#+begin_src bash
+# Better branch listing with descriptions
+git config --global alias.bb '!git for-each-ref --sort=-committerdate refs/heads/ --format="%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))"'
+
+# Show branches with ahead/behind information
+git config --global alias.branches '!git for-each-ref --sort=-committerdate --format="%(color:blue)%(authordate:relative)%09%(color:red)%(authorname)%09%(color:white)%(refname:short)" refs/heads | head -20'
+#+end_src
+
+* Conditional Configuration (includeIf)
+
+** Directory-Based Configuration
+The =includeIf= directive allows different configurations for different directories:
+
+#+begin_src bash
+# In ~/.gitconfig
+[includeIf "gitdir:~/work/"]
+    path = ~/.gitconfig-work
+    
+[includeIf "gitdir:~/personal/"]
+    path = ~/.gitconfig-personal
+#+end_src
+
+** Example Work Configuration
+Create =~/.gitconfig-work=:
+#+begin_src conf
+[user]
+    email = you@company.com
+[commit]
+    gpgsign = true
+[core]
+    sshCommand = ssh -i ~/.ssh/work_rsa
+#+end_src
+
+** Example Personal Configuration
+Create =~/.gitconfig-personal=:
+#+begin_src conf
+[user]
+    email = personal@email.com
+[commit]
+    gpgsign = false
+#+end_src
+
+* Useful Configuration Options
+
+** Performance and Behavior
+#+begin_src bash
+# Enable parallel fetching of submodules
+git config --global submodule.fetchJobs 8
+
+# Better diff algorithm
+git config --global diff.algorithm histogram
+
+# Auto-prune on fetch
+git config --global fetch.prune true
+
+# Auto-stash on rebase
+git config --global rebase.autostash true
+
+# Setup rebase as default pull strategy
+git config --global pull.rebase true
+#+end_src
+
+** Display and Editor
+#+begin_src bash
+# Set default editor
+git config --global core.editor "vim"
+
+# Enable color output
+git config --global color.ui auto
+
+# Better diff highlighting
+git config --global diff.colorMoved zebra
+
+# Show whitespace errors
+git config --global core.whitespace trailing-space,space-before-tab
+#+end_src
+
+** Column Display (New Feature)
+Make output display in columns:
+#+begin_src bash
+# Auto-columnize suitable output
+git config --global column.ui auto
+
+# Specific commands
+git config --global column.branch auto
+git config --global column.status auto
+#+end_src
+
+* Branch Sorting Configuration
+
+** Sort Branches by Recent Activity
+#+begin_src bash
+# Sort by committer date (most recent first)
+git config --global branch.sort -committerdate
+
+# Now 'git branch' shows recently used branches first
+#+end_src
+
+* Advanced Productivity Aliases
+
+** Investigation Aliases
+#+begin_src bash
+# Find deleted files
+git config --global alias.deleted '!git log --diff-filter=D --summary'
+
+# Show files changed in last commit
+git config --global alias.last 'log -1 HEAD --stat'
+
+# List aliases
+git config --global alias.aliases '!git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /'
+
+# Undo last commit but keep changes
+git config --global alias.undo 'reset HEAD~1 --mixed'
+#+end_src
+
+** Workflow Aliases
+#+begin_src bash
+# Start new feature branch
+git config --global alias.feature '!f() { git checkout -b feature/$1; }; f'
+
+# Cleanup merged branches
+git config --global alias.cleanup '!git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+
+# Show verbose remote info
+git config --global alias.remotes 'remote -v'
+#+end_src
+
+* Maintenance Configuration
+
+** Enable Background Maintenance
+From the talk - Git can run maintenance tasks in the background:
+#+begin_src bash
+# Start maintenance for current repository
+git maintenance start
+
+# This adds to your repository config:
+[maintenance]
+    auto = true
+    strategy = incremental
+#+end_src
+
+This automatically:
+- Updates commit-graph
+- Prefetches from remotes
+- Performs incremental garbage collection
+- Consolidates pack files
+
+** Maintenance Tasks Configuration
+#+begin_src bash
+# Configure specific maintenance tasks
+git config maintenance.commit-graph.enabled true
+git config maintenance.prefetch.enabled true
+git config maintenance.gc.enabled true
+git config maintenance.loose-objects.enabled true
+git config maintenance.incremental-repack.enabled true
+#+end_src
+
+* Tips for Managing Configurations
+
+1. **Keep a dotfiles repository**: Version control your Git config
+2. **Use includes for organization**:
+   #+begin_src bash
+   [include]
+       path = ~/.gitconfig.aliases
+       path = ~/.gitconfig.colors
+   #+end_src
+
+3. **Document your aliases**: Add comments in your config file
+4. **Test aliases before globalizing**: Try in local repo first
+5. **Share useful aliases**: Team productivity boost
+
+* Example Complete Configuration
+
+#+begin_src conf
+[user]
+    name = Your Name
+    email = your.email@example.com
+
+[core]
+    editor = vim
+    whitespace = trailing-space,space-before-tab
+    
+[alias]
+    # Shortcuts
+    st = status -sb
+    co = checkout
+    br = branch
+    ci = commit
+    
+    # Useful commands
+    unstage = reset HEAD --
+    last = log -1 HEAD --stat
+    visual = !gitk
+    
+    # Advanced workflows
+    staa = stash --all
+    force-push = push --force-with-lease
+    
+[color]
+    ui = auto
+    
+[column]
+    ui = auto
+    
+[branch]
+    sort = -committerdate
+    
+[includeIf "gitdir:~/work/"]
+    path = ~/.gitconfig-work
+#+end_src
+
+* Related Notes
+- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c[Git Fundamentals]] - Basic Git concepts
+- [[id:c5d6e7f8-a9b0-4c1d-2e3f-4a5b6c7d8e9f[Git Investigation Tools]] - Advanced history exploration
+- [[id:e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9fa0b1[Git Performance and Large Repositories]] - Optimization techniques
