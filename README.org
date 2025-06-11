@@ -7,6 +7,7 @@ The Zettelkasten (German for "slip box") is a method of *knowledge management* a
 - [[https://niklas-luhmann-archiv.de/bestand/zettelkasten/zettel/ZK_2_NB_1_1_V][Zettelkasten II]]
 
 This here is my slipbox, powered by [[https://www.orgroam.com/][Org Roam]].
+To set up a local environment for browsing and editing these notes, run `./setup-dev.sh` while online. It installs Emacs and caches the required Org-roam packages for offline use.
 
 ** Overview of the Zettelkasten system
 :PROPERTIES:
