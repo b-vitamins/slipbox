@@ -5,7 +5,6 @@
 #+FILETAGS: :index:
 #+SETUPFILE: ../../setupfile.org
 
-* A guide for communicating with slipboxes
 A comprehensive reference for all interactions with the Org-Roam notes management agent.
 
 * Table of Contents

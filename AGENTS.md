@@ -41,7 +41,7 @@ Exercises with solutions:
 - **Timed**: `./scripts/create-node.sh problem-timed "Title"`
 
 ### 5. Index/MOC Notes
-Topic hubs that organize related notes:
+Topic hubs that organize related notes. These notes should be timestamped just like any other node. Use the creation script:
 - `./scripts/create-index.sh "Topic Name"`
 
 ### 6. Daily Notes
@@ -120,6 +120,7 @@ The setupfile includes common physics and math packages:
 #### Titles
 - Clear and specific
 - Include key searchable terms
+- Do not duplicate the title as a heading
 - Examples:
   ✓ "Variational Autoencoders - Latent Space Structure"
   ✗ "VAE Notes"
@@ -221,6 +222,7 @@ All nodes must have a `:ID:` property. If missing, the node won't be recognized 
 - Scripts use Emacs batch mode to ensure proper Org-Roam functionality
 - Always include `#+SETUPFILE: ../../setupfile.org` for consistency
 - Node IDs are UUIDs generated automatically
+- All note files are timestamped by the creation scripts
 
 ## Getting Started
 
