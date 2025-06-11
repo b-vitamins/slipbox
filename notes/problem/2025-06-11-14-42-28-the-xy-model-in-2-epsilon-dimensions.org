@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       deda627e-fa21-479a-8ced-26f588a76edd
+:END:
+#+TITLE: The XY model in 2+epsilon dimensions
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+6. The XY model in 2+\epsilon dimensions: The recursion relations of the XY model in two dimensions can be generalized to $d=2+\epsilon$ dimensions, and take the form:
+
+\begin{align*}
+\left\{\begin{array}{l}
+\frac{\mathrm{d} T}{\mathrm{~d} \ell}=-\epsilon T+4 \pi^{3} y^{2} \\
+\frac{\mathrm{d} y}{\mathrm{~d} \ell}=\left(2-\frac{\pi}{T}\right) y
+\end{array}\right.
+\end{align*}
+(a) Calculate the position of the fixed point for the finite temperature phase transition.
+
+(b) Obtain the eigenvalues at this fixed point to lowest contributing order in \epsilon.
+
+(c) Estimate the exponents \nu and \alpha for the superfluid transition in $d=3$ from these results. [Be careful in keeping track of only the lowest nontrivial power of \epsilon in your expressions.]
+
+* Solution
+
+* Related Concepts
