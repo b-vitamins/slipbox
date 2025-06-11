@@ -10,7 +10,9 @@
 2. Tricritical point: By tuning an additional parameter, a second order transition can be made first order. The special point separating the two types of transitions is known as a tricritical point, and can be studied by examining the Landau-Ginzburg Hamiltonian
 
 \begin{align*}
-\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left[\frac{K}{2}(\nabla m)^{2}+\frac{t}{2} m^{2}+u m^{4}+v m^{6}-h m\right]
+\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left
+[
+\frac{K}{2}(\nabla m)^{2}+\frac{t}{2} m^{2}+u m^{4}+v m^{6}-h m\right]
 \end{align*}
 
 where \(u\) can be positive or negative. For \(u<0\), a positive \(v\) is necessary to insure stability.

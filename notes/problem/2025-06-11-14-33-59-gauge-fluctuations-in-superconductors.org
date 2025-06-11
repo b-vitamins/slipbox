@@ -11,7 +11,9 @@
 \(\mathrm{i} \Psi_{2}(\mathbf{x})\), and the electromagnetic vector potential \(\vec{A}(\mathbf{x})\), which are subject to a Hamiltonian
 
 \begin{align*}
-\beta \mathcal{H}=\int \mathrm{d}^{3} \mathbf{x}\left[\frac{t}{2}|\Psi|^{2}+u|\Psi|^{4}+\frac{K}{2} D_{\mu} \Psi D_{\mu}^{*} \Psi^{*}+\frac{L}{2}(\nabla \times A)^{2}\right]
+\beta \mathcal{H}=\int \mathrm{d}^{3} \mathbf{x}\left
+[
+\frac{t}{2}|\Psi|^{2}+u|\Psi|^{4}+\frac{K}{2} D_{\mu} \Psi D_{\mu}^{*} \Psi^{*}+\frac{L}{2}(\nabla \times A)^{2}\right]
 \end{align*}
 
 The gauge-invariant derivative \(D_{\mu} \equiv \partial_{\mu}-\mathrm{i} e A_{\mu}(\mathbf{x})\), introduces the coupling between the two fields. (In terms of Cooper pair parameters, \(e=e^{*} c / \hbar, K=\hbar^{2} / 2 m^{*}\).)

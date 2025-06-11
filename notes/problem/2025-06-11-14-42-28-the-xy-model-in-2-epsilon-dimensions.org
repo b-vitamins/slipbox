@@ -18,7 +18,9 @@
 
 (b) Obtain the eigenvalues at this fixed point to lowest contributing order in \epsilon.
 
-(c) Estimate the exponents \nu and \alpha for the superfluid transition in $d=3$ from these results. [Be careful in keeping track of only the lowest nontrivial power of \epsilon in your expressions.]
+(c) Estimate the exponents \nu and \alpha for the superfluid transition in $d=3$ from these results. 
+[
+Be careful in keeping track of only the lowest nontrivial power of \epsilon in your expressions.]
 
 * Solution
 

@@ -9,7 +9,9 @@
 9. Melting: The elastic energy cost of a deformation $u_{i}(\mathbf{x})$, of an isotropic lattice is
 
 \begin{align*}
--\beta \mathcal{H}=\frac{1}{2} \int \mathrm{d}^{d} \mathbf{x}\left[2 \mu u_{i j} u_{i j}+\lambda u_{i i} u_{j j}\right]
+-\beta \mathcal{H}=\frac{1}{2} \int \mathrm{d}^{d} \mathbf{x}\left
+[
+2 \mu u_{i j} u_{i j}+\lambda u_{i i} u_{j j}\right]
 \end{align*}
 
 where $u_{i j}(\mathbf{x})=\left(\partial_{i} u_{j}+\partial_{j} u_{i}\right) / 2$ is the strain tensor.

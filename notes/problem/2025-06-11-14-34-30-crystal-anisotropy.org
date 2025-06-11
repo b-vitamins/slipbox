@@ -8,7 +8,9 @@
 2. Crystal anisotropy: Consider a ferromagnet with a tetragonal crystal structure. Coupling of the spins to the underlying lattice may destroy their full rotational symmetry. The resulting anisotropies can be described by modifying the LandauGinzburg Hamiltonian to
 
 \begin{align*}
-\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left[\frac{K}{2}(\nabla \vec{m})^{2}+\frac{t}{2} \vec{m}^{2}+u\left(\vec{m}^{2}\right)^{2}+\frac{r}{2} m_{1}^{2}+v m_{1}^{2} \vec{m}^{2}\right]
+\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left
+[
+\frac{K}{2}(\nabla \vec{m})^{2}+\frac{t}{2} \vec{m}^{2}+u\left(\vec{m}^{2}\right)^{2}+\frac{r}{2} m_{1}^{2}+v m_{1}^{2} \vec{m}^{2}\right]
 \end{align*}
 
 where \(\vec{m} \equiv\left(m_{1}, \cdots, m_{n}\right)\), and \(\vec{m}^{2}=\sum_{i=1}^{n} m_{i}^{2}(d=n=3\) for magnets in three dimensions). Here \(u>0\), and to simplify calculations we shall set \(v=0\) throughout.

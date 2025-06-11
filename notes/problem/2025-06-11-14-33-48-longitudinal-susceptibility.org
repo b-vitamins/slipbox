@@ -11,7 +11,9 @@ which you are instructed to ignore at various steps. You may want to think about
 Consider the Landau-Ginzburg Hamiltonian:
 
 \begin{align*}
-\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left[\frac{K}{2}(\nabla \vec{m})^{2}+\frac{t}{2} \vec{m}^{2}+u\left(\vec{m}^{2}\right)^{2}\right]
+\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left
+[
+\frac{K}{2}(\nabla \vec{m})^{2}+\frac{t}{2} \vec{m}^{2}+u\left(\vec{m}^{2}\right)^{2}\right]
 \end{align*}
 
 describing an \(n\)-component magnetization vector \(\vec{m}(\mathbf{x})\), in the ordered phase for \(t<0\).

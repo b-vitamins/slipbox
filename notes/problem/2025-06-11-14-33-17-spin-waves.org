@@ -25,7 +25,9 @@ The notation \(\langle i j\rangle\) is conventionally used to indicate summing o
 
 (e) Calculate the contribution of these modes to the free energy and heat capacity. (Evaluate the classical partition function, i.e. do not quantize the modes.)
 
-(f) Find an expression for \(\left\langle\vec{s}_{0} \cdot \vec{s}_{\mathbf{x}}\right\rangle=\Re\left\langle\exp \left[\mathrm{i} \theta_{\mathbf{x}}-i \theta_{0}\right]\right\rangle\) by adding contributions from different Fourier modes. Convince yourself that for \(|\mathbf{x}| \rightarrow \infty\), only \(\mathbf{q} \rightarrow \mathbf{0}\) modes contribute appreciably to this expression, and hence calculate the asymptotic limit.
+(f) Find an expression for \(\left\langle\vec{s}_{0} \cdot \vec{s}_{\mathbf{x}}\right\rangle=\Re\left\langle\exp \left
+[
+\mathrm{i} \theta_{\mathbf{x}}-i \theta_{0}\right]\right\rangle\) by adding contributions from different Fourier modes. Convince yourself that for \(|\mathbf{x}| \rightarrow \infty\), only \(\mathbf{q} \rightarrow \mathbf{0}\) modes contribute appreciably to this expression, and hence calculate the asymptotic limit.
 
 (g) Calculate the transverse susceptibility from \(\chi_{t} \propto \int \mathrm{d}^{d} \mathbf{x}\left\langle\vec{s}_{0} \cdot \vec{s}_{\mathbf{x}}\right\rangle_{c}\). How does it depend on the system size \(L\) ?
 

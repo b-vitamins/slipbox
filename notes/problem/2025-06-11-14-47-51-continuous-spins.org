@@ -10,7 +10,9 @@
 J \vec{s}_{i} \cdot \vec{s}_{j}. In fact, if we are only interested in universal properties, any generalized interaction f(\vec{s}_{i} \cdot \vec{s}_{j}) leads to the same critical behavior. By analogy with the Ising model, a suitable choice is
 
 \begin{align*}
-\exp \left[f\left(\vec{s}_{i} \cdot \vec{s}_{j}\right)\right]=1+(n t) \vec{s}_{i} \cdot \vec{s}_{j}
+\exp \left
+[
+f\left(\vec{s}_{i} \cdot \vec{s}_{j}\right)\right]=1+(n t) \vec{s}_{i} \cdot \vec{s}_{j}
 \end{align*}
 
 resulting in the so called loop model.

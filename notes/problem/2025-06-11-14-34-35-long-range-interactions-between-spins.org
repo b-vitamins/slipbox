@@ -32,7 +32,8 @@ to the usual Landau-Ginzburg Hamiltonian.
 
 (f) For \(d<2 \sigma\), calculate the critical exponents \(\nu\) and \(\eta\) to first order in \(\epsilon=d-2 \sigma\).
 
-[See M.E. Fisher, S.-K. Ma and B.G. Nickel, Phys. Rev. Lett. 29, 917 (1972).]
+[S
+ee M.E. Fisher, S.-K. Ma and B.G. Nickel, Phys. Rev. Lett. 29, 917 (1972).]
 
 (g) What is the critical behavior if \(J(r) \propto \exp (-r / a)\) ? Explain!
 

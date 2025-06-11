@@ -10,7 +10,9 @@
 
 The spin-1 model: Consider a linear chain where the spin \(s_{i}\) at each site takes on three values \(s_{i}=-1,0,+1\). The spins interact via a Hamiltonian
 
-\[-\beta \mathcal{H}=\sum_{i} K s_{i} s_{i+1}\]
+\
+[
+-\beta \mathcal{H}=\sum_{i} K s_{i} s_{i+1}\]
 
 (a) Write down the transfer matrix \(\left\langle s|T| s^{\prime}\right\rangle=\mathrm{e}^{K s s^{\prime}}\) explicitly.
 

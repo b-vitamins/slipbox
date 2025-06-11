@@ -15,7 +15,13 @@
 (a) By comparing the first terms of high and low temperature series, or by any other method, show that the partition function has the property
 
 \begin{align*}
-Z(K)=q \mathrm{e}^{2 N K} \Xi\left[\mathrm{e}^{-K}\right]=q^{-N}\left[\mathrm{e}^{K}+q-1\right]^{2 N} \Xi\left[\frac{\mathrm{e}^{K}-1}{\mathrm{e}^{K}+(q-1)}\right],
+Z(K)=q \mathrm{e}^{2 N K} \Xi\left
+[
+\mathrm{e}^{-K}\right]=q^{-N}\left
+[
+\mathrm{e}^{K}+q-1\right]^{2 N} \Xi\left
+[
+\frac{\mathrm{e}^{K}-1}{\mathrm{e}^{K}+(q-1)}\right],
 \end{align*}
 
 for some function \Xi, and hence locate the critical point K_{c}(q).

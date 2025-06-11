@@ -15,11 +15,17 @@
 (a) Change from the N site variables to the 2 N bond variables b_{i j}=s_{i}-s_{j}. Show that the difference in the number of variables can be accounted for by the constraint that around each plaquette (elementary square) the sum of the four bond variables must be zero modulus q.
 (b) The constraints can be implemented by adding \"delta-functions\"
 \begin{align*}
-\delta\left[S_{p}\right]_{\bmod q}=\frac{1}{q} \sum_{n_{p}=1}^{q} \exp \left[\frac{2 \pi \mathrm{i} n_{p} S_{p}}{q}\right],
+\delta\left
+[
+S_{p}\right]_{\bmod q}=\frac{1}{q} \sum_{n_{p}=1}^{q} \exp \left
+[
+\frac{2 \pi \mathrm{i} n_{p} S_{p}}{q}\right],
 \end{align*}
 for each plaquette. Show that after summing over the bond variables, the partition function can be written in terms of the dual variables, as
 \begin{align*}
-Z=q^{-N} \sum_{\left\{n_{p}\right\}} \prod_{\left\langle p, p^{\prime}\right\rangle} \lambda\left(n_{p}-n_{p^{\prime}}\right) \equiv \sum_{\left\{n_{p}\right\}} \exp \left[\sum_{\left\langle p, p^{\prime}\right\rangle} \tilde{J}\left(n_{p}-n_{p^{\prime}}\right)\right]
+Z=q^{-N} \sum_{\left\{n_{p}\right\}} \prod_{\left\langle p, p^{\prime}\right\rangle} \lambda\left(n_{p}-n_{p^{\prime}}\right) \equiv \sum_{\left\{n_{p}\right\}} \exp \left
+[
+\sum_{\left\langle p, p^{\prime}\right\rangle} \tilde{J}\left(n_{p}-n_{p^{\prime}}\right)\right]
 \end{align*}
 where \lambda(k) is the discrete Fourier transform of \mathrm{e}^{J(n)}.
 

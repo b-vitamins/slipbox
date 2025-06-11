@@ -9,7 +9,9 @@
 
 \begin{align*}
 \begin{aligned}
-\beta \mathcal{H}_{0} & =\int \mathrm{d}^{n} \mathbf{x}_{\|} \mathrm{d}^{d-n} \mathbf{x}_{\perp}\left[\frac{K}{2}\left(\nabla_{\|} m\right)^{2}+\frac{L}{2}\left(\nabla_{\perp}^{2} m\right)^{2}+\frac{t}{2} m^{2}-h m\right] \
+\beta \mathcal{H}_{0} & =\int \mathrm{d}^{n} \mathbf{x}_{\|} \mathrm{d}^{d-n} \mathbf{x}_{\perp}\left
+[
+\frac{K}{2}\left(\nabla_{\|} m\right)^{2}+\frac{L}{2}\left(\nabla_{\perp}^{2} m\right)^{2}+\frac{t}{2} m^{2}-h m\right] \
 \text { and } \quad U & =u \int \mathrm{d}^{n} \mathbf{x}_{\|} \mathrm{d}^{d-n} \mathbf{x}_{\perp} m^{4}
 \end{aligned}
 \end{align*}

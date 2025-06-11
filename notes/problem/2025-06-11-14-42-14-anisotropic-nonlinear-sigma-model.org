@@ -9,7 +9,9 @@
 1. Anisotropic nonlinear \(\sigma\) model: Consider unit $n$-component spins, $\vec{s}(\mathbf{x})=\left(s_{1}, \cdots, s_{n}\right)$ with $\sum_{\alpha} s_{\alpha}^{2}=1$, subject to a Hamiltonian
 
 \begin{align*}
-\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left[\frac{1}{2 T}(\nabla \vec{s})^{2}+g s_{1}^{2}\right]
+\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left
+[
+\frac{1}{2 T}(\nabla \vec{s})^{2}+g s_{1}^{2}\right]
 \end{align*}
 
 For $g=0$, renormalization group equations are obtained through rescaling distances by a factor $b=e^{\ell}$, and spins by a factor $\zeta=b^{y_{s}}$ with $y_{s}=-\frac{(n-1)}{4 \pi} T$, and lead to the flow equation
