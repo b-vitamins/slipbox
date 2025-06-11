@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       ec579f4c-f53d-4db9-932e-1f63a69d7751
+:END:
+#+TITLE: The spin-1 model
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+
+* Problem Statement
+
+The spin-1 model: Consider a linear chain where the spin \(s_{i}\) at each site takes on three values \(s_{i}=-1,0,+1\). The spins interact via a Hamiltonian
+
+\[-\beta \mathcal{H}=\sum_{i} K s_{i} s_{i+1}\]
+
+(a) Write down the transfer matrix \(\left\langle s|T| s^{\prime}\right\rangle=\mathrm{e}^{K s s^{\prime}}\) explicitly.
+
+(b) Use symmetry properties to find the largest eigenvalue of \(T\) and hence obtain the expression for the free energy per site \((\ln Z / N)\).
+
+(c) Obtain the expression for the correlation length \(\xi\), and note its behavior as \(K \rightarrow \infty\).
+(d) If we try to perform a renormalization group by decimation on the above chain we find that additional interactions are generated. Write down the simplest generalization of \(\beta \mathcal{H}\) whose parameter space is closed under such RG.
+
+* Solution
+
+* Related Concepts
+
