@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       1aac47eb-7372-4e5a-9f62-bada5cd4de58
+:END:
+#+TITLE: Anisotropic random walks
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+6. Anisotropic random walks: Consider the ensemble of all random walks on a square lattice starting at the origin (0,0). Each walk has a weight of t_{x}^{\ell_{x}} \times t_{y}^{\ell_{y}}, where \ell_{x} and \ell_{y} are the number of steps taken along the x and y directions, respectively.
+
+(a) Calculate the total weight W(x, y), of all walks terminating at (x, y). Show that W is well defined only for \bar{t}=\left(t_{x}+t_{y}\right) / 2<t_{c}=1 / 4.
+
+(b) What is the shape of a curve W(x, y)= constant, for large x and y, and close to the transition?
+
+(c) How does the average number of steps, \langle\ell\rangle=\left\langle\ell_{x}+\ell_{y}\right\rangle, diverge as \bar{t} approaches t_{c}?
+
+* Solution
+
+* Related Concepts

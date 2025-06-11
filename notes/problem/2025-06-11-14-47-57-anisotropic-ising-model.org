@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       d56e697e-cef0-4c2d-96e3-e2074eaa0aa0
+:END:
+#+TITLE: Anisotropic ising model
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+7. Anisotropic ising model: Consider the anisotropic Ising model on a square lattice with a Hamiltonian
+
+\begin{align*}
+-\beta \mathcal{H}=\sum_{x, y}\left(K_{x} \sigma_{x, y} \sigma_{x+1, y}+K_{y} \sigma_{x, y} \sigma_{x, y+1}\right)
+\end{align*}
+
+i.e. with bonds of different strengths along the x and y directions.
+
+(a) By following the method presented in the text, calculate the free energy for this model. You do not have to write down every step of the derivation. Just sketch the steps that need to be modified due to anisotropy; and calculate the final answer for \ln Z / N.
+
+(b) Find the critical boundary in the ( K_{x}, K_{y} ) plane from the singularity of the free energy. Show that it coincides with the condition K_{x}=\tilde{K}_{y}, where \tilde{K} indicates the standard dual interaction to K.
+
+(c) Find the singular part of \ln Z / N, and comment on how anisotropy affects critical behavior in the exponent and amplitude ratios.
+
+* Solution
+
+* Related Concepts
