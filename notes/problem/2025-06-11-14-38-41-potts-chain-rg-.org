@@ -23,7 +23,9 @@ Potts chain (RG): Consider a one-dimensional array of \(N\) Potts spins \(s_{i}=
 
 (g) Use the result in (f) to express the series in (e) in terms of \(t\). Show that the answer can be reduced to that obtained in part (a), upon using the result
 
-\[\sum_{n=0}^{\infty} \frac{1}{2^{n+1}} \ln \left(\frac{1+t^{2^{n}}}{1-t^{2^{n}}}\right)=-\ln (1-t)\]
+\
+[
+\sum_{n=0}^{\infty} \frac{1}{2^{n+1}} \ln \left(\frac{1+t^{2^{n}}}{1-t^{2^{n}}}\right)=-\ln (1-t)\]
 
 (h) Repeat the RG calculation of part (c), when a small symmetry breaking term \(h \sum_{i} \delta_{s_{i}, 1}\) is added to \(-\beta \mathcal{H}\). You will find that an additional coupling term \(K \sum_{i} \delta_{s_{i}, 1} \delta_{s_{i+1}, 1}\) is generated under RG. Calculate the recursion relations in the three parameter space \((J, K, h)\).
 

@@ -10,7 +10,10 @@
 1. Cubic invariants: When the order parameter \(m\), goes to zero discontinuously, the phase transition is said to be first order (discontinuous). A common example occurs in systems where symmetry considerations do not exclude a cubic term in the Landau free energy, as in
 
 \begin{align*}
-\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left[\frac{K}{2}(\nabla m)^{2}+\frac{t}{2} m^{2}+c m^{3}+u m^{4}\right] \quad(K, c, u>0)
+\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left
+[
+
+\frac{K}{2}(\nabla m)^{2}+\frac{t}{2} m^{2}+c m^{3}+u m^{4}\right] \quad(K, c, u>0)
 \end{align*}
 
 (a) By plotting the energy density \(\Psi(m)\), for uniform \(m\) at various values of \(t\), show that as \(t\) is reduced there is a discontinuous jump to \(\bar{m} \neq 0\) for a positive \(\bar{t}\) in the saddle point approximation.

@@ -9,14 +9,18 @@
 3. Potts model II: An alternative expansion is obtained by starting with
 
 \begin{align*}
-\exp \left[K \delta\left(s_{i}, s_{j}\right)\right]=1+v(K) \delta\left(s_{i}, s_{j}\right)
+\exp \left
+[
+K \delta\left(s_{i}, s_{j}\right)\right]=1+v(K) \delta\left(s_{i}, s_{j}\right)
 \end{align*}
 where v(K)=\mathrm{e}^{K}-1. In this case, the sum over spins does not remove any graphs, and all choices of distributing bonds at random on the lattice are acceptable.
 
 (a) Including a magnetic field h \sum_{i} \delta_{s_{i},}, show that the partition function takes the form
 
 \begin{align*}
-Z(q, K, h)=\sum_{\text {all graphs }} \prod_{\text {clusters c in graph }}\left[v^{n_{b}^{c}} \times\left(q-1+\mathrm{e}^{h n s}\right)\right]
+Z(q, K, h)=\sum_{\text {all graphs }} \prod_{\text {clusters c in graph }}\left
+[
+v^{n_{b}^{c}} \times\left(q-1+\mathrm{e}^{h n s}\right)\right]
 \end{align*}
 
 where n_{b}^{c} and n_{s}^{c} are the numbers of bonds and sites in cluster c. This is known as the random cluster expansion.

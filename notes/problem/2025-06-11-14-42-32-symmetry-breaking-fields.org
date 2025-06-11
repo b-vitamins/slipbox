@@ -17,7 +17,9 @@ to the XY model. There are a number of possible causes for such a symmetry break
 (a) Assume that we are in the low-temperature phase so that vortices are absent, i.e. the vortex fugacity $y$ is zero (in the RG sense). In this case, we can ignore the angular nature of $\theta$ and replace it with a scalar field $\phi$, leading to the partition function
 
 \begin{align*}
-Z=\int D \phi(x) \exp \left\{-\int \mathrm{d}^{2} \mathbf{x}\left[\frac{K}{2}(\nabla \phi)^{2}+h_{p} \cos (p \phi)\right]\right\}
+Z=\int D \phi(x) \exp \left\{-\int \mathrm{d}^{2} \mathbf{x}\left
+[
+\frac{K}{2}(\nabla \phi)^{2}+h_{p} \cos (p \phi)\right]\right\}
 \end{align*}
 
 This is known as the sine-Gordon model, and is equivalent to the roughening transition of a previous problem. Use similar methods to obtain the recursion relations for $h_{p}$ and $K$.

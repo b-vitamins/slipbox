@@ -10,7 +10,9 @@
 6. Random magnetic fields: Consider the Hamiltonian
 
 \begin{align*}
-\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left[\frac{K}{2}(\nabla m)^{2}+\frac{t}{2} m^{2}+u m^{4}-h(\mathbf{x}) m(\mathbf{x})\right]
+\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left
+[
+\frac{K}{2}(\nabla m)^{2}+\frac{t}{2} m^{2}+u m^{4}-h(\mathbf{x}) m(\mathbf{x})\right]
 \end{align*}
 
 where \(m(\mathbf{x})\) and \(h(\mathbf{x})\) are scalar fields, and \(u>0\). The random magnetic field \(h(\mathbf{x})\) results from frozen (quenched) impurities that are independently distributed in space. For simplicity \(h(\mathbf{x})\) is assumed to be an independent Gaussian variable at each point \(\mathbf{x}\), such that
@@ -34,7 +36,9 @@ where the over-line indicates (quench) averaging over all values of the random f
 
 (e) Use the above results, in conjunction with Eq. (2), to calculate the quench averaged scattering line shape \(S(q)=\overline{\left\langle|\phi(\mathbf{q})|^{2}\right\rangle}\).
 
-(f) Perform the Gaussian integrals over \(\phi(\mathbf{q})\) to calculate the fluctuation corrections, \(\delta f[h(\mathbf{q})]\), to the free energy.
+(f) Perform the Gaussian integrals over \(\phi(\mathbf{q})\) to calculate the fluctuation corrections, \(\delta f
+[
+h(\mathbf{q})]\), to the free energy.
 
 \begin{align*}
 \left(\text { Reminder : } \int_{-\infty}^{\infty} \mathrm{d} \phi \mathrm{d} \phi^{*} \exp \left(-\frac{K}{2}|\phi|^{2}+h^{*} \phi+h \phi^{*}\right)=\frac{2 \pi}{K} \exp \left(\frac{|h|^{2}}{2 K}\right) .\right)

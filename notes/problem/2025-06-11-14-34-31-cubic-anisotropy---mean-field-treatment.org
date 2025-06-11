@@ -8,7 +8,9 @@
 3. Cubic anisotropy - mean-field treatment: Consider the modified Landau-Ginzburg Hamiltonian
 
 \begin{align*}
-\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left[\frac{K}{2}(\nabla \vec{m})^{2}+\frac{t}{2} \vec{m}^{2}+u\left(\vec{m}^{2}\right)^{2}+v \sum_{i=1}^{n} m_{i}^{4}\right]
+\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left
+[
+\frac{K}{2}(\nabla \vec{m})^{2}+\frac{t}{2} \vec{m}^{2}+u\left(\vec{m}^{2}\right)^{2}+v \sum_{i=1}^{n} m_{i}^{4}\right]
 \end{align*}
 
 for an \(n\)-component vector \(\vec{m}(\mathbf{x})=\left(m_{1}, m_{2}, \cdots, m_{n}\right)\). The "cubic anisotropy" term \(\sum_{i=1}^{n} m_{i}^{4}\) breaks the full rotational symmetry and selects specific directions.

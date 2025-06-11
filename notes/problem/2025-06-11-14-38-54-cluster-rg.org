@@ -20,11 +20,15 @@ Cluster RG: Consider Ising spins on a hexagonal lattice with nearest-neighbor in
 
 (e) Show that in zero magnetic field, the Boltzmann weights of parallel and antiparallel clusters are given by
 
-\[R(+,+)=x^{8}+2 x^{6}+7 x^{4}+14 x^{2}+17+14 x^{-2}+7 x^{-4}+2 x^{-6}\]
+\
+[
+R(+,+)=x^{8}+2 x^{6}+7 x^{4}+14 x^{2}+17+14 x^{-2}+7 x^{-4}+2 x^{-6}\]
 
 and
 
-\[R(+,-)=9 x^{4}+16 x^{2}+13+16 x^{-2}+9 x^{-4}+x^{-8}\]
+\
+[
+R(+,-)=9 x^{4}+16 x^{2}+13+16 x^{-2}+9 x^{-4}+x^{-8}\]
 
 where \(x=\mathrm{e}^{J}\).
 

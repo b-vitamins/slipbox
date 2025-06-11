@@ -18,15 +18,15 @@ echo ""
 
 # Check for duplicate IDs
 echo "2. Checking for duplicate IDs..."
-emacs --batch -l scripts/init-org-roam.el --eval '
-(let ((ids (org-roam-db-query [:select [id] :from nodes]))
-      (seen (make-hash-table :test equal)))
-  (dolist (id-row ids)
-    (let ((id (car id-row)))
-      (if (gethash id seen)
-          (message "   ✗ Duplicate ID found: %s" id)
-        (puthash id t seen))))
-  (message "   ✓ ID check complete"))'
+ID_LIST=$(grep -r "^:ID:" notes | awk '{print $2}')
+DUPES=$(echo "$ID_LIST" | sort | uniq -d)
+if [ -n "$DUPES" ]; then
+    for id in $DUPES; do
+        echo "   ✗ Duplicate ID found: $id"
+    done
+else
+    echo "   ✓ ID check complete"
+fi
 echo ""
 
 # Check database
@@ -41,7 +41,11 @@ echo ""
 
 # Check for orphaned files
 echo "4. Checking for orphaned files..."
-./scripts/find-orphans.sh | head -5
+if command -v emacs >/dev/null 2>&1 && emacs --batch --eval "(if (require 'org-roam nil t) (kill-emacs 0) (kill-emacs 1))" >/dev/null 2>&1; then
+    ./scripts/find-orphans.sh | head -5
+else
+    echo "   ! org-roam not available; skipping orphan check"
+fi
 echo ""
 
 echo "=== Health Check Complete ==="

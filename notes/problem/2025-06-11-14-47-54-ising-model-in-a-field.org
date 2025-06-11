@@ -9,7 +9,9 @@
 4. Ising model in a field: Consider the partition function for the Ising model (\sigma_{i}= \pm 1) on a square lattice, in a magnetic field h; i.e.
 
 \begin{align*}
-Z=\sum_{\left\{\sigma_{i}\right\}} \exp \left[K \sum_{\langle i j\rangle} \sigma_{i} \sigma_{j}+h \sum_{i} \sigma_{i}\right]
+Z=\sum_{\left\{\sigma_{i}\right\}} \exp \left
+[
+K \sum_{\langle i j\rangle} \sigma_{i} \sigma_{j}+h \sum_{i} \sigma_{i}\right]
 \end{align*}
 
 (a) Find the general behavior of the terms in a low-temperature expansion for Z.

@@ -10,7 +10,9 @@
 8. Ginzburg criterion along the magnetic field direction: Consider the Hamiltonian
 
 \begin{align*}
-\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left[\frac{K}{2}(\nabla \vec{m})^{2}+\frac{t}{2} \vec{m}^{2}+u\left(\vec{m}^{2}\right)^{2}-\vec{h} \cdot \vec{m}\right]
+\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left
+[
+\frac{K}{2}(\nabla \vec{m})^{2}+\frac{t}{2} \vec{m}^{2}+u\left(\vec{m}^{2}\right)^{2}-\vec{h} \cdot \vec{m}\right]
 \end{align*}
 
 describing an \(n\)-component magnetization vector \(\vec{m}(\mathbf{x})\), with \(u>0\).

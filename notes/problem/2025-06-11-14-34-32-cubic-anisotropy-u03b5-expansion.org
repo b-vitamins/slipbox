@@ -11,8 +11,12 @@
 
 \begin{align*}
 \left\{\begin{array}{l}
-\frac{\mathrm{d} u}{\mathrm{~d} \ell}=\varepsilon u-4 C\left[(n+8) u^{2}+6 u v\right] \
-\frac{\mathrm{d} v}{\mathrm{~d} \ell}=\varepsilon v-4 C\left[12 u v+9 v^{2}\right]
+\frac{\mathrm{d} u}{\mathrm{~d} \ell}=\varepsilon u-4 C\left
+[
+(n+8) u^{2}+6 u v\right] \
+\frac{\mathrm{d} v}{\mathrm{~d} \ell}=\varepsilon v-4 C\left
+[
+12 u v+9 v^{2}\right]
 \end{array}\right.
 \end{align*}
 where \(C=K_{d} \Lambda^{d} /\left(t+K \Lambda^{2}\right)^{2} \approx K_{4} / K^{2}\) is approximately a constant.

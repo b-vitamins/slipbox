@@ -10,7 +10,9 @@
 5. Coupling to a "massless" field: Consider an \(n\)-component vector field \(\vec{m}(\mathbf{x})\) coupled to a scalar field \(A(\mathbf{x})\), through the effective Hamiltonian
 
 \begin{align*}
-\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left[\frac{K}{2}(\nabla \vec{m})^{2}+\frac{t}{2} \vec{m}^{2}+u\left(\vec{m}^{2}\right)^{2}+e^{2} \vec{m}^{2} A^{2}+\frac{L}{2}(\nabla A)^{2}\right]
+\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left
+[
+\frac{K}{2}(\nabla \vec{m})^{2}+\frac{t}{2} \vec{m}^{2}+u\left(\vec{m}^{2}\right)^{2}+e^{2} \vec{m}^{2} A^{2}+\frac{L}{2}(\nabla A)^{2}\right]
 \end{align*}
 
 with \(K, L\), and \(u\) positive.
