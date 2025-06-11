@@ -1,0 +1,16 @@
+#+OPTIONS: toc:nil num:nil ^:{}
+#+STARTUP: fold latexpreview indent
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [11pt]
+#+LATEX_HEADER: \usepackage{amsmath,amssymb,amsthm}
+#+LATEX_HEADER: \usepackage{physics}
+#+LATEX_HEADER: \usepackage{mathtools}
+#+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usepackage{hyperref}
+#+LATEX_HEADER: \hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue}
+#+OPTIONS: tex:t LaTeX:t
+#+EXPORT_FILE_NAME: export
+#+LATEX_HEADER: \newcommand{\ket}[1]{|#1\rangle}
+#+LATEX_HEADER: \newcommand{\bra}[1]{\langle#1|}
+#+LATEX_HEADER: \newcommand{\braket}[2]{\langle#1|#2\rangle}
+
