@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       988cf4dc-dc4c-4915-809f-cb90abb95757
+:END:
+#+TITLE: The Ising model of magnetism
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+The Ising model of magnetism: The local environment of an electron in a crystal sometimes forces its spin to stay parallel or anti-parallel to a given lattice direction. As a model of magnetism in such materials we denote the direction of the spin by a single variable \(\sigma_{i}= \pm 1\) (an Ising spin). The energy of a configuration \(\left\{\sigma_{i}\right\}\) of spins is then given by
+
+\begin{align*}
+\mathcal{H}=\frac{1}{2} \sum_{i, j=1}^{N} J_{i j} \sigma_{i} \sigma_{j}-h \sum_{i} \sigma_{i}
+\end{align*}
+
+where \(h\) is an external magnetic field, and \(J_{i j}\) is the interaction energy between spins at sites \(i\) and \(j\).
+
+(a) For \(N\) spins we make the drastic approximation that the interaction between all spins is the same, and \(J_{i j}=-J / N\) (the equivalent neighbor model). Show that the energy can now be written as \(E(M, h)=-N\left[J^{2} / 2+h m\right]\), with a magnetization \(m=\sum_{i=1}^{N} \sigma_{i} / N=M / N\).
+
+(b) Show that the partition function \(Z(h, T)=\sum_{\left\{\sigma_{\}\right\}} \exp (-\beta \mathcal{H})\) can be rewritten as \(Z=\sum_{M} \exp [-\beta F(m, h)]\); with \(F(m, h)\) easily calculated by analogy to problem (1). For the remainder of the problem work only with \(F(m, h)\) expanded to fourth order in \(m\).
+
+(c) By saddle point integration show that the actual free energy \(F(h, T)=\) \(-k_{\mathrm{B}} T \ln Z(h, T)\) is given by \(F(h, T)=\min [F(m, h)]_{m}\). When is the saddle point method valid? Note that \(F(m, h)\) is an analytic function but not convex for \(T<T_{c}\), while the true free energy \(F(h, T)\) is convex but becomes non-analytic due to the minimization.
+
+(d) For \(h=0\) find the critical temperature \(T_{c}\) below which spontaneous magnetization appears; and calculate the magnetization \(\bar{m}(T)\) in the low temperature phase.
+
+(e) Calculate the singular (non-analytic) behavior of the response functions
+
+\begin{align*}
+C=\left.\frac{\partial E}{\partial T}\right|_{h=0}, \quad \text { and } \quad \chi=\left.\frac{\partial \bar{m}}{\partial h}\right|_{h=0}
+\end{align*}
+
+* Solution
+
+* Related Concepts
