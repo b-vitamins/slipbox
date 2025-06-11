@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       a37f8594-08e6-4298-9138-6fe82de7fd86
+:END:
+#+TITLE: Long-range interactions between spins
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+7. Long-range interactions between spins can be described by adding a term
+
+\begin{align*}
+\int \mathrm{d}^{d} \mathbf{x} \int \mathrm{d}^{d} \mathbf{y} J(|\mathbf{x}-\mathbf{y}|) \vec{m}(\mathbf{x}) \cdot \vec{m}(\mathbf{y})
+\end{align*}
+
+to the usual Landau-Ginzburg Hamiltonian.
+
+(a) Show that for \(J(r) \propto 1 / r^{d+\sigma}\), the Hamiltonian can be written as
+
+\begin{align*}
+\begin{aligned}
+\beta \mathcal{H}= & \int \frac{\mathrm{d}^{d} \mathbf{q}}{(2 \pi)^{d}} \frac{t+K_{2} q^{2}+K_{\sigma} q^{\sigma}+\cdots}{2} \vec{m}(\mathbf{q}) \cdot \vec{m}(-\mathbf{q}) \
+& +u \int \frac{\mathrm{d}^{d} \mathbf{q}_{1} \mathrm{~d}^{d} \mathbf{q}_{2} \mathrm{~d}^{d} \mathbf{q}_{3}}{(2 \pi)^{3 d}} \vec{m}\left(\mathbf{q}_{1}\right) \cdot \vec{m}\left(\mathbf{q}_{2}\right) \vec{m}\left(\mathbf{q}_{3}\right) \cdot \vec{m}\left(-\mathbf{q}_{1}-\mathbf{q}_{2}-\mathbf{q}_{3}\right)
+\end{aligned}
+\end{align*}
+
+(b) For \(u=0\), construct the recursion relations for \(\left(t, K_{2}, K_{\sigma}\right.\) ) and show that \(K_{\sigma}\) is irrelevant for \(\sigma>2\). What is the fixed Hamiltonian in this case?
+
+(c) For \(\sigma<2\) and \(u=0\), show that the spin rescaling factor must be chosen such that \(K_{\sigma}^{\prime}=K_{\sigma}\), in which case \(K_{2}\) is irrelevant. What is the fixed Hamiltonian now?
+
+(d) For \(\sigma<2\), calculate the generalized Gaussian exponents \(\nu, \eta\), and \(\gamma\) from the recursion relations. Show that \(u\) is irrelevant, and hence the Gaussian results are valid, for \(d>2 \sigma\).
+
+(e) For \(\sigma<2\), use a perturbation expansion in \(u\) to construct the recursion relations for \(\left(t, K_{\sigma}, u\right)\) as in the text.
+
+(f) For \(d<2 \sigma\), calculate the critical exponents \(\nu\) and \(\eta\) to first order in \(\epsilon=d-2 \sigma\).
+
+[See M.E. Fisher, S.-K. Ma and B.G. Nickel, Phys. Rev. Lett. 29, 917 (1972).]
+
+(g) What is the critical behavior if \(J(r) \propto \exp (-r / a)\) ? Explain!
+
