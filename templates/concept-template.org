@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       %UUID%
+:END:
+#+TITLE: %TITLE%
+#+FILETAGS: :concept:
+#+SETUPFILE: ../../setupfile.org
+
+* Definition
+
+* Properties
+
+* Examples
+
+* Related Concepts
+- [[id:]]
+
+* References
+
