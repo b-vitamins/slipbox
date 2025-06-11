@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       2d498b28-293f-45f9-be18-24e3b8465779
+:END:
+#+TITLE: Potts chain (RG)
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+
+* Problem Statement
+
+Potts chain (RG): Consider a one-dimensional array of \(N\) Potts spins \(s_{i}=1,2, \cdots, q\), subject to the Hamiltonian \(-\beta \mathcal{H}=J \sum_{i} \delta_{s_{i}, s_{i+1}}\).
+
+(a) Using the transfer matrix method (or otherwise) calculate the partition function \(Z\), and the correlation length \(\xi\).
+
+(b) Is the system critical at zero temperature for antiferromagnetic couplings \(J<0\) ?
+(c) Construct a renormalization group (RG) treatment by eliminating every other spin. Write down the recursion relations for the coupling \(J\), and the additive constant \(g\).
+
+(d) Discuss the fixed points, and their stability.
+
+(e) Write the expression for \(\ln Z\) in terms of the additive constants of successive rescalings.
+
+(f) Show that the recursion relations are simplified when written in terms of \(t(J) \equiv\) \(\mathrm{e}^{-1 / \xi(J)}\).
+
+(g) Use the result in (f) to express the series in (e) in terms of \(t\). Show that the answer can be reduced to that obtained in part (a), upon using the result
+
+\[\sum_{n=0}^{\infty} \frac{1}{2^{n+1}} \ln \left(\frac{1+t^{2^{n}}}{1-t^{2^{n}}}\right)=-\ln (1-t)\]
+
+(h) Repeat the RG calculation of part (c), when a small symmetry breaking term \(h \sum_{i} \delta_{s_{i}, 1}\) is added to \(-\beta \mathcal{H}\). You will find that an additional coupling term \(K \sum_{i} \delta_{s_{i}, 1} \delta_{s_{i+1}, 1}\) is generated under RG. Calculate the recursion relations in the three parameter space \((J, K, h)\).
+
+(i) Find the magnetic eigenvalues at the zero temperature fixed point where \(J \rightarrow \infty\), and obtain the form of the correlation length close to zero temperature.
+
+* Solution
+
+* Related Concepts
+

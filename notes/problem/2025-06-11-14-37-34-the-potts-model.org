@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       aa16ea7f-518c-4814-a1b4-5088b0d6f5e4
+:END:
+#+TITLE: The Potts model
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+
+* Problem Statement
+
+The Potts model: The transfer matrix procedure can be extended to the Potts models, where the spin \(s_{i}\) on each site takes \(q\) values \(s_{i}=(1,2, \cdots, q)\); and the Hamiltonian is \(-\beta \mathcal{H}=K \sum_{i=1}^{N} \delta_{s_{i}, s_{i+1}}+K \delta_{s_{N}, s_{1}}\).
+
+(a) Write down the transfer matrix and diagonalize it. Note that you do not have to solve a \(q_{\mathrm{th}}\) order secular equation as it is easy to guess the eigenvectors from the symmetry of the matrix.
+
+(b) Calculate the free energy per site.
+
+(c) Give the expression for the correlation length \(\xi\) (you don't need to provide a detailed derivation), and discuss its behavior as \(T=1 / K \rightarrow 0\).
+
+* Solution
+
+* Related Concepts
+
