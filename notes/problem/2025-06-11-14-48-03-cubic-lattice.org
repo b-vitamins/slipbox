@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       cc06ac20-0de2-4789-b840-d0c1628a00a4
+:END:
+#+TITLE: Cubic lattice
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+13. Cubic lattice: The geometric concept of duality can be extended to general dimensions d. However, the dual of a geometric element of dimension D is an entity of dimension d-D. For example, the dual of a bond (D=1) in d=3 is a plaquette (D=2), as demonstrated in this problem.
+(a) Consider a clock model on a cubic lattice of N points. Change to the 3 N bond variables b_{i j}=s_{i}-s_{j}. (Note that one must make a convention about the positive directions on the three axes.) Show that there are now 2 N constraints associated with the plaquettes of this lattice.
+(b) Implement the constraints through discrete delta-functions by associating an auxiliary variable n_{p} with each plaquette. It is useful to imagine n_{p} as defined on a bond of the dual lattice, perpendicular to the plaquette p.
+(c) By summing over the bond variables in Z, obtain the dual Hamiltonian
+\begin{align*}
+\tilde{\beta \mathcal{H}}=\sum_{p} \tilde{J}\left(n_{12}^{p}-n_{23}^{p}+n_{34}^{p}-n_{41}^{p}\right)
+\end{align*}
+where the sum is over all plaquettes p of the dual lattice, with {n_{i j}^{p}} indicating the four bonds around plaquette p.
+(d) Note that \tilde{\beta \mathcal{H}} is left invariant if all the six bonds going out of any site are simultaneously increased by the same integer. Thus unlike the original model which only had a global translation symmetry, the dual model has a local, i.e. gauge symmetry.
+(e) Consider a Potts gauge theory defined on the plaquettes of a four-dimensional hypercubic lattice. Find its critical coupling J_{c}(q).
+
+* Solution
+
+* Related Concepts
