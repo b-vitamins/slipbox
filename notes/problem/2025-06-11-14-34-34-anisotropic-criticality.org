@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID:       1e0a6b03-cc55-43a9-bb84-7a7f42fa2867
+:END:
+#+TITLE: Anisotropic criticality
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+6. Anisotropic criticality: A number of materials, such as liquid crystals, are anisotropic and behave differently along distinct directions, which shall be denoted parallel and perpendicular, respectively. Let us assume that the \(d\) spatial dimensions are grouped into \(n\) parallel directions \(\mathbf{x}_{\|}\), and \(d-n\) perpendicular directions \(\mathbf{x}_{\perp}\). Consider a one-component field \(m\left(\mathbf{x}_{\|}, \mathbf{x}_{\perp}\right)\) subject to a Landau-Ginzburg Hamiltonian, \(\beta \mathcal{H}=\) \(\beta \mathcal{H}_{0}+U\), with
+
+\begin{align*}
+\begin{aligned}
+\beta \mathcal{H}_{0} & =\int \mathrm{d}^{n} \mathbf{x}_{\|} \mathrm{d}^{d-n} \mathbf{x}_{\perp}\left[\frac{K}{2}\left(\nabla_{\|} m\right)^{2}+\frac{L}{2}\left(\nabla_{\perp}^{2} m\right)^{2}+\frac{t}{2} m^{2}-h m\right] \
+\text { and } \quad U & =u \int \mathrm{d}^{n} \mathbf{x}_{\|} \mathrm{d}^{d-n} \mathbf{x}_{\perp} m^{4}
+\end{aligned}
+\end{align*}
+
+(Note that \(\beta \mathcal{H}\) depends on the first gradient in the \(\mathbf{x}_{\|}\)directions, and on the second gradient in the \(\mathbf{x}_{\perp}\) directions.)
+
+(a) Write \(\beta \mathcal{H}_{0}\) in terms of the Fourier transforms \(m\left(\mathbf{q}_{\|}, \mathbf{q}_{\perp}\right)\).
+
+(b) Construct a renormalization group transformation for \(\beta \mathcal{H}_{0}\), by rescaling coordinates such that \(\mathbf{q}_{\|}^{\prime}=b \mathbf{q}_{\|}\)and \(\mathbf{q}_{\perp}^{\prime}=c \mathbf{q}_{\perp}\) and the field as \(m^{\prime}\left(\mathbf{q}^{\prime}\right)=m(\mathbf{q}) / z\). Note that parallel and perpendicular directions are scaled differently. Write down the recursion relations for \(K, L, t\), and \(h\) in terms of \(b, c\), and \(z\). (The exact shape of the Brillouin zone is immaterial at this stage, and you do not need to evaluate the integral that contributes an additive constant.)
+(c) Choose \(c(b)\) and \(z(b)\) such that \(K^{\prime}=K\) and \(L^{\prime}=L\). At the resulting fixed point calculate the eigenvalues \(y_{t}\) and \(y_{h}\) for the rescalings of \(t\) and \(h\).
+
+(d) Write the relationship between the (singular parts of) free energies \(f(t, h)\) and \(f^{\prime}\left(t^{\prime}, h^{\prime}\right)\) in the original and rescaled problems. Hence write the unperturbed free energy in the homogeneous form \(f(t, h)=t^{2-\alpha} g_{f}\left(h / t^{\Delta}\right)\), and identify the exponents \(\alpha\) and \(\Delta\).
+
+(e) How does the unperturbed zero-field susceptibility \(\chi(t, h=0)\) diverge as \(t \rightarrow 0\) ?
+
+In the remainder of this problem set \(h=0\), and treat \(U\) as a perturbation.
+
+(f) In the unperturbed Hamiltonian calculate the expectation value \(\left\langle m(q) m\left(q^{\prime}\right)\right\rangle_{0}\), and the corresponding susceptibility \(\chi_{0}(q)=\left\langle\left|m_{q}\right|^{2}\right\rangle_{0}\), where \(q\) stands for \((\mathbf{q}_{\|}, \mathbf{q}_{\perp})\).
+
+(g) Write the perturbation \(U\), in terms of the normal modes \(m(q)\).
+
+(h) Using RG, or any other method, find the upper critical dimension \(d_{u}\), for validity of the Gaussian exponents.
+
+(i) Write down the expansion for \(\left\langle m(q) m\left(q^{\prime}\right)\right\rangle\), to first order in \(U\), and reduce the correction term to a product of two point expectation values.
+
+(j) Write down the expression for \(\chi(q)\), in first order perturbation theory, and identify the transition point \(t_{c}\) at order of \(u\). (Do not evaluate any integrals explicitly.)
+
