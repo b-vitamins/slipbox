@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       4d2f9b84-15d3-4855-b78f-6a3435b4e197
+:END:
+#+TITLE: The Ising model
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem
+2. The Ising model: The differential recursion relations for temperature \(T\), and magnetic field \(h\), of the Ising model in \(d=1+\epsilon\) dimensions are (for \(\mathrm{b}=\mathrm{e}^{\ell}\) )
+
+\begin{align*}
+\left\{\begin{array}{l}
+\frac{\mathrm{d} T}{\mathrm{~d} \ell}=-\epsilon T+\frac{1}{2} T^{2} \\
+\frac{\mathrm{d} h}{\mathrm{~d} \ell}=d h .
+\end{array}\right.
+\end{align*}
+
+(a) Sketch the renormalization group flows in the \((T, h)\) plane (for \(\epsilon>0\) ), marking the fixed points along the \(h=0\) axis.
+
+(b) Calculate the eigenvalues \(y_{t}\) and \(y_{h}\), at the critical fixed point, to order of \(\epsilon\).
+
+(c) Starting from the relation governing the change of the correlation length \(\xi\) under renormalization, show that \(\xi(t, h)=t^{-\nu} g_{\xi}\left(h /|t|^{\Delta}\right.\) ) (where \(t=T / T_{c}-1\) ), and find the exponents \(\nu\) and \(\Delta\).
+
+(d) Use a hyperscaling relation to find the singular part of the free energy \(f_{\text {sing }}(t, h)\), and hence the heat capacity exponent \(\alpha\).
+
+(e) Find the exponents \(\beta\) and \(\gamma\) for the singular behaviors of the magnetization and susceptibility, respectively.
+
+(f) Starting with the relation between susceptibility and correlations of local magnetizations, calculate the exponent \(\eta\) for the critical correlations \((\langle m(\mathbf{0}) m(\mathbf{x})\rangle \sim\) \(|\mathbf{x}|^{-(d-2+\eta)}\right)\).
+
+(g) How does the correlation length diverge as \(T \rightarrow 0\) (along \(h=0)\) for \(d=1\) ?
+
+* Solution
+
+

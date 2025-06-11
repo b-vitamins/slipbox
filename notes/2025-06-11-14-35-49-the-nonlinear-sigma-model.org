@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       38354aa9-08ad-44e7-bf75-6e9930a7dd3c
+:END:
+#+TITLE: The nonlinear sigma model
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem
+3. The nonlinear \(\sigma\) model describes \(n\) component unit spins. As we shall demonstrate later, in \(d=2\) dimensions, the recursion relations for temperature \(T\), and magnetic field \(h\), are (for \(\mathrm{b}=\mathrm{e}^{\ell}\) )
+
+\begin{align*}
+\left\{\begin{array}{l}
+\frac{\mathrm{d} T}{\mathrm{~d} \ell}=\frac{(n-2)}{2 \pi} T^{2} \\
+\frac{\mathrm{d} h}{\mathrm{~d} \ell}=2 h
+\end{array}\right.
+\end{align*}
+
+(a) How does the correlation length diverge as \(T \rightarrow 0\) ?
+
+(b) Write down the singular form of the free energy as \(T, h \rightarrow 0\).
+
+(c) How does the susceptibility \(\chi\) diverge as \(T \rightarrow 0\) for \(h=0\) ?
+
+* Solution
+
+
