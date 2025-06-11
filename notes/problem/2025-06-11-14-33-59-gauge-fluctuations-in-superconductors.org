@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       ccdb18c3-cb38-4bbd-b0c5-d60c7e5aed8c
+:END:
+#+TITLE: Gauge fluctuations in superconductors
+#+FILETAGS: :problem:superconductivity:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+3. Gauge fluctuations in superconductors: The Landau-Ginzburg model of superconductivity describes a complex superconducting order parameter \(\Psi(\mathbf{x})=\Psi_{1}(\mathbf{x})+\)
+\(\mathrm{i} \Psi_{2}(\mathbf{x})\), and the electromagnetic vector potential \(\vec{A}(\mathbf{x})\), which are subject to a Hamiltonian
+
+\begin{align*}
+\beta \mathcal{H}=\int \mathrm{d}^{3} \mathbf{x}\left[\frac{t}{2}|\Psi|^{2}+u|\Psi|^{4}+\frac{K}{2} D_{\mu} \Psi D_{\mu}^{*} \Psi^{*}+\frac{L}{2}(\nabla \times A)^{2}\right]
+\end{align*}
+
+The gauge-invariant derivative \(D_{\mu} \equiv \partial_{\mu}-\mathrm{i} e A_{\mu}(\mathbf{x})\), introduces the coupling between the two fields. (In terms of Cooper pair parameters, \(e=e^{*} c / \hbar, K=\hbar^{2} / 2 m^{*}\).)
+
+(a) Show that the above Hamiltonian is invariant under the local gauge symmetry:
+
+\begin{align*}
+\Psi(\mathbf{x}) \mapsto \Psi(x) \exp (\mathrm{i} \theta(\mathbf{x})), \quad \text { and } \quad A_{\mu}(\mathbf{x}) \mapsto A_{\mu}(\mathbf{x})+\frac{1}{e} \partial_{\mu} \theta
+\end{align*}
+
+(b) Show that there is a saddle point solution of the form \(\Psi(\mathbf{x})=\bar{\Psi}\), and \(\vec{A}(\mathbf{x})=0\), and find \(\bar{\Psi}\) for \(t>0\) and \(t<0\).
+
+(c) For \(t<0\), calculate the cost of fluctuations by setting
+
+\begin{align*}
+\left\{\begin{array}{l}
+\Psi(\mathbf{x})=(\bar{\Psi}+\phi(\mathbf{x})) \exp (\mathrm{i} \theta(\mathbf{x})) \\
+\left.A_{\mu}(\mathbf{x})=a_{\mu}(\mathbf{x}) \quad \text { (with } \partial_{\mu} a_{\mu}=0 \text { in the Coulomb gauge }\right)
+\end{array}\right.
+\end{align*}
+
+and expanding \(\beta \mathcal{H}\) to quadratic order in \(\phi, \theta\), and \(\vec{a}\).
+
+(d) Perform a Fourier transformation, and calculate the expectation values of \(\left\langle|\phi(\mathbf{q})|^{2}\right\rangle,\left\langle|\theta(\mathbf{q})|^{2}\right\rangle\), and \(\left\langle|\vec{a}(\mathbf{q})|^{2}\right\rangle\).
+
+* Solution
+
+* Related Concepts
+
