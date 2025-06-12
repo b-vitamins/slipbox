@@ -1,0 +1,100 @@
+:PROPERTIES:
+:ID:       ef131e61-8663-4328-9ecc-33668444ad47
+:END:
+#+TITLE: High-Impact Publications on Neurosymbolic AI (2024-2025)
+#+FILETAGS: :index:
+#+SETUPFILE: ../../setupfile.org
+
+* Award-Winning and Outstanding Papers
+** Generalization in diffusion models arises from geometry-adaptive harmonic representations
+- Authors: Zahra Kadkhodaie, Florentin Guth, Eero P. Simoncelli, Stéphane Mallat
+- Conference: ICLR 2024
+- Impact: *Outstanding Paper Award* (1 of 5 winners)
+- Physics-Neurosymbolic Integration: Combines statistical physics principles with symbolic harmonic analysis, demonstrating how diffusion models transition from memorization to generalization through geometry-adaptive harmonic representations. Shows neural networks are inductively biased toward oscillating harmonic structures, connecting statistical mechanics (energy functions, phase transitions) with symbolic mathematical representations.
+** Stochastic Taylor Derivative Estimator: Efficient amortization for arbitrary differential operators
+- Authors: Zekun Shi, Zheyuan Hu, Min Lin, Kenji Kawaguchi
+- Conference: NeurIPS 2024
+- Impact: *Best Paper Award* (co-winner)
+- Physics-Neurosymbolic Integration: Addresses Physics-Informed Neural Networks with symbolic differential operators, enabling efficient computation of high-order derivatives for PDEs. Combines symbolic mathematical operators with neural optimization, achieving >1000× speed-up for physics-informed neural networks on million-dimensional PDEs.
+** ClimODE: Climate and Weather Forecasting with Physics-informed Neural ODEs
+- Authors: Yogesh Verma, Markus Heinonen, Vikas Garg
+- Conference: ICLR 2024
+- Impact: *Oral presentation* (top 1% of submissions)
+- Physics-Neurosymbolic Integration: Implements statistical mechanics principle of advection, combining neural ODEs with value-conserving dynamics from physics. Uses continuous-time processes that learn global weather transport as neural flow while integrating symbolic physics constraints for uncertainty quantification.
+
+* Statistical Physics and Energy-Based Models
+** Federated Neuro-Symbolic Learning (FedNSL)
+- Authors: Pengwei Xing, Songtao Lu, Han Yu (IBM)
+- Conference: ICML 2024
+- Impact: First framework for federated neurosymbolic learning
+- Physics-Neurosymbolic Integration: Uses KL divergence constraints from statistical physics and reformulates NSL theory using variational expectation maximization principles. Models symbolic rule patterns into latent variable distributions via neural networks with thermodynamic principles in federated learning.
+** Energy-Based Concept Bottleneck Models (ECBM)
+- Authors: Xinyue Xu, Yi Qin, Lu Mi, Hao Wang, Xiaomeng Li
+- Conference: ICLR 2024
+- Impact: Unified framework for interpretable AI
+- Physics-Neurosymbolic Integration: Unifies prediction, concept intervention, and probabilistic interpretations using energy-based formulations. Employs energy functions to model concept and class relationships, integrating physics-inspired energy minimization with symbolic concept reasoning through three energy networks.
+** TabEBM: A Tabular Data Augmentation Method with Distinct Class-Specific Energy-Based Models
+- Authors: Andrei Margeloiu, Xiangjian Jiang, Nikola Simidjievski, Mateja Jamnik
+- Conference: NeurIPS 2024
+- Impact: Strong performance on small datasets in critical domains
+- Physics-Neurosymbolic Integration: Uses Energy-Based Models with class-specific energy landscapes and statistical mechanics-inspired energy functions. Implements symbolic class representation through separate energy models with logical partitioning of data space via energy landscapes.
+
+* Physics-Informed Neural Networks with Symbolic Components
+** Physics of Language Models: Part 3.1, Knowledge Storage and Extraction
+- Authors: Zeyuan Allen-Zhu, Yuanzhi Li
+- Conference: ICML 2024
+- Impact: *Spotlight Paper* designation
+- Physics-Neurosymbolic Integration: Applies physics-like experimental methodology to understand LLM behavior, using controlled synthetic data to derive "universal laws" of language models. Studies how LLMs store and extract symbolic knowledge representations, analyzing conditions for knowledge extraction vs. memorization.
+** Compositional Generalization Across Distributional Shifts with Sparse Tree Operations
+- Authors: Paul Smolensky, Jianfeng Gao, Roland Fernandez
+- Conference: NeurIPS 2024
+- Impact: Featured as Microsoft research highlight
+- Physics-Neurosymbolic Integration: Extends the Differentiable Tree Machine using sparse vector representations of symbolic structures, mirroring statistical physics principles where sparse representations are fundamental to understanding phase transitions and critical phenomena.
+** Neuro-Symbolic Data Generation for Math Reasoning
+- Authors: Zenan Li, et al.
+- Conference: NeurIPS 2024
+- Impact: Significant implications for LLM mathematical reasoning
+- Physics-Neurosymbolic Integration: Employs projected Markov chain Monte Carlo sampling in highly irregular symbolic space, directly applying statistical physics sampling methods (MCMC) to navigate complex symbolic mathematical spaces.
+
+* Thermodynamic and Statistical Mechanics Applications
+** Polygonal Unadjusted Langevin Algorithms: Creating stable and efficient adaptive algorithms for neural networks
+- Authors: Dong-Young Lim, Sotirios Sabanis
+- Conference: ICML 2024
+- Impact: Provides theoretical guarantees for convergence
+- Physics-Neurosymbolic Integration: Based on statistical mechanics principles, specifically Langevin dynamics and stochastic differential equations with monotone coefficients. Addresses symbolic optimization challenges in neural networks using physics-inspired algorithmic approaches.
+** Energy-Based Modelling for Discrete and Mixed Data via Heat Equations on Structured Spaces
+- Conference: NeurIPS 2024
+- Impact: Novel approach to discrete systems
+- Physics-Neurosymbolic Integration: Uses heat equation dynamics from thermodynamics with diffusion processes on structured spaces. Combines continuous physics (heat equations) with discrete symbolic structures as domains for energy functions.
+** Predicting the Energy Landscape of Stochastic Dynamical Systems via Physics-informed Self-supervised Learning
+- Conference: ICLR 2025
+- Impact: Emerging approach for energy landscape modeling
+- Physics-Neurosymbolic Integration: Combines physics-informed neural networks with symbolic energy landscape modeling using self-supervised learning. Integrates thermodynamic principles with neural representation learning for stochastic systems.
+
+* Biological and Chemical Applications
+** CarbonNovo: Joint Design of Protein Structure and Sequence Using a Unified Energy-based Model
+- Authors: Milong Ren, Tian Zhu, Haicang Zhang
+- Conference: ICML 2024
+- Impact: Advances over two-stage protein design methods
+- Physics-Neurosymbolic Integration: Combines diffusion models with Markov Random Field energy functions, incorporating physical constraints from protein folding. Enables feedback between symbolic sequence constraints and neural structure generation.
+** Antibody Design Using Score-based Diffusion Model Guided by Evolutionary, Physical and Geometric Constraints
+- Authors: Tian Zhu, Milong Ren, Haicang Zhang
+- Conference: ICML 2024
+- Impact: Addresses data scarcity in antibody design
+- Physics-Neurosymbolic Integration: Integrates Rosetta energy functions (physics-based scoring) with diffusion models. Combines evolutionary constraints (symbolic prior knowledge) with neural diffusion models incorporating geometric and physical constraints.
+
+* Advanced Theoretical Frameworks
+** The Challenges of the Nonlinear Regime for Physics-Informed Neural Networks
+- Authors: A. Bonfanti, G. Bruno, C. Cipriani (MCML researchers)
+- Conference: NeurIPS 2024
+- Impact: Addresses fundamental theoretical limitations
+- Physics-Neurosymbolic Integration: Establishes that Neural Tangent Kernel framework fails in nonlinear PDE scenarios. Shows the Hessian doesn't vanish in infinite-width limits, necessitating hybrid approaches that combine symbolic mathematical reasoning with neural computation for nonlinear physics problems.
+
+* Key Insights and Trends
+1. *Energy-Based Unification*: Many successful approaches use energy functions as a bridge between symbolic reasoning and neural computation.
+2. *Statistical Physics Methods*: MCMC sampling, Langevin dynamics, and thermodynamic principles are increasingly used in neurosymbolic systems.
+3. *Physics-Informed Constraints*: Symbolic physical laws guide neural architectures rather than just providing loss function terms.
+4. *Theoretical Foundations*: Growing emphasis on mathematical guarantees for hybrid systems using physics-inspired analysis.
+5. *Application Diversity*: From climate modeling to protein design, physics-neurosymbolic approaches show broad applicability.
+
+These papers represent the cutting edge of integrating physics concepts, particularly statistical physics and thermodynamics, with neurosymbolic AI systems, demonstrating both theoretical advances and practical applications across diverse domains.
