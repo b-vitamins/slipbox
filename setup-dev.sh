@@ -4,7 +4,7 @@ set -euo pipefail
 # Install system packages
 export DEBIAN_FRONTEND=noninteractive
 sudo apt-get update
-sudo apt-get install -y emacs-nox sqlite3 ripgrep fd-find jq git \
+sudo -E apt-get install -y --no-install-recommends emacs-nox sqlite3 ripgrep fd-find jq git \
     texlive-extra-utils chktex lacheck uuid-runtime
 
 # Create scripts directory and note directories
