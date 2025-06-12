@@ -1,0 +1,73 @@
+:PROPERTIES:
+:ID:       1fa95883-ed03-4221-ba15-3f2f9ab38357
+:END:
+#+TITLE: DBM ISC Paper ICLR Review - Theoretical Strength with Empirical Gap
+#+FILETAGS: :literature:paper-review:iclr2025:dbm:theoretical-physics:
+#+AUTHOR: 
+#+YEAR: 
+#+SETUPFILE: ../../setupfile.org
+
+* Prompt
+Review as if you were a ICLR referee.
+
+* Response
+** ICLR 2025 – Official Review
+
+| Criterion | Score |
+|-----------|-------|
+| Overall recommendation | 7 / 10 – Accept if space permits |
+| Confidence | 4 (I have read the paper carefully but did not verify every derivation line-by-line.) |
+
+*** 1. Summary
+
+The paper develops a statistical-physics analysis of Deep Boltzmann Machines (DBMs) at random Gaussian initialization.
+
+- *Main technical result:* a closed-form saddle-point expression for the inherent-structure capacity (ISC) – the log-expected number of single-spin-flip energy minima per visible unit – for arbitrary depth and heterogeneous layer widths.
+- *Scaling laws:* three distinct regimes as the width ratio \(\gamma=N_{\ell+1}/N_\ell\) varies:
+  - \(\gamma<1\) \rightarrow ruggedness saturates;
+  - \(\gamma=1\) \rightarrow ruggedness grows linearly with depth;
+  - \(\gamma>1\) \rightarrow ruggedness explodes exponentially.
+- *Differentiable width search:* because the ISC is differentiable in the (relaxed) layer densities, the authors derive \(\mathcal{O}(L)\) envelope-theorem gradients that enable fast architecture optimization under explicit neuron/weight budgets, providing a light-weight alternative to super-net NAS.
+- *Hypothesis:* wider early layers raise local energy barriers proportional to \(\sqrt{\gamma}\), suggesting benefits for adversarial robustness.
+
+The paper is entirely theoretical; experiments are limited to numerical evaluation of the closed-form formulae, not to training of real networks.
+
+*** 2. Strengths
+
+1. *Substantial theoretical advance.* Extending prior two-layer analyses of ISC to arbitrary depth and uneven widths is non-trivial. The combination of a spin-glass path-integral and envelope-theorem differentiation is elegant and (to my knowledge) novel in the ML literature.
+2. *Clear qualitative insights.* The three scaling regimes and the explicit constants (\(g_\star, s_\star^2\)) transform vague intuitions ("wider layers can make the energy surface glassy") into precise, verifiable statements.
+3. *Actionable utility.* Treating widths as continuous and providing cheap gradients is a neat trick: practitioners could indeed plug the procedure into any NAS loop to get a physics-informed warm start essentially for free.
+4. *Presentation.* Despite heavy mathematics, notation is consistent, proofs are deferred to a well-structured appendix, and Figure 1/Table 1 convey the main scaling laws succinctly.
+
+*** 3. Weaknesses / Questions
+
+| Importance | Issue |
+|------------|-------|
+| Major | *Lack of empirical validation.* All predictions are asymptotic (large \(N\)), yet the paper presents no experiments on trained DBMs or modern EBMs to confirm the plateau/linear/exponential transitions or the \(\sqrt{\gamma}\) barrier scaling. Even small-scale synthetic studies would greatly strengthen the work. |
+| Minor–Major | *Assumptions & scope.* The Gaussian weight prior and zero biases are convenient but restrictive. How sensitive are the conclusions to learned weight statistics or to the centering tricks typically used to train DBMs? |
+| Minor | *Computational details of NAS surrogate.* Section 5 claims the width-search routine "converges in seconds," but no timing or comparison with DARTS / SNAS / ProxylessNAS is shown. |
+| Minor | *Writing density.* The derivations, while correct, are terse; readers unfamiliar with replica or HS tricks may struggle. A short intuitive derivation in the main text would help. |
+| Very minor | Typos: p. 5 "programme"→"program"; Eq. (29) missing closing parenthesis. |
+
+*** 4. Significance & Relation to Prior Work
+
+- Builds directly on Bansal & Chaudhuri (2018) (two-layer ISC) and recent spin-glass analyses of RBMs; goes well beyond them in depth heterogeneity and architectural optimization.
+- Complementary to works on phase transitions in EBMs (Kwon et al., 2024) and on trainability of wide RBMs; provides a microscopic metric (number of minima) that those works can reference.
+
+Given the renewed interest in EBMs and NAS, the contribution is timely and likely to influence both theorists and practitioners.
+
+*** 5. Recommendations for the Authors
+
+1. *Add empirical checks.* Simulate modest-size DBMs (e.g., MNIST-scale) at initialization: count inherent structures via heuristic enumeration or estimate barriers with spin flips. Show the predicted plateau / linear / exponential trends. Similarly, test the \(\sqrt{\gamma}\) robustness conjecture with PGD attacks.
+2. *Broaden the discussion of assumptions.* What changes if weights are learned (non-Gaussian, mean-shifted) or if biases are present? Is the ISC still informative after training?
+3. *Compare runtime and outcomes of differentiable width search* against a baseline one-shot NAS on a small benchmark (CIFAR-10 with an EBM backbone, for instance).
+4. Provide a high-level derivation sketch in the main text (three or four lines) so non-spin-glass readers grasp the logic without diving into 10 pages of appendix.
+5. Fix minor typos and consider lightening the notation (e.g., fewer Greek letters in early sections).
+
+*** 6. Final verdict
+
+The paper delivers a *compelling and novel theoretical framework* for quantifying and optimizing the complexity of DBMs, with clear potential impact. The absence of empirical validation is a notable gap but, in my view, not fatal: the main contribution is theoretical, and the predictions are precise enough to stimulate follow-up experiments. I lean toward *acceptance*, conditional on the authors adding at least a small-scale empirical sanity check in the camera-ready version.
+
+* Commentary
+
+This review exemplifies a fair but firm assessment. The 7/10 score is actually generous given the complete absence of experiments. The reviewer correctly identifies that even toy experiments would dramatically strengthen the work. The key insight: theoretical elegance alone isn't enough for top venues - you need empirical grounding.
