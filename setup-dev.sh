@@ -4,8 +4,8 @@ set -euo pipefail
 # Install system packages
 export DEBIAN_FRONTEND=noninteractive
 sudo apt-get update
-sudo apt-get install -y emacs-nox sqlite3 ripgrep fd-find pandoc graphviz jq git \
-    imagemagick aspell texlive-latex-base texlive-latex-extra texlive-extra-utils chktex lacheck uuid-runtime
+sudo apt-get install -y emacs-nox sqlite3 ripgrep fd-find jq git \
+    texlive-extra-utils chktex lacheck uuid-runtime
 
 # Create scripts directory and note directories
 mkdir -p scripts
@@ -25,7 +25,7 @@ emacs --batch -Q <<'ELISP'
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 (package-refresh-contents)
-(dolist (pkg '(org org-roam org-roam-ui org-ref citar auctex xenops))
+(dolist (pkg '(org org-roam))
   (unless (package-installed-p pkg)
     (package-install pkg)))
 ELISP

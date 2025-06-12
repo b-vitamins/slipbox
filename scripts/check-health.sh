@@ -41,7 +41,8 @@ echo ""
 
 # Check for orphaned files
 echo "4. Checking for orphaned files..."
-if command -v emacs >/dev/null 2>&1 && emacs --batch --eval "(if (require 'org-roam nil t) (kill-emacs 0) (kill-emacs 1))" >/dev/null 2>&1; then
+if command -v emacs >/dev/null 2>&1 && \
+   emacs --batch -Q -l scripts/init-org-roam.el --eval '(kill-emacs 0)' >/dev/null 2>&1; then
     ./scripts/find-orphans.sh | head -5
 else
     echo "   ! org-roam not available; skipping orphan check"
