@@ -19,16 +19,15 @@ org-roam.db-shm
 EOG
 
 # Download Emacs packages
-emacs --batch -Q <<'ELISP'
-(require 'package)
-(setq package-user-dir (expand-file-name "elpa"))
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-(package-initialize)
-(package-refresh-contents)
-(dolist (pkg '(org org-roam))
-  (unless (package-installed-p pkg)
-    (package-install pkg)))
-ELISP
+emacs --batch -Q \
+      --eval '(require \''package)' \
+      --eval '(setq package-user-dir (expand-file-name "elpa"))' \
+      --eval '(add-to-list \''package-archives \n               '("melpa" . "https://melpa.org/packages/") t)' \
+      --eval '(package-initialize)' \
+      --eval '(package-refresh-contents)' \
+      --eval '(dolist (pkg '(org org-roam))
+                (unless (package-installed-p pkg)
+                  (package-install pkg)))'
 
 # Make all scripts executable
 chmod +x scripts/*.sh 2>/dev/null || true
