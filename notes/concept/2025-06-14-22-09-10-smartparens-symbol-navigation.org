@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       8cdfed5f-1667-4b72-98b3-09fe86d472f1
+:END:
+#+TITLE: Smartparens Symbol Navigation
+#+FILETAGS: :concept:emacs:smartparens:
+#+SETUPFILE: ../../setupfile.org
+
+* Concept
+`sp-forward-symbol` and `sp-backward-symbol` skip over symbols while
+ignoring surrounding delimiters.  This provides free-form movement
+within expressions.
+
+* Example
+Given a Clojure function:
+
+#+BEGIN_SRC clojure
+(defn blah [] (let [x 0 y 1] (+ x 1)))
+               ^
+#+END_SRC
+
+`sp-backward-symbol` jumps to the previous symbol =blah= while
+`sp-forward-symbol` from the =]= goes just after =(let=.
+
+* Links
+- [[id:a34c16d6-b152-4a97-b35b-447c858d1c03][Smartparens Navigation]]

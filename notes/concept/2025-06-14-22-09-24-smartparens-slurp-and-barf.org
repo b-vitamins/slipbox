@@ -1,0 +1,48 @@
+:PROPERTIES:
+:ID:       05c2ea79-f4bd-4568-b9c0-9cfc21f66c09
+:END:
+#+TITLE: Smartparens Slurp and Barf
+#+FILETAGS: :concept:emacs:smartparens:
+#+SETUPFILE: ../../setupfile.org
+
+* Concept
+Slurping expands a list to include adjacent expressions while barfing
+expels elements from a list.  The commands are `sp-forward-slurp-sexp`,
+`sp-forward-barf-sexp`, `sp-backward-slurp-sexp`, and
+`sp-backward-barf-sexp`.
+
+* Example
+Forward slurp and barf:
+
+#+BEGIN_SRC clojure
+[foo bar] baz
+        ^
+#+END_SRC
+
+`sp-forward-slurp-sexp` results in:
+
+#+BEGIN_SRC clojure
+[foo bar baz]
+        ^
+#+END_SRC
+
+`sp-forward-barf-sexp` would revert to the original form.
+
+Backward slurp and barf:
+
+#+BEGIN_SRC clojure
+blah [foo bar]
+             ^
+#+END_SRC
+
+`sp-backward-slurp-sexp` gives:
+
+#+BEGIN_SRC clojure
+[blah foo bar]
+             ^
+#+END_SRC
+
+`sp-backward-barf-sexp` removes =blah= again.
+
+* Links
+- [[id:d1e15c32-6bd9-4c83-92a2-54e5d8b823b9][Smartparens Manipulation]]

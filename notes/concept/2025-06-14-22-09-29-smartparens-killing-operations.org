@@ -1,0 +1,50 @@
+:PROPERTIES:
+:ID:       77f69797-4c38-42f5-877b-38659a4bd591
+:END:
+#+TITLE: Smartparens Killing Operations
+#+FILETAGS: :concept:emacs:smartparens:
+#+SETUPFILE: ../../setupfile.org
+
+* Concept
+`sp-kill-sexp`, `sp-backward-kill-sexp` and `sp-kill-hybrid-sexp` delete
+expressions while keeping surrounding pairs balanced.
+
+* Example
+Kill a single expression:
+
+#+BEGIN_SRC clojure
+(let [x "xxx" y "y yy yyy" z 0])
+               ^
+#+END_SRC
+
+`sp-kill-sexp` removes the string producing:
+
+#+BEGIN_SRC clojure
+(let [x "xxx" y z 0])
+               ^
+#+END_SRC
+
+`sp-kill-hybrid-sexp` at the same spot kills the string and the rest of
+the line, leaving:
+
+#+BEGIN_SRC clojure
+(let [x "xxx" y])
+               ^
+#+END_SRC
+
+Backward killing deletes the previous expression:
+
+#+BEGIN_SRC clojure
+(:require [clojure.string :as s])
+                                ^
+#+END_SRC
+
+`sp-backward-kill-sexp` results in:
+
+#+BEGIN_SRC clojure
+(:require )
+          ^
+#+END_SRC
+
+* Links
+- [[id:d1e15c32-6bd9-4c83-92a2-54e5d8b823b9][Smartparens Manipulation]]

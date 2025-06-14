@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       4cb0ba57-c393-4586-a823-93842c96593b
+:END:
+#+TITLE: Smartparens
+#+FILETAGS: :index:emacs:smartparens:
+#+SETUPFILE: ../../setupfile.org
+
+* Overview
+Smartparens is an Emacs package for structural editing and automatic
+pair management.  This index links to notes on navigation and
+manipulation techniques as well as installation and key bindings.
+
+* Links
+- [[id:a34c16d6-b152-4a97-b35b-447c858d1c03][Smartparens Navigation]]
+- [[id:d1e15c32-6bd9-4c83-92a2-54e5d8b823b9][Smartparens Manipulation]]
+- [[id:5cb735cf-b65a-43cb-8766-3dff9e4d58da][Smartparens Pair Management]]
+- [[id:b52f5ce9-b2fd-4be9-851d-56880f12b33f][Smartparens Key Bindings]]

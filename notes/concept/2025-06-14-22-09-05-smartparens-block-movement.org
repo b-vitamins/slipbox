@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       0412779d-b807-4430-82ef-49930fe10e20
+:END:
+#+TITLE: Smartparens Block Movement
+#+FILETAGS: :concept:emacs:smartparens:
+#+SETUPFILE: ../../setupfile.org
+
+* Concept
+`sp-forward-sexp` and `sp-backward-sexp` jump over entire expressions
+at the current nesting level.  They are useful for quickly moving
+across arguments in a list.
+
+* Example
+Starting inside a =require= form:
+
+#+BEGIN_SRC clojure
+(:require [clojure.string :as s])
+          ^
+#+END_SRC
+
+`sp-forward-sexp` moves point after the closing bracket:
+
+#+BEGIN_SRC clojure
+(:require [clojure.string :as s])
+                                ^
+#+END_SRC
+
+`sp-backward-sexp` moves back to the opening bracket.
+
+* Links
+- [[id:a34c16d6-b152-4a97-b35b-447c858d1c03][Smartparens Navigation]]

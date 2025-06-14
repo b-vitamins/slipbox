@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       d1e15c32-6bd9-4c83-92a2-54e5d8b823b9
+:END:
+#+TITLE: Smartparens Manipulation
+#+FILETAGS: :concept:emacs:smartparens:
+#+SETUPFILE: ../../setupfile.org
+
+* Overview
+Manipulation commands reshape code.  Wrapping creates new delimiters
+around a region, unwrapping removes them, slurping and barfing adjust
+list boundaries, and killing operations delete expressions while
+keeping pairs balanced.
+
+* Links
+- [[id:5a382c7e-35e2-459b-b7dc-831ed62d5956][Smartparens Wrapping]]
+- [[id:c66e57ce-7833-479e-9f96-1d2fc09d401f][Smartparens Unwrapping]]
+- [[id:05c2ea79-f4bd-4568-b9c0-9cfc21f66c09][Smartparens Slurp and Barf]]
+- [[id:77f69797-4c38-42f5-877b-38659a4bd591][Smartparens Killing Operations]]
+- [[id:4cb0ba57-c393-4586-a823-93842c96593b][Smartparens]]

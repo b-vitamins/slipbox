@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       c66e57ce-7833-479e-9f96-1d2fc09d401f
+:END:
+#+TITLE: Smartparens Unwrapping
+#+FILETAGS: :concept:emacs:smartparens:
+#+SETUPFILE: ../../setupfile.org
+
+* Concept
+`sp-backward-unwrap-sexp` removes the nearest enclosing delimiters on
+the left while `sp-unwrap-sexp` removes those on the right.  This is
+handy for restructuring code without deleting characters manually.
+
+* Example
+Unwrap the outer call:
+
+#+BEGIN_SRC clojure
+(foo (bar x y z))
+     ^
+#+END_SRC
+
+Executing `sp-backward-unwrap-sexp` yields:
+
+#+BEGIN_SRC clojure
+foo (bar x y z)
+    ^
+#+END_SRC
+
+Running `sp-unwrap-sexp` at the same point would unwrap the inner
+=bar= expression instead.
+
+* Links
+- [[id:d1e15c32-6bd9-4c83-92a2-54e5d8b823b9][Smartparens Manipulation]]

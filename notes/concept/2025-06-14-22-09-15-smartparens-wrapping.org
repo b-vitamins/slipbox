@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       5a382c7e-35e2-459b-b7dc-831ed62d5956
+:END:
+#+TITLE: Smartparens Wrapping
+#+FILETAGS: :concept:emacs:smartparens:
+#+SETUPFILE: ../../setupfile.org
+
+* Concept
+`sp-wrap-with-pair` surrounds the active region or the next expression
+with matching delimiters.  Smartparens also allows defining custom
+wrappers for common pairs.
+
+* Example
+Starting with a variable:
+
+#+BEGIN_SRC javascript
+var mods = "vars";
+           ^
+#+END_SRC
+
+Activate the region and press =[= to produce:
+
+#+BEGIN_SRC javascript
+var mods = ["vars"];
+            ^
+#+END_SRC
+
+Custom wrapper functions can be created with the `def-pairs` macro to
+bind keys like =C-c [= for brackets.
+
+* Links
+- [[id:d1e15c32-6bd9-4c83-92a2-54e5d8b823b9][Smartparens Manipulation]]

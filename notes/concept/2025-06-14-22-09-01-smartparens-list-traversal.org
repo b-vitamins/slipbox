@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       62f42bce-6e4c-4b44-94a0-255e664b41a9
+:END:
+#+TITLE: Smartparens List Traversal
+#+FILETAGS: :concept:emacs:smartparens:
+#+SETUPFILE: ../../setupfile.org
+
+* Concept
+`sp-down-sexp`, `sp-up-sexp`, `sp-backward-down-sexp` and
+`sp-backward-up-sexp` move vertically through nested lists.
+They let you descend into a list or ascend back to the surrounding
+form without counting parentheses.
+
+* Examples
+Move from a function call into its first argument:
+
+#+BEGIN_SRC emacs-lisp
+(defun format-date (format)
+  (let ((system-time-locale "en_US.UTF-8"))
+    (insert (format-time-string format)))) ^
+#+END_SRC
+
+Running `sp-down-sexp` positions point at =insert= inside the call.
+
+Move out of an expression with `sp-up-sexp`:
+
+#+BEGIN_SRC clojure
+(str "foo" "bar baz qux")
+    ^
+#+END_SRC
+
+After `sp-up-sexp` point is placed after the closing parenthesis.
+
+Use `sp-backward-down-sexp` and `sp-backward-up-sexp` to navigate in
+the opposite direction when starting inside a list.
+
+* Links
+- [[id:a34c16d6-b152-4a97-b35b-447c858d1c03][Smartparens Navigation]]

@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       a34c16d6-b152-4a97-b35b-447c858d1c03
+:END:
+#+TITLE: Smartparens Navigation
+#+FILETAGS: :concept:emacs:smartparens:
+#+SETUPFILE: ../../setupfile.org
+
+* Overview
+Smartparens provides many ways to move around code without counting
+parentheses.  Basic commands jump to the start or end of a form,
+traverse nested lists, or skip entire expressions.  Symbol-based
+movement ignores delimiters completely.
+
+* Links
+- [[id:89ae4aa4-74dd-42f1-b6b6-6c4bf5df4709][Smartparens Sexp Navigation]]
+- [[id:62f42bce-6e4c-4b44-94a0-255e664b41a9][Smartparens List Traversal]]
+- [[id:0412779d-b807-4430-82ef-49930fe10e20][Smartparens Block Movement]]
+- [[id:8cdfed5f-1667-4b72-98b3-09fe86d472f1][Smartparens Symbol Navigation]]
+- [[id:4cb0ba57-c393-4586-a823-93842c96593b][Smartparens]]
