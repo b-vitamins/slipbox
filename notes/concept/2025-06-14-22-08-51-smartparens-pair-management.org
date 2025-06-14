@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       5cb735cf-b65a-43cb-8766-3dff9e4d58da
+:END:
+#+TITLE: Smartparens Pair Management
+#+FILETAGS: :concept:emacs:smartparens:
+#+SETUPFILE: ../../setupfile.org
+
+* Overview
+Smartparens automatically inserts and balances pairs such as parentheses,
+brackets, braces, and quotes.  When you type an opening delimiter the
+matching closing delimiter appears and point is placed between them.
+Pair definitions can be extended for any major mode.
+
+* Example
+Typing a left bracket after =defn foo= results in the closing bracket
+being inserted automatically:
+
+#+BEGIN_SRC clojure
+(defn foo )
+          ^
+#+END_SRC
+
+becomes
+
+#+BEGIN_SRC clojure
+(defn foo [])
+           ^
+#+END_SRC
+
+* Links
+- [[id:4cb0ba57-c393-4586-a823-93842c96593b][Smartparens]]

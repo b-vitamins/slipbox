@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       89ae4aa4-74dd-42f1-b6b6-6c4bf5df4709
+:END:
+#+TITLE: Smartparens Sexp Navigation
+#+FILETAGS: :concept:emacs:smartparens:
+#+SETUPFILE: ../../setupfile.org
+
+* Concept
+`sp-beginning-of-sexp` moves point to the start of the current
+expression while `sp-end-of-sexp` jumps to its end.  Useful for
+quickly selecting entire forms.
+
+* Example
+Starting from the middle of a string:
+
+#+BEGIN_SRC clojure
+(let [x "foo bar baz ... blah"]) 
+                        ^
+#+END_SRC
+
+`sp-beginning-of-sexp` moves to the start of the string and
+`sp-end-of-sexp` moves to the closing quote.
+
+* Links
+- [[id:a34c16d6-b152-4a97-b35b-447c858d1c03][Smartparens Navigation]]
