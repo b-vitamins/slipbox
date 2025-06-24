@@ -106,7 +106,7 @@ class ConsoleReporter:
 
 ---
 
-## Phase 2: Link Validation
+## Phase 2: Link Validation ✅ COMPLETE
 **Goal:** Validate internal link integrity and detect orphans
 
 ### Entry Criteria  
@@ -115,7 +115,7 @@ class ConsoleReporter:
 
 ### Tasks
 
-#### 2.1 Implement Link Validators
+#### 2.1 Implement Link Validators ✅ COMPLETE
 **File:** `validator/validators/links.py`
 
 ```python
@@ -129,28 +129,26 @@ class BidirectionalLinkAnalyzer(BaseValidator):
     # Suggest missing back-links (warnings, not errors)
 ```
 
-#### 2.2 Build Slip Graph
-**File:** `validator/graph.py`
+#### 2.2 Build Slip Graph ✅ COMPLETE
+**File:** `validator/validators/links.py` (integrated into validators)
 
 ```python
-class SlipGraph:
-    def __init__(self, slips: List[Slip])
-    def add_slip(self, slip: Slip)
-    def get_connections(self, slip_id: str) -> List[str]
-    def find_orphans(self, grace_period_days: int = 7) -> List[str]
-    def suggest_backlinks(self) -> List[Tuple[str, str]]
+# Graph functionality integrated into:
+# - InternalLinkValidator._build_slip_index()
+# - OrphanDetector._build_connection_graph() 
+# - BidirectionalLinkAnalyzer._collect_all_links()
 ```
 
-#### 2.3 Add Links Commands
+#### 2.3 Add Links Commands ✅ COMPLETE
 **Requirements:**
-- [ ] `slipbox-validate links` checks link integrity
-- [ ] `slipbox-validate orphans` finds disconnected slips
-- [ ] Commands integrated into `slipbox-validate check`
+- [x] `slipbox-validate links` checks link integrity
+- [x] `slipbox-validate orphans` finds disconnected slips (with --grace-days option)
+- [x] Commands integrated into `slipbox-validate check`
 
-### Exit Criteria
-- [ ] Can detect broken internal links in real slipbox
-- [ ] Orphan detection working with configurable grace period
-- [ ] Link validation integrated into main check command
+### Exit Criteria ✅ PHASE 2 COMPLETE
+- [x] Can detect broken internal links in real slipbox (found many broken UUID links)
+- [x] Orphan detection working with configurable grace period (0 orphans found)
+- [x] Link validation integrated into main check command (structure + links)
 
 ---
 
@@ -250,10 +248,13 @@ Before moving to next phase:
 
 ---
 
-## Current Priority: Phase 2, Task 2.1  
-**Next action:** Implement `InternalLinkValidator` in `validator/validators/links.py`
+## Current Priority: Phase 3, Task 3.1
+**Next action:** Implement bibliography validation in `validator/validators/external.py`
 
 **Phase 1 Status:** ✅ COMPLETE - Basic structure validation working
-- All structure validators implemented and tested
-- CLI commands functional with console reporting
-- Successfully validates real slipbox (76 slips)
+**Phase 2 Status:** ✅ COMPLETE - Link validation working  
+- InternalLinkValidator detects broken [[id:UUID]] and [[42/3a]] links
+- OrphanDetector finds disconnected slips (grace period configurable)
+- BidirectionalLinkAnalyzer suggests missing back-links
+- All 20 tests passing (7 new link validation tests)
+- CLI commands: structure, links, orphans, check all functional
