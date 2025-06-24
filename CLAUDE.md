@@ -195,3 +195,166 @@ mgmt:validator: implement org file parser
 - Support all link types (internal, external, bibliography)
 - Add connection point detection
 ```
+
+## Org-roam Integration
+
+This slipbox uses Org-roam for enhanced node management, link tracking, and database caching. Understanding Org-roam concepts is essential for proper validation and maintenance.
+
+### Node Definition
+
+**Org-roam Node**: Any headline or top-level file with an `:ID:` property
+
+**Two Node Types**:
+1. **File nodes**: Top-level files with `:ID:` property and `#+title`
+2. **Headline nodes**: Headlines within files with `:ID:` property
+
+**Example**:
+```org
+:PROPERTIES:
+:ID:       foo
+:END:
+#+title: Foo
+
+* Bar
+:PROPERTIES:
+:ID:       bar
+:END:
+```
+Creates two nodes: file node "Foo" (id: foo) and headline node "Bar" (id: bar).
+
+### Hybrid ID System
+
+This slipbox uses both Org-roam and Luhmann identification:
+- **`:ID:` property**: UUID for Org-roam compatibility (e.g., `d2e3f4a5-b6c7-4d8e-9fa0-b1c2d3e4f5a6`)
+- **`:CUSTOM_ID:` property**: Luhmann number for traditional Zettelkasten (e.g., `42/3a`)
+
+**Link Formats**:
+- `[[id:UUID][Description]]` - Primary format for Org-roam
+- `[[42/3a][Description]]` - Traditional Luhmann reference
+- Both should work, but `id:` links preferred for database relationships
+
+### Link System
+
+**Org-roam Link Priority**: Only `[[id:UUID]]` links counted for node relationships and graph computation
+
+**Link Types Cached**:
+- Internal ID links: `[[id:foo]]` 
+- External URLs: `[[https://...]]`
+- Citations: `[cite:@key]` or `cite:key`
+- Files: `[[file:path]]`
+- All other Org link types
+
+**Important**: While all links are cached, only ID links create relationships in the Org-roam database.
+
+### Database and Caching
+
+**Aggressive Caching**: Org-roam crawls all files in `org-roam-directory` and maintains database of links/nodes
+
+**Performance Settings**:
+- **Default**: Eager caching on every file save (`org-roam-db-update-on-save: t`)
+- **Alternative**: Manual sync via `org-roam-db-sync` for large files
+- **Auto-sync**: `org-roam-db-autosync-mode` maintains cache consistency
+
+**Cache Contents**: All Org properties (outline level, todo, priority, scheduled, deadline, tags), node relationships, link targets
+
+### Metadata System
+
+#### Titles and Aliases
+- **File titles**: `#+title:` property
+- **Headline titles**: Main headline text  
+- **Aliases**: `ROAM_ALIASES` property for alternative names/acronyms
+- **Search**: All titles and aliases available in completion
+
+#### Tags and Inheritance
+- **File tags**: `#+filetags:` inherited by all headlines in file
+- **Headline tags**: Regular Org tags at headline level
+- **Design limitation**: No selective tag inheritance (all or nothing)
+
+#### References (ROAM_REFS)
+- **Purpose**: Unique identifiers for external references
+- **Citation keys**: `@author2024paper` for academic papers
+- **URLs**: `https://example.com` for web resources
+- **Multiple refs**: One node can have multiple identifiers
+- **Reference backlinks**: External links to refs show as connections
+
+### Citation Integration
+
+**Two Citation Systems Supported**:
+1. **Org-cite** (Org 9.5+): `[cite:@key]` format
+2. **Org-ref** (legacy): `cite:key` format
+
+**Academic Workflow**:
+```org
+* Paper Title
+:PROPERTIES:
+:ID:       uuid-here
+:ROAM_REFS: @citation-key
+:END:
+```
+
+**Citation Links**: Create "reference backlinks" separate from internal ID links
+
+### Template System
+
+**Capture Templates**: `org-roam-capture-templates` extends org-capture
+
+**Default Template Structure**:
+```lisp
+(("d" "default" plain "%?"
+  :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                     "#+title: ${title}\n")
+  :unnarrowed t))
+```
+
+**Variable Expansion**: `${foo}` syntax substitutes:
+1. Function `foo` called with current node
+2. `org-roam-node-foo` accessor function
+3. Lookup in `org-roam-capture--info`
+4. Prompt via `completing-read`
+
+**Available Variables**: `file`, `id`, `level`, `title`, `tags`, `aliases`, `refs`, etc.
+
+### Org-roam Buffer Interface
+
+**Purpose**: Visual interface for node relationships (backlinks, references, unlinked mentions)
+
+**Commands**:
+- `org-roam-buffer-toggle`: Dynamic buffer tracking current node
+- `org-roam-buffer-display-dedicated`: Fixed buffer for specific node
+
+**Three Widget Types**:
+1. **Backlinks**: Nodes linking TO this node
+2. **Reference Links**: Nodes referencing this node (via ROAM_REFS)  
+3. **Unlinked References**: Text matches without links (disabled by default, slow)
+
+**Configuration**:
+```lisp
+(setq org-roam-mode-sections
+      (list #'org-roam-backlinks-section
+            #'org-roam-reflinks-section))
+```
+
+### Node Creation Workflow
+
+**Interactive Commands**:
+- `org-roam-node-insert`: Create node + insert link at point
+- `org-roam-node-find`: Create node + visit it
+- `org-roam-capture`: Create node via templates
+
+**Completion**: Available anywhere via `completion-at-point` or with `org-roam-completion-everywhere`
+
+### Validation Implications
+
+**Critical Requirements**:
+- Every slip must have `:ID:` property for Org-roam functionality
+- ID links must resolve to existing nodes
+- Missing `:CUSTOM_ID:` breaks traditional Zettelkasten referencing
+- Broken ID links create empty/incorrect buffer displays
+- Orphaned nodes (no connections) violate Zettelkasten principles
+
+**Link Validation Priority**:
+1. **Essential**: `[[id:UUID]]` links for Org-roam relationships
+2. **Traditional**: `[[42/3a]]` links for Luhmann numbering
+3. **External**: Citation and URL links for academic workflow
+
+**Database Health**: Proper caching requires valid Org properties and link structure
