@@ -1,0 +1,5 @@
+# Treat management tools as infrastructure (don't count in language stats)
+mgmt/* linguist-vendored
+
+# Ensure .org files are properly recognized as the primary content
+*.org linguist-language=Org
