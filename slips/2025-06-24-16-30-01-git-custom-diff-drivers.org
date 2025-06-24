@@ -1,0 +1,246 @@
+:PROPERTIES:
+:ID:       72df26d0-e352-447b-8802-37593e33e96c
+:END:
+#+TITLE: Git Custom Diff Drivers
+#+FILETAGS: :git:diff:attributes:textconv:binary:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Custom diff drivers solve the "Binary files differ" problem by transforming binary or complex files into readable text for meaningful diffs. This powerful Git feature allows you to see actual changes in images, documents, and other non-text files.
+
+* The Problem with Binary Files
+
+When Git encounters binary files, it simply reports "Binary files differ" which isn't helpful:
+#+begin_src bash
+git diff image.png
+# Binary files a/image.png and b/image.png differ
+#+end_src
+
+This provides no insight into what actually changed.
+
+* Custom Diff Driver Solution
+
+** Basic Setup Pattern
+1. Configure a diff driver with a =textconv= command
+2. Associate file patterns with the driver in =.gitattributes=
+3. Git runs the converter before showing diffs
+
+** Image Metadata Example
+From the original talk - showing EXIF changes in images:
+
+#+begin_src text
+# .gitattributes
+*.png diff=exif
+*.jpg diff=exif
+#+end_src
+
+#+begin_src bash
+# Configure the diff driver
+git config diff.exif.textconv exiftool
+
+# Now git diff shows metadata differences:
+# -File Size: 1234 kB
+# +File Size: 2345 kB
+# -Image Width: 1920
+# +Image Width: 3840
+#+end_src
+
+* Practical Diff Driver Examples
+
+** Word Documents
+#+begin_src text
+# .gitattributes
+*.docx diff=word
+*.doc diff=word
+#+end_src
+
+#+begin_src bash
+# Configure to use pandoc
+git config diff.word.textconv "pandoc --to=plain"
+
+# Alternative with antiword for .doc files
+git config diff.word.textconv "antiword"
+#+end_src
+
+** PDFs
+#+begin_src text
+# .gitattributes
+*.pdf diff=pdf
+#+end_src
+
+#+begin_src bash
+# Extract text content
+git config diff.pdf.textconv "pdftotext - -"
+
+# Alternative with more detailed output
+git config diff.pdf.textconv "pdfinfo"
+#+end_src
+
+** Jupyter Notebooks
+#+begin_src text
+# .gitattributes
+*.ipynb diff=jupyternotebook
+#+end_src
+
+#+begin_src bash
+# Convert to markdown for readable diffs
+git config diff.jupyternotebook.textconv "jupyter nbconvert --to markdown --stdout"
+
+# Alternative: strip output and show only code
+git config diff.jupyternotebook.textconv "jq -r '.cells[] | select(.cell_type==\"code\") | .source[]'"
+#+end_src
+
+** Spreadsheets
+#+begin_src text
+# .gitattributes
+*.xlsx diff=excel
+*.csv diff=csv
+#+end_src
+
+#+begin_src bash
+# For Excel files
+git config diff.excel.textconv "in2csv"
+
+# For CSV files (show structure)
+git config diff.csv.textconv "csvstat --names"
+#+end_src
+
+** Archive Files
+#+begin_src text
+# .gitattributes
+*.zip diff=zip
+*.tar.gz diff=archive
+#+end_src
+
+#+begin_src bash
+# Show archive contents
+git config diff.zip.textconv "unzip -l"
+git config diff.archive.textconv "tar -tzf"
+#+end_src
+
+* Advanced Diff Configurations
+
+** Database Dumps
+#+begin_src text
+# .gitattributes
+*.sql diff=sql
+*.dump diff=sqldump
+#+end_src
+
+#+begin_src bash
+# Show function names in SQL diffs
+git config diff.sql.xfuncname "^[[:space:]]*(CREATE|ALTER|DROP).*"
+
+# Format SQL dumps for better readability
+git config diff.sqldump.textconv "pg_dump --schema-only --no-owner --no-privileges"
+#+end_src
+
+** Configuration Files
+#+begin_src text
+# .gitattributes
+*.ini diff=ini
+*.conf diff=config
+#+end_src
+
+#+begin_src bash
+# Sort sections for consistent diffs
+git config diff.ini.textconv "sort"
+
+# Extract meaningful config (remove comments)
+git config diff.config.textconv "grep -v '^#' | grep -v '^$'"
+#+end_src
+
+** Binary Comparison Tools
+#+begin_src bash
+# For executable files - show symbols
+git config diff.binary.textconv "objdump -t"
+
+# For libraries - show exported functions
+git config diff.library.textconv "nm -D"
+#+end_src
+
+* Diff Driver Options
+
+** textconv vs funcname
+- **textconv**: Converts entire file to text
+- **xfuncname**: Regex to identify function/section names in diffs
+
+#+begin_src bash
+# Show better context in diffs
+git config diff.python.xfuncname "^[[:space:]]*def [a-zA-Z_]"
+git config diff.markdown.xfuncname "^#+.*"
+#+end_src
+
+** Binary Handling
+#+begin_src bash
+# For files that should never be diffed
+git config diff.nodiff.command "echo 'No diff available'"
+
+# Mark in .gitattributes
+# *.exe diff=nodiff
+#+end_src
+
+* Performance Considerations
+
+** Caching Results
+#+begin_src bash
+# Enable textconv caching (default since Git 1.7.7)
+git config diff.exif.cachetextconv true
+
+# Disable for frequently changing files
+git config diff.logs.cachetextconv false
+#+end_src
+
+** Command Optimization
+#+begin_src bash
+# Use faster tools when available
+git config diff.image.textconv "identify -verbose"  # ImageMagick
+# vs
+git config diff.image.textconv "exiftool"          # More detailed but slower
+#+end_src
+
+* Troubleshooting
+
+** Common Issues
+- **Tool not found**: Ensure textconv command is in PATH
+- **Empty diffs**: Check if tool outputs to stdout
+- **Encoding issues**: Some tools may need encoding flags
+- **Performance**: Large files may slow down diff operations
+
+** Debugging
+#+begin_src bash
+# Test textconv command manually
+git config diff.pdf.textconv "pdftotext - -"
+pdftotext document.pdf -
+
+# Check if attribute is applied
+git check-attr diff document.pdf
+
+# Verbose diff output
+GIT_TRACE=1 git diff document.pdf
+#+end_src
+
+* Integration Tips
+
+** Team Configuration
+Share diff drivers via repository configuration:
+#+begin_src bash
+# Create setup script
+#!/bin/bash
+# setup-git-diffs.sh
+
+git config diff.word.textconv "pandoc --to=plain"
+git config diff.pdf.textconv "pdftotext - -"
+git config diff.exif.textconv "exiftool"
+#+end_src
+
+** IDE Integration
+Many IDEs respect Git diff configuration:
+- VS Code shows textconv output in diff views
+- IntelliJ IDEA uses configured diff drivers
+- Command-line tools automatically benefit
+
+* Related Notes
+- [[id:3181f357-ffbf-4bbc-afbc-2d806ac78fc4][Git Attributes Fundamentals]] - Basic attribute configuration
+- [[id:5cd714a6-f7f3-4572-8d8c-b059c5dd90e7][Git Smudge Clean Filters]] - Content transformation on checkout/commit
+- [[id:ac3e579d-4bb9-4791-a1d4-fff78b54ceec][Git LFS Large File Storage]] - Alternative approach for binary files

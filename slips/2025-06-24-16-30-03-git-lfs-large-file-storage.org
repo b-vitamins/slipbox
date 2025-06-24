@@ -1,0 +1,306 @@
+:PROPERTIES:
+:ID:       ac3e579d-4bb9-4791-a1d4-fff78b54ceec
+:END:
+#+TITLE: Git LFS Large File Storage
+#+FILETAGS: :git:lfs:large:files:binary:storage:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Git LFS (Large File Storage) solves the fundamental problem of storing large binary files in Git repositories. It uses smudge/clean filters to replace large files with pointer files, storing the actual content in a separate LFS server.
+
+* The Large File Problem
+
+** Why Git Struggles with Large Files
+Git stores every version of every file in the repository history:
+- **Repository bloat**: Large files make clones extremely slow
+- **Network overhead**: Downloading entire history for large binaries
+- **Storage inefficiency**: Binary diffs are usually meaningless
+- **Memory usage**: Git loads entire files into memory for operations
+
+** What Qualifies as "Large"
+- **Images**: High-resolution photos, design assets
+- **Videos**: Any video content, screencasts, demos  
+- **Datasets**: Scientific data, machine learning datasets
+- **Binaries**: Compiled executables, libraries
+- **Archives**: Zip files, installers, packages
+
+Generally consider LFS for files > 100MB, but even smaller files benefit if they change frequently.
+
+* How Git LFS Works
+
+** The Pointer System
+1. **On git add**: Large files are uploaded to LFS server
+2. **Pointer file**: Small text file stored in Git repository
+3. **On checkout**: Pointer is replaced with actual file content
+4. **Bandwidth savings**: Only download files you actually use
+
+** Pointer File Format
+Instead of storing the actual file, Git stores a pointer:
+#+begin_src text
+version https://git-lfs.github.com/spec/v1
+oid sha256:4d7e0a4f5b3c2a1e9f8c7b6a5d4e3f2a1b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5
+size 132457
+#+end_src
+
+This 3-line pointer replaces a potentially massive binary file.
+
+* Setting Up Git LFS
+
+** Installation and Initialization
+#+begin_src bash
+# Install Git LFS (varies by system)
+# macOS: brew install git-lfs
+# Ubuntu: apt install git-lfs
+# Windows: Download from git-lfs.github.io
+
+# Initialize LFS in repository
+git lfs install
+
+# This sets up the necessary filters:
+# filter.lfs.clean = git-lfs clean -- %f
+# filter.lfs.smudge = git-lfs smudge -- %f  
+# filter.lfs.process = git-lfs filter-process
+# filter.lfs.required = true
+#+end_src
+
+** Tracking File Patterns
+#+begin_src bash
+# Track specific file types
+git lfs track "*.psd"
+git lfs track "*.mp4"
+git lfs track "*.zip"
+
+# Track files in specific directories
+git lfs track "assets/**/*.png"
+git lfs track "datasets/*.csv"
+
+# Track by size (files larger than 100MB)
+git lfs track "*.bin" --lockable
+#+end_src
+
+This automatically updates =.gitattributes=:
+#+begin_src text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/**/*.png filter=lfs diff=lfs merge=lfs -text
+#+end_src
+
+** Committing the Configuration
+#+begin_src bash
+# Important: Commit .gitattributes
+git add .gitattributes
+git commit -m "Configure Git LFS for large files"
+
+# Now add your large files
+git add large-file.psd
+git commit -m "Add design assets via LFS"
+#+end_src
+
+* LFS Commands and Operations
+
+** Tracking and Status
+#+begin_src bash
+# See LFS-tracked files
+git lfs ls-files
+
+# See tracking patterns
+git lfs track
+
+# Check LFS status
+git lfs status
+
+# Show LFS environment info
+git lfs env
+#+end_src
+
+** File Operations
+#+begin_src bash
+# Download LFS files for current checkout
+git lfs pull
+
+# Download specific LFS files
+git lfs pull --include="*.mp4"
+git lfs pull --exclude="old-videos/*"
+
+# Check out without downloading LFS files
+git lfs fetch --all
+git checkout HEAD -- . 
+#+end_src
+
+** Repository Maintenance
+#+begin_src bash
+# Clean up old LFS files
+git lfs prune
+
+# Prune with specific retention
+git lfs prune --verify-remote --verbose
+
+# Show what would be pruned (dry run)
+git lfs prune --dry-run
+
+# Verify LFS files integrity
+git lfs fsck
+#+end_src
+
+* Migrating Existing Files to LFS
+
+** Import Existing Large Files
+#+begin_src bash
+# Migrate all .zip files in history to LFS
+git lfs migrate import --include="*.zip" --everything
+
+# Migrate specific files
+git lfs migrate import --include="large-dataset.csv" --everything
+
+# Migrate from specific commit forward
+git lfs migrate import --include="*.psd" --include-ref=refs/heads/main
+#+end_src
+
+** Export from LFS
+#+begin_src bash
+# Convert LFS files back to regular Git files
+git lfs migrate export --include="*.txt" --everything
+
+# Useful if files are no longer large
+#+end_src
+
+* Advanced LFS Configuration
+
+** Selective Download
+#+begin_src bash
+# Clone without downloading LFS files
+GIT_LFS_SKIP_SMUDGE=1 git clone repo.git
+
+# Download only recent LFS files
+git lfs pull --include="*" --exclude="old-assets/*"
+
+# Configure automatic exclusions
+git config lfs.fetchexclude "archived/*,old-versions/*"
+#+end_src
+
+** Locking Files
+#+begin_src bash
+# Lock binary files to prevent conflicts
+git lfs lock assets/logo.psd
+
+# See locked files
+git lfs locks
+
+# Unlock files
+git lfs unlock assets/logo.psd
+
+# Force unlock (use carefully)
+git lfs unlock --force assets/logo.psd
+#+end_src
+
+** Bandwidth Control
+#+begin_src bash
+# Limit concurrent transfers
+git config lfs.concurrenttransfers 3
+
+# Set transfer timeout
+git config lfs.activitytimeout 60
+
+# Skip LFS during specific operations
+git -c lfs.skipdownload=true clone repo.git
+#+end_src
+
+* LFS Server Options
+
+** Hosted Solutions
+- **GitHub**: Built-in LFS support (1GB free, paid tiers)
+- **GitLab**: Integrated LFS hosting
+- **Bitbucket**: Native LFS support
+- **AWS CodeCommit**: LFS compatible
+
+** Self-hosted
+#+begin_src bash
+# Example: Git LFS server setup
+# Install git-lfs-server or use alternatives like:
+# - lfs-test-server (reference implementation)
+# - Gitea/Forgejo (built-in LFS)
+# - GitKraken Glo (commercial)
+
+# Configure custom LFS server
+git config lfs.url https://lfs.example.com/myrepo
+#+end_src
+
+* Best Practices
+
+** What to Track with LFS
+- **Good candidates**: Binary files > 10MB, frequently changing media
+- **Poor candidates**: Text files, small binaries, rarely changing files
+- **Consider alternatives**: For very large datasets, consider external storage
+
+** Workflow Recommendations
+1. **Set up LFS early**: Configure before adding large files
+2. **Use .gitattributes**: Version control your LFS configuration
+3. **Educate team**: Ensure everyone understands LFS workflow
+4. **Monitor storage**: Track LFS bandwidth and storage usage
+5. **Plan for costs**: LFS storage and bandwidth often have usage fees
+
+** Repository Organization
+#+begin_src text
+# Organize by purpose
+/assets/images/*.png filter=lfs
+/assets/videos/*.mp4 filter=lfs
+/datasets/raw/*.csv filter=lfs
+/builds/*.exe filter=lfs
+
+# Separate by file size
+/small-assets/*.jpg
+/large-assets/*.jpg filter=lfs
+#+end_src
+
+* Troubleshooting
+
+** Common Issues
+#+begin_src bash
+# LFS files not downloading
+git lfs pull origin main
+
+# Pointer files committed instead of content
+# (Usually means .gitattributes wasn't committed first)
+git rm --cached file.bin
+git add .gitattributes
+git commit -m "Fix LFS configuration"
+git add file.bin
+git commit -m "Add file via LFS"
+
+# LFS server unreachable
+git config lfs.url https://different-server.com/repo
+
+# Verify LFS setup
+git lfs env | grep "git config"
+#+end_src
+
+** Performance Issues
+#+begin_src bash
+# Check LFS storage usage
+git lfs ls-files | wc -l
+
+# Analyze repository size
+git count-objects -vH
+git lfs ls-files --size
+
+# Clean up LFS cache
+git lfs prune --verify-remote
+#+end_src
+
+** Recovery Scenarios
+#+begin_src bash
+# Restore from corrupted LFS
+git lfs fetch --all
+git reset --hard HEAD
+
+# Fix missing LFS files
+git lfs pull origin main
+
+# Verify LFS integrity
+git lfs fsck --pointers
+#+end_src
+
+* Related Notes
+- [[id:3181f357-ffbf-4bbc-afbc-2d806ac78fc4][Git Attributes Fundamentals]] - Understanding the attribute system LFS uses
+- [[id:5cd714a6-f7f3-4572-8d8c-b059c5dd90e7][Git Smudge Clean Filters]] - The filtering mechanism behind LFS
+- [[id:72df26d0-e352-447b-8802-37593e33e96c][Git Custom Diff Drivers]] - Alternative approach for viewing binary changes

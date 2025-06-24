@@ -1,0 +1,374 @@
+:PROPERTIES:
+:ID:       9514e0f5-3967-42a8-baea-28758a105dd1
+:END:
+#+TITLE: Git Attributes Advanced Usage
+#+FILETAGS: :git:attributes:advanced:patterns:integration:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Advanced Git attributes usage covers complex patterns, merge strategies, export control, CI/CD integration, and sophisticated file handling scenarios that go beyond basic configuration.
+
+* Advanced Attribute Patterns
+
+** Complex Path Specifications
+#+begin_src text
+# Different settings for different environments
+/src/production/**/* eol=lf -diff
+/src/development/**/* eol=crlf
+/vendor/**/* -diff linguist-vendored
+
+# Platform-specific handling
+/scripts/unix/*.sh text eol=lf
+/scripts/windows/*.bat text eol=crlf
+/scripts/cross-platform/*.py text eol=auto
+#+end_src
+
+** Conditional Attributes
+#+begin_src text
+# Apply different rules based on file location
+*.js text eol=lf
+tests/*.js text eol=lf -merge
+dist/*.js binary export-ignore
+
+# Override general rules for specific cases
+* text=auto
+*.bin binary
+important-config.bin text  # Exception to binary rule
+#+end_src
+
+** Hierarchical Configuration
+#+begin_src text
+# Root .gitattributes
+* text=auto
+*.jpg binary
+*.png binary
+
+# /docs/.gitattributes (inherits from root, adds specifics)
+*.md text eol=lf
+*.pdf binary diff=pdf
+
+# /src/.gitattributes (developer-specific rules)
+*.js text eol=lf filter=prettier
+*.py text eol=lf filter=black
+#+end_src
+
+* Merge Strategies
+
+** Custom Merge Drivers
+#+begin_src text
+# .gitattributes
+CHANGELOG.md merge=union
+package-lock.json merge=ours
+config/database.yml merge=custom
+#+end_src
+
+#+begin_src bash
+# Configure merge strategies
+git config merge.union.driver true  # Combine both versions
+git config merge.ours.driver true   # Always use our version
+git config merge.custom.driver 'custom-merge-tool %O %A %B %L'
+#+end_src
+
+** Generated File Handling
+#+begin_src text
+# Always take 'ours' for generated files
+package-lock.json merge=ours
+yarn.lock merge=ours
+*.generated.* merge=ours
+
+# Don't diff generated files
+dist/* -diff
+build/* -diff linguist-generated
+#+end_src
+
+** Database Schema Merges
+#+begin_src bash
+# Custom schema merge that preserves both migrations
+git config merge.schema.driver 'schema-merge-tool %A %O %B'
+#+end_src
+
+#+begin_src text
+# .gitattributes
+migrations/*.sql merge=schema
+schema.rb merge=schema
+#+end_src
+
+* Export and Archive Control
+
+** Selective Exports
+#+begin_src text
+# Exclude development files from exports
+.gitignore export-ignore
+.gitattributes export-ignore
+.github/ export-ignore
+tests/ export-ignore
+docs/ export-ignore
+*.test.js export-ignore
+README.dev.md export-ignore
+
+# Include only production-ready files in archives
+dist/ -export-ignore
+build/ -export-ignore
+#+end_src
+
+** Release Automation
+#+begin_src bash
+# Create clean release archives
+git archive --format=zip --output=release.zip HEAD
+
+# Only production files included due to export-ignore
+#+end_src
+
+** Documentation Control
+#+begin_src text
+# Exclude internal docs from public archives
+/docs/internal/ export-ignore
+/docs/api/private/ export-ignore
+*.draft.md export-ignore
+
+# But include user-facing documentation
+/docs/public/ -export-ignore
+README.md -export-ignore
+CHANGELOG.md -export-ignore
+#+end_src
+
+* Language and Tool Integration
+
+** GitHub Linguist Control
+#+begin_src text
+# Override language detection
+*.erb linguist-language=HTML+ERB
+*.rake linguist-language=Ruby
+
+# Exclude vendor code from statistics
+vendor/ linguist-vendored
+third-party/ linguist-vendored
+*.min.js linguist-generated
+
+# Mark documentation
+docs/ linguist-documentation
+*.md linguist-documentation
+
+# Override generated file detection
+src/parser.c -linguist-generated  # Actually hand-written
+#+end_src
+
+** IDE Configuration
+#+begin_src text
+# IDE-specific file handling
+*.idea/ -diff export-ignore
+*.vscode/ -diff export-ignore
+*.swp binary
+*.swo binary
+*~ binary
+#+end_src
+
+** Code Quality Tools
+#+begin_src text
+# Files that should be linted
+*.js filter=eslint-fix
+*.py filter=black-format
+*.go filter=gofmt
+
+# Files that should be ignored by quality tools
+vendor/ -filter
+generated/ -filter linguist-generated
+*.min.* -filter linguist-generated
+#+end_src
+
+* Security and Compliance
+
+** Sensitive File Patterns
+#+begin_src text
+# Apply security filters to config files
+*.env filter=secrets
+config/secrets.yml filter=secrets
+*/credentials.* filter=secrets
+
+# Never diff sensitive files
+*.key binary -diff
+*.pem binary -diff
+*.p12 binary -diff
+credentials.json binary -diff export-ignore
+#+end_src
+
+** Audit Trail Attributes
+#+begin_src text
+# Track important files with special handling
+/compliance/**/* merge=audit-trail
+/legal/**/* -filter merge=manual
+/security/**/* filter=log-access merge=careful
+#+end_src
+
+** Export Control
+#+begin_src text
+# Prevent sensitive files from being exported
+/internal/ export-ignore
+*.confidential export-ignore
+/keys/ export-ignore
+/secrets/ export-ignore
+#+end_src
+
+* CI/CD Integration
+
+** Build System Integration
+#+begin_src yaml
+# .github/workflows/check-attributes.yml
+name: Validate Git Attributes
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check LFS files
+        run: |
+          # Ensure LFS files are pointers, not content
+          git lfs ls-files --name-only | while read file; do
+            if [[ $(file "$file") != *"ASCII text"* ]]; then
+              echo "ERROR: $file should be LFS pointer but contains binary data"
+              exit 1
+            fi
+          done
+      
+      - name: Verify line endings
+        run: |
+          # Check that line endings match attributes
+          git ls-files --eol | grep -E "(w/crlf.*i/lf|w/lf.*i/crlf)" && {
+            echo "ERROR: Line ending mismatch detected"
+            exit 1
+          } || echo "Line endings OK"
+      
+      - name: Check export-ignore
+        run: |
+          # Verify that test files are excluded from archives
+          git archive HEAD | tar -tz | grep -q "^tests/" && {
+            echo "ERROR: test files found in archive"
+            exit 1
+          } || echo "Export rules OK"
+#+end_src
+
+** Deployment Preparation
+#+begin_src bash
+#!/bin/bash
+# prepare-deployment.sh
+
+# Create deployment archive excluding dev files
+git archive --format=tar.gz --output=deployment.tar.gz HEAD
+
+# Verify no sensitive files in archive
+tar -tzf deployment.tar.gz | grep -E "\.(key|pem|env)$" && {
+    echo "ERROR: Sensitive files in deployment archive"
+    exit 1
+}
+
+echo "Deployment archive ready: deployment.tar.gz"
+#+end_bash
+
+* Advanced Debugging and Maintenance
+
+** Comprehensive Attribute Checking
+#+begin_src bash
+# Check all attributes for all files
+git ls-files | while read file; do
+    echo "=== $file ==="
+    git check-attr -a "$file"
+done
+
+# Find files with specific attributes
+git ls-files | xargs git check-attr filter | grep "filter: lfs"
+
+# Check attribute inheritance
+find . -name ".gitattributes" -exec echo "=== {} ===" \; -exec cat {} \;
+#+end_src
+
+** Performance Analysis
+#+begin_src bash
+# Analyze which files use filters
+git ls-files | xargs git check-attr filter | grep -v "unspecified"
+
+# Check LFS usage
+git lfs ls-files --size | sort -k2 -h
+
+# Find large non-LFS files that should be migrated
+git ls-files | xargs ls -la | awk '$5 > 10000000 {print $9, $5}' | sort -k2 -h
+#+end_bash
+
+** Repository Health Checks
+#+begin_src bash
+#!/bin/bash
+# check-attributes-health.sh
+
+echo "=== Checking attribute consistency ==="
+
+# Check for untracked .gitattributes files
+find . -name ".gitattributes" | while read file; do
+    if ! git ls-files --error-unmatch "$file" >/dev/null 2>&1; then
+        echo "WARNING: Untracked .gitattributes file: $file"
+    fi
+done
+
+# Check for files that should be LFS but aren't
+git ls-files | while read file; do
+    if [[ -f "$file" && $(stat -c%s "$file" 2>/dev/null || stat -f%z "$file" 2>/dev/null) -gt 100000000 ]]; then
+        if ! git check-attr filter "$file" | grep -q "filter: lfs"; then
+            echo "WARNING: Large file not using LFS: $file"
+        fi
+    fi
+done
+
+# Check for filter tools availability
+git config --get-regexp "filter\..*.clean" | while read key value; do
+    filter_name=$(echo "$key" | cut -d. -f2)
+    if ! command -v "${value%% *}" >/dev/null 2>&1; then
+        echo "WARNING: Filter tool not available: $value (for $filter_name)"
+    fi
+done
+
+echo "=== Attribute health check complete ==="
+#+end_src
+
+* Team Collaboration Patterns
+
+** Shared Filter Configuration
+#+begin_src bash
+#!/bin/bash
+# setup-team-filters.sh
+
+# Shared script to configure filters consistently across team
+git config filter.secrets.clean 'sed -f .git-filters/clean-secrets.sed'
+git config filter.secrets.smudge 'sed -f .git-filters/smudge-secrets.sed'
+git config filter.prettier.clean 'prettier --stdin-filepath=%f'
+git config filter.prettier.smudge 'cat'
+
+echo "Team filters configured successfully"
+#+end_src
+
+** Documentation Templates
+#+begin_src markdown
+# Git Attributes Setup Guide
+
+This repository uses Git attributes for:
+
+1. **LFS**: Large binary files (*.psd, *.mp4) are stored via Git LFS
+2. **Line endings**: Unix (LF) for scripts, Windows (CRLF) for .bat files  
+3. **Security**: Sensitive config files have secrets filtered out
+4. **Code formatting**: JavaScript files are auto-formatted on commit
+
+## Setup
+1. Install Git LFS: `git lfs install`
+2. Run setup script: `./scripts/setup-git-filters.sh`
+3. Verify: `git check-attr -a some-file.js`
+
+## Troubleshooting
+- If LFS files aren't downloading: `git lfs pull`
+- If filters aren't working: Check tool installation and PATH
+- If line endings are wrong: Delete file, re-checkout with `git checkout HEAD -- file`
+#+end_src
+
+* Related Notes
+- [[id:3181f357-ffbf-4bbc-afbc-2d806ac78fc4][Git Attributes Fundamentals]] - Basic attribute concepts and syntax
+- [[id:72df26d0-e352-447b-8802-37593e33e96c][Git Custom Diff Drivers]] - Specialized diff handling
+- [[id:5cd714a6-f7f3-4572-8d8c-b059c5dd90e7][Git Smudge Clean Filters]] - Content transformation filters
+- [[id:ac3e579d-4bb9-4791-a1d4-fff78b54ceec][Git LFS Large File Storage]] - Large file management system

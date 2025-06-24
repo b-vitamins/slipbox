@@ -1,0 +1,282 @@
+:PROPERTIES:
+:ID:       5cd714a6-f7f3-4572-8d8c-b059c5dd90e7
+:END:
+#+TITLE: Git Smudge and Clean Filters
+#+FILETAGS: :git:filters:smudge:clean:transformation:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Smudge and clean filters provide powerful content transformation between the repository and working directory. These filters enable automatic code formatting, keyword expansion, sensitive data removal, and custom file processing workflows.
+
+* How Filters Work
+
+Filters transform file content when moving between repository and working directory:
+
+#+begin_src text
+           smudge (checkout)
+Repository -----> Working Directory
+           <----- 
+           clean (commit)
+#+end_src
+
+- **Clean filter**: Runs when files are staged (=git add=)
+- **Smudge filter**: Runs when files are checked out
+- **Bidirectional**: Content can be transformed differently in each direction
+
+** Filter Execution Points
+- Clean: =git add=, =git commit -a=, =git stash=
+- Smudge: =git checkout=, =git merge=, =git rebase=, =git stash pop=
+
+* Basic Filter Configuration
+
+** Filter Definition
+#+begin_src bash
+# Define clean and smudge commands
+git config filter.myfilter.clean 'command-for-clean'
+git config filter.myfilter.smudge 'command-for-smudge'
+
+# Apply to files via .gitattributes
+# *.txt filter=myfilter
+#+end_src
+
+** Simple Example: Case Conversion
+#+begin_src bash
+# Convert to uppercase for storage
+git config filter.upper.clean 'tr a-z A-Z'
+# Convert to lowercase for working directory
+git config filter.upper.smudge 'tr A-Z a-z'
+#+end_src
+
+#+begin_src text
+# .gitattributes
+*.upper filter=upper
+#+end_src
+
+* Practical Filter Examples
+
+** RCS-style Keywords
+From the original talk - implementing keyword expansion:
+
+#+begin_src bash
+# Expand $Date$ keyword on checkout
+git config filter.dater.smudge 'perl -pe "s/\\\$Date\\\$/\\\$Date: $(date)/g"'
+# Clean $Date$ on commit
+git config filter.dater.clean 'perl -pe "s/\\\$Date[^\\\$]*\\\$/\\\$Date\\\$/g"'
+#+end_src
+
+#+begin_src text
+# .gitattributes
+*.txt filter=dater
+#+end_src
+
+Result: =$Date$= becomes =$Date: Mon Jun 24 16:30:00 2024$= in working directory.
+
+** Removing Sensitive Data
+#+begin_src bash
+# Remove API keys before committing
+git config filter.cleanapi.clean 'sed "s/api_key=.*/api_key=REDACTED/g"'
+git config filter.cleanapi.smudge 'cat'  # No change on checkout
+#+end_src
+
+#+begin_src text
+# .gitattributes
+config/*.conf filter=cleanapi
+#+end_src
+
+** Automatic Code Formatting
+#+begin_src bash
+# Format Python code on commit
+git config filter.black.clean 'black --quiet -'
+git config filter.black.smudge 'cat'
+
+# Format JavaScript on commit
+git config filter.prettier.clean 'prettier --stdin-filepath=%f'
+git config filter.prettier.smudge 'cat'
+#+end_src
+
+#+begin_src text
+# .gitattributes
+*.py filter=black
+*.js filter=prettier
+*.ts filter=prettier
+#+end_src
+
+** Environment-specific Configuration
+#+begin_src bash
+# Switch config between development and production
+git config filter.env.clean 'sed "s/DEVELOPMENT/PRODUCTION/g"'
+git config filter.env.smudge 'sed "s/PRODUCTION/DEVELOPMENT/g"'
+#+end_src
+
+* Advanced Filter Patterns
+
+** Multi-step Processing
+#+begin_src bash
+# Complex filter with multiple transformations
+git config filter.complex.clean 'jq . | sort | uniq'
+git config filter.complex.smudge 'jq --indent 2'
+#+end_src
+
+** Conditional Filtering
+#+begin_src bash
+#!/bin/bash
+# conditional-filter.sh
+if [ "$GIT_AUTHOR_EMAIL" = "developer@company.com" ]; then
+    # Development mode - add debug info
+    sed 's/console.log(/\/\/ DEBUG: console.log(/g'
+else
+    # Production mode - remove debug info  
+    grep -v 'console.log'
+fi
+#+end_src
+
+** Template Processing
+#+begin_src bash
+# Process template files
+git config filter.template.clean 'envsubst'
+git config filter.template.smudge 'cat'
+#+end_src
+
+* Security Filters
+
+** Secrets Management
+Create =.git/clean-secrets.sed=:
+#+begin_src text
+s/password="[^"]*"/password="REDACTED"/g
+s/api_key:[[:space:]]*[^[:space:]]*/api_key: REDACTED/g
+s/secret:[[:space:]]*[^[:space:]]*/secret: REDACTED/g
+#+end_src
+
+#+begin_src bash
+# Apply secrets filter
+git config filter.secrets.clean 'sed -f .git/clean-secrets.sed'
+git config filter.secrets.smudge 'sed -f .git/smudge-secrets.sed'
+#+end_bash
+
+** Encryption Filters
+#+begin_src bash
+# Encrypt sensitive files in repository
+git config filter.encrypt.clean 'gpg --symmetric --cipher-algo AES256'
+git config filter.encrypt.smudge 'gpg --decrypt'
+#+end_src
+
+#+begin_src text
+# .gitattributes
+secrets.txt filter=encrypt
+#+end_src
+
+* Creating Robust Filters
+
+** Filter Script Template
+#+begin_src bash
+#!/bin/bash
+# robust-filter.sh
+
+set -euo pipefail  # Exit on errors
+
+# Detect operation mode
+MODE="${1:-clean}"
+
+clean_filter() {
+    # Transform content for storage
+    if command -v jq >/dev/null 2>&1; then
+        jq --compact-output '.'
+    else
+        cat  # Fallback to no-op if tool missing
+    fi
+}
+
+smudge_filter() {
+    # Transform content for working directory
+    if command -v jq >/dev/null 2>&1; then
+        jq --indent 2 '.'
+    else
+        cat  # Fallback to no-op if tool missing
+    fi
+}
+
+case "$MODE" in
+    clean) clean_filter ;;
+    smudge) smudge_filter ;;
+    *) echo "Usage: $0 {clean|smudge}" >&2; exit 1 ;;
+esac
+#+end_src
+
+** Error Handling
+#+begin_src bash
+# Filter with error recovery
+git config filter.safe.clean 'myfilter.sh clean 2>/dev/null || cat'
+git config filter.safe.smudge 'myfilter.sh smudge 2>/dev/null || cat'
+#+end_src
+
+* Filter Best Practices
+
+## Essential Rules
+1. **Idempotent operations**: Running filter twice should produce same result
+2. **Handle errors gracefully**: Fallback to =cat= if filter fails
+3. **Fast execution**: Filters run frequently, keep them efficient
+4. **Cross-platform compatibility**: Avoid platform-specific commands
+5. **Document behavior**: Explain filter purpose in README
+
+## Common Patterns
+#+begin_src bash
+# Always provide both directions
+git config filter.myfilter.clean 'transform-to-repo'
+git config filter.myfilter.smudge 'transform-to-work'
+
+# Use cat for no-op direction
+git config filter.format.clean 'prettier --stdin-filepath=%f'
+git config filter.format.smudge 'cat'
+#+end_src
+
+* Debugging Filters
+
+** Testing Filters
+#+begin_src bash
+# Test clean filter manually
+echo "test content" | git config --get filter.myfilter.clean | sh
+
+# Test smudge filter
+echo "test content" | git config --get filter.myfilter.smudge | sh
+
+# Check which filters apply
+git check-attr filter myfile.txt
+#+end_src
+
+** Debugging Execution
+#+begin_src bash
+# Trace filter execution
+GIT_TRACE=1 git add file.txt
+
+# Verbose output
+git add -v file.txt
+
+# Check filter configuration
+git config --get-regexp filter
+#+end_src
+
+* Common Pitfalls
+
+## Filter Problems
+- **Non-idempotent filters**: Running twice changes result
+- **Platform dependencies**: Filters that don't work cross-platform
+- **Missing error handling**: Filters that fail silently
+- **Performance issues**: Slow filters blocking operations
+- **Binary data corruption**: Filters that don't handle binary properly
+
+## Recovery Strategies
+#+begin_src bash
+# Disable filter temporarily
+git -c filter.myfilter.clean= -c filter.myfilter.smudge= add file.txt
+
+# Check repository integrity
+git fsck
+
+# Re-checkout files with filters
+git checkout HEAD -- .
+#+end_src
+
+* Related Notes
+- [[id:3181f357-ffbf-4bbc-afbc-2d806ac78fc4][Git Attributes Fundamentals]] - Basic attribute and filter setup
+- [[id:ac3e579d-4bb9-4791-a1d4-fff78b54ceec][Git LFS Large File Storage]] - Specialized filter for large files
+- [[id:0d9ed9fe-d9a7-423b-8b6d-aa726b3a8d12][Git Hooks Fundamentals]] - Alternative automation approach

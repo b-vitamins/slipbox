@@ -58,10 +58,12 @@ If you're looking for immediate improvements to your Git workflow:
    - [[id:abce5cf9-f80c-470a-a391-27e6ca85dbd1][Git Hooks Modern Tools]] - Pre-commit and Husky for team workflows
    - [[id:fe7f74cd-2023-432d-a3de-7da02e24f859][Git Hooks Examples]] - Practical implementations and troubleshooting
 
-8. [[id:b0c1d2e3-f4a5-4b6c-7d8e-9fa0b1c2d3e4][Git Attributes - Custom File Handling]]
-   - Smudge/clean filters
-   - Git LFS for large files
-   - Custom diff drivers
+8. **Git Attributes - Custom File Handling**
+   - [[id:3181f357-ffbf-4bbc-afbc-2d806ac78fc4][Git Attributes Fundamentals]] - Basic attribute configuration and syntax
+   - [[id:72df26d0-e352-447b-8802-37593e33e96c][Git Custom Diff Drivers]] - Advanced diff customization for binary files
+   - [[id:5cd714a6-f7f3-4572-8d8c-b059c5dd90e7][Git Smudge Clean Filters]] - Content transformation on checkout/commit
+   - [[id:ac3e579d-4bb9-4791-a1d4-fff78b54ceec][Git LFS Large File Storage]] - Binary file management system
+   - [[id:9514e0f5-3967-42a8-baea-28758a105dd1][Git Attributes Advanced Usage]] - Complex patterns and team integration
 
 ** ⚡ Quick References
 9. [[id:c1d2e3f4-a5b6-4c7d-8e9f-a0b1c2d3e4f5][Git Quick Reference - Essential Commands and Setup]]

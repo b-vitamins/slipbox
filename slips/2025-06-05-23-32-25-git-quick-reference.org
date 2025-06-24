@@ -250,7 +250,7 @@ echo "Run 'git maintenance start' in your repositories!"
 - [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e][Git Configuration]] - Detailed configuration
 - [[id:c5d6e7f8-a9b0-4c1d-2e3f-4a5b6c7d8e9f][Git Investigation Tools]] - Deep diving into history
 - [[id:d6e7f8a9-b0c1-4d2e-3f4a-5b6c7d8e9fa0][Git Collaboration]] - Team workflows
-- [[id:e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9fa0b1][Git Performance]] - Large repositories
+- [[id:6c8fab86-38fa-4821-a07f-1b3dd8bfac7c][Git Scalar Setup]] - Large repository optimization
 - [[id:f8a9b0c1-d2e3-4f4a-5b6c-7d8e9fa0b1c2][Git Advanced Workflows]] - Power user features
-- [[id:a9b0c1d2-e3f4-4a5b-6c7d-8e9fa0b1c2d3][Git Hooks]] - Automation
-- [[id:b0c1d2e3-f4a5-4b6c-7d8e-9fa0b1c2d3e4][Git Attributes]] - File handling
+- [[id:0d9ed9fe-d9a7-423b-8b6d-aa726b3a8d12][Git Hooks Fundamentals]] - Automation
+- [[id:3181f357-ffbf-4bbc-afbc-2d806ac78fc4][Git Attributes Fundamentals]] - File handling

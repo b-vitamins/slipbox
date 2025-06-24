@@ -1,0 +1,149 @@
+:PROPERTIES:
+:ID:       3181f357-ffbf-4bbc-afbc-2d806ac78fc4
+:END:
+#+TITLE: Git Attributes Fundamentals
+#+FILETAGS: :git:attributes:configuration:files:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Git attributes allow you to specify how Git should handle specific files or file patterns. This powerful feature enables custom file processing, content filtering, and specialized handling that goes far beyond basic Git functionality.
+
+* What Are Git Attributes?
+
+Git attributes are per-path settings that tell Git how to handle specific files. They're defined in =.gitattributes= files and can control:
+
+- How diffs are generated
+- How files are filtered on check-in/check-out
+- How merges are performed
+- Whether files are treated as binary
+- Export behavior
+- Line ending normalization
+
+** Attribute Files
+Attributes can be defined in several places:
+- =.gitattributes= in repository root (version controlled)
+- =.gitattributes= in subdirectories (applies to that directory and below)
+- =.git/info/attributes= (local, not version controlled)
+- Global attributes file (configured with =core.attributesFile=)
+
+* Basic .gitattributes Syntax
+
+#+begin_src text
+# Pattern followed by attributes
+*.jpg binary
+*.sh text eol=lf
+docs/*.pdf -diff
+*.exe filter=lfs diff=lfs merge=lfs -text
+#+end_src
+
+** Attribute Types
+- **Set attribute**: =pattern attribute=
+- **Unset attribute**: =pattern -attribute=
+- **Set to value**: =pattern attribute=value=
+- **Comments**: Lines starting with =#=
+
+** Common Attributes
+- =text=: Treat as text file (enables line ending conversion)
+- =binary=: Treat as binary (shorthand for =-text -diff=)
+- =eol=: Line ending handling (=lf= or =crlf=)
+- =diff=: Custom diff driver or =-diff= to disable
+- =filter=: Apply smudge/clean filters
+- =merge=: Custom merge driver
+- =export-ignore=: Exclude from =git archive=
+
+* Pattern Matching
+
+** Glob Patterns
+#+begin_src text
+# All .txt files
+*.txt text
+
+# Files in specific directory
+/scripts/*.sh eol=lf
+
+# Recursive matching
+**/*.md text
+
+# Multiple extensions
+*.{jpg,png,gif} binary
+#+end_src
+
+** Directory Specifics
+#+begin_src text
+# Different settings for different directories
+/vendor/**/* -diff
+/docs/**/*.md text
+/scripts/**/*.sh text eol=lf
+/windows/**/*.bat text eol=crlf
+#+end_src
+
+* Essential Use Cases
+
+** Consistent Line Endings
+Prevent the "entire file changed due to line endings" problem:
+#+begin_src text
+# .gitattributes
+# Normalize all text files
+* text=auto
+
+# Specific overrides
+*.sh text eol=lf
+*.bat text eol=crlf
+*.jpg binary
+#+end_src
+
+** Binary File Handling
+#+begin_src text
+# Explicitly mark binary files
+*.exe binary
+*.dll binary
+*.jpg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.pdf binary
+#+end_src
+
+** Generated File Exclusion
+#+begin_src text
+# Mark generated files (affects GitHub language stats)
+docs/api/* linguist-generated
+*.min.js linguist-generated
+dist/* linguist-generated -diff
+
+# Exclude from archives
+.gitignore export-ignore
+.gitattributes export-ignore
+tests/ export-ignore
+#+end_src
+
+* Debugging Attributes
+
+#+begin_src bash
+# Check which attributes apply to a file
+git check-attr -a filename.txt
+
+# See all attribute settings
+git check-attr -a --all
+
+# Test specific attribute
+git check-attr diff myfile.png
+
+# Check line ending settings
+git ls-files --eol
+#+end_src
+
+* Best Practices
+
+1. **Commit .gitattributes**: Always version control your attributes file
+2. **Set early**: Configure attributes before adding files to repository
+3. **Be explicit**: Use =text=auto= as baseline, then override specifically
+4. **Document decisions**: Comment complex attribute rules
+5. **Test cross-platform**: Verify line ending behavior on different systems
+6. **Use patterns wisely**: More specific patterns override general ones
+
+* Related Notes
+- [[id:72df26d0-e352-447b-8802-37593e33e96c][Git Custom Diff Drivers]] - Advanced diff customization
+- [[id:5cd714a6-f7f3-4572-8d8c-b059c5dd90e7][Git Smudge Clean Filters]] - Content transformation filters
+- [[id:ac3e579d-4bb9-4791-a1d4-fff78b54ceec][Git LFS Large File Storage]] - Binary file management
+- [[id:9514e0f5-3967-42a8-baea-28758a105dd1][Git Attributes Advanced Usage]] - Complex patterns and integration
