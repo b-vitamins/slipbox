@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       10537825-5563-4f3b-a1b2-0325ecac73bd
+:CUSTOM_ID: 1-5a
+:END:
+#+TITLE: Critical Point Properties
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Locate the critical temperature \(T_{c}\) below which this equation must be invalid, and the corresponding density \(n_{c}\) and pressure \(P_{c}\) of the critical point. Hence find the ratio \(k_{\mathrm{B}} T_{c} n_{c} / P_{c}\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:c0e2e030-7b97-4849-a4f6-3162e4f9f3cd][Critical behavior of a gas]]
+- **Next**: [[id:096c3355-6983-43a7-b9bb-3adffdac56a1][Isothermal Compressibility]]
+
+* Related Concepts

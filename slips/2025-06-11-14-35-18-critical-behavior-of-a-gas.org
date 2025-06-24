@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       c0e2e030-7b97-4849-a4f6-3162e4f9f3cd
+:CUSTOM_ID: 1-5
 :END:
 #+TITLE: Critical behavior of a gas
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -28,6 +29,9 @@ where \(v=V / N\). Find the ratio \(P v / k_{\mathrm{B}} T\) at its critical poi
 (f) Calculate the isothermal compressibility \(\kappa_{T}\) for \(v=v_{c}\) as a function of \(T-T_{c}\) for the Dieterici gas.
 
 (g) On the Dieterici critical isotherm expand the pressure to the lowest non-zero order in \(\left(v-v_{c}\right)\).
+
+* Navigation
+- **First Part**: [[id:10537825-5563-4f3b-a1b2-0325ecac73bd][Critical Point Properties]]
 
 * Solution
 

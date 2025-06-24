@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       bcf97952-8b20-401f-b360-95466904a7be
+:CUSTOM_ID: 1-5f
+:END:
+#+TITLE: Dieterici Compressibility
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (f) Problem
+Calculate the isothermal compressibility \(\kappa_{T}\) for \(v=v_{c}\) as a function of \(T-T_{c}\) for the Dieterici gas.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:c0e2e030-7b97-4849-a4f6-3162e4f9f3cd][Critical behavior of a gas]]
+- **Previous**: [[id:eb9d0f58-8d6b-4a5e-9b82-e81c69007331][Dieterici Equation Critical Point]]
+- **Next**: [[id:a09fce8e-6abe-430c-a685-7ece4bfdc5ba][Dieterici Critical Isotherm Expansion]]
+
+* Related Concepts

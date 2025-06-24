@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       096c3355-6983-43a7-b9bb-3adffdac56a1
+:CUSTOM_ID: 1-5b
+:END:
+#+TITLE: Isothermal Compressibility
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Calculate the isothermal compressibility \(\kappa_{T}=-\left.\frac{1}{V} \frac{\partial V}{\partial P}\right|_{T}\), and sketch its behavior as a function of \(T\) for \(n=n_{c}\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:c0e2e030-7b97-4849-a4f6-3162e4f9f3cd][Critical behavior of a gas]]
+- **Previous**: [[id:10537825-5563-4f3b-a1b2-0325ecac73bd][Critical Point Properties]]
+- **Next**: [[id:5c03d858-0874-4458-95ba-8dc966d82648][Critical Isotherm]]
+
+* Related Concepts

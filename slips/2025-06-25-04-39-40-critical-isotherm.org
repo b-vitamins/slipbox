@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       5c03d858-0874-4458-95ba-8dc966d82648
+:CUSTOM_ID: 1-5c
+:END:
+#+TITLE: Critical Isotherm
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+On the critical isotherm give an expression for \(\left(P-P_{c}\right)\) as a function of \(\left(n-n_{c}\right)\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:c0e2e030-7b97-4849-a4f6-3162e4f9f3cd][Critical behavior of a gas]]
+- **Previous**: [[id:096c3355-6983-43a7-b9bb-3adffdac56a1][Isothermal Compressibility]]
+- **Next**: [[id:ecf0c68b-bfd8-4c98-bf3c-158026a75d28][Phase Separation Maxwell Construction]]
+
+* Related Concepts

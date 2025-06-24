@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       ecf0c68b-bfd8-4c98-bf3c-158026a75d28
+:CUSTOM_ID: 1-5d
+:END:
+#+TITLE: Phase Separation Maxwell Construction
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+The instability in the isotherms for \(T<T_{c}\) is avoided by phase separation into a liquid of density \(n_{+}\)and gas of density \(n_{-}\). For temperatures close to \(T_{c}\), these densities behave as \(n_{ \pm} \approx n_{c}(1 \pm \delta)\). Using a Maxwell construction, or otherwise, find an implicit equation for \(\delta(T)\), and indicate its behavior for \(\left(T_{c}-T\right) \rightarrow 0\). (Hint: Along an isotherm, variations of chemical potential obey \(\mathrm{d} \mu=\mathrm{d} P / n\).)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:c0e2e030-7b97-4849-a4f6-3162e4f9f3cd][Critical behavior of a gas]]
+- **Previous**: [[id:5c03d858-0874-4458-95ba-8dc966d82648][Critical Isotherm]]
+- **Next**: [[id:eb9d0f58-8d6b-4a5e-9b82-e81c69007331][Dieterici Equation Critical Point]]
+
+* Related Concepts

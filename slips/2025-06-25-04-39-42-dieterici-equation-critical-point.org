@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       eb9d0f58-8d6b-4a5e-9b82-e81c69007331
+:CUSTOM_ID: 1-5e
+:END:
+#+TITLE: Dieterici Equation Critical Point
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (e) Problem
+Now consider a gas obeying Dieterici's equation of state:
+\begin{align*}
+P(v-b)=k_{\mathrm{B}} T \exp \left(-\frac{a}{k_{\mathrm{B}} T v}\right)
+\end{align*}
+where \(v=V / N\). Find the ratio \(P v / k_{\mathrm{B}} T\) at its critical point.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:c0e2e030-7b97-4849-a4f6-3162e4f9f3cd][Critical behavior of a gas]]
+- **Previous**: [[id:ecf0c68b-bfd8-4c98-bf3c-158026a75d28][Phase Separation Maxwell Construction]]
+- **Next**: [[id:bcf97952-8b20-401f-b360-95466904a7be][Dieterici Compressibility]]
+
+* Related Concepts

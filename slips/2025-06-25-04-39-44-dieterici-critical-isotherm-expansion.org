@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       a09fce8e-6abe-430c-a685-7ece4bfdc5ba
+:CUSTOM_ID: 1-5g
+:END:
+#+TITLE: Dieterici Critical Isotherm Expansion
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (g) Problem
+On the Dieterici critical isotherm expand the pressure to the lowest non-zero order in \(\left(v-v_{c}\right)\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:c0e2e030-7b97-4849-a4f6-3162e4f9f3cd][Critical behavior of a gas]]
+- **Previous**: [[id:bcf97952-8b20-401f-b360-95466904a7be][Dieterici Compressibility]]
+
+* Related Concepts
