@@ -333,5 +333,5 @@ git rebase --continue
 * Related Notes
 - [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c][Git Fundamentals]] - Basic concepts
 - [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e][Git Configuration and Aliases]] - Setup
-- [[id:e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9fa0b1][Git Performance and Large Repositories]] - Scaling Git
-- [[id:f8a9b0c1-d2e3-4f4a-5b6c-7d8e9fa0b1c2][Git Advanced Workflows]] - Complex patterns
+- [[id:6c8fab86-38fa-4821-a07f-1b3dd8bfac7c][Git Scalar Setup]] - Large repository optimization
+- [[id:015f236b-884c-499b-9d45-7c317dd55a80][Git Worktrees]] - Complex workflow patterns
