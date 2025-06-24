@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       988cf4dc-dc4c-4915-809f-cb90abb95757
+:CUSTOM_ID: 1-2
 :END:
 #+TITLE: The Ising model of magnetism
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -33,6 +34,9 @@ F(m, h)]_{m}\). When is the saddle point method valid? Note that \(F(m, h)\) is 
 \begin{align*}
 C=\left.\frac{\partial E}{\partial T}\right|_{h=0}, \quad \text { and } \quad \chi=\left.\frac{\partial \bar{m}}{\partial h}\right|_{h=0}
 \end{align*}
+
+* Navigation
+- **First Part**: [[id:aedea07d-0dac-4fd1-9bec-d2948962359c][Equivalent Neighbor Model]]
 
 * Solution
 

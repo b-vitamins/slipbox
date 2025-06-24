@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       25320228-01da-4d87-942d-5f9f335ec3fd
+:CUSTOM_ID: 1-2d
+:END:
+#+TITLE: Critical Temperature
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+For \(h=0\) find the critical temperature \(T_{c}\) below which spontaneous magnetization appears; and calculate the magnetization \(\bar{m}(T)\) in the low temperature phase.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:988cf4dc-dc4c-4915-809f-cb90abb95757][The Ising model of magnetism]]
+- **Previous**: [[id:4ed599d3-798e-4e8f-9a41-7742e430ea27][Saddle Point Integration]]
+- **Next**: [[id:3057f689-fc33-4632-8839-42cadf8d4d34][Response Functions]]
+
+* Related Concepts

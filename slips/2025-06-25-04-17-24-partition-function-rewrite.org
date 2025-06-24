@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       8c20b945-a89d-4c3c-ae67-e1502e034d2e
+:CUSTOM_ID: 1-2b
+:END:
+#+TITLE: Partition Function Rewrite
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Show that the partition function \(Z(h, T)=\sum_{\left\{\sigma_{\}\right\}} \exp (-\beta \mathcal{H})\) can be rewritten as \(Z=\sum_{M} \exp [-\beta F(m, h)]\); with \(F(m, h)\) easily calculated by analogy to problem (1). For the remainder of the problem work only with \(F(m, h)\) expanded to fourth order in \(m\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:988cf4dc-dc4c-4915-809f-cb90abb95757][The Ising model of magnetism]]
+- **Previous**: [[id:aedea07d-0dac-4fd1-9bec-d2948962359c][Equivalent Neighbor Model]]
+- **Next**: [[id:4ed599d3-798e-4e8f-9a41-7742e430ea27][Saddle Point Integration]]
+
+* Related Concepts

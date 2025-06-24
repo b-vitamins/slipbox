@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       aedea07d-0dac-4fd1-9bec-d2948962359c
+:CUSTOM_ID: 1-2a
+:END:
+#+TITLE: Equivalent Neighbor Model
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+For \(N\) spins we make the drastic approximation that the interaction between all spins is the same, and \(J_{i j}=-J / N\) (the equivalent neighbor model). Show that the energy can now be written as \(E(M, h)=-N\left[Jm^{2} / 2+h m\right]\), with a magnetization \(m=\sum_{i=1}^{N} \sigma_{i} / N=M / N\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:988cf4dc-dc4c-4915-809f-cb90abb95757][The Ising model of magnetism]]
+- **Next**: [[id:8c20b945-a89d-4c3c-ae67-e1502e034d2e][Partition Function Rewrite]]
+
+* Related Concepts
