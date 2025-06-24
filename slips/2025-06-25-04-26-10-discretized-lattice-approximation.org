@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       98368db3-9e2e-4c83-9d83-e41de7a3ea10
+:CUSTOM_ID: 1-3b
+:END:
+#+TITLE: Discretized Lattice Approximation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+The volume \(V\) is now subdivided into \(\mathcal{N}=V / a^{3}\) cells of volume \(a^{3}\), with the spacing \(a\) chosen small enough so that each cell \(\alpha\) is either empty or occupied by one particle; i.e. the cell occupation number \(n_{\alpha}\) is restricted to 0 or 1\(\alpha=1,2, \cdots, \mathcal{N}\). After approximating the integrals \(\int \mathrm{d}^{3} \vec{r}\) by sums \(a^{3} \sum_{\alpha=1}^{\mathcal{N}}\), show that
+\begin{align*}
+\Xi \approx \sum_{\left\{n_{\alpha}=0,1\right\}}\left(\frac{\mathrm{e}^{\beta \mu} a^{3}}{\lambda^{3}}\right)^{\sum_{\alpha} n_{\alpha}} \exp \left[-\frac{\beta}{2} \sum_{\alpha, \beta=1}^{\mathcal{N}} n_{\alpha} n_{\beta} \mathcal{V}\left(\vec{r}_{\alpha}-\vec{r}_{\beta}\right)\right]
+\end{align*}
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:6eadeb04-ee3d-48da-aad1-0caa343a3a72][The lattice-gas model]]
+- **Previous**: [[id:e7afaf6a-7d61-4dda-b04e-563c8dd4b603][Grand Partition Function]]
+- **Next**: [[id:fced7b19-280f-40f3-93de-5437863e3549][Ising Model Equivalence]]
+
+* Related Concepts

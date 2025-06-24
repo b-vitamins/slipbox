@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       6eadeb04-ee3d-48da-aad1-0caa343a3a72
+:CUSTOM_ID: 1-3
 :END:
 #+TITLE: The lattice-gas model
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -25,6 +26,9 @@ The lattice-gas model: Consider a gas of particles subject to a Hamiltonian
 -\frac{\beta}{2} \sum_{\alpha, \beta=1}^{\mathcal{N}} n_{\alpha} n_{\beta} \mathcal{V}\left(\vec{r}_{\alpha}-\vec{r}_{\beta}\right)\right]
 \end{align*}
 (c) By setting \(n_{\alpha}=\left(1+\sigma_{\alpha}\right) / 2\) and approximating the potential by \(\mathcal{V}\left(\vec{r}_{\alpha}-\vec{r}_{\beta}\right)=\) \(-J / \mathcal{N}\), show that this model is identical to the one studied in problem (2). What does this imply about the behavior of this imperfect gas?
+
+* Navigation
+- **First Part**: [[id:e7afaf6a-7d61-4dda-b04e-563c8dd4b603][Grand Partition Function]]
 
 * Solution
 

@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       fced7b19-280f-40f3-93de-5437863e3549
+:CUSTOM_ID: 1-3c
+:END:
+#+TITLE: Ising Model Equivalence
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+By setting \(n_{\alpha}=\left(1+\sigma_{\alpha}\right) / 2\) and approximating the potential by \(\mathcal{V}\left(\vec{r}_{\alpha}-\vec{r}_{\beta}\right)=\) \(-J / \mathcal{N}\), show that this model is identical to the one studied in problem (2). What does this imply about the behavior of this imperfect gas?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:6eadeb04-ee3d-48da-aad1-0caa343a3a72][The lattice-gas model]]
+- **Previous**: [[id:98368db3-9e2e-4c83-9d83-e41de7a3ea10][Discretized Lattice Approximation]]
+
+* Related Concepts

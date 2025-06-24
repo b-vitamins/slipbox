@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       e7afaf6a-7d61-4dda-b04e-563c8dd4b603
+:CUSTOM_ID: 1-3a
+:END:
+#+TITLE: Grand Partition Function
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Show that the grand partition function \(\Xi\) can be written as
+\begin{align*}
+\Xi=\sum_{N=0}^{\infty} \frac{1}{N!}\left(\frac{\mathrm{e}^{\beta \mu}}{\lambda^{3}}\right)^{N} \int \prod_{i=1}^{N} \mathrm{~d}^{3} \vec{r}_{i} \exp \left[-\frac{\beta}{2} \sum_{i, j} \mathcal{V}\left(\vec{r}_{i}-\vec{r}_{j}\right)\right]
+\end{align*}
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:6eadeb04-ee3d-48da-aad1-0caa343a3a72][The lattice-gas model]]
+- **Next**: [[id:98368db3-9e2e-4c83-9d83-e41de7a3ea10][Discretized Lattice Approximation]]
+
+* Related Concepts
