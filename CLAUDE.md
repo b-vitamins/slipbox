@@ -22,7 +22,7 @@ This is a digital implementation of Niklas Luhmann's Zettelkasten method. The sy
 - **Embrace disorder** - The apparent disorder has "non-arbitrary internal structure"
 - **Allow organic growth** - Let notes branch internally at any point
 - **Maintain the register** - Constantly update keyword indices for rediscovery
-- **Capture bibliographical references** - Keep a separate system for sources
+- **Capture bibliographical references** - Maintain BibTeX files in `/bibliography/` directory, create literature notes that link to concepts
 - **Think in networks** - A note without connections will be forgotten by the system
 - **Work with what emerges** - Follow the system's suggestions, not preconceived plans
 
@@ -97,11 +97,56 @@ This is a digital implementation of Niklas Luhmann's Zettelkasten method. The sy
 3. **Communication partner** - System surprises you with insights
 4. **Autonomous system** - Has its own internal life independent of author
 
+### Bibliography Workflow
+
+#### Managing Academic Sources
+1. **Collect papers** in domain-specific BibTeX files (`bibliography/*.bib`)
+2. **Create literature notes** for papers that spark connections (`notes/`)
+3. **Link immediately** - connect new papers to existing concepts via `[[id:UUID][links]]`
+4. **Extract concepts** - create separate concept notes for key ideas that transcend individual papers
+5. **Build networks** - look for patterns across papers that reveal research programs or paradigm shifts
+
+#### BibTeX to Zettelkasten Bridge
+- **One paper, multiple notes**: A single paper may spawn several concept notes
+- **Cite by key**: Reference BibTeX entries in literature notes for proper attribution
+- **Tag strategically**: Use tags like `:literature:`, `:physics:`, `:neurosymbolic:` for discovery
+- **Time-delay insights**: Papers may not show their importance until connected to later discoveries
+
+#### Research Area Development
+- **Conference collections**: Maintain separate `.bib` files for major venues (ICLR, ICML, NeurIPS)
+- **Topic clusters**: Let domain-specific bibliographies emerge organically (e.g., `neurosymbolic.bib`)
+- **Cross-domain pollination**: Look for physics papers that inform ML, philosophy papers that clarify AI concepts
+- **Living bibliography**: Update and refine collections as understanding evolves
+
 ### Implementation Notes
 
-- All notes in single `notes/` directory
-- IDs are UUIDs (Org-Roam standard)
+#### Directory Structure
+- **`notes/`** - All Zettelkasten notes in flat structure following Luhmann's principles
+- **`bibliography/`** - Separate system for bibliographical references
+  - BibTeX files for conference proceedings (`.bib`)
+  - Domain-specific collections (e.g., `neurosymbolic.bib`)
+- **`.claude/`** - Claude Code configuration and local settings
+
+#### Note Organization
+- IDs are UUIDs (Org-Roam standard) - never change once assigned
 - Tags indicate type (`:fleeting:`, `:concept:`, `:literature:`)
-- Timestamp prefixes for chronological ordering
+- Timestamp prefixes for chronological ordering when needed
 - Plain text (Org format) ensures longevity
 - Database (org-roam.db) enables fast searching but is rebuildable
+
+#### Bibliography Integration
+- **Separate but linked**: Bibliography entries live in `/bibliography/` but connect to literature notes
+- **BibTeX standard**: Use proper academic citation format
+- **Literature notes**: Create dedicated notes for papers with `[[id:UUID][Title]]` links to concepts
+- **Domain organization**: Group by research area (ML conferences, specific topics)
+
+#### Research Context
+- **Current focus**: Neurosymbolic AI, physics-informed ML, statistical mechanics in neural networks
+- **Conference tracking**: ICLR, ICML, NeurIPS papers with physics/symbolic components
+- **Cross-pollination**: Look for connections between statistical physics and symbolic reasoning
+
+#### Version Control Workflow
+- **Atomic commits**: Each logical change to knowledge structure
+- **Descriptive messages**: Explain the conceptual development, not just file changes
+- **Bibliography updates**: Separate commits for reference additions vs. note developments
+- **Branching**: Use feature branches for major research directions or literature reviews
