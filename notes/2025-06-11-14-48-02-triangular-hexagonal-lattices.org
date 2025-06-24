@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       bdc0a744-5301-4c2b-bbd4-e9f9b693195b
+:END:
+#+TITLE: Triangular/hexagonal lattices
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+12. Triangular/hexagonal lattices: For any planar network of bonds, one can define a geometrical dual by connecting the centers of neighboring plaquettes. Each bond of the dual lattice crosses a bond of the original lattice, allowing for a local mapping. Clearly, the dual of a triangular lattice is a hexagonal (or honeycomb) lattice, and vice versa.
+
+(a) Starting from a Potts model with nearest-neighbor interaction J on the triangular lattice, find the interaction parameter J_{h}(J) of the dual hexagonal lattice.
+
+(b) Note that the hexagonal lattice is bipartite, i.e. can be separated into two sublattices. In the partition function, do a partial sum over all spins in one sublattice. Show that the remaining spins form a triangular lattice with nearest-neighbor interactions \tilde{J}(J), and a three spin interaction \tilde{J}_{3}(J). (This is called the startriangle transformation.) Why is \tilde{J}_{3} absent in the Ising model?
+
+(c) Clearly, the model is not self-dual due to the additional interaction. Nonetheless, obtain the critical value such that \tilde{J}(J_{c})=J_{c}.
+
+(d) Check that \tilde{J}_{3}(J_{c})=0, i.e. while the model in general is not self-dual, it is self-dual right at criticality, leading to the exact value of J_{c}(q)!
+
+* Solution
+
+* Related Concepts

@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       2f93a70c-6794-4a37-ad85-3fc5333444c7
+:END:
+#+TITLE: Anisotropic nonlinear sigma model
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+1. Anisotropic nonlinear \(\sigma\) model: Consider unit $n$-component spins, $\vec{s}(\mathbf{x})=\left(s_{1}, \cdots, s_{n}\right)$ with $\sum_{\alpha} s_{\alpha}^{2}=1$, subject to a Hamiltonian
+
+\begin{align*}
+\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left
+[
+\frac{1}{2 T}(\nabla \vec{s})^{2}+g s_{1}^{2}\right]
+\end{align*}
+
+For $g=0$, renormalization group equations are obtained through rescaling distances by a factor $b=e^{\ell}$, and spins by a factor $\zeta=b^{y_{s}}$ with $y_{s}=-\frac{(n-1)}{4 \pi} T$, and lead to the flow equation
+
+\begin{align*}
+\frac{\mathrm{d} T}{\mathrm{~d} \ell}=-\epsilon T+\frac{(n-2)}{2 \pi} T^{2}+\mathcal{O}\left(T^{3}\right)
+\end{align*}
+
+where $\epsilon=d-2$.
+
+(a) Find the fixed point, and the thermal eigenvalue $y_{T}$.
+
+(b) Write the renormalization group equation for $g$ in the vicinity of the above fixed point, and obtain the corresponding eigenvalue $y_{g}$.
+
+(c) Sketch the phase diagram as a function of $T$ and $g$, indicating the phases, and paying careful attention to the shape of the phase boundary as $g \rightarrow 0$.
+
+* Solution
+
+* Related Concepts

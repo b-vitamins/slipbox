@@ -1,0 +1,48 @@
+:PROPERTIES:
+:ID:       08b3ad1d-e5f9-4066-a356-dcee2cca31d0
+:END:
+#+TITLE: One-dimensional gas
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+
+* Problem Statement
+
+One-dimensional gas: The transfer matrix method can also be applied to a one dimensional gas of particles with short-range interactions, as described in this problem.
+
+(a) Show that for a potential with a hard core that screens the interactions from further neighbors, the Hamiltonian for \(N\) particles can be written as
+
+\
+[
+\mathcal{H}=\sum_{i=1}^{N} \frac{p_{i}^{2}}{2 m}+\sum_{i=2}^{N} \mathcal{V}\left(x_{i}-x_{i-1}\right)\]
+
+The (indistinguishable) particles are labeled with coordinates \(\left\{x_{i}\right\}\) such that
+
+\
+[
+0 \leq x_{1} \leq x_{2} \leq \cdots \leq x_{N} \leq L\]
+
+where \(L\) is the length of the box confining the particles.
+
+(b) Write the expression for the partition function \(Z(T, N, L)\). Change variables to \(\delta_{1}=x_{1}, \delta_{2}=x_{2}-x_{1}, \cdots, \delta_{N}=x_{N}-x_{N-1}\), and carefully indicate the allowed ranges of integration and the constraints.
+
+(c) Consider the Gibbs partition function obtained from the Laplace transformation
+
+\
+[
+\mathcal{Z}(T, N, P)=\int_{0}^{\infty} \mathrm{d} L \exp (-\beta P L) Z(T, N, L)\]
+
+and by extremizing the integrand find the standard formula for \(P\) in the canonical ensemble.
+
+(d) Change variables from \(L\) to \(\delta_{N+1}=L-\sum_{i=1}^{N} \delta_{i}\), and find the expression for \(\mathcal{Z}(T, N, P)\) as a product over one-dimensional integrals over each \(\delta_{i}\).
+
+(e) At a fixed pressure \(P\), find expressions for the mean length \(L(T, N, P)\), and the density \(n=N / L(T, N, P)\) (involving ratios of integrals which should be easy to interpret).
+
+Since the expression for \(n(T, P)\) in part (e) is continuous and non-singular for any choice of potential, there is in fact no condensation transition for the one-dimensional gas. By contrast, the approximate van der Waals equation (or the mean-field treatment) incorrectly predicts such a transition.
+
+(f) For a hard sphere gas, with minimum separation \(a\) between particles, calculate the equation of state \(P(T, n)\).
+
+* Solution
+
+* Related Concepts
+

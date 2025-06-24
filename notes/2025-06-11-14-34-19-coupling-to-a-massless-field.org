@@ -1,0 +1,52 @@
+:PROPERTIES:
+:ID:       26d9c772-42f6-4f5d-9336-a64e976d375e
+:END:
+#+TITLE: Coupling to a "massless" field
+#+FILETAGS: :problem:field:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+5. Coupling to a "massless" field: Consider an \(n\)-component vector field \(\vec{m}(\mathbf{x})\) coupled to a scalar field \(A(\mathbf{x})\), through the effective Hamiltonian
+
+\begin{align*}
+\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left
+[
+\frac{K}{2}(\nabla \vec{m})^{2}+\frac{t}{2} \vec{m}^{2}+u\left(\vec{m}^{2}\right)^{2}+e^{2} \vec{m}^{2} A^{2}+\frac{L}{2}(\nabla A)^{2}\right]
+\end{align*}
+
+with \(K, L\), and \(u\) positive.
+
+(a) Show that there is a saddle point solution of the form \(\vec{m}(\mathbf{x})=\bar{m} \hat{e}_{\ell}\) and \(A(x)=0\), and find \(\bar{m}\) for \(t>0\) and \(t<0\).
+
+(b) Sketch the heat capacity \(C=\partial^{2} \ln Z / \partial t^{2}\), and discuss its singularity as \(t \rightarrow 0\) in the saddle point approximation.
+
+(c) Include fluctuations by setting
+
+\begin{align*}
+\left\{\begin{array}{l}
+\vec{m}(\mathbf{x})=\left(\bar{m}+\phi_{\ell}(\mathbf{x})\right) \hat{e}_{\ell}+\phi_{t}(\mathbf{x}) \hat{e}_{t} \\
+A(\mathbf{x})=a(\mathbf{x})
+\end{array}\right.
+\end{align*}
+
+and expanding \(\beta \mathcal{H}\) to quadratic order in \(\phi\) and \(a\).
+
+(d) Find the correlation lengths \(\xi_{\ell}\), and \(\xi_{t}\), for the longitudinal and transverse components of \(\phi\), for \(t>0\) and \(t<0\).
+
+(e) Find the correlation length \(\xi_{a}\) for the fluctuations of the scalar field \(a\), for \(t>0\) and \(t<0\).
+
+(f) Calculate the correlation function \(\langle a(\mathbf{x}) a(\mathbf{0})\rangle\) for \(t>0\).
+
+(g) Compute the correction to the saddle point free energy \(\ln Z\), from fluctuations. (You can leave the answer in the form of integrals involving \(\xi_{\ell}, \xi_{t}\), and \(\xi_{a}\).)
+
+(h) Find the fluctuation corrections to the heat capacity in (b), again leaving the answer in the form of integrals.
+
+(i) Discuss the behavior of the integrals appearing above schematically, and state their dependence on the correlation length \(\xi\), and cutoff \(\Lambda\), in different dimensions.
+
+(j) What is the critical dimension for the validity of saddle point results, and how is it modified by the coupling to the scalar field?
+
+* Solution
+
+* Related Concepts
+

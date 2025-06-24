@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(emacs:*)",
+      "Bash(git add:*)",
+      "Bash(git status)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(rg:*)",
+      "Read(notes/*.org)",
+      "Write(notes/*.org)",
+      "Edit(notes/*.org)",
+      "MultiEdit(notes/*.org)",
+      "Read(CLAUDE.md)",
+      "Write(CLAUDE.md)",
+      "Edit(CLAUDE.md)",
+      "Read(README.org)",
+      "Edit(README.org)",
+      "Read(setupfile.org)",
+      "Edit(setupfile.org)"
+    ],
+    "deny": [
+      "Bash(rm -rf /)",
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "WebFetch",
+      "WebSearch"
+    ],
+    "additionalDirectories": [],
+    "defaultMode": "allowEdits"
+  },
+  "env": {
+    "CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR": "1",
+    "BASH_DEFAULT_TIMEOUT_MS": "30000",
+    "BASH_MAX_TIMEOUT_MS": "120000",
+    "DISABLE_COST_WARNINGS": "1",
+    "DISABLE_NON_ESSENTIAL_MODEL_CALLS": "1"
+  },
+  "cleanupPeriodDays": 90,
+  "includeCoAuthoredBy": false
+}

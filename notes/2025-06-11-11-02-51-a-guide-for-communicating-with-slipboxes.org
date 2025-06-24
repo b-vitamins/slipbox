@@ -1,0 +1,746 @@
+:PROPERTIES:
+:ID:       978d8ccb-d21a-4178-b3c4-5160d036702d
+:END:
+#+TITLE: A guide for communicating with slipboxes
+#+FILETAGS: :index:
+#+SETUPFILE: ../../setupfile.org
+
+A comprehensive reference for all interactions with the Org-Roam notes management agent.
+
+* Table of Contents
+1. [[#quick-capture-scenarios][Quick Capture Scenarios]]
+2. [[#node-management-operations][Node Management Operations]]
+3. [[#linking-and-connection-discovery][Linking and Connection Discovery]]
+4. [[#content-creation-workflows][Content Creation Workflows]]
+5. [[#latex-and-mathematical-content][LaTeX and Mathematical Content]]
+6. [[#search-and-query-operations][Search and Query Operations]]
+7. [[#maintenance-and-housekeeping][Maintenance and Housekeeping]]
+8. [[#analysis-and-reporting][Analysis and Reporting]]
+9. [[#import-export-operations][Import/Export Operations]]
+10. [[#advanced-workflows][Advanced Workflows]]
+11. [[#natural-language-variations][Natural Language Variations]]
+12. [[#error-recovery][Error Recovery]]
+
+* Quick Capture Scenarios
+
+** Rough Notes \rightarrow Polished Node
+*** Phrases you can use:
+- "Create a node from these rough notes..."
+- "Here's what I learned today, make it proper..."
+- "Turn this into a concept note..."
+
+*** Example:
+#+begin_example
+You: "I have some rough notes from today's reading. Create a proper node:
+
+Attention mechanism - key insight is that instead of fixed context window, model learns what to attend to. Softmax over similarity scores gives weights. Mathematical formulation:
+
+attention(Q,K,V) = softmax(QK^T/sqrt(d_k))V
+
+This is revolutionary because it allows dynamic context. Connection to statistical mechanics - partition function analogies?"
+
+Agent: "I'll create a concept node on attention mechanisms with proper formatting."
+[Creates node with improved structure, LaTeX equations, links to existing nodes on "statistical mechanics", "softmax", and creates new index node for "attention mechanisms"]
+#+end_example
+
+** Paper Summary
+*** Phrases you can use:
+- "Create a literature note for [paper]..."
+- "Add this paper: [title] by [authors]..."
+- "I just read [paper], main points are..."
+
+*** Example:
+#+begin_example
+You: "Create a literature note for 'Neural Ordinary Differential Equations' by Chen et al., NeurIPS 2018. Main contribution: continuous-depth residual networks by parameterizing derivatives of hidden states using ODEs. Key equation: dh(t)/dt = f(h(t), t, θ)"
+
+Agent: "Creating literature note with proper citation and mathematical formatting."
+[Creates structured note with BibTeX entry, formatted equations, sections for key contributions, links to "differential equations" and "residual networks" nodes]
+#+end_example
+
+** Quick Thoughts
+*** Phrases you can use:
+- "Quick thought: ..."
+- "Fleeting note: ..."
+- "Capture this: ..."
+
+*** Example:
+#+begin_example
+You: "Quick thought: What if we applied renormalization group ideas to neural network pruning? Similar scale invariance properties..."
+
+Agent: "Creating fleeting note titled 'RG Ideas for Neural Network Pruning'"
+[Creates fleeting note with timestamp, links to "renormalization group" and "neural network pruning"]
+#+end_example
+
+** Meeting Notes
+*** Phrases you can use:
+- "Meeting notes with [person] about [topic]..."
+- "Discussion summary: ..."
+- "Collaboration notes on [project]..."
+
+*** Example:
+#+begin_example
+You: "Meeting notes with advisor: Discussed using variational methods for quantum many-body problems. Key insight - mean field approximation might work for our spin glass model. TODO: Derive mean field equations for SK model."
+
+Agent: "Creating timed fleeting note for advisor meeting."
+[Creates note with clock table, extracts TODO, links to "variational methods", "spin glass", "SK model"]
+#+end_example
+
+* Node Management Operations
+
+** Splitting Large Nodes
+*** Phrases you can use:
+- "Split [node] into atomic concepts"
+- "This node is too large, break it down"
+- "[Node] covers too much, separate it"
+
+*** Example:
+#+begin_example
+You: "The 'transformers' node has become too large. It covers architecture, training, applications, and history. Split it into atomic concepts."
+
+Agent: "Analyzing the node... I'll split it into:
+1. 'Transformer Architecture' (concept)
+2. 'Transformer Training Techniques' (concept)
+3. 'Transformer Applications' (index)
+4. 'History of Transformers' (literature)
+
+The original node will become an index linking to these."
+[Executes split, preserves all links, updates backlinks]
+#+end_example
+
+** Merging Related Nodes
+*** Phrases you can use:
+- "Merge [node1] and [node2]"
+- "These nodes overlap, combine them"
+- "Consolidate notes on [topic]"
+
+*** Example:
+#+begin_example
+You: "Merge 'gradient descent variations' and 'optimization algorithms' - they have too much overlap"
+
+Agent: "Analyzing both nodes... Creating unified 'Optimization Algorithms' node with sections for:
+- Gradient-based methods
+- Second-order methods
+- Adaptive learning rates
+Preserving all unique content and links."
+#+end_example
+
+** Node Category Migration
+*** Phrases you can use:
+- "Upgrade [fleeting note] to concept"
+- "This should be literature, not fleeting"
+- "Convert to permanent note"
+
+*** Example:
+#+begin_example
+You: "Upgrade my fleeting note about 'gradient flow in neural networks' to a proper concept note"
+
+Agent: "Analyzing fleeting note... Upgrading to concept note:
+- Adding proper mathematical formulation
+- Structuring into sections: Definition, Properties, Applications
+- Adding links to 'backpropagation', 'optimization', 'vanishing gradients'
+- Including relevant citations
+- Moving from fleeting/ to concept/ directory"
+#+end_example
+
+** Excising Content
+*** Phrases you can use:
+- "Extract the section about [topic] into its own note"
+- "Pull out the [topic] part"
+- "This section on [topic] should be separate"
+
+*** Example:
+#+begin_example
+You: "Extract the section about Noether's theorem from my 'symmetries in physics' note"
+
+Agent: "Creating new concept note 'Noether's Theorem' with the extracted content. Replacing original section with link: [[Noether's Theorem]]. Both notes now properly cross-reference."
+#+end_example
+
+* Linking and Connection Discovery
+
+** Topic-Based Link Pass
+*** Phrases you can use:
+- "Run a link pass on [topic] notes"
+- "Find missing connections in [subject]"
+- "Connect all my [topic] notes"
+
+*** Example:
+#+begin_example
+You: "Run a link pass on all my quantum mechanics notes. I think there are many missing connections."
+
+Agent: "Scanning quantum mechanics tagged notes... Found 47 potential links:
+- 'Harmonic Oscillator' should link to 'Ladder Operators'
+- 'Uncertainty Principle' missing link to 'Fourier Transform'
+- 'Quantum Tunneling' could reference 'WKB Approximation'
+[etc...]
+Shall I create these links?"
+#+end_example
+
+** Orphan Detection
+*** Phrases you can use:
+- "Find orphaned nodes"
+- "Which notes have no connections?"
+- "Show me isolated notes"
+
+*** Example:
+#+begin_example
+You: "Find all orphaned concept notes and suggest connections"
+
+Agent: "Found 8 orphaned concept nodes:
+1. 'Kolmogorov Complexity' - could link to 'Information Theory', 'Compression'
+2. 'Solitons' - relates to 'Nonlinear Dynamics', 'Wave Equations'
+[etc...]"
+#+end_example
+
+** Index/MOC Creation
+*** Phrases you can use:
+- "Create an index for [topic]"
+- "Make a map of content for [subject]"
+- "Organize all [topic] notes"
+
+*** Example:
+#+begin_example
+You: "Create an index node for all my machine learning optimization content"
+
+Agent: "Creating 'ML Optimization Index' with structure:
+- First-Order Methods
+  - Gradient Descent Variants
+  - Momentum Methods
+- Second-Order Methods
+  - Newton's Method
+  - Quasi-Newton Methods
+- Adaptive Methods
+  - Adam and Variants
+  - AdaGrad/RMSprop
+With 23 notes organized hierarchically."
+#+end_example
+
+* Content Creation Workflows
+
+** Problem Sets
+*** Phrases you can use:
+- "Create a problem note: [problem statement]"
+- "Add exercise: [description]"
+- "Problem with solution: [details]"
+
+*** Example:
+#+begin_example
+You: "Create a problem note: Prove that the time evolution operator U(t) = exp(-iHt/ℏ) is unitary when H is Hermitian."
+
+Agent: "Creating problem note with proper LaTeX formatting."
+[Creates structured problem with statement, approach using properties of Hermitian operators, detailed proof with aligned equations, links to "unitary operators", "Hermitian matrices", "time evolution"]
+#+end_example
+
+** Learning Paths
+*** Phrases you can use:
+- "Create learning path from [A] to [B]"
+- "How do I get from [basic] to [advanced]?"
+- "Learning sequence for [topic]"
+
+*** Example:
+#+begin_example
+You: "Create a learning path from 'Linear Algebra Basics' to 'Quantum State Spaces'"
+
+Agent: "Generating learning path..."
+[Creates index node with ordered sequence:
+1. Linear Algebra Basics
+2. Vector Spaces
+3. Inner Products
+4. Hilbert Spaces
+5. Operators on Hilbert Spaces
+6. Quantum State Spaces
+With brief transitions explaining connections]
+#+end_example
+
+** Concept Explanation
+*** Phrases you can use:
+- "Explain [concept] and create a note"
+- "What is [topic]? Make a concept note"
+- "Create comprehensive note on [subject]"
+
+*** Example:
+#+begin_example
+You: "Create a comprehensive concept note on the variational principle in quantum mechanics"
+
+Agent: "Creating concept note 'Variational Principle' with:
+- Mathematical formulation: ⟨ψ|H|ψ⟩/⟨ψ|ψ⟩ ≥ E₀
+- Physical interpretation
+- Applications (Hartree-Fock, etc.)
+- Proof sketch
+- Links to 'ground state', 'eigenvalues', 'approximation methods'"
+#+end_example
+
+* LaTeX and Mathematical Content
+
+** Equation Formatting
+*** Phrases you can use:
+- "Format the LaTeX in [note]"
+- "Fix math formatting in [node]"
+- "Clean up equations"
+
+*** Example:
+#+begin_example
+You: "Check and format the LaTeX in my latest quantum field theory note"
+
+Agent: "Running LaTeX formatter and linter...
+Fixed:
+- 3 missing \left \right pairs
+- Inconsistent bracket sizing
+- 2 undefined commands (adding to preamble)
+- Reformatted align environments for consistency"
+#+end_example
+
+** Equation Extraction
+*** Phrases you can use:
+- "Extract all equations from [topic]"
+- "Create equation sheet for [subject]"
+- "Collect all formulas about [topic]"
+
+*** Example:
+#+begin_example
+You: "Extract all equations from my statistical mechanics notes and create an equation reference sheet"
+
+Agent: "Found 43 equations across 12 notes. Creating reference sheet..."
+[Creates new index node with all equations, organized by topic, with links back to source notes]
+#+end_example
+
+** Theorem/Proof Structure
+*** Phrases you can use:
+- "Create theorem note: [statement]"
+- "Add proof for [theorem]"
+- "Formalize [mathematical claim]"
+
+*** Example:
+#+begin_example
+You: "Create theorem note: Every finite-dimensional inner product space is isomorphic to ℂⁿ with standard inner product"
+
+Agent: "Creating formal theorem note with:
+- Theorem statement (highlighted)
+- Prerequisites/definitions
+- Proof structure with steps
+- Corollaries
+- Examples
+- Links to 'inner product spaces', 'isomorphism', 'finite-dimensional spaces'"
+#+end_example
+
+* Search and Query Operations
+
+** Content Similarity
+*** Phrases you can use:
+- "Find notes similar to [node]"
+- "What's related to [topic]?"
+- "Show me notes like [node]"
+
+*** Example:
+#+begin_example
+You: "Find all notes similar to my 'renormalization group' concept"
+
+Agent: "Found similar notes based on content and links:
+1. 'Scale Invariance' (85% similarity)
+2. 'Critical Phenomena' (78% similarity)
+3. 'Wilsonian RG' (92% similarity)
+4. 'Coarse Graining' (71% similarity)"
+#+end_example
+
+** Tag-Based Search
+*** Phrases you can use:
+- "Show all [tag] notes"
+- "List notes tagged [tag1] and [tag2]"
+- "Find [type] notes from [date range]"
+
+*** Example:
+#+begin_example
+You: "Show all :quantum: :algorithm: notes from last month"
+
+Agent: "Found 7 notes matching criteria:
+1. 'Quantum Phase Estimation' (2024-11-15)
+2. 'Grover's Algorithm Applications' (2024-11-18)
+[etc...]"
+#+end_example
+
+** Citation Search
+*** Phrases you can use:
+- "Which notes cite [author]?"
+- "Find all references to [paper]"
+- "Papers from [conference/journal]"
+
+*** Example:
+#+begin_example
+You: "Which notes reference Feynman's work?"
+
+Agent: "Found 12 notes referencing Feynman:
+- 'Path Integral Formulation' (cites Feynman 1948)
+- 'QED Development' (multiple Feynman papers)
+- 'Feynman Diagrams' (primary source)
+[etc...]"
+#+end_example
+
+* Maintenance and Housekeeping
+
+** Daily Workflow
+*** Phrases you can use:
+- "Start my daily workflow"
+- "What needs attention today?"
+- "Daily note and review"
+
+*** Example:
+#+begin_example
+You: "Start my daily note and show me what needs review"
+
+Agent: "Created daily note for 2024-11-20. 
+Notes needing review:
+- 3 fleeting notes older than 7 days
+- 2 literature notes marked :draft:
+- 5 orphaned concept notes
+Today's agenda pulled from your calendar: Paper review meeting at 2 PM"
+#+end_example
+
+** Weekly Maintenance
+*** Phrases you can use:
+- "Run weekly maintenance"
+- "Weekly cleanup"
+- "What needs organizing?"
+
+*** Example:
+#+begin_example
+You: "Run weekly maintenance tasks"
+
+Agent: "Executing weekly maintenance:
+✓ Archived 12 fleeting notes older than 30 days
+✓ Updated 3 index nodes with new entries
+✓ Found 8 potential link connections
+✓ Identified 2 stub notes needing expansion
+✓ Generated weekly statistics report
+! 4 notes have TODO items pending"
+#+end_example
+
+** Quality Improvement
+*** Phrases you can use:
+- "Find notes that need improvement"
+- "Which notes are still drafts?"
+- "Quality check my recent notes"
+
+*** Example:
+#+begin_example
+You: "Find concept notes that need more work"
+
+Agent: "Found concept notes needing improvement:
+1. 'Gauge Theory' - only 2 paragraphs, no equations
+2. 'Entanglement Entropy' - missing examples
+3. 'Berry Phase' - has TODO for geometric interpretation
+4. 'Spin Glass' - references not properly formatted"
+#+end_example
+
+* Analysis and Reporting
+
+** Progress Reports
+*** Phrases you can use:
+- "Generate [period] progress report"
+- "What did I work on this [week/month]?"
+- "Summarize my [topic] research"
+
+*** Example:
+#+begin_example
+You: "Generate a monthly progress report on my quantum computing research"
+
+Agent: "Analyzing notes from past month...
+Report:
+- Created: 23 concept notes, 15 literature notes, 8 problems
+- Most connected topic: 'Quantum Algorithms' (18 links)
+- Time tracked: 34.5 hours on quantum computing notes
+- Key themes: Error correction, NISQ algorithms, Variational methods
+- Suggested next topics based on gaps: Topological quantum computing"
+#+end_example
+
+** Knowledge Gaps
+*** Phrases you can use:
+- "What am I missing in [topic]?"
+- "Find gaps in my [subject] knowledge"
+- "What should I study next?"
+
+*** Example:
+#+begin_example
+You: "Analyze my machine learning notes for knowledge gaps"
+
+Agent: "Knowledge gap analysis:
+- Strong coverage: Supervised learning, neural networks
+- Moderate coverage: Unsupervised learning, optimization
+- Gaps identified:
+  - Reinforcement learning (only 2 notes)
+  - Probabilistic graphical models (none)
+  - Kernel methods (1 fleeting note)
+  - Recent transformer variants (last note: 2023)"
+#+end_example
+
+** Time Analysis
+*** Phrases you can use:
+- "How much time on [topic]?"
+- "Time tracking report"
+- "Where did my time go this [period]?"
+
+*** Example:
+#+begin_example
+You: "Show time analysis for last two weeks"
+
+Agent: "Time tracking analysis (14 days):
+- Total tracked: 67.5 hours
+- By category:
+  - Literature review: 24h (35%)
+  - Concept development: 18h (27%)
+  - Problem solving: 15h (22%)
+  - Organization/linking: 10.5h (16%)
+- Most time: 'Quantum Error Correction' (8.5h)
+- Daily average: 4.8h"
+#+end_example
+
+* Import/Export Operations
+
+** Paper Import
+*** Phrases you can use:
+- "Import [paper] with metadata"
+- "Add papers from [conference]"
+- "Bulk import bibliography"
+
+*** Example:
+#+begin_example
+You: "Import all quantum computing papers from arXiv this week"
+
+Agent: "Fetching arXiv quantum computing papers...
+Found 23 papers. Creating literature notes with:
+- Full citations
+- Abstracts
+- Key equations extracted
+- Auto-detected topic links
+- arXiv IDs and links
+Import complete."
+#+end_example
+
+** Export to LaTeX
+*** Phrases you can use:
+- "Export [topic] notes to LaTeX"
+- "Create PDF of [subject]"
+- "Generate thesis chapter from notes"
+
+*** Example:
+#+begin_example
+You: "Export all my 'quantum algorithms' notes to a LaTeX document"
+
+Agent: "Generating LaTeX document:
+- Organizing 15 notes hierarchically
+- Converting Org syntax to LaTeX
+- Ensuring equation numbering consistency
+- Creating bibliography from citations
+- Output: quantum_algorithms.tex (45 pages)
+- Includes table of contents and index"
+#+end_example
+
+** Presentation Generation
+*** Phrases you can use:
+- "Create slides from [notes]"
+- "Presentation on [topic]"
+- "Beamer slides for [talk]"
+
+*** Example:
+#+begin_example
+You: "Create presentation slides on neural ODEs from my notes"
+
+Agent: "Generating Beamer presentation:
+- Title slide with abstract
+- 15 content slides organized as:
+  - Introduction (3 slides)
+  - Mathematical Framework (4 slides)
+  - Applications (5 slides)
+  - Results (3 slides)
+- Extracted key figures and equations
+- Speaker notes from personal commentary"
+#+end_example
+
+* Advanced Workflows
+
+** Research Project Management
+*** Phrases you can use:
+- "Set up project: [name]"
+- "Track progress on [project]"
+- "Create project dashboard"
+
+*** Example:
+#+begin_example
+You: "Set up new research project: Quantum Machine Learning Benchmarks"
+
+Agent: "Creating project structure:
+- Project index node with objectives
+- Literature review section
+- Experimental notes template
+- Results tracking
+- Meeting notes folder
+- TODO tracking system
+- Milestone definitions
+- Weekly progress template"
+#+end_example
+
+** Collaborative Notes
+*** Phrases you can use:
+- "Prepare notes for sharing with [person]"
+- "Create collaboration space for [project]"
+- "Export for team review"
+
+*** Example:
+#+begin_example
+You: "Prepare my spin glass notes for collaboration with the experimental team"
+
+Agent: "Creating collaboration package:
+- Exported relevant notes (12 total)
+- Removed personal comments
+- Added glossary of terms
+- Created overview document
+- Highlighted open questions
+- Generated PDF and HTML versions
+- Created shared bibliography"
+#+end_example
+
+** Automated Workflows
+*** Phrases you can use:
+- "Set up automation for [task]"
+- "Create recurring [action]"
+- "Automate [workflow]"
+
+*** Example:
+#+begin_example
+You: "Set up automated weekly literature scan for quantum error correction"
+
+Agent: "Creating automated workflow:
+- Weekly arXiv search script
+- Auto-create literature notes for relevant papers
+- Add to 'Papers to Read' index
+- Email digest of new additions
+- Update statistics dashboard
+Automation configured for Sunday nights."
+#+end_example
+
+* Natural Language Variations
+
+** Formal Academic Style
+- "Please create a comprehensive literature note for..."
+- "Kindly perform a systematic analysis of..."
+- "Generate a formal report regarding..."
+
+** Casual Style
+- "Make a note about..."
+- "Quick capture this..."
+- "Can you organize my stuff on..."
+
+** Terse Commands
+- "Split quantum-mechanics"
+- "Link QFT notes"
+- "Export ML PDF"
+
+** Verbose Descriptions
+- "I've been thinking about how the renormalization group connects to deep learning and I have all these scattered thoughts across different notes. Could you help me organize them into a coherent structure?"
+
+** Question Format
+- "How do I connect my statistical mechanics and information theory notes?"
+- "What's missing from my understanding of gauge theory?"
+- "Can you find patterns in my recent reading?"
+
+* Error Recovery
+
+** Failed Operations
+*** Situation: Node creation failed
+#+begin_example
+You: "Why did the node creation fail?"
+
+Agent: "The node creation failed because:
+- Invalid title characters (contains '/')
+- Suggested fix: Use 'and' instead of '/'
+Shall I retry with corrected title?"
+#+end_example
+
+** Broken Links
+*** Situation: Links pointing to non-existent nodes
+#+begin_example
+You: "Fix broken links in my quantum notes"
+
+Agent: "Found 3 broken links:
+- 'Quantum Decoherence' -> suggests 'Decoherence Theory'
+- 'Bell's Theorem' -> no match, create new node?
+- 'EPR Paradox' -> found 'Einstein-Podolsky-Rosen Paradox'
+Shall I fix these automatically?"
+#+end_example
+
+** Merge Conflicts
+*** Situation: Git conflicts in notes
+#+begin_example
+You: "Help resolve conflicts in synchronization"
+
+Agent: "Found conflicts in 2 files:
+- 'tensor-networks.org': Different equation added
+- 'machine-learning-index.org': Different links added
+Showing both versions for manual resolution..."
+#+end_example
+
+** Recovery from Corruption
+*** Situation: Malformed org files
+#+begin_example
+You: "Some notes seem corrupted after system crash"
+
+Agent: "Scanning for corrupted files...
+Found issues:
+- 'quantum-computing.org': Incomplete PROPERTIES drawer
+- 'neural-nets.org': Unclosed LaTeX environment
+- 'daily-2024-11-20.org': Truncated file
+Attempting automatic repair from backups..."
+#+end_example
+
+* Best Practices Summary
+
+** For Quick Capture
+- Be concise but include key ideas
+- Mention connections you see
+- Don't worry about formatting
+- Include rough equations
+
+** For Organization
+- Describe what's wrong (too big, messy, etc.)
+- Let the agent suggest structure
+- Review before confirming major changes
+
+** For Learning
+- Ask for paths between concepts
+- Request missing prerequisites
+- Ask for practice problems
+
+** For Maintenance
+- Run weekly maintenance regularly
+- Address orphaned notes promptly
+- Keep fleeting notes temporary
+
+** For Collaboration
+- Specify audience expertise level
+- Indicate what should remain private
+- Request appropriate export formats
+
+* Quick Reference Card
+
+** Most Common Commands
+#+begin_example
+"Create note: [content]"          -> Smart note creation
+"Find similar to [node]"          -> Similarity search
+"Link [topic] notes"              -> Connection discovery
+"Split [node]"                    -> Break into atomic notes
+"Daily"                          -> Start daily workflow
+"Export [topic] LaTeX"           -> Generate LaTeX document
+"Time report"                    -> Show time tracking
+"Find gaps in [topic]"           -> Knowledge gap analysis
+"Format LaTeX in [node]"         -> Fix mathematical formatting
+"Weekly maintenance"             -> Run housekeeping tasks
+#+end_example
+
+** Emergency Commands
+#+begin_example
+"Fix broken links"               -> Repair link integrity
+"Check note health"              -> Find corrupted notes
+"Restore from backup"            -> Recovery operation
+"Show recent changes"            -> Review modifications
+"Undo last operation"            -> Revert changes
+#+end_example
+
+Remember: The agent understands context and variations. When in doubt, just describe what you want in natural language!

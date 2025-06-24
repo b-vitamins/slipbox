@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       58eb890f-14e1-41bd-ba8e-b7e99037a263
+:END:
+#+TITLE: Melting
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+9. Melting: The elastic energy cost of a deformation $u_{i}(\mathbf{x})$, of an isotropic lattice is
+
+\begin{align*}
+-\beta \mathcal{H}=\frac{1}{2} \int \mathrm{d}^{d} \mathbf{x}\left
+[
+2 \mu u_{i j} u_{i j}+\lambda u_{i i} u_{j j}\right]
+\end{align*}
+
+where $u_{i j}(\mathbf{x})=\left(\partial_{i} u_{j}+\partial_{j} u_{i}\right) / 2$ is the strain tensor.
+
+(a) Express the energy in terms of the Fourier transforms $u_{i}(\mathbf{q})$, and find the normal modes of vibrations.
+
+(b) Calculate the expectation value $\left\langle u_{i}(\mathbf{q}) u_{j}\left(\mathbf{q}^{\prime}\right)\right\rangle$.
+
+(c) Assuming a short-distance cutoff of the order of the lattice spacing $a$, calculate $U^{2}(\mathbf{x}) \equiv\left\langle(\vec{u}(\mathbf{x})-\vec{u}(\mathbf{0}))^{2}\right\rangle$.
+
+(d) The (heuristic) Lindemann criterion states that the lattice melts when deformations grow to a fraction of the lattice spacing, i.e. for $\lim _{|\mathbf{x}| \rightarrow \infty} U(\mathbf{x})=c_{L} a$. Assuming that $\mu=\hat{\mu} /\left(k_{\mathrm{B}} T\right)$ and $\lambda=\hat{\lambda} /\left(k_{\mathrm{B}} T\right)$, use the above criterion to calculate the melting temperature $T_{m}$. Comment on the behavior of $T_{m}$ as a function of dimension $d$.
+
+* Solution
+
+* Related Concepts

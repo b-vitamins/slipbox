@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       6cda7526-f3f8-47f6-b17f-efb81ed24040
+:END:
+#+TITLE: XY model
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+
+* Problem Statement
+
+XY model: Consider two component unit spins \(\vec{s}_{i}=\left(\cos \theta_{i}, \sin \theta_{i}\right)\) in one dimension, with the nearest-neighbor interactions described by \(-\beta \mathcal{H}=K \sum_{i=1}^{N} \vec{s}_{i} \cdot s_{i+1}^{\overrightarrow{1}}\).
+
+(a) Write down the transfer matrix \(\left\langle\theta|T| \theta^{\prime}\right\rangle\), and show that it can be diagonalized with eigenvectors \(f_{m}(\theta) \propto \mathrm{e}^{\mathrm{i} m \theta}\) for integer \(m\).
+
+(b) Calulate the free energy per site, and comment on the behavior of the heat capacity as \(T \propto K^{-1} \rightarrow 0\).
+(c) Find the correlation length \(\xi\), and note its behavior as \(K \rightarrow \infty\).
+
+* Solution
+
+* Related Concepts
+

@@ -1,0 +1,56 @@
+:PROPERTIES:
+:ID:       15963c6b-99ac-4135-a56d-f8a23d03382a
+:END:
+#+TITLE: Random magnetic fields
+#+FILETAGS: :problem:disorder:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+6. Random magnetic fields: Consider the Hamiltonian
+
+\begin{align*}
+\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left
+[
+\frac{K}{2}(\nabla m)^{2}+\frac{t}{2} m^{2}+u m^{4}-h(\mathbf{x}) m(\mathbf{x})\right]
+\end{align*}
+
+where \(m(\mathbf{x})\) and \(h(\mathbf{x})\) are scalar fields, and \(u>0\). The random magnetic field \(h(\mathbf{x})\) results from frozen (quenched) impurities that are independently distributed in space. For simplicity \(h(\mathbf{x})\) is assumed to be an independent Gaussian variable at each point \(\mathbf{x}\), such that
+
+\begin{align*}
+\overline{h(\mathbf{x})}=0, \quad \text { and } \quad \overline{h(\mathbf{x}) h\left(\mathbf{x}^{\prime}\right)}=\Delta \delta^{d}\left(\mathbf{x}-\mathbf{x}^{\prime}\right) \tag{1}
+\end{align*}
+where the over-line indicates (quench) averaging over all values of the random fields. The above equation implies that the Fourier transformed random field \(h(\mathbf{q})\) satisfies
+
+\begin{align*}
+\overline{h(\mathbf{q})}=0, \quad \text { and } \quad \overline{h(\mathbf{q}) h\left(\mathbf{q}^{\prime}\right)}=\Delta(2 \pi)^{d} \delta^{d}\left(\mathbf{q}+\mathbf{q}^{\prime}\right) \tag{2}
+\end{align*}
+
+(a) Calculate the quench averaged free energy, \(\overline{f_{\mathrm{sp}}}=\overline{\min \{\Psi(m)\}_{m}}\), assuming a saddle point solution with uniform magnetization \(m(\mathbf{x})=m\). (Note that with this assumption, the random field disappears as a result of averaging and has no effect at this stage.)
+
+(b) Include fluctuations by setting \(m(\mathbf{x})=\bar{m}+\phi(\mathbf{x})\), and expanding \(\beta \mathcal{H}\) to second order in \(\phi\).
+
+(c) Express the energy cost of the above fluctuations in terms of the Fourier modes \(\phi(\mathbf{q})\).
+
+(d) Calculate the mean \(\langle\phi(\mathbf{q})\rangle\), and the variance \(\left\langle|\phi(\mathbf{q})|^{2}\right\rangle_{c}\), where \(\langle\cdots\rangle\) denotes the usual thermal expectation value for a fixed \(h(\mathbf{q})\).
+
+(e) Use the above results, in conjunction with Eq. (2), to calculate the quench averaged scattering line shape \(S(q)=\overline{\left\langle|\phi(\mathbf{q})|^{2}\right\rangle}\).
+
+(f) Perform the Gaussian integrals over \(\phi(\mathbf{q})\) to calculate the fluctuation corrections, \(\delta f
+[
+h(\mathbf{q})]\), to the free energy.
+
+\begin{align*}
+\left(\text { Reminder : } \int_{-\infty}^{\infty} \mathrm{d} \phi \mathrm{d} \phi^{*} \exp \left(-\frac{K}{2}|\phi|^{2}+h^{*} \phi+h \phi^{*}\right)=\frac{2 \pi}{K} \exp \left(\frac{|h|^{2}}{2 K}\right) .\right)
+\end{align*}
+
+(g) Use Eq. (2) to calculate the corrections due to the fluctuations in the previous part to the quench averaged free energy \(\bar{f}\). (Leave the corrections in the form of two integrals.)
+
+(h) Estimate the singular \(t\) dependence of the integrals obtained in the fluctuation corrections to the free energy.
+
+(i) Find the upper critical dimension, \(d_{u}\), for the validity of saddle point critical behavior.
+
+* Solution
+
+* Related Concepts
+

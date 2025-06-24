@@ -1,0 +1,53 @@
+:PROPERTIES:
+:ID:       7e44b24f-e97b-461a-9250-ab24c07b1062
+:END:
+#+TITLE: Superfluid He^4-He^3 mixtures
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+4. Superfluid \(\mathrm{He}^{4}-\mathrm{He}^{3}\) mixtures: The superfluid \(\mathrm{He}^{4}\) order parameter is a complex number \(\psi(\mathbf{x})\). In the presence of a concentration \(c(\mathbf{x})\) of \(\mathrm{He}^{3}\) impurities, the system has the following Landau-Ginzburg energy
+
+\begin{align*}
+\beta \mathcal{H}
+[
+\psi, c]=\int \mathrm{d}^{d} \mathbf{x}\left
+[
+\frac{K}{2}|\nabla \psi|^{2}+\frac{t}{2}|\psi|^{2}+u|\psi|^{4}+v|\psi|^{6}+\frac{c(\mathbf{x})^{2}}{2 \sigma^{2}}-\gamma c(\mathbf{x})|\psi|^{2}\right]
+\end{align*}
+
+with positive \(K, u\) and \(v\).
+
+(a) Integrate out the \(\mathrm{He}^{3}\) concentrations to find the effective Hamiltonian, \(\beta \mathcal{H}_{\text {eff }}
+[
+\psi]\), for the superfluid order parameter, given by
+
+\begin{align*}
+Z=\int \mathcal{D} \psi \exp \left(-\beta \mathcal{H}_{\mathrm{eff}}
+[
+\psi]\right) \equiv \int \mathcal{D} \psi \mathcal{D} c \exp (-\beta \mathcal{H}
+[
+\psi, c])
+\end{align*}
+
+(b) Obtain the phase diagram for \(\beta \mathcal{H}_{\text {eff }}
+[
+\psi]\) using a saddle point approximation. Find the limiting value of \(\sigma^{*}\) above which the phase transition becomes discontinuous.
+
+(c) The discontinuous transition is accompanied by a jump in the magnitude of \(\psi\). How does this jump vanish as \(\sigma \rightarrow \sigma^{*}\) ?
+
+(d) Show that the discontinuous transition is accompanied by a jump in \(\mathrm{He}^{3}\) concentration.
+
+(e) Sketch the phase boundary in the \((t, \sigma)\) coordinates, and indicate how its two segments join at \(\sigma^{*}\).
+(f) Going back to the original joint probability for the fields \(c(\mathbf{x})\) and \(\Psi(\mathbf{x})\), show that \(\left\langle c(\mathbf{x})-\gamma \sigma^{2}|\Psi(\mathbf{x})|^{2}\right\rangle=0\).
+
+(g) Show that \(\langle c(\mathbf{x}) c(\mathbf{y})\rangle=\gamma^{2} \sigma^{4}\left\langle|\Psi(\mathbf{x})|^{2}|\Psi(\mathbf{y})|^{2}\right\rangle\), for \(\mathbf{x} \neq \mathbf{y}\).
+
+(h) Qualitatively discuss how \(\langle c(\mathbf{x}) c(0)\rangle\) decays with \(x=|\mathbf{x}|\) in the disordered phase.
+
+(i) Qualitatively discuss how \(\langle c(\mathbf{x}) c(0)\rangle\) decays to its asymptotic value in the ordered phase.
+
+* Solution
+
+* Related Concepts

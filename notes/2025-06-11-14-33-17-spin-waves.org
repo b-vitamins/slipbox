@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       55016535-36c8-4fe1-963e-c86b760aa563
+:END:
+#+TITLE: Spin Waves
+#+FILETAGS: :problem:statmech:magnetism:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+1. Spin waves: In the XY model of \(n=2\) magnetism, a unit vector \(\vec{s}=\left(s_{x}, s_{y}\right)\) (with \(s_{x}^{2}+s_{y}^{2}=1\) ) is placed on each site of a \(d\)-dimensional lattice. There is an interaction that tends to keep nearest-neighbors parallel, i.e. a Hamiltonian
+
+\begin{align*}
+-\beta \mathcal{H}=K \sum_{\langle i j\rangle} \vec{s}_{i} \cdot \vec{s}_{j}
+\end{align*}
+
+The notation \(\langle i j\rangle\) is conventionally used to indicate summing over all nearestneighbor pairs \((i, j)\).
+
+(a) Rewrite the partition function \(Z=\int \prod_{i} \mathrm{~d} \vec{s}_{i} \exp (-\beta \mathcal{H})\), as an integral over the set of angles \(\left\{\theta_{i}\right\}\) between the spins \(\left\{\vec{s}_{i}\right\}\) and some arbitrary axis.
+
+(b) At low temperatures ( \(K \gg 1\) ), the angles \(\left\{\theta_{i}\right\}\) vary slowly from site to site. In this case expand \(-\beta \mathcal{H}\) to get a quadratic form in \(\left\{\theta_{i}\right\}\).
+
+(c) For \(d=1\), consider \(L\) sites with periodic boundary conditions (i.e. forming a closed chain). Find the normal modes \(\theta_{q}\) that diagonalize the quadratic form (by Fourier transformation), and the corresponding eigenvalues \(K(q)\). Pay careful attention to whether the modes are real or complex, and to the allowed values of \(q\).
+
+(d) Generalize the results from the previous part to a \(d\)-dimensional simple cubic lattice with periodic boundary conditions.
+
+(e) Calculate the contribution of these modes to the free energy and heat capacity. (Evaluate the classical partition function, i.e. do not quantize the modes.)
+
+(f) Find an expression for \(\left\langle\vec{s}_{0} \cdot \vec{s}_{\mathbf{x}}\right\rangle=\Re\left\langle\exp \left
+[
+\mathrm{i} \theta_{\mathbf{x}}-i \theta_{0}\right]\right\rangle\) by adding contributions from different Fourier modes. Convince yourself that for \(|\mathbf{x}| \rightarrow \infty\), only \(\mathbf{q} \rightarrow \mathbf{0}\) modes contribute appreciably to this expression, and hence calculate the asymptotic limit.
+
+(g) Calculate the transverse susceptibility from \(\chi_{t} \propto \int \mathrm{d}^{d} \mathbf{x}\left\langle\vec{s}_{0} \cdot \vec{s}_{\mathbf{x}}\right\rangle_{c}\). How does it depend on the system size \(L\) ?
+
+(h) In \(d=2\), show that \(\chi_{t}\) only diverges for \(K\) larger than a critical value \(K_{c}=1 /(4 \pi)\).
+
+
+* Solution
+
+* Related Concepts
+

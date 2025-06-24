@@ -1,0 +1,186 @@
+:PROPERTIES:
+:ID:       22289a8a-bfde-4859-8036-9317e49098d4
+:END:
+#+TITLE: Part 1 Mathematical Scaffolding - Binary to Continuous Extension
+#+FILETAGS: :concept:mathematical-physics:spherical-model:random-matrix-theory:
+#+SETUPFILE: ../../setupfile.org
+
+* Building on Strategy
+Per [[id:c9d58779-bb09-4182-b392-226ea8f6e20d][the modernization plan]], Phase 1 requires extending binary spins to continuous variables.
+
+* Prompt
+Mathematical Scaffolding for Phase 1 - Continuous Extension
+
+I need to execute Phase 1 of our transformation plan: generalizing our DBM theory to continuous variables. Help me create a detailed mathematical roadmap.
+Context: Our current theory analyzes binary spins \(\sigma \in \{\pm 1\}\) in a DBM using replica/saddle-point methods, yielding ISC scaling laws and \(\mathcal{O}(L)\) architecture gradients. We need to extend this to continuous architectures relevant for modern ML.
+Part 1: Choose the Right Continuous Model
+We have several options:
+
+Unconstrained Gaussian spins
+Spherical constraint (\(\sum \sigma_i^2 = N\) per layer)
+Bounded continuous [-1, 1]
+Something else?
+
+For the most promising choice(s), explain:
+
+Why this model best bridges to modern architectures
+What physical/mathematical properties we preserve vs. lose
+How it maps to actual neural network components
+
+Part 2: Critical Mathematical Steps
+For your recommended approach, outline:
+
+How to modify the energy function \(H\)
+What replaces "single-spin-flip stability" for continuous variables
+Key integrals that replace our error function expressions
+Where the main technical difficulties will arise
+What simplifying assumptions might help initially
+
+Part 3: Preserving the Key Results
+Show how to maintain our three core contributions:
+
+The width-ratio scaling regimes (\(\gamma < 1\), = 1, > 1)
+The \(\mathcal{O}(L)\) envelope theorem for gradients
+A well-defined "complexity" measure
+
+What mathematical structures must remain intact? What can change?
+Part 4: Derivation Checkpoints
+List 5-7 intermediate results I should verify along the way to ensure the derivation is on track. For each checkpoint:
+
+What equation/result to check
+Why it's a good sanity test
+What it should reduce to in the binary limit
+
+Part 5: Connection Points
+Where specifically in our DBM derivation (appendix sections) will the modifications occur? Identify:
+
+Equations that stay identical
+Equations needing minor modification
+Sections requiring complete rework
+
+Part 6: Mathematical Techniques & Tools
+What mathematical methods/techniques will I need to master or review for this extension? For example:
+
+Specific types of integrals or transforms
+Statistical mechanics techniques beyond what we used
+Tools from random matrix theory
+Methods for handling constrained continuous variables
+Approximation techniques for intractable integrals
+
+Just name the approaches/methods - I can look up the details myself.
+Part 7: Minimal Working Example
+Sketch the simplest non-trivial case that would:
+
+Demonstrate the continuous extension works
+Be analytically tractable
+Connect to something practitioners recognize
+
+Think of this as creating a mathematical proof-of-concept before tackling the full general case.
+I'm looking for enough detail to start writing mathematics right after your response, with clear warnings about technical pitfalls and validation checks along the way.
+
+* Response
+
+** Phase 1 Roadmap – From Binary DBM to Continuous Hierarchical Energy Models
+
+*** Part 1 | Selecting the Continuous Spin Representation
+
+| Candidate | Pros for modern ML | Cons / Lost properties | Natural NN analogue |
+|-----------|-------------------|------------------------|---------------------|
+| *(A) Gaussian unconstrained* \(\sigma_{i\ell} \sim \mathbb{R}\) | Algebra closes: Gaussian integrals remain analytic; mirrors *pre-activation* distributions in wide-layer limit (GPT-/ViT-style mean-field analyses). | No global energy bound \(\Rightarrow\) landscape un-normalized unless additional confining term added. | Residual streams, MLP activations before nonlinearities. |
+| *(B) Spherical* \(\sum_{i=1}^{N_\ell} \sigma_{i\ell}^{2}=N_\ell\) | Preserves scale; prevents energy runaway; classic in spin-glass theory (Sherrington-Kirkpatrick continuous). | Requires Lagrange multiplier per layer; integrals slightly more involved. | Layer-normalized activations (norm-fixed). |
+| *(C) Box-constrained* \(\sigma_{i\ell} \in [-1,1]\) | Closest to \tanh{} / sigmoid saturation. | Hard constraints complicate path integral; no analytic HS transform. | Post-activation clamped units. |
+
+*Recommendation:* start with *(B) spherical variables*:
+- Gives a *bounded* landscape like binary spins, avoids divergent integrals of (A).
+- Still permits Gaussian HS decoupling after introducing per-layer Lagrange multipliers \(\lambda_\ell\).
+- Easily relaxed later to (A) by letting multipliers \(\to 0\) or to practical units by adding weak quartic confining terms.
+
+*** Part 2 | Modifying the Mathematical Machinery
+
+| Step | Binary formula | Continuous-spherical replacement | Comments |
+|------|---------------|----------------------------------|----------|
+| *Energy* | \(H=-\sum_{\ell} \sigma_{\ell}^\top J_{\ell} \sigma_{\ell+1}\) | Same bilinear term *plus* per-layer constraint \(\frac{\lambda_\ell}{2}(\sigma_{\ell}^\top \sigma_{\ell}-N_\ell)\). | \(\lambda_\ell\) integrated out at saddle. |
+| *Local-minimum condition* | "flip any single spin \(\uparrow E\)" | Positive definiteness of layer-wise *projected Hessian*: all eigenvalues of block-diagonal Hessian \(\partial^2 H/\partial \sigma_{\ell}^2\) non-negative. | Equivalent to requiring each effective field aligns with spin *and* has magnitude below Lagrange multiplier. |
+| *Counting minima* | Half-line integral \(\to \operatorname{erf}\) | Integrate Gaussian over region where Hessian \(\geq 0\) \Rightarrow determinant factors \(\to \det(\lambda_\ell I - J_{\ell-1}^\top J_{\ell-1} - J_{\ell} J_{\ell}^\top)\). Leads to \(\log\det\) instead of \operatorname{erf}. |
+| *HS decoupling* | Scalar HS per link | Identical: bilinear in Gaussians; now vectors are continuous but coupling is still quadratic. |
+| *Difficulties* | — | Evaluating joint distribution of Hessian eigenvalues; enforcing sphere constraint. |
+| *Initial simplification* | — | Large-\(N\) *annealed* approximation: replace \(\log\det\) by \(\operatorname{tr} \log\) using Marčenko–Pastur spectrum of random Wishart blocks (random-matrix input). |
+
+*** Part 3 | Maintaining the Three Core Contributions
+
+| Target result | Must remain intact | How to keep it | What can vary |
+|---------------|--------------------|---------------|---------------|
+| *(i) \(\gamma\)-regime phase diagram* | Dependence on \(\sqrt{\alpha_\ell \alpha_{\ell+1}}\) only. | Wishart spectral radius scales with same geometric width ratios \Rightarrow plateau / linear / exponential will reappear. | Numeric prefactors (e.g., \(g_\star\)) change. |
+| *(ii) \(\mathcal{O}(L)\) envelope gradients* | Objective separable over layers + nearest-neighbour links. | After spherical saddle, complexity \(C\) remains *additive in layers* minus *pairwise products*, so \(\partial C/\partial \alpha_\ell\) still depends on local terms only. | Gradient formula now involves \(\log\det\) derivatives instead of \operatorname{erf}-derivatives. |
+| *(iii) Complexity metric* | Extensive \(\log\)-count of stable minima. | Use Bray-Dean formula: \(\Sigma = N^{-1} \langle \ln \mathcal{N}_{\min} \rangle\). | Interpretation now "continuous critical-point entropy" instead of IS count. |
+
+*** Part 4 | Seven Derivation Checkpoints
+
+| # | Checkpoint | Sanity reason | Binary-limit reduction |
+|---|------------|--------------|------------------------|
+| 1 | Derive partition function with spherical constraint and show *factorisation into layer-pair contributions*. | Confirms additivity \Rightarrow gradients remain \(\mathcal{O}(L)\). | Should collapse to Eq. (28) integrand when \(\lambda_\ell \to \infty\) (freezing spins). |
+| 2 | Saddle equation for each \(\lambda_\ell\): \(\langle \sigma_\ell^2 \rangle = N_\ell\). | Ensures constraint holds self-consistently. | For binary spins variance is trivially 1. |
+| 3 | Expression for Hessian block eigenvalue distribution matches Marčenko–Pastur edge \((1 \pm \sqrt{\gamma})^{2}\). | Guarantees spectral analysis uses correct RMT. | In binary case equivalent to local-field variance \(\gamma\). |
+| 4 | Complexity density \(C(\alpha)\) reduces to \(\sum g_{\text{cont}}(s_\ell) - \sqrt{\alpha_\ell \alpha_{\ell+1}} F(s_\ell, s_{\ell+1})\). | Preserves structure of Eq. (34). | As \(s \to \infty\) recovers \(g_\star\) and \(s_\star\). |
+| 5 | Show \(\partial C/\partial \alpha_\ell\) involves only \(\alpha_{\ell\pm1}\). | Confirms \(\mathcal{O}(L)\) gradient. | Matches Eq. (41) derivative form. |
+| 6 | Recover plateau/linear/exponential by taking geometric \(\alpha_\ell\) and evaluating large \(L\) asymptotics. | Validates phase diagram. | Prefactors coincide in binary limit. |
+| 7 | Numerical evaluation for small \(N\) matches Monte-Carlo enumeration of minima for Gaussian-sphere toy (\(N \leq 20\)). | Early empirical sanity. | For \(N\) small with \(\pm1\) spins should give identical counts. |
+
+*** Part 5 | Mapping to Existing Appendix
+
+| Section / Equation | Status in continuous extension |
+|--------------------|--------------------------------|
+| *§A.1–A.3 (single-site energies, \(\lambda\) integration)* | *Rewrite completely.* Replace flip condition with Hessian determinant condition; introduce \(\lambda_\ell\). |
+| *HS decoupling (§A.4)* | *Identical structure* – quadratic terms persist. |
+| *k-integrals (§A.5)* | Minor change: \(k\) remains Gaussian but with continuous source currents. |
+| *\(\lambda\) half-line integral (erf) (§A.6)* | *Full rework.* Now integrate over \(\mathbb{R}\) with sphere constraint; error-function replaced by \(\log\det\) term. |
+| *Complexity functional Eq. (34)* | Same layout but with new \(g_{\text{cont}}\) and interaction kernel \(F\). |
+| *Gradient / envelope (§A.7)* | Nearly unchanged, only derivative forms updated. |
+
+*** Part 6 | Additional Mathematical Tools to Review
+
+- Marčenko–Pastur law & free convolution – eigenvalue spectra of random Wishart matrices.
+- Bray–Dean (2007) complexity functional for continuous spin glasses.
+- Legendre transform & Lagrange multipliers under spherical constraints.
+- Replica calculation for \(\log\det\) of shifted random matrices.
+- Steepest-descent with block-diagonal saddle (continuous order parameters).
+- Kac–Rice formula for counting minima in continuous fields (for cross-check).
+- Talagrand concentration bounds to justify annealed vs. quenched complexity equality (optional).
+
+*** Part 7 | Minimal Working Example (Analytical Proof-of-Concept)
+
+*Model:* two-layer spherical Boltzmann machine (continuous RBM).
+- Variables \(\sigma_{0} \in \mathbb{R}^{N_0}\), \(\sigma_{1} \in \mathbb{R}^{N_1}\) with \(\|\sigma_{0}\|^{2}=N_0\), \(\|\sigma_{1}\|^{2}=N_1\).
+- Energy \[H=-\sigma_0^{\top} J \sigma_1 + \frac{\lambda_0}{2}(\|\sigma_0\|^{2}-N_0) + \frac{\lambda_1}{2}(\|\sigma_1\|^{2}-N_1)\]
+- \(J_{ij} \sim \mathcal{N}(0, J^{2}/N)\) with \(N=\sqrt{N_0 N_1}\)
+
+*Why:*
+- Analytically tractable: Hessian reduces to \(2 \times 2\) blocks; complexity reduces to integrating a Marčenko–Pastur edge; can be solved in \(\leq 3\) pages.
+- Practitioners recognise this as *latent–visible coupling* similar to a single transformer MLP block.
+- Scaling with \(\gamma = N_1/N_0\) already exhibits plateau/linear/exponential behaviour (here exponential absent but linear vs. constant appears).
+
+*Deliverables:* closed-form complexity \(C_{\text{cont}}(\gamma)\), derivative \(\partial C/\partial \alpha_0\), numerical plot vs. Monte-Carlo for \(N = 128\).
+
+*** Key Pitfalls & Tips
+
+- *Sphere constraint:* Keep \(\lambda_\ell\) real; complex saddles appear if \(\gamma \gg 1\) — check convergence.
+- *\(\log\det\) integrals:* Use resolvent \(G(z)=\int \frac{\rho(\lambda)}{z-\lambda} \, d\lambda\); avoid direct eigen decomposition.
+- *Binary limit check:* Take \(\lambda_\ell \to \infty\) with \(\sigma/\sqrt{\lambda}\) fixed; complexity should reduce to original ISC constant \(g_\star\).
+- *Annealed vs. quenched:* Verify self-averaging numerically for small \(N\); otherwise add replica-symmetric assumption.
+
+With this scaffold you can begin rewriting Section A.1 using the spherical path-integral, parallel all subsequent steps, and validate against the checkpoints. Once the two-layer case is solid, extending to \(L > 2\) merely follows the original induction, ensuring all derivatives remain local in depth.
+
+* Commentary
+
+This roadmap provides exceptional mathematical detail for the continuous extension:
+
+1. *Spherical model choice* - brilliant selection that maintains analytical tractability while mapping to layer normalization
+2. *Marčenko-Pastur connection* - immediately tells us the \((1\pm\sqrt{\gamma})^{2}\) edge behavior connects to width ratios
+3. *Seven checkpoints* - concrete validation strategy ensuring the extension is correct
+4. *Mathematical tools list* - saves months of literature searching
+
+The two-layer spherical RBM as minimal example is perfect - complex enough to be non-trivial, simple enough to solve completely. This roadmap transforms a vague "extend to continuous" directive into an executable mathematical program.
+
+Always use \LaTeX{}, the rough notes above mix unicode math with \LaTeX{} math. Consistently use \LaTeX{} everywhere.
+
+And of course. Any and all Org markup should be systematically used instead of Markdown.

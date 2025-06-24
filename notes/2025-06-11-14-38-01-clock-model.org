@@ -1,0 +1,58 @@
+:PROPERTIES:
+:ID:       c7cc8de4-38ae-49ec-a4c6-2653466b737c
+:END:
+#+TITLE: Clock model
+#+FILETAGS: :problem:
+#+SETUPFILE: ../../setupfile.org
+
+
+* Problem Statement
+
+Clock model: Each site of the lattice is occupied by a \(q\)-valued spin \(s_{i} \equiv 1,2,\cdots, q\), with an underlying translational symmetry modulus \(q\), i.e. the system is invariant under \(s_{i} \rightarrow\left(s_{i}+n\right)_{\text {mod } q}\). The most general Hamiltonian subject to this symmetry with nearest-neighbor interactions is
+
+\
+[
+\beta \mathcal{H}_{C}=-\sum_{\langle i, j\rangle} J\left(\left|s_{i}-s_{j}\right|_{\bmod q}\right)\]
+
+where \(J(n)\) is any function, e.g. \(J(n)=J \cos (2 \pi n / q)\). Potts models are a special case of clock models with full permutation symmetry, and the Ising model is obtained in the limit of \(q=2\).
+
+(a) For a closed linear chain of \(N\) clock spins subject to the above Hamiltonian show that the partition function \(Z=\operatorname{tr}
+[
+\exp (-\beta \mathcal{H})]\) can be written as
+
+\
+[
+Z=\operatorname{tr}\left
+[
+\left\langle s_{1}|T| s_{2}\right\rangle\left\langle s_{2}|T| s_{3}\right\rangle \cdots\left\langle s_{N}|T| s_{1}\right\rangle\right],\]
+
+where \(T \equiv\left\langle s_{i}|T| s_{j}\right\rangle=\exp \left
+[
+J\left(s_{i}-s_{j}\right)\right]\) is a \(q \times q\) transfer matrix.
+
+(b) Write down the transfer matrix explicitly and diagonalize it. Note that you do not have to solve a \(q\) th order secular equation; because of the translational symmetry, the eigenvalues are easily obtained by discrete Fourier transformation as
+
+\
+[
+\lambda(k)=\sum_{n=1}^{q} \exp \left
+[
+J(n)+\frac{2 \pi \mathrm{i} n k}{q}\right]\]
+
+(c) Show that \(Z=\sum_{k=1}^{q} \lambda(k)^{N} \approx \lambda(0)^{N}\) for \(N \rightarrow \infty\). Write down the expression for the free energy per site \(\beta f=-\ln Z / N\).
+
+(d) Show that the correlation function can be calculated from
+
+\
+[
+\left\langle\delta_{s_{i}, s_{i+\ell}}\right\rangle=\frac{1}{Z} \sum_{\alpha=1}^{q} \operatorname{tr}\left
+[
+\Pi_{\alpha} T^{\ell} \Pi_{\alpha} T^{N-\ell}\right]\]
+
+where \(\Pi_{\alpha}\) is a projection matrix. Hence show that \(\left\langle\delta_{s_{i}, s_{i+\ell}}\right\rangle_{c} \sim
+[
+\lambda(1) / \lambda(0)]^{e}\). (You do not have to explicitly calculate the constant of proportionality.)
+
+* Solution
+
+* Related Concepts
+
