@@ -150,3 +150,32 @@ This is a digital implementation of Niklas Luhmann's Zettelkasten method. The sy
 - **Descriptive messages**: Explain the conceptual development, not just file changes
 - **Bibliography updates**: Separate commits for reference additions vs. note developments
 - **Branching**: Use feature branches for major research directions or literature reviews
+
+#### Commit Conventions
+
+**Format**: `type: brief description`
+
+**Types**:
+- `add:` - New notes or concepts
+- `remove:` - Deleting notes or content  
+- `connect:` - Links between existing ideas
+- `source:` - Bibliography and references
+- `update:` - Changes to existing content
+
+**Examples**:
+```
+add: statistical mechanics note 57/12a
+
+- Thermodynamic analogies for neural networks
+- Links to entropy and information theory concepts
+
+connect: symbolic logic to probabilistic reasoning
+
+- Bridge between notes 42/3a and 57/12
+- New research direction identified
+
+source: add Jaynes maximum entropy papers
+
+- 8 entries in physics.bib
+- Foundation for information-theoretic ML
+```
