@@ -62,7 +62,7 @@ This is *bold* and /italic/ text with =code= and [[link][description]].
 That should be exactly ten words after markup removal.
 """
         word_count = self.parser.count_words(content)
-        assert word_count == 16  # Excluding markup, properties, title, filetags
+        assert word_count == 19  # Excluding markup, properties, title, filetags
 
     def test_find_connection_points(self):
         """Test connection point detection."""

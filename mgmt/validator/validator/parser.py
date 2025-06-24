@@ -132,21 +132,31 @@ class OrgParser:
         """Detect marked connection points in content."""
         connection_points = []
         
-        # Patterns for connection markers
+        # Patterns for connection markers (ordered by specificity to avoid overlaps)
         patterns = [
-            r'→\s*(\d+(/\d+)*[a-z]*\d*)',      # → 57/12a
-            r'\[→(\d+(/\d+)*[a-z]*\d*)\]',     # [→57/12a]
-            r'@@connection:\s*([^@]+)@@'        # @@connection: 57/12a@@
+            (r'\[→(\d+(/\d+)*[a-z]*\d*)\]', 1),     # [→57/12a] - more specific, check first
+            (r'@@connection:\s*([^@]+)@@', 1),       # @@connection: 57/12a@@
+            (r'(?<!\[)→\s*(\d+(/\d+)*[a-z]*\d*)', 1)  # → 57/12a - but not [→ (negative lookbehind)
         ]
         
         for line_num, line in enumerate(content.split('\n'), 1):
-            for pattern in patterns:
+            # Track what's already matched to avoid overlaps
+            matched_ranges = []
+            
+            for pattern, group_idx in patterns:
                 for match in re.finditer(pattern, line):
-                    target = match.group(1)
-                    connection_points.append(ConnectionPoint(
-                        line_number=line_num,
-                        marker=match.group(0),
-                        branches=[target]
-                    ))
+                    start, end = match.span()
+                    
+                    # Check if this overlaps with already matched ranges
+                    overlaps = any(start < m_end and end > m_start for m_start, m_end in matched_ranges)
+                    
+                    if not overlaps:
+                        target = match.group(group_idx)
+                        connection_points.append(ConnectionPoint(
+                            line_number=line_num,
+                            marker=match.group(0),
+                            branches=[target]
+                        ))
+                        matched_ranges.append((start, end))
         
         return connection_points

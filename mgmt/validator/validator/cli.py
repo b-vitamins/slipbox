@@ -1,8 +1,26 @@
 """Command-line interface for slipbox validation."""
 
+import sys
 import click
 from pathlib import Path
 from typing import Optional
+
+from .validators import ValidationEngine, SlipStructureValidator
+from .reporters import ConsoleReporter
+
+
+def find_slips_directory(start_path: Path) -> Path:
+    """Find slips directory starting from given path."""
+    # Try current directory first
+    if (start_path / "slips").exists():
+        return start_path / "slips"
+    
+    # If start_path is already slips directory
+    if start_path.name == "slips" and start_path.exists():
+        return start_path
+    
+    # Default to start_path if nothing else works
+    return start_path
 
 
 @click.group()
@@ -23,32 +41,76 @@ def main() -> None:
 @click.argument("path", type=click.Path(exists=True, path_type=Path), default=".")
 def check(format: str, fix: bool, path: Path) -> None:
     """Run all validation checks on slipbox."""
-    click.echo(f"Validating slipbox at {path} (format: {format}, fix: {fix})")
-    # TODO: Implement validation logic
+    if fix:
+        click.echo("Auto-fix not yet implemented", err=True)
+        sys.exit(1)
+    
+    if format != "console":
+        click.echo("Only console format currently supported", err=True)
+        sys.exit(1)
+    
+    slips_dir = find_slips_directory(path)
+    
+    try:
+        # Run structure validation (only validation available for now)
+        validators = [SlipStructureValidator()]
+        engine = ValidationEngine(validators)
+        
+        results = engine.validate_slipbox(slips_dir)
+        
+        # Report results
+        reporter = ConsoleReporter()
+        reporter.report_results(results)
+        
+        # Exit with error code if any validation failed
+        if any(not result.passed for result in results):
+            sys.exit(1)
+            
+    except Exception as e:
+        click.echo(f"Validation failed: {str(e)}", err=True)
+        sys.exit(1)
 
 
 @main.command()
 @click.argument("path", type=click.Path(exists=True, path_type=Path), default=".")
 def structure(path: Path) -> None:
     """Validate slip structure (properties, word count)."""
-    click.echo(f"Validating slip structure at {path}")
-    # TODO: Implement structure validation
+    slips_dir = find_slips_directory(path)
+    
+    try:
+        # Create structure validator
+        validators = [SlipStructureValidator()]
+        engine = ValidationEngine(validators)
+        
+        results = engine.validate_slipbox(slips_dir)
+        
+        # Report results
+        reporter = ConsoleReporter()
+        reporter.report_results(results)
+        
+        # Exit with error code if any validation failed
+        if any(not result.passed for result in results):
+            sys.exit(1)
+            
+    except Exception as e:
+        click.echo(f"Structure validation failed: {str(e)}", err=True)
+        sys.exit(1)
 
 
 @main.command()
 @click.argument("path", type=click.Path(exists=True, path_type=Path), default=".")
 def links(path: Path) -> None:
     """Validate link integrity."""
-    click.echo(f"Validating links at {path}")
-    # TODO: Implement link validation
+    click.echo("Link validation not yet implemented", err=True)
+    sys.exit(1)
 
 
 @main.command()
 @click.argument("path", type=click.Path(exists=True, path_type=Path), default=".")
 def orphans(path: Path) -> None:
     """Find orphaned slips with no connections."""
-    click.echo(f"Finding orphans at {path}")
-    # TODO: Implement orphan detection
+    click.echo("Orphan detection not yet implemented", err=True)
+    sys.exit(1)
 
 
 if __name__ == "__main__":
