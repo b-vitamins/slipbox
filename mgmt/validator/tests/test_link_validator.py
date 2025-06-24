@@ -142,6 +142,119 @@ Test content.
         assert violations[0].severity == Severity.ERROR
         assert "nonexistent" in violations[0].message
 
+    def test_broken_id_link_org_roam_priority(self):
+        """Test broken ID link with Org-roam priority (ERROR)."""
+        validator = InternalLinkValidator(self.slips_dir, org_roam_priority=True)
+        
+        properties = SlipProperties(
+            id="id3",
+            custom_id="1/3", 
+            title="Test Slip 3",
+            filetags=["test"]
+        )
+        
+        # Broken ID link
+        link = Link(
+            source_slip="id3",
+            target="id:nonexistent",
+            link_type=LinkType.INTERNAL,
+            line_number=5,
+            context="Link to [[id:nonexistent][Broken ID Link]]"
+        )
+        
+        slip = Slip(
+            file_path=Path("slip3.org"),
+            properties=properties,
+            content="test content",
+            links=[link],
+            word_count=2,
+            connection_points=[]
+        )
+        
+        violations = validator.validate(slip)
+        assert len(violations) == 1
+        assert violations[0].rule == "BROKEN_INTERNAL_LINK"
+        assert violations[0].severity == Severity.ERROR
+        assert "breaks Org-roam functionality" in violations[0].message
+
+    def test_broken_luhmann_link_org_roam_priority(self):
+        """Test broken Luhmann link with Org-roam priority (WARNING)."""
+        validator = InternalLinkValidator(self.slips_dir, org_roam_priority=True)
+        
+        properties = SlipProperties(
+            id="id3",
+            custom_id="1/3",
+            title="Test Slip 3", 
+            filetags=["test"]
+        )
+        
+        # Broken Luhmann link
+        link = Link(
+            source_slip="id3",
+            target="99/99",  # Non-existent Luhmann number
+            link_type=LinkType.INTERNAL,
+            line_number=5,
+            context="Link to [[99/99][Broken Luhmann Link]]"
+        )
+        
+        slip = Slip(
+            file_path=Path("slip3.org"),
+            properties=properties,
+            content="test content",
+            links=[link],
+            word_count=2,
+            connection_points=[]
+        )
+        
+        violations = validator.validate(slip)
+        assert len(violations) == 1
+        assert violations[0].rule == "BROKEN_INTERNAL_LINK" 
+        assert violations[0].severity == Severity.WARNING
+        assert "human readable convenience" in violations[0].message
+
+    def test_broken_link_non_org_roam_mode(self):
+        """Test broken links in non-Org-roam mode (all ERROR)."""
+        validator = InternalLinkValidator(self.slips_dir, org_roam_priority=False)
+        
+        properties = SlipProperties(
+            id="id3",
+            custom_id="1/3",
+            title="Test Slip 3",
+            filetags=["test"]
+        )
+        
+        # Both ID and Luhmann links should be ERROR in non-Org-roam mode
+        links = [
+            Link(
+                source_slip="id3",
+                target="id:nonexistent",
+                link_type=LinkType.INTERNAL,
+                line_number=5,
+                context="[[id:nonexistent][Broken ID]]"
+            ),
+            Link(
+                source_slip="id3", 
+                target="99/99",
+                link_type=LinkType.INTERNAL,
+                line_number=6,
+                context="[[99/99][Broken Luhmann]]"
+            )
+        ]
+        
+        slip = Slip(
+            file_path=Path("slip3.org"),
+            properties=properties,
+            content="test content",
+            links=links,
+            word_count=2,
+            connection_points=[]
+        )
+        
+        violations = validator.validate(slip)
+        assert len(violations) == 2
+        assert all(v.rule == "BROKEN_INTERNAL_LINK" for v in violations)
+        assert all(v.severity == Severity.ERROR for v in violations)
+
     def test_external_links_ignored(self):
         """Test that external links are not validated."""
         properties = SlipProperties(

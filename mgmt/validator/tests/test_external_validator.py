@@ -36,6 +36,13 @@ class TestBibliographyValidator:
     author={Alexander, Christopher},
     year={2002}
 }
+
+@article{test2023paper,
+    title={Test Paper for Enhanced Citations},
+    author={Test, Author},
+    journal={Test Journal},
+    year={2023}
+}
 """
         with open(self.bibliography_dir / "test.bib", 'w') as f:
             f.write(bib_content)
@@ -138,6 +145,78 @@ class TestBibliographyValidator:
         
         violations = self.validator.validate(slip)
         assert len(violations) == 0
+
+    def test_org_cite_format(self):
+        """Test org-cite format cite:@key."""
+        properties = SlipProperties(
+            id="550e8400-e29b-41d4-a716-446655440000",
+            custom_id="42/3a",
+            title="Test Slip",
+            filetags=["concept"]
+        )
+        link = Link(
+            source_slip="test",
+            target="cite:@test2023paper",  # org-cite format
+            link_type=LinkType.BIBLIOGRAPHY,
+            line_number=5,
+            context="[[cite:@test2023paper][Test Paper]]"
+        )
+        slip = Slip(
+            file_path=Path("test.org"),
+            properties=properties,
+            content="test content",
+            links=[link],
+            word_count=2,
+            connection_points=[]
+        )
+        
+        violations = self.validator.validate(slip)
+        assert len(violations) == 0  # Should find test2023paper after removing @
+
+    def test_roam_refs_citation_validation(self):
+        """Test citation validation in ROAM_REFS property.""" 
+        properties = SlipProperties(
+            id="550e8400-e29b-41d4-a716-446655440000",
+            custom_id="42/3a",
+            title="Test Slip",
+            filetags=["concept"],
+            roam_refs=["@test2023paper", "https://example.com"]  # Mixed refs
+        )
+        slip = Slip(
+            file_path=Path("test.org"),
+            properties=properties,
+            content="test content",
+            links=[],
+            word_count=2,
+            connection_points=[]
+        )
+        
+        violations = self.validator.validate(slip)
+        assert len(violations) == 0  # Should find test2023paper
+
+    def test_roam_refs_missing_citation(self):
+        """Test missing citation in ROAM_REFS property."""
+        properties = SlipProperties(
+            id="550e8400-e29b-41d4-a716-446655440000", 
+            custom_id="42/3a",
+            title="Test Slip",
+            filetags=["concept"],
+            roam_refs=["@nonexistent2023"]  # Missing citation
+        )
+        slip = Slip(
+            file_path=Path("test.org"),
+            properties=properties,
+            content="test content",
+            links=[],
+            word_count=2,
+            connection_points=[]
+        )
+        
+        violations = self.validator.validate(slip)
+        assert len(violations) == 1
+        assert violations[0].rule == "MISSING_BIBLIOGRAPHY_ENTRY"
+        assert "nonexistent2023" in violations[0].message
+        assert "ROAM_REFS" in violations[0].message
 
 
 class TestExternalURLValidator:
