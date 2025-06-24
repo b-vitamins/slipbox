@@ -22,7 +22,7 @@ This is a digital implementation of Niklas Luhmann's Zettelkasten method. The sy
 - **Embrace disorder** - The apparent disorder has "non-arbitrary internal structure"
 - **Allow organic growth** - Let notes branch internally at any point
 - **Maintain the register** - Constantly update keyword indices for rediscovery
-- **Capture bibliographical references** - Maintain BibTeX files in `/bibliography/` directory, create literature notes that link to concepts
+- **Capture bibliographical references** - Maintain BibTeX files in `/bibliography/` directory, create literature slips that link to concepts
 - **Think in networks** - A note without connections will be forgotten by the system
 - **Work with what emerges** - Follow the system's suggestions, not preconceived plans
 
@@ -101,14 +101,14 @@ This is a digital implementation of Niklas Luhmann's Zettelkasten method. The sy
 
 #### Managing Academic Sources
 1. **Collect papers** in domain-specific BibTeX files (`bibliography/*.bib`)
-2. **Create literature notes** for papers that spark connections (`notes/`)
+2. **Create literature notes** for papers that spark connections (`slips/`)
 3. **Link immediately** - connect new papers to existing concepts via `[[id:UUID][links]]`
-4. **Extract concepts** - create separate concept notes for key ideas that transcend individual papers
+4. **Extract concepts** - create separate concept slips for key ideas that transcend individual papers
 5. **Build networks** - look for patterns across papers that reveal research programs or paradigm shifts
 
 #### BibTeX to Zettelkasten Bridge
-- **One paper, multiple notes**: A single paper may spawn several concept notes
-- **Cite by key**: Reference BibTeX entries in literature notes for proper attribution
+- **One paper, multiple slips**: A single paper may spawn several concept slips
+- **Cite by key**: Reference BibTeX entries in literature slips for proper attribution
 - **Tag strategically**: Use tags like `:literature:`, `:physics:`, `:neurosymbolic:` for discovery
 - **Time-delay insights**: Papers may not show their importance until connected to later discoveries
 
@@ -121,7 +121,7 @@ This is a digital implementation of Niklas Luhmann's Zettelkasten method. The sy
 ### Implementation Notes
 
 #### Directory Structure
-- **`notes/`** - All Zettelkasten notes in flat structure following Luhmann's principles
+- **`slips/`** - All Zettelkasten slips in flat structure following Luhmann's principles
 - **`bibliography/`** - Separate system for bibliographical references
   - BibTeX files for conference proceedings (`.bib`)
   - Domain-specific collections (e.g., `neurosymbolic.bib`)
@@ -135,9 +135,9 @@ This is a digital implementation of Niklas Luhmann's Zettelkasten method. The sy
 - Database (org-roam.db) enables fast searching but is rebuildable
 
 #### Bibliography Integration
-- **Separate but linked**: Bibliography entries live in `/bibliography/` but connect to literature notes
+- **Separate but linked**: Bibliography entries live in `/bibliography/` but connect to literature slips
 - **BibTeX standard**: Use proper academic citation format
-- **Literature notes**: Create dedicated notes for papers with `[[id:UUID][Title]]` links to concepts
+- **Literature slips**: Create dedicated slips for papers with `[[id:UUID][Title]]` links to concepts
 - **Domain organization**: Group by research area (ML conferences, specific topics)
 
 #### Research Context
@@ -156,8 +156,8 @@ This is a digital implementation of Niklas Luhmann's Zettelkasten method. The sy
 **Format**: `type: brief description`
 
 **Types**:
-- `add:` - New notes or concepts
-- `remove:` - Deleting notes or content  
+- `add:` - New slips or concepts
+- `remove:` - Deleting slips or content  
 - `connect:` - Links between existing ideas
 - `source:` - Bibliography and references
 - `update:` - Changes to existing content
@@ -171,7 +171,7 @@ add: statistical mechanics note 57/12a
 
 connect: symbolic logic to probabilistic reasoning
 
-- Bridge between notes 42/3a and 57/12
+- Bridge between slips 42/3a and 57/12
 - New research direction identified
 
 source: add Jaynes maximum entropy papers
