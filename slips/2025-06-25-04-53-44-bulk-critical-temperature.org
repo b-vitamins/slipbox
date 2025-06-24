@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       3ee4be74-6252-4d00-ae3e-6b8ba7064912
+:CUSTOM_ID: 1-6e
+:END:
+#+TITLE: Bulk Critical Temperature
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (e) Problem
+Find the critical temperature, and the behavior of the magnetization in the bulk by considering the limit \(n \rightarrow \infty\). (Note that \(\lim _{m \rightarrow 0} \mathcal{L}^{-1}(m)=3 m+9 m^{3} / 5+\) \(\mathcal{O}\left(m^{5}\right)\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ba4848ab-8c40-4dcd-86fd-d049b8b45246][Magnetic thin films]]
+- **Previous**: [[id:c3d97c75-4deb-48a5-80c8-556aff0dc252][Self-Consistent Equations]]
+- **Next**: [[id:1bbabd18-e3f5-47f7-aa80-eb8a62a0a317][Finite Size Effects]]
+
+* Related Concepts

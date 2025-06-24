@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       4a4ed520-36ea-42da-b86b-60dbc8d8549a
+:CUSTOM_ID: 1-6i
+:END:
+#+TITLE: Surface Magnetization Critical Behavior
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (i) Problem
+Show that the magnetization of the surface layer vanishes as \(\left|T-T_{c}\right|\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ba4848ab-8c40-4dcd-86fd-d049b8b45246][Magnetic thin films]]
+- **Previous**: [[id:aa7f0fac-743b-4386-bea7-9555a3576813][Semi-infinite System and Healing Length]]
+
+* Related Concepts

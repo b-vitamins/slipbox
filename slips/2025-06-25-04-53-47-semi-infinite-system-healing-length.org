@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       aa7f0fac-743b-4386-bea7-9555a3576813
+:CUSTOM_ID: 1-6h
+:END:
+#+TITLE: Semi-infinite System and Healing Length
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (h) Problem
+How can the above solution be modified to describe a semi-infinite system? Obtain the critical behaviors of the healing length \(\lambda \sim 1 / k\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ba4848ab-8c40-4dcd-86fd-d049b8b45246][Magnetic thin films]]
+- **Previous**: [[id:a47c2139-ac8b-4db0-a39b-16b83c85c0fb][Continuum Limit and Nonlinear Equation]]
+- **Next**: [[id:4a4ed520-36ea-42da-b86b-60dbc8d8549a][Surface Magnetization Critical Behavior]]
+
+* Related Concepts

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       a47c2139-ac8b-4db0-a39b-16b83c85c0fb
+:CUSTOM_ID: 1-6g
+:END:
+#+TITLE: Continuum Limit and Nonlinear Equation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (g) Problem
+Derive a continuum form of the self-consistent equations, and keep terms to cubic order in \(m\). Show that the resulting nonlinear differential equation has a solution of the form \(m(x)=m_{\text {bulk }} \tanh (k x)\). What circumstances are described by this solution?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ba4848ab-8c40-4dcd-86fd-d049b8b45246][Magnetic thin films]]
+- **Previous**: [[id:1bbabd18-e3f5-47f7-aa80-eb8a62a0a317][Finite Size Effects]]
+- **Next**: [[id:aa7f0fac-743b-4386-bea7-9555a3576813][Semi-infinite System and Healing Length]]
+
+* Related Concepts

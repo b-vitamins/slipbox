@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       ba4848ab-8c40-4dcd-86fd-d049b8b45246
+:CUSTOM_ID: 1-6
 :END:
 #+TITLE: Magnetic thin films
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -34,6 +35,9 @@ Magnetic thin films: A crystalline film (simple cubic) is obtained by depositing
 (i) Show that the magnetization of the surface layer vanishes as \(\left|T-T_{c}\right|\).
 
 The result in (f) illustrates a quite general result that the transition temperature of a finite system of size \(L\), approaches its asymptotic (infinite-size) limit from below, as \(T_{c}(L)=T_{c}(\infty)-A / L^{1 / \nu}\), where \(\nu\) is the exponent controlling the divergence of the correlation length. However, some liquid crystal films appeared to violate this behavior. In fact, in these films the couplings are stronger on the surface layers, which thus order before the bulk. For a discussion of the dependence of \(T_{c}\) on the number of layers in this case, see H. Li, M. Paczuski, M. Kardar, and K. Huang, Phys. Rev. B 44, 8274 (1991).
+
+* Navigation
+- **First Part**: [[id:3b8c3d1a-2268-41a3-9dd0-86e5febd1c9a][Partition Function and Free Energy]]
 
 * Solution
 

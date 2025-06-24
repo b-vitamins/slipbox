@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       1bbabd18-e3f5-47f7-aa80-eb8a62a0a317
+:CUSTOM_ID: 1-6f
+:END:
+#+TITLE: Finite Size Effects
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (f) Problem
+By linearizing the self-consistent equations, show that the critical temperature of film depends on the number of layers \(n\), as \(k T_{c}(n \gg 1) \approx k T_{c}(\infty)-J_{V} \pi^{2} /\left(3 n^{2}\right)\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ba4848ab-8c40-4dcd-86fd-d049b8b45246][Magnetic thin films]]
+- **Previous**: [[id:3ee4be74-6252-4d00-ae3e-6b8ba7064912][Bulk Critical Temperature]]
+- **Next**: [[id:a47c2139-ac8b-4db0-a39b-16b83c85c0fb][Continuum Limit and Nonlinear Equation]]
+
+* Related Concepts

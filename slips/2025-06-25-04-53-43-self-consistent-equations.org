@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       c3d97c75-4deb-48a5-80c8-556aff0dc252
+:CUSTOM_ID: 1-6d
+:END:
+#+TITLE: Self-Consistent Equations
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+The exact free energy, \(\beta F=-\ln Z\), satisfies the Gibbs inequality, \(\beta F \leq \beta F_{0}+\) \(\left\langle\beta \mathcal{H}-\beta \mathcal{H}_{0}\right\rangle_{0}\). Give the self-consistent equations for the magnetizations \(\left\{m_{\alpha}\right\}\) that optimize \(\beta \mathcal{H}_{0}\). How would you solve these equations numerically?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ba4848ab-8c40-4dcd-86fd-d049b8b45246][Magnetic thin films]]
+- **Previous**: [[id:acf6f30d-0a29-46f9-b15a-cca77c7344b4][Original Hamiltonian Expectation]]
+- **Next**: [[id:3ee4be74-6252-4d00-ae3e-6b8ba7064912][Bulk Critical Temperature]]
+
+* Related Concepts

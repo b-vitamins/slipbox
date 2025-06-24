@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       53a7411f-0128-4c45-8e86-285d0d6ab31e
+:CUSTOM_ID: 1-6b
+:END:
+#+TITLE: Magnetizations and Langevin Function
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Obtain the magnetizations \(m_{\alpha}=\left|\left\langle\vec{s}_{i}^{\alpha}\right\rangle_{0}\right|\), and \(\left\langle\beta \mathcal{H}_{0}\right\rangle_{0}\), in terms of the Langevin function \(\mathcal{L}(h)=\operatorname{coth}(h)-1 / h\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ba4848ab-8c40-4dcd-86fd-d049b8b45246][Magnetic thin films]]
+- **Previous**: [[id:3b8c3d1a-2268-41a3-9dd0-86e5febd1c9a][Partition Function and Free Energy]]
+- **Next**: [[id:acf6f30d-0a29-46f9-b15a-cca77c7344b4][Original Hamiltonian Expectation]]
+
+* Related Concepts

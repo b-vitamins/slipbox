@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       acf6f30d-0a29-46f9-b15a-cca77c7344b4
+:CUSTOM_ID: 1-6c
+:END:
+#+TITLE: Original Hamiltonian Expectation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Calculate \(\langle\beta \mathcal{H}\rangle_{0}\), with the (reasonable) assumption that all the variational fields \(\left(\left\{\vec{h}^{\alpha}\right\}\right)\) are parallel.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ba4848ab-8c40-4dcd-86fd-d049b8b45246][Magnetic thin films]]
+- **Previous**: [[id:53a7411f-0128-4c45-8e86-285d0d6ab31e][Magnetizations and Langevin Function]]
+- **Next**: [[id:c3d97c75-4deb-48a5-80c8-556aff0dc252][Self-Consistent Equations]]
+
+* Related Concepts
