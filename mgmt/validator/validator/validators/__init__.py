@@ -13,6 +13,12 @@ from .links import (
     BidirectionalLinkAnalyzer,
     SlipLinkValidator
 )
+from .external import (
+    BibliographyValidator,
+    ExternalURLValidator,
+    MediaFileValidator,
+    ExternalResourceValidator
+)
 
 __all__ = [
     'BaseValidator',
@@ -24,5 +30,9 @@ __all__ = [
     'InternalLinkValidator',
     'OrphanDetector', 
     'BidirectionalLinkAnalyzer',
-    'SlipLinkValidator'
+    'SlipLinkValidator',
+    'BibliographyValidator',
+    'ExternalURLValidator',
+    'MediaFileValidator',
+    'ExternalResourceValidator'
 ]

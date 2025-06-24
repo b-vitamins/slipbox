@@ -1,0 +1,11 @@
+[validation]
+word_limit = 500
+require_backlinks = false
+check_external_links = true
+orphan_grace_period_days = 7
+url_timeout_seconds = 10
+
+[paths]
+slips_dir = "slips/"
+bibliography_dir = "bibliography/"
+media_dir = "assets/"
