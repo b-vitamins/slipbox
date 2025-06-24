@@ -1,0 +1,286 @@
+:PROPERTIES:
+:ID:       015f236b-884c-499b-9d45-7c317dd55a80
+:END:
+#+TITLE: Git Worktrees
+#+FILETAGS: :git:worktrees:parallel:branches:workflow:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Git worktrees allow you to work on multiple branches simultaneously without stashing or switching. Each worktree has its own working directory and index, but all share the same repository database.
+
+* The Problem Worktrees Solve
+
+** Common Workflow Friction
+From the talk, worktrees solve this common scenario:
+1. Working on a feature branch
+2. Urgent bugfix request comes in
+3. Traditional approach: stash → switch → fix → switch back → unstash
+4. Better approach: Create a worktree for the bugfix
+
+** Benefits Over Stashing
+- **No context switching** - Keep feature work intact
+- **Emergency hotfixes** - Fix bugs without disrupting current work
+- **Parallel testing** - Test multiple branches simultaneously
+- **Code review** - Review changes without disrupting development
+- **Building** - Compile different versions in parallel
+
+* Basic Worktree Operations
+
+** Creating Worktrees
+#+begin_src bash
+# Add a new worktree for existing branch
+git worktree add ../project-hotfix hotfix-branch
+
+# Create new branch in new worktree
+git worktree add -b new-feature ../project-feature
+
+# Create worktree from specific commit
+git worktree add ../project-test HEAD~5
+
+# Create detached worktree
+git worktree add --detach ../project-experiment
+#+end_src
+
+** Managing Worktrees
+#+begin_src bash
+# List all worktrees
+git worktree list
+
+# List with additional details
+git worktree list --porcelain
+
+# Remove worktree
+git worktree remove ../project-hotfix
+
+# Prune stale worktree references
+git worktree prune
+#+end_src
+
+** Directory Structure
+#+begin_src bash
+# Main repository
+/home/user/project/           # Main worktree
+/home/user/project-feature/   # Feature worktree
+/home/user/project-hotfix/    # Hotfix worktree
+
+# All share same .git repository
+# Each has independent working directory and index
+#+end_src
+
+* How Worktrees Work
+
+** Shared Repository Database
+- Each worktree has its own working directory and index
+- All worktrees share the same `.git` repository
+- Changes in any worktree are visible to all others
+- **Cannot check out the same branch in multiple worktrees**
+
+** File System Layout
+#+begin_src bash
+# Main repository structure
+project/.git/          # Main repository database
+project/.git/worktrees/feature/  # Feature worktree metadata
+project/.git/worktrees/hotfix/   # Hotfix worktree metadata
+
+# Worktree directories
+project/               # Main worktree (usually main branch)
+project-feature/       # Feature worktree
+project-hotfix/        # Hotfix worktree
+#+end_src
+
+* Advanced Worktree Usage
+
+** Worktree-Specific Configuration
+#+begin_src bash
+# Each worktree can have its own config
+cd ../project-feature
+git config user.email "feature-dev@company.com"
+
+cd ../project-hotfix  
+git config user.email "hotfix-team@company.com"
+
+# Check worktree-specific config
+git config --list --local
+#+end_src
+
+** Working with Remotes
+#+begin_src bash
+# Fetch affects all worktrees
+git fetch origin
+
+# Push from any worktree
+cd ../project-feature
+git push origin feature-branch
+
+# Remote tracking works independently
+git branch --set-upstream-to=origin/feature-branch
+#+end_src
+
+** Branch Management
+#+begin_src bash
+# Create branch in current worktree
+git switch -c sub-feature
+
+# See branches across all worktrees
+git branch --all
+
+# Delete branch (must not be checked out in any worktree)
+git branch -d completed-feature
+#+end_src
+
+* Practical Workflows
+
+** Emergency Hotfix Pattern
+#+begin_src bash
+# Currently working on feature
+cd project
+git status  # Working on feature-auth branch
+
+# Urgent bug report comes in
+git worktree add ../project-hotfix main
+
+# Switch to hotfix directory
+cd ../project-hotfix
+
+# Create hotfix branch
+git switch -c hotfix-critical-bug
+
+# Fix bug, test, commit
+echo "fix" > bugfix.txt
+git add bugfix.txt
+git commit -m "Fix critical authentication bug"
+
+# Push hotfix
+git push origin hotfix-critical-bug
+
+# Return to feature work (unchanged)
+cd ../project
+git status  # Still on feature-auth with all changes intact
+#+end_src
+
+** Code Review Workflow
+#+begin_src bash
+# Create worktree for reviewing PR
+git fetch origin
+git worktree add ../review-pr-123 origin/pr-branch
+
+# Review in separate directory
+cd ../review-pr-123
+# ... test and review changes ...
+
+# Continue development work
+cd ../project
+# ... feature work continues uninterrupted ...
+
+# Clean up after review
+git worktree remove ../review-pr-123
+#+end_src
+
+** Parallel Testing
+#+begin_src bash
+# Test multiple versions simultaneously
+git worktree add ../test-current main
+git worktree add ../test-beta beta-branch
+git worktree add ../test-experimental experimental
+
+# Run tests in parallel
+cd ../test-current && npm test &
+cd ../test-beta && npm test &
+cd ../test-experimental && npm test &
+wait
+
+# Compare results across versions
+#+end_src
+
+* Configuration and Optimization
+
+** Useful Configuration
+#+begin_src bash
+# Configure worktree defaults
+git config worktree.guessRemote true
+
+# Set default location for worktrees
+git config worktree.directory ../worktrees
+
+# Enable automatic pruning
+git config gc.worktreePruneExpire "3 months ago"
+#+end_src
+
+** Helpful Aliases
+#+begin_src bash
+# Worktree management aliases
+git config --global alias.wt 'worktree'
+git config --global alias.wtl 'worktree list'
+git config --global alias.wta 'worktree add'
+git config --global alias.wtr 'worktree remove'
+git config --global alias.wtp 'worktree prune'
+
+# Quick worktree creation
+git config --global alias.wtf 'worktree add -b'
+git config --global alias.wth 'worktree add ../hotfix'
+#+end_src
+
+** Automation Scripts
+#+begin_src bash
+# Script to create feature worktree
+#!/bin/bash
+# wt-feature.sh
+FEATURE_NAME=$1
+git worktree add "../project-$FEATURE_NAME" -b "feature-$FEATURE_NAME"
+cd "../project-$FEATURE_NAME"
+echo "Created feature worktree for $FEATURE_NAME"
+#+end_src
+
+* Best Practices
+
+1. **Use descriptive directory names** - Match branch names when possible
+2. **Clean up regularly** - Remove unused worktrees with `git worktree remove`
+3. **Prune stale references** - Run `git worktree prune` periodically
+4. **Organize worktree locations** - Keep them grouped in parent directory
+5. **Branch naming** - Use consistent patterns across worktrees
+6. **Resource awareness** - Each worktree uses disk space and file handles
+
+* Troubleshooting
+
+** Common Issues
+#+begin_src bash
+# Cannot remove worktree (changes present)
+git worktree remove ../project-feature
+# error: 'project-feature' contains modified or untracked files
+
+# Force removal (loses changes)
+git worktree remove --force ../project-feature
+
+# Worktree directory deleted manually
+git worktree prune  # Clean up stale references
+
+# Branch checked out in another worktree
+git switch feature-branch
+# fatal: 'feature-branch' is already checked out at '../project-feature'
+#+end_src
+
+** Maintenance
+#+begin_src bash
+# List worktree status
+git worktree list --porcelain
+
+# Find stale worktrees
+find . -name ".git" -type f | xargs grep "gitdir:"
+
+# Cleanup automation
+git worktree prune --dry-run  # See what would be pruned
+git worktree prune            # Actually prune
+#+end_src
+
+* Limitations
+
+- **Same branch restriction** - Cannot check out same branch in multiple worktrees
+- **Disk space** - Each worktree duplicates working directory
+- **File handles** - May hit system limits with many worktrees
+- **Symbolic links** - Issues on some Windows systems
+- **IDE confusion** - Some IDEs don't handle multiple worktrees well
+
+* Related Notes
+- [[id:2b9d1224-4781-4ec6-9539-a7e3eeee6621][Git Stash Advanced]] - Alternative for temporary context switching
+- [[id:6a8d2a91-6f42-412e-8f5e-e5e5b3ef4380][Git Switch Restore]] - Commands for single-worktree branch management
+- [[id:300ebe70-9034-46e6-8d06-f84ff8ed7743][Git Display Enhancements]] - Better branch visualization across worktrees

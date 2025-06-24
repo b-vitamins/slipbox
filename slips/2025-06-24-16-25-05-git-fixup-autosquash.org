@@ -1,0 +1,358 @@
+:PROPERTIES:
+:ID:       b07b01a2-c417-4755-a336-9883f3bb54b4
+:END:
+#+TITLE: Git Fixup and Autosquash
+#+FILETAGS: :git:fixup:autosquash:rebase:commits:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Fixup commits and autosquash provide an elegant solution for incorporating review feedback while maintaining clean commit history. This workflow allows you to amend specific commits in a patch series without disrupting the entire branch.
+
+* The Problem
+
+** Traditional Review Workflow Issues
+The speaker highlighted a common workflow problem:
+1. You push a nice patch series (3 commits) to GitHub
+2. You get review feedback on the first commit
+3. You need to incorporate the feedback
+4. Traditional approach: add a 4th "addressed review" commit
+5. **Better approach**: amend the specific commit that needs the fix
+
+** Why Fixup Commits Matter
+- **Clean history** - No "address review comments" commits
+- **Logical organization** - Fixes integrated into original commits
+- **Easy review** - Reviewers see clean, focused changes
+- **Maintainable codebase** - History tells a clear story
+
+* Fixup Commits
+
+** Creating Fixup Commits
+#+begin_src bash
+# You have commits A, B, C
+# Reviewer says "fix documentation in commit A"
+
+# Make your fix
+git add docs/fixed-file.md
+
+# Create a fixup commit targeting commit A
+git commit --fixup=SHA_OF_COMMIT_A
+
+# This creates a commit with message: "fixup! original commit message"
+#+end_src
+
+** Finding Target Commits
+#+begin_src bash
+# Find commit SHA for fixup target
+git log --oneline -10
+
+# Use partial SHA (first 7+ characters)
+git commit --fixup=abc1234
+
+# Use relative references
+git commit --fixup=HEAD~2
+
+# Use branch references
+git commit --fixup=origin/main~3
+#+end_src
+
+** Fixup Commit Messages
+#+begin_src bash
+# Automatic message (recommended)
+git commit --fixup=abc1234
+# Creates: "fixup! Original commit message"
+
+# Custom fixup message
+git commit --fixup=abc1234 -m "Fix typo in documentation"
+# Creates: "fixup! Fix typo in documentation"
+#+end_src
+
+* Autosquash - The Magic
+
+** Basic Autosquash
+#+begin_src bash
+# After creating one or more fixup commits
+git rebase --autosquash origin/main
+
+# Git automatically:
+# 1. Reorders the fixup commits
+# 2. Squashes them into their targets
+# 3. Maintains a clean history
+#+end_src
+
+** Interactive Autosquash
+#+begin_src bash
+# See what will happen before applying
+git rebase -i --autosquash origin/main
+
+# Git opens editor with fixup commits properly positioned
+# You can review and modify the rebase plan
+#+end_src
+
+** Making Autosquash Default
+#+begin_src bash
+# Always autosquash when rebasing
+git config --global rebase.autosquash true
+
+# Now all rebases automatically handle fixup commits
+git rebase origin/main  # Automatically applies autosquash
+#+end_src
+
+* Complete Workflow Example
+
+** Initial State
+#+begin_src bash
+# Start with 3 commits
+git log --oneline
+# abc123 Add authentication
+# def456 Add user model  
+# ghi789 Add database schema
+#+end_src
+
+** Incorporating Review Feedback
+#+begin_src bash
+# Get review feedback: "Add tests to auth"
+echo "test code" > test_auth.js
+git add test_auth.js
+git commit --fixup=abc123
+
+# More feedback: "Update user model docs"
+echo "docs" > user_docs.md
+git add user_docs.md
+git commit --fixup=def456
+
+# Current state shows fixup commits
+git log --oneline
+# fixup! Add user model
+# fixup! Add authentication
+# abc123 Add authentication
+# def456 Add user model
+# ghi789 Add database schema
+#+end_src
+
+** Clean Up with Autosquash
+#+begin_src bash
+# Clean up with autosquash
+git rebase -i --autosquash origin/main
+
+# Result: clean history with fixes incorporated
+git log --oneline
+# abc124 Add authentication (now includes tests)
+# def457 Add user model (now includes docs)
+# ghi789 Add database schema
+#+end_src
+
+* Advanced Fixup Techniques
+
+** Squash Commits (Different from Fixup)
+#+begin_src bash
+# Squash combines commits but lets you edit the message
+git commit --squash=SHA -m "New combined message"
+
+# During interactive rebase, Git will stop to let you edit the message
+git rebase -i --autosquash origin/main
+#+end_src
+
+** Multiple Fixups for Same Commit
+#+begin_src bash
+# Multiple fixups can target the same commit
+git commit --fixup=abc123  # First fix
+# ... more changes ...
+git commit --fixup=abc123  # Second fix
+
+# Autosquash handles multiple fixups correctly
+git rebase --autosquash origin/main
+#+end_src
+
+** Fixup Specific Lines
+#+begin_src bash
+# Make targeted changes to specific parts of a commit
+git add -p  # Stage only relevant changes
+git commit --fixup=abc123
+
+# This allows precise fixes without affecting other changes
+#+end_src
+
+* Integration with Review Workflows
+
+** GitHub/GitLab Workflow
+#+begin_src bash
+# 1. Push initial PR
+git push origin feature-branch
+
+# 2. Receive review feedback
+# 3. Create fixup commits for each piece of feedback
+git commit --fixup=abc123  # Fix issue 1
+git commit --fixup=def456  # Fix issue 2
+
+# 4. Clean up before final push
+git rebase -i --autosquash origin/main
+
+# 5. Force push clean history
+git push --force-with-lease origin feature-branch
+#+end_src
+
+** Team Collaboration
+#+begin_src bash
+# Share fixup workflow with team
+# Add to project documentation:
+
+# "When addressing PR feedback:
+# 1. Create fixup commits with --fixup=SHA
+# 2. Clean up with git rebase --autosquash
+# 3. Force push with --force-with-lease"
+#+end_src
+
+* Configuration and Aliases
+
+** Essential Configuration
+#+begin_src bash
+# Enable autosquash by default
+git config --global rebase.autosquash true
+
+# Make force-with-lease default for fixup workflow
+git config --global alias.fpush 'push --force-with-lease'
+
+# Configure editor for interactive rebase
+git config --global core.editor "code --wait"  # VS Code
+git config --global core.editor "vim"          # Vim
+#+end_src
+
+** Productivity Aliases
+#+begin_src bash
+# Fixup workflow aliases
+git config --global alias.fixup 'commit --fixup'
+git config --global alias.squash 'commit --squash'
+git config --global alias.autorebase 'rebase --autosquash'
+
+# Combined workflow aliases
+git config --global alias.fixup-and-rebase '!f() { git commit --fixup=$1 && git rebase --autosquash origin/main; }; f'
+
+# Review preparation
+git config --global alias.prepare-review 'rebase -i --autosquash origin/main'
+#+end_src
+
+** Advanced Aliases
+#+begin_src bash
+# Find commits to fixup
+git config --global alias.find-fixup '!f() { git log --oneline --grep="$1" | head -5; }; f'
+
+# Show fixup status
+git config --global alias.fixup-status '!git log --oneline | grep "^[a-f0-9]* fixup!"'
+
+# Clean fixup workflow
+git config --global alias.clean-fixups 'rebase --autosquash @{upstream}'
+#+end_str
+#+end_src
+
+* Best Practices
+
+1. **Use descriptive target commits** - Clear commit messages help identify fixup targets
+2. **Keep fixups small** - One concern per fixup commit
+3. **Test after autosquash** - Ensure fixes don't break anything
+4. **Use force-with-lease** - Safer than regular force push
+5. **Document workflow** - Team should understand fixup process
+6. **Regular cleanup** - Don't let fixup commits accumulate
+
+* Common Patterns
+
+** Iterative Development
+#+begin_src bash
+# Work on feature
+git commit -m "Implement user login"
+
+# Continue development, find issues
+git commit --fixup=HEAD~1  # Fix discovered issue
+
+# More development
+git commit -m "Add logout functionality"
+
+# Periodic cleanup
+git rebase --autosquash origin/main
+#+end_src
+
+** Review Response Workflow
+#+begin_src bash
+# Address each review comment with separate fixup
+git commit --fixup=abc123 -m "Add error handling"
+git commit --fixup=def456 -m "Fix typo in comments"
+git commit --fixup=abc123 -m "Improve variable names"
+
+# Clean up all at once
+git rebase --autosquash origin/main
+
+# Push clean version
+git push --force-with-lease
+#+end_src
+
+** Multi-Commit Features
+#+begin_src bash
+# Feature spans multiple logical commits
+git commit -m "Add user model"       # commit A
+git commit -m "Add user controller"  # commit B  
+git commit -m "Add user views"       # commit C
+
+# Fix issues found during testing
+git commit --fixup=A  # Fix model issue
+git commit --fixup=B  # Fix controller bug
+git commit --fixup=C  # Fix view styling
+
+# Clean history
+git rebase --autosquash origin/main
+#+end_src
+
+* Troubleshooting
+
+** Common Issues
+#+begin_src bash
+# Fixup target not found
+git commit --fixup=wrong-sha
+# error: could not lookup commit wrong-sha
+
+# Conflicts during autosquash
+git rebase --autosquash origin/main
+# Fix conflicts, then:
+git rebase --continue
+
+# Lost fixup commits
+git reflog  # Find lost commits
+git cherry-pick lost-sha
+#+end_src
+
+** Recovery Strategies
+#+begin_src bash
+# Abort problematic rebase
+git rebase --abort
+
+# Manually reorder commits
+git rebase -i origin/main  # Edit without autosquash
+
+# Backup before risky operations
+git tag backup-point
+git rebase --autosquash origin/main
+# If needed: git reset --hard backup-point
+#+end_src
+
+* Integration with Tools
+
+** IDE Integration
+Many IDEs support fixup commits:
+- **VS Code**: GitLens extension
+- **IntelliJ**: Built-in Git integration
+- **Vim**: fugitive.vim plugin
+
+** Automation Scripts
+#+begin_src bash
+#!/bin/bash
+# fixup-helper.sh
+# Select commit from recent history for fixup
+
+git log --oneline -10 | 
+  fzf --preview 'git show {1}' |
+  awk '{print $1}' |
+  xargs -I {} git commit --fixup={}
+#+end_src
+
+* Related Notes
+- [[id:c91620c1-d34a-4cae-8515-863ad4546535][Git Interactive Staging]] - Precise staging before fixup commits
+- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c][Git Fundamentals]] - Understanding commits and rebasing
+- [[id:d6e7f8a9-b0c1-4d2e-3f4a-5b6c7d8e9fa0][Git Collaboration Features]] - Team workflows using fixup commits

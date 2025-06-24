@@ -1,0 +1,251 @@
+:PROPERTIES:
+:ID:       6a8d2a91-6f42-412e-8f5e-e5e5b3ef4380
+:END:
+#+TITLE: Git Switch and Restore
+#+FILETAGS: :git:modern:switch:restore:checkout:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Git introduced `git switch` and `git restore` as clearer, purpose-specific alternatives to the overloaded `git checkout` command. These modern commands provide safer, more intuitive interfaces for common Git operations.
+
+* The Problem with Checkout
+
+** Checkout is Overloaded
+From the talk: "checkout is very overloaded" - it can:
+1. Switch branches
+2. Revert files to previous versions
+3. Create new branches
+4. Restore files from staging area
+5. Extract files from specific commits
+
+This creates confusion and potential for mistakes.
+
+* Git Switch - For Branches Only
+
+** Basic Branch Operations
+#+begin_src bash
+# Instead of: git checkout branch-name
+git switch branch-name
+
+# Create and switch (replaces checkout -b)
+git switch -c new-branch
+
+# Create branch from specific commit
+git switch -c feature-branch main~3
+
+# Force switch (discard local changes)
+git switch --force branch-name
+#+end_src
+
+** Advanced Switch Operations
+#+begin_src bash
+# Switch to previous branch
+git switch -
+
+# Switch and track remote branch
+git switch -c local-name origin/remote-branch
+
+# Switch with automatic upstream tracking
+git switch -c feature --track origin/feature
+
+# Create orphan branch (no history)
+git switch --orphan new-root
+#+end_src
+
+** Safety Features
+#+begin_src bash
+# Switch prevents data loss
+git switch main
+# error: Your local changes would be overwritten by checkout.
+# Please commit your changes or stash them before you switch branches.
+
+# Override safety (use carefully)
+git switch --force main
+
+# Detach HEAD to specific commit
+git switch --detach HEAD~5
+#+end_src
+
+* Git Restore - For Files Only
+
+** Basic File Operations
+#+begin_src bash
+# Restore file to match index (unstage changes)
+git restore --staged file.txt
+
+# Restore file to match HEAD (discard changes)
+git restore file.txt
+
+# Restore from specific commit
+git restore --source=HEAD~3 file.txt
+
+# Restore entire directory
+git restore .
+#+end_src
+
+** Advanced Restore Operations
+#+begin_src bash
+# Interactive restore (like checkout -p)
+git restore -p file.txt
+
+# Restore multiple files with pattern
+git restore '*.js'
+
+# Restore and unstage simultaneously
+git restore --staged --worktree file.txt
+
+# Restore from different branch
+git restore --source=feature-branch -- src/module.js
+#+end_src
+
+** Selective Restore
+#+begin_src bash
+# Restore specific pathspec
+git restore --pathspec-from-file=file-list.txt
+
+# Restore with exclude patterns
+git restore . ':!test/' ':!*.tmp'
+
+# Restore only modified files (not deleted)
+git restore --ignore-removal .
+#+end_src
+
+* Command Comparison Chart
+
+** Complete Comparison
+From the talk, these commands have overlapping functionality:
+
+| Operation | Old Command | New Command |
+|-----------|-------------|-------------|
+| Switch branches | `git checkout branch` | `git switch branch` |
+| Create branch | `git checkout -b new` | `git switch -c new` |
+| Undo unstaged changes | `git checkout -- file` | `git restore file` |
+| Undo staged changes | `git reset HEAD file` | `git restore --staged file` |
+| Move HEAD | `git checkout commit` | `git switch --detach commit` |
+
+** Safety Comparison
+- **checkout & switch**: Switch branches
+- **restore & checkout**: Undo unstaged changes  
+- **restore & reset**: Undo staged changes
+- **reset & switch**: Move HEAD reference
+- **All of them**: Can accidentally delete work!
+
+* Why Use Modern Commands?
+
+** Benefits for New Users
+The speaker emphasized that when teaching Git to newcomers, it's better to teach these domain-specific commands rather than the overloaded `checkout` with its five different functions.
+
+** Clearer Intent
+#+begin_src bash
+# Old way - ambiguous intent
+git checkout main
+git checkout file.txt
+
+# New way - clear intent
+git switch main      # Obviously for branches
+git restore file.txt # Obviously for files
+#+end_src
+
+** Better Error Messages
+#+begin_src bash
+# Switch gives clear branch-specific errors
+git switch nonexistent-branch
+# fatal: invalid reference: nonexistent-branch
+
+# Restore gives clear file-specific errors
+git restore nonexistent-file.txt
+# error: pathspec 'nonexistent-file.txt' did not match any file(s)
+#+end_src
+
+* Migration Strategy
+
+** Gradual Adoption
+#+begin_src bash
+# Start with simple cases
+git switch main          # instead of git checkout main
+git restore file.txt     # instead of git checkout -- file.txt
+
+# Advanced cases as you learn
+git switch -c feature    # instead of git checkout -b feature
+git restore --staged .   # instead of git reset HEAD .
+#+end_src
+
+** Team Adoption
+1. **Update documentation** - Use new commands in wikis/guides
+2. **Alias old habits** - Create aliases if needed during transition
+3. **Code reviews** - Suggest modern commands in review comments
+4. **Training** - Teach new team members with modern commands first
+
+* Configuration and Aliases
+
+** Useful Aliases
+#+begin_src bash
+# Short aliases for common operations
+git config --global alias.sw 'switch'
+git config --global alias.swc 'switch -c'
+git config --global alias.swd 'switch --detach'
+
+git config --global alias.rs 'restore'
+git config --global alias.rss 'restore --staged'
+git config --global alias.rsp 'restore -p'
+
+# Combined operations
+git config --global alias.unstage 'restore --staged'
+git config --global alias.discard 'restore'
+#+end_src
+
+** Helpful Configuration
+#+begin_src bash
+# Show current branch in prompt
+git config --global advice.detachedHead false
+
+# Configure default branch for new repos
+git config --global init.defaultBranch main
+
+# Enable colored output
+git config --global color.ui auto
+#+end_src
+
+* Best Practices
+
+1. **Use switch for branches** - Clearer intent than checkout
+2. **Use restore for files** - Safer than checkout for file operations
+3. **Teach newcomers modern commands** - Skip checkout confusion
+4. **Add helpful aliases** - Make transition easier
+5. **Use interactive mode** - `restore -p` for selective changes
+6. **Always double-check destructive operations** - Both commands can lose work
+
+* Common Patterns
+
+** Branch Workflow
+#+begin_src bash
+# Start new feature
+git switch -c feature-auth
+
+# Work on feature...
+# Switch to fix urgent bug
+git switch main
+git switch -c hotfix-login
+
+# Fix and merge
+# Return to feature
+git switch feature-auth
+#+end_src
+
+** File Management
+#+begin_src bash
+# Made changes, want to start over
+git restore .
+
+# Staged wrong files
+git restore --staged unwanted-file.txt
+
+# Want to see changes before discarding
+git diff HEAD
+git restore --source=HEAD~1 file.txt
+#+end_src
+
+* Related Notes
+- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c][Git Fundamentals]] - Basic Git concepts including traditional checkout
+- [[id:2b9d1224-4781-4ec6-9539-a7e3eeee6621][Git Stash Advanced]] - Alternative to restore for temporary changes
+- [[id:015f236b-884c-499b-9d45-7c317dd55a80][Git Worktrees]] - Alternative to frequent branch switching

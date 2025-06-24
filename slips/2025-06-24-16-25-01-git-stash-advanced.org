@@ -1,0 +1,249 @@
+:PROPERTIES:
+:ID:       2b9d1224-4781-4ec6-9539-a7e3eeee6621
+:END:
+#+TITLE: Git Stash Advanced
+#+FILETAGS: :git:stash:workflow:temporary:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Git stash provides powerful features beyond basic `git stash` and `git stash pop`. Advanced stash techniques allow precise control over what gets stashed, better organization with messages, and integration with complex workflows.
+
+* Stash Everything (Including Untracked)
+
+** The Problem with Basic Stash
+#+begin_src bash
+# Standard stash leaves untracked files
+git stash
+
+# This only stashes tracked changes
+# Untracked files remain in working directory
+#+end_src
+
+** Comprehensive Stashing
+#+begin_src bash
+# Better: stash everything including untracked files
+git stash --all
+# or
+git stash -a
+
+# This stashes:
+# - Modified tracked files
+# - Staged changes
+# - Untracked files
+# - Even ignored files
+#+end_src
+
+** Convenience Alias
+#+begin_src bash
+# Create alias for comprehensive stashing
+git config --global alias.stasha 'stash --all'
+
+# Usage
+git stasha
+#+end_src
+
+* Advanced Stash Operations
+
+** Stash with Descriptive Messages
+#+begin_src bash
+# Stash with meaningful message
+git stash push -m "WIP: refactoring auth module"
+
+# Message appears in stash list
+git stash list
+# stash@{0}: On main: WIP: refactoring auth module
+#+end_src
+
+** Selective Stashing
+#+begin_src bash
+# Stash specific files only
+git stash push -m "temporary debug code" -- src/debug.js src/test.js
+
+# Stash by path pattern
+git stash push -m "frontend changes" -- src/frontend/
+
+# Stash everything except certain files
+git stash push -m "all except tests" -- . ':!test/'
+#+end_src
+
+** Interactive Stashing
+#+begin_src bash
+# Stash interactively (like git add -p)
+git stash push -p
+
+# Choose which hunks to stash:
+# y - stash this hunk
+# n - don't stash this hunk
+# q - quit
+# a - stash this and all remaining
+# d - don't stash this or remaining
+# s - split hunk into smaller hunks
+# e - manually edit hunk
+#+end_src
+
+* Enhanced Stash Management
+
+** Better Stash Listing
+#+begin_src bash
+# List stashes with more detail
+git stash list --format="%gd: %Cblue%h%Creset %s"
+
+# Custom format showing date and author
+git stash list --format="%gd: %Cred%h%Creset - %s %Cgreen(%cr)%Creset"
+
+# Show diff summary for each stash
+git stash list --stat
+#+end_src
+
+** Stash Inspection
+#+begin_src bash
+# Show what's in a stash
+git stash show stash@{0}
+
+# Show full diff
+git stash show -p stash@{1}
+
+# Show specific stash with color
+git stash show --color=always stash@{0}
+#+end_src
+
+** Partial Stash Application
+#+begin_src bash
+# Apply stash but keep it in stash list
+git stash apply stash@{1}
+
+# Apply specific files from stash
+git checkout stash@{0} -- src/specific-file.js
+
+# Apply stash interactively
+git stash apply -p stash@{0}
+#+end_src
+
+* Advanced Stash Workflows
+
+** Branching from Stash
+#+begin_src bash
+# Create branch from stash (useful for long-term work)
+git stash branch feature-branch stash@{0}
+
+# This:
+# 1. Creates new branch
+# 2. Checks out the branch
+# 3. Applies the stash
+# 4. Drops the stash
+#+end_src
+
+** Stash Management
+#+begin_src bash
+# Drop specific stash
+git stash drop stash@{1}
+
+# Clear all stashes
+git stash clear
+
+# Create stash without applying
+git stash store -m "manual stash" $(git stash create)
+#+end_src
+
+** Stash Conflict Resolution
+#+begin_src bash
+# If stash apply has conflicts:
+git stash apply stash@{0}
+# ... resolve conflicts ...
+git add resolved-file.js
+
+# Continue without committing
+# Or commit the resolution
+git commit -m "Resolve stash conflicts"
+
+# Drop the applied stash
+git stash drop stash@{0}
+#+end_src
+
+* Workflow Integration
+
+** Emergency Hotfix Pattern
+#+begin_src bash
+# Working on feature, urgent bug comes in
+git stash push -m "WIP: feature development"
+
+# Switch to main, create hotfix
+git switch main
+git switch -c hotfix-urgent-bug
+
+# Fix bug, commit, merge
+# ... fix and commit ...
+
+# Return to feature work
+git switch feature-branch
+git stash pop
+#+end_src
+
+** Code Review Preparation
+#+begin_src bash
+# Stash unfinished work
+git stash push -m "Incomplete: error handling"
+
+# Clean up commits for review
+git rebase -i HEAD~3
+
+# Continue development
+git stash pop
+#+end_src
+
+** Experiment Safely
+#+begin_src bash
+# Save current state
+git stash push -m "Before risky refactoring"
+
+# Try experimental changes
+# ... make changes ...
+
+# If experiment fails
+git reset --hard HEAD
+git stash pop
+
+# If experiment succeeds
+git stash drop
+#+end_src
+
+* Advanced Stash Aliases
+
+** Productivity Aliases
+#+begin_src bash
+# Quick stash operations
+git config --global alias.s 'stash'
+git config --global alias.sp 'stash pop'
+git config --global alias.sa 'stash apply'
+git config --global alias.sl 'stash list'
+
+# Advanced stash aliases
+git config --global alias.stashall 'stash --all'
+git config --global alias.stashp 'stash push -p'
+git config --global alias.stashm 'stash push -m'
+
+# Inspection aliases
+git config --global alias.stashshow 'stash show -p'
+git config --global alias.stashls 'stash list --format="%gd: %Cblue%h%Creset %s %Cgreen(%cr)%Creset"'
+#+end_src
+
+* Best Practices
+
+1. **Always use messages** - Makes stash list meaningful
+2. **Stash untracked files** - Use `--all` to avoid surprises
+3. **Be selective** - Stash only what's needed with file patterns
+4. **Review before dropping** - Use `git stash show` before `git stash drop`
+5. **Use branches for long-term storage** - Stashes are temporary
+6. **Interactive stashing** - Use `-p` for precise control
+
+* Troubleshooting
+
+** Common Issues
+- **Lost stash**: Use `git fsck --no-reflog | awk '/dangling commit/ {print $3}'`
+- **Stash conflicts**: Resolve like merge conflicts, then drop stash
+- **Wrong files stashed**: Use selective application with checkout
+
+* Related Notes
+- [[id:015f236b-884c-499b-9d45-7c317dd55a80][Git Worktrees]] - Alternative to stashing for parallel work
+- [[id:6a8d2a91-6f42-412e-8f5e-e5e5b3ef4380][Git Switch Restore]] - Modern commands for working directory management
+- [[id:c91620c1-d34a-4cae-8515-863ad4546535][Git Interactive Staging]] - Complements interactive stashing

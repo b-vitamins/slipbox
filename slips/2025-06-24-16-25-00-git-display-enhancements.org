@@ -1,0 +1,159 @@
+:PROPERTIES:
+:ID:       300ebe70-9034-46e6-8d06-f84ff8ed7743
+:END:
+#+TITLE: Git Display Enhancements
+#+FILETAGS: :git:display:ui:branches:columns:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Git includes several features for improving the readability and organization of command output. These display enhancements make Git information easier to scan and understand, especially when working with many branches or complex repository states.
+
+* Column Display
+
+** Automatic Columns
+Make Git output more readable with automatic columns:
+
+#+begin_src bash
+# Enable columns globally
+git config --global column.ui auto
+
+# Or for specific commands
+git config --global column.branch auto
+git config --global column.status auto
+git config --global column.tag auto
+
+# Manual column formatting
+git branch | git column
+#+end_src
+
+** Benefits
+- **Better space usage** - Fits more information on screen
+- **Easier scanning** - Organized layout reduces visual clutter
+- **Consistent formatting** - Automatic alignment and spacing
+
+* Branch Sorting
+
+** Sort by Activity
+Show branches in more useful order:
+
+#+begin_src bash
+# Sort by most recently committed to
+git config --global branch.sort -committerdate
+
+# Now 'git branch' shows active branches first!
+
+# Other sort options:
+# authordate, creatordate, taggerdate
+# Use '-' prefix for reverse order
+#+end_src
+
+** Alternative Sorting
+#+begin_src bash
+# Sort by author date
+git config branch.sort -authordate
+
+# Sort by creation date
+git config branch.sort -creatordate
+
+# Default alphabetical (remove config)
+git config --unset branch.sort
+#+end_src
+
+* Enhanced Branch Display
+
+** Rich Branch Listing
+Create a powerful branch listing alias:
+
+#+begin_src bash
+git config --global alias.branches '!git for-each-ref --sort=-committerdate refs/heads/ --format="%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))"'
+#+end_src
+
+** What This Alias Shows
+- **Current branch indicator** - `*` for active branch
+- **Branch name** - Color-coded in yellow
+- **Short commit hash** - Red for quick reference
+- **Commit message** - Subject line of latest commit
+- **Author name** - Who made the last commit
+- **Relative date** - Green "2 days ago" format
+
+** Usage Example
+#+begin_src bash
+# Use the enhanced branch display
+git branches
+
+# Output example:
+# * main        - a1b2c3d - Add user authentication - John Doe (2 hours ago)
+#   feature-ui  - d4e5f6g - Update button styles - Jane Smith (1 day ago)
+#   bugfix-auth - g7h8i9j - Fix login validation - John Doe (3 days ago)
+#+end_src
+
+* Customizing Display
+
+** Color Configuration
+#+begin_src bash
+# Enable color output
+git config --global color.ui auto
+
+# Customize specific colors
+git config --global color.branch.current "yellow reverse"
+git config --global color.branch.local "yellow"
+git config --global color.branch.remote "green"
+
+# Reset to defaults
+git config --global color.ui true
+#+end_src
+
+** Output Paging
+#+begin_src bash
+# Configure pager behavior
+git config --global core.pager "less -F -X"
+
+# Disable pager for specific commands
+git config --global pager.branch false
+git config --global pager.tag false
+#+end_src
+
+* Time-Saving Display Aliases
+
+** Navigation and Inspection
+#+begin_src bash
+# Show repository root directory
+git config --global alias.root 'rev-parse --show-toplevel'
+
+# Compare with upstream branch
+git config --global alias.branch-diff 'diff @{upstream}..HEAD'
+
+# Show incoming changes
+git config --global alias.incoming 'log ..@{upstream}'
+
+# Show outgoing changes
+git config --global alias.outgoing 'log @{upstream}..'
+
+# Enhanced log with graph
+git config --global alias.tree 'log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
+#+end_src
+
+** Status and Summary
+#+begin_src bash
+# Compact status
+git config --global alias.s 'status --short --branch'
+
+# Show both staged and working tree in diff
+git config --global alias.overview 'log --all --since="2 weeks" --oneline --no-merges'
+
+# List contributors
+git config --global alias.contributors 'shortlog --summary --numbered'
+#+end_src
+
+* Best Practices
+
+1. **Enable column display** - Better use of terminal space
+2. **Sort branches by date** - Shows active work first
+3. **Use rich branch listing** - More information at a glance
+4. **Customize colors** - Match your terminal theme
+5. **Create helpful aliases** - Standardize display commands across team
+
+* Related Notes
+- [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e][Git Configuration and Aliases]] - General Git customization
+- [[id:c5d6e7f8-a9b0-4c1d-2e3f-4a5b6c7d8e9f][Git Investigation Tools]] - Advanced history exploration
+- [[id:015f236b-884c-499b-9d45-7c317dd55a80][Git Worktrees]] - Multiple working directories that benefit from branch display

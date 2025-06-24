@@ -1,0 +1,318 @@
+:PROPERTIES:
+:ID:       c91620c1-d34a-4cae-8515-863ad4546535
+:END:
+#+TITLE: Git Interactive Staging
+#+FILETAGS: :git:staging:interactive:patch:hunks:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Git's interactive staging allows precise control over what changes get committed. Instead of committing entire files, you can select specific hunks, lines, or even edit changes before staging them.
+
+* Interactive Add Deep Dive
+
+** Starting Interactive Mode
+#+begin_src bash
+# Start interactive add
+git add -i
+
+# Interactive menu options:
+# 1. status    - show paths with changes
+# 2. update    - add working tree state to staged
+# 3. revert    - revert staged set to HEAD
+# 4. add untracked
+# 5. patch     - pick hunks to stage
+# 6. diff      - view diff of staged
+# 7. quit
+# 8. help
+#+end_src
+
+** Menu Navigation
+- **Select files by number** - `1,3-5` selects files 1, 3, 4, and 5
+- **Select by pattern** - `*.js` selects all JavaScript files
+- **Invert selection** - `*` then `-1,3` selects all except 1 and 3
+- **Return to main menu** - Empty input returns to main menu
+
+* Patch Mode - Selective Staging
+
+** Direct Patch Mode
+#+begin_src bash
+# Go directly to patch mode
+git add -p
+
+# Also works with specific files
+git add -p src/module.js
+
+# Patch mode for all tracked files
+git add --patch
+#+end_src
+
+** Patch Mode Commands
+In patch mode, Git shows you each hunk and asks what to do:
+
+#+begin_src text
+# Commands in patch mode:
+y - stage this hunk
+n - don't stage this hunk
+q - quit; do not stage this hunk or remaining ones
+a - stage this hunk and all remaining hunks in the file
+d - don't stage this hunk or remaining hunks in the file
+s - split hunk into smaller hunks
+e - manually edit the hunk
+? - print help
+#+end_src
+
+** Advanced Hunk Operations
+
+*** Splitting Hunks
+#+begin_src bash
+# When Git shows a large hunk, use 's' to split it
+# Git will break it into smaller, more focused changes
+# Each smaller hunk can be staged independently
+#+end_src
+
+*** Manual Hunk Editing
+#+begin_src bash
+# Use 'e' to manually edit a hunk
+# Opens editor with hunk content
+# Lines starting with:
+# ' ' (space) - context lines (keep unchanged)
+# '-' (minus) - lines to be removed
+# '+' (plus)  - lines to be added
+
+# Edit rules:
+# - Remove '+' lines you don't want to stage
+# - Add '-' lines you want to keep
+# - Keep context lines unchanged
+#+end_src
+
+* Advanced Interactive Operations
+
+** Interactive Reset
+#+begin_src bash
+# Interactively unstage changes
+git reset -p
+
+# Reset specific files interactively
+git reset -p src/file.js
+
+# Choose which staged hunks to unstage
+#+end_src
+
+** Interactive Checkout
+#+begin_src bash
+# Interactively discard working directory changes
+git checkout -p
+
+# Discard specific file changes interactively
+git checkout -p -- src/file.js
+
+# Choose which hunks to discard from working directory
+#+end_src
+
+** Interactive Stash
+#+begin_src bash
+# Interactively stash changes
+git stash -p
+
+# Choose which hunks to stash
+# Unstashed hunks remain in working directory
+#+end_src
+
+* Practical Workflows
+
+** Atomic Commits
+#+begin_src bash
+# You've made multiple unrelated changes in one file
+# Stage only the bug fix
+git add -p src/auth.js
+# Select only bug-fix related hunks
+
+git commit -m "Fix authentication validation bug"
+
+# Stage the feature enhancement
+git add -p src/auth.js
+# Select only feature-related hunks
+
+git commit -m "Add OAuth2 support"
+#+end_src
+
+** Code Review Preparation
+#+begin_src bash
+# Clean up commits before pushing
+# Separate formatting from logic changes
+
+# Stage only logic changes
+git add -p
+# Skip whitespace/formatting hunks
+
+git commit -m "Implement user preferences logic"
+
+# Stage formatting changes
+git add -p
+# Select formatting hunks
+
+git commit -m "Fix code formatting"
+#+end_src
+
+** Debugging Workflow
+#+begin_src bash
+# You've added debug code mixed with real changes
+# Stage only the real changes
+git add -p
+
+# Skip hunks with:
+# - console.log statements
+# - temporary debugging code
+# - test data
+
+# Commit clean changes
+git commit -m "Implement feature without debug code"
+
+# Debug code remains in working directory for continued development
+#+end_src
+
+* Hunk Management Strategies
+
+** Understanding Hunks
+Git groups related lines into hunks. A hunk typically includes:
+- **Context lines** - Unchanged lines for reference
+- **Removed lines** - Lines deleted (shown with `-`)
+- **Added lines** - Lines added (shown with `+`)
+
+** Optimal Hunk Sizing
+#+begin_src bash
+# Configure hunk context (affects hunk size)
+git config --global diff.context 3  # Default
+git config --global diff.context 1  # Smaller hunks
+git config --global diff.context 5  # Larger hunks
+
+# Smaller context = more granular control
+# Larger context = better understanding of changes
+#+end_src
+
+** Handling Complex Changes
+#+begin_src bash
+# For files with many scattered changes:
+# 1. Use patch mode per file
+git add -p specific-file.js
+
+# 2. Split large hunks aggressively
+# Use 's' command repeatedly
+
+# 3. Edit hunks manually when needed
+# Use 'e' command for precise control
+
+# 4. Work in multiple passes
+# Stage related changes together across multiple files
+#+end_src
+
+* Configuration and Aliases
+
+** Useful Configuration
+#+begin_src bash
+# Improve interactive experience
+git config --global interactive.singleKey true  # Single-key responses
+git config --global add.ignoreErrors true       # Continue on errors
+
+# Better diff display
+git config --global diff.algorithm histogram
+git config --global diff.colorMoved zebra
+#+end_src
+
+** Productivity Aliases
+#+begin_src bash
+# Quick access to interactive staging
+git config --global alias.ap 'add -p'
+git config --global alias.ai 'add -i'
+
+# Interactive operations
+git config --global alias.rp 'reset -p'
+git config --global alias.cp 'checkout -p'
+git config --global alias.sp 'stash -p'
+
+# Workflow combinations
+git config --global alias.stage-and-commit '!f() { git add -p && git commit; }; f'
+git config --global alias.unstage 'reset -p'
+#+end_src
+
+* Best Practices
+
+1. **Review each hunk carefully** - Understand what you're staging
+2. **Use descriptive commits** - Each staged group should have clear purpose
+3. **Split complex hunks** - Use 's' for better granularity
+4. **Edit when necessary** - Use 'e' for precise control
+5. **Stage related changes together** - Group logically connected modifications
+6. **Test staged changes** - Use `git diff --staged` to review before commit
+
+* Common Patterns
+
+** Feature Development
+#+begin_src bash
+# Develop feature with multiple concerns
+# Stage implementation separately from tests
+git add -p src/          # Implementation
+git commit -m "Implement user authentication"
+
+git add -p test/         # Tests
+git commit -m "Add authentication tests"
+
+git add -p docs/         # Documentation
+git commit -m "Document authentication API"
+#+end_src
+
+** Bug Fix Workflow
+#+begin_src bash
+# Fix bug while adding logging
+git add -p
+# Stage only the actual fix (skip logging)
+
+git commit -m "Fix null pointer exception"
+
+# Stage logging improvements
+git add -p
+# Select logging-related hunks
+
+git commit -m "Improve error logging"
+#+end_src
+
+** Refactoring Pattern
+#+begin_src bash
+# Large refactoring with multiple changes
+# Stage renames/moves first
+git add -p
+# Select file/function renames
+
+git commit -m "Rename functions for clarity"
+
+# Stage logic changes
+git add -p
+# Select implementation improvements
+
+git commit -m "Improve algorithm efficiency"
+#+end_src
+
+* Troubleshooting
+
+** Common Issues
+- **Hunks too large** - Use 's' to split, or adjust `diff.context`
+- **Context confusion** - Use `git diff` to see full changes
+- **Accidental staging** - Use `git reset -p` to selectively unstage
+- **Editor issues** - Configure `EDITOR` environment variable
+
+** Recovery Techniques
+#+begin_src bash
+# Staged wrong hunks
+git reset -p  # Interactively unstage
+
+# Lost track of what's staged
+git diff --staged  # Review staged changes
+git diff           # Review unstaged changes
+
+# Want to see specific hunk again
+git add -p file.js  # Navigate to specific hunk
+#+end_src
+
+* Related Notes
+- [[id:2b9d1224-4781-4ec6-9539-a7e3eeee6621][Git Stash Advanced]] - Interactive stashing complements staging
+- [[id:6a8d2a91-6f42-412e-8f5e-e5e5b3ef4380][Git Switch Restore]] - Modern commands for working with staged changes
+- [[id:b07b01a2-c417-4755-a336-9883f3bb54b4][Git Fixup Autosquash]] - Clean commit history after interactive staging
