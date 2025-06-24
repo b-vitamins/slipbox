@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       fe97e697-78d8-41f0-b43a-e26060a14d77
+:CUSTOM_ID: 1-4d
+:END:
+#+TITLE: Surface Tension Calculation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+The surface tension of water without surfactants is \(\sigma_{0}\), approximately independent of temperature. Calculate the surface tension \(\sigma(n, T)\) in the presence of surfactants.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:221fde34-18c7-4e72-be72-e54cbfc5f81e][Surfactant condensation]]
+- **Previous**: [[id:ff352a6c-fe1a-4a75-80ea-62133d75f7af][Potential Energy and Partition Function]]
+- **Next**: [[id:7e3ced07-ba68-4871-8336-c7d143e51ec7][Critical Temperature Analysis]]
+
+* Related Concepts

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       7e3ced07-ba68-4871-8336-c7d143e51ec7
+:CUSTOM_ID: 1-4e
+:END:
+#+TITLE: Critical Temperature Analysis
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (e) Problem
+Show that below a certain temperature, \(T_{c}\), the expression for \(\sigma\) is manifestly incorrect. What do you think happens at low temperatures?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:221fde34-18c7-4e72-be72-e54cbfc5f81e][Surfactant condensation]]
+- **Previous**: [[id:fe97e697-78d8-41f0-b43a-e26060a14d77][Surface Tension Calculation]]
+- **Next**: [[id:d3bc5f6b-6917-4132-90c4-e96bd267b07e][Heat Capacities]]
+
+* Related Concepts

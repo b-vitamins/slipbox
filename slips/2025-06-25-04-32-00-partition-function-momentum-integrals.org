@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       a3175e18-716b-4065-a843-f0a3a25ea5dc
+:CUSTOM_ID: 1-4a
+:END:
+#+TITLE: Partition Function and Momentum Integrals
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Write down the expression for the partition function \(Z(N, T, A)\) in terms of integrals over \(\vec{r}_{i}\) and \(\vec{p}_{i}\), and perform the integrals over the momenta.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:221fde34-18c7-4e72-be72-e54cbfc5f81e][Surfactant condensation]]
+- **Next**: [[id:6fe54548-0254-49c1-b82b-9c15e9b84d81][Non-excluded Area Estimation]]
+
+* Related Concepts

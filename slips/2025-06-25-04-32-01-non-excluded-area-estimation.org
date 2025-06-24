@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       6fe54548-0254-49c1-b82b-9c15e9b84d81
+:CUSTOM_ID: 1-4b
+:END:
+#+TITLE: Non-excluded Area Estimation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Estimate the total non-excluded area available in the positional phase space of the system of \(N\) particles.
+
+The interparticle potential \(\mathcal{V}(\vec{r})\) is infinite for separations \(|\vec{r}|<a\), and attractive for \(|\vec{r}|>a\) such that \(\int_{a}^{\infty} 2 \pi r \mathrm{~d} r \mathcal{V}(r)=-u_{0}\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:221fde34-18c7-4e72-be72-e54cbfc5f81e][Surfactant condensation]]
+- **Previous**: [[id:a3175e18-716b-4065-a843-f0a3a25ea5dc][Partition Function and Momentum Integrals]]
+- **Next**: [[id:ff352a6c-fe1a-4a75-80ea-62133d75f7af][Potential Energy and Partition Function]]
+
+* Related Concepts

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       ff352a6c-fe1a-4a75-80ea-62133d75f7af
+:CUSTOM_ID: 1-4c
+:END:
+#+TITLE: Potential Energy and Partition Function
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Estimate the total potential energy of the system, assuming a uniform density \(n=N / A\). Using this potential energy for all configurations allowed in the previous part, write down an approximation for \(Z\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:221fde34-18c7-4e72-be72-e54cbfc5f81e][Surfactant condensation]]
+- **Previous**: [[id:6fe54548-0254-49c1-b82b-9c15e9b84d81][Non-excluded Area Estimation]]
+- **Next**: [[id:fe97e697-78d8-41f0-b43a-e26060a14d77][Surface Tension Calculation]]
+
+* Related Concepts

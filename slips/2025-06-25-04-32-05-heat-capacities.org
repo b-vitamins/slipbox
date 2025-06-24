@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       d3bc5f6b-6917-4132-90c4-e96bd267b07e
+:CUSTOM_ID: 1-4f
+:END:
+#+TITLE: Heat Capacities
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (f) Problem
+Compute the heat capacities, \(C_{A}\), and write down an expression for \(C_{\sigma}\) without explicit evaluation, due to the surfactants.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:221fde34-18c7-4e72-be72-e54cbfc5f81e][Surfactant condensation]]
+- **Previous**: [[id:7e3ced07-ba68-4871-8336-c7d143e51ec7][Critical Temperature Analysis]]
+
+* Related Concepts

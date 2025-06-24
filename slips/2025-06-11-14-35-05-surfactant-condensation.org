@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       221fde34-18c7-4e72-be72-e54cbfc5f81e
+:CUSTOM_ID: 1-4
 :END:
 #+TITLE: Surfactant condensation
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -25,6 +26,9 @@ The interparticle potential \(\mathcal{V}(\vec{r})\) is infinite for separations
 (e) Show that below a certain temperature, \(T_{c}\), the expression for \(\sigma\) is manifestly incorrect. What do you think happens at low temperatures?
 
 (f) Compute the heat capacities, \(C_{A}\), and write down an expression for \(C_{\sigma}\) without explicit evaluation, due to the surfactants.
+
+* Navigation
+- **First Part**: [[id:a3175e18-716b-4065-a843-f0a3a25ea5dc][Partition Function and Momentum Integrals]]
 
 * Solution
 
