@@ -45,6 +45,9 @@ class ValidationConfig:
     check_external_links: bool = True
     orphan_grace_period_days: int = 7
     url_timeout_seconds: int = 10
+    # Org-roam integration settings
+    org_roam_priority: bool = True  # Prioritize ID properties for Org-roam compatibility
+    require_custom_id: bool = True  # Whether CUSTOM_ID is required (traditional Zettelkasten)
 
 
 @dataclass
@@ -81,7 +84,9 @@ class SlipboxConfig:
                         require_backlinks=val_data.get("require_backlinks", validation_config.require_backlinks),
                         check_external_links=val_data.get("check_external_links", validation_config.check_external_links),
                         orphan_grace_period_days=val_data.get("orphan_grace_period_days", validation_config.orphan_grace_period_days),
-                        url_timeout_seconds=val_data.get("url_timeout_seconds", validation_config.url_timeout_seconds)
+                        url_timeout_seconds=val_data.get("url_timeout_seconds", validation_config.url_timeout_seconds),
+                        org_roam_priority=val_data.get("org_roam_priority", validation_config.org_roam_priority),
+                        require_custom_id=val_data.get("require_custom_id", validation_config.require_custom_id)
                     )
                 
                 # Load path settings
@@ -123,7 +128,9 @@ def create_sample_config(output_path: Path) -> None:
             "require_backlinks": False,
             "check_external_links": True,
             "orphan_grace_period_days": 7,
-            "url_timeout_seconds": 10
+            "url_timeout_seconds": 10,
+            "org_roam_priority": True,
+            "require_custom_id": True
         },
         "paths": {
             "slips_dir": "slips/",

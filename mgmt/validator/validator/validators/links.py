@@ -12,9 +12,10 @@ from ..parser import OrgParser
 class InternalLinkValidator(BaseValidator):
     """Validates that internal links resolve to existing slips."""
     
-    def __init__(self, slips_dir: Path):
+    def __init__(self, slips_dir: Path, org_roam_priority: bool = True):
         """Initialize with slips directory to build slip index."""
         self.slips_dir = slips_dir
+        self.org_roam_priority = org_roam_priority
         self.slip_index = self._build_slip_index()
     
     def _build_slip_index(self) -> Dict[str, Path]:
@@ -51,14 +52,34 @@ class InternalLinkValidator(BaseValidator):
         for link in slip.links:
             if link.link_type == LinkType.INTERNAL:
                 if not self._link_resolves(link.target):
+                    # Determine severity based on link type and Org-roam priority
+                    severity, message = self._get_link_severity_and_message(link.target)
+                    
                     violations.append(Violation(
                         rule="BROKEN_INTERNAL_LINK",
-                        message=f"Internal link does not resolve: [[{link.target}]]",
+                        message=message,
                         line_number=link.line_number,
-                        severity=Severity.ERROR
+                        severity=severity
                     ))
         
         return violations
+    
+    def _get_link_severity_and_message(self, target: str) -> tuple[Severity, str]:
+        """Get appropriate severity and message based on link type."""
+        is_id_link = target.startswith('id:')
+        
+        if self.org_roam_priority:
+            if is_id_link:
+                # ID links are critical for Org-roam relationships
+                return (Severity.ERROR, 
+                       f"ID link does not resolve: [[{target}]] (breaks Org-roam functionality)")
+            else:
+                # Luhmann links are human readable convenience
+                return (Severity.WARNING, 
+                       f"Luhmann link does not resolve: [[{target}]] (human readable convenience)")
+        else:
+            # Non-Org-roam mode - all broken links are errors
+            return (Severity.ERROR, f"Internal link does not resolve: [[{target}]]")
     
     def _link_resolves(self, target: str) -> bool:
         """Check if a link target resolves to an existing slip."""
@@ -236,10 +257,10 @@ class BidirectionalLinkAnalyzer(BaseValidator):
 class SlipLinkValidator(BaseValidator):
     """Meta-validator that runs all link validations."""
     
-    def __init__(self, slips_dir: Path, grace_period_days: int = 7):
+    def __init__(self, slips_dir: Path, grace_period_days: int = 7, org_roam_priority: bool = True):
         """Initialize with configuration."""
         self.validators = [
-            InternalLinkValidator(slips_dir),
+            InternalLinkValidator(slips_dir, org_roam_priority),
             OrphanDetector(slips_dir, grace_period_days),
             BidirectionalLinkAnalyzer(slips_dir)
         ]

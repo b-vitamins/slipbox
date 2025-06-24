@@ -48,14 +48,9 @@ class BibliographyValidator(BaseValidator):
         
         for link in slip.links:
             if link.link_type == LinkType.BIBLIOGRAPHY:
-                # Extract citation key from cite:key format
-                target = link.target
-                if target.startswith("cite:"):
-                    cite_key = target[5:]  # Remove "cite:" prefix
-                else:
-                    cite_key = target
+                cite_key = self._extract_citation_key(link.target)
                 
-                if cite_key not in self.bib_entries:
+                if cite_key and cite_key not in self.bib_entries:
                     violations.append(Violation(
                         rule="MISSING_BIBLIOGRAPHY_ENTRY",
                         message=f"Bibliography entry not found: {cite_key}. "
@@ -64,7 +59,52 @@ class BibliographyValidator(BaseValidator):
                         severity=Severity.ERROR
                     ))
         
+        # Also check ROAM_REFS property for citation keys
+        if slip.properties.roam_refs:
+            for ref in slip.properties.roam_refs:
+                cite_key = self._extract_citation_key_from_ref(ref)
+                if cite_key and cite_key not in self.bib_entries:
+                    violations.append(Violation(
+                        rule="MISSING_BIBLIOGRAPHY_ENTRY",
+                        message=f"Bibliography entry in ROAM_REFS not found: {cite_key}. "
+                               f"Check .bib files in {self.bibliography_dir}",
+                        severity=Severity.ERROR
+                    ))
+        
         return violations
+    
+    def _extract_citation_key(self, target: str) -> str:
+        """Extract citation key from various citation formats."""
+        # Format: cite:key or cite:@key (org-ref and org-cite)
+        if target.startswith("cite:"):
+            key = target[5:]  # Remove "cite:" prefix
+            # Handle cite:@key format by removing @
+            if key.startswith("@"):
+                key = key[1:]
+            return key
+        
+        # Fallback - assume target is already a citation key
+        return target
+    
+    def _extract_citation_key_from_ref(self, ref: str) -> str:
+        """Extract citation key from ROAM_REFS entry."""
+        # Format: @key (common in ROAM_REFS)
+        if ref.startswith("@"):
+            return ref[1:]
+        
+        # Format: cite:key or cite:@key
+        if ref.startswith("cite:"):
+            key = ref[5:]
+            if key.startswith("@"):
+                key = key[1:]
+            return key
+        
+        # If it looks like a citation key (alphanumeric with some symbols), return it
+        if re.match(r'^[a-zA-Z][a-zA-Z0-9\-_:.]*$', ref):
+            return ref
+        
+        # Not a citation key
+        return ""
 
 
 class ExternalURLValidator(BaseValidator):

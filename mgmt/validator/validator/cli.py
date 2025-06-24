@@ -80,8 +80,13 @@ def check(format: str, fix: bool, no_external: bool, path: Path) -> None:
     try:
         # Run all available validators
         validators = [
-            SlipStructureValidator(config.validation.word_limit),
-            SlipLinkValidator(slips_dir, config.validation.orphan_grace_period_days)
+            SlipStructureValidator(
+                config.validation.word_limit,
+                config.validation.org_roam_priority,
+                config.validation.require_custom_id,
+                check_duplicate_aliases=True
+            ),
+            SlipLinkValidator(slips_dir, config.validation.orphan_grace_period_days, config.validation.org_roam_priority)
         ]
         
         # Add external validation unless disabled
@@ -119,7 +124,12 @@ def structure(path: Path) -> None:
     
     try:
         # Create structure validator
-        validators = [SlipStructureValidator(config.validation.word_limit)]
+        validators = [SlipStructureValidator(
+            config.validation.word_limit,
+            config.validation.org_roam_priority,
+            config.validation.require_custom_id,
+            check_duplicate_aliases=True
+        )]
         engine = ValidationEngine(validators)
         
         results = engine.validate_slipbox(slips_dir)
@@ -167,7 +177,7 @@ def links(path: Path) -> None:
 
 
 @main.command()
-@click.option("--grace-days", default=None, help="Grace period for new slips (days)")
+@click.option("--grace-days", type=int, default=None, help="Grace period for new slips (days)")
 @click.argument("path", type=click.Path(exists=True, path_type=Path), default=".")
 def orphans(grace_days: Optional[int], path: Path) -> None:
     """Find orphaned slips with no connections."""

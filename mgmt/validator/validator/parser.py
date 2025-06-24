@@ -44,6 +44,8 @@ class OrgParser:
         # Extract individual properties
         id_match = re.search(r':ID:\s*([^\n]+)', props_content)
         custom_id_match = re.search(r':CUSTOM_ID:\s*([^\n]+)', props_content)
+        roam_aliases_match = re.search(r':ROAM_ALIASES:\s*([^\n]+)', props_content)
+        roam_refs_match = re.search(r':ROAM_REFS:\s*([^\n]+)', props_content)
         
         # Extract title
         title_match = re.search(r'#\+TITLE:\s*([^\n]+)', content)
@@ -57,11 +59,31 @@ class OrgParser:
             if tags_str.startswith(':') and tags_str.endswith(':'):
                 filetags = [tag for tag in tags_str[1:-1].split(':') if tag]
         
+        # Parse ROAM_ALIASES (space-separated values)
+        roam_aliases = []
+        if roam_aliases_match:
+            aliases_str = roam_aliases_match.group(1).strip()
+            # Handle both quoted and unquoted aliases
+            if aliases_str.startswith('"') and aliases_str.endswith('"'):
+                aliases_str = aliases_str[1:-1]  # Remove quotes
+            roam_aliases = [alias.strip() for alias in aliases_str.split() if alias.strip()]
+        
+        # Parse ROAM_REFS (space-separated values)
+        roam_refs = []
+        if roam_refs_match:
+            refs_str = roam_refs_match.group(1).strip()
+            # Handle both quoted and unquoted refs
+            if refs_str.startswith('"') and refs_str.endswith('"'):
+                refs_str = refs_str[1:-1]  # Remove quotes
+            roam_refs = [ref.strip() for ref in refs_str.split() if ref.strip()]
+        
         return SlipProperties(
             id=id_match.group(1).strip() if id_match else "",
             custom_id=custom_id_match.group(1).strip() if custom_id_match else "",
             title=title_match.group(1).strip() if title_match else "",
-            filetags=filetags
+            filetags=filetags,
+            roam_aliases=roam_aliases if roam_aliases else None,
+            roam_refs=roam_refs if roam_refs else None
         )
 
     def extract_links(self, content: str) -> List[Link]:
@@ -95,7 +117,7 @@ class OrgParser:
             return LinkType.INTERNAL
         elif target.startswith('http://') or target.startswith('https://'):
             return LinkType.EXTERNAL
-        elif target.startswith('cite:'):
+        elif target.startswith('cite:'):  # Both cite:key and cite:@key
             return LinkType.BIBLIOGRAPHY
         elif target.startswith('file:'):
             return LinkType.MEDIA

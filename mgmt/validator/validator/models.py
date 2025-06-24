@@ -30,6 +30,8 @@ class SlipProperties:
     title: str           # Clear, searchable title
     filetags: List[str]  # Type and domain tags
     created: Optional[datetime] = None  # Optional timestamp
+    roam_aliases: List[str] = None  # Alternative names for search/completion
+    roam_refs: List[str] = None     # External references (URLs, citation keys)
 
 
 @dataclass
