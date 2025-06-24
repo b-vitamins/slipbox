@@ -248,15 +248,192 @@ Before moving to next phase:
 
 ---
 
-## Current Priority: Phase 4 or Production Use
-**Recommended:** Start using the validator on your slipbox for practical benefit
+## Phase 5: Org-roam Integration
+**Goal:** Align validator with Org-roam requirements and priorities
+
+### Entry Criteria
+- [x] Phase 3 complete (external validation working)
+- [x] Understanding of Org-roam node model and database caching
+- [x] Knowledge of Org-roam vs traditional Zettelkasten requirements
+
+### Tasks
+
+#### 5.1 Adjust Validation Priorities for Org-roam ✅ COMPLETE
+**File:** `validator/validators/structure.py`
+
+**Requirements:**
+- [x] Missing `:ID:` property = **ERROR** (breaks Org-roam functionality)
+- [x] Missing `:CUSTOM_ID:` property = **WARNING** (breaks traditional Zettelkasten)
+- [x] Update severity levels in RequiredPropertiesValidator
+- [x] Add configuration option for ID priority mode
+- [x] Update CLI to pass configuration options
+- [x] Add comprehensive tests for both modes
+- [x] Update slipbox.toml with new options
+- [x] Verify behavior on real slipbox (76 warnings instead of 76 errors)
+
+#### 5.2 Enhanced Citation Format Support ✅ COMPLETE
+**File:** `validator/validators/external.py`, `validator/parser.py`, `validator/models.py`
+
+**Requirements:**
+- [x] Support `[cite:@key]` format (org-cite) - handled as `cite:@key` link target
+- [x] Support `cite:key` format (org-ref) - already supported, enhanced extraction
+- [x] Support `@key` in ROAM_REFS property - new extraction and validation
+- [x] Maintain backward compatibility with existing `[[cite:key]]` - fully compatible
+- [x] Enhanced citation key extraction with multiple format support
+- [x] Added ROAM_ALIASES and ROAM_REFS property support to SlipProperties model
+- [x] Updated parser to extract ROAM_ALIASES and ROAM_REFS from properties block
+- [x] Enhanced BibliographyValidator to validate citation keys in ROAM_REFS
+- [x] Added comprehensive tests for all citation formats (34 tests total passing)
+
+#### 5.3 ROAM_ALIASES and ROAM_REFS Validation ✅ COMPLETE
+**File:** `validator/validators/structure.py`
+
+**Requirements:**
+- [x] Validate ROAM_ALIASES format (multiple space-separated values) - warns on invalid format
+- [x] Validate ROAM_REFS format (URLs, citation keys) - distinguishes URLs vs citation keys 
+- [x] Check for duplicate aliases across slips - warns when aliases are reused
+- [x] Verify citation keys in ROAM_REFS exist in bibliography - integrated with BibliographyValidator
+- [x] Support multiple ROAM_REFS values per slip - parser handles space-separated values
+- [x] Added RoamPropertiesValidator with comprehensive format validation
+- [x] Integrated into SlipStructureValidator meta-validator
+- [x] Added 6 comprehensive tests covering valid/invalid formats and duplicate detection
+- [x] Updated CLI to enable duplicate alias checking
+- [x] Tested on real slipbox (no ROAM properties found, working correctly)
+
+#### 5.4 Link Priority Adjustment ✅ COMPLETE
+**File:** `validator/validators/links.py`
+
+**Requirements:**
+- [x] `[[id:UUID]]` broken links = **ERROR** (essential for relationships)
+- [x] `[[42/3a]]` broken links = **WARNING** (traditional convenience)
+- [x] Update InternalLinkValidator severity logic with `_get_link_severity_and_message()`
+- [x] Add configuration for link priority mode via `org_roam_priority` parameter
+- [x] Updated SlipLinkValidator to pass configuration 
+- [x] Updated CLI to pass org_roam_priority from config
+- [x] Added 3 comprehensive tests for both modes (ERROR vs WARNING)
+- [x] Tested on real slipbox: 59 ID link errors + 18 Luhmann link warnings
+
+### Exit Criteria
+- [ ] Validation severity reflects Org-roam vs traditional priorities
+- [ ] All citation formats supported (org-cite, org-ref, traditional)
+- [ ] ROAM_ALIASES and ROAM_REFS properly validated
+- [ ] Link validation prioritizes ID links appropriately
+- [ ] Configuration allows switching between strict Org-roam and hybrid modes
+
+---
+
+## Phase 6: Advanced Org-roam Features
+**Goal:** Support headline nodes, template compliance, and database consistency
+
+### Entry Criteria
+- [ ] Phase 5 complete (Org-roam integration working)
+
+### Tasks
+
+#### 6.1 Headline Node Support ⏳ PENDING
+**File:** `validator/parser.py`, `validator/validators/structure.py`
+
+**Requirements:**
+- [ ] Parse headline nodes with `:ID:` properties
+- [ ] Validate headline-level nodes separately from file nodes
+- [ ] Support nested headlines with IDs
+- [ ] Handle headline title validation vs file `#+title`
+- [ ] Update slip index to include headline nodes
+
+#### 6.2 Template Compliance Validation ⏳ PENDING
+**File:** `validator/validators/template.py`
+
+**Requirements:**
+- [ ] Validate timestamp filename format: `%<%Y%m%d%H%M%S>-${slug}.org`
+- [ ] Check for proper template-generated structure
+- [ ] Validate required template fields (title, filetags)
+- [ ] Optional validation for custom template compliance
+
+#### 6.3 Tag Inheritance Analysis ⏳ PENDING
+**File:** `validator/validators/structure.py`
+
+**Requirements:**
+- [ ] Understand `#+filetags` inheritance to headlines
+- [ ] Detect tag conflicts and redundancy
+- [ ] Validate proper tag hierarchy
+- [ ] Warn about unintended tag inheritance
+
+#### 6.4 Database Consistency Checks ⏳ PENDING
+**File:** `validator/validators/consistency.py`
+
+**Requirements:**
+- [ ] Compare validator findings with org-roam database (if available)
+- [ ] Detect cache staleness issues
+- [ ] Warn about performance implications
+- [ ] Optional org-roam-db integration for cross-validation
+
+### Exit Criteria
+- [ ] Full headline node support implemented
+- [ ] Template compliance validation working
+- [ ] Tag inheritance properly analyzed
+- [ ] Database consistency checking available
+- [ ] Advanced features configurable and well-tested
+
+---
+
+## Phase 4: Advanced Features (Revised)
+**Goal:** Polish, auto-fixing, and production features
+
+### Entry Criteria
+- [ ] Phase 6 complete (advanced Org-roam features working)
+
+### Tasks
+
+#### 4.1 Enhanced Reporting
+- [ ] JSON output format for tool integration
+- [ ] HTML report generation with Org-roam buffer-style display
+- [ ] Violation trend tracking
+- [ ] Export validation results for external analysis
+
+#### 4.2 Auto-fixing
+- [ ] `--fix` flag implementation
+- [ ] Safe automatic corrections (formatting, missing properties)
+- [ ] Backup and rollback capabilities
+- [ ] Interactive fixing mode with user confirmation
+
+#### 4.3 Git Integration
+- [ ] Pre-commit hook integration
+- [ ] Validate only changed files
+- [ ] Integration with existing commit-msg hook
+- [ ] Git-aware validation reporting
+
+#### 4.4 Performance Optimization
+- [ ] Parallel slip processing
+- [ ] Incremental validation (only changed files)
+- [ ] Large slipbox optimization (1000+ slips)
+- [ ] Memory-efficient processing for huge slipboxes
+
+### Exit Criteria
+- [ ] Production-ready validator with auto-fix capabilities
+- [ ] Full Git workflow integration
+- [ ] Optimized for large-scale slipboxes
+- [ ] Comprehensive reporting and export options
+
+---
+
+## Current Priority: Phase 5 (Org-roam Integration)
+**Focus:** Align validation priorities with Org-roam requirements
 
 **Phase 1 Status:** ✅ COMPLETE - Basic structure validation working
 **Phase 2 Status:** ✅ COMPLETE - Link validation working  
 **Phase 3 Status:** ✅ COMPLETE - External validation and configuration working
-- BibliographyValidator validates [[cite:key]] against .bib files
-- ExternalURLValidator checks HTTP/HTTPS reachability (configurable)
-- MediaFileValidator verifies [[file:path]] existence
-- SlipboxConfig system with slipbox.toml configuration
-- All 28 tests passing (8 new external validation tests)
-- CLI commands: structure, links, orphans, external, check, init-config all functional
+**Phase 4 Status:** ⏳ DEFERRED - Advanced features moved after Org-roam integration
+**Phase 5 Status:** ✅ COMPLETE - Org-roam integration fully implemented
+
+### Completed in Phase 5:
+1. ✅ **Adjusted validation priorities** - Missing `:ID:` = ERROR, missing `:CUSTOM_ID:` = WARNING
+2. ✅ **Enhanced citation support** - Full org-cite and org-ref format validation
+3. ✅ **ROAM_ALIASES/ROAM_REFS validation** - Complete format validation and duplicate detection
+4. ✅ **Link priority adjustment** - `[[id:UUID]]` links = ERROR, `[[42/3a]]` links = WARNING
+
+### Exit Criteria ✅ PHASE 5 COMPLETE
+- [x] Validation severity reflects Org-roam vs traditional priorities
+- [x] All citation formats supported (org-cite, org-ref, traditional)
+- [x] ROAM_ALIASES and ROAM_REFS properly validated
+- [x] Link validation prioritizes ID links appropriately
+- [x] Configuration allows switching between strict Org-roam and hybrid modes
