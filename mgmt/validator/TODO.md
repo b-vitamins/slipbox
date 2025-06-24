@@ -152,7 +152,7 @@ class BidirectionalLinkAnalyzer(BaseValidator):
 
 ---
 
-## Phase 3: External Validation
+## Phase 3: External Validation ✅ COMPLETE
 **Goal:** Bibliography links, external URLs, media files
 
 ### Entry Criteria
@@ -160,26 +160,26 @@ class BidirectionalLinkAnalyzer(BaseValidator):
 
 ### Tasks
 
-#### 3.1 Bibliography Integration
-- [ ] Parse .bib files in bibliography/ directory
-- [ ] Validate [[cite:key]] links reference existing entries
-- [ ] Integration with existing bibliography structure
+#### 3.1 Bibliography Integration ✅ COMPLETE
+- [x] Parse .bib files in bibliography/ directory
+- [x] Validate [[cite:key]] links reference existing entries
+- [x] Integration with existing bibliography structure
 
-#### 3.2 External Resource Validation  
-- [ ] Optional HTTP checking for [[https://...]] links
-- [ ] File existence checking for [[file:...]] links
-- [ ] Configurable timeouts and error handling
+#### 3.2 External Resource Validation ✅ COMPLETE
+- [x] Optional HTTP checking for [[https://...]] links
+- [x] File existence checking for [[file:...]] links
+- [x] Configurable timeouts and error handling
 
-#### 3.3 Configuration System
+#### 3.3 Configuration System ✅ COMPLETE
 **File:** `validator/config.py`
-- [ ] Read slipbox.toml configuration
-- [ ] Override defaults for word limits, grace periods, etc.
-- [ ] Configuration validation and error reporting
+- [x] Read slipbox.toml configuration
+- [x] Override defaults for word limits, grace periods, etc.
+- [x] Configuration validation and error reporting
 
-### Exit Criteria
-- [ ] All link types validated
-- [ ] Configuration system working
-- [ ] External validation optional/configurable
+### Exit Criteria ✅ PHASE 3 COMPLETE
+- [x] All link types validated (internal, external, bibliography, media)
+- [x] Configuration system working (slipbox.toml support)
+- [x] External validation optional/configurable (--no-external, --no-urls flags)
 
 ---
 
@@ -248,13 +248,15 @@ Before moving to next phase:
 
 ---
 
-## Current Priority: Phase 3, Task 3.1
-**Next action:** Implement bibliography validation in `validator/validators/external.py`
+## Current Priority: Phase 4 or Production Use
+**Recommended:** Start using the validator on your slipbox for practical benefit
 
 **Phase 1 Status:** ✅ COMPLETE - Basic structure validation working
 **Phase 2 Status:** ✅ COMPLETE - Link validation working  
-- InternalLinkValidator detects broken [[id:UUID]] and [[42/3a]] links
-- OrphanDetector finds disconnected slips (grace period configurable)
-- BidirectionalLinkAnalyzer suggests missing back-links
-- All 20 tests passing (7 new link validation tests)
-- CLI commands: structure, links, orphans, check all functional
+**Phase 3 Status:** ✅ COMPLETE - External validation and configuration working
+- BibliographyValidator validates [[cite:key]] against .bib files
+- ExternalURLValidator checks HTTP/HTTPS reachability (configurable)
+- MediaFileValidator verifies [[file:path]] existence
+- SlipboxConfig system with slipbox.toml configuration
+- All 28 tests passing (8 new external validation tests)
+- CLI commands: structure, links, orphans, external, check, init-config all functional
