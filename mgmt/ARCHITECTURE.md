@@ -1,348 +1,222 @@
-# Slipbox Validation Architecture
+# Management System Architecture
 
-*Software Architecture Document for implementing slipbox validation tools*
+*High-level design for slipbox infrastructure and tooling*
 
-## Data Models
+## System Overview
 
-### Slip Representation
-```python
-@dataclass
-class Slip:
-    file_path: Path
-    properties: SlipProperties
-    content: str
-    links: List[Link]
-    word_count: int
-    connection_points: List[ConnectionPoint]
-    
-@dataclass 
-class SlipProperties:
-    id: str              # UUID, never changes
-    custom_id: str       # Luhmann number (42/3a)
-    title: str           # Clear, searchable title
-    filetags: List[str]  # Type and domain tags
-    created: datetime    # Optional timestamp
+The management workspace provides infrastructure that supports the Zettelkasten intellectual work. Multiple independent projects collaborate through shared conventions and data formats.
+
+```
+slipbox/                    # Zettelkasten (primary system)
+├── slips/                  # Intellectual content
+├── bibliography/           # Academic sources
+└── mgmt/                   # Management infrastructure
+    ├── validator/          # Format compliance (Python)
+    ├── analyzer/           # Graph analysis (future: Rust/C++)
+    ├── ui/                 # Conversational interface (future: TypeScript)
+    └── scripts/            # Utilities (future: Shell)
 ```
 
-### Link Types
-```python
-@dataclass
-class Link:
-    source_slip: str     # Source slip ID
-    target: str          # Target (slip ID, URL, file path, etc.)
-    link_type: LinkType  # INTERNAL, EXTERNAL, BIBLIOGRAPHY, MEDIA
-    line_number: int     # Location in source slip
-    context: str         # Surrounding text for validation
+## Design Principles
 
-enum LinkType:
-    INTERNAL     # [[id:UUID][Description]] or [[CUSTOM_ID][Description]]  
-    EXTERNAL     # [[URL][Description]]
-    BIBLIOGRAPHY # [[cite:key][Description]]
-    MEDIA        # [[file:path][Description]]
+### Separation of Concerns
+- **Each project solves one problem well** - Validation, analysis, interaction, utilities
+- **Independent development cycles** - Projects can evolve at different rates
+- **Language optimization** - Use best tool for each domain (Python/data, Rust/performance, TypeScript/UI)
+
+### Shared Foundations
+- **Common conventions** - All tools implement same slip format requirements
+- **Compatible data models** - Consistent representation of slips, links, properties
+- **Unified validation** - Single source of truth for what constitutes valid slipbox
+
+### Integration Points
+- **File system interface** - All tools read/write same slip files
+- **Configuration sharing** - Common settings via `slipbox.toml`
+- **Data exchange** - JSON/structured formats for tool interoperability
+
+## Component Architecture
+
+### Data Layer
+
+**Slip Repository** (File System)
+```
+slips/
+├── 2025-06-24-concept-emergence.org     # Individual slip files
+├── 2025-06-24-luhmann-principles.org    # Standard org format
+└── ...                                  # Flat structure, UUID-named
 ```
 
-### Connection Points
-```python
-@dataclass  
-class ConnectionPoint:
-    line_number: int
-    marker: str          # What marks this connection (red text equivalent)
-    branches: List[str]  # Slip IDs that branch from this point
-```
-
-### Validation Results
-```python
-@dataclass
-class ValidationResult:
-    file_path: Path
-    passed: bool
-    violations: List[Violation]
-    warnings: List[Warning]
-
-@dataclass
-class Violation:
-    rule: str           # "WORD_LIMIT", "MISSING_PROPERTY", etc.
-    message: str        # Human readable description  
-    line_number: int    # Location of violation
-    severity: Severity  # ERROR, WARNING, INFO
-```
-
-## Validation Rules (Precise Specifications)
-
-### Required Properties
-- **Rule**: `REQUIRED_PROPERTIES`
-- **Spec**: Every `.org` file in `slips/` must have properties block with:
-  - `:ID:` field containing valid UUID
-  - `:CUSTOM_ID:` field containing Luhmann number pattern `\d+(/\d+)*[a-z]*\d*`
-  - `#+TITLE:` line immediately after properties block
-  - `#+FILETAGS:` line with at least one tag
-- **Validation**: Regex parsing of properties block, UUID validation
-- **Error**: Missing required property, malformed UUID, invalid Luhmann number
-
-### Word Count Limit
-- **Rule**: `WORD_LIMIT`
-- **Spec**: Content (excluding properties block, title, filetags) ≤ 500 words
-- **Word Definition**: Whitespace-separated tokens, excluding:
-  - Org markup (`*bold*`, `/italic/`, `=code=`)
-  - Link syntax (`[[target][description]]`) 
-  - Property blocks and metadata
-- **Exceptions**: Slips tagged with `:extended:` or `:sequence:`
-- **Validation**: Token counting after markup removal
-- **Error**: Word count with actual vs limit
-
-### Connection Point Marking  
-- **Rule**: `CONNECTION_POINTS`
-- **Spec**: When content references connection points, must be marked clearly
-- **Valid Markers**: 
-  - `→ 57/12a` (arrow to Luhmann number)
-  - `[→57/12a]` (bracketed reference)
-  - `@@connection: 57/12a@@` (org macro style)
-- **Validation**: Pattern matching, verify referenced slips exist
-- **Warning**: Unmarked apparent connections (heuristic detection)
-
-### Link Integrity
-- **Rule**: `LINK_INTEGRITY` 
-- **Spec**: All internal links must resolve to existing slips or valid external resources
-- **Internal Links**: `[[id:UUID]]` or `[[CUSTOM_ID]]` must reference existing slip
-- **External Links**: HTTP URLs must be reachable (optional validation)
-- **Bibliography Links**: `[[cite:key]]` must exist in `.bib` files
-- **Media Links**: File paths must exist relative to repository root
-- **Validation**: Graph traversal, HTTP HEAD requests, file system checks
-- **Error**: Broken internal link, missing bibliography entry, missing file
-
-### Bidirectional Linking
-- **Rule**: `BIDIRECTIONAL_LINKS`
-- **Spec**: For every link A→B, should have back-link B→A (warning, not error)
-- **Detection**: Build graph of all links, identify unidirectional edges
-- **Validation**: Graph analysis to find missing back-links
-- **Warning**: Suggest creating back-link (not enforced)
-
-### Orphan Detection  
-- **Rule**: `ORPHAN_DETECTION`
-- **Spec**: Slips with zero incoming or outgoing links
-- **Exception**: Recently created slips (< 7 days) or tagged `:fleeting:`
-- **Validation**: Graph analysis for isolated nodes
-- **Warning**: List orphaned slips for manual review
-
-## Module Design
-
-### Core Components
-
-```python
-# slipbox_validator/
-├── __init__.py
-├── cli.py              # Command-line interface
-├── models.py           # Data models (Slip, Link, etc.)
-├── parser.py           # Org file parsing  
-├── validators/         # Validation rule implementations
-│   ├── __init__.py
-│   ├── structure.py    # Properties, word count
-│   ├── links.py        # Link integrity, bidirectional
-│   ├── network.py      # Orphan detection, graph analysis
-│   └── content.py      # Connection points, formatting
-├── reporters/          # Output formatting
-│   ├── __init__.py  
-│   ├── console.py      # Terminal output
-│   ├── json.py         # Machine-readable output
-│   └── html.py         # Web dashboard (future)
-└── utils.py            # Common utilities
-```
-
-### Parser Module
-```python
-class OrgParser:
-    def parse_slip(self, file_path: Path) -> Slip:
-        """Parse org file into Slip object"""
-        
-    def extract_properties(self, content: str) -> SlipProperties:
-        """Extract :PROPERTIES: block"""
-        
-    def extract_links(self, content: str) -> List[Link]:
-        """Find all [[link][desc]] patterns"""
-        
-    def count_words(self, content: str) -> int:
-        """Count words excluding markup"""
-        
-    def find_connection_points(self, content: str) -> List[ConnectionPoint]:
-        """Detect marked connection points"""
-```
-
-### Validator Framework
-```python
-class BaseValidator:
-    def validate(self, slip: Slip) -> List[Violation]:
-        """Override in subclasses"""
-        
-class ValidationEngine:
-    def __init__(self, validators: List[BaseValidator]):
-        self.validators = validators
-        
-    def validate_slip(self, slip: Slip) -> ValidationResult:
-        """Run all validators on single slip"""
-        
-    def validate_slipbox(self, slips_dir: Path) -> List[ValidationResult]:
-        """Validate entire slipbox"""
-```
-
-## CLI Specification
-
-### Command Structure
-```bash
-slipbox-validate [COMMAND] [OPTIONS] [ARGS]
-```
-
-### Commands
-```bash
-# Validate all slips
-slipbox-validate check [--fix] [--format=console|json] [PATH]
-
-# Specific validation types  
-slipbox-validate structure [PATH]     # Properties, word count
-slipbox-validate links [PATH]         # Link integrity
-slipbox-validate network [PATH]       # Orphans, graph analysis
-slipbox-validate content [PATH]       # Connection points, formatting
-
-# Maintenance operations
-slipbox-validate orphans [PATH]       # Find orphaned slips
-slipbox-validate backlinks [PATH]     # Suggest missing back-links
-slipbox-validate health [PATH]        # Overall health report
-
-# Utilities
-slipbox-validate stats [PATH]         # Count slips, links, words
-slipbox-validate graph [PATH]         # Export graph data
-```
-
-### Options
-```bash
---config FILE       # Configuration file path
---format FORMAT     # Output format: console, json, html
---fix              # Auto-fix violations when possible
---strict           # Treat warnings as errors
---include PATTERN  # Only validate matching files
---exclude PATTERN  # Skip matching files  
---verbose, -v      # Verbose output
---quiet, -q        # Suppress non-error output
---no-external      # Skip external link validation
-```
-
-### Exit Codes
-```bash
-0   # Success, no violations
-1   # Validation errors found
-2   # Command-line argument errors
-3   # File system errors (missing directory, etc.)
-```
-
-### Configuration File
+**Configuration** (`slipbox.toml`)
 ```toml
-# slipbox.toml
 [validation]
 word_limit = 500
 require_backlinks = false
-check_external_links = true
-orphan_grace_period_days = 7
 
 [paths]
 slips_dir = "slips/"
 bibliography_dir = "bibliography/"
-media_dir = "assets/"
 
-[output]
-format = "console"
-show_line_numbers = true
-highlight_violations = true
+[analysis]
+min_connection_strength = 0.1
+orphan_grace_period_days = 7
 ```
 
-## Implementation Priorities
+### Core Data Models
 
-### Phase 1: Core Structure Validation
-**Goal**: Basic slip format compliance
-**Scope**: 
-- Required properties validation
-- Word count checking
-- Basic org file parsing
-- Console output
+**Slip Structure** (Shared across all tools)
+```
+Slip:
+  - file_path: Path to .org file
+  - properties: ID, CUSTOM_ID, title, filetags
+  - content: Main text content
+  - links: All outgoing connections
+  - metadata: Word count, timestamps, etc.
+```
 
-**Deliverables**:
-- `slipbox-validate structure`
-- Basic violation reporting
-- Configuration file support
+**Link Types** (Common taxonomy)
+```
+- INTERNAL: Between slips ([[id:UUID]] or [[42/3a]])
+- EXTERNAL: Web resources ([[https://...]])  
+- BIBLIOGRAPHY: Academic sources ([[cite:key]])
+- MEDIA: Files and images ([[file:path]])
+```
 
-### Phase 2: Link Validation  
-**Goal**: Internal consistency
-**Scope**:
-- Link integrity checking
-- Orphan detection
-- Bidirectional link analysis
-- Graph construction
+### Tool Integration
 
-**Deliverables**:
-- `slipbox-validate links`
-- `slipbox-validate orphans`
-- Network analysis utilities
+**Validation → Analysis**
+- Validator ensures data quality before analysis
+- Common violation reporting format
+- Shared understanding of valid slip structure
 
-### Phase 3: Content Validation
-**Goal**: Connection point compliance
-**Scope**:
-- Connection point detection
-- Content formatting rules
-- Bibliography integration
-- External link checking
+**Analysis → UI**
+- Graph data exported in standard formats (JSON, GraphML)
+- Network metrics available for conversational queries
+- Connection recommendations feed interactive exploration
 
-**Deliverables**:
-- `slipbox-validate content`
-- Bibliography validation
-- Media file checking
+**All Tools → Configuration**
+- Shared settings reduce duplication
+- Consistent behavior across projects
+- Single point for customization
 
-### Phase 4: Maintenance Tools
-**Goal**: Ongoing slipbox health
-**Scope**:
-- Health dashboards
-- Automated reports
-- Integration with git hooks
-- Performance optimization
+## Interface Specifications
 
-**Deliverables**:
-- `slipbox-validate health`
-- HTML reports
-- Git hook integration
-- Scheduled validation
+### Command Line Interface
+```bash
+# Consistent naming pattern
+slipbox-validate [command] [options] [path]
+slipbox-analyze [command] [options] [path]  
+slipbox-ui [command] [options] [path]
+```
 
-## Testing Strategy
+### Data Exchange Formats
 
-### Unit Tests
-- Parser functions (properties, links, word counting)
-- Individual validators
-- Utility functions
-- Error handling
+**Validation Results**
+```json
+{
+  "file_path": "slips/example.org",
+  "passed": false,
+  "violations": [
+    {
+      "rule": "WORD_LIMIT", 
+      "message": "Content exceeds 500 words",
+      "line_number": 15,
+      "severity": "ERROR"
+    }
+  ]
+}
+```
 
-### Integration Tests  
-- Full validation runs on sample slipboxes
-- CLI command execution
-- Configuration file handling
-- Output format generation
+**Graph Export**
+```json
+{
+  "nodes": [
+    {"id": "42/3a", "title": "Logic", "word_count": 350, "tags": ["concept"]}
+  ],
+  "edges": [
+    {"source": "42/3a", "target": "57/12", "type": "INTERNAL", "strength": 0.8}
+  ]
+}
+```
 
-### Test Data
-- Sample slips with various violations
-- Valid slips covering edge cases
-- Broken link scenarios
-- Large slipbox performance testing
+### Configuration Schema
 
-## Error Handling
+**Validation Settings**
+```toml
+[validation]
+word_limit = 500
+check_external_links = true
+require_properties = ["ID", "CUSTOM_ID", "TITLE", "FILETAGS"]
+allowed_tags = ["concept", "literature", "fleeting", "sequence"]
+```
 
-### Graceful Degradation
-- Skip unreadable files with warning
-- Continue validation on parser errors
-- Provide partial results when possible
+**Analysis Settings**  
+```toml
+[analysis]
+orphan_grace_period_days = 7
+min_connection_strength = 0.1
+centrality_algorithms = ["betweenness", "pagerank"]
+cluster_detection = true
+```
 
-### Error Categories
-- **Fatal**: Cannot continue (missing slips directory)
-- **Error**: Validation rule violation  
-- **Warning**: Potential issue (missing back-link)
-- **Info**: Informational (orphan slip)
+## Extension Points
 
-### User Experience
-- Clear error messages with line numbers
-- Actionable suggestions for fixes
-- Progress indicators for large slipboxes
-- Colored output for better readability
+### Adding New Projects
+
+**Project Structure Template**
+```
+mgmt/newproject/
+├── README.md              # Usage documentation
+├── ARCHITECTURE.md        # Implementation details
+├── pyproject.toml         # or equivalent packaging
+├── newproject/            # Source code
+└── tests/                 # Test suite
+```
+
+**Integration Checklist**
+- [ ] Implements shared data models from `CONVENTIONS.md`
+- [ ] Reads `slipbox.toml` configuration  
+- [ ] Follows CLI naming patterns
+- [ ] Provides structured output for tool chaining
+- [ ] Includes integration tests with existing tools
+
+### Future Capabilities
+
+**Conversational Interface** (`mgmt/ui/`)
+- Natural language queries about slip content
+- Interactive graph exploration
+- Guided connection discovery
+- "Communicating with Slipboxes" made literal
+
+**Performance Analysis** (`mgmt/analyzer/`)
+- Large-scale graph algorithms (10,000+ slips)
+- Community detection in knowledge networks
+- Temporal analysis of idea development
+- Citation network analysis with bibliography integration
+
+**Automation** (`mgmt/scripts/`)
+- Git hooks for validation
+- Scheduled maintenance tasks
+- Slip creation templates
+- Bibliography synchronization
+
+## Quality Assurance
+
+### Testing Strategy
+- **Unit tests** - Each project tests its own functionality
+- **Integration tests** - Cross-project data compatibility  
+- **End-to-end tests** - Full validation → analysis → UI workflows
+- **Performance tests** - Large slipbox scalability
+
+### Documentation Standards
+- **README.md** - User-facing usage instructions
+- **ARCHITECTURE.md** - Implementation design decisions
+- **API documentation** - For programmatic interfaces
+- **Examples** - Sample configurations and workflows
+
+### Monitoring
+- **Validation metrics** - Track slip compliance over time
+- **Performance metrics** - Tool execution times and memory usage
+- **Usage patterns** - Which tools are used together
+- **Error tracking** - Common failure modes and improvements
+
+The goal is a robust, extensible platform that scales with the intellectual ambitions of the Zettelkasten while maintaining Luhmann's core principles of organic growth and surprising connections.
