@@ -2,7 +2,7 @@
 :ID:       978d8ccb-d21a-4178-b3c4-5160d036702d
 :END:
 #+TITLE: A guide for communicating with slipboxes
-#+FILETAGS: :index:
+#+FILETAGS: :index:extended:
 #+SETUPFILE: ../../setupfile.org
 
 A comprehensive reference for all interactions with the Org-Roam notes management agent.
