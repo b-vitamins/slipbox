@@ -1,0 +1,230 @@
+:PROPERTIES:
+:ID:       373cbb6c-6c5e-4ef8-b7aa-8fcaf71517b3
+:END:
+#+TITLE: Git Sparse Checkout
+#+FILETAGS: :git:performance:sparse:monorepo:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Sparse checkout allows you to check out only a subset of files from a repository's working directory. Essential for monorepos where you only need specific directories or file types.
+
+* Basic Setup
+
+** For Monorepos
+Only check out the directories you need:
+
+#+begin_src bash
+# Clone without checking out files
+git clone --no-checkout <url> myrepo
+cd myrepo
+
+# Initialize sparse checkout
+git sparse-checkout init
+
+# Specify directories you want
+git sparse-checkout set src/frontend src/shared
+
+# Now checkout
+git read-tree -m -u HEAD
+#+end_src
+
+** Quick Enable
+#+begin_src bash
+# Enable sparse checkout in existing repo
+git config core.sparseCheckout true
+
+# Set patterns
+echo "src/frontend/*" > .git/info/sparse-checkout
+echo "src/shared/*" >> .git/info/sparse-checkout
+
+# Apply patterns
+git read-tree -m -u HEAD
+#+end_src
+
+* Sparse Checkout Patterns
+
+** Pattern File Location
+Edit `.git/info/sparse-checkout`:
+
+#+begin_src text
+# Include specific directories
+/src/frontend/
+/src/shared/
+/docs/
+
+# Include all TypeScript files
+*.ts
+
+# Exclude test directories
+!**/test/
+!**/tests/
+#+end_src
+
+** Pattern Rules
+- Paths starting with `/` are relative to repository root
+- `*` matches any characters except `/`
+- `**` matches any characters including `/`
+- `!` excludes matching files
+
+* Cone Mode (Recommended)
+
+** Why Cone Mode?
+- **Much faster** performance
+- **Simpler patterns** (directories only)
+- **Better Git integration**
+- **Recommended** for most use cases
+
+** Setup
+#+begin_src bash
+# Enable cone mode for better performance
+git sparse-checkout init --cone
+
+# Set directories (cone mode only supports directories)
+git sparse-checkout set frontend shared docs
+
+# List current sparse directories
+git sparse-checkout list
+#+end_src
+
+** Cone Mode Commands
+#+begin_src bash
+# Add directory to sparse checkout
+git sparse-checkout add backend/api
+
+# Remove directory from sparse checkout
+git sparse-checkout remove frontend/legacy
+
+# Revert to full checkout
+git sparse-checkout disable
+#+end_src
+
+* Sparse Index (Experimental)
+
+** Advanced Optimization
+#+begin_src bash
+# Further optimization: sparse index
+git config index.sparse true
+
+# Index only contains entries for checked out files
+# Massive performance improvement for status/add/commit
+#+end_src
+
+** Performance Impact
+- `git status`: Only checks sparse files
+- `git add .`: Only adds sparse files
+- `git commit`: Much faster index operations
+
+* Working with Sparse Checkout
+
+** Daily Operations
+#+begin_src bash
+# Check which files are sparse
+git ls-files --sparse
+
+# See sparse checkout configuration
+git sparse-checkout list
+
+# Temporarily see all files
+git ls-tree -r HEAD
+
+# Add file outside sparse area
+git add --sparse path/to/file
+#+end_src
+
+** Branch Operations
+#+begin_src bash
+# Switching branches respects sparse checkout
+git checkout feature-branch
+
+# Merge only affects sparse files
+git merge main
+
+# Rebase works with sparse checkout
+git rebase main
+#+end_src
+
+* Common Patterns
+
+** Frontend/Backend Split
+#+begin_src bash
+# Frontend team
+git sparse-checkout set frontend shared docs
+
+# Backend team
+git sparse-checkout set backend shared docs database
+
+# Full-stack developers
+git sparse-checkout set frontend backend shared
+#+end_src
+
+** Language-Specific
+#+begin_src text
+# JavaScript developers
+*.js
+*.jsx
+*.ts
+*.tsx
+package.json
+package-lock.json
+
+# Python developers
+*.py
+requirements.txt
+setup.py
+pyproject.toml
+#+end_src
+
+** Platform-Specific
+#+begin_src bash
+# Mobile developers
+git sparse-checkout set mobile shared
+
+# Web developers
+git sparse-checkout set web shared
+
+# Common infrastructure
+git sparse-checkout set infrastructure docs
+#+end_src
+
+* Troubleshooting
+
+** Common Issues
+1. **Files not appearing after checkout**
+   - Check pattern syntax: `git sparse-checkout list`
+   - Verify cone mode vs. non-cone patterns
+   - Use `git read-tree -m -u HEAD` to apply changes
+
+2. **Performance still slow**
+   - Enable sparse index: `git config index.sparse true`
+   - Use cone mode: `git sparse-checkout init --cone`
+   - Combine with FSMonitor
+
+3. **Merge conflicts in non-sparse areas**
+   - Temporarily expand sparse checkout
+   - Resolve conflicts
+   - Return to sparse patterns
+
+** Debugging
+#+begin_src bash
+# Check sparse checkout status
+git config --list | grep sparse
+
+# See what patterns are active
+git sparse-checkout list
+
+# Test pattern matching
+git check-ignore path/to/file
+#+end_src
+
+* Best Practices
+
+1. **Use cone mode**: Simpler and faster
+2. **Start specific**: Begin with minimal checkout, add as needed
+3. **Team coordination**: Share sparse patterns via scripts
+4. **Combine optimizations**: Use with partial clone and FSMonitor
+5. **Document patterns**: Explain team checkout strategies
+
+* Related Notes
+- [[id:900cbcfb-2ee8-41be-9b15-29bccd3b05bc][Git Partial Clone]] - Reduce object storage
+- [[id:ff7f55d7-bc67-4d78-b9ed-b36a178ba49a][Git File System Monitor]] - Faster status operations
+- [[id:6c8fab86-38fa-4821-a07f-1b3dd8bfac7c][Git Scalar Setup]] - Includes sparse checkout in automated setup

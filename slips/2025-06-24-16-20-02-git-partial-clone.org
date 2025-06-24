@@ -1,0 +1,170 @@
+:PROPERTIES:
+:ID:       900cbcfb-2ee8-41be-9b15-29bccd3b05bc
+:END:
+#+TITLE: Git Partial Clone
+#+FILETAGS: :git:performance:partial:clone:lazy:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Partial clone allows you to clone repositories without downloading all objects upfront. Instead, objects are fetched lazily on demand, dramatically reducing clone time and storage requirements for large repositories.
+
+* Clone Without Blobs
+
+** Basic Usage
+#+begin_src bash
+# Clone commits and trees only, fetch blobs on demand
+git clone --filter=blob:none <url>
+
+# Size comparison (Linux kernel):
+# Full clone: 4.5 GB
+# Blobless clone: 1.5 GB
+#+end_src
+
+** Performance Benefits
+- **70% smaller** initial clone size
+- **Much faster** initial clone time
+- Objects fetched automatically when needed
+
+* Clone Without Trees
+
+** Minimal Clone
+#+begin_src bash
+# Clone commits only (rare, mainly for CI)
+git clone --filter=tree:0 <url>
+
+# Extremely minimal clone
+# Fetches trees/blobs only when needed
+#+end_src
+
+* Filter Specifications
+
+** Available Filters
+#+begin_src bash
+# No blobs
+--filter=blob:none
+
+# Blobs smaller than 1MB
+--filter=blob:limit=1m
+
+# No trees (commits only)
+--filter=tree:0
+
+# Combine with sparse checkout
+--filter=blob:none --sparse
+#+end_src
+
+** Size-Based Filtering
+#+begin_src bash
+# Only small files initially
+--filter=blob:limit=100k
+
+# Exclude large assets
+--filter=blob:limit=10m
+#+end_src
+
+* Working with Partial Clones
+
+** Automatic Fetching
+#+begin_src bash
+# Operations fetch missing objects automatically
+git checkout feature  # Fetches needed blobs
+git blame file.txt   # Fetches historical versions
+git show HEAD~10:file.txt  # Fetches old blob
+#+end_src
+
+** Manual Object Management
+#+begin_src bash
+# See what's missing
+git rev-list --objects --all --missing=print
+
+# Prefetch objects for a range
+git rev-list HEAD~10..HEAD --objects | git cat-file --batch-check
+
+# Check if object is local or remote
+git cat-file -e <object-id>
+#+end_src
+
+* Performance Trade-offs
+
+** Advantages
+- ✅ Much faster initial clone
+- ✅ Less disk space used
+- ✅ Can start working immediately
+- ✅ Scales to massive repositories
+
+** Disadvantages
+- ❌ Some operations slower (blame, log -p)
+- ❌ Requires connectivity for missing objects
+- ❌ Network latency affects performance
+- ❌ May fetch more than needed
+
+* Best Practices
+
+** When to Use Partial Clone
+- Large repositories (>1GB)
+- CI/CD environments
+- Limited bandwidth/storage
+- Monorepo with selective access
+
+** Optimization Tips
+#+begin_src bash
+# Combine with sparse checkout
+git clone --filter=blob:none --sparse <url>
+git sparse-checkout set frontend backend/api
+
+# Pre-fetch common objects
+git rev-list --objects HEAD~100..HEAD | git cat-file --batch-check
+#+end_src
+
+* Configuration
+
+** Repository Settings
+#+begin_src bash
+# Check partial clone status
+git config --list | grep partialclone
+
+# See configured filter
+git config remote.origin.partialclonefilter
+
+# Disable for specific operations
+git -c core.partialClone= blame file.txt
+#+end_src
+
+** Converting Existing Clones
+#+begin_src bash
+# Convert full clone to partial
+git config remote.origin.promisor true
+git config remote.origin.partialclonefilter blob:none
+
+# Repack to remove blobs
+git repack -a -d
+#+end_src
+
+* Troubleshooting
+
+** Common Issues
+1. **Slow operations after clone**
+   - Expected for blob-accessing operations
+   - Consider pre-fetching frequently used objects
+
+2. **Network errors during fetch**
+   - Check connectivity to origin
+   - Use `git fetch` to retry failed downloads
+
+3. **Unexpected object downloads**
+   - Monitor with: `GIT_TRACE_PACKET=1`
+   - Some operations fetch more than expected
+
+** Debugging
+#+begin_src bash
+# Trace object fetching
+GIT_TRACE_PACKET=1 git log --oneline -10
+
+# Check what's being downloaded
+GIT_CURL_VERBOSE=1 git checkout feature
+#+end_src
+
+* Related Notes
+- [[id:373cbb6c-6c5e-4ef8-b7aa-8fcaf71517b3][Git Sparse Checkout]] - Reduce working directory files
+- [[id:fd5e0894-793c-4d42-9d51-84b0197713c2][Git Maintenance Optimization]] - Background optimizations
+- [[id:6c8fab86-38fa-4821-a07f-1b3dd8bfac7c][Git Scalar Setup]] - Includes partial clone in one-command setup

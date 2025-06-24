@@ -1,0 +1,99 @@
+:PROPERTIES:
+:ID:       fd5e0894-793c-4d42-9d51-84b0197713c2
+:END:
+#+TITLE: Git Maintenance Optimization
+#+FILETAGS: :git:performance:maintenance:optimization:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Git maintenance provides automatic background optimization for repositories. This single command dramatically improves performance for history operations, object storage, and general Git commands.
+
+* Git Maintenance - Automatic Optimization
+
+** Quick Setup
+#+begin_src bash
+# Enable for any repository you work in regularly
+git maintenance start
+
+# That's it! Git now optimizes in the background
+#+end_src
+
+** What Maintenance Does
+1. **Commit Graph Generation**: Speeds up history walking
+2. **Prefetch**: Downloads new objects hourly
+3. **Loose Objects**: Consolidates into pack files
+4. **Incremental Repack**: Optimizes pack files
+
+** Configuration
+#+begin_src bash
+# Check maintenance status
+git maintenance run --task=commit-graph
+git maintenance run --task=prefetch
+git maintenance run --task=gc
+git maintenance run --task=loose-objects
+git maintenance run --task=incremental-repack
+
+# Customize schedule
+git config maintenance.gc.schedule weekly
+git config maintenance.prefetch.schedule hourly
+#+end_src
+
+* Commit Graph - Faster History Operations
+
+** The Problem
+Git normally reads individual commit objects from disk, which is slow for large histories.
+
+** The Solution
+#+begin_src bash
+# Build commit graph manually (usually maintenance does this)
+git commit-graph write --reachable
+
+# Or automatically on fetch
+git config --global fetch.writeCommitGraph true
+#+end_src
+
+** Performance Impact
+Linux kernel example (1.2M commits):
+- Without commit graph: =git log --graph= takes minutes
+- With commit graph: Same command takes seconds
+
+** How It Works
+- Creates =.git/objects/info/commit-graph= file
+- Caches commit relationships and metadata
+- Incrementally updated with new commits
+
+* Performance Monitoring
+
+** Measure Operations
+#+begin_src bash
+# Time commands
+time git status
+
+# Get detailed performance traces
+GIT_TRACE_PERFORMANCE=1 git status
+#+end_src
+
+** Repository Statistics
+#+begin_src bash
+# Count objects
+git count-objects -v
+
+# Show pack statistics
+git verify-pack -v .git/objects/pack/*.idx | head
+
+# Database info
+git rev-list --all --count  # Total commits
+#+end_src
+
+* Best Practices
+
+1. **Start with git maintenance**: It's free performance
+2. **Enable globally**: All repositories benefit
+3. **Monitor regularly**: Use performance traces
+4. **Keep Git updated**: Performance improvements in every release
+
+* Related Notes
+- [[id:ff7f55d7-bc67-4d78-b9ed-b36a178ba49a][Git File System Monitor]] - Faster status operations
+- [[id:900cbcfb-2ee8-41be-9b15-29bccd3b05bc][Git Partial Clone]] - Lazy loading for large repositories
+- [[id:373cbb6c-6c5e-4ef8-b7aa-8fcaf71517b3][Git Sparse Checkout]] - Working directory optimization
+- [[id:6c8fab86-38fa-4821-a07f-1b3dd8bfac7c][Git Scalar Setup]] - One-command optimization for large repos

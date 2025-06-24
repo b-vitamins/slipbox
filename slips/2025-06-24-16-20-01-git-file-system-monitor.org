@@ -1,0 +1,102 @@
+:PROPERTIES:
+:ID:       ff7f55d7-bc67-4d78-b9ed-b36a178ba49a
+:END:
+#+TITLE: Git File System Monitor
+#+FILETAGS: :git:performance:fsmonitor:status:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+File System Monitor (FSMonitor) dramatically speeds up `git status` operations by using a daemon to watch file system events instead of statting every file. Essential for repositories with many files.
+
+* The Problem
+`git status` stats every file to detect changes. With 500k files, this takes 10+ seconds and becomes a major productivity blocker.
+
+* The Solution
+
+** Enable FSMonitor
+#+begin_src bash
+# Enable file system monitor
+git config core.fsmonitor true
+
+# First run launches daemon
+git status  # Still slow
+
+# Subsequent runs use the daemon
+git status  # Now < 1 second!
+#+end_src
+
+** Performance Example (Chromium)
+- Without FSMonitor: 11 seconds
+- With FSMonitor: 0.3 seconds
+
+* How It Works
+
+** Daemon Operation
+- Daemon watches file system events
+- Maintains in-memory cache of changes
+- Git queries daemon instead of file system
+
+** Configuration Options
+#+begin_src bash
+# Check FSMonitor status
+git config --list | grep fsmonitor
+
+# Manually start/stop daemon
+git fsmonitor--daemon start
+git fsmonitor--daemon stop
+
+# Check daemon status
+git fsmonitor--daemon status
+#+end_src
+
+* Understanding Repository Scale
+
+** Size Categories
+- *Small*: < 10k files, < 100MB (.git size)
+- *Medium*: < 100k files, < 1GB
+- *Large*: < 1M files, < 10GB
+- *Enormous*: > 1M files, > 10GB (Windows, Chrome, etc.)
+
+** When FSMonitor Helps Most
+- Repositories with 50k+ files
+- Frequent `git status` usage
+- Cross-platform development teams
+- CI/CD systems that check status often
+
+* Troubleshooting
+
+** Common Issues
+1. **Slow git status despite FSMonitor**
+   - Check daemon is running: `git fsmonitor--daemon status`
+   - Restart daemon: `git fsmonitor--daemon stop && git status`
+   - Use sparse checkout for additional speedup
+
+2. **High CPU usage**
+   - Monitor with: `GIT_TRACE_FSMONITOR=1 git status`
+   - Consider excluding directories with many changes
+
+** Debugging
+#+begin_src bash
+# Debug FSMonitor operation
+GIT_TRACE_FSMONITOR=1 git status
+
+# Check what files FSMonitor is tracking
+git ls-files --debug
+#+end_src
+
+* Platform Considerations
+
+** Cross-Platform Support
+- **Linux**: Uses inotify
+- **macOS**: Uses FSEvents
+- **Windows**: Uses ReadDirectoryChangesW
+
+** Performance Varies
+- Best on macOS and Windows
+- Good on Linux with modern kernels
+- May not help with network file systems
+
+* Related Notes
+- [[id:fd5e0894-793c-4d42-9d51-84b0197713c2][Git Maintenance Optimization]] - Background performance improvements
+- [[id:373cbb6c-6c5e-4ef8-b7aa-8fcaf71517b3][Git Sparse Checkout]] - Reduce working directory size
+- [[id:6c8fab86-38fa-4821-a07f-1b3dd8bfac7c][Git Scalar Setup]] - Includes FSMonitor in one-command setup
