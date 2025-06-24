@@ -155,6 +155,8 @@ This is a digital implementation of Niklas Luhmann's Zettelkasten method. The sy
 
 **Format**: `type: brief description`
 
+For management subprojects: `mgmt:subproject: description`
+
 **Types**:
 - `add:` - New slips or concepts
 - `remove:` - Deleting slips or content  
@@ -162,6 +164,7 @@ This is a digital implementation of Niklas Luhmann's Zettelkasten method. The sy
 - `source:` - Bibliography and references
 - `update:` - Changes to existing content
 - `mgmt:` - Management tools and maintenance scripts
+- `mgmt:validator:` - Slip validation and linting tools
 
 **Examples**:
 ```
@@ -185,4 +188,10 @@ mgmt: add word count validator
 - Check 500-word limit per slip
 - Report violations with line numbers
 - Skip slips tagged with :extended:
+
+mgmt:validator: implement org file parser
+
+- Extract properties, links, and word counts
+- Support all link types (internal, external, bibliography)
+- Add connection point detection
 ```
