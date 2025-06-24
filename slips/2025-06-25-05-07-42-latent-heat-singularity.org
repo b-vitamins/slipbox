@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       52c3859d-9547-40a1-a54c-5933271c3efe
+:CUSTOM_ID: 4-1d
+:END:
+#+TITLE: Latent Heat Singularity
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+Sketch the behavior of the latent heat per particle \(L\) on the coexistence curve for \(T<T_{c}\), and find its singularity as a function of \(t\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:12dfeb0e-a8a4-45b3-ac15-e7addf5378b8][Scaling in fluids]]
+- **Previous**: [[id:f5839eba-9264-416a-91be-68b73409ac0f][Compressibility and Thermal Expansion]]
+
+* Related Concepts

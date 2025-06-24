@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       e000c4ab-4787-4175-ae6d-67423d40b5f5
+:CUSTOM_ID: 4-4b
+:END:
+#+TITLE: RG Transformation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Construct a renormalization group transformation as in the text, by rescaling distances such that \(\mathbf{q}^{\prime}=b \mathbf{q}\); and the fields such that \(m^{\prime}\left(\mathbf{q}^{\prime}\right)=\tilde{m}(\mathbf{q}) / z\) and \(\phi^{\prime}\left(\mathbf{q}^{\prime}\right)=\tilde{\phi}(\mathbf{q}) / y\). Do not evaluate the integrals that just contribute a constant additive term.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a6d814ac-d75b-44d4-bd87-51eddf9af624][Coupled scalars]]
+- **Previous**: [[id:3d506bc1-3bb5-474d-b22c-2532bb44e665][Fourier Transform Representation]]
+- **Next**: [[id:1549f0ee-c7d9-4672-820a-28abb0e9cbb9][First Fixed Point]]
+
+* Related Concepts

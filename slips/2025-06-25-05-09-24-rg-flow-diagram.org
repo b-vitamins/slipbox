@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       4f81f2f0-3fdf-487f-9f34-8130f09a5fd6
+:CUSTOM_ID: 4-2a
+:END:
+#+TITLE: RG Flow Diagram
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Sketch the renormalization group flows in the \((T, h)\) plane (for \(\epsilon>0\) ), marking the fixed points along the \(h=0\) axis.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:4d2f9b84-15d3-4855-b78f-6a3435b4e197][The Ising model]]
+- **Next**: [[id:355e770f-1197-4521-bac8-20d5a433126a][Critical Fixed Point Eigenvalues]]
+
+* Related Concepts

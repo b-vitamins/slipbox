@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       6493ffd7-d927-4d06-9c60-9c183466fa5d
+:CUSTOM_ID: 4-3b
+:END:
+#+TITLE: Singular Free Energy
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Write down the singular form of the free energy as \(T, h \rightarrow 0\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:38354aa9-08ad-44e7-bf75-6e9930a7dd3c][The nonlinear sigma model]]
+- **Previous**: [[id:f6a43a6d-b17e-413c-a6bd-b5c73f740e7c][Correlation Length Divergence]]
+- **Next**: [[id:aef924e7-b067-416e-b347-fc4ab9ed8855][Susceptibility Divergence]]
+
+* Related Concepts

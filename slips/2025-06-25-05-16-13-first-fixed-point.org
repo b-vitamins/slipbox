@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       1549f0ee-c7d9-4672-820a-28abb0e9cbb9
+:CUSTOM_ID: 4-4c
+:END:
+#+TITLE: First Fixed Point
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+There is a fixed point such that \(K^{\prime}=K\) and \(L^{\prime}=L\). Find \(y_{t}, y_{h}\) and \(y_{v}\) at this fixed point.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a6d814ac-d75b-44d4-bd87-51eddf9af624][Coupled scalars]]
+- **Previous**: [[id:e000c4ab-4787-4175-ae6d-67423d40b5f5][RG Transformation]]
+- **Next**: [[id:15414141-c186-4020-abe8-cbe4de08809e][Scaling and Critical Exponents]]
+
+* Related Concepts

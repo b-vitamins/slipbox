@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       aef924e7-b067-416e-b347-fc4ab9ed8855
+:CUSTOM_ID: 4-3c
+:END:
+#+TITLE: Susceptibility Divergence
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+How does the susceptibility \(\chi\) diverge as \(T \rightarrow 0\) for \(h=0\) ?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:38354aa9-08ad-44e7-bf75-6e9930a7dd3c][The nonlinear sigma model]]
+- **Previous**: [[id:6493ffd7-d927-4d06-9c60-9c183466fa5d][Singular Free Energy]]
+
+* Related Concepts

@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       3d506bc1-3bb5-474d-b22c-2532bb44e665
+:CUSTOM_ID: 4-4a
+:END:
+#+TITLE: Fourier Transform Representation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Write \(\beta \mathcal{H}\) in terms of the Fourier transforms \(m(\mathbf{q})\) and \(\phi(\mathbf{q})\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a6d814ac-d75b-44d4-bd87-51eddf9af624][Coupled scalars]]
+- **Next**: [[id:e000c4ab-4787-4175-ae6d-67423d40b5f5][RG Transformation]]
+
+* Related Concepts

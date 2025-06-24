@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       355e770f-1197-4521-bac8-20d5a433126a
+:CUSTOM_ID: 4-2b
+:END:
+#+TITLE: Critical Fixed Point Eigenvalues
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Calculate the eigenvalues \(y_{t}\) and \(y_{h}\), at the critical fixed point, to order of \(\epsilon\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:4d2f9b84-15d3-4855-b78f-6a3435b4e197][The Ising model]]
+- **Previous**: [[id:4f81f2f0-3fdf-487f-9f34-8130f09a5fd6][RG Flow Diagram]]
+- **Next**: [[id:6eb6f702-7dfe-4958-a5c7-c661e1f70f43][Correlation Length Scaling]]
+
+* Related Concepts

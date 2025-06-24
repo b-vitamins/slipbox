@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       a6d814ac-d75b-44d4-bd87-51eddf9af624
+:CUSTOM_ID: 4-4
 :END:
 #+TITLE: Coupled scalars
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem
@@ -22,6 +23,9 @@ coupling two one-component fields \(m\) and \(\phi\).
 (d) The singular part of the free energy has a scaling from \(f(t, h, v)=\) \(t^{2-\alpha} g\left(h / t^{\Delta}, v / t^{\omega}\right)\) for \(t, h, v\) close to zero. Find \(\alpha, \Delta\), and \(\omega\).
 
 (e) There is another fixed point such that \(t^{\prime}=t\) and \(L^{\prime}=L\). What are the relevant operators at this fixed point, and how do they scale?
+
+* Navigation
+- **First Part**: [[id:3d506bc1-3bb5-474d-b22c-2532bb44e665][Fourier Transform Representation]]
 
 * Solution
 

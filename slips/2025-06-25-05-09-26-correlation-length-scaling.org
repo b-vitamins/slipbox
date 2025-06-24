@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       6eb6f702-7dfe-4958-a5c7-c661e1f70f43
+:CUSTOM_ID: 4-2c
+:END:
+#+TITLE: Correlation Length Scaling
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Starting from the relation governing the change of the correlation length \(\xi\) under renormalization, show that \(\xi(t, h)=t^{-\nu} g_{\xi}\left(h /|t|^{\Delta}\right.\) ) (where \(t=T / T_{c}-1\) ), and find the exponents \(\nu\) and \(\Delta\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:4d2f9b84-15d3-4855-b78f-6a3435b4e197][The Ising model]]
+- **Previous**: [[id:355e770f-1197-4521-bac8-20d5a433126a][Critical Fixed Point Eigenvalues]]
+- **Next**: [[id:9181a080-cc2f-4c81-afd7-0a20891d4f27][Free Energy and Heat Capacity]]
+
+* Related Concepts

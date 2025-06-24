@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       f6a43a6d-b17e-413c-a6bd-b5c73f740e7c
+:CUSTOM_ID: 4-3a
+:END:
+#+TITLE: Correlation Length Divergence
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+How does the correlation length diverge as \(T \rightarrow 0\) ?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:38354aa9-08ad-44e7-bf75-6e9930a7dd3c][The nonlinear sigma model]]
+- **Next**: [[id:6493ffd7-d927-4d06-9c60-9c183466fa5d][Singular Free Energy]]
+
+* Related Concepts

@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       7034599e-a273-45b7-a72e-bb47d0c1703d
+:CUSTOM_ID: 4-4e
+:END:
+#+TITLE: Second Fixed Point
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (e) Problem
+There is another fixed point such that \(t^{\prime}=t\) and \(L^{\prime}=L\). What are the relevant operators at this fixed point, and how do they scale?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a6d814ac-d75b-44d4-bd87-51eddf9af624][Coupled scalars]]
+- **Previous**: [[id:15414141-c186-4020-abe8-cbe4de08809e][Scaling and Critical Exponents]]
+
+* Related Concepts

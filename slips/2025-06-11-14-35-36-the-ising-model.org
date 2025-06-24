@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       4d2f9b84-15d3-4855-b78f-6a3435b4e197
+:CUSTOM_ID: 4-2
 :END:
 #+TITLE: The Ising model
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem
@@ -28,6 +29,9 @@
 (f) Starting with the relation between susceptibility and correlations of local magnetizations, calculate the exponent \(\eta\) for the critical correlations \((\langle m(\mathbf{0}) m(\mathbf{x})\rangle \sim\) \(|\mathbf{x}|^{-(d-2+\eta)}\right)\).
 
 (g) How does the correlation length diverge as \(T \rightarrow 0\) (along \(h=0)\) for \(d=1\) ?
+
+* Navigation
+- **First Part**: [[id:4f81f2f0-3fdf-487f-9f34-8130f09a5fd6][RG Flow Diagram]]
 
 * Solution
 

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       15414141-c186-4020-abe8-cbe4de08809e
+:CUSTOM_ID: 4-4d
+:END:
+#+TITLE: Scaling and Critical Exponents
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+The singular part of the free energy has a scaling from \(f(t, h, v)=\) \(t^{2-\alpha} g\left(h / t^{\Delta}, v / t^{\omega}\right)\) for \(t, h, v\) close to zero. Find \(\alpha, \Delta\), and \(\omega\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a6d814ac-d75b-44d4-bd87-51eddf9af624][Coupled scalars]]
+- **Previous**: [[id:1549f0ee-c7d9-4672-820a-28abb0e9cbb9][First Fixed Point]]
+- **Next**: [[id:7034599e-a273-45b7-a72e-bb47d0c1703d][Second Fixed Point]]
+
+* Related Concepts

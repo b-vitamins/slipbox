@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       2ebf604e-eedb-4e9a-ad27-e345efe95b94
+:CUSTOM_ID: 4-1b
+:END:
+#+TITLE: Heat Capacities
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+The heat capacities \(C_{V}=T \partial s /\left.\partial T\right|_{V}\), and \(C_{P}=T \partial s /\left.\partial T\right|_{P}\).
+
+Find the exponents \(x\) and \(y\) for the leading singular behavior of the form \(t^{x}\) on approaching the critical point along the isochore \(\rho=\rho_{c}\); or \(\delta \rho^{y}\) for a path along the isotherm \(T=T_{c}\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:12dfeb0e-a8a4-45b3-ac15-e7addf5378b8][Scaling in fluids]]
+- **Previous**: [[id:a9752a98-9df0-45fd-a417-50ee5654a973][Internal Energy and Entropy]]
+- **Next**: [[id:f5839eba-9264-416a-91be-68b73409ac0f][Compressibility and Thermal Expansion]]
+
+* Related Concepts

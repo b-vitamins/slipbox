@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       a9752a98-9df0-45fd-a417-50ee5654a973
+:CUSTOM_ID: 4-1a
+:END:
+#+TITLE: Internal Energy and Entropy
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+The internal energy per particle \(\langle H\rangle / N\), and the entropy per particle \(s=S / N\).
+
+Find the exponents \(x\) and \(y\) for the leading singular behavior of the form \(t^{x}\) on approaching the critical point along the isochore \(\rho=\rho_{c}\); or \(\delta \rho^{y}\) for a path along the isotherm \(T=T_{c}\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:12dfeb0e-a8a4-45b3-ac15-e7addf5378b8][Scaling in fluids]]
+- **Next**: [[id:2ebf604e-eedb-4e9a-ad27-e345efe95b94][Heat Capacities]]
+
+* Related Concepts
