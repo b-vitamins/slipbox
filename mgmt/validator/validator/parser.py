@@ -87,13 +87,28 @@ class OrgParser:
         )
 
     def extract_links(self, content: str) -> List[Link]:
-        """Find all [[link][desc]] patterns in content."""
+        """Find all [[link][desc]] patterns in content, excluding code blocks."""
         links = []
         
         # Pattern for org links: [[target][description]] or [[target]]
         link_pattern = r'\[\[([^\]]+)\](?:\[([^\]]*)\])?\]'
         
-        for line_num, line in enumerate(content.split('\n'), 1):
+        lines = content.split('\n')
+        in_code_block = False
+        
+        for line_num, line in enumerate(lines, 1):
+            # Track code block boundaries
+            if line.strip().startswith('#+begin_'):
+                in_code_block = True
+                continue
+            elif line.strip().startswith('#+end_'):
+                in_code_block = False
+                continue
+            
+            # Skip link extraction inside code blocks
+            if in_code_block:
+                continue
+                
             for match in re.finditer(link_pattern, line):
                 target = match.group(1)
                 description = match.group(2) or ""
@@ -128,23 +143,52 @@ class OrgParser:
             return LinkType.INTERNAL
 
     def count_words(self, content: str) -> int:
-        """Count words excluding markup and metadata."""
+        """Count words excluding markup, metadata, and code blocks."""
+        lines = content.split('\n')
+        content_lines = []
+        in_code_block = False
+        
+        for line in lines:
+            # Track code block boundaries and exclude code block content
+            if line.strip().startswith('#+begin_'):
+                in_code_block = True
+                continue
+            elif line.strip().startswith('#+end_'):
+                in_code_block = False
+                continue
+            
+            # Skip content inside code blocks
+            if in_code_block:
+                continue
+                
+            content_lines.append(line)
+        
+        # Rejoin content without code blocks
+        content = '\n'.join(content_lines)
+        
         # Remove properties block
         content = re.sub(r':PROPERTIES:.*?:END:', '', content, flags=re.DOTALL)
         
         # Remove title and filetags
         content = re.sub(r'#\+TITLE:.*?\n', '', content)
         content = re.sub(r'#\+FILETAGS:.*?\n', '', content)
+        content = re.sub(r'#\+SETUPFILE:.*?\n', '', content)
         
-        # Remove org markup
-        content = re.sub(r'\*([^*]+)\*', r'\\1', content)  # *bold*
-        content = re.sub(r'/([^/]+)/', r'\\1', content)    # /italic/
-        content = re.sub(r'=([^=]+)=', r'\\1', content)    # =code=
-        content = re.sub(r'~([^~]+)~', r'\\1', content)    # ~verbatim~
+        # Remove other org directives
+        content = re.sub(r'#\+[A-Z_]+:.*?\n', '', content)
         
-        # Remove links but keep description
-        content = re.sub(r'\[\[[^\]]+\]\[([^\]]*)\]\]', r'\\1', content)
-        content = re.sub(r'\[\[([^\]]+)\]\]', '', content)
+        # Remove org markup (preserve content, remove formatting)
+        content = re.sub(r'\*([^*]+)\*', r'\1', content)  # *bold*
+        content = re.sub(r'/([^/]+)/', r'\1', content)    # /italic/
+        content = re.sub(r'=([^=]+)=', r'\1', content)    # =code=
+        content = re.sub(r'~([^~]+)~', r'\1', content)    # ~verbatim~
+        
+        # Remove links but keep description (more precise regex)
+        content = re.sub(r'\[\[[^\[\]]+\]\[([^\[\]]*)\]\]', r'\1', content)  # [[link][desc]] -> desc
+        content = re.sub(r'\[\[([^\[\]]+)\]\]', '', content)  # [[link]] -> remove
+        
+        # Remove org headers (*, **, ***, etc.)
+        content = re.sub(r'^[*]+ ', '', content, flags=re.MULTILINE)
         
         # Count words (whitespace-separated tokens)
         words = content.split()
