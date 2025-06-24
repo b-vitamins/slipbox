@@ -4,6 +4,8 @@ require_backlinks = false
 check_external_links = true
 orphan_grace_period_days = 7
 url_timeout_seconds = 10
+org_roam_priority = true
+require_custom_id = true
 
 [paths]
 slips_dir = "slips/"
