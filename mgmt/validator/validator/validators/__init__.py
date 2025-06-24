@@ -7,6 +7,12 @@ from .structure import (
     WordCountValidator,
     SlipStructureValidator
 )
+from .links import (
+    InternalLinkValidator,
+    OrphanDetector,
+    BidirectionalLinkAnalyzer,
+    SlipLinkValidator
+)
 
 __all__ = [
     'BaseValidator',
@@ -14,5 +20,9 @@ __all__ = [
     'RequiredPropertiesValidator',
     'LuhmannNumberValidator',
     'WordCountValidator',
-    'SlipStructureValidator'
+    'SlipStructureValidator',
+    'InternalLinkValidator',
+    'OrphanDetector', 
+    'BidirectionalLinkAnalyzer',
+    'SlipLinkValidator'
 ]

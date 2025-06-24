@@ -5,7 +5,7 @@ import click
 from pathlib import Path
 from typing import Optional
 
-from .validators import ValidationEngine, SlipStructureValidator
+from .validators import ValidationEngine, SlipStructureValidator, SlipLinkValidator, OrphanDetector
 from .reporters import ConsoleReporter
 
 
@@ -52,8 +52,11 @@ def check(format: str, fix: bool, path: Path) -> None:
     slips_dir = find_slips_directory(path)
     
     try:
-        # Run structure validation (only validation available for now)
-        validators = [SlipStructureValidator()]
+        # Run all available validators
+        validators = [
+            SlipStructureValidator(),
+            SlipLinkValidator(slips_dir)
+        ]
         engine = ValidationEngine(validators)
         
         results = engine.validate_slipbox(slips_dir)
@@ -101,16 +104,60 @@ def structure(path: Path) -> None:
 @click.argument("path", type=click.Path(exists=True, path_type=Path), default=".")
 def links(path: Path) -> None:
     """Validate link integrity."""
-    click.echo("Link validation not yet implemented", err=True)
-    sys.exit(1)
+    slips_dir = find_slips_directory(path)
+    
+    try:
+        # Create link validator
+        validators = [SlipLinkValidator(slips_dir)]
+        engine = ValidationEngine(validators)
+        
+        results = engine.validate_slipbox(slips_dir)
+        
+        # Report results
+        reporter = ConsoleReporter()
+        reporter.report_results(results)
+        
+        # Exit with error code if any validation failed
+        if any(not result.passed for result in results):
+            sys.exit(1)
+            
+    except Exception as e:
+        click.echo(f"Link validation failed: {str(e)}", err=True)
+        sys.exit(1)
 
 
 @main.command()
+@click.option("--grace-days", default=7, help="Grace period for new slips (days)")
 @click.argument("path", type=click.Path(exists=True, path_type=Path), default=".")
-def orphans(path: Path) -> None:
+def orphans(grace_days: int, path: Path) -> None:
     """Find orphaned slips with no connections."""
-    click.echo("Orphan detection not yet implemented", err=True)
-    sys.exit(1)
+    slips_dir = find_slips_directory(path)
+    
+    try:
+        # Create orphan detector
+        validators = [OrphanDetector(slips_dir, grace_days)]
+        engine = ValidationEngine(validators)
+        
+        results = engine.validate_slipbox(slips_dir)
+        
+        # Report results
+        reporter = ConsoleReporter()
+        reporter.report_results(results)
+        
+        # Show summary of orphans found
+        orphan_count = sum(
+            len([v for v in result.violations + result.warnings if v.rule == "ORPHANED_SLIP"])
+            for result in results
+        )
+        
+        if orphan_count == 0:
+            click.echo(f"✓ No orphaned slips found (grace period: {grace_days} days)", color="green")
+        else:
+            click.echo(f"Found {orphan_count} orphaned slip(s) (grace period: {grace_days} days)")
+            
+    except Exception as e:
+        click.echo(f"Orphan detection failed: {str(e)}", err=True)
+        sys.exit(1)
 
 
 if __name__ == "__main__":
