@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       2232412e-f804-4658-8414-d5cfd949a0ab
+:CUSTOM_ID: 1-1f
+:END:
+#+TITLE: Phase Separation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (f) Problem
+The alloy globally minimizes its free energy by separating into \(A\) rich and \(B\) rich phases of compositions \(\pm x_{\mathrm{eq}}(T)\), where \(x_{\mathrm{eq}}(T)\) minimizes the function \(F(x)\). Find \(x_{\text {eq }}(T)\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:0ac9a6a7-5c90-49a1-8963-08c21a6ae9db][The binary alloy]]
+- **Previous**: [[id:8078b888-f338-46cf-9cc2-53ae095cbde7][Free Energy Sketches]]
+- **Next**: [[id:6d6e8617-c530-4b6b-91a3-9f8243f49267][Phase Diagram]]
+
+* Related Concepts

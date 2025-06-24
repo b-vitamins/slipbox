@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       408db81a-ded9-4105-873c-452c0e27a789
+:CUSTOM_ID: 1-1a
+:END:
+#+TITLE: Minimum Energy Configuration
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+What is the minimum energy configuration, or the state of the system at zero temperature?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:0ac9a6a7-5c90-49a1-8963-08c21a6ae9db][The binary alloy]]
+- **Next**: [[id:ac774e73-d3ce-4e3f-ad98-204fc55a82a2][Random Distribution Energy]]
+
+* Related Concepts

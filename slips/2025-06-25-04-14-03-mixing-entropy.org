@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       dd418d6c-40c1-4f27-91f6-5ad09df3f7af
+:CUSTOM_ID: 1-1c
+:END:
+#+TITLE: Mixing Entropy
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Estimate the mixing entropy of the alloy with the same approximation. Assume \(N_{A}, N_{B} \gg 1\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:0ac9a6a7-5c90-49a1-8963-08c21a6ae9db][The binary alloy]]
+- **Previous**: [[id:ac774e73-d3ce-4e3f-ad98-204fc55a82a2][Random Distribution Energy]]
+- **Next**: [[id:84d34589-6ec9-4a0c-8a22-816d8bb7fa3c][Free Energy Function]]
+
+* Related Concepts

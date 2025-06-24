@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       8078b888-f338-46cf-9cc2-53ae095cbde7
+:CUSTOM_ID: 1-1e
+:END:
+#+TITLE: Free Energy Sketches
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (e) Problem
+Sketch \(F(x)\) for \(T>T_{c}, T=T_{c}\), and \(T<T_{c}\). For \(T<T_{c}\) there is a range of compositions \(x<\left|x_{\text {sp }}(T)\right|\) where \(F(x)\) is not convex and hence the composition is locally unstable. Find \(x_{\mathrm{sp}}(T)\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:0ac9a6a7-5c90-49a1-8963-08c21a6ae9db][The binary alloy]]
+- **Previous**: [[id:84d34589-6ec9-4a0c-8a22-816d8bb7fa3c][Free Energy Function]]
+- **Next**: [[id:2232412e-f804-4658-8414-d5cfd949a0ab][Phase Separation]]
+
+* Related Concepts

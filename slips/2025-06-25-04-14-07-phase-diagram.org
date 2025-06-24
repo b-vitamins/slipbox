@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       6d6e8617-c530-4b6b-91a3-9f8243f49267
+:CUSTOM_ID: 1-1g
+:END:
+#+TITLE: Phase Diagram
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (g) Problem
+In the \((T, x)\) plane sketch the phase separation boundary \(\pm x_{\text {eq }}(T)\); and the so called spinodal line \(\pm x_{\mathrm{sp}}(T)\). (The spinodal line indicates onset of metastability and hysteresis effects.)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:0ac9a6a7-5c90-49a1-8963-08c21a6ae9db][The binary alloy]]
+- **Previous**: [[id:2232412e-f804-4658-8414-d5cfd949a0ab][Phase Separation]]
+
+* Related Concepts

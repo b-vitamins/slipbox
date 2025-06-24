@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       ac774e73-d3ce-4e3f-ad98-204fc55a82a2
+:CUSTOM_ID: 1-1b
+:END:
+#+TITLE: Random Distribution Energy
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Estimate the total interaction energy assuming that the atoms are randomly distributed among the \(N\) sites; i.e. each site is occupied independently with probabilities \(p_{A}=N_{A} / N\) and \(p_{B}=N_{B} / N\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:0ac9a6a7-5c90-49a1-8963-08c21a6ae9db][The binary alloy]]
+- **Previous**: [[id:408db81a-ded9-4105-873c-452c0e27a789][Minimum Energy Configuration]]
+- **Next**: [[id:dd418d6c-40c1-4f27-91f6-5ad09df3f7af][Mixing Entropy]]
+
+* Related Concepts

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       84d34589-6ec9-4a0c-8a22-816d8bb7fa3c
+:CUSTOM_ID: 1-1d
+:END:
+#+TITLE: Free Energy Function
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+Using the above, obtain a free energy function \(F(x)\), where \(x=\left(N_{A}-N_{B}\right) / N\). Expand \(F(x)\) to the fourth order in \(x\), and show that the requirement of convexity of \(F\) breaks down below a critical temperature \(T_{c}\). For the remainder of this problem use the expansion obtained in (d) in place of the full function \(F(x)\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:0ac9a6a7-5c90-49a1-8963-08c21a6ae9db][The binary alloy]]
+- **Previous**: [[id:dd418d6c-40c1-4f27-91f6-5ad09df3f7af][Mixing Entropy]]
+- **Next**: [[id:8078b888-f338-46cf-9cc2-53ae095cbde7][Free Energy Sketches]]
+
+* Related Concepts

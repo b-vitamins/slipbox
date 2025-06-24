@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       0ac9a6a7-5c90-49a1-8963-08c21a6ae9db
+:CUSTOM_ID: 1-1
 :END:
 #+TITLE: The binary alloy
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -21,6 +22,9 @@ The binary alloy: A binary alloy (as in \(\beta\) brass) consists of \(N_{A}\) a
 (f) The alloy globally minimizes its free energy by separating into \(A\) rich and \(B\) rich phases of compositions \(\pm x_{\mathrm{eq}}(T)\), where \(x_{\mathrm{eq}}(T)\) minimizes the function \(F(x)\). Find \(x_{\text {eq }}(T)\).
 
 (g) In the \((T, x)\) plane sketch the phase separation boundary \(\pm x_{\text {eq }}(T)\); and the so called spinodal line \(\pm x_{\mathrm{sp}}(T)\). (The spinodal line indicates onset of metastability and hysteresis effects.)
+
+* Navigation
+- **First Part**: [[id:408db81a-ded9-4105-873c-452c0e27a789][Minimum Energy Configuration]]
 
 * Solution
 
