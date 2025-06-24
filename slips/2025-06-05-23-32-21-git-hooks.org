@@ -376,7 +376,7 @@ repos:
 #+end_src
 
 * Related Notes
-- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c[Git Fundamentals]] - Basic Git concepts
-- [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e[Git Configuration and Aliases]] - Git setup
-- [[id:f8a9b0c1-d2e3-4f4a-5b6c-7d8e9fa0b1c2[Git Advanced Workflows]] - Complex patterns
-- [[id:b0c1d2e3-f4a5-4b6c-7d8e-9fa0b1c2d3e4[Git Attributes]] - File handling configuration
+- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c][Git Fundamentals]] - Basic Git concepts
+- [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e][Git Configuration and Aliases]] - Git setup
+- [[id:f8a9b0c1-d2e3-4f4a-5b6c-7d8e9fa0b1c2][Git Advanced Workflows]] - Complex patterns
+- [[id:b0c1d2e3-f4a5-4b6c-7d8e-9fa0b1c2d3e4][Git Attributes]] - File handling configuration

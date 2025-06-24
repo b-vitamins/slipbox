@@ -371,7 +371,7 @@ git config filter.myfilter.smudge 'my-filter.sh smudge'
 #+end_src
 
 * Related Notes
-- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c[Git Fundamentals]] - Basic concepts
-- [[id:a9b0c1d2-e3f4-4a5b-6c7d-8e9fa0b1c2d3[Git Hooks]] - Automation and workflow
-- [[id:e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9fa0b1[Git Performance]] - Large repository handling
-- [[id:f8a9b0c1-d2e3-4f4a-5b6c-7d8e9fa0b1c2[Git Advanced Workflows]] - Complex patterns
+- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c][Git Fundamentals]] - Basic concepts
+- [[id:a9b0c1d2-e3f4-4a5b-6c7d-8e9fa0b1c2d3][Git Hooks]] - Automation and workflow
+- [[id:e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9fa0b1][Git Performance]] - Large repository handling
+- [[id:f8a9b0c1-d2e3-4f4a-5b6c-7d8e9fa0b1c2][Git Advanced Workflows]] - Complex patterns

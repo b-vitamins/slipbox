@@ -491,7 +491,7 @@ Scalar automatically enables:
 - Background maintenance
 - Prefetching
 
-For more details, see [[id:e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9fa0b1[Git Performance and Large Repositories]].
+For more details, see [[id:e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9fa0b1][Git Performance and Large Repositories]].
 
 * Tips from Both Parts of the Talk
 
@@ -523,11 +523,11 @@ The presenter emphasized that Git hasn't fundamentally changed its model since 2
 The key is to stay curious and occasionally check what's new in Git, as demonstrated by the fact that Git still averages 9 commits per day of development.
 
 * Related Notes
-- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c[Git Fundamentals]] - Start here if new to Git
-- [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e[Git Configuration and Aliases]] - Customize Git
-- [[id:c5d6e7f8-a9b0-4c1d-2e3f-4a5b6c7d8e9f[Git Investigation Tools]] - Debugging and analysis
-- [[id:d6e7f8a9-b0c1-4d2e-3f4a-5b6c7d8e9fa0[Git Collaboration Features]] - Team workflows
-- [[id:e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9fa0b1[Git Performance and Large Repositories]] - Scaling Git
+- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c][Git Fundamentals]] - Start here if new to Git
+- [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e][Git Configuration and Aliases]] - Customize Git
+- [[id:c5d6e7f8-a9b0-4c1d-2e3f-4a5b6c7d8e9f][Git Investigation Tools]] - Debugging and analysis
+- [[id:d6e7f8a9-b0c1-4d2e-3f4a-5b6c7d8e9fa0][Git Collaboration Features]] - Team workflows
+- [[id:e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9fa0b1][Git Performance and Large Repositories]] - Scaling Git
 
 * External Resources
 - [[https://gitbutler.com/blog][Git Butler Blog]] - Where these slides were posted

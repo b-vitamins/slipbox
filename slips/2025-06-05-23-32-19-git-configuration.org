@@ -269,6 +269,6 @@ git config maintenance.incremental-repack.enabled true
 #+end_src
 
 * Related Notes
-- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c[Git Fundamentals]] - Basic Git concepts
-- [[id:c5d6e7f8-a9b0-4c1d-2e3f-4a5b6c7d8e9f[Git Investigation Tools]] - Advanced history exploration
-- [[id:e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9fa0b1[Git Performance and Large Repositories]] - Optimization techniques
+- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c][Git Fundamentals]] - Basic Git concepts
+- [[id:c5d6e7f8-a9b0-4c1d-2e3f-4a5b6c7d8e9f][Git Investigation Tools]] - Advanced history exploration
+- [[id:e7f8a9b0-c1d2-4e3f-4a5b-6c7d8e9fa0b1][Git Performance and Large Repositories]] - Optimization techniques

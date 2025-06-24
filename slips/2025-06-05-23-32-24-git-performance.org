@@ -373,7 +373,7 @@ git ls-tree -r HEAD | wc -l # Files in working tree
 5. **Keep Git updated**: Performance improvements in every release
 
 * Related Notes
-- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c[Git Fundamentals]] - Basic concepts
-- [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e[Git Configuration and Aliases]] - Setup
-- [[id:d6e7f8a9-b0c1-4d2e-3f4a-5b6c7d8e9fa0[Git Collaboration Features]] - Team workflows
-- [[id:f8a9b0c1-d2e3-4f4a-5b6c-7d8e9fa0b1c2[Git Advanced Workflows]] - Complex patterns
+- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c][Git Fundamentals]] - Basic concepts
+- [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e][Git Configuration and Aliases]] - Setup
+- [[id:d6e7f8a9-b0c1-4d2e-3f4a-5b6c7d8e9fa0][Git Collaboration Features]] - Team workflows
+- [[id:f8a9b0c1-d2e3-4f4a-5b6c-7d8e9fa0b1c2][Git Advanced Workflows]] - Complex patterns
