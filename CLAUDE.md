@@ -161,6 +161,7 @@ This is a digital implementation of Niklas Luhmann's Zettelkasten method. The sy
 - `connect:` - Links between existing ideas
 - `source:` - Bibliography and references
 - `update:` - Changes to existing content
+- `scripts:` - Validation tools and maintenance scripts
 
 **Examples**:
 ```
@@ -178,4 +179,10 @@ source: add Jaynes maximum entropy papers
 
 - 8 entries in physics.bib
 - Foundation for information-theoretic ML
+
+scripts: add word count validator
+
+- Check 500-word limit per slip
+- Report violations with line numbers
+- Skip slips tagged with :extended:
 ```
