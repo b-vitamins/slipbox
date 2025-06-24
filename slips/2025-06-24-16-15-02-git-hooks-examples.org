@@ -1,0 +1,268 @@
+:PROPERTIES:
+:ID:       fe7f74cd-2023-432d-a3de-7da02e24f859
+:END:
+#+TITLE: Git Hooks Examples
+#+FILETAGS: :git:hooks:examples:troubleshooting:patterns:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Practical examples, troubleshooting guides, and advanced patterns for Git hooks. This note provides real-world implementations and solutions to common hook problems.
+
+* Practical Hook Examples
+
+** Preventing Large Files
+#+begin_src bash
+#!/bin/sh
+# Check for large files
+for file in $(git diff --cached --name-only); do
+    size=$(stat -c%s "$file" 2>/dev/null || stat -f%z "$file")
+    if [ $size -ge 1048576 ]; then
+        echo "Error: $file is larger than 1MB"
+        exit 1
+    fi
+done
+#+end_src
+
+** Enforcing Branch Names
+#+begin_src bash
+#!/bin/sh
+# pre-push hook
+branch=$(git rev-parse --abbrev-ref HEAD)
+valid_pattern="^(feature|bugfix|hotfix|release)\/[a-z0-9-]+$"
+
+if ! [[ $branch =~ $valid_pattern ]]; then
+    echo "Branch name '$branch' does not follow naming convention"
+    echo "Use: feature/name, bugfix/name, hotfix/name, or release/name"
+    exit 1
+fi
+#+end_src
+
+** Auto-formatting Code
+#+begin_src yaml
+# .pre-commit-config.yaml
+repos:
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.0.0
+    hooks:
+      - id: prettier
+        types_or: [css, javascript, jsx, typescript, tsx, json, markdown]
+#+end_src
+
+** Commit Message Validation
+#+begin_src bash
+#!/bin/sh
+# commit-msg hook
+commit_regex='^(feat|fix|docs|style|refactor|test|chore)(\([a-z]+\))?: .{1,50}'
+
+if ! grep -qE "$commit_regex" "$1"; then
+    echo "Invalid commit message format!"
+    echo "Format: type(scope): subject"
+    echo "Example: feat(auth): add login endpoint"
+    exit 1
+fi
+#+end_src
+
+* Troubleshooting Hooks
+
+** Common Issues
+1. **Hook not executing**: Check file permissions (must be executable)
+2. **Wrong interpreter**: Ensure shebang line is correct
+3. **Path issues**: Hooks run from repository root
+4. **Exit codes**: Non-zero exit prevents Git operation
+
+** Debugging
+#+begin_src bash
+# Debug hook execution
+GIT_TRACE=1 git commit -m "test"
+
+# Test hook manually
+.git/hooks/pre-commit
+
+# Check hook permissions
+ls -la .git/hooks/
+#+end_src
+
+* Advanced Hook Patterns
+
+** Conditional Execution
+#+begin_src bash
+#!/bin/sh
+# Only run on main branch
+branch=$(git rev-parse --abbrev-ref HEAD)
+if [ "$branch" = "main" ]; then
+    npm run extensive-tests
+fi
+#+end_src
+
+** Hook Chaining
+#+begin_src yaml
+# .pre-commit-config.yaml
+repos:
+  - repo: local
+    hooks:
+      - id: tests
+        name: Run tests
+        entry: npm test
+        language: system
+        pass_filenames: false
+        stages: [commit]
+      - id: build
+        name: Build project
+        entry: npm run build
+        language: system
+        pass_filenames: false
+        stages: [push]
+#+end_src
+
+** Cross-Platform File Size Check
+#+begin_src bash
+#!/bin/sh
+# Works on both Linux and macOS
+get_file_size() {
+    if command -v stat >/dev/null 2>&1; then
+        # Try GNU stat first (Linux)
+        stat -c%s "$1" 2>/dev/null || stat -f%z "$1" 2>/dev/null
+    else
+        # Fallback to wc if stat is not available
+        wc -c < "$1"
+    fi
+}
+
+for file in $(git diff --cached --name-only); do
+    if [ -f "$file" ]; then
+        size=$(get_file_size "$file")
+        if [ "$size" -ge 1048576 ]; then
+            echo "Error: $file is larger than 1MB ($size bytes)"
+            exit 1
+        fi
+    fi
+done
+#+end_src
+
+** Language-Specific Linting
+#+begin_src bash
+#!/bin/sh
+# pre-commit hook that runs different linters based on file type
+
+# Check for staged files
+files=$(git diff --cached --name-only)
+
+# JavaScript/TypeScript files
+js_files=$(echo "$files" | grep -E '\.(js|jsx|ts|tsx)$')
+if [ -n "$js_files" ]; then
+    echo "Running ESLint on JavaScript files..."
+    npx eslint $js_files
+    if [ $? -ne 0 ]; then
+        echo "ESLint failed. Please fix the issues."
+        exit 1
+    fi
+fi
+
+# Python files
+py_files=$(echo "$files" | grep -E '\.py$')
+if [ -n "$py_files" ]; then
+    echo "Running flake8 on Python files..."
+    flake8 $py_files
+    if [ $? -ne 0 ]; then
+        echo "flake8 failed. Please fix the issues."
+        exit 1
+    fi
+fi
+
+# CSS/SCSS files
+css_files=$(echo "$files" | grep -E '\.(css|scss)$')
+if [ -n "$css_files" ]; then
+    echo "Running stylelint on CSS files..."
+    npx stylelint $css_files
+    if [ $? -ne 0 ]; then
+        echo "stylelint failed. Please fix the issues."
+        exit 1
+    fi
+fi
+#+end_src
+
+** Preventing Secrets in Commits
+#+begin_src bash
+#!/bin/sh
+# pre-commit hook to detect potential secrets
+
+# Patterns to look for
+patterns=(
+    "password\s*=\s*['\"][^'\"]+['\"]"
+    "api_key\s*=\s*['\"][^'\"]+['\"]"
+    "secret\s*=\s*['\"][^'\"]+['\"]"
+    "token\s*=\s*['\"][^'\"]+['\"]"
+    "BEGIN (RSA )?PRIVATE KEY"
+)
+
+for pattern in "${patterns[@]}"; do
+    if git diff --cached | grep -qiE "$pattern"; then
+        echo "Error: Potential secret detected in staged files!"
+        echo "Pattern: $pattern"
+        echo "Please remove sensitive information before committing."
+        exit 1
+    fi
+done
+#+end_src
+
+* Hook Testing and Development
+
+** Testing Hooks Locally
+#+begin_src bash
+# Create test repository
+mkdir test-hooks && cd test-hooks
+git init
+
+# Copy your hook
+cp /path/to/your/hook .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+
+# Test with various scenarios
+echo "test" > file.txt
+git add file.txt
+git commit -m "test commit"
+#+end_src
+
+** Hook Development Workflow
+1. **Start simple**: Begin with basic functionality
+2. **Test thoroughly**: Check edge cases and error conditions
+3. **Make it robust**: Handle missing tools gracefully
+4. **Document well**: Include usage instructions
+5. **Version control**: Keep hooks in your dotfiles or team repository
+
+* Performance Considerations
+
+** Optimizing Hook Speed
+- Cache tool outputs when possible
+- Run checks only on changed files
+- Use parallel processing for independent checks
+- Provide fast-fail mechanisms for obvious problems
+
+** Example: Fast Pre-commit Hook
+#+begin_src bash
+#!/bin/sh
+# Fast pre-commit that only checks changed files
+
+# Get list of staged files
+staged_files=$(git diff --cached --name-only)
+
+# Early exit if no files staged
+if [ -z "$staged_files" ]; then
+    exit 0
+fi
+
+# Run checks in parallel for different file types
+{
+    echo "$staged_files" | grep '\.js$' | xargs -r eslint &
+    echo "$staged_files" | grep '\.py$' | xargs -r flake8 &
+    echo "$staged_files" | grep '\.css$' | xargs -r stylelint &
+    wait
+}
+
+echo "All checks passed!"
+#+end_src
+
+* Related Notes
+- [[id:0d9ed9fe-d9a7-423b-8b6d-aa726b3a8d12][Git Hooks Fundamentals]] - Understanding Git hooks and the 11 most useful hooks
+- [[id:abce5cf9-f80c-470a-a391-27e6ca85dbd1][Git Hooks Modern Tools]] - Pre-commit and Husky setup
+- [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e][Git Configuration and Aliases]] - Git setup and configuration

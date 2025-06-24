@@ -1,0 +1,150 @@
+:PROPERTIES:
+:ID:       abce5cf9-f80c-470a-a391-27e6ca85dbd1
+:END:
+#+TITLE: Git Hooks Modern Tools
+#+FILETAGS: :git:hooks:modern:precommit:husky:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Modern hook management tools solve the problems of traditional Git hooks by providing version-controlled, cross-platform, team-friendly solutions. This note covers Pre-commit and Husky, the two most popular modern hook management systems.
+
+* Modern Hook Management: Pre-commit
+
+** Installation
+#+begin_src bash
+# Install pre-commit
+pip install pre-commit
+
+# Or with homebrew
+brew install pre-commit
+#+end_src
+
+** Configuration (.pre-commit-config.yaml)
+#+begin_src yaml
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+        args: ['--maxkb=500']
+      
+  - repo: https://github.com/psf/black
+    rev: 23.1.0
+    hooks:
+      - id: black
+        language_version: python3.9
+        
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.0.0
+    hooks:
+      - id: flake8
+        args: ['--max-line-length=88']
+#+end_src
+
+** Usage
+#+begin_src bash
+# Install hooks
+pre-commit install
+
+# Run on all files (not just staged)
+pre-commit run --all-files
+
+# Update hook versions
+pre-commit autoupdate
+
+# Run specific hook
+pre-commit run black
+#+end_src
+
+** Benefits
+- Configuration in version control
+- Automatic tool installation
+- Language agnostic
+- Large ecosystem of pre-made hooks
+- Pretty output with pass/fail/skip status
+
+* Modern Hook Management: Husky (Node.js)
+
+** Installation
+#+begin_src bash
+# Install husky
+npm install --save-dev husky
+
+# Enable Git hooks
+npx husky install
+
+# Add to package.json
+npm pkg set scripts.prepare="husky install"
+#+end_src
+
+** Creating Hooks
+#+begin_src bash
+# Add pre-commit hook
+npx husky add .husky/pre-commit "npm test"
+
+# Add commit-msg hook
+npx husky add .husky/commit-msg 'npx commitlint --edit "$1"'
+#+end_src
+
+** Example Hook (.husky/pre-commit)
+#+begin_src bash
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Run linter
+npm run lint
+
+# Run tests
+npm test
+
+# Check types
+npm run type-check
+#+end_src
+
+** Benefits
+- Integrates with npm/yarn workflow
+- Hooks in version control
+- Cross-platform compatibility
+- Easy team onboarding
+
+* Team Workflow Integration
+
+** Getting Team Buy-in
+1. Start with non-blocking hooks (warnings only)
+2. Gradually add more strict checks
+3. Ensure hooks help, not hinder
+4. Provide good documentation
+5. Make setup automatic
+
+** Example Team Setup
+#+begin_src json
+// package.json
+{
+  "scripts": {
+    "prepare": "husky install",
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"],
+    "*.{json,md}": ["prettier --write"]
+  }
+}
+#+end_src
+
+* Best Practices
+
+1. **Keep hooks fast**: Long-running hooks frustrate developers
+2. **Make them skippable**: Allow bypass with =--no-verify= when needed
+3. **Fail gracefully**: Provide clear error messages
+4. **Version control hooks**: Use pre-commit or husky
+5. **Document requirements**: Explain what hooks do and why
+6. **Test cross-platform**: Ensure hooks work on all team OSes
+7. **Use existing tools**: Don't reinvent the wheel
+
+* Related Notes
+- [[id:0d9ed9fe-d9a7-423b-8b6d-aa726b3a8d12][Git Hooks Fundamentals]] - Understanding Git hooks and traditional setup
+- [[id:fe7f74cd-2023-432d-a3de-7da02e24f859][Git Hooks Examples]] - Practical implementations and troubleshooting
+- [[id:b4c5d6e7-f8a9-4b0c-1d2e-3f4a5b6c7d8e][Git Configuration and Aliases]] - Git setup and configuration

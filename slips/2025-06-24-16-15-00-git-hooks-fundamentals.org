@@ -1,0 +1,139 @@
+:PROPERTIES:
+:ID:       0d9ed9fe-d9a7-423b-8b6d-aa726b3a8d12
+:END:
+#+TITLE: Git Hooks Fundamentals
+#+FILETAGS: :git:hooks:fundamentals:automation:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Overview
+Git hooks are scripts that Git executes before or after events such as commit, push, and receive. They let you customize Git's internal behavior and trigger customizable actions at key points in the development lifecycle.
+
+* Understanding Git Hooks
+
+** What Are Hooks?
+- Scripts that run automatically at certain points in Git workflow
+- Located in =.git/hooks/= directory
+- Can be written in any scripting language (bash, Python, etc.)
+- Not tracked by Git by default (problem for team sharing)
+
+** Categories of Hooks
+According to the talk, there are 28 hooks total, broken down into:
+
+1. **Client-side hooks** (11 most useful):
+   - Commit workflow hooks
+   - Rewriting/rebasing hooks
+   - Branch switching/pushing hooks
+
+2. **Server-side hooks** (less commonly used)
+3. **Email workflow hooks** (for patch-based workflows)
+4. **Large repository hooks** (Microsoft's additions)
+
+* The 11 Most Useful Client-Side Hooks
+
+** Commit Workflow Hooks
+1. **pre-commit**: Runs before commit message editor
+   - Lint code
+   - Run tests
+   - Check for large files
+   - Ensure no debug code
+
+2. **prepare-commit-msg**: Runs before commit message editor, after default message
+   - Add ticket numbers
+   - Format commit messages
+   - Add co-authors
+
+3. **commit-msg**: Runs after commit message is entered
+   - Validate commit message format
+   - Ensure conventional commits
+
+4. **post-commit**: Runs after commit is complete
+   - Send notifications
+   - Update issue trackers
+
+** Rewriting Hooks
+5. **pre-rebase**: Runs before rebase starts
+   - Prevent rebasing published branches
+   - Backup current state
+
+6. **post-rewrite**: Runs after commits are rewritten (rebase, amend)
+   - Update related systems
+   - Sync with external tools
+
+** Merging Hooks
+7. **post-merge**: Runs after successful merge
+   - Install new dependencies
+   - Rebuild project
+   - Update documentation
+
+** Switching and Pushing Hooks
+8. **post-checkout**: Runs after checkout
+   - Update ctags
+   - Switch tabs/spaces settings
+   - Install packages
+
+9. **pre-push**: Runs before push
+   - Run full test suite
+   - Check for WIP commits
+   - Validate branch names
+
+10. **pre-auto-gc**: Runs before automatic garbage collection
+
+11. **post-update**: Runs after refs are updated
+
+* Traditional Hook Setup
+
+** Manual Installation
+Create executable script in =.git/hooks/=:
+
+#+begin_src bash
+#!/bin/sh
+# .git/hooks/pre-commit
+
+# Check for console.log statements
+if git diff --cached | grep -q "console.log"; then
+    echo "Error: console.log found in staged files"
+    exit 1
+fi
+
+# Run tests
+npm test
+#+end_src
+
+Make it executable:
+#+begin_src bash
+chmod +x .git/hooks/pre-commit
+#+end_src
+
+** Problems with Traditional Approach
+- Not version controlled
+- Hard to share with team
+- No dependency management
+- Platform-specific issues
+
+* Hook Use Cases from the Talk
+
+The speaker mentioned several practical uses:
+
+1. **Commit message formatting**: Ensure consistent commit messages
+2. **Package installation**: Auto-install when package.json changes
+3. **Update ctags**: Keep code navigation current
+4. **Switch tabs/spaces**: Adjust editor settings per project
+5. **Lint code**: Catch issues before commit
+6. **Prevent large files**: Avoid bloating repository
+7. **Run tests**: Ensure code works before commit
+
+* Bypassing Hooks
+
+When necessary, you can skip hooks:
+#+begin_src bash
+# Skip pre-commit and commit-msg hooks
+git commit --no-verify -m "Emergency fix"
+
+# Skip pre-push hook
+git push --no-verify
+#+end_src
+
+* Related Notes
+- [[id:a3f4b2c1-d5e6-4f7a-8b9c-0d1e2f3a4b5c][Git Fundamentals]] - Basic Git concepts
+- [[id:abce5cf9-f80c-470a-a391-27e6ca85dbd1][Git Hooks Modern Tools]] - Pre-commit and Husky workflows
+- [[id:fe7f74cd-2023-432d-a3de-7da02e24f859][Git Hooks Examples]] - Practical implementations and troubleshooting
