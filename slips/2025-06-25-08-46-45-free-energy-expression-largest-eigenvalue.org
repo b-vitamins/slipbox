@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       f04607cb-1fa4-458b-a2d7-92d173e9690a
+:CUSTOM_ID: 6-5c
+:END:
+#+TITLE: Free Energy Expression Largest Eigenvalue
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (c) Problem
+Show that \(Z=\sum_{k=1}^{q} \lambda(k)^{N} \approx \lambda(0)^{N}\) for \(N \rightarrow \infty\). Write down the expression for the free energy per site \(\beta f=-\ln Z / N\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:c7cc8de4-38ae-49ec-a4c6-2653466b737c][Clock model]]
+- **Previous**: [[id:522bf640-9343-4627-b8e2-7d06ed93d699][Transfer Matrix Diagonalization Fourier]]
+- **Next**: [[id:0b5b04a2-b3ba-4ae5-aaa7-3a57fa926bbc][Correlation Function Projection Matrix]]
+
+* Related Concepts

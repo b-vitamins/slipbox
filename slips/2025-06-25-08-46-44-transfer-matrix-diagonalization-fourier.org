@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       522bf640-9343-4627-b8e2-7d06ed93d699
+:CUSTOM_ID: 6-5b
+:END:
+#+TITLE: Transfer Matrix Diagonalization Fourier
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (b) Problem
+Write down the transfer matrix explicitly and diagonalize it. Note that you do not have to solve a \(q\) th order secular equation; because of the translational symmetry, the eigenvalues are easily obtained by discrete Fourier transformation as
+
+\[\lambda(k)=\sum_{n=1}^{q} \exp \left[J(n)+\frac{2 \pi \mathrm{i} n k}{q}\right]\]
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:c7cc8de4-38ae-49ec-a4c6-2653466b737c][Clock model]]
+- **Previous**: [[id:db1d40d7-0b61-4bc0-a118-debff01e9cfc][Partition Function Transfer Matrix Form]]
+- **Next**: [[id:f04607cb-1fa4-458b-a2d7-92d173e9690a][Free Energy Expression Largest Eigenvalue]]
+
+* Related Concepts

@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       db1d40d7-0b61-4bc0-a118-debff01e9cfc
+:CUSTOM_ID: 6-5a
+:END:
+#+TITLE: Partition Function Transfer Matrix Form
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (a) Problem
+For a closed linear chain of \(N\) clock spins subject to the above Hamiltonian show that the partition function \(Z=\operatorname{tr}[\exp (-\beta \mathcal{H})]\) can be written as
+
+\[Z=\operatorname{tr}\left[\left\langle s_{1}|T| s_{2}\right\rangle\left\langle s_{2}|T| s_{3}\right\rangle \cdots\left\langle s_{N}|T| s_{1}\right\rangle\right],\]
+
+where \(T \equiv\left\langle s_{i}|T| s_{j}\right\rangle=\exp \left[J\left(s_{i}-s_{j}\right)\right]\) is a \(q \times q\) transfer matrix.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:c7cc8de4-38ae-49ec-a4c6-2653466b737c][Clock model]]
+- **Next**: [[id:522bf640-9343-4627-b8e2-7d06ed93d699][Transfer Matrix Diagonalization Fourier]]
+
+* Related Concepts

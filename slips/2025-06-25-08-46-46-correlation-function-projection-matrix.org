@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       0b5b04a2-b3ba-4ae5-aaa7-3a57fa926bbc
+:CUSTOM_ID: 6-5d
+:END:
+#+TITLE: Correlation Function Projection Matrix
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (d) Problem
+Show that the correlation function can be calculated from
+
+\[\left\langle\delta_{s_{i}, s_{i+\ell}}\right\rangle=\frac{1}{Z} \sum_{\alpha=1}^{q} \operatorname{tr}\left[\Pi_{\alpha} T^{\ell} \Pi_{\alpha} T^{N-\ell}\right]\]
+
+where \(\Pi_{\alpha}\) is a projection matrix. Hence show that \(\left\langle\delta_{s_{i}, s_{i+\ell}}\right\rangle_{c} \sim [\lambda(1) / \lambda(0)]^{e}\). (You do not have to explicitly calculate the constant of proportionality.)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:c7cc8de4-38ae-49ec-a4c6-2653466b737c][Clock model]]
+- **Previous**: [[id:f04607cb-1fa4-458b-a2d7-92d173e9690a][Free Energy Expression Largest Eigenvalue]]
+
+* Related Concepts
