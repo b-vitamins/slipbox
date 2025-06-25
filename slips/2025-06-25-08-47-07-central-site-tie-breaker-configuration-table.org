@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       a973ca8a-448f-4d4c-acf8-cb8fdf9572a5
+:CUSTOM_ID: 6-9c
+:END:
+#+TITLE: Central Site Tie Breaker Configuration Table
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (c) Problem
+For a scheme in which the central site is chosen as the tie-breaker, make a table of all possible configurations of site-spins for a given value of the cluster-spin.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a27d41cc-f8d7-4e72-9d86-6568dae98270][Cluster RG]]
+- **Previous**: [[id:2632571e-efc1-4f48-88ad-4b25f950a5fd][Majority Rule Modification Renormalized Spin]]
+- **Next**: [[id:01397f18-b745-4a5e-af7e-1bed0b422a81][Neighboring Clusters Bond Contributions]]
+
+* Related Concepts

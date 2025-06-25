@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       63a408b9-9043-4d72-b899-d9c3d195d61d
+:CUSTOM_ID: 6-9a
+:END:
+#+TITLE: Cluster Grouping Position Space RG
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (a) Problem
+Group the sites into clusters of four in preparation for a position space renormalization group with \(b=2\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a27d41cc-f8d7-4e72-9d86-6568dae98270][Cluster RG]]
+- **Next**: [[id:2632571e-efc1-4f48-88ad-4b25f950a5fd][Majority Rule Modification Renormalized Spin]]
+
+* Related Concepts

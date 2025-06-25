@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       2632571e-efc1-4f48-88ad-4b25f950a5fd
+:CUSTOM_ID: 6-9b
+:END:
+#+TITLE: Majority Rule Modification Renormalized Spin
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (b) Problem
+How can the majority rule be modified to define the renormalized spin of each cluster?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a27d41cc-f8d7-4e72-9d86-6568dae98270][Cluster RG]]
+- **Previous**: [[id:63a408b9-9043-4d72-b899-d9c3d195d61d][Cluster Grouping Position Space RG]]
+- **Next**: [[id:a973ca8a-448f-4d4c-acf8-cb8fdf9572a5][Central Site Tie Breaker Configuration Table]]
+
+* Related Concepts

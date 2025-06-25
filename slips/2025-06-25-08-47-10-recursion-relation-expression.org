@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       65bd75c0-bdde-4cfb-88ba-86bea7820f1c
+:CUSTOM_ID: 6-9f
+:END:
+#+TITLE: Recursion Relation Expression
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (f) Problem
+Find the expression for the resulting recursion relation \(J^{\prime}(J)\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a27d41cc-f8d7-4e72-9d86-6568dae98270][Cluster RG]]
+- **Previous**: [[id:b5e84d04-f7d1-4ebe-8206-d6cdd8cb982c][Boltzmann Weights Parallel Antiparallel Clusters]]
+- **Next**: [[id:8485aa97-ba4c-492c-8ce3-e0938444b156][Critical Coupling Exponent Estimate Comparison]]
+
+* Related Concepts

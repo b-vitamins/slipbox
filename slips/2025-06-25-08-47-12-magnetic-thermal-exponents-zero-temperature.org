@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       69f8243e-9e63-4a7f-bfd7-c9cc22401f53
+:CUSTOM_ID: 6-9h
+:END:
+#+TITLE: Magnetic Thermal Exponents Zero Temperature
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (h) Problem
+What are the values of the magnetic and thermal exponents \(\left(y_{h}, y_{t}\right)\) at the zero temperature ferromagnetic fixed point?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a27d41cc-f8d7-4e72-9d86-6568dae98270][Cluster RG]]
+- **Previous**: [[id:8485aa97-ba4c-492c-8ce3-e0938444b156][Critical Coupling Exponent Estimate Comparison]]
+- **Next**: [[id:b4cd412c-d1d2-49ca-8eb1-07530be18ad2][Antiferromagnetic Applicability Symmetry Respect]]
+
+* Related Concepts

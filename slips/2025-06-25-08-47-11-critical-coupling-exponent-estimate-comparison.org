@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       8485aa97-ba4c-492c-8ce3-e0938444b156
+:CUSTOM_ID: 6-9g
+:END:
+#+TITLE: Critical Coupling Exponent Estimate Comparison
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (g) Problem
+Estimate the critical ferromagnetic coupling \(J_{c}\), and the exponent \(\nu\) obtained from this RG scheme, and compare with the exact values.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a27d41cc-f8d7-4e72-9d86-6568dae98270][Cluster RG]]
+- **Previous**: [[id:65bd75c0-bdde-4cfb-88ba-86bea7820f1c][Recursion Relation Expression]]
+- **Next**: [[id:69f8243e-9e63-4a7f-bfd7-c9cc22401f53][Magnetic Thermal Exponents Zero Temperature]]
+
+* Related Concepts

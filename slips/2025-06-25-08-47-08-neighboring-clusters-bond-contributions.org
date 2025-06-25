@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       01397f18-b745-4a5e-af7e-1bed0b422a81
+:CUSTOM_ID: 6-9d
+:END:
+#+TITLE: Neighboring Clusters Bond Contributions
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (d) Problem
+Focus on a pair of neighboring clusters. Indicate the contributions of intracluster and intercluster bonds to the total energy.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a27d41cc-f8d7-4e72-9d86-6568dae98270][Cluster RG]]
+- **Previous**: [[id:a973ca8a-448f-4d4c-acf8-cb8fdf9572a5][Central Site Tie Breaker Configuration Table]]
+- **Next**: [[id:b5e84d04-f7d1-4ebe-8206-d6cdd8cb982c][Boltzmann Weights Parallel Antiparallel Clusters]]
+
+* Related Concepts

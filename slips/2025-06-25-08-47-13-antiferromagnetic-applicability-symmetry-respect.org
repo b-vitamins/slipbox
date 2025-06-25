@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       b4cd412c-d1d2-49ca-8eb1-07530be18ad2
+:CUSTOM_ID: 6-9i
+:END:
+#+TITLE: Antiferromagnetic Applicability Symmetry Respect
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (i) Problem
+Is the above scheme also applicable for antiferromagnetic interactions? What symmetry of the original problem is not respected by this transformation?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a27d41cc-f8d7-4e72-9d86-6568dae98270][Cluster RG]]
+- **Previous**: [[id:69f8243e-9e63-4a7f-bfd7-c9cc22401f53][Magnetic Thermal Exponents Zero Temperature]]
+
+* Related Concepts

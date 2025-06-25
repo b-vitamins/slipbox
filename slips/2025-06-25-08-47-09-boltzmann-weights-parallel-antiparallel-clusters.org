@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       b5e84d04-f7d1-4ebe-8206-d6cdd8cb982c
+:CUSTOM_ID: 6-9e
+:END:
+#+TITLE: Boltzmann Weights Parallel Antiparallel Clusters
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (e) Problem
+Show that in zero magnetic field, the Boltzmann weights of parallel and antiparallel clusters are given by
+
+\[R(+,+)=x^{8}+2 x^{6}+7 x^{4}+14 x^{2}+17+14 x^{-2}+7 x^{-4}+2 x^{-6}\]
+
+and
+
+\[R(+,-)=9 x^{4}+16 x^{2}+13+16 x^{-2}+9 x^{-4}+x^{-8}\]
+
+where \(x=\mathrm{e}^{J}\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a27d41cc-f8d7-4e72-9d86-6568dae98270][Cluster RG]]
+- **Previous**: [[id:01397f18-b745-4a5e-af7e-1bed0b422a81][Neighboring Clusters Bond Contributions]]
+- **Next**: [[id:65bd75c0-bdde-4cfb-88ba-86bea7820f1c][Recursion Relation Expression]]
+
+* Related Concepts

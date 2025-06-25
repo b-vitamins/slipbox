@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       a27d41cc-f8d7-4e72-9d86-6568dae98270
+:CUSTOM_ID: 6-9
 :END:
 #+TITLE: Cluster RG
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 
@@ -40,6 +41,9 @@ where \(x=\mathrm{e}^{J}\).
 (i) Is the above scheme also applicable for antiferromagnetic interactions? What symmetry of the original problem is not respected by this transformation?
 
 * Solution
+
+* Navigation
+- **Part (a)**: [[id:63a408b9-9043-4d72-b899-d9c3d195d61d][Cluster Grouping Position Space RG]]
 
 * Related Concepts
 
