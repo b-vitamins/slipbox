@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       6ac6fefa-b74f-454d-9193-b7df4481d43d
+:CUSTOM_ID: 5-7a
+:END:
+#+TITLE: Power Law Hamiltonian
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Show that for \(J(r) \propto 1 / r^{d+\sigma}\), the Hamiltonian can be written as
+
+\begin{align*}
+\begin{aligned}
+\beta \mathcal{H}= & \int \frac{\mathrm{d}^{d} \mathbf{q}}{(2 \pi)^{d}} \frac{t+K_{2} q^{2}+K_{\sigma} q^{\sigma}+\cdots}{2} \vec{m}(\mathbf{q}) \cdot \vec{m}(-\mathbf{q}) \\
+& +u \int \frac{\mathrm{d}^{d} \mathbf{q}_{1} \mathrm{~d}^{d} \mathbf{q}_{2} \mathrm{~d}^{d} \mathbf{q}_{3}}{(2 \pi)^{3 d}} \vec{m}\left(\mathbf{q}_{1}\right) \cdot \vec{m}\left(\mathbf{q}_{2}\right) \vec{m}\left(\mathbf{q}_{3}\right) \cdot \vec{m}\left(-\mathbf{q}_{1}-\mathbf{q}_{2}-\mathbf{q}_{3}\right)
+\end{aligned}
+\end{align*}
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a37f8594-08e6-4298-9138-6fe82de7fd86][Long-range interactions between spins]]
+- **Next**: [[id:9283921f-a415-4e15-9784-386ef5268b57][Recursion Relations Sigma Greater 2]]
+
+* Related Concepts

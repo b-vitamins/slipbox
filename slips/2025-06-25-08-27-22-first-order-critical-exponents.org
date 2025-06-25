@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       20439cb9-fa07-4b5e-911c-113d9bd947dd
+:CUSTOM_ID: 5-7f
+:END:
+#+TITLE: First Order Critical Exponents
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (f) Problem
+For \(d<2 \sigma\), calculate the critical exponents \(\nu\) and \(\eta\) to first order in \(\epsilon=d-2 \sigma\).
+
+[See M.E. Fisher, S.-K. Ma and B.G. Nickel, Phys. Rev. Lett. 29, 917 (1972).]
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a37f8594-08e6-4298-9138-6fe82de7fd86][Long-range interactions between spins]]
+- **Previous**: [[id:1c907cab-e6fd-4d91-b8be-53dacb5a59e0][Perturbation Expansion Recursion]]
+- **Next**: [[id:ca861cab-8c5d-46ea-b6e2-f91c5c9381eb][Exponential Decay Behavior]]
+
+* Related Concepts

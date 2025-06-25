@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       6102036a-65da-4ad2-92b2-cf37d2d81ef1
+:CUSTOM_ID: 5-7c
+:END:
+#+TITLE: Sigma Less 2 Fixed Hamiltonian
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+For \(\sigma<2\) and \(u=0\), show that the spin rescaling factor must be chosen such that \(K_{\sigma}^{\prime}=K_{\sigma}\), in which case \(K_{2}\) is irrelevant. What is the fixed Hamiltonian now?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a37f8594-08e6-4298-9138-6fe82de7fd86][Long-range interactions between spins]]
+- **Previous**: [[id:9283921f-a415-4e15-9784-386ef5268b57][Recursion Relations Sigma Greater 2]]
+- **Next**: [[id:22d9fd06-0246-4290-9bc9-812aa73053c8][Generalized Gaussian Exponents]]
+
+* Related Concepts

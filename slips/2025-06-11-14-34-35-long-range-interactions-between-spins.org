@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       a37f8594-08e6-4298-9138-6fe82de7fd86
+:CUSTOM_ID: 5-7
 :END:
 #+TITLE: Long-range interactions between spins
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 7. Long-range interactions between spins can be described by adding a term
@@ -36,4 +37,11 @@ to the usual Landau-Ginzburg Hamiltonian.
 ee M.E. Fisher, S.-K. Ma and B.G. Nickel, Phys. Rev. Lett. 29, 917 (1972).]
 
 (g) What is the critical behavior if \(J(r) \propto \exp (-r / a)\) ? Explain!
+
+* Navigation
+- **First Part**: [[id:6ac6fefa-b74f-454d-9193-b7df4481d43d][Power Law Hamiltonian]]
+
+* Solution
+
+* Related Concepts
 

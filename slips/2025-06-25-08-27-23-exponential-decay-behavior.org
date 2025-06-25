@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       ca861cab-8c5d-46ea-b6e2-f91c5c9381eb
+:CUSTOM_ID: 5-7g
+:END:
+#+TITLE: Exponential Decay Behavior
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (g) Problem
+What is the critical behavior if \(J(r) \propto \exp (-r / a)\) ? Explain!
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a37f8594-08e6-4298-9138-6fe82de7fd86][Long-range interactions between spins]]
+- **Previous**: [[id:20439cb9-fa07-4b5e-911c-113d9bd947dd][First Order Critical Exponents]]
+
+* Related Concepts

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       1c907cab-e6fd-4d91-b8be-53dacb5a59e0
+:CUSTOM_ID: 5-7e
+:END:
+#+TITLE: Perturbation Expansion Recursion
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (e) Problem
+For \(\sigma<2\), use a perturbation expansion in \(u\) to construct the recursion relations for \(\left(t, K_{\sigma}, u\right)\) as in the text.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a37f8594-08e6-4298-9138-6fe82de7fd86][Long-range interactions between spins]]
+- **Previous**: [[id:22d9fd06-0246-4290-9bc9-812aa73053c8][Generalized Gaussian Exponents]]
+- **Next**: [[id:20439cb9-fa07-4b5e-911c-113d9bd947dd][First Order Critical Exponents]]
+
+* Related Concepts

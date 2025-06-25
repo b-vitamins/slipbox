@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       22d9fd06-0246-4290-9bc9-812aa73053c8
+:CUSTOM_ID: 5-7d
+:END:
+#+TITLE: Generalized Gaussian Exponents
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+For \(\sigma<2\), calculate the generalized Gaussian exponents \(\nu, \eta\), and \(\gamma\) from the recursion relations. Show that \(u\) is irrelevant, and hence the Gaussian results are valid, for \(d>2 \sigma\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a37f8594-08e6-4298-9138-6fe82de7fd86][Long-range interactions between spins]]
+- **Previous**: [[id:6102036a-65da-4ad2-92b2-cf37d2d81ef1][Sigma Less 2 Fixed Hamiltonian]]
+- **Next**: [[id:1c907cab-e6fd-4d91-b8be-53dacb5a59e0][Perturbation Expansion Recursion]]
+
+* Related Concepts

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       9283921f-a415-4e15-9784-386ef5268b57
+:CUSTOM_ID: 5-7b
+:END:
+#+TITLE: Recursion Relations Sigma Greater 2
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+For \(u=0\), construct the recursion relations for \(\left(t, K_{2}, K_{\sigma}\right.\) ) and show that \(K_{\sigma}\) is irrelevant for \(\sigma>2\). What is the fixed Hamiltonian in this case?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:a37f8594-08e6-4298-9138-6fe82de7fd86][Long-range interactions between spins]]
+- **Previous**: [[id:6ac6fefa-b74f-454d-9193-b7df4481d43d][Power Law Hamiltonian]]
+- **Next**: [[id:6102036a-65da-4ad2-92b2-cf37d2d81ef1][Sigma Less 2 Fixed Hamiltonian]]
+
+* Related Concepts
