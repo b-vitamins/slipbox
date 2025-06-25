@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       28d4103a-da4c-416a-8153-999a0ee8ecb0
+:CUSTOM_ID: 7-4b
+:END:
+#+TITLE: Dual Model Construction
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Think of a model whose high-temperature series reproduces the generic behavior found in (a); and hence obtain the Hamiltonian, and interactions of the dual model.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:973778b5-1fbf-456d-bf52-463edcc9253b][Ising model in a field]]
+- **Previous**: [[id:a121490a-2dd6-42b5-b444-e08adf8f79a1][Low-Temperature Expansion]]
+
+* Related Concepts
