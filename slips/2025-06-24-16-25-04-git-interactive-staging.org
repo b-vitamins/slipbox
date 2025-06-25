@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       c91620c1-d34a-4cae-8515-863ad4546535
+:CUSTOM_ID: 90/7c
 :END:
 #+TITLE: Git Interactive Staging
 #+FILETAGS: :git:staging:interactive:patch:hunks:

@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       72df26d0-e352-447b-8802-37593e33e96c
+:CUSTOM_ID: 90/9a
 :END:
 #+TITLE: Git Custom Diff Drivers
 #+FILETAGS: :git:diff:attributes:textconv:binary:

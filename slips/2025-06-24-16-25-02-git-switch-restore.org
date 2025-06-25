@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       6a8d2a91-6f42-412e-8f5e-e5e5b3ef4380
+:CUSTOM_ID: 90/7
 :END:
 #+TITLE: Git Switch and Restore
 #+FILETAGS: :git:modern:switch:restore:checkout:

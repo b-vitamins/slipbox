@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       abce5cf9-f80c-470a-a391-27e6ca85dbd1
+:CUSTOM_ID: 90/8a
 :END:
 #+TITLE: Git Hooks Modern Tools
 #+FILETAGS: :git:hooks:modern:precommit:husky:

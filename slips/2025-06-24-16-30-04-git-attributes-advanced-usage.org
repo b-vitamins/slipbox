@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       9514e0f5-3967-42a8-baea-28758a105dd1
+:CUSTOM_ID: 90/9d
 :END:
 #+TITLE: Git Attributes Advanced Usage
 #+FILETAGS: :git:attributes:advanced:patterns:integration:

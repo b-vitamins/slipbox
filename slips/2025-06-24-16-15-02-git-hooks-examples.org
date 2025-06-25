@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       fe7f74cd-2023-432d-a3de-7da02e24f859
+:CUSTOM_ID: 90/8b
 :END:
 #+TITLE: Git Hooks Examples
 #+FILETAGS: :git:hooks:examples:troubleshooting:patterns:

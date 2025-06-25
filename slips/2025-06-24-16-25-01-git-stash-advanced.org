@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       2b9d1224-4781-4ec6-9539-a7e3eeee6621
+:CUSTOM_ID: 90/7d
 :END:
 #+TITLE: Git Stash Advanced
 #+FILETAGS: :git:stash:workflow:temporary:

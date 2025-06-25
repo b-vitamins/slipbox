@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       900cbcfb-2ee8-41be-9b15-29bccd3b05bc
+:CUSTOM_ID: 90/6b
 :END:
 #+TITLE: Git Partial Clone
 #+FILETAGS: :git:performance:partial:clone:lazy:

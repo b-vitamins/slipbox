@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       c1d2e3f4-a5b6-4c7d-8e9f-a0b1c2d3e4f5
+:CUSTOM_ID: 90/10
 :END:
 #+TITLE: Git Quick Reference - Essential Commands and Setup
 #+FILETAGS: :git:reference:quickstart:
@@ -251,6 +252,6 @@ echo "Run 'git maintenance start' in your repositories!"
 - [[id:c5d6e7f8-a9b0-4c1d-2e3f-4a5b6c7d8e9f][Git Investigation Tools]] - Deep diving into history
 - [[id:d6e7f8a9-b0c1-4d2e-3f4a-5b6c7d8e9fa0][Git Collaboration]] - Team workflows
 - [[id:6c8fab86-38fa-4821-a07f-1b3dd8bfac7c][Git Scalar Setup]] - Large repository optimization
-- [[id:f8a9b0c1-d2e3-4f4a-5b6c-7d8e9fa0b1c2][Git Advanced Workflows]] - Power user features
+- [[id:d2e3f4a5-b6c7-4d8e-9fa0-b1c2d3e4f5a6][Git Knowledge Base - Index]] - Comprehensive guide to all Git topics
 - [[id:0d9ed9fe-d9a7-423b-8b6d-aa726b3a8d12][Git Hooks Fundamentals]] - Automation
 - [[id:3181f357-ffbf-4bbc-afbc-2d806ac78fc4][Git Attributes Fundamentals]] - File handling

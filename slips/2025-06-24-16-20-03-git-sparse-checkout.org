@@ -1,5 +1,6 @@
 :PROPERTIES:
 :ID:       373cbb6c-6c5e-4ef8-b7aa-8fcaf71517b3
+:CUSTOM_ID: 90/6c
 :END:
 #+TITLE: Git Sparse Checkout
 #+FILETAGS: :git:performance:sparse:monorepo:
