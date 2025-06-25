@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       cd0dbff9-881c-4986-9c02-81390869510d
+:CUSTOM_ID: 7-9a
+:END:
+#+TITLE: Generalized Hamiltonian
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Using the previous problems on anisotropy as a guide, generalize the standard Landau-Ginzburg Hamiltonian to include the effects of spacial anisotropy.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:0514f2bd-7ed0-486a-a2d5-5a0ad684e394][Anisotropic Landau theory]]
+- **Next**: [[id:4f082c2b-0cd6-4dea-b278-85cf860a44d5][Relevance Analysis]]
+
+* Related Concepts

@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       2c26438a-7711-4619-ab79-3485ad76037e
+:CUSTOM_ID: 7-12d
+:END:
+#+TITLE: Critical Self-Duality
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+Check that \tilde{J}_{3}(J_{c})=0, i.e. while the model in general is not self-dual, it is self-dual right at criticality, leading to the exact value of J_{c}(q)!
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:bdc0a744-5301-4c2b-bbd4-e9f9b693195b][Triangular/hexagonal lattices]]
+- **Previous**: [[id:e212f983-7f67-4472-8310-388648b0c167][Self-Dual Condition]]
+
+* Related Concepts

@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       0514f2bd-7ed0-486a-a2d5-5a0ad684e394
+:CUSTOM_ID: 7-9
 :END:
 #+TITLE: Anisotropic Landau theory
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -13,6 +14,9 @@
 (b) Are such anisotropies \"relevant\"?
 
 (c) In La_{2} CuO_{4}, the Cu atoms are arranged on the sites of a square lattice in planes, and the planes are then stacked together. Each Cu atom carries a \"spin\", which we assume to be classical, and can point along any direction in space. There is a very strong antiferromagnetic interaction in each plane. There is also a very weak interplane interaction that prefers to align successive layers. Sketch the low-temperature magnetic phase, and indicate to what universality class the order-disorder transition belongs.
+
+* Navigation
+- **First Part**: [[id:cd0dbff9-881c-4986-9c02-81390869510d][Generalized Hamiltonian]]
 
 * Solution
 

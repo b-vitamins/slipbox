@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       8a72c118-3369-4df3-a9b1-11ea1ae7aa2e
+:CUSTOM_ID: 7-11b
+:END:
+#+TITLE: Delta Function Implementation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+The constraints can be implemented by adding \"delta-functions\"
+\begin{align*}
+\delta\left
+[
+S_{p}\right]_{\bmod q}=\frac{1}{q} \sum_{n_{p}=1}^{q} \exp \left
+[
+\frac{2 \pi \mathrm{i} n_{p} S_{p}}{q}\right],
+\end{align*}
+for each plaquette. Show that after summing over the bond variables, the partition function can be written in terms of the dual variables, as
+\begin{align*}
+Z=q^{-N} \sum_{\left\{n_{p}\right\}} \prod_{\left\langle p, p^{\prime}\right\rangle} \lambda\left(n_{p}-n_{p^{\prime}}\right) \equiv \sum_{\left\{n_{p}\right\}} \exp \left
+[
+\sum_{\left\langle p, p^{\prime}\right\rangle} \tilde{J}\left(n_{p}-n_{p^{\prime}}\right)\right]
+\end{align*}
+where \lambda(k) is the discrete Fourier transform of \mathrm{e}^{J(n)}.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ad3d6ceb-a2a7-411d-bf9b-72f8bd4fe50f][Clock model duality]]
+- **Previous**: [[id:e97e0aa3-cca5-4e3d-9ed9-bf2db2861cc3][Bond Variable Transformation]]
+- **Next**: [[id:4877c82c-2738-4107-aa2d-42fd3f8cd1a3][Potts Critical Point]]
+
+* Related Concepts

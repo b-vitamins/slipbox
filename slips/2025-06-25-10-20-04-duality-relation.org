@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       294a3d36-93b3-449c-9c1f-6dc9df2453ea
+:CUSTOM_ID: 7-10a
+:END:
+#+TITLE: Duality Relation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Starting from the duality expression for the free energy, derive a similar relation for the internal energy U(K)=\langle H\rangle=-\partial \ln Z / \partial \ln K.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:b9cdd8d6-9ee3-46b2-adb5-b828f9ab6056][Energy by duality]]
+- **Next**: [[id:c159dda8-9d1b-4866-a90f-e791209bfccb][Critical Point Energy]]
+
+* Related Concepts

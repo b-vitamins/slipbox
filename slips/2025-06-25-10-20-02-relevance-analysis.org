@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       4f082c2b-0cd6-4dea-b278-85cf860a44d5
+:CUSTOM_ID: 7-9b
+:END:
+#+TITLE: Relevance Analysis
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Are such anisotropies \"relevant\"?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:0514f2bd-7ed0-486a-a2d5-5a0ad684e394][Anisotropic Landau theory]]
+- **Previous**: [[id:cd0dbff9-881c-4986-9c02-81390869510d][Generalized Hamiltonian]]
+- **Next**: [[id:8f1483aa-39d7-4be8-a8e6-14c6565b5a7e][Cuprate Universality]]
+
+* Related Concepts

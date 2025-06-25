@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       e212f983-7f67-4472-8310-388648b0c167
+:CUSTOM_ID: 7-12c
+:END:
+#+TITLE: Self-Dual Condition
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Clearly, the model is not self-dual due to the additional interaction. Nonetheless, obtain the critical value such that \tilde{J}(J_{c})=J_{c}.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:bdc0a744-5301-4c2b-bbd4-e9f9b693195b][Triangular/hexagonal lattices]]
+- **Previous**: [[id:7f59b8be-8a7a-4c55-9f67-bb7ab0e99a24][Star-Triangle Transformation]]
+- **Next**: [[id:2c26438a-7711-4619-ab79-3485ad76037e][Critical Self-Duality]]
+
+* Related Concepts

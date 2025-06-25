@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       e97e0aa3-cca5-4e3d-9ed9-bf2db2861cc3
+:CUSTOM_ID: 7-11a
+:END:
+#+TITLE: Bond Variable Transformation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Change from the N site variables to the 2 N bond variables b_{i j}=s_{i}-s_{j}. Show that the difference in the number of variables can be accounted for by the constraint that around each plaquette (elementary square) the sum of the four bond variables must be zero modulus q.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ad3d6ceb-a2a7-411d-bf9b-72f8bd4fe50f][Clock model duality]]
+- **Next**: [[id:8a72c118-3369-4df3-a9b1-11ea1ae7aa2e][Delta Function Implementation]]
+
+* Related Concepts

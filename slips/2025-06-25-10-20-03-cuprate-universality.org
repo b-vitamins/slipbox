@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       8f1483aa-39d7-4be8-a8e6-14c6565b5a7e
+:CUSTOM_ID: 7-9c
+:END:
+#+TITLE: Cuprate Universality
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+In La_{2} CuO_{4}, the Cu atoms are arranged on the sites of a square lattice in planes, and the planes are then stacked together. Each Cu atom carries a \"spin\", which we assume to be classical, and can point along any direction in space. There is a very strong antiferromagnetic interaction in each plane. There is also a very weak interplane interaction that prefers to align successive layers. Sketch the low-temperature magnetic phase, and indicate to what universality class the order-disorder transition belongs.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:0514f2bd-7ed0-486a-a2d5-5a0ad684e394][Anisotropic Landau theory]]
+- **Previous**: [[id:4f082c2b-0cd6-4dea-b278-85cf860a44d5][Relevance Analysis]]
+
+* Related Concepts

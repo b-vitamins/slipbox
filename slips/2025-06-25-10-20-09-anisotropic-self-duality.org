@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       accccc1c-e52d-4a55-ae9b-cc6db41322cd
+:CUSTOM_ID: 7-11d
+:END:
+#+TITLE: Anisotropic Self-Duality
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+Construct the dual of the anisotropic Potts model, with
+\begin{align*}
+-\beta \mathcal{H}=\sum_{x, y}\left(J_{x} \delta_{s_{x, y}, s_{x+1, y}}+J_{y} \delta_{s_{x, y}, s_{x, y+1}}\right)
+\end{align*}
+i.e. with bonds of different strengths along the x and y directions. Find the line of self-dual interactions in the plane (J_{x}, J_{y}).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ad3d6ceb-a2a7-411d-bf9b-72f8bd4fe50f][Clock model duality]]
+- **Previous**: [[id:4877c82c-2738-4107-aa2d-42fd3f8cd1a3][Potts Critical Point]]
+
+* Related Concepts

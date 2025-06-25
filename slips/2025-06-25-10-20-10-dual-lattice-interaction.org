@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       0229e850-81db-4d7d-8108-b74f2dc02d85
+:CUSTOM_ID: 7-12a
+:END:
+#+TITLE: Dual Lattice Interaction
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Starting from a Potts model with nearest-neighbor interaction J on the triangular lattice, find the interaction parameter J_{h}(J) of the dual hexagonal lattice.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:bdc0a744-5301-4c2b-bbd4-e9f9b693195b][Triangular/hexagonal lattices]]
+- **Next**: [[id:7f59b8be-8a7a-4c55-9f67-bb7ab0e99a24][Star-Triangle Transformation]]
+
+* Related Concepts

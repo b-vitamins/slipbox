@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       bdc0a744-5301-4c2b-bbd4-e9f9b693195b
+:CUSTOM_ID: 7-12
 :END:
 #+TITLE: Triangular/hexagonal lattices
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -15,6 +16,9 @@
 (c) Clearly, the model is not self-dual due to the additional interaction. Nonetheless, obtain the critical value such that \tilde{J}(J_{c})=J_{c}.
 
 (d) Check that \tilde{J}_{3}(J_{c})=0, i.e. while the model in general is not self-dual, it is self-dual right at criticality, leading to the exact value of J_{c}(q)!
+
+* Navigation
+- **First Part**: [[id:0229e850-81db-4d7d-8108-b74f2dc02d85][Dual Lattice Interaction]]
 
 * Solution
 
