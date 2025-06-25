@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       96fb37bc-4745-4108-b263-8956a8079be7
+:CUSTOM_ID: 8-4b
+:END:
+#+TITLE: Roughening and duality - Part (b): Large K and XY model connection
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Show that for large $K$, the dual problem is just the XY model. Is this conclusion consistent with the renormalization group results of the previous problem? (Also note the connection with the loop model considered in the problems of the previous chapter.)
+
+* Context
+
+This is part (b) of problem 8-4 on Roughening and duality from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-4][Main Problem: Roughening and duality]]
+- [[8-4a][Previous: Part (a) - Dual model construction]]
+- [[8-4c][Next: Part (c) - One-dimensional version]]
+
+* Solution
+
+* Related Concepts

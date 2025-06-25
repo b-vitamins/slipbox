@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       620157f8-27f6-41f5-945c-59fc123f847b
+:CUSTOM_ID: 8-4a
+:END:
+#+TITLE: Roughening and duality - Part (a): Dual model construction
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Construct the dual model either diagrammatically, or by following these steps:
+
+(i) Change from the $N$ site variables $h_{i}$, to the $2 N$ bond variables $n_{i j}=h_{i}-h_{j}$. Show that the sum of $n_{i j}$ around any plaquette is constrained to be zero.
+
+(ii) Impose the constraints by using the identity $\int_{0}^{2 \pi} \mathrm{d} \theta \mathrm{e}^{\mathrm{i} \theta n} / 2 \pi=\delta_{n, 0}$, for integer $n$.
+
+(iii) After imposing the constraints, you can sum freely over the bond variables $n_{i j}$ to obtain a dual interaction $\tilde{v}\left(\theta_{i}-\theta_{j}\right)$ between dual variables $\theta_{i}$ on neighboring plaquettes.
+
+* Context
+
+This is part (a) of problem 8-4 on Roughening and duality from Kardar's Statistical Physics of Fields.
+
+The Hamiltonian is:
+\begin{align*}
+\beta \mathcal{H}=\frac{K}{2} \sum_{\langle i, j\rangle}\left|h_{i}-h_{j}\right|^{\infty}
+\end{align*}
+
+where the "$\infty$" power means no energy cost for $\Delta h=0$; energy cost of $K / 2$ for $\Delta h= \pm 1$; and $\Delta h= \pm 2$ or higher are not allowed for neighboring sites. This is the restricted solid on solid (RSOS) model.
+
+* Navigation
+
+- [[8-4][Main Problem: Roughening and duality]]
+- [[8-4b][Next: Part (b) - Large K and XY model connection]]
+
+* Solution
+
+* Related Concepts

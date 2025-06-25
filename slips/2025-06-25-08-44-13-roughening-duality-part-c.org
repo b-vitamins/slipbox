@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       5c221620-1c0f-4817-bab6-0ebe55a206fb
+:CUSTOM_ID: 8-4c
+:END:
+#+TITLE: Roughening and duality - Part (c): One-dimensional version
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Does the one dimensional version of this Hamiltonian, i.e. a 2d interface with
+
+\begin{align*}
+-\beta \mathcal{H}=-\frac{K}{2} \sum_{i}\left|h_{i}-h_{i+1}\right|^{\infty}
+\end{align*}
+
+have a roughening transition?
+
+* Context
+
+This is part (c) of problem 8-4 on Roughening and duality from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-4][Main Problem: Roughening and duality]]
+- [[8-4b][Previous: Part (b) - Large K and XY model connection]]
+
+* Solution
+
+* Related Concepts
