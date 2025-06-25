@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       68593752-d18a-43ce-b89d-e49ffbe266f4
+:CUSTOM_ID: 3-4a
+:END:
+#+TITLE: Heat Capacity Singularity
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Calculate the heat capacity singularity as \(t \rightarrow 0\) by the saddle point approximation.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:07317a1a-4c89-4bb7-9bb5-66b92e15c0de][Fluctuations around a tricritical point]]
+- **Next**: [[id:56d124a1-dfd1-4f02-a36a-043b455e74c6][Longitudinal Transverse Fluctuations]]
+
+* Related Concepts

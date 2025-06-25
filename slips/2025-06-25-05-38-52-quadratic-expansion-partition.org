@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       daeb8c35-5030-4548-9c25-17f9a593bef2
+:CUSTOM_ID: 3-2a
+:END:
+#+TITLE: Quadratic Expansion Partition
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+At sufficiently low temperatures, there are only slow variations in \(h\). Expand the energy to quadratic order, and write down the partition function as a functional integral.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:4117ed07-8c68-40bf-a1f8-512bbd993c3a][Capillary Waves]]
+- **Next**: [[id:acad18bc-96ac-4b6e-b06b-2581d2446e59][Fourier Diagonalization]]
+
+* Related Concepts

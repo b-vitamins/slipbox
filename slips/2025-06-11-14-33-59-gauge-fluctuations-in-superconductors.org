@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       ccdb18c3-cb38-4bbd-b0c5-d60c7e5aed8c
+:CUSTOM_ID: 3-3
 :END:
 #+TITLE: Gauge fluctuations in superconductors
-#+FILETAGS: :problem:superconductivity:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -38,6 +39,9 @@ The gauge-invariant derivative \(D_{\mu} \equiv \partial_{\mu}-\mathrm{i} e A_{\
 and expanding \(\beta \mathcal{H}\) to quadratic order in \(\phi, \theta\), and \(\vec{a}\).
 
 (d) Perform a Fourier transformation, and calculate the expectation values of \(\left\langle|\phi(\mathbf{q})|^{2}\right\rangle,\left\langle|\theta(\mathbf{q})|^{2}\right\rangle\), and \(\left\langle|\vec{a}(\mathbf{q})|^{2}\right\rangle\).
+
+* Navigation
+- **First Part**: [[id:ab9becb4-3cc0-4587-b548-0efe3e2e4e72][Gauge Symmetry Invariance]]
 
 * Solution
 

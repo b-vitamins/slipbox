@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       0894f72e-cff2-4ada-b52f-be29e5ebc094
+:CUSTOM_ID: 3-2f
+:END:
+#+TITLE: Higher Order Terms
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (f) Problem
+By estimating typical values of \(\nabla h\), comment on when it is justified to ignore higher order terms in the expansion for \(\mathcal{A}\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:4117ed07-8c68-40bf-a1f8-512bbd993c3a][Capillary Waves]]
+- **Previous**: [[id:d029ecc7-d8a6-4a73-a788-a892134169eb][Dimensional Analysis]]
+
+* Related Concepts

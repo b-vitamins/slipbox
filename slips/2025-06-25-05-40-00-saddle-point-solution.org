@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       2111f598-c656-4dfc-8b13-07e975480bcc
+:CUSTOM_ID: 3-3b
+:END:
+#+TITLE: Saddle Point Solution
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Show that there is a saddle point solution of the form \(\Psi(\mathbf{x})=\bar{\Psi}\), and \(\vec{A}(\mathbf{x})=0\), and find \(\bar{\Psi}\) for \(t>0\) and \(t<0\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ccdb18c3-cb38-4bbd-b0c5-d60c7e5aed8c][Gauge fluctuations in superconductors]]
+- **Previous**: [[id:ab9becb4-3cc0-4587-b548-0efe3e2e4e72][Gauge Symmetry Invariance]]
+- **Next**: [[id:60ee1352-1d32-4c6b-ba98-fca639e34fd2][Fluctuation Cost]]
+
+* Related Concepts

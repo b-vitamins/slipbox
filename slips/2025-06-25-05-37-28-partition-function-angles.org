@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       d64c7c34-ab0b-40da-bf18-cab29f371d44
+:CUSTOM_ID: 3-1a
+:END:
+#+TITLE: Partition Function Angles
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Rewrite the partition function \(Z=\int \prod_{i} \mathrm{~d} \vec{s}_{i} \exp (-\beta \mathcal{H})\), as an integral over the set of angles \(\left\{\theta_{i}\right\}\) between the spins \(\left\{\vec{s}_{i}\right\}\) and some arbitrary axis.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:55016535-36c8-4fe1-963e-c86b760aa563][Spin Waves]]
+- **Next**: [[id:90615957-7b34-4e80-8a35-ce225c65427c][Low Temperature Expansion]]
+
+* Related Concepts

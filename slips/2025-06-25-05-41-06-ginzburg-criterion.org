@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       e54e6df9-9905-4360-876e-47b670714738
+:CUSTOM_ID: 3-4f
+:END:
+#+TITLE: Ginzburg Criterion
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (f) Problem
+By comparing the results from parts (a) and (e) for \(t<0\) obtain a Ginzburg criterion, and the upper critical dimension for validity of mean-field theory at a tricritical point.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:07317a1a-4c89-4bb7-9bb5-66b92e15c0de][Fluctuations around a tricritical point]]
+- **Previous**: [[id:be696363-60c6-4ef3-b015-2317c33fee25][Heat Capacity Correction]]
+- **Next**: [[id:40c5c4f1-9836-4a98-bf32-9a113c8dc114][Multicritical Point Dimension]]
+
+* Related Concepts

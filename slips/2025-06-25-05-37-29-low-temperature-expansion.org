@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       90615957-7b34-4e80-8a35-ce225c65427c
+:CUSTOM_ID: 3-1b
+:END:
+#+TITLE: Low Temperature Expansion
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+At low temperatures ( \(K \gg 1\) ), the angles \(\left\{\theta_{i}\right\}\) vary slowly from site to site. In this case expand \(-\beta \mathcal{H}\) to get a quadratic form in \(\left\{\theta_{i}\right\}\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:55016535-36c8-4fe1-963e-c86b760aa563][Spin Waves]]
+- **Previous**: [[id:d64c7c34-ab0b-40da-bf18-cab29f371d44][Partition Function Angles]]
+- **Next**: [[id:ddef9863-a33f-48c9-802b-eab766edf3d4][Normal Modes 1D]]
+
+* Related Concepts

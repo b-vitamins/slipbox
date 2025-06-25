@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       56d124a1-dfd1-4f02-a36a-043b455e74c6
+:CUSTOM_ID: 3-4b
+:END:
+#+TITLE: Longitudinal Transverse Fluctuations
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Include both longitudinal and transverse fluctuations by setting
+
+\begin{align*}
+\vec{m}(\mathbf{x})=\left(\bar{m}+\phi_{\ell}(\mathbf{x})\right) \hat{e}_{\ell}+\sum_{\alpha=2}^{n} \phi_{t}^{\alpha}(\mathbf{x}) \hat{e}_{\alpha}
+\end{align*}
+
+and expanding \(\beta \mathcal{H}\) to quadratic order in \(\phi\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:07317a1a-4c89-4bb7-9bb5-66b92e15c0de][Fluctuations around a tricritical point]]
+- **Previous**: [[id:68593752-d18a-43ce-b89d-e49ffbe266f4][Heat Capacity Singularity]]
+- **Next**: [[id:05348540-977c-4e88-bfee-7469b53adf4b][Correlation Functions]]
+
+* Related Concepts

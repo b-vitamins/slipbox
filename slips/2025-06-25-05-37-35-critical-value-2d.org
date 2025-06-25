@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       955c9a09-467e-4475-a668-d4ff50ce267c
+:CUSTOM_ID: 3-1h
+:END:
+#+TITLE: Critical Value 2D
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (h) Problem
+In \(d=2\), show that \(\chi_{t}\) only diverges for \(K\) larger than a critical value \(K_{c}=1 /(4 \pi)\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:55016535-36c8-4fe1-963e-c86b760aa563][Spin Waves]]
+- **Previous**: [[id:269e4e95-4651-4ff6-b460-432930ceb1a2][Transverse Susceptibility]]
+
+* Related Concepts

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       52d936ad-b77d-485b-8463-f7d6ab355f40
+:CUSTOM_ID: 3-1d
+:END:
+#+TITLE: Normal Modes d-Dimensional
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+Generalize the results from the previous part to a \(d\)-dimensional simple cubic lattice with periodic boundary conditions.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:55016535-36c8-4fe1-963e-c86b760aa563][Spin Waves]]
+- **Previous**: [[id:ddef9863-a33f-48c9-802b-eab766edf3d4][Normal Modes 1D]]
+- **Next**: [[id:953aaa39-14da-420e-ad3c-d40959449317][Free Energy and Heat Capacity]]
+
+* Related Concepts

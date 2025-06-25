@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       be696363-60c6-4ef3-b015-2317c33fee25
+:CUSTOM_ID: 3-4e
+:END:
+#+TITLE: Heat Capacity Correction
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (e) Problem
+Find the fluctuation correction to the heat capacity.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:07317a1a-4c89-4bb7-9bb5-66b92e15c0de][Fluctuations around a tricritical point]]
+- **Previous**: [[id:ce26b6cf-48cc-466a-ab8c-5b2364611fa7][Free Energy Correction]]
+- **Next**: [[id:e54e6df9-9905-4360-876e-47b670714738][Ginzburg Criterion]]
+
+* Related Concepts

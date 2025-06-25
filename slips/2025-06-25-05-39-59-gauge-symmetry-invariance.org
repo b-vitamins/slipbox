@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       ab9becb4-3cc0-4587-b548-0efe3e2e4e72
+:CUSTOM_ID: 3-3a
+:END:
+#+TITLE: Gauge Symmetry Invariance
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Show that the above Hamiltonian is invariant under the local gauge symmetry:
+
+\begin{align*}
+\Psi(\mathbf{x}) \mapsto \Psi(x) \exp (\mathrm{i} \theta(\mathbf{x})), \quad \text { and } \quad A_{\mu}(\mathbf{x}) \mapsto A_{\mu}(\mathbf{x})+\frac{1}{e} \partial_{\mu} \theta
+\end{align*}
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ccdb18c3-cb38-4bbd-b0c5-d60c7e5aed8c][Gauge fluctuations in superconductors]]
+- **Next**: [[id:2111f598-c656-4dfc-8b13-07e975480bcc][Saddle Point Solution]]
+
+* Related Concepts

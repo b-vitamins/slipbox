@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       269e4e95-4651-4ff6-b460-432930ceb1a2
+:CUSTOM_ID: 3-1g
+:END:
+#+TITLE: Transverse Susceptibility
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (g) Problem
+Calculate the transverse susceptibility from \(\chi_{t} \propto \int \mathrm{d}^{d} \mathbf{x}\left\langle\vec{s}_{0} \cdot \vec{s}_{\mathbf{x}}\right\rangle_{c}\). How does it depend on the system size \(L\) ?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:55016535-36c8-4fe1-963e-c86b760aa563][Spin Waves]]
+- **Previous**: [[id:674d0c22-5ee2-4c9d-bfd1-0290a7f6f2a8][Spin Correlation Function]]
+- **Next**: [[id:955c9a09-467e-4475-a668-d4ff50ce267c][Critical Value 2D]]
+
+* Related Concepts

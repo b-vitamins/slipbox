@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       8df7fdd1-13c5-47f0-a79d-2320bf5796f4
+:CUSTOM_ID: 3-3d
+:END:
+#+TITLE: Fourier Expectation Values
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+Perform a Fourier transformation, and calculate the expectation values of \(\left\langle|\phi(\mathbf{q})|^{2}\right\rangle,\left\langle|\theta(\mathbf{q})|^{2}\right\rangle\), and \(\left\langle|\vec{a}(\mathbf{q})|^{2}\right\rangle\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ccdb18c3-cb38-4bbd-b0c5-d60c7e5aed8c][Gauge fluctuations in superconductors]]
+- **Previous**: [[id:60ee1352-1d32-4c6b-ba98-fca639e34fd2][Fluctuation Cost]]
+
+* Related Concepts

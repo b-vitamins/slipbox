@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       4117ed07-8c68-40bf-a1f8-512bbd993c3a
+:CUSTOM_ID: 3-2
 :END:
 #+TITLE: Capillary Waves
-#+FILETAGS: :problem:statmech:surface:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -20,6 +21,9 @@
 (e) Comment on the form of the result (d) in dimensions \(d=4,3,2\), and 1 .
 
 (f) By estimating typical values of \(\nabla h\), comment on when it is justified to ignore higher order terms in the expansion for \(\mathcal{A}\).
+
+* Navigation
+- **First Part**: [[id:daeb8c35-5030-4548-9c25-17f9a593bef2][Quadratic Expansion Partition]]
 
 * Solution
 

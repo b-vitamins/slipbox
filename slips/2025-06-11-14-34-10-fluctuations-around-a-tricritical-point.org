@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       07317a1a-4c89-4bb7-9bb5-66b92e15c0de
+:CUSTOM_ID: 3-4
 :END:
 #+TITLE: Fluctuations around a tricritical point
-#+FILETAGS: :problem:critical:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -35,6 +36,9 @@ and expanding \(\beta \mathcal{H}\) to quadratic order in \(\phi\).
 
 (f) By comparing the results from parts (a) and (e) for \(t<0\) obtain a Ginzburg criterion, and the upper critical dimension for validity of mean-field theory at a tricritical point.
 (g) A generalized multicritical point is described by replacing the term \(v m^{6}\) with \(u_{2 n} m^{2 n}\). Use simple power counting to find the upper critical dimension of this multicritical point.
+
+* Navigation
+- **First Part**: [[id:68593752-d18a-43ce-b89d-e49ffbe266f4][Heat Capacity Singularity]]
 
 * Solution
 

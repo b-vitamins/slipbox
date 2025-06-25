@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       90c95c36-6582-4a9b-8de7-80573659f629
+:CUSTOM_ID: 3-2c
+:END:
+#+TITLE: Symmetry Breaking
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+What symmetry breaking is responsible for these Goldstone modes?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:4117ed07-8c68-40bf-a1f8-512bbd993c3a][Capillary Waves]]
+- **Previous**: [[id:acad18bc-96ac-4b6e-b06b-2581d2446e59][Fourier Diagonalization]]
+- **Next**: [[id:f4a95004-73fd-40af-9132-a89dd6c1f565][Height-Height Correlations]]
+
+* Related Concepts

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       953aaa39-14da-420e-ad3c-d40959449317
+:CUSTOM_ID: 3-1e
+:END:
+#+TITLE: Free Energy and Heat Capacity
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (e) Problem
+Calculate the contribution of these modes to the free energy and heat capacity. (Evaluate the classical partition function, i.e. do not quantize the modes.)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:55016535-36c8-4fe1-963e-c86b760aa563][Spin Waves]]
+- **Previous**: [[id:52d936ad-b77d-485b-8463-f7d6ab355f40][Normal Modes d-Dimensional]]
+- **Next**: [[id:674d0c22-5ee2-4c9d-bfd1-0290a7f6f2a8][Spin Correlation Function]]
+
+* Related Concepts

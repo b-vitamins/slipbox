@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       05348540-977c-4e88-bfee-7469b53adf4b
+:CUSTOM_ID: 3-4c
+:END:
+#+TITLE: Correlation Functions
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Calculate the longitudinal and transverse correlation functions.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:07317a1a-4c89-4bb7-9bb5-66b92e15c0de][Fluctuations around a tricritical point]]
+- **Previous**: [[id:56d124a1-dfd1-4f02-a36a-043b455e74c6][Longitudinal Transverse Fluctuations]]
+- **Next**: [[id:ce26b6cf-48cc-466a-ab8c-5b2364611fa7][Free Energy Correction]]
+
+* Related Concepts

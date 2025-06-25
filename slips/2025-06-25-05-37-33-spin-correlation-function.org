@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       674d0c22-5ee2-4c9d-bfd1-0290a7f6f2a8
+:CUSTOM_ID: 3-1f
+:END:
+#+TITLE: Spin Correlation Function
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (f) Problem
+Find an expression for \(\left\langle\vec{s}_{0} \cdot \vec{s}_{\mathbf{x}}\right\rangle=\Re\left\langle\exp \left[\mathrm{i} \theta_{\mathbf{x}}-i \theta_{0}\right]\right\rangle\) by adding contributions from different Fourier modes. Convince yourself that for \(|\mathbf{x}| \rightarrow \infty\), only \(\mathbf{q} \rightarrow \mathbf{0}\) modes contribute appreciably to this expression, and hence calculate the asymptotic limit.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:55016535-36c8-4fe1-963e-c86b760aa563][Spin Waves]]
+- **Previous**: [[id:953aaa39-14da-420e-ad3c-d40959449317][Free Energy and Heat Capacity]]
+- **Next**: [[id:269e4e95-4651-4ff6-b460-432930ceb1a2][Transverse Susceptibility]]
+
+* Related Concepts

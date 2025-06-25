@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       ddef9863-a33f-48c9-802b-eab766edf3d4
+:CUSTOM_ID: 3-1c
+:END:
+#+TITLE: Normal Modes 1D
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+For \(d=1\), consider \(L\) sites with periodic boundary conditions (i.e. forming a closed chain). Find the normal modes \(\theta_{q}\) that diagonalize the quadratic form (by Fourier transformation), and the corresponding eigenvalues \(K(q)\). Pay careful attention to whether the modes are real or complex, and to the allowed values of \(q\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:55016535-36c8-4fe1-963e-c86b760aa563][Spin Waves]]
+- **Previous**: [[id:90615957-7b34-4e80-8a35-ce225c65427c][Low Temperature Expansion]]
+- **Next**: [[id:52d936ad-b77d-485b-8463-f7d6ab355f40][Normal Modes d-Dimensional]]
+
+* Related Concepts
