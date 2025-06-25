@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       02f7c8ee-0e6d-4813-87e1-bc179d956770
+:CUSTOM_ID: 6-8e
+:END:
+#+TITLE: Partition Function Additive Constants
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (e) Problem
+Write the expression for \(\ln Z\) in terms of the additive constants of successive rescalings.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:2d498b28-293f-45f9-be18-24e3b8465779][Potts chain (RG)]]
+- **Previous**: [[id:26f0f425-45fe-4b1c-b189-c199df7e6b3c][Fixed Points Stability Discussion]]
+- **Next**: [[id:dc1e8afc-9f04-467d-8b01-5f36f1d85bad][Simplified Recursion Relations t Variable]]
+
+* Related Concepts

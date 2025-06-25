@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       2d498b28-293f-45f9-be18-24e3b8465779
+:CUSTOM_ID: 6-8
 :END:
 #+TITLE: Potts chain (RG)
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 
@@ -32,6 +33,9 @@ Potts chain (RG): Consider a one-dimensional array of \(N\) Potts spins \(s_{i}=
 (i) Find the magnetic eigenvalues at the zero temperature fixed point where \(J \rightarrow \infty\), and obtain the form of the correlation length close to zero temperature.
 
 * Solution
+
+* Navigation
+- **Part (a)**: [[id:a3470c9f-acd0-4235-9204-feef98bd60fa][Transfer Matrix Partition Function Correlation Length]]
 
 * Related Concepts
 

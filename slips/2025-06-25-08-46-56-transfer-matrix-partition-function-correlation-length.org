@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       a3470c9f-acd0-4235-9204-feef98bd60fa
+:CUSTOM_ID: 6-8a
+:END:
+#+TITLE: Transfer Matrix Partition Function Correlation Length
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (a) Problem
+Using the transfer matrix method (or otherwise) calculate the partition function \(Z\), and the correlation length \(\xi\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:2d498b28-293f-45f9-be18-24e3b8465779][Potts chain (RG)]]
+- **Next**: [[id:4a8b0260-c7a4-4538-83d5-bdafafafe4c7][Zero Temperature Critical Antiferromagnetic]]
+
+* Related Concepts

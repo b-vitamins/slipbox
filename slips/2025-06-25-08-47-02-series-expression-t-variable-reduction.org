@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       2f96b3db-b527-4d85-b5fb-36c733429a3b
+:CUSTOM_ID: 6-8g
+:END:
+#+TITLE: Series Expression t Variable Reduction
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (g) Problem
+Use the result in (f) to express the series in (e) in terms of \(t\). Show that the answer can be reduced to that obtained in part (a), upon using the result
+
+\[\sum_{n=0}^{\infty} \frac{1}{2^{n+1}} \ln \left(\frac{1+t^{2^{n}}}{1-t^{2^{n}}}\right)=-\ln (1-t)\]
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:2d498b28-293f-45f9-be18-24e3b8465779][Potts chain (RG)]]
+- **Previous**: [[id:dc1e8afc-9f04-467d-8b01-5f36f1d85bad][Simplified Recursion Relations t Variable]]
+- **Next**: [[id:f3c32bf3-734c-4f63-8614-d7c8c9b62d53][Symmetry Breaking RG Three Parameters]]
+
+* Related Concepts

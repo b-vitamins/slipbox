@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       d31bf186-ff01-4f1c-bd6f-31210ad26d8f
+:CUSTOM_ID: 6-8i
+:END:
+#+TITLE: Magnetic Eigenvalues Zero Temperature
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (i) Problem
+Find the magnetic eigenvalues at the zero temperature fixed point where \(J \rightarrow \infty\), and obtain the form of the correlation length close to zero temperature.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:2d498b28-293f-45f9-be18-24e3b8465779][Potts chain (RG)]]
+- **Previous**: [[id:f3c32bf3-734c-4f63-8614-d7c8c9b62d53][Symmetry Breaking RG Three Parameters]]
+
+* Related Concepts

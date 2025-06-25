@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       3143a0cc-df71-4491-9fe2-38a16d99e7f4
+:CUSTOM_ID: 6-8c
+:END:
+#+TITLE: RG Recursion Relations Decimation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (c) Problem
+Construct a renormalization group (RG) treatment by eliminating every other spin. Write down the recursion relations for the coupling \(J\), and the additive constant \(g\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:2d498b28-293f-45f9-be18-24e3b8465779][Potts chain (RG)]]
+- **Previous**: [[id:4a8b0260-c7a4-4538-83d5-bdafafafe4c7][Zero Temperature Critical Antiferromagnetic]]
+- **Next**: [[id:26f0f425-45fe-4b1c-b189-c199df7e6b3c][Fixed Points Stability Discussion]]
+
+* Related Concepts

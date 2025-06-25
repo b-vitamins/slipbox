@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       26f0f425-45fe-4b1c-b189-c199df7e6b3c
+:CUSTOM_ID: 6-8d
+:END:
+#+TITLE: Fixed Points Stability Discussion
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (d) Problem
+Discuss the fixed points, and their stability.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:2d498b28-293f-45f9-be18-24e3b8465779][Potts chain (RG)]]
+- **Previous**: [[id:3143a0cc-df71-4491-9fe2-38a16d99e7f4][RG Recursion Relations Decimation]]
+- **Next**: [[id:02f7c8ee-0e6d-4813-87e1-bc179d956770][Partition Function Additive Constants]]
+
+* Related Concepts
