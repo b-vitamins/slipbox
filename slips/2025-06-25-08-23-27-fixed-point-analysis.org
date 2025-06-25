@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       b013ec1b-6aa1-49bb-847b-f3a8226e7ac0
+:CUSTOM_ID: 5-6c
+:END:
+#+TITLE: Fixed Point Analysis
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Choose \(c(b)\) and \(z(b)\) such that \(K^{\prime}=K\) and \(L^{\prime}=L\). At the resulting fixed point calculate the eigenvalues \(y_{t}\) and \(y_{h}\) for the rescalings of \(t\) and \(h\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:1e0a6b03-cc55-43a9-bb84-7a7f42fa2867][Anisotropic criticality]]
+- **Previous**: [[id:ab2ec19f-d3b7-4a79-a0fc-a86a4f6d9832][RG Transformation]]
+- **Next**: [[id:cbe64253-27a0-4021-907e-c18bcad6502b][Free Energy Scaling]]
+
+* Related Concepts

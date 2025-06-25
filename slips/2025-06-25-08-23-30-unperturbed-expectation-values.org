@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       b7361a64-7a32-4565-91b7-54ddf2bae50f
+:CUSTOM_ID: 5-6f
+:END:
+#+TITLE: Unperturbed Expectation Values
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (f) Problem
+In the unperturbed Hamiltonian calculate the expectation value \(\left\langle m(q) m\left(q^{\prime}\right)\right\rangle_{0}\), and the corresponding susceptibility \(\chi_{0}(q)=\left\langle\left|m_{q}\right|^{2}\right\rangle_{0}\), where \(q\) stands for \((\mathbf{q}_{\|}, \mathbf{q}_{\perp})\). (For the remainder of this problem set \(h=0\), and treat \(U\) as a perturbation.)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:1e0a6b03-cc55-43a9-bb84-7a7f42fa2867][Anisotropic criticality]]
+- **Previous**: [[id:ec06762e-375f-4495-8c63-61b6e459506c][Susceptibility Divergence]]
+- **Next**: [[id:b0c8fb06-563e-477a-bd7d-ed27a502e745][Perturbation Normal Modes]]
+
+* Related Concepts

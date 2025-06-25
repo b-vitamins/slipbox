@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       ba3241b6-ba18-4abe-87c7-7bfb46265670
+:CUSTOM_ID: 5-6j
+:END:
+#+TITLE: Perturbation Theory Susceptibility
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (j) Problem
+Write down the expression for \(\chi(q)\), in first order perturbation theory, and identify the transition point \(t_{c}\) at order of \(u\). (Do not evaluate any integrals explicitly.)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:1e0a6b03-cc55-43a9-bb84-7a7f42fa2867][Anisotropic criticality]]
+- **Previous**: [[id:879fb210-6565-41e5-8a9c-b2d94cbf6b3d][First Order Expansion]]
+
+* Related Concepts

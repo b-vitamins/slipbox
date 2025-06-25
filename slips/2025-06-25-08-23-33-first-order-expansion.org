@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       879fb210-6565-41e5-8a9c-b2d94cbf6b3d
+:CUSTOM_ID: 5-6i
+:END:
+#+TITLE: First Order Expansion
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (i) Problem
+Write down the expansion for \(\left\langle m(q) m\left(q^{\prime}\right)\right\rangle\), to first order in \(U\), and reduce the correction term to a product of two point expectation values.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:1e0a6b03-cc55-43a9-bb84-7a7f42fa2867][Anisotropic criticality]]
+- **Previous**: [[id:96be56a2-8838-4807-bf51-cba6ba2ad239][Upper Critical Dimension]]
+- **Next**: [[id:ba3241b6-ba18-4abe-87c7-7bfb46265670][Perturbation Theory Susceptibility]]
+
+* Related Concepts

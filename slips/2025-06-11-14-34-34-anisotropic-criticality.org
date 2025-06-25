@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       1e0a6b03-cc55-43a9-bb84-7a7f42fa2867
+:CUSTOM_ID: 5-6
 :END:
 #+TITLE: Anisotropic criticality
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 6. Anisotropic criticality: A number of materials, such as liquid crystals, are anisotropic and behave differently along distinct directions, which shall be denoted parallel and perpendicular, respectively. Let us assume that the \(d\) spatial dimensions are grouped into \(n\) parallel directions \(\mathbf{x}_{\|}\), and \(d-n\) perpendicular directions \(\mathbf{x}_{\perp}\). Consider a one-component field \(m\left(\mathbf{x}_{\|}, \mathbf{x}_{\perp}\right)\) subject to a Landau-Ginzburg Hamiltonian, \(\beta \mathcal{H}=\) \(\beta \mathcal{H}_{0}+U\), with
@@ -38,4 +39,11 @@ In the remainder of this problem set \(h=0\), and treat \(U\) as a perturbation.
 (i) Write down the expansion for \(\left\langle m(q) m\left(q^{\prime}\right)\right\rangle\), to first order in \(U\), and reduce the correction term to a product of two point expectation values.
 
 (j) Write down the expression for \(\chi(q)\), in first order perturbation theory, and identify the transition point \(t_{c}\) at order of \(u\). (Do not evaluate any integrals explicitly.)
+
+* Navigation
+- **First Part**: [[id:62751a54-00d2-4500-b906-e0e2d17722d2][Fourier Transforms]]
+
+* Solution
+
+* Related Concepts
 

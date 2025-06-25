@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       ec06762e-375f-4495-8c63-61b6e459506c
+:CUSTOM_ID: 5-6e
+:END:
+#+TITLE: Susceptibility Divergence
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (e) Problem
+How does the unperturbed zero-field susceptibility \(\chi(t, h=0)\) diverge as \(t \rightarrow 0\) ?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:1e0a6b03-cc55-43a9-bb84-7a7f42fa2867][Anisotropic criticality]]
+- **Previous**: [[id:cbe64253-27a0-4021-907e-c18bcad6502b][Free Energy Scaling]]
+- **Next**: [[id:b7361a64-7a32-4565-91b7-54ddf2bae50f][Unperturbed Expectation Values]]
+
+* Related Concepts

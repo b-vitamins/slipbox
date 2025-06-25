@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       cbe64253-27a0-4021-907e-c18bcad6502b
+:CUSTOM_ID: 5-6d
+:END:
+#+TITLE: Free Energy Scaling
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+Write the relationship between the (singular parts of) free energies \(f(t, h)\) and \(f^{\prime}\left(t^{\prime}, h^{\prime}\right)\) in the original and rescaled problems. Hence write the unperturbed free energy in the homogeneous form \(f(t, h)=t^{2-\alpha} g_{f}\left(h / t^{\Delta}\right)\), and identify the exponents \(\alpha\) and \(\Delta\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:1e0a6b03-cc55-43a9-bb84-7a7f42fa2867][Anisotropic criticality]]
+- **Previous**: [[id:b013ec1b-6aa1-49bb-847b-f3a8226e7ac0][Fixed Point Analysis]]
+- **Next**: [[id:ec06762e-375f-4495-8c63-61b6e459506c][Susceptibility Divergence]]
+
+* Related Concepts

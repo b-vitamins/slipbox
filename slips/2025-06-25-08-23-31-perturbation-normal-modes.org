@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       b0c8fb06-563e-477a-bd7d-ed27a502e745
+:CUSTOM_ID: 5-6g
+:END:
+#+TITLE: Perturbation Normal Modes
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (g) Problem
+Write the perturbation \(U\), in terms of the normal modes \(m(q)\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:1e0a6b03-cc55-43a9-bb84-7a7f42fa2867][Anisotropic criticality]]
+- **Previous**: [[id:b7361a64-7a32-4565-91b7-54ddf2bae50f][Unperturbed Expectation Values]]
+- **Next**: [[id:96be56a2-8838-4807-bf51-cba6ba2ad239][Upper Critical Dimension]]
+
+* Related Concepts
