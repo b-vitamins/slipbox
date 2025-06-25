@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       d232e289-b99e-48e5-b6b7-9140fa9484a9
+:CUSTOM_ID: 5-5c
+:END:
+#+TITLE: Numerical Tables
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Create a table of numerical results by setting \(\epsilon=1,2\) for \(n=1,2\) and 3, evaluating all critical exponents \(\alpha, \beta, \gamma, \delta, \Delta, \nu, \eta\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:91257a7f-f337-49ee-a930-a621e5b1e3db][Exponents]]
+- **Previous**: [[id:b59eadf0-3ba3-4ce6-9d9d-4d81e35ff271][Epsilon Expansions Calculation]]
+- **Next**: [[id:33a94450-7d71-43a2-bf5a-d8ef141f8414][Experimental Comparison]]
+
+* Related Concepts

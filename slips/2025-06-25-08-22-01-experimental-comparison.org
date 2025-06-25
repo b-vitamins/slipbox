@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       33a94450-7d71-43a2-bf5a-d8ef141f8414
+:CUSTOM_ID: 5-5d
+:END:
+#+TITLE: Experimental Comparison
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+Compare the calculated \(\epsilon\)-expansion results to the best estimates of these exponents from other sources (series expansions, experiments, etc.) for different values of \(n\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:91257a7f-f337-49ee-a930-a621e5b1e3db][Exponents]]
+- **Previous**: [[id:d232e289-b99e-48e5-b6b7-9140fa9484a9][Numerical Tables]]
+
+* Related Concepts
