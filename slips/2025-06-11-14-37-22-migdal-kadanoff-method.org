@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       29d874fb-c417-483b-8c17-182f1f20b8c3
+:CUSTOM_ID: 6-2
 :END:
 #+TITLE: Migdal-Kadanoff method
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 
@@ -21,6 +22,9 @@ Migdal-Kadanoff method: Consider Potts spins \(s_{i}=(1,2, \cdots, q)\), on site
 (c) By considering the stability of the fixed points at zero and infinite coupling, prove the existence of a non-trivial fixed point at finite \(K^{*}\) for \(d>1\).
 
 (d) For \(d=2\), obtain \(K^{*}\) and \(y_{t}\), for \(q=3,1\), and 0 .
+
+* Navigation
+- **First Part**: [[id:dad1d208-e5f0-4e07-9c4d-84193da7efdf][1D Exact Recursion]]
 
 * Solution
 

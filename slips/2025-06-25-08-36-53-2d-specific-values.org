@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       b78cf6c7-971a-442b-8856-06d47082f424
+:CUSTOM_ID: 6-2d
+:END:
+#+TITLE: 2D Specific Values
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+For \(d=2\), obtain \(K^{*}\) and \(y_{t}\), for \(q=3,1\), and 0.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:29d874fb-c417-483b-8c17-182f1f20b8c3][Migdal-Kadanoff method]]
+- **Previous**: [[id:8d13330d-0df4-4635-b327-a25469c964a1][Fixed Point Existence]]
+
+* Related Concepts

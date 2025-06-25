@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       dad1d208-e5f0-4e07-9c4d-84193da7efdf
+:CUSTOM_ID: 6-2a
+:END:
+#+TITLE: 1D Exact Recursion
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+In \(d=1\) find the exact recursion relations by a \(b=2\) renormalization/decimation process. Identify all fixed points and note their stability.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:29d874fb-c417-483b-8c17-182f1f20b8c3][Migdal-Kadanoff method]]
+- **Next**: [[id:a2063e20-8c7b-4666-b8ab-0ad1e78010de][d-Dimensional Recursion]]
+
+* Related Concepts

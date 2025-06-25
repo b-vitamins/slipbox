@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       8d13330d-0df4-4635-b327-a25469c964a1
+:CUSTOM_ID: 6-2c
+:END:
+#+TITLE: Fixed Point Existence
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+By considering the stability of the fixed points at zero and infinite coupling, prove the existence of a non-trivial fixed point at finite \(K^{*}\) for \(d>1\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:29d874fb-c417-483b-8c17-182f1f20b8c3][Migdal-Kadanoff method]]
+- **Previous**: [[id:a2063e20-8c7b-4666-b8ab-0ad1e78010de][d-Dimensional Recursion]]
+- **Next**: [[id:b78cf6c7-971a-442b-8856-06d47082f424][2D Specific Values]]
+
+* Related Concepts
