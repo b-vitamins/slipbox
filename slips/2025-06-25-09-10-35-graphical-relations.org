@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       8a5b6b7b-10bc-4abf-bd14-57ede7763aa5
+:CUSTOM_ID: 7-2b
+:END:
+#+TITLE: Graphical Relations
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Show that
+\begin{align*}
+\begin{gathered}
+\sum_{s=1}^{q} g\left(s, s^{\prime}\right)=0, \sum_{s=1}^{q} g\left(s_{1}, s\right) g\left(s, s_{2}\right)=q g\left(s_{1}, s_{2}\right) \\text { and } \sum_{s, s^{\prime}}^{q} g\left(s, s^{\prime}\right) g\left(s^{\prime}, s\right)=q^{2}(q-1)
+\end{gathered}
+\end{align*}
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:7ad7b251-321e-49b7-ac9d-30fc6ab101b0][Potts model I]]
+- **Previous**: [[id:4f3ca6aa-1dcc-4e74-81ef-0d6b014ee556][Boltzmann Weight Decomposition]]
+- **Next**: [[id:6c73b335-a5a6-45da-b1ea-6ae60d5dbd2c][One-Dimensional Analysis]]
+
+* Related Concepts

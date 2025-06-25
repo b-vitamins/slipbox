@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       4f3ca6aa-1dcc-4e74-81ef-0d6b014ee556
+:CUSTOM_ID: 7-2a
+:END:
+#+TITLE: Boltzmann Weight Decomposition
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+To treat this problem graphically at high temperatures, the Boltzmann weight for each bond is written as
+
+\begin{align*}
+\exp \left(K \delta_{s_{i}, s_{j}}\right)=C(K)\left
+[
+1+T(K) g\left(s_{i}, s_{j}\right)\right]
+\end{align*}
+
+with g\left(s, s^{\prime}\right)=q \delta_{s, s^{\prime}}-1. Find C(K) and T(K).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:7ad7b251-321e-49b7-ac9d-30fc6ab101b0][Potts model I]]
+- **Next**: [[id:8a5b6b7b-10bc-4abf-bd14-57ede7763aa5][Graphical Relations]]
+
+* Related Concepts

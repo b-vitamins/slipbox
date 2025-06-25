@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       96d16054-f3b8-41a8-a6e3-47f549b6ff31
+:CUSTOM_ID: 7-2e
+:END:
+#+TITLE: Duality Rule
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (e) Problem
+By comparing the first terms in low- and high-temperature series, find a duality rule for Potts models. Don't worry about higher order graphs, they will work out! Assuming a single transition temperature, find the value of K_{c}(q).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:7ad7b251-321e-49b7-ac9d-30fc6ab101b0][Potts model I]]
+- **Previous**: [[id:e1ca3bf7-de26-42a7-9b0e-7e048038125b][Square Lattice Expansion]]
+- **Next**: [[id:f1e15806-3898-49bc-9017-cc4451888b52][Ising Model Comparison]]
+
+* Related Concepts

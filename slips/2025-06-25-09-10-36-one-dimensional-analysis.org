@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       6c73b335-a5a6-45da-b1ea-6ae60d5dbd2c
+:CUSTOM_ID: 7-2c
+:END:
+#+TITLE: One-Dimensional Analysis
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Use the above results to calculate the free energy, and the correlation function \langle g\left(s_{m}, s_{n}\right)\rangle for a one-dimensional chain.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:7ad7b251-321e-49b7-ac9d-30fc6ab101b0][Potts model I]]
+- **Previous**: [[id:8a5b6b7b-10bc-4abf-bd14-57ede7763aa5][Graphical Relations]]
+- **Next**: [[id:e1ca3bf7-de26-42a7-9b0e-7e048038125b][Square Lattice Expansion]]
+
+* Related Concepts

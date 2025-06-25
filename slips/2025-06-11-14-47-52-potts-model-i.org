@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       7ad7b251-321e-49b7-ac9d-30fc6ab101b0
+:CUSTOM_ID: 7-2
 :END:
 #+TITLE: Potts model I
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -32,6 +33,9 @@ with g\left(s, s^{\prime}\right)=q \delta_{s, s^{\prime}}-1. Find C(K) and T(K).
 (e) By comparing the first terms in low- and high-temperature series, find a duality rule for Potts models. Don't worry about higher order graphs, they will work out! Assuming a single transition temperature, find the value of K_{c}(q).
 
 (f) How do the higher order terms in the high-temperature series for the Potts model differ from those of the Ising model? What is the fundamental difference that sets apart the graphs for q=2 ? (This is ultimately the reason why only the Ising model is solvable.)
+
+* Navigation
+- **First Part**: [[id:4f3ca6aa-1dcc-4e74-81ef-0d6b014ee556][Boltzmann Weight Decomposition]]
 
 * Solution
 

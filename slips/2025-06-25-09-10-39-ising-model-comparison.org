@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       f1e15806-3898-49bc-9017-cc4451888b52
+:CUSTOM_ID: 7-2f
+:END:
+#+TITLE: Ising Model Comparison
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (f) Problem
+How do the higher order terms in the high-temperature series for the Potts model differ from those of the Ising model? What is the fundamental difference that sets apart the graphs for q=2 ? (This is ultimately the reason why only the Ising model is solvable.)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:7ad7b251-321e-49b7-ac9d-30fc6ab101b0][Potts model I]]
+- **Previous**: [[id:96d16054-f3b8-41a8-a6e3-47f549b6ff31][Duality Rule]]
+
+* Related Concepts
