@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       e156de6b-4812-44c6-a175-dd9390bb4693
+:CUSTOM_ID: 7-6a
+:END:
+#+TITLE: Walk Weight Calculation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Calculate the total weight W(x, y), of all walks terminating at (x, y). Show that W is well defined only for \bar{t}=\left(t_{x}+t_{y}\right) / 2<t_{c}=1 / 4.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:1aac47eb-7372-4e5a-9f62-bada5cd4de58][Anisotropic random walks]]
+- **Next**: [[id:99827c88-1259-4ba5-af74-9cba328f7fb0][Curve Shape Analysis]]
+
+* Related Concepts

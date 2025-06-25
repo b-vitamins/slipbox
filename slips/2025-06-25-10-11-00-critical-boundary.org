@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       c30d120e-e557-40f1-b149-f73df48130e4
+:CUSTOM_ID: 7-7b
+:END:
+#+TITLE: Critical Boundary
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Find the critical boundary in the ( K_{x}, K_{y} ) plane from the singularity of the free energy. Show that it coincides with the condition K_{x}=\tilde{K}_{y}, where \tilde{K} indicates the standard dual interaction to K.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:d56e697e-cef0-4c2d-96e3-e2074eaa0aa0][Anisotropic ising model]]
+- **Previous**: [[id:ad6b9483-1589-4228-9689-ec1c4f094f01][Free Energy Calculation]]
+- **Next**: [[id:32a1853d-8f7c-499e-9442-0b2d32f1e51c][Singular Behavior]]
+
+* Related Concepts

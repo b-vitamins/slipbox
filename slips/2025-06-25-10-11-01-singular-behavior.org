@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       32a1853d-8f7c-499e-9442-0b2d32f1e51c
+:CUSTOM_ID: 7-7c
+:END:
+#+TITLE: Singular Behavior
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Find the singular part of \ln Z / N, and comment on how anisotropy affects critical behavior in the exponent and amplitude ratios.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:d56e697e-cef0-4c2d-96e3-e2074eaa0aa0][Anisotropic ising model]]
+- **Previous**: [[id:c30d120e-e557-40f1-b149-f73df48130e4][Critical Boundary]]
+
+* Related Concepts

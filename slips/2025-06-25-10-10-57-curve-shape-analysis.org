@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       99827c88-1259-4ba5-af74-9cba328f7fb0
+:CUSTOM_ID: 7-6b
+:END:
+#+TITLE: Curve Shape Analysis
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+What is the shape of a curve W(x, y)= constant, for large x and y, and close to the transition?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:1aac47eb-7372-4e5a-9f62-bada5cd4de58][Anisotropic random walks]]
+- **Previous**: [[id:e156de6b-4812-44c6-a175-dd9390bb4693][Walk Weight Calculation]]
+- **Next**: [[id:af675032-9278-4396-8823-8080826f0a73][Step Divergence]]
+
+* Related Concepts

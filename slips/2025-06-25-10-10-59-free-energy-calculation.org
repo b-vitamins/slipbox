@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       ad6b9483-1589-4228-9689-ec1c4f094f01
+:CUSTOM_ID: 7-7a
+:END:
+#+TITLE: Free Energy Calculation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+By following the method presented in the text, calculate the free energy for this model. You do not have to write down every step of the derivation. Just sketch the steps that need to be modified due to anisotropy; and calculate the final answer for \ln Z / N.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:d56e697e-cef0-4c2d-96e3-e2074eaa0aa0][Anisotropic ising model]]
+- **Next**: [[id:c30d120e-e557-40f1-b149-f73df48130e4][Critical Boundary]]
+
+* Related Concepts

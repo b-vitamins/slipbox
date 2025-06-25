@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       1aac47eb-7372-4e5a-9f62-bada5cd4de58
+:CUSTOM_ID: 7-6
 :END:
 #+TITLE: Anisotropic random walks
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -13,6 +14,9 @@
 (b) What is the shape of a curve W(x, y)= constant, for large x and y, and close to the transition?
 
 (c) How does the average number of steps, \langle\ell\rangle=\left\langle\ell_{x}+\ell_{y}\right\rangle, diverge as \bar{t} approaches t_{c}?
+
+* Navigation
+- **First Part**: [[id:e156de6b-4812-44c6-a175-dd9390bb4693][Walk Weight Calculation]]
 
 * Solution
 

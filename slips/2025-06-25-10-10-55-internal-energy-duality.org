@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       d0e602d4-41d8-43a1-81c8-912f5063c87b
+:CUSTOM_ID: 7-5b
+:END:
+#+TITLE: Internal Energy Duality
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Starting from the duality expression for Z(K), derive a similar relation for the internal energy U(K)=\langle\beta \mathcal{H}\rangle=-\partial \ln Z / \partial \ln K. Use this to calculate the exact value of U at the critical point.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:7999391e-0437-4a03-a9cf-0ee30e6bf88a][Potts duality]]
+- **Previous**: [[id:3f5f3327-14f9-42d8-93f4-f837fdc4b1f4][Duality Expression]]
+
+* Related Concepts

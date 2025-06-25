@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       af675032-9278-4396-8823-8080826f0a73
+:CUSTOM_ID: 7-6c
+:END:
+#+TITLE: Step Divergence
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+How does the average number of steps, \langle\ell\rangle=\left\langle\ell_{x}+\ell_{y}\right\rangle, diverge as \bar{t} approaches t_{c}?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:1aac47eb-7372-4e5a-9f62-bada5cd4de58][Anisotropic random walks]]
+- **Previous**: [[id:99827c88-1259-4ba5-af74-9cba328f7fb0][Curve Shape Analysis]]
+
+* Related Concepts

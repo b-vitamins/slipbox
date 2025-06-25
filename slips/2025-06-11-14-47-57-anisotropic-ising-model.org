@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       d56e697e-cef0-4c2d-96e3-e2074eaa0aa0
+:CUSTOM_ID: 7-7
 :END:
 #+TITLE: Anisotropic ising model
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -19,6 +20,9 @@ i.e. with bonds of different strengths along the x and y directions.
 (b) Find the critical boundary in the ( K_{x}, K_{y} ) plane from the singularity of the free energy. Show that it coincides with the condition K_{x}=\tilde{K}_{y}, where \tilde{K} indicates the standard dual interaction to K.
 
 (c) Find the singular part of \ln Z / N, and comment on how anisotropy affects critical behavior in the exponent and amplitude ratios.
+
+* Navigation
+- **First Part**: [[id:ad6b9483-1589-4228-9689-ec1c4f094f01][Free Energy Calculation]]
 
 * Solution
 

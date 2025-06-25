@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       373bad50-1a49-49e8-95c9-5c19da29beff
+:CUSTOM_ID: 7-8a
+:END:
+#+TITLE: Interface Energy
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Consider an interface on the square lattice with periodic boundary conditions in one direction. Ignoring islands and overhangs, the configurations can be labelled by heights h_{n} for 1 \leq n \leq L. Show that for an anisotropic Ising model of interactions (K_{x}, K_{y}), the energy of an interface along the x-direction is
+
+\begin{align*}
+-\beta \mathcal{H}=-2 K_{y} L-2 K_{x} \sum_{n}\left|h_{n+1}-h_{n}\right|
+\end{align*}
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:392e8ccd-8871-45e2-a04f-c0b80e1e74b2][Muller-Hartmann and Zittartz estimate]]
+- **Next**: [[id:ae33bba1-e3d1-48ca-9c8c-21b364418c47][Transfer Matrix]]
+
+* Related Concepts

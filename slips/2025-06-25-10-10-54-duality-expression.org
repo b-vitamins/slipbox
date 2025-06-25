@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       3f5f3327-14f9-42d8-93f4-f837fdc4b1f4
+:CUSTOM_ID: 7-5a
+:END:
+#+TITLE: Duality Expression
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+By comparing the first terms of high and low temperature series, or by any other method, show that the partition function has the property
+
+\begin{align*}
+Z(K)=q \mathrm{e}^{2 N K} \Xi\left
+[
+\mathrm{e}^{-K}\right]=q^{-N}\left
+[
+\mathrm{e}^{K}+q-1\right]^{2 N} \Xi\left
+[
+\frac{\mathrm{e}^{K}-1}{\mathrm{e}^{K}+(q-1)}\right],
+\end{align*}
+
+for some function \Xi, and hence locate the critical point K_{c}(q).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:7999391e-0437-4a03-a9cf-0ee30e6bf88a][Potts duality]]
+- **Next**: [[id:d0e602d4-41d8-43a1-81c8-912f5063c87b][Internal Energy Duality]]
+
+* Related Concepts
