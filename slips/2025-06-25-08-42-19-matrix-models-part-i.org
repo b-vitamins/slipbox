@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       ba6e8ac2-d7bd-4dae-af74-7550a81fd361
+:CUSTOM_ID: 8-2i
+:END:
+#+TITLE: Matrix models - Part (i): Differential RG equation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Obtain the differential RG equation for $T=1 / K$, by considering $b=1+\delta \ell$. Sketch the flows for $d<2$ and $d=2$. For $d=2+\epsilon$, compute $T_{c}$ and the critical exponent $\nu$.
+
+* Context
+
+This is part (i) of problem 8-2 on Matrix models from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-2][Main Problem: Matrix models]]
+- [[8-2h][Previous: Part (h) - RG equation for K']]
+- [[8-2j][Next: Part (j) - Symmetry breaking field]]
+
+* Solution
+
+* Related Concepts

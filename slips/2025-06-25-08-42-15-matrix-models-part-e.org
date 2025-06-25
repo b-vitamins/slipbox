@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       65e7dc5b-4ceb-4fa1-a64d-eddfc38992eb
+:CUSTOM_ID: 8-2e
+:END:
+#+TITLE: Matrix models - Part (e): Two point correlation function
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Consider the quadratic piece of $\beta \mathcal{H}$. Show that the two point correlation function in Fourier space is
+
+\begin{align*}
+\left\langle\pi_{i j}(\mathbf{q}) \pi_{k l}\left(\mathbf{q}^{\prime}\right)\right\rangle=\frac{(2 \pi)^{d} \delta^{d}\left(\mathbf{q}+\mathbf{q}^{\prime}\right)}{K q^{2}}\left[
+\delta_{i k} \delta_{j l}-\delta_{i l} \delta_{j k}\right]
+\end{align*}
+
+We shall now construct a renormalization group by removing Fourier modes $M^{>}(\mathbf{q})$, with $\mathbf{q}$ in the shell $\Lambda / b<|\mathbf{q}|<\Lambda$.
+
+* Context
+
+This is part (e) of problem 8-2 on Matrix models from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-2][Main Problem: Matrix models]]
+- [[8-2d][Previous: Part (d) - Goldstone modes]]
+- [[8-2f][Next: Part (f) - Coarse grained expectation value]]
+
+* Solution
+
+* Related Concepts

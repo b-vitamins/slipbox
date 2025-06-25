@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       f92ae50c-b8cd-4e74-bf01-40ad2d7754bf
+:CUSTOM_ID: 8-2b
+:END:
+#+TITLE: Matrix models - Part (b): Symmetric and anti-symmetric matrices
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Define the symmetric and anti-symmetric matrices
+
+\begin{align*}
+\left\{\begin{array}{l}
+\sigma=\frac{1}{2}\left(M+M^{T}\right)=\sigma^{T} \\
+\pi=\frac{1}{2}\left(M-M^{T}\right)=-\pi^{T}
+\end{array}\right.
+\end{align*}
+
+Express $\beta \mathcal{H}$ and the orthogonality constraint in terms of the matrices $\sigma$ and $\pi$.
+
+* Context
+
+This is part (b) of problem 8-2 on Matrix models from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-2][Main Problem: Matrix models]]
+- [[8-2a][Previous: Part (a) - Hamiltonian rewrite and ground state]]
+- [[8-2c][Next: Part (c) - Small fluctuations and expansion]]
+
+* Solution
+
+* Related Concepts

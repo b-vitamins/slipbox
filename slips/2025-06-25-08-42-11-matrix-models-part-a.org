@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       138c2293-4978-43fa-9c21-07b9262d76b4
+:CUSTOM_ID: 8-2a
+:END:
+#+TITLE: Matrix models - Part (a): Hamiltonian rewrite and ground state
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Rewrite the Hamiltonian and the orthogonality constraint in terms of the matrix elements $M_{i j}(i, j=1, \cdots, N)$. Describe the ground state of the system.
+
+* Context
+
+This is part (a) of problem 8-2 on Matrix models from Kardar's Statistical Physics of Fields.
+
+The Hamiltonian is:
+\begin{align*}
+\beta \mathcal{H}=\frac{K}{4} \int \mathrm{d}^{d} \mathbf{x} \operatorname{tr}\left[
+\nabla M(\mathbf{x}) \cdot \nabla M^{T}(\mathbf{x})\right]
+\end{align*}
+
+where $M$ is a real, $N \times N$ orthogonal matrix with condition $M M^{T}=M^{T} M=I$.
+
+* Navigation
+
+- [[8-2][Main Problem: Matrix models]]
+- [[8-2b][Next: Part (b) - Symmetric and anti-symmetric matrices]]
+
+* Solution
+
+* Related Concepts

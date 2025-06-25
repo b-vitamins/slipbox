@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       36aa90af-ab02-4d53-ae0c-cab952e3c69d
+:CUSTOM_ID: 8-2d
+:END:
+#+TITLE: Matrix models - Part (d): Goldstone modes
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+For an $N$-vector order parameter there are $N-1$ Goldstone modes. Show that an orthogonal $N \times N$ order parameter leads to $N(N-1) / 2$ such modes.
+
+* Context
+
+This is part (d) of problem 8-2 on Matrix models from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-2][Main Problem: Matrix models]]
+- [[8-2c][Previous: Part (c) - Small fluctuations and expansion]]
+- [[8-2e][Next: Part (e) - Two point correlation function]]
+
+* Solution
+
+* Related Concepts

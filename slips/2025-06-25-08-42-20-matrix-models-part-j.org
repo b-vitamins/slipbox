@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       6855833b-ba2b-489d-bba8-3b25cb7f27cc
+:CUSTOM_ID: 8-2j
+:END:
+#+TITLE: Matrix models - Part (j): Symmetry breaking field
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Consider a small symmetry breaking term $-h \int \mathrm{d}^{d} \mathbf{x} \operatorname{tr}(M)$, added to the Hamiltonian. Find the renormalization of $h$, and identify the corresponding exponent $y_{h}$.
+
+Combining RG and symmetry arguments, it can be shown that the $3 \times 3$ matrix model is perturbatively equivalent to the $N=4$ vector model at all orders. This would suggest that stacked triangular antiferromagnets provide a realization of the $\mathcal{O} (4)$ universality class; see P. Azaria, B. Delamotte, and T. Jolicoeur, J. Appl. Phys. 69, 6170 (1991). However, non-perturbative (topological) aspects appear to remove this equivalence as discussed in S.V. Isakov, T. Senthil, Y.B. Kim, Phys. Rev. B 72, 174417 (2005).
+
+* Context
+
+This is part (j) of problem 8-2 on Matrix models from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-2][Main Problem: Matrix models]]
+- [[8-2i][Previous: Part (i) - Differential RG equation]]
+
+* Solution
+
+* Related Concepts

@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       08dfa008-1d52-4706-b530-a5a4ddffc48b
+:CUSTOM_ID: 8-2g
+:END:
+#+TITLE: Matrix models - Part (g): Coarse grained coupling constant
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Use perturbation theory to calculate the coarse grained coupling constant $\tilde{K}$. Evaluate only the two diagrams that directly renormalize the $\left(\nabla \pi_{i j}\right)^{2}$ term in $\beta \mathcal{H}$, and show that
+
+\begin{align*}
+\tilde{K}=K+\frac{N}{2} \int_{\Lambda / b}^{\Lambda} \frac{\mathrm{d}^{d} \mathbf{q}}{(2 \pi)^{d}} \frac{1}{q^{2}}
+\end{align*}
+
+* Context
+
+This is part (g) of problem 8-2 on Matrix models from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-2][Main Problem: Matrix models]]
+- [[8-2f][Previous: Part (f) - Coarse grained expectation value]]
+- [[8-2h][Next: Part (h) - RG equation for K']]
+
+* Solution
+
+* Related Concepts
