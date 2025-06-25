@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       b2770e89-5ec5-4d5a-8323-daab81a89835
+:CUSTOM_ID: 5-4b
+:END:
+#+TITLE: Fixed Points Flow
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Find all fixed points in the \((u, v)\) plane, and draw the flow patterns for \(n<4\) and \(n>4\). Discuss the relevance of the cubic anisotropy term near the stable fixed point in each case.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:075d36d8-22b9-4507-81b6-ad28c717ad78][Cubic anisotropy ε-expansion]]
+- **Previous**: [[id:f57c3de0-3183-403b-a240-5f14da4989ee][Recursion Relations]]
+- **Next**: [[id:e6931f6a-c802-42f4-8450-3c2c2c32d79e][Temperature Exponent]]
+
+* Related Concepts

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       e6931f6a-c802-42f4-8450-3c2c2c32d79e
+:CUSTOM_ID: 5-4c
+:END:
+#+TITLE: Temperature Exponent
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Find the recursion relation for the reduced temperature, \(t\), and calculate the exponent \(\nu\) at the stable fixed points for \(n<4\) and \(n>4\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:075d36d8-22b9-4507-81b6-ad28c717ad78][Cubic anisotropy ε-expansion]]
+- **Previous**: [[id:b2770e89-5ec5-4d5a-8323-daab81a89835][Fixed Points Flow]]
+- **Next**: [[id:0b21c111-4048-4eb8-9bec-d3c6c88d0f2e][Stability Enhancement]]
+
+* Related Concepts

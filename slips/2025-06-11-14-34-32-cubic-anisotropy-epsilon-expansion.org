@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID:       075d36d8-22b9-4507-81b6-ad28c717ad78
+:CUSTOM_ID: 5-4
+:END:
+#+TITLE: Cubic anisotropy \u03b5-expansion
+#+FILETAGS: :problem:main:spof:
+#+SETUPFILE: ../../setupfile.org
+
+4. Cubic anisotropy \u03b5-expansion:
+
+(a) By looking at diagrams in a second order perturbation expansion in both \(u\) and \(v\) show that the recursion relations for these couplings are
+
+\begin{align*}
+\left\{\begin{array}{l}
+\frac{\mathrm{d} u}{\mathrm{~d} \ell}=\varepsilon u-4 C\left
+[
+(n+8) u^{2}+6 u v\right] \
+\frac{\mathrm{d} v}{\mathrm{~d} \ell}=\varepsilon v-4 C\left
+[
+12 u v+9 v^{2}\right]
+\end{array}\right.
+\end{align*}
+where \(C=K_{d} \Lambda^{d} /\left(t+K \Lambda^{2}\right)^{2} \approx K_{4} / K^{2}\) is approximately a constant.
+
+(b) Find all fixed points in the \((u, v)\) plane, and draw the flow patterns for \(n<4\) and \(n>4\). Discuss the relevance of the cubic anisotropy term near the stable fixed point in each case.
+
+(c) Find the recursion relation for the reduced temperature, \(t\), and calculate the exponent \(\nu\) at the stable fixed points for \(n<4\) and \(n>4\).
+
+(d) Is the region of stability in the \((u, v)\) plane calculated in part (b) of the previous problem enhanced or diminished by inclusion of fluctuations? Since in reality higher order terms will be present, what does this imply about the nature of the phase transition for a small negative \(v\) and \(n>4\) ?
+
+(e) Draw schematic phase diagrams in the \((t, v)\) plane \((u>0)\) for \(n>4\) and \(n<4\), identifying the ordered phases. Are there Goldstone modes in any of these phases close to the phase transition?
+
+* Navigation
+- **First Part**: [[id:f57c3de0-3183-403b-a240-5f14da4989ee][Recursion Relations]]
+
+* Solution
+
+* Related Concepts
+

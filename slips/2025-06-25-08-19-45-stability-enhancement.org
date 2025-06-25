@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       0b21c111-4048-4eb8-9bec-d3c6c88d0f2e
+:CUSTOM_ID: 5-4d
+:END:
+#+TITLE: Stability Enhancement
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+Is the region of stability in the \((u, v)\) plane calculated in part (b) of the previous problem enhanced or diminished by inclusion of fluctuations? Since in reality higher order terms will be present, what does this imply about the nature of the phase transition for a small negative \(v\) and \(n>4\) ?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:075d36d8-22b9-4507-81b6-ad28c717ad78][Cubic anisotropy ε-expansion]]
+- **Previous**: [[id:e6931f6a-c802-42f4-8450-3c2c2c32d79e][Temperature Exponent]]
+- **Next**: [[id:97029437-dd91-4aa4-9c3f-3b97251ebabd][Schematic Phase Diagrams]]
+
+* Related Concepts
