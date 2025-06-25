@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       44fa21aa-e95d-42a5-8a84-dcc6d1f9ce2b
+:CUSTOM_ID: 6-7d
+:END:
+#+TITLE: Variable Change Product Form
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (d) Problem
+Change variables from \(L\) to \(\delta_{N+1}=L-\sum_{i=1}^{N} \delta_{i}\), and find the expression for \(\mathcal{Z}(T, N, P)\) as a product over one-dimensional integrals over each \(\delta_{i}\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:08b3ad1d-e5f9-4066-a356-dcee2cca31d0][One-dimensional gas]]
+- **Previous**: [[id:8c83faa8-094e-4de2-ab34-2b9549c42f67][Gibbs Partition Function Laplace Transform]]
+- **Next**: [[id:562ea3f4-162e-4137-aa1c-1d3fb101434a][Mean Length Density Expressions]]
+
+* Related Concepts

@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       562ea3f4-162e-4137-aa1c-1d3fb101434a
+:CUSTOM_ID: 6-7e
+:END:
+#+TITLE: Mean Length Density Expressions
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (e) Problem
+At a fixed pressure \(P\), find expressions for the mean length \(L(T, N, P)\), and the density \(n=N / L(T, N, P)\) (involving ratios of integrals which should be easy to interpret).
+
+Since the expression for \(n(T, P)\) in part (e) is continuous and non-singular for any choice of potential, there is in fact no condensation transition for the one-dimensional gas. By contrast, the approximate van der Waals equation (or the mean-field treatment) incorrectly predicts such a transition.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:08b3ad1d-e5f9-4066-a356-dcee2cca31d0][One-dimensional gas]]
+- **Previous**: [[id:44fa21aa-e95d-42a5-8a84-dcc6d1f9ce2b][Variable Change Product Form]]
+- **Next**: [[id:767bbafc-6d73-496f-8bb0-0c7dbea1a66e][Hard Sphere Equation State]]
+
+* Related Concepts

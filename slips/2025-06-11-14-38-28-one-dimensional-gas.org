@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       08b3ad1d-e5f9-4066-a356-dcee2cca31d0
+:CUSTOM_ID: 6-7
 :END:
 #+TITLE: One-dimensional gas
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 
@@ -43,6 +44,9 @@ Since the expression for \(n(T, P)\) in part (e) is continuous and non-singular 
 (f) For a hard sphere gas, with minimum separation \(a\) between particles, calculate the equation of state \(P(T, n)\).
 
 * Solution
+
+* Navigation
+- **Part (a)**: [[id:1ea911b5-15e3-4a87-9d60-aa2440af5284][Hamiltonian Hard Core Screening]]
 
 * Related Concepts
 

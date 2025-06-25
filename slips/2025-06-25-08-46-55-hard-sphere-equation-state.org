@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       767bbafc-6d73-496f-8bb0-0c7dbea1a66e
+:CUSTOM_ID: 6-7f
+:END:
+#+TITLE: Hard Sphere Equation State
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (f) Problem
+For a hard sphere gas, with minimum separation \(a\) between particles, calculate the equation of state \(P(T, n)\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:08b3ad1d-e5f9-4066-a356-dcee2cca31d0][One-dimensional gas]]
+- **Previous**: [[id:562ea3f4-162e-4137-aa1c-1d3fb101434a][Mean Length Density Expressions]]
+
+* Related Concepts

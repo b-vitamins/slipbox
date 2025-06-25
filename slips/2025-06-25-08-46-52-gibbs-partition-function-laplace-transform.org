@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       8c83faa8-094e-4de2-ab34-2b9549c42f67
+:CUSTOM_ID: 6-7c
+:END:
+#+TITLE: Gibbs Partition Function Laplace Transform
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (c) Problem
+Consider the Gibbs partition function obtained from the Laplace transformation
+
+\[\mathcal{Z}(T, N, P)=\int_{0}^{\infty} \mathrm{d} L \exp (-\beta P L) Z(T, N, L)\]
+
+and by extremizing the integrand find the standard formula for \(P\) in the canonical ensemble.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:08b3ad1d-e5f9-4066-a356-dcee2cca31d0][One-dimensional gas]]
+- **Previous**: [[id:4fe45c12-dfbe-4e13-9898-6ae9bf9892eb][Partition Function Variable Change]]
+- **Next**: [[id:44fa21aa-e95d-42a5-8a84-dcc6d1f9ce2b][Variable Change Product Form]]
+
+* Related Concepts

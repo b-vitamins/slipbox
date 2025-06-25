@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       4fe45c12-dfbe-4e13-9898-6ae9bf9892eb
+:CUSTOM_ID: 6-7b
+:END:
+#+TITLE: Partition Function Variable Change
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (b) Problem
+Write the expression for the partition function \(Z(T, N, L)\). Change variables to \(\delta_{1}=x_{1}, \delta_{2}=x_{2}-x_{1}, \cdots, \delta_{N}=x_{N}-x_{N-1}\), and carefully indicate the allowed ranges of integration and the constraints.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:08b3ad1d-e5f9-4066-a356-dcee2cca31d0][One-dimensional gas]]
+- **Previous**: [[id:1ea911b5-15e3-4a87-9d60-aa2440af5284][Hamiltonian Hard Core Screening]]
+- **Next**: [[id:8c83faa8-094e-4de2-ab34-2b9549c42f67][Gibbs Partition Function Laplace Transform]]
+
+* Related Concepts

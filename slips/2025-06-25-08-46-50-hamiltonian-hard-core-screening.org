@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       1ea911b5-15e3-4a87-9d60-aa2440af5284
+:CUSTOM_ID: 6-7a
+:END:
+#+TITLE: Hamiltonian Hard Core Screening
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (a) Problem
+Show that for a potential with a hard core that screens the interactions from further neighbors, the Hamiltonian for \(N\) particles can be written as
+
+\[\mathcal{H}=\sum_{i=1}^{N} \frac{p_{i}^{2}}{2 m}+\sum_{i=2}^{N} \mathcal{V}\left(x_{i}-x_{i-1}\right)\]
+
+The (indistinguishable) particles are labeled with coordinates \(\left\{x_{i}\right\}\) such that
+
+\[0 \leq x_{1} \leq x_{2} \leq \cdots \leq x_{N} \leq L\]
+
+where \(L\) is the length of the box confining the particles.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:08b3ad1d-e5f9-4066-a356-dcee2cca31d0][One-dimensional gas]]
+- **Next**: [[id:4fe45c12-dfbe-4e13-9898-6ae9bf9892eb][Partition Function Variable Change]]
+
+* Related Concepts
