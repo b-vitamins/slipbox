@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       02568b70-df0b-48a7-9dc7-1f9ec1c17fcc
+:CUSTOM_ID: 8-3g
+:END:
+#+TITLE: The roughening transition - Part (g): Discontinuous jump magnitude
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+For large separations $|\mathbf{x}-\mathbf{y}|$, find the magnitude of the discontinuous jump in $\left\langle|h(\mathbf{x})-h(\mathbf{y})|^{2}\right\rangle$ at the transition.
+
+* Context
+
+This is part (g) of problem 8-3 on The roughening transition from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-3][Main Problem: The roughening transition]]
+- [[8-3f][Previous: Part (f) - Phase diagram and phases]]
+
+* Solution
+
+* Related Concepts

@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       88231a8c-6cb9-4bd5-b4f2-7ce97576f373
+:CUSTOM_ID: 8-3b
+:END:
+#+TITLE: The roughening transition - Part (b): Height difference formula
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Prove that
+
+\begin{align*}
+\left\langle|h(\mathbf{x})-h(\mathbf{y})|^{2}\right\rangle=-\left.\frac{\mathrm{d}^{2}}{\mathrm{~d} k^{2}} G_{k}(\mathbf{x}-\mathbf{y})\right|_{k=0}
+\end{align*}
+
+where $G_{k}(\mathbf{x}-\mathbf{y})=\langle\exp 
+[
+\mathrm{i} k(h(\mathbf{x})-h(\mathbf{y}))]\rangle$.
+
+* Context
+
+This is part (b) of problem 8-3 on The roughening transition from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-3][Main Problem: The roughening transition]]
+- [[8-3a][Previous: Part (a) - Exponential expectation value]]
+- [[8-3c][Next: Part (c) - Perturbation theory calculation]]
+
+* Solution
+
+* Related Concepts

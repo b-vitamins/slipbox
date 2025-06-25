@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID:       e3ef5143-68fd-42e2-a179-c0f0ce46a4f2
+:CUSTOM_ID: 8-3a
+:END:
+#+TITLE: The roughening transition - Part (a): Exponential expectation value
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Show that
+
+\begin{align*}
+\left\langle\exp \left[
+\mathrm{i} \sum_{\alpha} q_{\alpha} h\left(\mathbf{x}_{\alpha}\right)\right]\right\rangle_{0}=\exp \left[
+\frac{1}{K} \sum_{\alpha<\beta} q_{\alpha} q_{\beta} C\left(\mathbf{x}_{\alpha}-\mathbf{x}_{\beta}\right)\right]
+\end{align*}
+
+for $\sum_{\alpha} q_{\alpha}=0$, and zero otherwise. $(C(\mathbf{x})=\ln |\mathbf{x}| / 2 \pi$ is the Coulomb interaction in two dimensions.)
+
+* Context
+
+This is part (a) of problem 8-3 on The roughening transition from Kardar's Statistical Physics of Fields.
+
+The Hamiltonian is:
+\begin{align*}
+\beta \mathcal{H}_{0}=-\frac{K}{2} \int \mathrm{d}^{2} \mathbf{x}(\nabla h)^{2}
+\end{align*}
+
+where $h(\mathbf{x})$ is the interface height.
+
+* Navigation
+
+- [[8-3][Main Problem: The roughening transition]]
+- [[8-3b][Next: Part (b) - Height difference formula]]
+
+* Solution
+
+* Related Concepts

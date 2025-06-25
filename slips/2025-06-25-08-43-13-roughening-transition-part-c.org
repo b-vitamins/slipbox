@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       5edc0447-f6e7-4cf6-8fc0-5aed7c662d89
+:CUSTOM_ID: 8-3c
+:END:
+#+TITLE: The roughening transition - Part (c): Perturbation theory calculation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Use the results in (a) to calculate $G_{k}(\mathbf{x}-\mathbf{y})$ in perturbation theory to order of $y_{0}^{2}$. (Hint: Set $\cos (2 \pi h)=\left(\mathrm{e}^{2 \mathrm{i} \pi h}+\mathrm{e}^{-2 \mathrm{i} \pi h}\right) / 2$. The first order terms vanish according to the result in (a), while the second order contribution is identical in structure to that of the Coulomb gas described in this chapter.)
+
+* Context
+
+This is part (c) of problem 8-3 on The roughening transition from Kardar's Statistical Physics of Fields.
+
+The perturbation term is:
+\begin{align*}
+-\beta U=y_{0} \int \mathrm{d}^{2} \mathbf{x} \cos (2 \pi h)
+\end{align*}
+
+* Navigation
+
+- [[8-3][Main Problem: The roughening transition]]
+- [[8-3b][Previous: Part (b) - Height difference formula]]
+- [[8-3d][Next: Part (d) - Effective interaction and critical K]]
+
+* Solution
+
+* Related Concepts

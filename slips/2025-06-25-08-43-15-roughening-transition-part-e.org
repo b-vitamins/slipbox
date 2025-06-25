@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       6b279428-8960-4aa1-b635-2132164a0b06
+:CUSTOM_ID: 8-3e
+:END:
+#+TITLE: The roughening transition - Part (e): Renormalization group equations
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Recast the perturbation result in part (d) into renormalization group equations for $K$ and $y_{0}$, by changing the "lattice spacing" from $a$ to $a \mathrm{e}^{\ell}$.
+
+* Context
+
+This is part (e) of problem 8-3 on The roughening transition from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-3][Main Problem: The roughening transition]]
+- [[8-3d][Previous: Part (d) - Effective interaction and critical K]]
+- [[8-3f][Next: Part (f) - Phase diagram and phases]]
+
+* Solution
+
+* Related Concepts
