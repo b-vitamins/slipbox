@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       b56b342e-e0bb-4654-a056-bfd0304dc302
+:CUSTOM_ID: 3-5i
+:END:
+#+TITLE: Integral Behavior Analysis
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (i) Problem
+Discuss the behavior of the integrals appearing above schematically, and state their dependence on the correlation length \(\xi\), and cutoff \(\Lambda\), in different dimensions.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:26d9c772-42f6-4f5d-9336-a64e976d375e][Coupling to a "massless" field]]
+- **Previous**: [[id:627f4f53-3675-4d4a-b66a-58f476882c6b][Heat Capacity Fluctuation Correction]]
+- **Next**: [[id:2f1481a9-2c52-440a-871c-d363acb5875f][Critical Dimension Analysis]]
+
+* Related Concepts

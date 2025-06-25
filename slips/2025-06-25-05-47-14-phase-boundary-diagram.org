@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       d5763b2b-6b38-415c-a18d-3aadcccd39a1
+:CUSTOM_ID: 3-8a
+:END:
+#+TITLE: Phase Boundary Diagram
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+In the saddle point approximation, the free energy is \(f=\min \{\Psi(m)\}_{m}\). Indicate the resulting phase boundary in the \((h, t)\) plane, and label the phases. ( \(h\) denotes the magnitude of \(\vec{h}\).)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ab4f8368-2ed1-4360-a455-d869bc75e3bd][Ginzburg criterion along the magnetic field direction]]
+- **Next**: [[id:6289690c-7032-4932-91f0-c1a0b4ff10c6][Energy Density Form]]
+
+* Related Concepts

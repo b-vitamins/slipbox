@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       9c137297-215d-44f3-a178-157026f6e5ea
+:CUSTOM_ID: 3-7a
+:END:
+#+TITLE: Quadratic Term Modification
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+How is the quadratic term in the Landau-Ginzburg expansion modified by the presence of this long-range interaction? For what values of \(\sigma\) is the long-range interaction dominant?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:58af4595-d67d-4bc1-9942-5a91290c5238][Long-range interactions]]
+- **Next**: [[id:ed23e267-3587-4e66-81ec-3888d87214f7][Lower Critical Dimension]]
+
+* Related Concepts

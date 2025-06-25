@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       a100bea7-f315-4a40-992e-72e458b3438b
+:CUSTOM_ID: 3-5f
+:END:
+#+TITLE: Scalar Correlation Function
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (f) Problem
+Calculate the correlation function \(\langle a(\mathbf{x}) a(\mathbf{0})\rangle\) for \(t>0\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:26d9c772-42f6-4f5d-9336-a64e976d375e][Coupling to a "massless" field]]
+- **Previous**: [[id:77441610-668c-4e8f-a443-c842e7677acc][Correlation Length Scalar]]
+- **Next**: [[id:757f4d65-81ea-4768-b94a-d6d5690cdc01][Free Energy Fluctuation Correction]]
+
+* Related Concepts

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       ed23e267-3587-4e66-81ec-3888d87214f7
+:CUSTOM_ID: 3-7b
+:END:
+#+TITLE: Lower Critical Dimension
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+By estimating the magnitude of thermally excited Goldstone modes (or otherwise), obtain the lower critical dimension \(d_{\ell}\) below which there is no long-range order.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:58af4595-d67d-4bc1-9942-5a91290c5238][Long-range interactions]]
+- **Previous**: [[id:9c137297-215d-44f3-a178-157026f6e5ea][Quadratic Term Modification]]
+- **Next**: [[id:2dec987e-fac2-4171-be73-d105634cfbd6][Upper Critical Dimension]]
+
+* Related Concepts

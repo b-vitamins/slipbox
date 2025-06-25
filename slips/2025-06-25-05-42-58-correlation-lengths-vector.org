@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       6c09d916-60ea-4073-b016-3ad4370ddd11
+:CUSTOM_ID: 3-5d
+:END:
+#+TITLE: Correlation Lengths Vector
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+Find the correlation lengths \(\xi_{\ell}\), and \(\xi_{t}\), for the longitudinal and transverse components of \(\phi\), for \(t>0\) and \(t<0\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:26d9c772-42f6-4f5d-9336-a64e976d375e][Coupling to a "massless" field]]
+- **Previous**: [[id:8ae7a74b-a9c8-4886-8c72-3818e429920e][Fluctuation Expansion]]
+- **Next**: [[id:77441610-668c-4e8f-a443-c842e7677acc][Correlation Length Scalar]]
+
+* Related Concepts

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       d607449d-e20b-456b-a478-9a4e2a8b63a2
+:CUSTOM_ID: 3-6e
+:END:
+#+TITLE: Scattering Line Shape
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (e) Problem
+Use the above results, in conjunction with Eq. (2), to calculate the quench averaged scattering line shape \(S(q)=\overline{\left\langle|\phi(\mathbf{q})|^{2}\right\rangle}\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:15963c6b-99ac-4135-a56d-f8a23d03382a][Random magnetic fields]]
+- **Previous**: [[id:46ceff8a-254a-4535-9556-b96d0ee76889][Mean and Variance]]
+- **Next**: [[id:970e70ff-5b9d-40fc-8854-49e9b50705f5][Gaussian Integrals]]
+
+* Related Concepts

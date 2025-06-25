@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       86ea61f8-ba06-4537-adfe-323abc56defc
+:CUSTOM_ID: 3-8j
+:END:
+#+TITLE: Ginzburg Field Criterion
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (j) Problem
+For \(d<d_{u}\) obtain a Ginzburg criterion by finding the field \(h_{G}\) below which fluctuations are important. (You may ignore the numerical coefficients in \(h_{G}\), but the dependences on \(K\) and \(u\) are required.)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ab4f8368-2ed1-4360-a455-d869bc75e3bd][Ginzburg criterion along the magnetic field direction]]
+- **Previous**: [[id:8047ac0b-5a53-4538-86e7-994ea63ed4fc][Upper Critical Dimension Comparison]]
+
+* Related Concepts

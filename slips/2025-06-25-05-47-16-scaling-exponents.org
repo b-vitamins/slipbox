@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       21f720a0-ad53-438b-9bde-e7a0b69512d8
+:CUSTOM_ID: 3-8c
+:END:
+#+TITLE: Scaling Exponents
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+For \(t\) and \(h\) close to zero, the spontaneous magnetization can be written as \(\bar{m}=t^{\beta} g_{m}\left(h / t^{\Delta}\right)\). Identify the exponents \(\beta\) and \(\Delta\) in the saddle point approximation.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ab4f8368-2ed1-4360-a455-d869bc75e3bd][Ginzburg criterion along the magnetic field direction]]
+- **Previous**: [[id:6289690c-7032-4932-91f0-c1a0b4ff10c6][Energy Density Form]]
+- **Next**: [[id:ae749d86-6fa4-4f7c-9f29-daa589801d8f][Susceptibilities Calculation]]
+
+* Related Concepts

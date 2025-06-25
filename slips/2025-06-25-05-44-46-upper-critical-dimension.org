@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       95d27d3d-0649-4ca6-a72b-79b1fdbb6622
+:CUSTOM_ID: 3-6i
+:END:
+#+TITLE: Upper Critical Dimension
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (i) Problem
+Find the upper critical dimension, \(d_{u}\), for the validity of saddle point critical behavior.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:15963c6b-99ac-4135-a56d-f8a23d03382a][Random magnetic fields]]
+- **Previous**: [[id:9974c88e-7097-4710-b142-60696236271b][Singular Dependence]]
+
+* Related Concepts

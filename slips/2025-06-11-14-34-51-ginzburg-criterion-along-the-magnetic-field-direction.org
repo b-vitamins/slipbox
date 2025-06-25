@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       ab4f8368-2ed1-4360-a455-d869bc75e3bd
+:CUSTOM_ID: 3-8
 :END:
 #+TITLE: Ginzburg criterion along the magnetic field direction
-#+FILETAGS: :problem:critical:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -38,6 +39,9 @@ For the remainder of this problem set \(t=0\).
 (i) By comparing the saddle point value with the correction due to fluctuations, find the upper critical dimension, \(d_{u}\), for the validity of the saddle point result.
 
 (j) For \(d<d_{u}\) obtain a Ginzburg criterion by finding the field \(h_{G}\) below which fluctuations are important. (You may ignore the numerical coefficients in \(h_{G}\), but the dependences on \(K\) and \(u\) are required.)
+
+* Navigation
+- **First Part**: [[id:d5763b2b-6b38-415c-a18d-3aadcccd39a1][Phase Boundary Diagram]]
 
 * Solution
 

@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       26d9c772-42f6-4f5d-9336-a64e976d375e
+:CUSTOM_ID: 3-5
 :END:
 #+TITLE: Coupling to a "massless" field
-#+FILETAGS: :problem:field:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -45,6 +46,9 @@ and expanding \(\beta \mathcal{H}\) to quadratic order in \(\phi\) and \(a\).
 (i) Discuss the behavior of the integrals appearing above schematically, and state their dependence on the correlation length \(\xi\), and cutoff \(\Lambda\), in different dimensions.
 
 (j) What is the critical dimension for the validity of saddle point results, and how is it modified by the coupling to the scalar field?
+
+* Navigation
+- **First Part**: [[id:86f7da73-d35d-4140-b606-951f9045e5c1][Massless Field Saddle Point]]
 
 * Solution
 

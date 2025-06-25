@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       2826d50e-1ad9-45d2-b819-fe7eead4a817
+:CUSTOM_ID: 3-6b
+:END:
+#+TITLE: Fluctuation Inclusion
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Include fluctuations by setting \(m(\mathbf{x})=\bar{m}+\phi(\mathbf{x})\), and expanding \(\beta \mathcal{H}\) to second order in \(\phi\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:15963c6b-99ac-4135-a56d-f8a23d03382a][Random magnetic fields]]
+- **Previous**: [[id:9ee151cb-f25c-49b9-aa62-ea6b8efd43b2][Quench Averaged Free Energy]]
+- **Next**: [[id:2b9f9332-36a0-4246-be24-9490fcffcaa5][Fourier Mode Energy]]
+
+* Related Concepts

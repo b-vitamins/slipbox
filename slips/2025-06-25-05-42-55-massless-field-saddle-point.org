@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       86f7da73-d35d-4140-b606-951f9045e5c1
+:CUSTOM_ID: 3-5a
+:END:
+#+TITLE: Massless Field Saddle Point
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Show that there is a saddle point solution of the form \(\vec{m}(\mathbf{x})=\bar{m} \hat{e}_{\ell}\) and \(A(x)=0\), and find \(\bar{m}\) for \(t>0\) and \(t<0\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:26d9c772-42f6-4f5d-9336-a64e976d375e][Coupling to a "massless" field]]
+- **Next**: [[id:1141a365-fbe1-4721-af55-501770f7177b][Heat Capacity Sketch]]
+
+* Related Concepts

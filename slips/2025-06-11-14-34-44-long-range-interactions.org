@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       58af4595-d67d-4bc1-9942-5a91290c5238
+:CUSTOM_ID: 3-7
 :END:
 #+TITLE: Long-range interactions
-#+FILETAGS: :problem:longrange:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -19,6 +20,9 @@ as well as short-range interactions.
 
 (b) By estimating the magnitude of thermally excited Goldstone modes (or otherwise), obtain the lower critical dimension \(d_{\ell}\) below which there is no long-range order.
 (c) Find the upper critical dimension \(d_{u}\), above which saddle point results provide a correct description of the phase transition.
+
+* Navigation
+- **First Part**: [[id:9c137297-215d-44f3-a178-157026f6e5ea][Quadratic Term Modification]]
 
 * Solution
 

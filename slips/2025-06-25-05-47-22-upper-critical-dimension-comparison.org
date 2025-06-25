@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       8047ac0b-5a53-4538-86e7-994ea63ed4fc
+:CUSTOM_ID: 3-8i
+:END:
+#+TITLE: Upper Critical Dimension Comparison
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (i) Problem
+By comparing the saddle point value with the correction due to fluctuations, find the upper critical dimension, \(d_{u}\), for the validity of the saddle point result.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ab4f8368-2ed1-4360-a455-d869bc75e3bd][Ginzburg criterion along the magnetic field direction]]
+- **Previous**: [[id:8aa363de-2040-4a7a-b5d6-73f170d087c7][Magnetization Susceptibility Corrections]]
+- **Next**: [[id:86ea61f8-ba06-4537-adfe-323abc56defc][Ginzburg Field Criterion]]
+
+* Related Concepts

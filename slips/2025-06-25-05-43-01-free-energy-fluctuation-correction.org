@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       757f4d65-81ea-4768-b94a-d6d5690cdc01
+:CUSTOM_ID: 3-5g
+:END:
+#+TITLE: Free Energy Fluctuation Correction
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (g) Problem
+Compute the correction to the saddle point free energy \(\ln Z\), from fluctuations. (You can leave the answer in the form of integrals involving \(\xi_{\ell}, \xi_{t}\), and \(\xi_{a}\).)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:26d9c772-42f6-4f5d-9336-a64e976d375e][Coupling to a "massless" field]]
+- **Previous**: [[id:a100bea7-f315-4a40-992e-72e458b3438b][Scalar Correlation Function]]
+- **Next**: [[id:627f4f53-3675-4d4a-b66a-58f476882c6b][Heat Capacity Fluctuation Correction]]
+
+* Related Concepts

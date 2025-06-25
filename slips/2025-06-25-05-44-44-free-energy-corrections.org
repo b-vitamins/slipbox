@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       950d5e66-a5ba-4583-ba60-c3d3413bb5f8
+:CUSTOM_ID: 3-6g
+:END:
+#+TITLE: Free Energy Corrections
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (g) Problem
+Use Eq. (2) to calculate the corrections due to the fluctuations in the previous part to the quench averaged free energy \(\bar{f}\). (Leave the corrections in the form of two integrals.)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:15963c6b-99ac-4135-a56d-f8a23d03382a][Random magnetic fields]]
+- **Previous**: [[id:970e70ff-5b9d-40fc-8854-49e9b50705f5][Gaussian Integrals]]
+- **Next**: [[id:9974c88e-7097-4710-b142-60696236271b][Singular Dependence]]
+
+* Related Concepts

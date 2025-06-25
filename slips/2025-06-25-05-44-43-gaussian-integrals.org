@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       970e70ff-5b9d-40fc-8854-49e9b50705f5
+:CUSTOM_ID: 3-6f
+:END:
+#+TITLE: Gaussian Integrals
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (f) Problem
+Perform the Gaussian integrals over \(\phi(\mathbf{q})\) to calculate the fluctuation corrections, \(\delta f[h(\mathbf{q})]\), to the free energy.
+
+\begin{align*}
+\left(\text { Reminder : } \int_{-\infty}^{\infty} \mathrm{d} \phi \mathrm{d} \phi^{*} \exp \left(-\frac{K}{2}|\phi|^{2}+h^{*} \phi+h \phi^{*}\right)=\frac{2 \pi}{K} \exp \left(\frac{|h|^{2}}{2 K}\right) .\right)
+\end{align*}
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:15963c6b-99ac-4135-a56d-f8a23d03382a][Random magnetic fields]]
+- **Previous**: [[id:d607449d-e20b-456b-a478-9a4e2a8b63a2][Scattering Line Shape]]
+- **Next**: [[id:950d5e66-a5ba-4583-ba60-c3d3413bb5f8][Free Energy Corrections]]
+
+* Related Concepts

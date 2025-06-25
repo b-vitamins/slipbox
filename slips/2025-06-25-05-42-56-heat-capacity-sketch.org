@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       1141a365-fbe1-4721-af55-501770f7177b
+:CUSTOM_ID: 3-5b
+:END:
+#+TITLE: Heat Capacity Sketch
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Sketch the heat capacity \(C=\partial^{2} \ln Z / \partial t^{2}\), and discuss its singularity as \(t \rightarrow 0\) in the saddle point approximation.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:26d9c772-42f6-4f5d-9336-a64e976d375e][Coupling to a "massless" field]]
+- **Previous**: [[id:86f7da73-d35d-4140-b606-951f9045e5c1][Massless Field Saddle Point]]
+- **Next**: [[id:8ae7a74b-a9c8-4886-8c72-3818e429920e][Fluctuation Expansion]]
+
+* Related Concepts

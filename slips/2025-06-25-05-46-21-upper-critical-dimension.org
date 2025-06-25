@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       2dec987e-fac2-4171-be73-d105634cfbd6
+:CUSTOM_ID: 3-7c
+:END:
+#+TITLE: Upper Critical Dimension
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Find the upper critical dimension \(d_{u}\), above which saddle point results provide a correct description of the phase transition.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:58af4595-d67d-4bc1-9942-5a91290c5238][Long-range interactions]]
+- **Previous**: [[id:ed23e267-3587-4e66-81ec-3888d87214f7][Lower Critical Dimension]]
+
+* Related Concepts

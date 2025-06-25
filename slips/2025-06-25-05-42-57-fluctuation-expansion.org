@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       8ae7a74b-a9c8-4886-8c72-3818e429920e
+:CUSTOM_ID: 3-5c
+:END:
+#+TITLE: Fluctuation Expansion
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Include fluctuations by setting
+
+\begin{align*}
+\left\{\begin{array}{l}
+\vec{m}(\mathbf{x})=\left(\bar{m}+\phi_{\ell}(\mathbf{x})\right) \hat{e}_{\ell}+\phi_{t}(\mathbf{x}) \hat{e}_{t} \\
+A(\mathbf{x})=a(\mathbf{x})
+\end{array}\right.
+\end{align*}
+
+and expanding \(\beta \mathcal{H}\) to quadratic order in \(\phi\) and \(a\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:26d9c772-42f6-4f5d-9336-a64e976d375e][Coupling to a "massless" field]]
+- **Previous**: [[id:1141a365-fbe1-4721-af55-501770f7177b][Heat Capacity Sketch]]
+- **Next**: [[id:6c09d916-60ea-4073-b016-3ad4370ddd11][Correlation Lengths Vector]]
+
+* Related Concepts

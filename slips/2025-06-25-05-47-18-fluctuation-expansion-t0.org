@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       8aa3c328-d839-4357-bfd8-c41c66fb58a0
+:CUSTOM_ID: 3-8e
+:END:
+#+TITLE: Fluctuation Expansion t=0
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (e) Problem
+Include fluctuations by setting \(\vec{m}(\mathbf{x})=\left(\bar{m}+\phi_{\ell}(\mathbf{x})\right) \hat{e}_{\ell}+\vec{\phi}_{t}(\mathbf{x}) \hat{e}_{t}\), and expanding \(\beta \mathcal{H}\) to second order in the \(\phi \mathrm{s}\). ( \(\hat{e}_{\ell}\) is a unit vector parallel to the average magnetization, and \(\hat{e}_{t}\) is perpendicular to it.)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ab4f8368-2ed1-4360-a455-d869bc75e3bd][Ginzburg criterion along the magnetic field direction]]
+- **Previous**: [[id:ae749d86-6fa4-4f7c-9f29-daa589801d8f][Susceptibilities Calculation]]
+- **Next**: [[id:a0527682-7b30-450a-9608-6d1f07792aae][Correlation Lengths Calculation]]
+
+* Related Concepts

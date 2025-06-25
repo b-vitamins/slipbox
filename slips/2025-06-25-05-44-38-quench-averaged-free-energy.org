@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       9ee151cb-f25c-49b9-aa62-ea6b8efd43b2
+:CUSTOM_ID: 3-6a
+:END:
+#+TITLE: Quench Averaged Free Energy
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Calculate the quench averaged free energy, \(\overline{f_{\mathrm{sp}}}=\overline{\min \{\Psi(m)\}_{m}}\), assuming a saddle point solution with uniform magnetization \(m(\mathbf{x})=m\). (Note that with this assumption, the random field disappears as a result of averaging and has no effect at this stage.)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:15963c6b-99ac-4135-a56d-f8a23d03382a][Random magnetic fields]]
+- **Next**: [[id:2826d50e-1ad9-45d2-b819-fe7eead4a817][Fluctuation Inclusion]]
+
+* Related Concepts

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       a0527682-7b30-450a-9608-6d1f07792aae
+:CUSTOM_ID: 3-8f
+:END:
+#+TITLE: Correlation Lengths Calculation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (f) Problem
+Calculate the longitudinal and transverse correlation lengths.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ab4f8368-2ed1-4360-a455-d869bc75e3bd][Ginzburg criterion along the magnetic field direction]]
+- **Previous**: [[id:8aa3c328-d839-4357-bfd8-c41c66fb58a0][Fluctuation Expansion t=0]]
+- **Next**: [[id:c746cfe9-e6f2-4e69-b78b-7292f6fd110a][Free Energy Fluctuation Correction Scaling]]
+
+* Related Concepts

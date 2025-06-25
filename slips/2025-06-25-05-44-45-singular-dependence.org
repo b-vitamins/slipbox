@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       9974c88e-7097-4710-b142-60696236271b
+:CUSTOM_ID: 3-6h
+:END:
+#+TITLE: Singular Dependence
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (h) Problem
+Estimate the singular \(t\) dependence of the integrals obtained in the fluctuation corrections to the free energy.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:15963c6b-99ac-4135-a56d-f8a23d03382a][Random magnetic fields]]
+- **Previous**: [[id:950d5e66-a5ba-4583-ba60-c3d3413bb5f8][Free Energy Corrections]]
+- **Next**: [[id:95d27d3d-0649-4ca6-a72b-79b1fdbb6622][Upper Critical Dimension]]
+
+* Related Concepts

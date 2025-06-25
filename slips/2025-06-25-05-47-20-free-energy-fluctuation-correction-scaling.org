@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       c746cfe9-e6f2-4e69-b78b-7292f6fd110a
+:CUSTOM_ID: 3-8g
+:END:
+#+TITLE: Free Energy Fluctuation Correction Scaling
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (g) Problem
+Calculate the first correction to the free energy from these fluctuations. (The scaling form is sufficient.)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ab4f8368-2ed1-4360-a455-d869bc75e3bd][Ginzburg criterion along the magnetic field direction]]
+- **Previous**: [[id:a0527682-7b30-450a-9608-6d1f07792aae][Correlation Lengths Calculation]]
+- **Next**: [[id:8aa363de-2040-4a7a-b5d6-73f170d087c7][Magnetization Susceptibility Corrections]]
+
+* Related Concepts

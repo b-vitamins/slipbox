@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       6289690c-7032-4932-91f0-c1a0b4ff10c6
+:CUSTOM_ID: 3-8b
+:END:
+#+TITLE: Energy Density Form
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Sketch the form of \(\Psi(m)\) for \(t<0\), on both sides of the phase boundary, and for \(t>0\) at \(h=0\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ab4f8368-2ed1-4360-a455-d869bc75e3bd][Ginzburg criterion along the magnetic field direction]]
+- **Previous**: [[id:d5763b2b-6b38-415c-a18d-3aadcccd39a1][Phase Boundary Diagram]]
+- **Next**: [[id:21f720a0-ad53-438b-9bde-e7a0b69512d8][Scaling Exponents]]
+
+* Related Concepts

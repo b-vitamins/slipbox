@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       ae749d86-6fa4-4f7c-9f29-daa589801d8f
+:CUSTOM_ID: 3-8d
+:END:
+#+TITLE: Susceptibilities Calculation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+Calculate the transverse and longitudinal susceptibilities at a finite \(h\). (For the remainder of this problem set \(t=0\).)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ab4f8368-2ed1-4360-a455-d869bc75e3bd][Ginzburg criterion along the magnetic field direction]]
+- **Previous**: [[id:21f720a0-ad53-438b-9bde-e7a0b69512d8][Scaling Exponents]]
+- **Next**: [[id:8aa3c328-d839-4357-bfd8-c41c66fb58a0][Fluctuation Expansion t=0]]
+
+* Related Concepts

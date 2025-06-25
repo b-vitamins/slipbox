@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       2f1481a9-2c52-440a-871c-d363acb5875f
+:CUSTOM_ID: 3-5j
+:END:
+#+TITLE: Critical Dimension Analysis
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (j) Problem
+What is the critical dimension for the validity of saddle point results, and how is it modified by the coupling to the scalar field?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:26d9c772-42f6-4f5d-9336-a64e976d375e][Coupling to a "massless" field]]
+- **Previous**: [[id:b56b342e-e0bb-4654-a056-bfd0304dc302][Integral Behavior Analysis]]
+
+* Related Concepts
