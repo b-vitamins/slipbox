@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       5f3701b5-645d-4f2e-bc53-dd9a5b436c3f
+:CUSTOM_ID: 5-2f
+:END:
+#+TITLE: Fourth Order Fourier Term
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (f) Problem
+Write the fourth order term \(\mathcal{U} \equiv u \int \mathrm{d}^{d} \mathbf{x}\left(\vec{m}^{2}\right)^{2}\), in terms of the Fourier modes \(m_{i}(\mathbf{q})\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:e83f6a87-0e50-44b4-b0e5-3ca4650fd0a6][Crystal anisotropy]]
+- **Previous**: [[id:3992b8f1-1a2d-4142-8c99-2634a89ebc73][Unperturbed Averages]]
+- **Next**: [[id:b51d2af6-383a-4a1d-9b4f-39af209cf823][First Order Correction m1]]
+
+* Related Concepts

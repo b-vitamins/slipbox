@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       3992b8f1-1a2d-4142-8c99-2634a89ebc73
+:CUSTOM_ID: 5-2e
+:END:
+#+TITLE: Unperturbed Averages
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (e) Problem
+For \(u=0\), and positive \(t\) and \(r\), calculate the unperturbed averages \(\left\langle m_{1}(\mathbf{q}) m_{1}\left(\mathbf{q}^{\prime}\right)\right\rangle_{0}\) and \(\left\langle m_{2}(\mathbf{q}) m_{2}\left(\mathbf{q}^{\prime}\right)\right\rangle_{0}\), where \(m_{i}(\mathbf{q})\) indicates the Fourier transform of \(m_{i}(\mathbf{x})\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:e83f6a87-0e50-44b4-b0e5-3ca4650fd0a6][Crystal anisotropy]]
+- **Previous**: [[id:31d57469-c02a-4288-920c-9ccb2655d71c][Goldstone Modes]]
+- **Next**: [[id:5f3701b5-645d-4f2e-bc53-dd9a5b436c3f][Fourth Order Fourier Term]]
+
+* Related Concepts

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       b51d2af6-383a-4a1d-9b4f-39af209cf823
+:CUSTOM_ID: 5-2g
+:END:
+#+TITLE: First Order Correction m1
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (g) Problem
+Treating \(\mathcal{U}\) as a perturbation, calculate the first order correction to \(\left\langle m_{1}(\mathbf{q}) m_{1}\left(\mathbf{q}^{\prime}\right)\right\rangle\). (You can leave your answers in the form of some integrals.)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:e83f6a87-0e50-44b4-b0e5-3ca4650fd0a6][Crystal anisotropy]]
+- **Previous**: [[id:5f3701b5-645d-4f2e-bc53-dd9a5b436c3f][Fourth Order Fourier Term]]
+- **Next**: [[id:d8daf69f-2b38-4fc0-b6a7-99f34907629d][First Order Correction m2]]
+
+* Related Concepts

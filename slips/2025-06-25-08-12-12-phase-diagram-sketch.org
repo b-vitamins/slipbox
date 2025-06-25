@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       d33a27bb-d565-48eb-ba83-252602ed80bf
+:CUSTOM_ID: 5-2c
+:END:
+#+TITLE: Phase Diagram Sketch
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Sketch the phase diagram in the \((t, r)\) plane, and indicate the phases (type of order), and the nature of the phase transitions (continuous or discontinuous).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:e83f6a87-0e50-44b4-b0e5-3ca4650fd0a6][Crystal anisotropy]]
+- **Previous**: [[id:5fdbc273-23d5-4e94-87e7-a61af663345f][Saddle Point Free Energies]]
+- **Next**: [[id:31d57469-c02a-4288-920c-9ccb2655d71c][Goldstone Modes]]
+
+* Related Concepts

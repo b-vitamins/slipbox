@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       3dffbf5d-32b5-4801-9c81-8d18a66fa5aa
+:CUSTOM_ID: 5-2j
+:END:
+#+TITLE: Critical Behavior Analysis
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (j) Problem
+Is the critical behavior different from the isotropic \(O(n)\) model in \(d<4\) ? In RG language, is the parameter \(r\) relevant at the \(\mathcal{O}(n)\) fixed point? In either case indicate the universality classes expected for the transitions.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:e83f6a87-0e50-44b4-b0e5-3ca4650fd0a6][Crystal anisotropy]]
+- **Previous**: [[id:1c09e1ce-207b-4d71-9405-4b01f1ab0408][Transition Point Calculation]]
+
+* Related Concepts

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       d8daf69f-2b38-4fc0-b6a7-99f34907629d
+:CUSTOM_ID: 5-2h
+:END:
+#+TITLE: First Order Correction m2
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (h) Problem
+Treating \(\mathcal{U}\) as a perturbation, calculate the first order correction to \(\left\langle m_{2}(\mathbf{q}) m_{2}\left(\mathbf{q}^{\prime}\right)\right\rangle\)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:e83f6a87-0e50-44b4-b0e5-3ca4650fd0a6][Crystal anisotropy]]
+- **Previous**: [[id:b51d2af6-383a-4a1d-9b4f-39af209cf823][First Order Correction m1]]
+- **Next**: [[id:1c09e1ce-207b-4d71-9405-4b01f1ab0408][Transition Point Calculation]]
+
+* Related Concepts

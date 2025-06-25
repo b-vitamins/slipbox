@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       5fdbc273-23d5-4e94-87e7-a61af663345f
+:CUSTOM_ID: 5-2b
+:END:
+#+TITLE: Saddle Point Free Energies
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Using the saddle point approximation, calculate the free energies \((\ln Z)\) for phases uniformly magnetized parallel and perpendicular to direction 1 .
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:e83f6a87-0e50-44b4-b0e5-3ca4650fd0a6][Crystal anisotropy]]
+- **Previous**: [[id:a520f13b-7b96-4af4-aa80-47e070b54e58][Magnetization Directions]]
+- **Next**: [[id:d33a27bb-d565-48eb-ba83-252602ed80bf][Phase Diagram Sketch]]
+
+* Related Concepts

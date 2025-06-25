@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       1c09e1ce-207b-4d71-9405-4b01f1ab0408
+:CUSTOM_ID: 5-2i
+:END:
+#+TITLE: Transition Point Calculation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (i) Problem
+Using the above answer, identify the inverse susceptibility \(\chi_{22}^{-1}\), and then find the transition point, \(t_{c}\), from its vanishing to first order in \(u\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:e83f6a87-0e50-44b4-b0e5-3ca4650fd0a6][Crystal anisotropy]]
+- **Previous**: [[id:d8daf69f-2b38-4fc0-b6a7-99f34907629d][First Order Correction m2]]
+- **Next**: [[id:3dffbf5d-32b5-4801-9c81-8d18a66fa5aa][Critical Behavior Analysis]]
+
+* Related Concepts

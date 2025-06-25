@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       31d57469-c02a-4288-920c-9ccb2655d71c
+:CUSTOM_ID: 5-2d
+:END:
+#+TITLE: Goldstone Modes
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+Are there Goldstone modes in the ordered phases?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:e83f6a87-0e50-44b4-b0e5-3ca4650fd0a6][Crystal anisotropy]]
+- **Previous**: [[id:d33a27bb-d565-48eb-ba83-252602ed80bf][Phase Diagram Sketch]]
+- **Next**: [[id:3992b8f1-1a2d-4142-8c99-2634a89ebc73][Unperturbed Averages]]
+
+* Related Concepts
