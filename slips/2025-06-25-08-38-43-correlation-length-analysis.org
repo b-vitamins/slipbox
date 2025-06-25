@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       2b0cf762-44ba-4bb0-982a-65ec07fa0bc1
+:CUSTOM_ID: 6-3c
+:END:
+#+TITLE: Correlation Length Analysis
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Give the expression for the correlation length \(\xi\) (you don't need to provide a detailed derivation), and discuss its behavior as \(T=1 / K \rightarrow 0\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:aa16ea7f-518c-4814-a1b4-5088b0d6f5e4][The Potts model]]
+- **Previous**: [[id:95c2e59d-ba3f-4137-a6d6-0080e291745c][Free Energy Calculation]]
+
+* Related Concepts

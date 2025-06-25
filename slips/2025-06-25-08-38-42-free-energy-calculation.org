@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       95c2e59d-ba3f-4137-a6d6-0080e291745c
+:CUSTOM_ID: 6-3b
+:END:
+#+TITLE: Free Energy Calculation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Calculate the free energy per site.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:aa16ea7f-518c-4814-a1b4-5088b0d6f5e4][The Potts model]]
+- **Previous**: [[id:28053b45-7fd9-4d5c-b97b-cd5b4d7b6b7d][Transfer Matrix Diagonalization]]
+- **Next**: [[id:2b0cf762-44ba-4bb0-982a-65ec07fa0bc1][Correlation Length Analysis]]
+
+* Related Concepts

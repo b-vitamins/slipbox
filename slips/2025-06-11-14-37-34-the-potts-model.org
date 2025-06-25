@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       aa16ea7f-518c-4814-a1b4-5088b0d6f5e4
+:CUSTOM_ID: 6-3
 :END:
 #+TITLE: The Potts model
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 
@@ -15,6 +16,9 @@ The Potts model: The transfer matrix procedure can be extended to the Potts mode
 (b) Calculate the free energy per site.
 
 (c) Give the expression for the correlation length \(\xi\) (you don't need to provide a detailed derivation), and discuss its behavior as \(T=1 / K \rightarrow 0\).
+
+* Navigation
+- **First Part**: [[id:28053b45-7fd9-4d5c-b97b-cd5b4d7b6b7d][Transfer Matrix Diagonalization]]
 
 * Solution
 
