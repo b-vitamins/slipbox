@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       0aa79c47-ac7c-433e-bf69-767f50cc30f5
+:CUSTOM_ID: 5-1
 :END:
 #+TITLE: Longitudinal susceptibility
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 1. Longitudinal susceptibility: While there is no reason for the longitudinal susceptibility to diverge at the mean-field level, it in fact does so due to fluctuations in dimensions \(d<4\). This problem is intended to show you the origin of this divergence in perturbation theory. There are actually a number of subtleties in this calculation
@@ -39,4 +40,11 @@ Write \(U\) in Fourier space in terms of \(\phi_{\ell}(\mathbf{q})\) and \(\vec{
 (g) Ignore the disconnected term obtained in (d) (i.e. the part proportional to ( \(n-\) \(1\)^{2}\) ), and write down the expression for \(\chi_{\ell}(\mathbf{q})\) in second order perturbation theory.
 
 (h) Show that for \(d<4\), the correction term diverges as \(q^{d-4}\) for \(q \rightarrow 0\), implying an infinite longitudinal susceptibility.
+
+* Navigation
+- **First Part**: [[id:c9c8d962-6018-4959-8e66-a9b516013cca][Hamiltonian Expansion]]
+
+* Solution
+
+* Related Concepts
 

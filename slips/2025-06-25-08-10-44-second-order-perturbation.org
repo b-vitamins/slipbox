@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       325dceff-8994-41c7-ba48-e2dbb589a48a
+:CUSTOM_ID: 5-1e
+:END:
+#+TITLE: Second Order Perturbation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (e) Problem
+Write down the expression for \(\left\langle\phi_{\ell}(\mathbf{q}) \phi_{\ell}\left(\mathbf{q}^{\prime}\right)\right\rangle\) to second order in the perturbation \(U\). Note that since \(U\) is odd in \(\phi_{\ell}\), only two terms at the second order are non-zero.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:0aa79c47-ac7c-433e-bf69-767f50cc30f5][Longitudinal susceptibility]]
+- **Previous**: [[id:b640eb48-b8ba-4d8b-b70d-69d34f75f0f1][Wicks Theorem Application]]
+- **Next**: [[id:dd6dd95a-fc25-4bba-ae8b-9411d18bb46e][Four Point Expectation Values]]
+
+* Related Concepts

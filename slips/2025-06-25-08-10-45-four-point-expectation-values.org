@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       dd6dd95a-fc25-4bba-ae8b-9411d18bb46e
+:CUSTOM_ID: 5-1f
+:END:
+#+TITLE: Four Point Expectation Values
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (f) Problem
+Using the form of \(U\) in Fourier space, write the correction term as a product of two four-point expectation values similar to those of part (d). Note that only connected terms for the longitudinal four-point function should be included.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:0aa79c47-ac7c-433e-bf69-767f50cc30f5][Longitudinal susceptibility]]
+- **Previous**: [[id:325dceff-8994-41c7-ba48-e2dbb589a48a][Second Order Perturbation]]
+- **Next**: [[id:59f48914-eb28-4900-8698-f44585fd995f][Connected Terms Analysis]]
+
+* Related Concepts

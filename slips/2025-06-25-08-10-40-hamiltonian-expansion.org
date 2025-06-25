@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       c9c8d962-6018-4959-8e66-a9b516013cca
+:CUSTOM_ID: 5-1a
+:END:
+#+TITLE: Hamiltonian Expansion
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Let \(\vec{m}(\mathbf{x})=\left(\bar{m}+\phi_{\ell}(\mathbf{x})\right) \hat{e}_{\ell}+\vec{\phi}_{t}(\mathbf{x}) \hat{e}_{t}\), and expand \(\beta \mathcal{H}\) keeping all terms in the expansion.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:0aa79c47-ac7c-433e-bf69-767f50cc30f5][Longitudinal susceptibility]]
+- **Next**: [[id:14335aa3-726e-4706-97f2-da7d4a1b88ec][Perturbation Fourier Space]]
+
+* Related Concepts

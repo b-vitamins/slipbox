@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       adda92db-2d8a-4e18-9008-95ed81feb216
+:CUSTOM_ID: 5-1h
+:END:
+#+TITLE: Divergence Analysis
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (h) Problem
+Show that for \(d<4\), the correction term diverges as \(q^{d-4}\) for \(q \rightarrow 0\), implying an infinite longitudinal susceptibility.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:0aa79c47-ac7c-433e-bf69-767f50cc30f5][Longitudinal susceptibility]]
+- **Previous**: [[id:59f48914-eb28-4900-8698-f44585fd995f][Connected Terms Analysis]]
+
+* Related Concepts

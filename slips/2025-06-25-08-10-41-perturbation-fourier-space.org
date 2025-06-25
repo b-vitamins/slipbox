@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       14335aa3-726e-4706-97f2-da7d4a1b88ec
+:CUSTOM_ID: 5-1b
+:END:
+#+TITLE: Perturbation Fourier Space
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Regard the quadratic terms in \(\phi_{\ell}\) and \(\vec{\phi}_{t}\) as an unperturbed Hamiltonian \(\beta \mathcal{H}_{0}\), and the lowest order term coupling \(\phi_{\ell}\) and \(\vec{\phi}_{t}\) as a perturbation \(U\); i.e.
+
+\begin{align*}
+U=4 u \bar{m} \int \mathrm{d}^{d} \mathbf{x} \phi_{\ell}(\mathbf{x}) \vec{\phi}_{t}(\mathbf{x})^{2}
+\end{align*}
+
+Write \(U\) in Fourier space in terms of \(\phi_{\ell}(\mathbf{q})\) and \(\vec{\phi}_{t}(\mathbf{q})\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:0aa79c47-ac7c-433e-bf69-767f50cc30f5][Longitudinal susceptibility]]
+- **Previous**: [[id:c9c8d962-6018-4959-8e66-a9b516013cca][Hamiltonian Expansion]]
+- **Next**: [[id:46d43295-4b9b-489f-8e5e-352b1b6e41da][Gaussian Expectation Values]]
+
+* Related Concepts

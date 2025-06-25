@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       46d43295-4b9b-489f-8e5e-352b1b6e41da
+:CUSTOM_ID: 5-1c
+:END:
+#+TITLE: Gaussian Expectation Values
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Calculate the Gaussian (bare) expectation values \(\left\langle\phi_{\ell}(\mathbf{q}) \phi_{\ell}\left(\mathbf{q}^{\prime}\right)\right\rangle_{0}\) and \(\left\langle\phi_{t, \alpha}(\mathbf{q}) \phi_{t, \beta}\left(\mathbf{q}^{\prime}\right)\right\rangle_{0}\), and the corresponding momentum dependent susceptibilities \(\chi_{\ell}(\mathbf{q})_{0}\) and \(\chi_{t}(\mathbf{q})_{0}\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:0aa79c47-ac7c-433e-bf69-767f50cc30f5][Longitudinal susceptibility]]
+- **Previous**: [[id:14335aa3-726e-4706-97f2-da7d4a1b88ec][Perturbation Fourier Space]]
+- **Next**: [[id:b640eb48-b8ba-4d8b-b70d-69d34f75f0f1][Wicks Theorem Application]]
+
+* Related Concepts
