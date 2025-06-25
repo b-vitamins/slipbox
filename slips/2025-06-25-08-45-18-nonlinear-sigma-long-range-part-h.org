@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       25d31cd9-937d-499c-a3bb-3f35767018d0
+:CUSTOM_ID: 8-5h
+:END:
+#+TITLE: Nonlinear sigma model with long-range interactions - Part (h): Symmetry breaking field renormalization
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Add a small symmetry breaking term, $-\vec{h} \cdot \int \mathrm{d}^{d} \mathbf{x} \vec{s}(\mathbf{x})$, to the Hamiltonian. Find the renormalization of $h$ and identify the corresponding exponent $y_{h}$.
+
+* Context
+
+This is part (h) of problem 8-5 on Nonlinear sigma model with long-range interactions from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-5][Main Problem: Nonlinear sigma model with long-range interactions]]
+- [[8-5g][Previous: Part (g) - Critical temperature and exponent]]
+
+* Solution
+
+* Related Concepts

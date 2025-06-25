@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       5e7f920b-1fa3-4bb9-b7bd-bf20139d8652
+:CUSTOM_ID: 5-5a
+:END:
+#+TITLE: Scaling Relations Derivation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Derive the scaling relations connecting the critical exponents \(\alpha, \beta, \gamma, \delta\) and \(\Delta\) to the fundamental exponents \(\nu\) and \(\eta\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:91257a7f-f337-49ee-a930-a621e5b1e3db][Exponents]]
+- **Next**: [[id:b59eadf0-3ba3-4ce6-9d9d-4d81e35ff271][Epsilon Expansions Calculation]]
+
+* Related Concepts

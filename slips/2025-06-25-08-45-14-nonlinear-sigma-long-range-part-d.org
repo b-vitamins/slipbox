@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       efe7d30c-8e1f-4999-82b2-7fa334dd6acf
+:CUSTOM_ID: 8-5d
+:END:
+#+TITLE: Nonlinear sigma model with long-range interactions - Part (d): Coarse grained expectation value
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Calculate the coarse grained expectation value for $\langle\sigma\rangle_{0}^{>}$ to order of $\pi^{2}$ after removing these modes. Identify the scaling factor, $\vec{s}^{\prime}\left(\mathbf{x}^{\prime}\right)=\vec{s}<(\mathbf{x}) / \zeta$, that restores $\vec{s}^{\prime}$ to unit length.
+
+* Context
+
+This is part (d) of problem 8-5 on Nonlinear sigma model with long-range interactions from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-5][Main Problem: Nonlinear sigma model with long-range interactions]]
+- [[8-5c][Previous: Part (c) - Quadratic Hamiltonian and expectation values]]
+- [[8-5e][Next: Part (e) - Renormalized interaction expression]]
+
+* Solution
+
+* Related Concepts

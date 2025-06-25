@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       9c4cff58-af7c-46bd-b764-6f9b172232f7
+:CUSTOM_ID: 8-5a
+:END:
+#+TITLE: Nonlinear sigma model with long-range interactions - Part (a): Long-range interaction decay
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+The long-range interaction, $K(x)$, is the Fourier transform of $K q^{\omega} / 2$ with $\omega<2$. What kind of asymptotic decay of interactions at long distances is consistent with such decay? (Dimensional analysis is sufficient for the answer, and no explicit integrations are required.)
+
+* Context
+
+This is part (a) of problem 8-5 on Nonlinear sigma model with long-range interactions from Kardar's Statistical Physics of Fields.
+
+The Hamiltonian is:
+\begin{align*}
+\beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x} \int \mathrm{d}^{d} \mathbf{y} K(|\mathbf{x}-\mathbf{y}|) \vec{s}(\mathbf{x}) \cdot \vec{s}(\mathbf{y})
+\end{align*}
+
+where $\vec{s}(\mathbf{x})$ are unit $n$-component spins with $|\vec{s}(\mathbf{x})|^{2}=1$.
+
+* Navigation
+
+- [[8-5][Main Problem: Nonlinear sigma model with long-range interactions]]
+- [[8-5b][Next: Part (b) - Effective Hamiltonian for fluctuations]]
+
+* Solution
+
+* Related Concepts

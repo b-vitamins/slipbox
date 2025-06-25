@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       9dcfc21f-f632-4845-b9c3-d4b6085a9e7d
+:CUSTOM_ID: 8-5b
+:END:
+#+TITLE: Nonlinear sigma model with long-range interactions - Part (b): Effective Hamiltonian for fluctuations
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Close to zero temperature we can set $\vec{s}(\mathbf{x})=(\vec{\pi}(\mathbf{x}), \sigma(\mathbf{x}))$, where $\vec{\pi}(\mathbf{x})$ is an $n-1$ component vector representing small fluctuations around the ground state. Find the effective Hamiltonian for $\vec{\pi}(\mathbf{x})$ after integrating out $\{\sigma(\mathbf{x})\}$.
+
+* Context
+
+This is part (b) of problem 8-5 on Nonlinear sigma model with long-range interactions from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-5][Main Problem: Nonlinear sigma model with long-range interactions]]
+- [[8-5a][Previous: Part (a) - Long-range interaction decay]]
+- [[8-5c][Next: Part (c) - Quadratic Hamiltonian and expectation values]]
+
+* Solution
+
+* Related Concepts

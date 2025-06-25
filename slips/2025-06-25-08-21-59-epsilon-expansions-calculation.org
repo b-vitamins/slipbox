@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       b59eadf0-3ba3-4ce6-9d9d-4d81e35ff271
+:CUSTOM_ID: 5-5b
+:END:
+#+TITLE: Epsilon Expansions Calculation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Use the given \(\epsilon\)-expansions for \(\nu\) and \(\eta\) along with scaling relations to obtain \(\epsilon\)-expansions for \(\alpha, \beta, \gamma, \delta\) and \(\Delta\).
+
+Given:
+\begin{align*}
+\left\{\begin{array}{l}
+\nu=\frac{1}{2}+\frac{(n+2)}{4(n+8)} \epsilon+\frac{(n+2)\left(n^{2}+23 n+60\right)}{8(n+8)^{3}} \epsilon^{2} \\
+\eta=\frac{(n+2)}{2(n+8)^{2}} \epsilon^{2}
+\end{array}\right.
+\end{align*}
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:91257a7f-f337-49ee-a930-a621e5b1e3db][Exponents]]
+- **Previous**: [[id:5e7f920b-1fa3-4bb9-b7bd-bf20139d8652][Scaling Relations Derivation]]
+- **Next**: [[id:d232e289-b99e-48e5-b6b7-9140fa9484a9][Numerical Tables]]
+
+* Related Concepts

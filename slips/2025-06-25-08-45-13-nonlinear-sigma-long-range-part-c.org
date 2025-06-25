@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       ef40f646-91f5-45c8-9b38-72353762f2ea
+:CUSTOM_ID: 8-5c
+:END:
+#+TITLE: Nonlinear sigma model with long-range interactions - Part (c): Quadratic Hamiltonian and expectation values
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Fourier transform the quadratic part of the above Hamiltonian focusing only on terms proportional to $K$, and hence calculate the expectation value $\left\langle\pi_{i}(\mathbf{q}) \pi_{j}\left(\mathbf{q}^{\prime}\right)\right\rangle_{0}$.
+
+We shall now construct a renormalization group by removing Fourier modes, $\vec{\pi}^{>}(\mathbf{q})$, with $\mathbf{q}$ in the shell $\Lambda / b<|\mathbf{q}|<\Lambda$.
+
+* Context
+
+This is part (c) of problem 8-5 on Nonlinear sigma model with long-range interactions from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-5][Main Problem: Nonlinear sigma model with long-range interactions]]
+- [[8-5b][Previous: Part (b) - Effective Hamiltonian for fluctuations]]
+- [[8-5d][Next: Part (d) - Coarse grained expectation value]]
+
+* Solution
+
+* Related Concepts
