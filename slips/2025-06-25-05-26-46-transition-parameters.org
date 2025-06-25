@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       b90f6903-80f2-435e-ac08-1b0a13e0f2c7
+:CUSTOM_ID: 2-2b
+:END:
+#+TITLE: Transition Parameters
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Calculate \(\bar{t}\) and the discontinuity \(\bar{m}\) at this transition.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:4e99d122-00d5-45af-a16b-fedbe1033585][Tricritical point]]
+- **Previous**: [[id:8ad704e4-e61d-44f6-8ca4-585967752557][Energy Density Sketching]]
+- **Next**: [[id:31dad8ed-54db-4bbd-b0bc-e788e0821d83][Phase Boundary Plotting]]
+
+* Related Concepts

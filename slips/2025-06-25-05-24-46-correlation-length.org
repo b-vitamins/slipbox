@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       269ad69e-b618-4184-832b-1b6464192e6b
+:CUSTOM_ID: 2-1c
+:END:
+#+TITLE: Correlation Length
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Note that the correlation length \(\xi\) is related to the curvature of \(\Psi(m)\) at its minimum by \(K \xi^{-2}=\partial^{2} \Psi /\left.\partial m^{2}\right|_{\text {eq }}\). Plot \(\xi\) as a function of \(t\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:4c036cf5-844a-4161-bc6d-5f0f29f5292f][Cubic invariants]]
+- **Previous**: [[id:714003c2-1403-4bec-b6cc-b6c4ad7d0a2d][Transition Conditions]]
+
+* Related Concepts

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       203478dc-89f7-4381-88af-5aae2a2743e9
+:CUSTOM_ID: 2-4d
+:END:
+#+TITLE: He³ Concentration Jump
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+Show that the discontinuous transition is accompanied by a jump in \(\mathrm{He}^{3}\) concentration.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:7e44b24f-e97b-461a-9250-ab24c07b1062][Superfluid He^4-He^3 mixtures]]
+- **Previous**: [[id:3c2cdc53-c407-407e-a536-646232804fc0][Discontinuous Transition Jump]]
+- **Next**: [[id:f5102ba3-2548-4780-88e7-0533d44891be][Phase Boundary Sketch]]
+
+* Related Concepts

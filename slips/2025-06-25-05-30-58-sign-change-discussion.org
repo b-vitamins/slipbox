@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       d1d1ba0f-eec5-41a3-977e-10f832ba6bde
+:CUSTOM_ID: 2-5c
+:END:
+#+TITLE: Sign Change Discussion
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Discuss what happens when \(t\) changes sign, assuming that quartic terms provide the required stability (and \(K>0\) ).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:cbb20e9d-2eb0-4153-8321-8012eaa2bd60][Crumpled surfaces]]
+- **Previous**: [[id:a817e83f-b93f-48ef-ab05-a8c523e1586d][Quartic Level Terms]]
+
+* Related Concepts

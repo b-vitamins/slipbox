@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       cbb20e9d-2eb0-4153-8321-8012eaa2bd60
+:CUSTOM_ID: 2-5
 :END:
 #+TITLE: Crumpled surfaces
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -22,6 +23,9 @@
 (b) Write down the lowest order terms (there are two) that appear at the quartic level.
 
 (c) Discuss what happens when \(t\) changes sign, assuming that quartic terms provide the required stability (and \(K>0\) ).
+
+* Navigation
+- **First Part**: [[id:c12925ba-f9c1-49c4-9960-5006f6082fb8][Quadratic Hamiltonian Terms]]
 
 * Solution
 

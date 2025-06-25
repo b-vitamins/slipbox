@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       8902540e-cb2a-4e00-a7b3-bc0bdbe3045b
+:CUSTOM_ID: 2-3b
+:END:
+#+TITLE: Susceptibility Tensor
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Relate the susceptibility tensor \(\chi_{\alpha \beta}=\partial m_{\alpha} / \partial h_{\beta}\), to \(f^{\prime \prime}(h), \vec{m}\), and \(\vec{h}\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:1372d39d-1f6a-42d3-b7e6-ab1e91448464][Transverse susceptibility]]
+- **Previous**: [[id:f58787bd-d687-4274-a50f-fcb93ccf4105][Magnetization Field Relation]]
+- **Next**: [[id:6f88be9d-9017-415e-b85c-434528b36688][Transverse and Longitudinal Susceptibilities]]
+
+* Related Concepts

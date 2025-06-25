@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       31dad8ed-54db-4bbd-b0bc-e788e0821d83
+:CUSTOM_ID: 2-2c
+:END:
+#+TITLE: Phase Boundary Plotting
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+For \(h=0\) and \(v>0\), plot the phase boundary in the \((u, t)\) plane, identifying the phases, and order of the phase transitions.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:4e99d122-00d5-45af-a16b-fedbe1033585][Tricritical point]]
+- **Previous**: [[id:b90f6903-80f2-435e-ac08-1b0a13e0f2c7][Transition Parameters]]
+- **Next**: [[id:f2b2b565-bbe4-40b3-b4ca-2cf316710da0][Tricritical Exponents]]
+
+* Related Concepts

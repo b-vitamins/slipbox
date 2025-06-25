@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       ee8cfd36-d68c-4c4e-95ce-90cb506da01a
+:CUSTOM_ID: 2-4b
+:END:
+#+TITLE: Phase Diagram Analysis
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Obtain the phase diagram for \(\beta \mathcal{H}_{\text {eff }}[\psi]\) using a saddle point approximation. Find the limiting value of \(\sigma^{*}\) above which the phase transition becomes discontinuous.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:7e44b24f-e97b-461a-9250-ab24c07b1062][Superfluid He^4-He^3 mixtures]]
+- **Previous**: [[id:989af512-3ee2-401b-b14f-4af71ebbd965][Effective Hamiltonian Integration]]
+- **Next**: [[id:3c2cdc53-c407-407e-a536-646232804fc0][Discontinuous Transition Jump]]
+
+* Related Concepts

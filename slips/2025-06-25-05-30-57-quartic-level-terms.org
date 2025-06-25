@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       a817e83f-b93f-48ef-ab05-a8c523e1586d
+:CUSTOM_ID: 2-5b
+:END:
+#+TITLE: Quartic Level Terms
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Write down the lowest order terms (there are two) that appear at the quartic level.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:cbb20e9d-2eb0-4153-8321-8012eaa2bd60][Crumpled surfaces]]
+- **Previous**: [[id:c12925ba-f9c1-49c4-9960-5006f6082fb8][Quadratic Hamiltonian Terms]]
+- **Next**: [[id:d1d1ba0f-eec5-41a3-977e-10f832ba6bde][Sign Change Discussion]]
+
+* Related Concepts

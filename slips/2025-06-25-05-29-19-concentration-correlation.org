@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       6f3be4d2-da48-4b72-b06d-dd6c0ab5b65e
+:CUSTOM_ID: 2-4g
+:END:
+#+TITLE: Concentration Correlation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (g) Problem
+Show that \(\langle c(\mathbf{x}) c(\mathbf{y})\rangle=\gamma^{2} \sigma^{4}\left\langle|\Psi(\mathbf{x})|^{2}|\Psi(\mathbf{y})|^{2}\right\rangle\), for \(\mathbf{x} \neq \mathbf{y}\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:7e44b24f-e97b-461a-9250-ab24c07b1062][Superfluid He^4-He^3 mixtures]]
+- **Previous**: [[id:1d5f817c-bacc-47ea-8b2c-46989d26a8d5][Concentration Average]]
+- **Next**: [[id:dda05888-c224-42e4-a180-f9e6733870c4][Disordered Phase Decay]]
+
+* Related Concepts

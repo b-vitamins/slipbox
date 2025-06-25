@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       dda05888-c224-42e4-a180-f9e6733870c4
+:CUSTOM_ID: 2-4h
+:END:
+#+TITLE: Disordered Phase Decay
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (h) Problem
+Qualitatively discuss how \(\langle c(\mathbf{x}) c(0)\rangle\) decays with \(x=|\mathbf{x}|\) in the disordered phase.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:7e44b24f-e97b-461a-9250-ab24c07b1062][Superfluid He^4-He^3 mixtures]]
+- **Previous**: [[id:6f3be4d2-da48-4b72-b06d-dd6c0ab5b65e][Concentration Correlation]]
+- **Next**: [[id:116ce081-7ff5-4bb4-a63a-87e712071fc3][Ordered Phase Decay]]
+
+* Related Concepts

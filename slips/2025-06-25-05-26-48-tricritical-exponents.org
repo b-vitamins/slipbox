@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       f2b2b565-bbe4-40b3-b4ca-2cf316710da0
+:CUSTOM_ID: 2-2d
+:END:
+#+TITLE: Tricritical Exponents
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+The special point \(u=t=0\), separating first and second order phase boundaries, is a tricritical point. For \(u=0\), calculate the tricritical exponents \(\beta, \delta, \gamma\), and \(\alpha\), governing the singularities in magnetization, susceptibility, and heat capacity. (Recall: \(C \propto t^{-\alpha} ; \bar{m}(h=0) \propto t^{\beta} ; \chi \propto t^{-\gamma} ;\) and \(\left.\bar{m}(t=0) \propto h^{1 / \delta}.\right)\)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:4e99d122-00d5-45af-a16b-fedbe1033585][Tricritical point]]
+- **Previous**: [[id:31dad8ed-54db-4bbd-b0bc-e788e0821d83][Phase Boundary Plotting]]
+
+* Related Concepts

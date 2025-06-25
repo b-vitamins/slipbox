@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       f58787bd-d687-4274-a50f-fcb93ccf4105
+:CUSTOM_ID: 2-3a
+:END:
+#+TITLE: Magnetization Field Relation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Show that \(m_{\alpha}=\left\langle\int \mathrm{d}^{d} \mathbf{x} m_{\alpha}(\mathbf{x})\right\rangle / V=-h_{\alpha} f^{\prime}(h) / h\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:1372d39d-1f6a-42d3-b7e6-ab1e91448464][Transverse susceptibility]]
+- **Next**: [[id:8902540e-cb2a-4e00-a7b3-bc0bdbe3045b][Susceptibility Tensor]]
+
+* Related Concepts

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       6f88be9d-9017-415e-b85c-434528b36688
+:CUSTOM_ID: 2-3c
+:END:
+#+TITLE: Transverse and Longitudinal Susceptibilities
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Show that the transverse and longitudinal susceptibilities are given by \(\chi_{t}=m / h\) and \(\chi_{\ell}=-f^{\prime \prime}(h)\); where \(m\) is the magnitude of \(\vec{m}\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:1372d39d-1f6a-42d3-b7e6-ab1e91448464][Transverse susceptibility]]
+- **Previous**: [[id:8902540e-cb2a-4e00-a7b3-bc0bdbe3045b][Susceptibility Tensor]]
+- **Next**: [[id:8579dd8e-8367-4277-b032-e83f59a1d921][Susceptibility Divergence]]
+
+* Related Concepts

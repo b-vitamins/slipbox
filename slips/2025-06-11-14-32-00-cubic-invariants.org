@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       4c036cf5-844a-4161-bc6d-5f0f29f5292f
+:CUSTOM_ID: 2-1
 :END:
 #+TITLE: Cubic invariants
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -21,6 +22,9 @@
 (b) By writing down the two conditions that \(\bar{m}\) and \(\bar{t}\) must satisfy at the transition, solve for \(\bar{m}\) and \(\bar{t}\).
 
 (c) Note that the correlation length \(\xi\) is related to the curvature of \(\Psi(m)\) at its minimum by \(K \xi^{-2}=\partial^{2} \Psi /\left.\partial m^{2}\right|_{\text {eq }}\). Plot \(\xi\) as a function of \(t\).
+
+* Navigation
+- **First Part**: [[id:302825dd-961c-4338-b5ad-45ecf17a4998][Energy Density and First Order Transition]]
 
 * Solution
 

@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       c12925ba-f9c1-49c4-9960-5006f6082fb8
+:CUSTOM_ID: 2-5a
+:END:
+#+TITLE: Quadratic Hamiltonian Terms
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Show that the two lowest order (in derivatives) terms in the quadratic part of a Landau-Ginzburg Hamiltonian for this system are:
+
+\begin{align*}
+\beta \mathcal{H}_{0}[\overrightarrow{\mathrm{r}}]=\sum_{\alpha=1,2} \int \mathrm{d}^{2} \mathbf{x}\left[\frac{t}{2} \partial_{\alpha} \vec{r} \cdot \partial_{\alpha} \vec{r}+\frac{K}{2} \partial_{\alpha}^{2} \vec{r} \cdot \partial_{\alpha}^{2} \vec{r}\right]
+\end{align*}
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:cbb20e9d-2eb0-4153-8321-8012eaa2bd60][Crumpled surfaces]]
+- **Next**: [[id:a817e83f-b93f-48ef-ab05-a8c523e1586d][Quartic Level Terms]]
+
+* Related Concepts
