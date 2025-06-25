@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       bb6ee1e9-efb3-41f8-a034-daef2bab5622
+:CUSTOM_ID: 6-6a
+:END:
+#+TITLE: Transfer Matrix Diagonalization Eigenvectors
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (a) Problem
+Write down the transfer matrix \(\left\langle\theta|T| \theta^{\prime}\right\rangle\), and show that it can be diagonalized with eigenvectors \(f_{m}(\theta) \propto \mathrm{e}^{\mathrm{i} m \theta}\) for integer \(m\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:6cda7526-f3f8-47f6-b17f-efb81ed24040][XY model]]
+- **Next**: [[id:83353165-aec8-49e5-9094-e2b311c9491c][Free Energy Heat Capacity Behavior]]
+
+* Related Concepts

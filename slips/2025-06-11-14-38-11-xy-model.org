@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       6cda7526-f3f8-47f6-b17f-efb81ed24040
+:CUSTOM_ID: 6-6
 :END:
 #+TITLE: XY model
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 
@@ -16,6 +17,9 @@ XY model: Consider two component unit spins \(\vec{s}_{i}=\left(\cos \theta_{i},
 (c) Find the correlation length \(\xi\), and note its behavior as \(K \rightarrow \infty\).
 
 * Solution
+
+* Navigation
+- **Part (a)**: [[id:bb6ee1e9-efb3-41f8-a034-daef2bab5622][Transfer Matrix Diagonalization Eigenvectors]]
 
 * Related Concepts
 
