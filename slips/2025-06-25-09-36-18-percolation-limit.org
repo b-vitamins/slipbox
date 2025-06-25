@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       0c90d45e-a874-4915-8842-fbb85a81b83a
+:CUSTOM_ID: 7-3b
+:END:
+#+TITLE: Percolation Limit
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Show that the limit q \rightarrow 1 describes a percolation problem, in which bonds are randomly distributed on the lattice with probability p=v /(v+1). What is the percolation threshold on the square lattice?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:3c6e1265-283e-41b0-8962-da09cf2fb36c][Potts model II]]
+- **Previous**: [[id:1002eb62-f77b-483a-a4b1-a45ad6a5e2b8][Random Cluster Expansion]]
+- **Next**: [[id:3515fd7d-34c3-407f-9097-6994d9efd73b][Lattice Animals]]
+
+* Related Concepts

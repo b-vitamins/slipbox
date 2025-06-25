@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       3c6e1265-283e-41b0-8962-da09cf2fb36c
+:CUSTOM_ID: 7-3
 :END:
 #+TITLE: Potts model II
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -28,6 +29,9 @@ where n_{b}^{c} and n_{s}^{c} are the numbers of bonds and sites in cluster c. T
 (b) Show that the limit q \rightarrow 1 describes a percolation problem, in which bonds are randomly distributed on the lattice with probability p=v /(v+1). What is the percolation threshold on the square lattice?
 
 (c) Show that in the limit q \rightarrow 0, only a single connected cluster contributes to leading order. The enumeration of all such clusters is known as listing branched lattice animals.
+
+* Navigation
+- **First Part**: [[id:1002eb62-f77b-483a-a4b1-a45ad6a5e2b8][Random Cluster Expansion]]
 
 * Solution
 
