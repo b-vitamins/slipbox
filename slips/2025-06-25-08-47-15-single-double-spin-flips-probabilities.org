@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       65a69023-78c2-492a-b52a-83bbed90f102
+:CUSTOM_ID: 6-10b
+:END:
+#+TITLE: Single Double Spin Flips Probabilities
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (b) Problem
+Repeat the above exercise if both single spin and double spin flips are allowed. The two types of moves are chosen randomly with probabilities \(p\) and \(q=1-p\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:d3255c01-5c56-4424-a4bf-6f796c6064a0][Transition probability matrix]]
+- **Previous**: [[id:0eee1410-9773-40f4-9db8-bb173cd4e125][Transition Matrix Single Spin Flips Metropolis]]
+
+* Related Concepts
