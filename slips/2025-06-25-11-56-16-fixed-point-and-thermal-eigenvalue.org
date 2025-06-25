@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       59e06795-a084-4a0d-b27d-aadc836de213
+:CUSTOM_ID: 8-1a
+:END:
+#+TITLE: Fixed Point and Thermal Eigenvalue
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Find the fixed point, and the thermal eigenvalue \(y_{T}\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:2f93a70c-6794-4a37-ad85-3fc5333444c7][Anisotropic nonlinear sigma model]]
+- **Next**: [[id:b15a1f62-db12-44ff-80f5-bf6f2b3d49e5][RG Equation for g Eigenvalue]]
+
+* Related Concepts

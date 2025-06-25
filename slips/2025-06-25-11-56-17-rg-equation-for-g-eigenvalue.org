@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       b15a1f62-db12-44ff-80f5-bf6f2b3d49e5
+:CUSTOM_ID: 8-1b
+:END:
+#+TITLE: RG Equation for g Eigenvalue
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Write the renormalization group equation for \(g\) in the vicinity of the above fixed point, and obtain the corresponding eigenvalue \(y_{g}\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:2f93a70c-6794-4a37-ad85-3fc5333444c7][Anisotropic nonlinear sigma model]]
+- **Previous**: [[id:59e06795-a084-4a0d-b27d-aadc836de213][Fixed Point and Thermal Eigenvalue]]
+- **Next**: [[id:ec21d25c-0086-4945-a73b-c79855ccfd8c][Phase Diagram Sketch]]
+
+* Related Concepts

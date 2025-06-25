@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       2f93a70c-6794-4a37-ad85-3fc5333444c7
+:CUSTOM_ID: 8-1
 :END:
 #+TITLE: Anisotropic nonlinear sigma model
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -27,6 +28,9 @@ where $\epsilon=d-2$.
 (b) Write the renormalization group equation for $g$ in the vicinity of the above fixed point, and obtain the corresponding eigenvalue $y_{g}$.
 
 (c) Sketch the phase diagram as a function of $T$ and $g$, indicating the phases, and paying careful attention to the shape of the phase boundary as $g \rightarrow 0$.
+
+* Navigation
+- **First Part**: [[id:59e06795-a084-4a0d-b27d-aadc836de213][Fixed Point and Thermal Eigenvalue]]
 
 * Solution
 
