@@ -42,7 +42,7 @@ slipbox/                    # Zettelkasten (primary system)
 ```
 slips/
 ├── 2025-06-24-concept-emergence.org     # Individual slip files
-├── 2025-06-24-luhmann-principles.org    # Standard org format
+├── 2025-06-24-zettelkasten-principles.org    # Standard org format
 └── ...                                  # Flat structure, UUID-named
 ```
 
@@ -289,4 +289,4 @@ mgmt/newproject/
 - **Usage patterns** - Which tools are used together
 - **Error tracking** - Common failure modes and improvements
 
-The goal is a robust, extensible platform that scales with the intellectual ambitions of the Zettelkasten while maintaining Luhmann's core principles of organic growth and surprising connections.
+The goal is a robust, extensible platform that scales with the intellectual ambitions of the Zettelkasten while maintaining core principles of organic growth and surprising connections.

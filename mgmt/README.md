@@ -51,7 +51,7 @@ All management tools must implement the slipbox conventions documented in [CONVE
 - Consistent slip format validation
 - Shared understanding of link types and structures  
 - Compatible data models across tools
-- Unified approach to Luhmann's principles
+- Unified approach to Zettelkasten principles
 
 ## Architecture
 

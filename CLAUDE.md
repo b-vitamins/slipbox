@@ -2,9 +2,9 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Luhmann's Zettelkasten Principles
+## Zettelkasten Principles
 
-This is a digital implementation of Niklas Luhmann's Zettelkasten method. The system is designed to be a communication partner, not mere storage.
+This is a digital implementation of the Zettelkasten method. The system is designed to be a communication partner, not mere storage.
 
 ### Core Principles
 
@@ -55,7 +55,7 @@ This is a digital implementation of Niklas Luhmann's Zettelkasten method. The sy
 
 #### Linking Strategy
 1. When creating a link, immediately create the back-link
-2. Mark connection points within text (Luhmann used red marks)
+2. Mark connection points within text
 3. Central concepts should accumulate many links
 4. Links solve the "multiple storage" problem
 
@@ -121,7 +121,7 @@ This is a digital implementation of Niklas Luhmann's Zettelkasten method. The sy
 ### Implementation Notes
 
 #### Directory Structure
-- **`slips/`** - All Zettelkasten slips in flat structure following Luhmann's principles
+- **`slips/`** - All Zettelkasten slips in flat structure
 - **`bibliography/`** - Separate system for bibliographical references
   - BibTeX files for conference proceedings (`.bib`)
   - Domain-specific collections (e.g., `neurosymbolic.bib`)
@@ -224,13 +224,13 @@ Creates two nodes: file node "Foo" (id: foo) and headline node "Bar" (id: bar).
 
 ### Hybrid ID System
 
-This slipbox uses both Org-roam and Luhmann identification:
+This slipbox uses both Org-roam and traditional identification:
 - **`:ID:` property**: UUID for Org-roam compatibility (e.g., `d2e3f4a5-b6c7-4d8e-9fa0-b1c2d3e4f5a6`)
-- **`:CUSTOM_ID:` property**: Luhmann number for traditional Zettelkasten (e.g., `42/3a`)
+- **`:CUSTOM_ID:` property**: Slip number for traditional Zettelkasten (e.g., `42/3a`)
 
 **Link Formats**:
 - `[[id:UUID][Description]]` - Primary format for Org-roam
-- `[[42/3a][Description]]` - Traditional Luhmann reference
+- `[[42/3a][Description]]` - Traditional slip reference
 - Both should work, but `id:` links preferred for database relationships
 
 ### Link System
@@ -354,7 +354,15 @@ This slipbox uses both Org-roam and Luhmann identification:
 
 **Link Validation Priority**:
 1. **Essential**: `[[id:UUID]]` links for Org-roam relationships
-2. **Traditional**: `[[42/3a]]` links for Luhmann numbering
+2. **Traditional**: `[[42/3a]]` links for slip numbering
 3. **External**: Citation and URL links for academic workflow
 
 **Database Health**: Proper caching requires valid Org properties and link structure
+
+## Communication Style
+
+- **Be terse and direct** - Avoid verbose explanations
+- **Report facts, not assessments** - State what is, not how good it is
+- **Skip subjective evaluations** - Don't say "excellent", "perfect", "great success"
+- **Avoid marketing language** - No hype, no celebration, just results
+- **Be nonchalant** - Treat all outcomes as routine

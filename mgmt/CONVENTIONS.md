@@ -1,10 +1,10 @@
 # Slipbox Conventions
 
-*Formal rules for authentic Luhmann method with modern technology*
+*Formal rules for Zettelkasten method with modern technology*
 
 ## Core Philosophy
 
-- **Authentic Luhmann principles** - Non-hierarchical, emergent structure, productive accidents
+- **Authentic Zettelkasten principles** - Non-hierarchical, emergent structure, productive accidents
 - **Machine-readable format** - Programmatically verifiable for automation at scale
 - **Housekeeping hygiene** - Save precious thinking time through systematic conventions
 - **Technology-enhanced, not technology-driven** - Tools serve the method, not vice versa
@@ -12,12 +12,12 @@
 ## ID System (Hybrid)
 
 - **Technical ID**: UUID for robust linking (`550e8400-e29b-41d4-a716-446655440000`)
-- **Human ID**: Luhmann numbering for semantic structure (`42/3a`, `57/12`)
+- **Human ID**: Slip numbering for semantic structure (`42/3a`, `57/12`)
 - **Implementation**: Both in PROPERTIES block
   ```org
   :PROPERTIES:
   :ID: [UUID]
-  :CUSTOM_ID: [Luhmann-number]
+  :CUSTOM_ID: [slip-number]
   :END:
   ```
 
@@ -25,7 +25,7 @@
 
 ### Required Properties
 - `ID` - UUID (never change)
-- `CUSTOM_ID` - Luhmann number (human readable)
+- `CUSTOM_ID` - Slip number (human readable)
 - `TITLE` - Clear, searchable title
 - `FILETAGS` - Type and domain classification
 
@@ -41,7 +41,7 @@
 - **Complex arguments become networks** - Chain related slips rather than expanding linearly
 
 ### Content Structure
-- **Mark connection points within text** - Indicate where branches/links attach (Luhmann used red marks)
+- **Mark connection points within text** - Indicate where branches/links attach
 - **Multiple connection points allowed** - Single slip can branch in several directions
 - **Write for future surprise** - Formulate to reveal unexpected relationships to future self
 
@@ -59,7 +59,7 @@
 - **Seek connecting formulations** - Look for angles that relate heterogeneous concepts
 - **Problem-oriented approach** - Frame content as questions that invite connections
 
-## Literature Processing (From Luhmann's "Learning How to Read")
+## Literature Processing
 
 ### Reading Strategy for Theoretical Texts
 - **Selective focus** - Only small portion contains conceptually decisive words
@@ -86,7 +86,7 @@
 - **Connection potential** - Links to existing slips and concepts
 - **Frame critique** - Underlying assumptions and limitations
 
-## Content Rules (From Luhmann's "Communicating with Slip Boxes")
+## Content Rules
 
 ### Communication Partnership
 - **The slip box must surprise you** - System becomes communication partner, not mere storage
