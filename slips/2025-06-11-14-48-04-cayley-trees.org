@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       9335e759-e3b3-4f74-b0f0-875441acf012
+:CUSTOM_ID: 7-14
 :END:
 #+TITLE: Cayley trees
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -11,6 +12,9 @@
 (b) Find the limiting behavior of P(p) for infinitely many levels, and give the exponent \beta for this tree.
 (c) In a mean-field approximation, P(p) for a lattice of coordination number z is calculated self-consistently, in a manner similar to the above. Give the mean-field estimates for p_{c} and the exponent \beta.
 (d) The one-dimensional chain corresponds to z=1. Find the probability that endpoints of an open chain of N+1 sites are connected, and hence deduce the correlation length \xi.
+
+* Navigation
+- **First Part**: [[id:11ae0e43-8bc7-440b-bd7a-e51b0d469edc][Recursion Relation]]
 
 * Solution
 

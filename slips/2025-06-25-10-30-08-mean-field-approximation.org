@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       289d1868-c0f7-428b-8fec-7cd11c1350e4
+:CUSTOM_ID: 7-14c
+:END:
+#+TITLE: Mean Field Approximation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+In a mean-field approximation, P(p) for a lattice of coordination number z is calculated self-consistently, in a manner similar to the above. Give the mean-field estimates for p_{c} and the exponent \beta.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:9335e759-e3b3-4f74-b0f0-875441acf012][Cayley trees]]
+- **Previous**: [[id:f84da06e-4c0b-4726-8de2-281b0922cb58][Limiting Behavior]]
+- **Next**: [[id:82eecb25-6ed4-49ca-bd87-39b986f6a49d][One-Dimensional Chain]]
+
+* Related Concepts

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       63e2315f-c8df-402f-9144-e5f71decae6a
+:CUSTOM_ID: 7-15c
+:END:
+#+TITLE: 3D Dual Percolation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Bond percolation in three dimensions is dual to plaquette percolation. This is why in d=3 it is possible to percolate while maintaining solid integrity.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:022b380a-7354-41b8-98b0-33b4d808f59a][Percolation duality]]
+- **Previous**: [[id:7e506366-c941-499f-8b08-e49bd9fc1318][Square Lattice Threshold]]
+- **Next**: [[id:9079cfb0-ba1c-412b-87be-105943e06871][Triangular Hexagonal Duality]]
+
+* Related Concepts

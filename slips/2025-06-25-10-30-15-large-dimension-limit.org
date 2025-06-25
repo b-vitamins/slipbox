@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       59022c81-852d-4073-a1ce-ff1167bc1a07
+:CUSTOM_ID: 7-16b
+:END:
+#+TITLE: Large Dimension Limit
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Find the limiting values of p_{c} and y_{t} for large d. (It can be shown that \nu=1 / 2 exactly, above an upper critical dimension d_{u}=6.)
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:91fdba71-8f1a-425e-bc65-86ff42cc6b47][Position-space renormalization group]]
+- **Previous**: [[id:4730dc56-c8eb-4a25-a0a1-33630e74fc16][Migdal-Kadanoff Scheme]]
+- **Next**: [[id:ddaee0f8-eb2c-45b0-a44b-cb2c56fe2559][Alternative PSRG Scheme]]
+
+* Related Concepts

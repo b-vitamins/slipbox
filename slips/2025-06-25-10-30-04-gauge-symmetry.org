@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       db1a4a0a-e035-4af5-8032-7a6d1e9bce57
+:CUSTOM_ID: 7-13d
+:END:
+#+TITLE: Gauge Symmetry
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+Note that \tilde{\beta \mathcal{H}} is left invariant if all the six bonds going out of any site are simultaneously increased by the same integer. Thus unlike the original model which only had a global translation symmetry, the dual model has a local, i.e. gauge symmetry.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:cc06ac20-0de2-4789-b840-d0c1628a00a4][Cubic lattice]]
+- **Previous**: [[id:15638562-8b76-44bc-a009-3810cfb525d0][Dual Hamiltonian]]
+- **Next**: [[id:037f8bcc-bd59-4511-b93e-85f5bb651013][4D Gauge Theory]]
+
+* Related Concepts

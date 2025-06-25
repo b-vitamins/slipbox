@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       9b3d096c-1db4-43fb-bd09-be362b7328f1
+:CUSTOM_ID: 7-13b
+:END:
+#+TITLE: Constraint Implementation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+Implement the constraints through discrete delta-functions by associating an auxiliary variable n_{p} with each plaquette. It is useful to imagine n_{p} as defined on a bond of the dual lattice, perpendicular to the plaquette p.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:cc06ac20-0de2-4789-b840-d0c1628a00a4][Cubic lattice]]
+- **Previous**: [[id:070f56dc-e3c7-4120-8567-0f2751fd0e3a][Bond Variables in 3D]]
+- **Next**: [[id:15638562-8b76-44bc-a009-3810cfb525d0][Dual Hamiltonian]]
+
+* Related Concepts

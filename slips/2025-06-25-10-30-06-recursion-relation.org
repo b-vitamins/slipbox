@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       11ae0e43-8bc7-440b-bd7a-e51b0d469edc
+:CUSTOM_ID: 7-14a
+:END:
+#+TITLE: Recursion Relation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+For z=2, obtain a recursion relation for the probability P_{n}(p) that the top site of a tree of n levels is connected to some site at the bottom level.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:9335e759-e3b3-4f74-b0f0-875441acf012][Cayley trees]]
+- **Next**: [[id:f84da06e-4c0b-4726-8de2-281b0922cb58][Limiting Behavior]]
+
+* Related Concepts

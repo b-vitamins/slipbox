@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       82eecb25-6ed4-49ca-bd87-39b986f6a49d
+:CUSTOM_ID: 7-14d
+:END:
+#+TITLE: One-Dimensional Chain
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+The one-dimensional chain corresponds to z=1. Find the probability that endpoints of an open chain of N+1 sites are connected, and hence deduce the correlation length \xi.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:9335e759-e3b3-4f74-b0f0-875441acf012][Cayley trees]]
+- **Previous**: [[id:289d1868-c0f7-428b-8fec-7cd11c1350e4][Mean Field Approximation]]
+
+* Related Concepts

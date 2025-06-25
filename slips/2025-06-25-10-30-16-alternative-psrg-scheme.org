@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       ddaee0f8-eb2c-45b0-a44b-cb2c56fe2559
+:CUSTOM_ID: 7-16c
+:END:
+#+TITLE: Alternative PSRG Scheme
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+In an alternative PSRG scheme, first b^{d-1} bonds are connected in parallel, the resulting groups are then joined in series. Repeat the above calculations with this scheme.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:91fdba71-8f1a-425e-bc65-86ff42cc6b47][Position-space renormalization group]]
+- **Previous**: [[id:59022c81-852d-4073-a1ce-ff1167bc1a07][Large Dimension Limit]]
+
+* Related Concepts

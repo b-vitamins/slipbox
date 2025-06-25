@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       c2c11ffc-93e1-4c64-819d-13568ec9116b
+:CUSTOM_ID: 7-15a
+:END:
+#+TITLE: Chain Duality
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+The dual of a chain in which N bonds are connected in series has N bonds connected in parallel. What is the corresponding (non-) percolation probability?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:022b380a-7354-41b8-98b0-33b4d808f59a][Percolation duality]]
+- **Next**: [[id:7e506366-c941-499f-8b08-e49bd9fc1318][Square Lattice Threshold]]
+
+* Related Concepts

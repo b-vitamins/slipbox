@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       15638562-8b76-44bc-a009-3810cfb525d0
+:CUSTOM_ID: 7-13c
+:END:
+#+TITLE: Dual Hamiltonian
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+By summing over the bond variables in Z, obtain the dual Hamiltonian
+\begin{align*}
+\tilde{\beta \mathcal{H}}=\sum_{p} \tilde{J}\left(n_{12}^{p}-n_{23}^{p}+n_{34}^{p}-n_{41}^{p}\right)
+\end{align*}
+where the sum is over all plaquettes p of the dual lattice, with {n_{i j}^{p}} indicating the four bonds around plaquette p.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:cc06ac20-0de2-4789-b840-d0c1628a00a4][Cubic lattice]]
+- **Previous**: [[id:9b3d096c-1db4-43fb-bd09-be362b7328f1][Constraint Implementation]]
+- **Next**: [[id:db1a4a0a-e035-4af5-8032-7a6d1e9bce57][Gauge Symmetry]]
+
+* Related Concepts

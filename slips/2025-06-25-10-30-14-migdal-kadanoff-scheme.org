@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       4730dc56-c8eb-4a25-a0a1-33630e74fc16
+:CUSTOM_ID: 7-16a
+:END:
+#+TITLE: Migdal-Kadanoff Scheme
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Apply the above scheme to b=d=2, and compare the resulting estimates of p_{c} and y_{t}=1 / \nu to the exact values for the square lattice ( p_{c}=1 / 2 and y_{t}=3 / 4 ).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:91fdba71-8f1a-425e-bc65-86ff42cc6b47][Position-space renormalization group]]
+- **Next**: [[id:59022c81-852d-4073-a1ce-ff1167bc1a07][Large Dimension Limit]]
+
+* Related Concepts

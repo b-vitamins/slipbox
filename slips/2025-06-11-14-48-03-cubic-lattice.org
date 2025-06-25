@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       cc06ac20-0de2-4789-b840-d0c1628a00a4
+:CUSTOM_ID: 7-13
 :END:
 #+TITLE: Cubic lattice
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -16,6 +17,9 @@
 where the sum is over all plaquettes p of the dual lattice, with {n_{i j}^{p}} indicating the four bonds around plaquette p.
 (d) Note that \tilde{\beta \mathcal{H}} is left invariant if all the six bonds going out of any site are simultaneously increased by the same integer. Thus unlike the original model which only had a global translation symmetry, the dual model has a local, i.e. gauge symmetry.
 (e) Consider a Potts gauge theory defined on the plaquettes of a four-dimensional hypercubic lattice. Find its critical coupling J_{c}(q).
+
+* Navigation
+- **First Part**: [[id:070f56dc-e3c7-4120-8567-0f2751fd0e3a][Bond Variables in 3D]]
 
 * Solution
 

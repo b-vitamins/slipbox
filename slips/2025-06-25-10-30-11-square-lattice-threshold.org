@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       7e506366-c941-499f-8b08-e49bd9fc1318
+:CUSTOM_ID: 7-15b
+:END:
+#+TITLE: Square Lattice Threshold
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+The bond percolation problem on a square lattice is self-dual. What is its threshold p_{c}?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:022b380a-7354-41b8-98b0-33b4d808f59a][Percolation duality]]
+- **Previous**: [[id:c2c11ffc-93e1-4c64-819d-13568ec9116b][Chain Duality]]
+- **Next**: [[id:63e2315f-c8df-402f-9144-e5f71decae6a][3D Dual Percolation]]
+
+* Related Concepts

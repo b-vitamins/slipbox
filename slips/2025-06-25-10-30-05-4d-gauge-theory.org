@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       037f8bcc-bd59-4511-b93e-85f5bb651013
+:CUSTOM_ID: 7-13e
+:END:
+#+TITLE: 4D Gauge Theory
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (e) Problem
+Consider a Potts gauge theory defined on the plaquettes of a four-dimensional hypercubic lattice. Find its critical coupling J_{c}(q).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:cc06ac20-0de2-4789-b840-d0c1628a00a4][Cubic lattice]]
+- **Previous**: [[id:db1a4a0a-e035-4af5-8032-7a6d1e9bce57][Gauge Symmetry]]
+
+* Related Concepts

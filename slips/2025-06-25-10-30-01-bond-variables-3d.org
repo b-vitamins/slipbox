@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       070f56dc-e3c7-4120-8567-0f2751fd0e3a
+:CUSTOM_ID: 7-13a
+:END:
+#+TITLE: Bond Variables in 3D
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Consider a clock model on a cubic lattice of N points. Change to the 3 N bond variables b_{i j}=s_{i}-s_{j}. (Note that one must make a convention about the positive directions on the three axes.) Show that there are now 2 N constraints associated with the plaquettes of this lattice.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:cc06ac20-0de2-4789-b840-d0c1628a00a4][Cubic lattice]]
+- **Next**: [[id:9b3d096c-1db4-43fb-bd09-be362b7328f1][Constraint Implementation]]
+
+* Related Concepts

@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       022b380a-7354-41b8-98b0-33b4d808f59a
+:CUSTOM_ID: 7-15
 :END:
 #+TITLE: Percolation duality
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -11,6 +12,9 @@
 (b) The bond percolation problem on a square lattice is self-dual. What is its threshold p_{c}?
 (c) Bond percolation in three dimensions is dual to plaquette percolation. This is why in d=3 it is possible to percolate while maintaining solid integrity.
 (d) The triangular and hexagonal lattices are dual to each other. Combined with the star-triangle transformation that also maps the two lattices, this leads to exact values of p_{c} for these lattices. However, this calculation is not trivial, and it is best to follow the steps for calculations of the critical couplings of q-state Potts models in an earlier problem.
+
+* Navigation
+- **First Part**: [[id:c2c11ffc-93e1-4c64-819d-13568ec9116b][Chain Duality]]
 
 * Solution
 
