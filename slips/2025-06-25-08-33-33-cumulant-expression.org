@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       41ccacc1-93c2-4521-8dfa-71cb8c532f3d
+:CUSTOM_ID: 6-1c
+:END:
+#+TITLE: Cumulant Expression
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+Express \(\langle\mathcal{U}\rangle_{0}\) in terms of the cell spins \(\sigma_{\alpha}^{\prime}\), and hence obtain the recursion relation \(K^{\prime}(K)\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:41145bcf-79f5-4aa5-8749-31a0d0432a96][Cumulant method]]
+- **Previous**: [[id:264f7761-5c6b-40d4-9e41-01576319e913][Renormalized Spin Definition]]
+- **Next**: [[id:89d9b9cd-ab98-47f5-aebe-5509d0065581][Fixed Point Analysis]]
+
+* Related Concepts

@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       41145bcf-79f5-4aa5-8749-31a0d0432a96
+:CUSTOM_ID: 6-1
 :END:
 #+TITLE: Cumulant method
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 
@@ -20,6 +21,9 @@ Cumulant method: Apply the Niemeijer-van Leeuwen first order cumulant expansion 
 (e) In the presence of a small magnetic field \(h \sum_{i} \sigma_{i}\), find the recursion relation for \(h\), and calculate the magnetic eigenvalue \(y_{h}\) at the fixed point.
 
 (f) Compare \(K^{*}, y_{t}\), and \(y_{h}\) to their exact values.
+
+* Navigation
+- **First Part**: [[id:ac1d911d-5e99-43fa-bc53-8b61fb924df1][RG Bond Division]]
 
 * Solution
 

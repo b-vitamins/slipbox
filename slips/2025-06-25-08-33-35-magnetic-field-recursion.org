@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       2d55c05f-e702-4c98-ad2d-9c8db9e322f3
+:CUSTOM_ID: 6-1e
+:END:
+#+TITLE: Magnetic Field Recursion
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (e) Problem
+In the presence of a small magnetic field \(h \sum_{i} \sigma_{i}\), find the recursion relation for \(h\), and calculate the magnetic eigenvalue \(y_{h}\) at the fixed point.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:41145bcf-79f5-4aa5-8749-31a0d0432a96][Cumulant method]]
+- **Previous**: [[id:89d9b9cd-ab98-47f5-aebe-5509d0065581][Fixed Point Analysis]]
+- **Next**: [[id:6caf591e-0bd4-437b-bb68-ad48911c749d][Exact Value Comparison]]
+
+* Related Concepts

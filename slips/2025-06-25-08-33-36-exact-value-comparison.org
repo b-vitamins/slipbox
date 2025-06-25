@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       6caf591e-0bd4-437b-bb68-ad48911c749d
+:CUSTOM_ID: 6-1f
+:END:
+#+TITLE: Exact Value Comparison
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (f) Problem
+Compare \(K^{*}, y_{t}\), and \(y_{h}\) to their exact values.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:41145bcf-79f5-4aa5-8749-31a0d0432a96][Cumulant method]]
+- **Previous**: [[id:2d55c05f-e702-4c98-ad2d-9c8db9e322f3][Magnetic Field Recursion]]
+
+* Related Concepts

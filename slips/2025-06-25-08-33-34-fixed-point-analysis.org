@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       89d9b9cd-ab98-47f5-aebe-5509d0065581
+:CUSTOM_ID: 6-1d
+:END:
+#+TITLE: Fixed Point Analysis
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+Find the fixed point \(K^{*}\), and the thermal eigenvalue \(y_{t}\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:41145bcf-79f5-4aa5-8749-31a0d0432a96][Cumulant method]]
+- **Previous**: [[id:41ccacc1-93c2-4521-8dfa-71cb8c532f3d][Cumulant Expression]]
+- **Next**: [[id:2d55c05f-e702-4c98-ad2d-9c8db9e322f3][Magnetic Field Recursion]]
+
+* Related Concepts

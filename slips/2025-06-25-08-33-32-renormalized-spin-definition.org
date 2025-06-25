@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       264f7761-5c6b-40d4-9e41-01576319e913
+:CUSTOM_ID: 6-1b
+:END:
+#+TITLE: Renormalized Spin Definition
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (b) Problem
+For each cell \(\alpha\), define a renormalized spin \(\sigma_{\alpha}^{\prime}=\operatorname{sign}\left(\sigma_{\alpha}^{1}+\sigma_{\alpha}^{2}+\sigma_{\alpha}^{3}+\sigma_{\alpha}^{4}\right)\). This choice becomes ambiguous for configurations such that \(\sum_{i=1}^{4} \sigma_{\alpha}^{i}=0\). Distribute the weight of these configurations equally between \(\sigma_{\alpha}^{\prime}=+1\) and -1 (i.e. put a factor of \(1 / 2\) in addition to the Boltzmann weight). Make a table for all possible configurations of a cell, the internal probability \(\exp \left(-\beta \mathcal{H}_{0}\right)\), and the weights contributing to \(\sigma_{\alpha}^{\prime}= \pm 1\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:41145bcf-79f5-4aa5-8749-31a0d0432a96][Cumulant method]]
+- **Previous**: [[id:ac1d911d-5e99-43fa-bc53-8b61fb924df1][RG Bond Division]]
+- **Next**: [[id:41ccacc1-93c2-4521-8dfa-71cb8c532f3d][Cumulant Expression]]
+
+* Related Concepts
