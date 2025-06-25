@@ -24,7 +24,3 @@ resulting in the so called loop model.
 
 * Navigation
 - **First Part**: [[id:a97830a6-a45c-45da-92c1-83778e672917][High Temperature Expansion]]
-
-* Solution
-
-* Related Concepts

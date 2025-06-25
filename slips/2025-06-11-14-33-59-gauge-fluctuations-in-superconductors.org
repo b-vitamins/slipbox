@@ -42,8 +42,3 @@ and expanding \(\beta \mathcal{H}\) to quadratic order in \(\phi, \theta\), and 
 
 * Navigation
 - **First Part**: [[id:ab9becb4-3cc0-4587-b548-0efe3e2e4e72][Gauge Symmetry Invariance]]
-
-* Solution
-
-* Related Concepts
-

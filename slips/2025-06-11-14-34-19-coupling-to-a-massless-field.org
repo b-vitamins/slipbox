@@ -49,8 +49,3 @@ and expanding \(\beta \mathcal{H}\) to quadratic order in \(\phi\) and \(a\).
 
 * Navigation
 - **First Part**: [[id:86f7da73-d35d-4140-b606-951f9045e5c1][Massless Field Saddle Point]]
-
-* Solution
-
-* Related Concepts
-

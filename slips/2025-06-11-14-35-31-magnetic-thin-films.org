@@ -38,7 +38,3 @@ The result in (f) illustrates a quite general result that the transition tempera
 
 * Navigation
 - **First Part**: [[id:3b8c3d1a-2268-41a3-9dd0-86e5febd1c9a][Partition Function and Free Energy]]
-
-* Solution
-
-* Related Concepts

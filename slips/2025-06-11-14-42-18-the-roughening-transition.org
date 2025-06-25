@@ -61,7 +61,3 @@ This problem is divided into parts:
 - [[8/3e][Part (e): Renormalization group equations]]
 - [[8/3f][Part (f): Phase diagram and phases]]
 - [[8/3g][Part (g): Discontinuous jump magnitude]]
-
-* Solution
-
-* Related Concepts

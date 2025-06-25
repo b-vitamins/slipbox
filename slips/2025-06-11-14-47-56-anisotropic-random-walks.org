@@ -17,7 +17,3 @@
 
 * Navigation
 - **First Part**: [[id:e156de6b-4812-44c6-a175-dd9390bb4693][Walk Weight Calculation]]
-
-* Solution
-
-* Related Concepts

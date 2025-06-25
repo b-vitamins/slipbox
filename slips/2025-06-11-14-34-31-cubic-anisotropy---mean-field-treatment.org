@@ -26,8 +26,3 @@ for an \(n\)-component vector \(\vec{m}(\mathbf{x})=\left(m_{1}, m_{2}, \cdots, 
 
 * Navigation
 - **First Part**: [[id:83ce655f-dd2a-4964-b8e8-82944cd45d22][Cubic Magnetization Directions]]
-
-* Solution
-
-* Related Concepts
-

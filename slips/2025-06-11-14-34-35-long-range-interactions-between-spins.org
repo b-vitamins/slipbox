@@ -40,8 +40,3 @@ ee M.E. Fisher, S.-K. Ma and B.G. Nickel, Phys. Rev. Lett. 29, 917 (1972).]
 
 * Navigation
 - **First Part**: [[id:6ac6fefa-b74f-454d-9193-b7df4481d43d][Power Law Hamiltonian]]
-
-* Solution
-
-* Related Concepts
-

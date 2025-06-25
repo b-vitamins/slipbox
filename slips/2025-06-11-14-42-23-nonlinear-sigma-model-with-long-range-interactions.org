@@ -41,7 +41,3 @@ This problem is divided into parts:
 - [[8/5f][Part (f): Differential RG equation]]
 - [[8/5g][Part (g): Critical temperature and exponent]]
 - [[8/5h][Part (h): Symmetry breaking field renormalization]]
-
-* Solution
-
-* Related Concepts

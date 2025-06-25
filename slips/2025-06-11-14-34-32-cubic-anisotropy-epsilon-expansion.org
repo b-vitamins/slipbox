@@ -32,8 +32,3 @@ where \(C=K_{d} \Lambda^{d} /\left(t+K \Lambda^{2}\right)^{2} \approx K_{4} / K^
 
 * Navigation
 - **First Part**: [[id:f57c3de0-3183-403b-a240-5f14da4989ee][Recursion Relations]]
-
-* Solution
-
-* Related Concepts
-

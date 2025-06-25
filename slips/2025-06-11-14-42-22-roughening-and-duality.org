@@ -37,7 +37,3 @@ This problem is divided into parts:
 - [[8/4a][Part (a): Dual model construction]]
 - [[8/4b][Part (b): Large K and XY model connection]]
 - [[8/4c][Part (c): One-dimensional version]]
-
-* Solution
-
-* Related Concepts

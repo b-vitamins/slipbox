@@ -28,7 +28,3 @@ This problem is divided into parts:
 - [[8/6a][Part (a): Fixed point position]]
 - [[8/6b][Part (b): Eigenvalues at fixed point]]
 - [[8/6c][Part (c): Exponents for d=3 superfluid transition]]
-
-* Solution
-
-* Related Concepts

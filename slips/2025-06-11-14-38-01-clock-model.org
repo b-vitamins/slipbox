@@ -53,10 +53,5 @@ where \(\Pi_{\alpha}\) is a projection matrix. Hence show that \(\left\langle\de
 [
 \lambda(1) / \lambda(0)]^{e}\). (You do not have to explicitly calculate the constant of proportionality.)
 
-* Solution
-
 * Navigation
 - **Part (a)**: [[id:db1d40d7-0b61-4bc0-a118-debff01e9cfc][Partition Function Transfer Matrix Form]]
-
-* Related Concepts
-

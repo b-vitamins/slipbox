@@ -23,7 +23,3 @@ i.e. with bonds of different strengths along the x and y directions.
 
 * Navigation
 - **First Part**: [[id:ad6b9483-1589-4228-9689-ec1c4f094f01][Free Energy Calculation]]
-
-* Solution
-
-* Related Concepts

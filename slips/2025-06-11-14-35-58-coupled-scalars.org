@@ -15,18 +15,5 @@
 
 coupling two one-component fields \(m\) and \(\phi\).
 
-(a) Write \(\beta \mathcal{H}\) in terms of the Fourier transforms \(m(\mathbf{q})\) and \(\phi(\mathbf{q})\).
-(b) Construct a renormalization group transformation as in the text, by rescaling distances such that \(\mathbf{q}^{\prime}=b \mathbf{q}\); and the fields such that \(m^{\prime}\left(\mathbf{q}^{\prime}\right)=\tilde{m}(\mathbf{q}) / z\) and \(\phi^{\prime}\left(\mathbf{q}^{\prime}\right)=\tilde{\phi}(\mathbf{q}) / y\). Do not evaluate the integrals that just contribute a constant additive term.
-
-(c) There is a fixed point such that \(K^{\prime}=K\) and \(L^{\prime}=L\). Find \(y_{t}, y_{h}\) and \(y_{v}\) at this fixed point.
-
-(d) The singular part of the free energy has a scaling from \(f(t, h, v)=\) \(t^{2-\alpha} g\left(h / t^{\Delta}, v / t^{\omega}\right)\) for \(t, h, v\) close to zero. Find \(\alpha, \Delta\), and \(\omega\).
-
-(e) There is another fixed point such that \(t^{\prime}=t\) and \(L^{\prime}=L\). What are the relevant operators at this fixed point, and how do they scale?
-
 * Navigation
 - **First Part**: [[id:3d506bc1-3bb5-474d-b22c-2532bb44e665][Fourier Transform Representation]]
-
-* Solution
-
-

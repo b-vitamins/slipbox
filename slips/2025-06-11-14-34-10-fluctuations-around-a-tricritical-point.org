@@ -39,8 +39,3 @@ and expanding \(\beta \mathcal{H}\) to quadratic order in \(\phi\).
 
 * Navigation
 - **First Part**: [[id:68593752-d18a-43ce-b89d-e49ffbe266f4][Heat Capacity Singularity]]
-
-* Solution
-
-* Related Concepts
-

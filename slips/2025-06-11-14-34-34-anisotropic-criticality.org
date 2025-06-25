@@ -42,8 +42,3 @@ In the remainder of this problem set \(h=0\), and treat \(U\) as a perturbation.
 
 * Navigation
 - **First Part**: [[id:62751a54-00d2-4500-b906-e0e2d17722d2][Fourier Transforms]]
-
-* Solution
-
-* Related Concepts
-

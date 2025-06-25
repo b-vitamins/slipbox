@@ -20,7 +20,3 @@ where the sum is over all plaquettes p of the dual lattice, with {n_{i j}^{p}} i
 
 * Navigation
 - **First Part**: [[id:070f56dc-e3c7-4120-8567-0f2751fd0e3a][Bond Variables in 3D]]
-
-* Solution
-
-* Related Concepts

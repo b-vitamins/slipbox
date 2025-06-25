@@ -16,15 +16,5 @@
 \end{array}\right.
 \end{align*}
 
-(a) How does the correlation length diverge as \(T \rightarrow 0\) ?
-
-(b) Write down the singular form of the free energy as \(T, h \rightarrow 0\).
-
-(c) How does the susceptibility \(\chi\) diverge as \(T \rightarrow 0\) for \(h=0\) ?
-
 * Navigation
 - **First Part**: [[id:f6a43a6d-b17e-413c-a6bd-b5c73f740e7c][Correlation Length Divergence]]
-
-* Solution
-
-

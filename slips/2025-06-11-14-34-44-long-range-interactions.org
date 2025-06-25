@@ -23,8 +23,3 @@ as well as short-range interactions.
 
 * Navigation
 - **First Part**: [[id:9c137297-215d-44f3-a178-157026f6e5ea][Quadratic Term Modification]]
-
-* Solution
-
-* Related Concepts
-

@@ -20,7 +20,3 @@
 
 * Navigation
 - **First Part**: [[id:f58787bd-d687-4274-a50f-fcb93ccf4105][Magnetization Field Relation]]
-
-* Solution
-
-* Related Concepts

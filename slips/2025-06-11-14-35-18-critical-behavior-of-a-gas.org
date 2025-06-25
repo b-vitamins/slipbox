@@ -32,7 +32,3 @@ where \(v=V / N\). Find the ratio \(P v / k_{\mathrm{B}} T\) at its critical poi
 
 * Navigation
 - **First Part**: [[id:10537825-5563-4f3b-a1b2-0325ecac73bd][Critical Point Properties]]
-
-* Solution
-
-* Related Concepts

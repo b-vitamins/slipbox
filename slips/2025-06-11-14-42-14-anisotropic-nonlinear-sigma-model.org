@@ -31,7 +31,3 @@ where $\epsilon=d-2$.
 
 * Navigation
 - **First Part**: [[id:59e06795-a084-4a0d-b27d-aadc836de213][Fixed Point and Thermal Eigenvalue]]
-
-* Solution
-
-* Related Concepts

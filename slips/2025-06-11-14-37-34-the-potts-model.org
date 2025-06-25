@@ -19,8 +19,3 @@ The Potts model: The transfer matrix procedure can be extended to the Potts mode
 
 * Navigation
 - **First Part**: [[id:28053b45-7fd9-4d5c-b97b-cd5b4d7b6b7d][Transfer Matrix Diagonalization]]
-
-* Solution
-
-* Related Concepts
-

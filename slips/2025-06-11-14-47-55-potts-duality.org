@@ -31,7 +31,3 @@ for some function \Xi, and hence locate the critical point K_{c}(q).
 
 * Navigation
 - **First Part**: [[id:3f5f3327-14f9-42d8-93f4-f837fdc4b1f4][Duality Expression]]
-
-* Solution
-
-* Related Concepts

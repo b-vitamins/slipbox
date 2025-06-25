@@ -21,7 +21,3 @@ K \sum_{\langle i j\rangle} \sigma_{i} \sigma_{j}+h \sum_{i} \sigma_{i}\right]
 
 * Navigation
 - **First Part**: [[id:a121490a-2dd6-42b5-b444-e08adf8f79a1][Low-Temperature Expansion]]
-
-* Solution
-
-* Related Concepts

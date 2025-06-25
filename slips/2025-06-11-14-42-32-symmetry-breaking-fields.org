@@ -42,7 +42,3 @@ This problem is divided into parts:
 - [[8/7a][Part (a): Sine-Gordon model recursion relations]]
 - [[8/7b][Part (b): Recursion relations with vortices]]
 - [[8/7c][Part (c): Validity range and phase diagrams]]
-
-* Solution
-
-* Related Concepts

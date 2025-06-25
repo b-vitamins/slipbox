@@ -40,10 +40,5 @@ where \(x=\mathrm{e}^{J}\).
 
 (i) Is the above scheme also applicable for antiferromagnetic interactions? What symmetry of the original problem is not respected by this transformation?
 
-* Solution
-
 * Navigation
 - **Part (a)**: [[id:63a408b9-9043-4d72-b899-d9c3d195d61d][Cluster Grouping Position Space RG]]
-
-* Related Concepts
-

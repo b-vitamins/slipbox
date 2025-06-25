@@ -29,7 +29,3 @@ The lattice-gas model: Consider a gas of particles subject to a Hamiltonian
 
 * Navigation
 - **First Part**: [[id:e7afaf6a-7d61-4dda-b04e-563c8dd4b603][Grand Partition Function]]
-
-* Solution
-
-* Related Concepts

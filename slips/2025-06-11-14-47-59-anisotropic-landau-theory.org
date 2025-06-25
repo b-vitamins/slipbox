@@ -17,7 +17,3 @@
 
 * Navigation
 - **First Part**: [[id:cd0dbff9-881c-4986-9c02-81390869510d][Generalized Hamiltonian]]
-
-* Solution
-
-* Related Concepts

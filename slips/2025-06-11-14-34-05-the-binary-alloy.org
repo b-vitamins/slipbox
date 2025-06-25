@@ -25,7 +25,3 @@ The binary alloy: A binary alloy (as in \(\beta\) brass) consists of \(N_{A}\) a
 
 * Navigation
 - **First Part**: [[id:408db81a-ded9-4105-873c-452c0e27a789][Minimum Energy Configuration]]
-
-* Solution
-
-* Related Concepts

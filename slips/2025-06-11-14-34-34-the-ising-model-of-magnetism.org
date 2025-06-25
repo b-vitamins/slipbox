@@ -37,7 +37,3 @@ C=\left.\frac{\partial E}{\partial T}\right|_{h=0}, \quad \text { and } \quad \c
 
 * Navigation
 - **First Part**: [[id:aedea07d-0dac-4fd1-9bec-d2948962359c][Equivalent Neighbor Model]]
-
-* Solution
-
-* Related Concepts

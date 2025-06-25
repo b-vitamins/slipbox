@@ -14,7 +14,3 @@
 
 * Navigation
 - **First Part**: [[id:4730dc56-c8eb-4a25-a0a1-33630e74fc16][Migdal-Kadanoff Scheme]]
-
-* Solution
-
-* Related Concepts

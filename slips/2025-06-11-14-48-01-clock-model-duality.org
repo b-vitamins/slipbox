@@ -40,7 +40,3 @@ i.e. with bonds of different strengths along the x and y directions. Find the li
 
 * Navigation
 - **First Part**: [[id:e97e0aa3-cca5-4e3d-9ed9-bf2db2861cc3][Bond Variable Transformation]]
-
-* Solution
-
-* Related Concepts

@@ -22,10 +22,5 @@ The spin-1 model: Consider a linear chain where the spin \(s_{i}\) at each site 
 (c) Obtain the expression for the correlation length \(\xi\), and note its behavior as \(K \rightarrow \infty\).
 (d) If we try to perform a renormalization group by decimation on the above chain we find that additional interactions are generated. Write down the simplest generalization of \(\beta \mathcal{H}\) whose parameter space is closed under such RG.
 
-* Solution
-
 * Navigation
 - **Part (a)**: [[id:4ff108a2-652f-41fd-8e5c-ad21137b028e][Transfer Matrix Explicit Form]]
-
-* Related Concepts
-

@@ -22,7 +22,3 @@
 
 * Navigation
 - **First Part**: [[id:373bad50-1a49-49e8-95c9-5c19da29beff][Interface Energy]]
-
-* Solution
-
-* Related Concepts

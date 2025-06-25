@@ -15,7 +15,3 @@
 
 * Navigation
 - **First Part**: [[id:294a3d36-93b3-449c-9c1f-6dc9df2453ea][Duality Relation]]
-
-* Solution
-
-* Related Concepts

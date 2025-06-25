@@ -15,7 +15,3 @@
 
 * Navigation
 - **First Part**: [[id:11ae0e43-8bc7-440b-bd7a-e51b0d469edc][Recursion Relation]]
-
-* Solution
-
-* Related Concepts

@@ -53,8 +53,3 @@ h(\mathbf{q})]\), to the free energy.
 
 * Navigation
 - **First Part**: [[id:9ee151cb-f25c-49b9-aa62-ea6b8efd43b2][Quench Averaged Free Energy]]
-
-* Solution
-
-* Related Concepts
-

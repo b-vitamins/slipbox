@@ -16,10 +16,5 @@ XY model: Consider two component unit spins \(\vec{s}_{i}=\left(\cos \theta_{i},
 (b) Calulate the free energy per site, and comment on the behavior of the heat capacity as \(T \propto K^{-1} \rightarrow 0\).
 (c) Find the correlation length \(\xi\), and note its behavior as \(K \rightarrow \infty\).
 
-* Solution
-
 * Navigation
 - **Part (a)**: [[id:bb6ee1e9-efb3-41f8-a034-daef2bab5622][Transfer Matrix Diagonalization Eigenvectors]]
-
-* Related Concepts
-

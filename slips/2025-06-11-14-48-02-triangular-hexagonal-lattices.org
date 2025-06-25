@@ -19,7 +19,3 @@
 
 * Navigation
 - **First Part**: [[id:0229e850-81db-4d7d-8108-b74f2dc02d85][Dual Lattice Interaction]]
-
-* Solution
-
-* Related Concepts

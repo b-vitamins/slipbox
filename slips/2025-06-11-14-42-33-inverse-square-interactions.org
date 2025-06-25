@@ -54,7 +54,3 @@ This problem is divided into parts:
 - [[8/8d][Part (d): Differential recursion relations]]
 - [[8/8e][Part (e): RG flows and phases]]
 - [[8/8f][Part (f): Effective interaction derivation]]
-
-* Solution
-
-* Related Concepts

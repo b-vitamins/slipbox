@@ -9,18 +9,5 @@
 * Problem
 1. Scaling in fluids: Near the liquid-gas critical point, the free energy is assumed to take the scaling form \(F / N=t^{2-\alpha} g\left(\delta \rho / t^{\beta}\right)\), where \(t=\left|T-T_{c}\right| / T_{c}\) is the reduced temperature, and \(\delta \rho=\rho-\rho_{c}\) measures deviations from the critical point density. The leading singular behavior of any thermodynamic parameter \(Q(t, \delta \rho)\) is of the form \(t^{x}\) on approaching the critical point along the isochore \(\rho=\rho_{c}\); or \(\delta \rho^{y}\) for a path along the isotherm \(T=T_{c}\). Find the exponents \(x\) and \(y\) for the following quantities:
 
-(a) The internal energy per particle \(\langle H\rangle / N\), and the entropy per particle \(s=S / N\).
-
-(b) The heat capacities \(C_{V}=T \partial s /\left.\partial T\right|_{V}\), and \(C_{P}=T \partial s /\left.\partial T\right|_{P}\).
-
-(c) The isothermal compressibility \(\kappa_{T}=\partial \rho /\left.\partial P\right|_{T} / \rho\), and the thermal expansion coefficient \(\alpha=\partial V /\left.\partial T\right|_{P} / V\).
-
-Check that your results for parts (b) and (c) are consistent with the thermodynamic identity \(C_{P}-C_{V}=T V \alpha^{2} / \kappa_{T}\).
-(d) Sketch the behavior of the latent heat per particle \(L\) on the coexistence curve for \(T<T_{c}\), and find its singularity as a function of \(t\).
-
 * Navigation
 - **First Part**: [[id:a9752a98-9df0-45fd-a417-50ee5654a973][Internal Energy and Entropy]]
-
-* Solution
-
-

@@ -31,7 +31,3 @@ This problem is divided into parts:
 - [[8/9b][Part (b): Expectation value calculation]]
 - [[8/9c][Part (c): Deformation calculation with cutoff]]
 - [[8/9d][Part (d): Lindemann criterion and melting temperature]]
-
-* Solution
-
-* Related Concepts

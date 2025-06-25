@@ -27,7 +27,3 @@ where \(u\) can be positive or negative. For \(u<0\), a positive \(v\) is necess
 
 * Navigation
 - **First Part**: [[id:8ad704e4-e61d-44f6-8ca4-585967752557][Energy Density Sketching]]
-
-* Solution
-
-* Related Concepts

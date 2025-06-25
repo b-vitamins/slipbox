@@ -26,7 +26,3 @@
 
 * Navigation
 - **First Part**: [[id:c12925ba-f9c1-49c4-9960-5006f6082fb8][Quadratic Hamiltonian Terms]]
-
-* Solution
-
-* Related Concepts

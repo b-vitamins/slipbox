@@ -89,7 +89,3 @@ This problem is divided into parts:
 - [[8/2h][Part (h): RG equation for K']]
 - [[8/2i][Part (i): Differential RG equation]]
 - [[8/2j][Part (j): Symmetry breaking field]]
-
-* Solution
-
-* Related Concepts

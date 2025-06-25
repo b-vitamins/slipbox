@@ -19,8 +19,3 @@ Use scaling relations to obtain \(\epsilon\)-expansions for two or more of the r
 
 * Navigation
 - **First Part**: [[id:5e7f920b-1fa3-4bb9-b7bd-bf20139d8652][Scaling Relations Derivation]]
-
-* Solution
-
-* Related Concepts
-

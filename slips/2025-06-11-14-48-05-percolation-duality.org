@@ -15,7 +15,3 @@
 
 * Navigation
 - **First Part**: [[id:c2c11ffc-93e1-4c64-819d-13568ec9116b][Chain Duality]]
-
-* Solution
-
-* Related Concepts

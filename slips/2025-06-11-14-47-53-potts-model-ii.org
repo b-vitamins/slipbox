@@ -32,7 +32,3 @@ where n_{b}^{c} and n_{s}^{c} are the numbers of bonds and sites in cluster c. T
 
 * Navigation
 - **First Part**: [[id:1002eb62-f77b-483a-a4b1-a45ad6a5e2b8][Random Cluster Expansion]]
-
-* Solution
-
-* Related Concepts
