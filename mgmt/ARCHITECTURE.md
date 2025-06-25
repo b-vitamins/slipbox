@@ -199,6 +199,76 @@ mgmt/newproject/
 - Slip creation templates
 - Bibliography synchronization
 
+## Workflow Patterns
+
+*Core operations that tools should support for effective Zettelkasten management*
+
+### Note Lifecycle Management
+**Progression**: Fleeting → Concept → Literature → Archive
+- **Fleeting notes**: Temporary captures, time-limited (7-30 days)
+- **Concept notes**: Permanent knowledge, atomic ideas, well-linked
+- **Literature notes**: Paper summaries with citations and BibTeX integration
+- **Transition triggers**: Quality thresholds, link density, time constraints
+
+### Node Management Operations
+**Splitting oversized notes**:
+- Detect notes exceeding word limits or covering multiple concepts
+- Extract atomic concepts while preserving link relationships
+- Create index notes to maintain navigation structure
+
+**Merging redundant content**:
+- Identify overlapping notes through content similarity
+- Consolidate without losing unique insights or connections
+- Update all incoming links to point to unified note
+
+**Content excision**:
+- Extract tangential content into separate notes
+- Replace sections with links to maintain reading flow
+- Ensure bidirectional linking between parent and excised content
+
+### Link Management
+**Connection discovery**:
+- Identify implicit relationships through keyword overlap
+- Suggest missing links based on topic clusters
+- Detect broken link patterns and propose fixes
+
+**Orphan management**:
+- Grace period for new notes (configurable days)
+- Connection suggestions based on content analysis
+- Quality assessment for isolated concept notes
+
+### Maintenance Workflows
+**Daily operations**:
+- Review fleeting notes approaching time limits
+- Process new literature into permanent notes
+- Update progress on research projects
+
+**Weekly maintenance**:
+- Orphan detection and connection suggestions
+- Link integrity validation and repair
+- Archive outdated fleeting notes
+- Update index and map-of-content notes
+
+**Quality improvement**:
+- Identify stub notes needing expansion
+- Find concept notes missing mathematical formulation
+- Detect literature notes without proper citations
+- Check for consistent tagging and categorization
+
+### Research Project Management
+**Project structure patterns**:
+- Index note with objectives and milestones
+- Literature review section with systematic organization
+- Experimental/theoretical notes with proper cross-referencing
+- Results tracking and analysis workflows
+- Meeting notes and collaboration spaces
+
+**Progress tracking**:
+- Milestone definitions with completion criteria
+- Time tracking integration for productivity analysis
+- Knowledge gap identification and learning paths
+- Publication and presentation preparation workflows
+
 ## Quality Assurance
 
 ### Testing Strategy
