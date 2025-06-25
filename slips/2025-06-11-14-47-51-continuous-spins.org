@@ -6,8 +6,7 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
-1. Continuous spins: In the standard \(\mathcal{O}(n)\) model, n component unit vectors are placed on the sites of a lattice. The nearest-neighbor spins are then connected by a bond
+Continuous spins: In the standard \(\mathcal{O}(n)\) model, n component unit vectors are placed on the sites of a lattice. The nearest-neighbor spins are then connected by a bond
 J \vec{s}_{i} \cdot \vec{s}_{j}. In fact, if we are only interested in universal properties, any generalized interaction f(\vec{s}_{i} \cdot \vec{s}_{j}) leads to the same critical behavior. By analogy with the Ising model, a suitable choice is
 
 \begin{align*}
@@ -18,9 +17,4 @@ f\left(\vec{s}_{i} \cdot \vec{s}_{j}\right)\right]=1+(n t) \vec{s}_{i} \cdot \ve
 
 resulting in the so called loop model.
 
-(a) Construct a high temperature expansion of the loop model (for the partition function Z ) in the parameter t, on a two-dimensional hexagonal (honeycomb) lattice.
-
-(b) Show that the limit n \rightarrow 0 describes the configurations of a single self-avoiding polymer on the lattice.
-
-* Navigation
-- **First Part**: [[id:a97830a6-a45c-45da-92c1-83778e672917][High Temperature Expansion]]
+*Next*: [[id:a97830a6-a45c-45da-92c1-83778e672917][High Temperature Expansion]]

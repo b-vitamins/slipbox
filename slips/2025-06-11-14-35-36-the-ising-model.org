@@ -6,8 +6,7 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem
-2. The Ising model: The differential recursion relations for temperature \(T\), and magnetic field \(h\), of the Ising model in \(d=1+\epsilon\) dimensions are (for \(\mathrm{b}=\mathrm{e}^{\ell}\) )
+The Ising model: The differential recursion relations for temperature \(T\), and magnetic field \(h\), of the Ising model in \(d=1+\epsilon\) dimensions are (for \(\mathrm{b}=\mathrm{e}^{\ell}\) )
 
 \begin{align*}
 \left\{\begin{array}{l}
@@ -16,5 +15,4 @@
 \end{array}\right.
 \end{align*}
 
-* Navigation
-- **First Part**: [[id:4f81f2f0-3fdf-487f-9f34-8130f09a5fd6][RG Flow Diagram]]
+*Next*: [[id:4f81f2f0-3fdf-487f-9f34-8130f09a5fd6][RG Flow Diagram]]

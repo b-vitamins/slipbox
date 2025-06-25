@@ -6,9 +6,7 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
-
-3. Transverse susceptibility: An \(n\)-component magnetization field \(\vec{m}(\mathbf{x})\) is coupled to an external field \(\vec{h}\) through a term \(-\int \mathrm{d}^{d} \mathbf{x} \vec{h} \cdot \vec{m}(\mathbf{x})\) in the Hamiltonian \(\beta \mathcal{H}\). If \(\beta \mathcal{H}\) for \(\vec{h}=0\) is invariant under rotations of \(\vec{m}(\mathbf{x})\); then the free energy density \((f=-\ln Z / V)\) only depends on the absolute value of \(\vec{h}\); i.e. \(f(\vec{h})=f(h)\), where \(h=|\vec{h}|\).
+Transverse susceptibility: An \(n\)-component magnetization field \(\vec{m}(\mathbf{x})\) is coupled to an external field \(\vec{h}\) through a term \(-\int \mathrm{d}^{d} \mathbf{x} \vec{h} \cdot \vec{m}(\mathbf{x})\) in the Hamiltonian \(\beta \mathcal{H}\). If \(\beta \mathcal{H}\) for \(\vec{h}=0\) is invariant under rotations of \(\vec{m}(\mathbf{x})\); then the free energy density \((f=-\ln Z / V)\) only depends on the absolute value of \(\vec{h}\); i.e. \(f(\vec{h})=f(h)\), where \(h=|\vec{h}|\).
 
 (a) Show that \(m_{\alpha}=\left\langle\int \mathrm{d}^{d} \mathbf{x} m_{\alpha}(\mathbf{x})\right\rangle / V=-h_{\alpha} f^{\prime}(h) / h\).
 
@@ -18,5 +16,4 @@
 
 (d) Conclude that \(\chi_{t}\) diverges as \(\vec{h} \rightarrow 0\), whenever there is a spontaneous magnetization. Is there any similar a priori reason for \(\chi_{\ell}\) to diverge?
 
-* Navigation
-- **First Part**: [[id:f58787bd-d687-4274-a50f-fcb93ccf4105][Magnetization Field Relation]]
+*Next*: [[id:f58787bd-d687-4274-a50f-fcb93ccf4105][Magnetization Field Relation]]

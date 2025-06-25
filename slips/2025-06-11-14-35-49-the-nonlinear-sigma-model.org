@@ -6,8 +6,7 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem
-3. The nonlinear \(\sigma\) model describes \(n\) component unit spins. As we shall demonstrate later, in \(d=2\) dimensions, the recursion relations for temperature \(T\), and magnetic field \(h\), are (for \(\mathrm{b}=\mathrm{e}^{\ell}\) )
+The nonlinear \(\sigma\) model describes \(n\) component unit spins. As we shall demonstrate later, in \(d=2\) dimensions, the recursion relations for temperature \(T\), and magnetic field \(h\), are (for \(\mathrm{b}=\mathrm{e}^{\ell}\) )
 
 \begin{align*}
 \left\{\begin{array}{l}
@@ -16,5 +15,4 @@
 \end{array}\right.
 \end{align*}
 
-* Navigation
-- **First Part**: [[id:f6a43a6d-b17e-413c-a6bd-b5c73f740e7c][Correlation Length Divergence]]
+*Next*: [[id:f6a43a6d-b17e-413c-a6bd-b5c73f740e7c][Correlation Length Divergence]]

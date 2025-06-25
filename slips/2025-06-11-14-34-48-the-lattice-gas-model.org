@@ -6,26 +6,9 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
 The lattice-gas model: Consider a gas of particles subject to a Hamiltonian
 \begin{align*}
 \mathcal{H}=\sum_{i=1}^{N} \frac{\vec{p}_{i}^{2}}{2 m}+\frac{1}{2} \sum_{i, j} \mathcal{V}\left(\vec{r}_{i}-\vec{r}_{j}\right), \text { in a volume } V
 \end{align*}
 
-(a) Show that the grand partition function \(\Xi\) can be written as
-\begin{align*}
-\Xi=\sum_{N=0}^{\infty} \frac{1}{N!}\left(\frac{\mathrm{e}^{\beta \mu}}{\lambda^{3}}\right)^{N} \int \prod_{i=1}^{N} \mathrm{~d}^{3} \vec{r}_{i} \exp \left
-[
--\frac{\beta}{2} \sum_{i, j} \mathcal{V}\left(\vec{r}_{i}-\vec{r}_{j}\right)\right]
-\end{align*}
-
-(b) The volume \(V\) is now subdivided into \(\mathcal{N}=V / a^{3}\) cells of volume \(a^{3}\), with the spacing \(a\) chosen small enough so that each cell \(\alpha\) is either empty or occupied by one particle; i.e. the cell occupation number \(n_{\alpha}\) is restricted to 0 or 1\(\alpha=1,2, \cdots, \mathcal{N}\). After approximating the integrals \(\int \mathrm{d}^{3} \vec{r}\) by sums \(a^{3} \sum_{\alpha=1}^{\mathcal{N}}\), show that
-\begin{align*}
-\Xi \approx \sum_{\left\{n_{\alpha}=0,1\right\}}\left(\frac{\mathrm{e}^{\beta \mu} a^{3}}{\lambda^{3}}\right)^{\sum_{\alpha} n_{\alpha}} \exp \left
-[
--\frac{\beta}{2} \sum_{\alpha, \beta=1}^{\mathcal{N}} n_{\alpha} n_{\beta} \mathcal{V}\left(\vec{r}_{\alpha}-\vec{r}_{\beta}\right)\right]
-\end{align*}
-(c) By setting \(n_{\alpha}=\left(1+\sigma_{\alpha}\right) / 2\) and approximating the potential by \(\mathcal{V}\left(\vec{r}_{\alpha}-\vec{r}_{\beta}\right)=\) \(-J / \mathcal{N}\), show that this model is identical to the one studied in problem (2). What does this imply about the behavior of this imperfect gas?
-
-* Navigation
-- **First Part**: [[id:e7afaf6a-7d61-4dda-b04e-563c8dd4b603][Grand Partition Function]]
+*Next*: [[id:e7afaf6a-7d61-4dda-b04e-563c8dd4b603][Grand Partition Function]]

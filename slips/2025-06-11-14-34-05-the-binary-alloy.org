@@ -6,22 +6,6 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
 The binary alloy: A binary alloy (as in \(\beta\) brass) consists of \(N_{A}\) atoms of type \(A\), and \(N_{B}\) atoms of type \(B\). The atoms form a simple cubic lattice, each interacting only with its six nearest neighbors. Assume an attractive energy of \(-J \quad(J>0)\) between like neighbors \(A-A\) and \(B-B\), but a repulsive energy of \(+J\) for an \(A-B\) pair.
 
-(a) What is the minimum energy configuration, or the state of the system at zero temperature?
-
-(b) Estimate the total interaction energy assuming that the atoms are randomly distributed among the \(N\) sites; i.e. each site is occupied independently with probabilities \(p_{A}=N_{A} / N\) and \(p_{B}=N_{B} / N\).
-
-(c) Estimate the mixing entropy of the alloy with the same approximation. Assume \(N_{A}, N_{B} \gg 1\).
-
-(d) Using the above, obtain a free energy function \(F(x)\), where \(x=\left(N_{A}-N_{B}\right) / N\). Expand \(F(x)\) to the fourth order in \(x\), and show that the requirement of convexity of \(F\) breaks down below a critical temperature \(T_{c}\). For the remainder of this problem use the expansion obtained in (d) in place of the full function \(F(x)\).
-
-(e) Sketch \(F(x)\) for \(T>T_{c}, T=T_{c}\), and \(T<T_{c}\). For \(T<T_{c}\) there is a range of compositions \(x<\left|x_{\text {sp }}(T)\right|\) where \(F(x)\) is not convex and hence the composition is locally unstable. Find \(x_{\mathrm{sp}}(T)\).
-
-(f) The alloy globally minimizes its free energy by separating into \(A\) rich and \(B\) rich phases of compositions \(\pm x_{\mathrm{eq}}(T)\), where \(x_{\mathrm{eq}}(T)\) minimizes the function \(F(x)\). Find \(x_{\text {eq }}(T)\).
-
-(g) In the \((T, x)\) plane sketch the phase separation boundary \(\pm x_{\text {eq }}(T)\); and the so called spinodal line \(\pm x_{\mathrm{sp}}(T)\). (The spinodal line indicates onset of metastability and hysteresis effects.)
-
-* Navigation
-- **First Part**: [[id:408db81a-ded9-4105-873c-452c0e27a789][Minimum Energy Configuration]]
+*Next*: [[id:408db81a-ded9-4105-873c-452c0e27a789][Minimum Energy Configuration]]

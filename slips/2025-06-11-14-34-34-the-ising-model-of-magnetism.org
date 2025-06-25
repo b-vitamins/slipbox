@@ -6,7 +6,6 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
 The Ising model of magnetism: The local environment of an electron in a crystal sometimes forces its spin to stay parallel or anti-parallel to a given lattice direction. As a model of magnetism in such materials we denote the direction of the spin by a single variable \(\sigma_{i}= \pm 1\) (an Ising spin). The energy of a configuration \(\left\{\sigma_{i}\right\}\) of spins is then given by
 
 \begin{align*}
@@ -35,5 +34,4 @@ F(m, h)]_{m}\). When is the saddle point method valid? Note that \(F(m, h)\) is 
 C=\left.\frac{\partial E}{\partial T}\right|_{h=0}, \quad \text { and } \quad \chi=\left.\frac{\partial \bar{m}}{\partial h}\right|_{h=0}
 \end{align*}
 
-* Navigation
-- **First Part**: [[id:aedea07d-0dac-4fd1-9bec-d2948962359c][Equivalent Neighbor Model]]
+*Next*: [[id:aedea07d-0dac-4fd1-9bec-d2948962359c][Equivalent Neighbor Model]]

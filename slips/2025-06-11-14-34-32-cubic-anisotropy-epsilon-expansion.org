@@ -6,7 +6,7 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-4. Cubic anisotropy \u03b5-expansion:
+Cubic anisotropy \u03b5-expansion:
 
 (a) By looking at diagrams in a second order perturbation expansion in both \(u\) and \(v\) show that the recursion relations for these couplings are
 
@@ -30,5 +30,4 @@ where \(C=K_{d} \Lambda^{d} /\left(t+K \Lambda^{2}\right)^{2} \approx K_{4} / K^
 
 (e) Draw schematic phase diagrams in the \((t, v)\) plane \((u>0)\) for \(n>4\) and \(n<4\), identifying the ordered phases. Are there Goldstone modes in any of these phases close to the phase transition?
 
-* Navigation
-- **First Part**: [[id:f57c3de0-3183-403b-a240-5f14da4989ee][Recursion Relations]]
+*Next*: [[id:f57c3de0-3183-403b-a240-5f14da4989ee][Recursion Relations]]

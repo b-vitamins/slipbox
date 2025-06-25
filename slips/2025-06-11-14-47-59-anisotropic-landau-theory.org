@@ -6,14 +6,6 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
-9. Anisotropic Landau theory: Consider an n-component magnetization field \vec{m}(\mathbf{x}) in d-dimensions.
+Anisotropic Landau theory: Consider an n-component magnetization field \vec{m}(\mathbf{x}) in d-dimensions.
 
-(a) Using the previous problems on anisotropy as a guide, generalize the standard Landau-Ginzburg Hamiltonian to include the effects of spacial anisotropy.
-
-(b) Are such anisotropies \"relevant\"?
-
-(c) In La_{2} CuO_{4}, the Cu atoms are arranged on the sites of a square lattice in planes, and the planes are then stacked together. Each Cu atom carries a \"spin\", which we assume to be classical, and can point along any direction in space. There is a very strong antiferromagnetic interaction in each plane. There is also a very weak interplane interaction that prefers to align successive layers. Sketch the low-temperature magnetic phase, and indicate to what universality class the order-disorder transition belongs.
-
-* Navigation
-- **First Part**: [[id:cd0dbff9-881c-4986-9c02-81390869510d][Generalized Hamiltonian]]
+*Next*: [[id:cd0dbff9-881c-4986-9c02-81390869510d][Generalized Hamiltonian]]

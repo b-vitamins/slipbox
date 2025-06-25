@@ -6,7 +6,6 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
 Magnetic thin films: A crystalline film (simple cubic) is obtained by depositing a finite number of layers \(n\). Each atom has a three component (Heisenberg) spin, and they interact through the Hamiltonian
 \begin{align*}
 -\beta \mathcal{H}=\sum_{\alpha=1}^{n} \sum_{\langle i, j\rangle} J_{H} \vec{s}_{i}^{\alpha} \cdot \vec{s}_{j}^{\alpha}+\sum_{\alpha=1}^{n-1} \sum_{i} J_{V} \vec{s}_{i}^{\alpha} \cdot \vec{s}_{i}^{\alpha+1}
@@ -36,5 +35,4 @@ Magnetic thin films: A crystalline film (simple cubic) is obtained by depositing
 
 The result in (f) illustrates a quite general result that the transition temperature of a finite system of size \(L\), approaches its asymptotic (infinite-size) limit from below, as \(T_{c}(L)=T_{c}(\infty)-A / L^{1 / \nu}\), where \(\nu\) is the exponent controlling the divergence of the correlation length. However, some liquid crystal films appeared to violate this behavior. In fact, in these films the couplings are stronger on the surface layers, which thus order before the bulk. For a discussion of the dependence of \(T_{c}\) on the number of layers in this case, see H. Li, M. Paczuski, M. Kardar, and K. Huang, Phys. Rev. B 44, 8274 (1991).
 
-* Navigation
-- **First Part**: [[id:3b8c3d1a-2268-41a3-9dd0-86e5febd1c9a][Partition Function and Free Energy]]
+*Next*: [[id:3b8c3d1a-2268-41a3-9dd0-86e5febd1c9a][Partition Function and Free Energy]]

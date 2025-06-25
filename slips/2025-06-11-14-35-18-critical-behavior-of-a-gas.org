@@ -6,7 +6,6 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
 Critical behavior of a gas: The pressure \(P\) of a gas is related to its density \(n=N / V\), and temperature \(T\) by the truncated expansion
 \begin{align*}
 P=k_{\mathrm{B}} T n-\frac{b}{2} n^{2}+\frac{c}{6} n^{3}
@@ -26,9 +25,4 @@ P(v-b)=k_{\mathrm{B}} T \exp \left(-\frac{a}{k_{\mathrm{B}} T v}\right)
 \end{align*}
 where \(v=V / N\). Find the ratio \(P v / k_{\mathrm{B}} T\) at its critical point.
 
-(f) Calculate the isothermal compressibility \(\kappa_{T}\) for \(v=v_{c}\) as a function of \(T-T_{c}\) for the Dieterici gas.
-
-(g) On the Dieterici critical isotherm expand the pressure to the lowest non-zero order in \(\left(v-v_{c}\right)\).
-
-* Navigation
-- **First Part**: [[id:10537825-5563-4f3b-a1b2-0325ecac73bd][Critical Point Properties]]
+*Next*: [[id:10537825-5563-4f3b-a1b2-0325ecac73bd][Critical Point Properties]]

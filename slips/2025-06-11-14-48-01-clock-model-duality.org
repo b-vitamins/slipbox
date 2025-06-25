@@ -6,37 +6,10 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
-11. Clock model duality: Consider spins s_{i}=(1,2, \cdots, q) placed on the sites of a square lattice, interacting via the clock model Hamiltonian
+Clock model duality: Consider spins s_{i}=(1,2, \cdots, q) placed on the sites of a square lattice, interacting via the clock model Hamiltonian
 
 \begin{align*}
 \beta \mathcal{H}_{C}=-\sum_{\langle i, j\rangle} J\left(\left|s_{i}-s_{j}\right|_{\bmod q}\right)
 \end{align*}
 
-(a) Change from the N site variables to the 2 N bond variables b_{i j}=s_{i}-s_{j}. Show that the difference in the number of variables can be accounted for by the constraint that around each plaquette (elementary square) the sum of the four bond variables must be zero modulus q.
-(b) The constraints can be implemented by adding \"delta-functions\"
-\begin{align*}
-\delta\left
-[
-S_{p}\right]_{\bmod q}=\frac{1}{q} \sum_{n_{p}=1}^{q} \exp \left
-[
-\frac{2 \pi \mathrm{i} n_{p} S_{p}}{q}\right],
-\end{align*}
-for each plaquette. Show that after summing over the bond variables, the partition function can be written in terms of the dual variables, as
-\begin{align*}
-Z=q^{-N} \sum_{\left\{n_{p}\right\}} \prod_{\left\langle p, p^{\prime}\right\rangle} \lambda\left(n_{p}-n_{p^{\prime}}\right) \equiv \sum_{\left\{n_{p}\right\}} \exp \left
-[
-\sum_{\left\langle p, p^{\prime}\right\rangle} \tilde{J}\left(n_{p}-n_{p^{\prime}}\right)\right]
-\end{align*}
-where \lambda(k) is the discrete Fourier transform of \mathrm{e}^{J(n)}.
-
-(c) Calculate the dual interaction parameter of a Potts model, and hence locate the critical point J_{c}(q).
-
-(d) Construct the dual of the anisotropic Potts model, with
-\begin{align*}
--\beta \mathcal{H}=\sum_{x, y}\left(J_{x} \delta_{s_{x, y}, s_{x+1, y}}+J_{y} \delta_{s_{x, y}, s_{x, y+1}}\right)
-\end{align*}
-i.e. with bonds of different strengths along the x and y directions. Find the line of self-dual interactions in the plane (J_{x}, J_{y}).
-
-* Navigation
-- **First Part**: [[id:e97e0aa3-cca5-4e3d-9ed9-bf2db2861cc3][Bond Variable Transformation]]
+*Next*: [[id:e97e0aa3-cca5-4e3d-9ed9-bf2db2861cc3][Bond Variable Transformation]]

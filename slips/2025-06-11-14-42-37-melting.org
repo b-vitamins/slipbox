@@ -6,8 +6,7 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
-9. Melting: The elastic energy cost of a deformation $u_{i}(\mathbf{x})$, of an isotropic lattice is
+Melting: The elastic energy cost of a deformation $u_{i}(\mathbf{x})$, of an isotropic lattice is
 
 \begin{align*}
 -\beta \mathcal{H}=\frac{1}{2} \int \mathrm{d}^{d} \mathbf{x}\left
@@ -17,17 +16,4 @@
 
 where $u_{i j}(\mathbf{x})=\left(\partial_{i} u_{j}+\partial_{j} u_{i}\right) / 2$ is the strain tensor.
 
-(a) Express the energy in terms of the Fourier transforms $u_{i}(\mathbf{q})$, and find the normal modes of vibrations.
-
-(b) Calculate the expectation value $\left\langle u_{i}(\mathbf{q}) u_{j}\left(\mathbf{q}^{\prime}\right)\right\rangle$.
-
-(c) Assuming a short-distance cutoff of the order of the lattice spacing $a$, calculate $U^{2}(\mathbf{x}) \equiv\left\langle(\vec{u}(\mathbf{x})-\vec{u}(\mathbf{0}))^{2}\right\rangle$.
-
-(d) The (heuristic) Lindemann criterion states that the lattice melts when deformations grow to a fraction of the lattice spacing, i.e. for $\lim _{|\mathbf{x}| \rightarrow \infty} U(\mathbf{x})=c_{L} a$. Assuming that $\mu=\hat{\mu} /\left(k_{\mathrm{B}} T\right)$ and $\lambda=\hat{\lambda} /\left(k_{\mathrm{B}} T\right)$, use the above criterion to calculate the melting temperature $T_{m}$. Comment on the behavior of $T_{m}$ as a function of dimension $d$.
-
-* Navigation
-This problem is divided into parts:
-- [[8/9a][Part (a): Energy in Fourier space and normal modes]]
-- [[8/9b][Part (b): Expectation value calculation]]
-- [[8/9c][Part (c): Deformation calculation with cutoff]]
-- [[8/9d][Part (d): Lindemann criterion and melting temperature]]
+*Next*: [[8/9a][Part (a): Energy in Fourier space and normal modes]]

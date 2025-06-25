@@ -6,8 +6,7 @@
 #+FILETAGS: :problem:main:spof:extended:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
-2. Matrix models: In some situations, the order parameter is a matrix rather than a vector. For example, in triangular (Heisenberg) antiferromagnets each triplet of spins aligns at 120^{\circ}, locally defining a plane. The variations of this plane across the system are described by a 3 \times 3 rotation matrix. We can construct a nonlinear \sigma model to describe a generalization of this problem as follows. Consider the Hamiltonian
+Matrix models: In some situations, the order parameter is a matrix rather than a vector. For example, in triangular (Heisenberg) antiferromagnets each triplet of spins aligns at 120^{\circ}, locally defining a plane. The variations of this plane across the system are described by a 3 \times 3 rotation matrix. We can construct a nonlinear \sigma model to describe a generalization of this problem as follows. Consider the Hamiltonian
 
 \begin{align*}
 \beta \mathcal{H}=\frac{K}{4} \int \mathrm{d}^{d} \mathbf{x} \operatorname{tr}\left
@@ -77,15 +76,4 @@ K-\frac{N-2}{2} \int_{\Lambda / b}^{\Lambda} \frac{\mathrm{d}^{d} \mathbf{q}}{(2
 
 Combining RG and symmetry arguments, it can be shown that the $3 \times 3$ matrix model is perturbatively equivalent to the $N=4$ vector model at all orders. This would suggest that stacked triangular antiferromagnets provide a realization of the \mathcal{O} (4) universality class; see P. Azaria, B. Delamotte, and T. Jolicoeur, J. Appl. Phys. 69, 6170 (1991). However, non-perturbative (topological) aspects appear to remove this equivalence as discussed in S.V. Isakov, T. Senthil, Y.B. Kim, Phys. Rev. B 72, 174417 (2005).
 
-* Navigation
-This problem is divided into parts:
-- [[8/2a][Part (a): Hamiltonian rewrite and ground state]]
-- [[8/2b][Part (b): Symmetric and anti-symmetric matrices]]
-- [[8/2c][Part (c): Small fluctuations and expansion]]
-- [[8/2d][Part (d): Goldstone modes]]
-- [[8/2e][Part (e): Two point correlation function]]
-- [[8/2f][Part (f): Coarse grained expectation value]]
-- [[8/2g][Part (g): Coarse grained coupling constant]]
-- [[8/2h][Part (h): RG equation for K']]
-- [[8/2i][Part (i): Differential RG equation]]
-- [[8/2j][Part (j): Symmetry breaking field]]
+*Next*: [[8/2a][Part (a): Hamiltonian rewrite and ground state]]

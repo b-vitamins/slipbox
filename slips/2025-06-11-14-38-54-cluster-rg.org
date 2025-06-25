@@ -7,38 +7,6 @@
 #+SETUPFILE: ../../setupfile.org
 
 
-* Problem Statement
-
 Cluster RG: Consider Ising spins on a hexagonal lattice with nearest-neighbor interactions \(J\).
 
-(a) Group the sites into clusters of four in preparation for a position space renormalization group with \(b=2\).
-
-(b) How can the majority rule be modified to define the renormalized spin of each cluster?
-
-(c) For a scheme in which the central site is chosen as the tie-breaker, make a table of all possible configurations of site-spins for a given value of the cluster-spin.
-
-(d) Focus on a pair of neighboring clusters. Indicate the contributions of intracluster and intercluster bonds to the total energy.
-
-(e) Show that in zero magnetic field, the Boltzmann weights of parallel and antiparallel clusters are given by
-
-\
-[
-R(+,+)=x^{8}+2 x^{6}+7 x^{4}+14 x^{2}+17+14 x^{-2}+7 x^{-4}+2 x^{-6}\]
-
-and
-
-\
-[
-R(+,-)=9 x^{4}+16 x^{2}+13+16 x^{-2}+9 x^{-4}+x^{-8}\]
-
-where \(x=\mathrm{e}^{J}\).
-
-(f) Find the expression for the resulting recursion relation \(J^{\prime}(J)\).
-
-(g) Estimate the critical ferromagnetic coupling \(J_{c}\), and the exponent \(\nu\) obtained from this RG scheme, and compare with the exact values.
-(h) What are the values of the magnetic and thermal exponents \(\left(y_{h}, y_{t}\right)\) at the zero temperature ferromagnetic fixed point?
-
-(i) Is the above scheme also applicable for antiferromagnetic interactions? What symmetry of the original problem is not respected by this transformation?
-
-* Navigation
-- **Part (a)**: [[id:63a408b9-9043-4d72-b899-d9c3d195d61d][Cluster Grouping Position Space RG]]
+*Next*: [[id:63a408b9-9043-4d72-b899-d9c3d195d61d][Cluster Grouping Position Space RG]]

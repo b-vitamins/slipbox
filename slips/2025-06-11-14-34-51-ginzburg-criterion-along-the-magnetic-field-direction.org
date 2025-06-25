@@ -6,9 +6,7 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
-
-8. Ginzburg criterion along the magnetic field direction: Consider the Hamiltonian
+Ginzburg criterion along the magnetic field direction: Consider the Hamiltonian
 
 \begin{align*}
 \beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left
@@ -26,19 +24,4 @@ describing an \(n\)-component magnetization vector \(\vec{m}(\mathbf{x})\), with
 
 For the remainder of this problem set \(t=0\).
 
-(d) Calculate the transverse and longitudinal susceptibilities at a finite \(h\).
-
-(e) Include fluctuations by setting \(\vec{m}(\mathbf{x})=\left(\bar{m}+\phi_{\ell}(\mathbf{x})\right) \hat{e}_{\ell}+\vec{\phi}_{t}(\mathbf{x}) \hat{e}_{t}\), and expanding \(\beta \mathcal{H}\) to second order in the \(\phi \mathrm{s}\). ( \(\hat{e}_{\ell}\) is a unit vector parallel to the average magnetization, and \(\hat{e}_{t}\) is perpendicular to it.)
-
-(f) Calculate the longitudinal and transverse correlation lengths.
-
-(g) Calculate the first correction to the free energy from these fluctuations. (The scaling form is sufficient.)
-
-(h) Calculate the first correction to magnetization, and to longitudinal susceptibility from the fluctuations.
-
-(i) By comparing the saddle point value with the correction due to fluctuations, find the upper critical dimension, \(d_{u}\), for the validity of the saddle point result.
-
-(j) For \(d<d_{u}\) obtain a Ginzburg criterion by finding the field \(h_{G}\) below which fluctuations are important. (You may ignore the numerical coefficients in \(h_{G}\), but the dependences on \(K\) and \(u\) are required.)
-
-* Navigation
-- **First Part**: [[id:d5763b2b-6b38-415c-a18d-3aadcccd39a1][Phase Boundary Diagram]]
+*Next*: [[id:d5763b2b-6b38-415c-a18d-3aadcccd39a1][Phase Boundary Diagram]]

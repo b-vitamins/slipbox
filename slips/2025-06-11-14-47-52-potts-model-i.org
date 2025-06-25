@@ -6,8 +6,7 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
-2. Potts model I: Consider Potts spins s_{i}=(1,2, \cdots, q), interacting via the Hamiltonian -\beta \mathcal{H}=K \sum_{\langle i j\rangle} \delta_{s_{i}, s_{j}}.
+Potts model I: Consider Potts spins s_{i}=(1,2, \cdots, q), interacting via the Hamiltonian -\beta \mathcal{H}=K \sum_{\langle i j\rangle} \delta_{s_{i}, s_{j}}.
 
 (a) To treat this problem graphically at high temperatures, the Boltzmann weight for each bond is written as
 
@@ -34,5 +33,4 @@ with g\left(s, s^{\prime}\right)=q \delta_{s, s^{\prime}}-1. Find C(K) and T(K).
 
 (f) How do the higher order terms in the high-temperature series for the Potts model differ from those of the Ising model? What is the fundamental difference that sets apart the graphs for q=2 ? (This is ultimately the reason why only the Ising model is solvable.)
 
-* Navigation
-- **First Part**: [[id:4f3ca6aa-1dcc-4e74-81ef-0d6b014ee556][Boltzmann Weight Decomposition]]
+*Next*: [[id:4f3ca6aa-1dcc-4e74-81ef-0d6b014ee556][Boltzmann Weight Decomposition]]

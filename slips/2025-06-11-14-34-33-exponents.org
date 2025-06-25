@@ -6,7 +6,7 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-5. Exponents: Two critical exponents at second order are,
+Exponents: Two critical exponents at second order are,
 
 \begin{align*}
 \left\{\begin{array}{l}
@@ -17,5 +17,4 @@
 
 Use scaling relations to obtain \(\epsilon\)-expansions for two or more of the remaining exponents \(\alpha, \beta, \gamma, \delta\) and \(\Delta\). Make a table of the results obtained by setting \(\epsilon=1,2\) for \(n=1,2\) and 3 ; and compare to the best estimates of these exponents that you can find by other sources (series, experiments, etc.).
 
-* Navigation
-- **First Part**: [[id:5e7f920b-1fa3-4bb9-b7bd-bf20139d8652][Scaling Relations Derivation]]
+*Next*: [[id:5e7f920b-1fa3-4bb9-b7bd-bf20139d8652][Scaling Relations Derivation]]

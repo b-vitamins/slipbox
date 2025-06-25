@@ -6,9 +6,7 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
-
-7. Long-range interactions: Consider a continuous spin field \(\vec{s}(\mathbf{x})\), subject to a long-range ferromagnetic interaction
+Long-range interactions: Consider a continuous spin field \(\vec{s}(\mathbf{x})\), subject to a long-range ferromagnetic interaction
 
 \begin{align*}
 \int \mathrm{d}^{d} \mathbf{x} \mathrm{d}^{d} \mathbf{y} \frac{\vec{s}(\mathbf{x}) \cdot \vec{s}(\mathbf{y})}{|\mathbf{x}-\mathbf{y}|^{d+\sigma}}
@@ -16,10 +14,4 @@
 
 as well as short-range interactions.
 
-(a) How is the quadratic term in the Landau-Ginzburg expansion modified by the presence of this long-range interaction? For what values of \(\sigma\) is the long-range interaction dominant?
-
-(b) By estimating the magnitude of thermally excited Goldstone modes (or otherwise), obtain the lower critical dimension \(d_{\ell}\) below which there is no long-range order.
-(c) Find the upper critical dimension \(d_{u}\), above which saddle point results provide a correct description of the phase transition.
-
-* Navigation
-- **First Part**: [[id:9c137297-215d-44f3-a178-157026f6e5ea][Quadratic Term Modification]]
+*Next*: [[id:9c137297-215d-44f3-a178-157026f6e5ea][Quadratic Term Modification]]

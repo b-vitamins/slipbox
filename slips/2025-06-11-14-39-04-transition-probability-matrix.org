@@ -7,13 +7,6 @@
 #+SETUPFILE: ../../setupfile.org
 
 
-* Problem Statement
-
 Transition probability matrix: Consider a system of two Ising spins with a coupling \(K\), which can thus be in one of four states.
 
-(a) Explicitly write the \(4 \times 4\) transition matrix corresponding to single spin flips for a Metropolis algorithm. Verify that the equilibrium weights are indeed a left eigenvector of this matrix.
-
-(b) Repeat the above exercise if both single spin and double spin flips are allowed. The two types of moves are chosen randomly with probabilities \(p\) and \(q=1-p\).
-
-* Navigation
-- **Part (a)**: [[id:0eee1410-9773-40f4-9db8-bb173cd4e125][Transition Matrix Single Spin Flips Metropolis]]
+*Next*: [[id:0eee1410-9773-40f4-9db8-bb173cd4e125][Transition Matrix Single Spin Flips Metropolis]]

@@ -6,8 +6,7 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
-4. Ising model in a field: Consider the partition function for the Ising model (\sigma_{i}= \pm 1) on a square lattice, in a magnetic field h; i.e.
+Ising model in a field: Consider the partition function for the Ising model (\sigma_{i}= \pm 1) on a square lattice, in a magnetic field h; i.e.
 
 \begin{align*}
 Z=\sum_{\left\{\sigma_{i}\right\}} \exp \left
@@ -15,9 +14,4 @@ Z=\sum_{\left\{\sigma_{i}\right\}} \exp \left
 K \sum_{\langle i j\rangle} \sigma_{i} \sigma_{j}+h \sum_{i} \sigma_{i}\right]
 \end{align*}
 
-(a) Find the general behavior of the terms in a low-temperature expansion for Z.
-
-(b) Think of a model whose high-temperature series reproduces the generic behavior found in (a); and hence obtain the Hamiltonian, and interactions of the dual model.
-
-* Navigation
-- **First Part**: [[id:a121490a-2dd6-42b5-b444-e08adf8f79a1][Low-Temperature Expansion]]
+*Next*: [[id:a121490a-2dd6-42b5-b444-e08adf8f79a1][Low-Temperature Expansion]]

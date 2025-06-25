@@ -6,7 +6,7 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-3. Cubic anisotropy - mean-field treatment: Consider the modified Landau-Ginzburg Hamiltonian
+Cubic anisotropy - mean-field treatment: Consider the modified Landau-Ginzburg Hamiltonian
 
 \begin{align*}
 \beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left
@@ -16,13 +16,4 @@
 
 for an \(n\)-component vector \(\vec{m}(\mathbf{x})=\left(m_{1}, m_{2}, \cdots, m_{n}\right)\). The "cubic anisotropy" term \(\sum_{i=1}^{n} m_{i}^{4}\) breaks the full rotational symmetry and selects specific directions.
 
-(a) For a fixed magnitude \(|\vec{m}|\), what directions in the \(n\) component magnetization space are selected for \(v>0\) and for \(v<0\) ? What is the degeneracy of easy magnetization axes in each case?
-
-(b) What are the restrictions on \(u\) and \(v\) for \(\beta \mathcal{H}\) to have finite minima? Sketch these regions of stability in the \((u, v)\) plane.
-
-(c) In general, higher order terms (e.g. \(u_{6}\left(\vec{m}^{2}\right)^{3}\) with \(u_{6}>0\) ) are present and insure stability in the regions not allowed in part (b) (as in the case of the tricritical point discussed in earlier problems). With such terms in mind, sketch the saddle point phase diagram in the \((t, v)\) plane for \(u>0\); clearly identifying the phases, and order of the transition lines.
-
-(d) Are there any Goldstone modes in the ordered phases?
-
-* Navigation
-- **First Part**: [[id:83ce655f-dd2a-4964-b8e8-82944cd45d22][Cubic Magnetization Directions]]
+*Next*: [[id:83ce655f-dd2a-4964-b8e8-82944cd45d22][Cubic Magnetization Directions]]

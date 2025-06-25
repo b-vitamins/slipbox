@@ -6,26 +6,12 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
 Surfactant condensation: \(N\) surfactant molecules are added to the surface of water over an area \(A\). They are subject to a Hamiltonian
 \begin{align*}
 \mathcal{H}=\sum_{i=1}^{N} \frac{\vec{p}_{i}^{2}}{2 m}+\frac{1}{2} \sum_{i, j} \mathcal{V}\left(\vec{r}_{i}-\vec{r}_{j}\right)
 \end{align*}
 where \(\vec{r}_{i}\) and \(\vec{p}_{i}\) are two dimensional vectors indicating the position and momentum of particle \(i\).
 
-(a) Write down the expression for the partition function \(Z(N, T, A)\) in terms of integrals over \(\vec{r}_{i}\) and \(\vec{p}_{i}\), and perform the integrals over the momenta.
-
 The interparticle potential \(\mathcal{V}(\vec{r})\) is infinite for separations \(|\vec{r}|<a\), and attractive for \(|\vec{r}|>a\) such that \(\int_{a}^{\infty} 2 \pi r \mathrm{~d} r \mathcal{V}(r)=-u_{0}\).
 
-(b) Estimate the total non-excluded area available in the positional phase space of the system of \(N\) particles.
-
-(c) Estimate the total potential energy of the system, assuming a uniform density \(n=N / A\). Using this potential energy for all configurations allowed in the previous part, write down an approximation for \(Z\).
-
-(d) The surface tension of water without surfactants is \(\sigma_{0}\), approximately independent of temperature. Calculate the surface tension \(\sigma(n, T)\) in the presence of surfactants.
-
-(e) Show that below a certain temperature, \(T_{c}\), the expression for \(\sigma\) is manifestly incorrect. What do you think happens at low temperatures?
-
-(f) Compute the heat capacities, \(C_{A}\), and write down an expression for \(C_{\sigma}\) without explicit evaluation, due to the surfactants.
-
-* Navigation
-- **First Part**: [[id:a3175e18-716b-4065-a843-f0a3a25ea5dc][Partition Function and Momentum Integrals]]
+*Next*: [[id:a3175e18-716b-4065-a843-f0a3a25ea5dc][Partition Function and Momentum Integrals]]

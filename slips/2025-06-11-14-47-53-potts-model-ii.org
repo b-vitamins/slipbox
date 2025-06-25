@@ -6,8 +6,7 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
-3. Potts model II: An alternative expansion is obtained by starting with
+Potts model II: An alternative expansion is obtained by starting with
 
 \begin{align*}
 \exp \left
@@ -16,19 +15,4 @@ K \delta\left(s_{i}, s_{j}\right)\right]=1+v(K) \delta\left(s_{i}, s_{j}\right)
 \end{align*}
 where v(K)=\mathrm{e}^{K}-1. In this case, the sum over spins does not remove any graphs, and all choices of distributing bonds at random on the lattice are acceptable.
 
-(a) Including a magnetic field h \sum_{i} \delta_{s_{i},}, show that the partition function takes the form
-
-\begin{align*}
-Z(q, K, h)=\sum_{\text {all graphs }} \prod_{\text {clusters c in graph }}\left
-[
-v^{n_{b}^{c}} \times\left(q-1+\mathrm{e}^{h n s}\right)\right]
-\end{align*}
-
-where n_{b}^{c} and n_{s}^{c} are the numbers of bonds and sites in cluster c. This is known as the random cluster expansion.
-
-(b) Show that the limit q \rightarrow 1 describes a percolation problem, in which bonds are randomly distributed on the lattice with probability p=v /(v+1). What is the percolation threshold on the square lattice?
-
-(c) Show that in the limit q \rightarrow 0, only a single connected cluster contributes to leading order. The enumeration of all such clusters is known as listing branched lattice animals.
-
-* Navigation
-- **First Part**: [[id:1002eb62-f77b-483a-a4b1-a45ad6a5e2b8][Random Cluster Expansion]]
+*Next*: [[id:1002eb62-f77b-483a-a4b1-a45ad6a5e2b8][Random Cluster Expansion]]

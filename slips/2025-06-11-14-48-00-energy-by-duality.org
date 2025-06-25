@@ -6,12 +6,6 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
-10. Energy by duality: Consider the Ising model (\sigma_{i}= \pm 1) on a square lattice with -\beta \mathcal{H}=K \sum_{\langle i j\rangle} \sigma_{i} \sigma_{j}.
+Energy by duality: Consider the Ising model (\sigma_{i}= \pm 1) on a square lattice with -\beta \mathcal{H}=K \sum_{\langle i j\rangle} \sigma_{i} \sigma_{j}.
 
-(a) Starting from the duality expression for the free energy, derive a similar relation for the internal energy U(K)=\langle H\rangle=-\partial \ln Z / \partial \ln K.
-
-(b) Using (a), calculate the exact value of U at the critical point K_{c}.
-
-* Navigation
-- **First Part**: [[id:294a3d36-93b3-449c-9c1f-6dc9df2453ea][Duality Relation]]
+*Next*: [[id:294a3d36-93b3-449c-9c1f-6dc9df2453ea][Duality Relation]]

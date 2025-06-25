@@ -6,8 +6,7 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
-6. The XY model in 2+\epsilon dimensions: The recursion relations of the XY model in two dimensions can be generalized to $d=2+\epsilon$ dimensions, and take the form:
+The XY model in 2+\epsilon dimensions: The recursion relations of the XY model in two dimensions can be generalized to $d=2+\epsilon$ dimensions, and take the form:
 
 \begin{align*}
 \left\{\begin{array}{l}
@@ -15,16 +14,5 @@
 \frac{\mathrm{d} y}{\mathrm{~d} \ell}=\left(2-\frac{\pi}{T}\right) y
 \end{array}\right.
 \end{align*}
-(a) Calculate the position of the fixed point for the finite temperature phase transition.
 
-(b) Obtain the eigenvalues at this fixed point to lowest contributing order in \epsilon.
-
-(c) Estimate the exponents \nu and \alpha for the superfluid transition in $d=3$ from these results. 
-[
-Be careful in keeping track of only the lowest nontrivial power of \epsilon in your expressions.]
-
-* Navigation
-This problem is divided into parts:
-- [[8/6a][Part (a): Fixed point position]]
-- [[8/6b][Part (b): Eigenvalues at fixed point]]
-- [[8/6c][Part (c): Exponents for d=3 superfluid transition]]
+*Next*: [[8/6a][Part (a): Fixed point position]]

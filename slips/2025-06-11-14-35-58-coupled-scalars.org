@@ -6,8 +6,7 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem
-4. Coupled scalars: Consider the Hamiltonian
+Coupled scalars: Consider the Hamiltonian
 
 \begin{align*}
 \beta \mathcal{H}=\int \mathrm{d}^{d} \mathbf{x}\left[\frac{t}{2} m^{2}+\frac{K}{2}(\nabla m)^{2}-h m+\frac{L}{2}\left(\nabla^{2} \phi\right)^{2}+v \nabla m \cdot \nabla \phi\right],
@@ -15,5 +14,4 @@
 
 coupling two one-component fields \(m\) and \(\phi\).
 
-* Navigation
-- **First Part**: [[id:3d506bc1-3bb5-474d-b22c-2532bb44e665][Fourier Transform Representation]]
+*Next*: [[id:3d506bc1-3bb5-474d-b22c-2532bb44e665][Fourier Transform Representation]]

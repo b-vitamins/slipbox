@@ -6,23 +6,6 @@
 #+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
-* Problem Statement
+Crumpled surfaces: The configurations of a crumpled sheet of paper can be described by a vector field \(\vec{r}(\mathbf{x})\), denoting the position in three-dimensional space, \(\vec{r}=\left(r_{1}, r_{2}, r_{3}\right)\), of the point at location \(\mathbf{x}=\left(x_{1}, x_{2}\right)\) on the flat sheet. The energy of each configuration is assumed to be invariant under translations and rotations of the sheet of paper.
 
-5. Crumpled surfaces: The configurations of a crumpled sheet of paper can be described by a vector field \(\vec{r}(\mathbf{x})\), denoting the position in three-dimensional space, \(\vec{r}=\left(r_{1}, r_{2}, r_{3}\right)\), of the point at location \(\mathbf{x}=\left(x_{1}, x_{2}\right)\) on the flat sheet. The energy of each configuration is assumed to be invariant under translations and rotations of the sheet of paper.
-
-(a) Show that the two lowest order (in derivatives) terms in the quadratic part of a Landau-Ginzburg Hamiltonian for this system are:
-
-\begin{align*}
-\beta \mathcal{H}_{0}
-[
-\overrightarrow{\mathrm{r}}]=\sum_{\alpha=1,2} \int \mathrm{d}^{2} \mathbf{x}\left
-[
-\frac{t}{2} \partial_{\alpha} \vec{r} \cdot \partial_{\alpha} \vec{r}+\frac{K}{2} \partial_{\alpha}^{2} \vec{r} \cdot \partial_{\alpha}^{2} \vec{r}\right]
-\end{align*}
-
-(b) Write down the lowest order terms (there are two) that appear at the quartic level.
-
-(c) Discuss what happens when \(t\) changes sign, assuming that quartic terms provide the required stability (and \(K>0\) ).
-
-* Navigation
-- **First Part**: [[id:c12925ba-f9c1-49c4-9960-5006f6082fb8][Quadratic Hamiltonian Terms]]
+*Next*: [[id:c12925ba-f9c1-49c4-9960-5006f6082fb8][Quadratic Hamiltonian Terms]]
