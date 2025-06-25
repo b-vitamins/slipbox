@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       a63fec0f-e52b-4fba-8c49-92ad79961a7f
+:CUSTOM_ID: 6-4c
+:END:
+#+TITLE: Correlation Length Expression Behavior
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (c) Problem
+Obtain the expression for the correlation length \(\xi\), and note its behavior as \(K \rightarrow \infty\).
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ec579f4c-f53d-4db9-932e-1f63a69d7751][The spin-1 model]]
+- **Previous**: [[id:b31a3052-28c2-45c0-aaf3-11eb1fd5e228][Use Symmetry Properties Largest Eigenvalue]]
+- **Next**: [[id:b6b5a701-7bed-45cf-ad1f-f1776d2b152e][RG Parameter Space Generalization]]
+
+* Related Concepts

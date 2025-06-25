@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       ec579f4c-f53d-4db9-932e-1f63a69d7751
+:CUSTOM_ID: 6-4
 :END:
 #+TITLE: The spin-1 model
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 
@@ -22,6 +23,9 @@ The spin-1 model: Consider a linear chain where the spin \(s_{i}\) at each site 
 (d) If we try to perform a renormalization group by decimation on the above chain we find that additional interactions are generated. Write down the simplest generalization of \(\beta \mathcal{H}\) whose parameter space is closed under such RG.
 
 * Solution
+
+* Navigation
+- **Part (a)**: [[id:4ff108a2-652f-41fd-8e5c-ad21137b028e][Transfer Matrix Explicit Form]]
 
 * Related Concepts
 

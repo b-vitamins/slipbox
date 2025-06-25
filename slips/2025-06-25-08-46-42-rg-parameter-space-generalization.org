@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       b6b5a701-7bed-45cf-ad1f-f1776d2b152e
+:CUSTOM_ID: 6-4d
+:END:
+#+TITLE: RG Parameter Space Generalization
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (d) Problem
+If we try to perform a renormalization group by decimation on the above chain we find that additional interactions are generated. Write down the simplest generalization of \(\beta \mathcal{H}\) whose parameter space is closed under such RG.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ec579f4c-f53d-4db9-932e-1f63a69d7751][The spin-1 model]]
+- **Previous**: [[id:a63fec0f-e52b-4fba-8c49-92ad79961a7f][Correlation Length Expression Behavior]]
+
+* Related Concepts

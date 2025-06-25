@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       4ff108a2-652f-41fd-8e5c-ad21137b028e
+:CUSTOM_ID: 6-4a
+:END:
+#+TITLE: Transfer Matrix Explicit Form
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Part (a) Problem
+Write down the transfer matrix \(\left\langle s|T| s^{\prime}\right\rangle=\mathrm{e}^{K s s^{\prime}}\) explicitly.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:ec579f4c-f53d-4db9-932e-1f63a69d7751][The spin-1 model]]
+- **Next**: [[id:b31a3052-28c2-45c0-aaf3-11eb1fd5e228][Use Symmetry Properties Largest Eigenvalue]]
+
+* Related Concepts
