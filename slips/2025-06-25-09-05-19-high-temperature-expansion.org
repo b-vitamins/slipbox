@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       a97830a6-a45c-45da-92c1-83778e672917
+:CUSTOM_ID: 7-1a
+:END:
+#+TITLE: High Temperature Expansion
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+Construct a high temperature expansion of the loop model (for the partition function Z ) in the parameter t, on a two-dimensional hexagonal (honeycomb) lattice.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:9075b5ea-8230-4cb7-b4fe-1c560f965542][Continuous spins]]
+- **Next**: [[id:4525b997-5a3f-422f-9dbd-e707fa8bc8ab][Self-Avoiding Polymer Limit]]
+
+* Related Concepts

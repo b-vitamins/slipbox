@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       9075b5ea-8230-4cb7-b4fe-1c560f965542
+:CUSTOM_ID: 7-1
 :END:
 #+TITLE: Continuous spins
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -20,6 +21,9 @@ resulting in the so called loop model.
 (a) Construct a high temperature expansion of the loop model (for the partition function Z ) in the parameter t, on a two-dimensional hexagonal (honeycomb) lattice.
 
 (b) Show that the limit n \rightarrow 0 describes the configurations of a single self-avoiding polymer on the lattice.
+
+* Navigation
+- **First Part**: [[id:a97830a6-a45c-45da-92c1-83778e672917][High Temperature Expansion]]
 
 * Solution
 
