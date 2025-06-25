@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       b1db127d-df71-4203-8c2d-44bc6bcecb39
+:CUSTOM_ID: 8-9b
+:END:
+#+TITLE: Melting - Part (b): Expectation value calculation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Calculate the expectation value $\left\langle u_{i}(\mathbf{q}) u_{j}\left(\mathbf{q}^{\prime}\right)\right\rangle$.
+
+* Context
+
+This is part (b) of problem 8-9 on Melting from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-9][Main Problem: Melting]]
+- [[8-9a][Previous: Part (a) - Energy in Fourier space and normal modes]]
+- [[8-9c][Next: Part (c) - Deformation calculation with cutoff]]
+
+* Solution
+
+* Related Concepts

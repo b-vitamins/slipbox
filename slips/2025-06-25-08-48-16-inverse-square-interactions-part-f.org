@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       85de8f23-f980-43a7-b90a-6f118bda7d40
+:CUSTOM_ID: 8-8f
+:END:
+#+TITLE: Inverse-square interactions - Part (f): Effective interaction derivation
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Derive the effective interaction given above as Eq. (1). (Hint: This is somewhat easier than the corresponding calculation for the two-dimensional Coulomb gas, as the charges along the chain must alternate.)
+
+* Context
+
+This is part (f) of problem 8-8 on Inverse-square interactions from Kardar's Statistical Physics of Fields.
+
+The effective coupling to derive is:
+\begin{align*}
+K \rightarrow K_{\mathrm{eff}}=K-2 K y_{0}^{2} \int_{a}^{\infty} \mathrm{d} r r\left(\frac{a}{r}\right)^{4 K}+\mathcal{O}\left(y_{0}^{4}\right)
+\end{align*}
+
+* Navigation
+
+- [[8-8][Main Problem: Inverse-square interactions]]
+- [[8-8e][Previous: Part (e) - RG flows and phases]]
+
+* Solution
+
+* Related Concepts

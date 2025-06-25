@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       9d16ae39-f3e5-419a-91de-4a8096c46765
+:CUSTOM_ID: 8-8b
+:END:
+#+TITLE: Inverse-square interactions - Part (b): Critical coupling lower bound
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+From the probability of the formation of a single kink, obtain a lower bound for the critical coupling $K_{c}$, separating ordered and disordered phases.
+
+* Context
+
+This is part (b) of problem 8-8 on Inverse-square interactions from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-8][Main Problem: Inverse-square interactions]]
+- [[8-8a][Previous: Part (a) - Domain wall energy cost]]
+- [[8-8c][Next: Part (c) - Dilute domain walls energy]]
+
+* Solution
+
+* Related Concepts

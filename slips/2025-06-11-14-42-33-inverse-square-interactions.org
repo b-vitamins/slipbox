@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       5cef1940-2b35-4845-bc4f-8b5dbb4df15e
+:CUSTOM_ID: 8-8
 :END:
 #+TITLE: Inverse-square interactions
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -44,6 +45,15 @@ By changing the cutoff from $a$ to $b a=(1+\delta \ell) a$, construct differenti
 (e) Sketch the renormalization group flows as a function of $T=K^{-1}$ and $y_{0}$, and discuss the phases of the model.
 
 (f) Derive the effective interaction given above as Eq. (1). (Hint: This is somewhat easier than the corresponding calculation for the two-dimensional Coulomb gas, as the charges along the chain must alternate.)
+
+* Navigation
+This problem is divided into parts:
+- [[8-8a][Part (a): Domain wall energy cost]]
+- [[8-8b][Part (b): Critical coupling lower bound]]
+- [[8-8c][Part (c): Dilute domain walls energy]]
+- [[8-8d][Part (d): Differential recursion relations]]
+- [[8-8e][Part (e): RG flows and phases]]
+- [[8-8f][Part (f): Effective interaction derivation]]
 
 * Solution
 

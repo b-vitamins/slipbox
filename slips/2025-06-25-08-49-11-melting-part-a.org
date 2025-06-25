@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       f617b291-a945-4562-bc5d-88a27ed0b5d3
+:CUSTOM_ID: 8-9a
+:END:
+#+TITLE: Melting - Part (a): Energy in Fourier space and normal modes
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Express the energy in terms of the Fourier transforms $u_{i}(\mathbf{q})$, and find the normal modes of vibrations.
+
+* Context
+
+This is part (a) of problem 8-9 on Melting from Kardar's Statistical Physics of Fields.
+
+The elastic energy cost of a deformation $u_{i}(\mathbf{x})$ of an isotropic lattice is:
+\begin{align*}
+-\beta \mathcal{H}=\frac{1}{2} \int \mathrm{d}^{d} \mathbf{x}\left[
+2 \mu u_{i j} u_{i j}+\lambda u_{i i} u_{j j}\right]
+\end{align*}
+
+where $u_{i j}(\mathbf{x})=\left(\partial_{i} u_{j}+\partial_{j} u_{i}\right) / 2$ is the strain tensor.
+
+* Navigation
+
+- [[8-9][Main Problem: Melting]]
+- [[8-9b][Next: Part (b) - Expectation value calculation]]
+
+* Solution
+
+* Related Concepts

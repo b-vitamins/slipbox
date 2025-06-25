@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       4c0b6243-0cd2-4f77-9222-166ed52a5d13
+:CUSTOM_ID: 8-7a
+:END:
+#+TITLE: Symmetry breaking fields - Part (a): Sine-Gordon model recursion relations
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Assume that we are in the low-temperature phase so that vortices are absent, i.e. the vortex fugacity $y$ is zero (in the RG sense). In this case, we can ignore the angular nature of $\theta$ and replace it with a scalar field $\phi$, leading to the partition function
+
+\begin{align*}
+Z=\int D \phi(x) \exp \left\{-\int \mathrm{d}^{2} \mathbf{x}\left[
+\frac{K}{2}(\nabla \phi)^{2}+h_{p} \cos (p \phi)\right]\right\}
+\end{align*}
+
+This is known as the sine-Gordon model, and is equivalent to the roughening transition of a previous problem. Use similar methods to obtain the recursion relations for $h_{p}$ and $K$.
+
+* Context
+
+This is part (a) of problem 8-7 on Symmetry breaking fields from Kardar's Statistical Physics of Fields.
+
+The symmetry breaking term is:
+\begin{align*}
+-\beta \mathcal{H}_{p}=h_{p} \int \mathrm{d}^{2} \mathbf{x} \cos (p \theta(\mathbf{x}))
+\end{align*}
+
+* Navigation
+
+- [[8-7][Main Problem: Symmetry breaking fields]]
+- [[8-7b][Next: Part (b) - Recursion relations with vortices]]
+
+* Solution
+
+* Related Concepts

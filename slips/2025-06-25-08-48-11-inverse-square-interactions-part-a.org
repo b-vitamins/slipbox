@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       8053968f-16c2-4b8c-bf3f-939e4d38287d
+:CUSTOM_ID: 8-8a
+:END:
+#+TITLE: Inverse-square interactions - Part (a): Domain wall energy cost
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+With $K>0$, the ground state is ferromagnetic. Estimate the energy cost of a single domain wall in a chain of length $L$. You may assume that the transition from $s=+1$ to $s=-1$ occurs over a short distance cutoff $a$.
+
+* Context
+
+This is part (a) of problem 8-8 on Inverse-square interactions from Kardar's Statistical Physics of Fields.
+
+The Hamiltonian is:
+\begin{align*}
+-\beta \mathcal{H}_{s}=\frac{K}{2} \int \mathrm{d} x \mathrm{~d} y \frac{s(x) s(y)}{|x-y|^{2}}+\int \mathrm{d} x \Phi
+[
+s(x)]
+\end{align*}
+
+where the local energy $\Phi[s]$ strongly favors $s(x)= \pm 1$ (e.g. $\Phi[s]=g\left(s^{2}-1\right)^{2}$, with $g \gg 1$).
+
+* Navigation
+
+- [[8-8][Main Problem: Inverse-square interactions]]
+- [[8-8b][Next: Part (b) - Critical coupling lower bound]]
+
+* Solution
+
+* Related Concepts

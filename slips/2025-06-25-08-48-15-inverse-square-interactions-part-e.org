@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       816de2d9-098b-4ebd-a969-66107bb551df
+:CUSTOM_ID: 8-8e
+:END:
+#+TITLE: Inverse-square interactions - Part (e): RG flows and phases
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Sketch the renormalization group flows as a function of $T=K^{-1}$ and $y_{0}$, and discuss the phases of the model.
+
+* Context
+
+This is part (e) of problem 8-8 on Inverse-square interactions from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-8][Main Problem: Inverse-square interactions]]
+- [[8-8d][Previous: Part (d) - Differential recursion relations]]
+- [[8-8f][Next: Part (f) - Effective interaction derivation]]
+
+* Solution
+
+* Related Concepts

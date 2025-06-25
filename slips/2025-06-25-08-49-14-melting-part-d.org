@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       b66f26f6-d5c0-45b3-8b9e-5f4c8d039fee
+:CUSTOM_ID: 8-9d
+:END:
+#+TITLE: Melting - Part (d): Lindemann criterion and melting temperature
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+The (heuristic) Lindemann criterion states that the lattice melts when deformations grow to a fraction of the lattice spacing, i.e. for $\lim _{|\mathbf{x}| \rightarrow \infty} U(\mathbf{x})=c_{L} a$. Assuming that $\mu=\hat{\mu} /\left(k_{\mathrm{B}} T\right)$ and $\lambda=\hat{\lambda} /\left(k_{\mathrm{B}} T\right)$, use the above criterion to calculate the melting temperature $T_{m}$. Comment on the behavior of $T_{m}$ as a function of dimension $d$.
+
+* Context
+
+This is part (d) of problem 8-9 on Melting from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-9][Main Problem: Melting]]
+- [[8-9c][Previous: Part (c) - Deformation calculation with cutoff]]
+
+* Solution
+
+* Related Concepts

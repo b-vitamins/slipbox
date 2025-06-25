@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       313e79a3-cba7-4a99-898b-aa074cb01b40
+:CUSTOM_ID: 8-7
 :END:
 #+TITLE: Symmetry breaking fields
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -35,6 +36,12 @@ This is known as the sine-Gordon model, and is equivalent to the roughening tran
 \end{align*}
 
 (c) Show that the above RG equations are only valid for $\frac{8 \pi}{p^{2}}<K^{-1}<\frac{\pi}{2}$, and thus only apply for $p>4$. Sketch possible phase diagrams for $p>4$ and $p<4$. In fact $p=4$ is rather special as there is a marginal operator $h_{4}$, and the transition to the four-fold phase (cubic anisotropy) has continuously varying critical exponents!
+
+* Navigation
+This problem is divided into parts:
+- [[8-7a][Part (a): Sine-Gordon model recursion relations]]
+- [[8-7b][Part (b): Recursion relations with vortices]]
+- [[8-7c][Part (c): Validity range and phase diagrams]]
 
 * Solution
 

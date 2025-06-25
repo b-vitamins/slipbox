@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       ac45a645-ca0f-4e88-ad3e-73afdb4b71ad
+:CUSTOM_ID: 8-7c
+:END:
+#+TITLE: Symmetry breaking fields - Part (c): Validity range and phase diagrams
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Show that the above RG equations are only valid for $\frac{8 \pi}{p^{2}}<K^{-1}<\frac{\pi}{2}$, and thus only apply for $p>4$. Sketch possible phase diagrams for $p>4$ and $p<4$. In fact $p=4$ is rather special as there is a marginal operator $h_{4}$, and the transition to the four-fold phase (cubic anisotropy) has continuously varying critical exponents!
+
+* Context
+
+This is part (c) of problem 8-7 on Symmetry breaking fields from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-7][Main Problem: Symmetry breaking fields]]
+- [[8-7b][Previous: Part (b) - Recursion relations with vortices]]
+
+* Solution
+
+* Related Concepts

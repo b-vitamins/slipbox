@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       5664f361-e18c-4bf9-a468-a4b5282816dd
+:CUSTOM_ID: 8-9c
+:END:
+#+TITLE: Melting - Part (c): Deformation calculation with cutoff
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Assuming a short-distance cutoff of the order of the lattice spacing $a$, calculate $U^{2}(\mathbf{x}) \equiv\left\langle(\vec{u}(\mathbf{x})-\vec{u}(\mathbf{0}))^{2}\right\rangle$.
+
+* Context
+
+This is part (c) of problem 8-9 on Melting from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-9][Main Problem: Melting]]
+- [[8-9b][Previous: Part (b) - Expectation value calculation]]
+- [[8-9d][Next: Part (d) - Lindemann criterion and melting temperature]]
+
+* Solution
+
+* Related Concepts

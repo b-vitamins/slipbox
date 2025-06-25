@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       a3acffee-2379-4a21-9c2f-2421054f29b3
+:CUSTOM_ID: 8-7b
+:END:
+#+TITLE: Symmetry breaking fields - Part (b): Recursion relations with vortices
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+Show that once vortices are included, the recursion relations are
+
+\begin{align*}
+\begin{aligned}
+\frac{\mathrm{d} h_{p}}{\mathrm{~d} \ell} & =\left(2-\frac{p^{2}}{4 \pi K}\right) h_{p} \\
+\frac{\mathrm{d} K^{-1}}{\mathrm{~d} \ell} & =-\frac{\pi p^{2} h_{p}^{2}}{2} K^{-2}+4 \pi^{3} y^{2} \\
+\frac{\mathrm{d} y}{\mathrm{~d} \ell} & =(2-\pi K) y
+\end{aligned}
+\end{align*}
+
+* Context
+
+This is part (b) of problem 8-7 on Symmetry breaking fields from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-7][Main Problem: Symmetry breaking fields]]
+- [[8-7a][Previous: Part (a) - Sine-Gordon model recursion relations]]
+- [[8-7c][Next: Part (c) - Validity range and phase diagrams]]
+
+* Solution
+
+* Related Concepts

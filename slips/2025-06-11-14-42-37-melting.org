@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       58eb890f-14e1-41bd-ba8e-b7e99037a263
+:CUSTOM_ID: 8-9
 :END:
 #+TITLE: Melting
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -23,6 +24,13 @@ where $u_{i j}(\mathbf{x})=\left(\partial_{i} u_{j}+\partial_{j} u_{i}\right) / 
 (c) Assuming a short-distance cutoff of the order of the lattice spacing $a$, calculate $U^{2}(\mathbf{x}) \equiv\left\langle(\vec{u}(\mathbf{x})-\vec{u}(\mathbf{0}))^{2}\right\rangle$.
 
 (d) The (heuristic) Lindemann criterion states that the lattice melts when deformations grow to a fraction of the lattice spacing, i.e. for $\lim _{|\mathbf{x}| \rightarrow \infty} U(\mathbf{x})=c_{L} a$. Assuming that $\mu=\hat{\mu} /\left(k_{\mathrm{B}} T\right)$ and $\lambda=\hat{\lambda} /\left(k_{\mathrm{B}} T\right)$, use the above criterion to calculate the melting temperature $T_{m}$. Comment on the behavior of $T_{m}$ as a function of dimension $d$.
+
+* Navigation
+This problem is divided into parts:
+- [[8-9a][Part (a): Energy in Fourier space and normal modes]]
+- [[8-9b][Part (b): Expectation value calculation]]
+- [[8-9c][Part (c): Deformation calculation with cutoff]]
+- [[8-9d][Part (d): Lindemann criterion and melting temperature]]
 
 * Solution
 

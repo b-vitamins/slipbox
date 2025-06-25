@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       c875e7b2-2f85-4f3e-95f8-88b701ac44fe
+:CUSTOM_ID: 8-8d
+:END:
+#+TITLE: Inverse-square interactions - Part (d): Differential recursion relations
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ../../setupfile.org
+
+* Problem Statement
+
+The logarithmic interaction between two opposite domain walls at a large distance $L$ is reduced due to screening by other domain walls in between. This interaction can be calculated perturbatively in $y_{0}$, and to lowest order is described by an effective coupling (see later)
+
+\begin{align*}
+K \rightarrow K_{\mathrm{eff}}=K-2 K y_{0}^{2} \int_{a}^{\infty} \mathrm{d} r r\left(\frac{a}{r}\right)^{4 K}+\mathcal{O}\left(y_{0}^{4}\right) \tag{1}
+\end{align*}
+
+By changing the cutoff from $a$ to $b a=(1+\delta \ell) a$, construct differential recursion relations for the parameters $K$ and $y_{0}$.
+
+* Context
+
+This is part (d) of problem 8-8 on Inverse-square interactions from Kardar's Statistical Physics of Fields.
+
+* Navigation
+
+- [[8-8][Main Problem: Inverse-square interactions]]
+- [[8-8c][Previous: Part (c) - Dilute domain walls energy]]
+- [[8-8e][Next: Part (e) - RG flows and phases]]
+
+* Solution
+
+* Related Concepts
