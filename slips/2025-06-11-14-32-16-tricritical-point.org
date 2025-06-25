@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       4e99d122-00d5-45af-a16b-fedbe1033585
-:CUSTOM_ID: 2-2
+:CUSTOM_ID: 2/2
 :END:
 #+TITLE: Tricritical point
 #+FILETAGS: :problem:main:spof:

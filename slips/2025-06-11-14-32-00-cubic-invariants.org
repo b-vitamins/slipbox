@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       4c036cf5-844a-4161-bc6d-5f0f29f5292f
-:CUSTOM_ID: 2-1
+:CUSTOM_ID: 2/1
 :END:
 #+TITLE: Cubic invariants
 #+FILETAGS: :problem:main:spof:

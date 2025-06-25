@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       fd3a029d-5d77-4218-9d25-eae87227fc15
-:CUSTOM_ID: 5-3
+:CUSTOM_ID: 5/3
 :END:
 #+TITLE: Cubic anisotropy - mean-field treatment
 #+FILETAGS: :problem:main:spof:

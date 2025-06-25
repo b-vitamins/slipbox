@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       cbb20e9d-2eb0-4153-8321-8012eaa2bd60
-:CUSTOM_ID: 2-5
+:CUSTOM_ID: 2/5
 :END:
 #+TITLE: Crumpled surfaces
 #+FILETAGS: :problem:main:spof:

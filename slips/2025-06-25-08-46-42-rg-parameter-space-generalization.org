@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       b6b5a701-7bed-45cf-ad1f-f1776d2b152e
-:CUSTOM_ID: 6-4d
+:CUSTOM_ID: 6/4d
 :END:
 #+TITLE: RG Parameter Space Generalization
 #+FILETAGS: :problem:part:spof:

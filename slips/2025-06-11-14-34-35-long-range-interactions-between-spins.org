@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       a37f8594-08e6-4298-9138-6fe82de7fd86
-:CUSTOM_ID: 5-7
+:CUSTOM_ID: 5/7
 :END:
 #+TITLE: Long-range interactions between spins
 #+FILETAGS: :problem:main:spof:

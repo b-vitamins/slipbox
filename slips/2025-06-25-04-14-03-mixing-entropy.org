@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       dd418d6c-40c1-4f27-91f6-5ad09df3f7af
-:CUSTOM_ID: 1-1c
+:CUSTOM_ID: 1/1c
 :END:
 #+TITLE: Mixing Entropy
 #+FILETAGS: :problem:part:spof:

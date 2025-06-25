@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       82eecb25-6ed4-49ca-bd87-39b986f6a49d
-:CUSTOM_ID: 7-14d
+:CUSTOM_ID: 7/14d
 :END:
 #+TITLE: One-Dimensional Chain
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       d029ecc7-d8a6-4a73-a788-a892134169eb
-:CUSTOM_ID: 3-2e
+:CUSTOM_ID: 3/2e
 :END:
 #+TITLE: Dimensional Analysis
 #+FILETAGS: :problem:part:spof:

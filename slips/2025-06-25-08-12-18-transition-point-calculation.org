@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       1c09e1ce-207b-4d71-9405-4b01f1ab0408
-:CUSTOM_ID: 5-2i
+:CUSTOM_ID: 5/2i
 :END:
 #+TITLE: Transition Point Calculation
 #+FILETAGS: :problem:part:spof:

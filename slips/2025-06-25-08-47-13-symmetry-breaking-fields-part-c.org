@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ac45a645-ca0f-4e88-ad3e-73afdb4b71ad
-:CUSTOM_ID: 8-7c
+:CUSTOM_ID: 8/7c
 :END:
 #+TITLE: Symmetry breaking fields - Part (c): Validity range and phase diagrams
 #+FILETAGS: :problem:part:spof:
@@ -16,8 +16,8 @@ This is part (c) of problem 8-7 on Symmetry breaking fields from Kardar's Statis
 
 * Navigation
 
-- [[8-7][Main Problem: Symmetry breaking fields]]
-- [[8-7b][Previous: Part (b) - Recursion relations with vortices]]
+- [[8/7][Main Problem: Symmetry breaking fields]]
+- [[8/7b][Previous: Part (b) - Recursion relations with vortices]]
 
 * Solution
 

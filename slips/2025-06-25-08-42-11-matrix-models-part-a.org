@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       138c2293-4978-43fa-9c21-07b9262d76b4
-:CUSTOM_ID: 8-2a
+:CUSTOM_ID: 8/2a
 :END:
 #+TITLE: Matrix models - Part (a): Hamiltonian rewrite and ground state
 #+FILETAGS: :problem:part:spof:
@@ -24,8 +24,8 @@ where $M$ is a real, $N \times N$ orthogonal matrix with condition $M M^{T}=M^{T
 
 * Navigation
 
-- [[8-2][Main Problem: Matrix models]]
-- [[8-2b][Next: Part (b) - Symmetric and anti-symmetric matrices]]
+- [[8/2][Main Problem: Matrix models]]
+- [[8/2b][Next: Part (b) - Symmetric and anti-symmetric matrices]]
 
 * Solution
 

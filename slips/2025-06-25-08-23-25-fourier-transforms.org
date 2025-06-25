@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       62751a54-00d2-4500-b906-e0e2d17722d2
-:CUSTOM_ID: 5-6a
+:CUSTOM_ID: 5/6a
 :END:
 #+TITLE: Fourier Transforms
 #+FILETAGS: :problem:part:spof:

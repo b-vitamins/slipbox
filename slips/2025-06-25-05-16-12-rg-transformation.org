@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       e000c4ab-4787-4175-ae6d-67423d40b5f5
-:CUSTOM_ID: 4-4b
+:CUSTOM_ID: 4/4b
 :END:
 #+TITLE: RG Transformation
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       0514f2bd-7ed0-486a-a2d5-5a0ad684e394
-:CUSTOM_ID: 7-9
+:CUSTOM_ID: 7/9
 :END:
 #+TITLE: Anisotropic Landau theory
 #+FILETAGS: :problem:main:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ec579f4c-f53d-4db9-932e-1f63a69d7751
-:CUSTOM_ID: 6-4
+:CUSTOM_ID: 6/4
 :END:
 #+TITLE: The spin-1 model
 #+FILETAGS: :problem:main:spof:

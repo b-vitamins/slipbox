@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       5c221620-1c0f-4817-bab6-0ebe55a206fb
-:CUSTOM_ID: 8-4c
+:CUSTOM_ID: 8/4c
 :END:
 #+TITLE: Roughening and duality - Part (c): One-dimensional version
 #+FILETAGS: :problem:part:spof:
@@ -22,8 +22,8 @@ This is part (c) of problem 8-4 on Roughening and duality from Kardar's Statisti
 
 * Navigation
 
-- [[8-4][Main Problem: Roughening and duality]]
-- [[8-4b][Previous: Part (b) - Large K and XY model connection]]
+- [[8/4][Main Problem: Roughening and duality]]
+- [[8/4b][Previous: Part (b) - Large K and XY model connection]]
 
 * Solution
 

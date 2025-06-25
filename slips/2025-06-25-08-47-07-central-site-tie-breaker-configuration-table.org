@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       a973ca8a-448f-4d4c-acf8-cb8fdf9572a5
-:CUSTOM_ID: 6-9c
+:CUSTOM_ID: 6/9c
 :END:
 #+TITLE: Central Site Tie Breaker Configuration Table
 #+FILETAGS: :problem:part:spof:

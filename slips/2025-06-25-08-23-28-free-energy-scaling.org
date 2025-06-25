@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       cbe64253-27a0-4021-907e-c18bcad6502b
-:CUSTOM_ID: 5-6d
+:CUSTOM_ID: 5/6d
 :END:
 #+TITLE: Free Energy Scaling
 #+FILETAGS: :problem:part:spof:

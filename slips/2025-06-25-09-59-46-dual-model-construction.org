@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       28d4103a-da4c-416a-8153-999a0ee8ecb0
-:CUSTOM_ID: 7-4b
+:CUSTOM_ID: 7/4b
 :END:
 #+TITLE: Dual Model Construction
 #+FILETAGS: :problem:part:spof:

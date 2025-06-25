@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       8a5b6b7b-10bc-4abf-bd14-57ede7763aa5
-:CUSTOM_ID: 7-2b
+:CUSTOM_ID: 7/2b
 :END:
 #+TITLE: Graphical Relations
 #+FILETAGS: :problem:part:spof:

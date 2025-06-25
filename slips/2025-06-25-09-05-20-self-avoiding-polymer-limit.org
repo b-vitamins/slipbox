@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       4525b997-5a3f-422f-9dbd-e707fa8bc8ab
-:CUSTOM_ID: 7-1b
+:CUSTOM_ID: 7/1b
 :END:
 #+TITLE: Self-Avoiding Polymer Limit
 #+FILETAGS: :problem:part:spof:

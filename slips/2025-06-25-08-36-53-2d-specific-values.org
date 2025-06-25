@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       b78cf6c7-971a-442b-8856-06d47082f424
-:CUSTOM_ID: 6-2d
+:CUSTOM_ID: 6/2d
 :END:
 #+TITLE: 2D Specific Values
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       acad18bc-96ac-4b6e-b06b-2581d2446e59
-:CUSTOM_ID: 3-2b
+:CUSTOM_ID: 3/2b
 :END:
 #+TITLE: Fourier Diagonalization
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       15638562-8b76-44bc-a009-3810cfb525d0
-:CUSTOM_ID: 7-13c
+:CUSTOM_ID: 7/13c
 :END:
 #+TITLE: Dual Hamiltonian
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       e156de6b-4812-44c6-a175-dd9390bb4693
-:CUSTOM_ID: 7-6a
+:CUSTOM_ID: 7/6a
 :END:
 #+TITLE: Walk Weight Calculation
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       85de8f23-f980-43a7-b90a-6f118bda7d40
-:CUSTOM_ID: 8-8f
+:CUSTOM_ID: 8/8f
 :END:
 #+TITLE: Inverse-square interactions - Part (f): Effective interaction derivation
 #+FILETAGS: :problem:part:spof:
@@ -21,8 +21,8 @@ K \rightarrow K_{\mathrm{eff}}=K-2 K y_{0}^{2} \int_{a}^{\infty} \mathrm{d} r r\
 
 * Navigation
 
-- [[8-8][Main Problem: Inverse-square interactions]]
-- [[8-8e][Previous: Part (e) - RG flows and phases]]
+- [[8/8][Main Problem: Inverse-square interactions]]
+- [[8/8e][Previous: Part (e) - RG flows and phases]]
 
 * Solution
 

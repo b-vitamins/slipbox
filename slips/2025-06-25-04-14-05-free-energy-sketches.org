@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       8078b888-f338-46cf-9cc2-53ae095cbde7
-:CUSTOM_ID: 1-1e
+:CUSTOM_ID: 1/1e
 :END:
 #+TITLE: Free Energy Sketches
 #+FILETAGS: :problem:part:spof:

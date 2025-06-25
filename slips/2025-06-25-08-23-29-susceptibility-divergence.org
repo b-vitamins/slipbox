@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ec06762e-375f-4495-8c63-61b6e459506c
-:CUSTOM_ID: 5-6e
+:CUSTOM_ID: 5/6e
 :END:
 #+TITLE: Susceptibility Divergence
 #+FILETAGS: :problem:part:spof:

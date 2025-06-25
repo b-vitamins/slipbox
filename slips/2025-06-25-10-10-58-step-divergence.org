@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       af675032-9278-4396-8823-8080826f0a73
-:CUSTOM_ID: 7-6c
+:CUSTOM_ID: 7/6c
 :END:
 #+TITLE: Step Divergence
 #+FILETAGS: :problem:part:spof:

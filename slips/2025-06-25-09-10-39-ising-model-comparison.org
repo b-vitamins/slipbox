@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       f1e15806-3898-49bc-9017-cc4451888b52
-:CUSTOM_ID: 7-2f
+:CUSTOM_ID: 7/2f
 :END:
 #+TITLE: Ising Model Comparison
 #+FILETAGS: :problem:part:spof:

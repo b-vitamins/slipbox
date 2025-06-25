@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       63e2315f-c8df-402f-9144-e5f71decae6a
-:CUSTOM_ID: 7-15c
+:CUSTOM_ID: 7/15c
 :END:
 #+TITLE: 3D Dual Percolation
 #+FILETAGS: :problem:part:spof:

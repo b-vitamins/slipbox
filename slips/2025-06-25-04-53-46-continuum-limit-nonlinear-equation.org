@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       a47c2139-ac8b-4db0-a39b-16b83c85c0fb
-:CUSTOM_ID: 1-6g
+:CUSTOM_ID: 1/6g
 :END:
 #+TITLE: Continuum Limit and Nonlinear Equation
 #+FILETAGS: :problem:part:spof:

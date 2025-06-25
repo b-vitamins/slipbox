@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       95d27d3d-0649-4ca6-a72b-79b1fdbb6622
-:CUSTOM_ID: 3-6i
+:CUSTOM_ID: 3/6i
 :END:
 #+TITLE: Upper Critical Dimension
 #+FILETAGS: :problem:part:spof:

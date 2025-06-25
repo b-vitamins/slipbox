@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       cd0dbff9-881c-4986-9c02-81390869510d
-:CUSTOM_ID: 7-9a
+:CUSTOM_ID: 7/9a
 :END:
 #+TITLE: Generalized Hamiltonian
 #+FILETAGS: :problem:part:spof:

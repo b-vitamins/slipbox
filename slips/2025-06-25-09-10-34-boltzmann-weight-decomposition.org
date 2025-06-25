@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       4f3ca6aa-1dcc-4e74-81ef-0d6b014ee556
-:CUSTOM_ID: 7-2a
+:CUSTOM_ID: 7/2a
 :END:
 #+TITLE: Boltzmann Weight Decomposition
 #+FILETAGS: :problem:part:spof:

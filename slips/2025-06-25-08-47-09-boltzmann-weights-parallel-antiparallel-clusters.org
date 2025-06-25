@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       b5e84d04-f7d1-4ebe-8206-d6cdd8cb982c
-:CUSTOM_ID: 6-9e
+:CUSTOM_ID: 6/9e
 :END:
 #+TITLE: Boltzmann Weights Parallel Antiparallel Clusters
 #+FILETAGS: :problem:part:spof:

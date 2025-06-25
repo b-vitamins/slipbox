@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       b4cd412c-d1d2-49ca-8eb1-07530be18ad2
-:CUSTOM_ID: 6-9i
+:CUSTOM_ID: 6/9i
 :END:
 #+TITLE: Antiferromagnetic Applicability Symmetry Respect
 #+FILETAGS: :problem:part:spof:

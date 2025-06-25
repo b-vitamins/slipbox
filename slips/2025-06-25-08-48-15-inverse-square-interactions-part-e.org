@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       816de2d9-098b-4ebd-a969-66107bb551df
-:CUSTOM_ID: 8-8e
+:CUSTOM_ID: 8/8e
 :END:
 #+TITLE: Inverse-square interactions - Part (e): RG flows and phases
 #+FILETAGS: :problem:part:spof:
@@ -16,9 +16,9 @@ This is part (e) of problem 8-8 on Inverse-square interactions from Kardar's Sta
 
 * Navigation
 
-- [[8-8][Main Problem: Inverse-square interactions]]
-- [[8-8d][Previous: Part (d) - Differential recursion relations]]
-- [[8-8f][Next: Part (f) - Effective interaction derivation]]
+- [[8/8][Main Problem: Inverse-square interactions]]
+- [[8/8d][Previous: Part (d) - Differential recursion relations]]
+- [[8/8f][Next: Part (f) - Effective interaction derivation]]
 
 * Solution
 

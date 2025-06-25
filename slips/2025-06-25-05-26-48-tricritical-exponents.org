@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       f2b2b565-bbe4-40b3-b4ca-2cf316710da0
-:CUSTOM_ID: 2-2d
+:CUSTOM_ID: 2/2d
 :END:
 #+TITLE: Tricritical Exponents
 #+FILETAGS: :problem:part:spof:

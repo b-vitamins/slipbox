@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       31d57469-c02a-4288-920c-9ccb2655d71c
-:CUSTOM_ID: 5-2d
+:CUSTOM_ID: 5/2d
 :END:
 #+TITLE: Goldstone Modes
 #+FILETAGS: :problem:part:spof:

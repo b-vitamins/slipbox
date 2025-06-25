@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       daeb8c35-5030-4548-9c25-17f9a593bef2
-:CUSTOM_ID: 3-2a
+:CUSTOM_ID: 3/2a
 :END:
 #+TITLE: Quadratic Expansion Partition
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       87ff2b5e-7455-4128-abd2-57776f085159
-:CUSTOM_ID: 8-6b
+:CUSTOM_ID: 8/6b
 :END:
 #+TITLE: The XY model in 2+epsilon dimensions - Part (b): Eigenvalues at fixed point
 #+FILETAGS: :problem:part:spof:
@@ -16,9 +16,9 @@ This is part (b) of problem 8-6 on The XY model in 2+epsilon dimensions from Kar
 
 * Navigation
 
-- [[8-6][Main Problem: The XY model in 2+epsilon dimensions]]
-- [[8-6a][Previous: Part (a) - Fixed point position]]
-- [[8-6c][Next: Part (c) - Exponents for d=3 superfluid transition]]
+- [[8/6][Main Problem: The XY model in 2+epsilon dimensions]]
+- [[8/6a][Previous: Part (a) - Fixed point position]]
+- [[8/6c][Next: Part (c) - Exponents for d=3 superfluid transition]]
 
 * Solution
 

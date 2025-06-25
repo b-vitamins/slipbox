@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       d0e602d4-41d8-43a1-81c8-912f5063c87b
-:CUSTOM_ID: 7-5b
+:CUSTOM_ID: 7/5b
 :END:
 #+TITLE: Internal Energy Duality
 #+FILETAGS: :problem:part:spof:

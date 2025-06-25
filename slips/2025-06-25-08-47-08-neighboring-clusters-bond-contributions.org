@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       01397f18-b745-4a5e-af7e-1bed0b422a81
-:CUSTOM_ID: 6-9d
+:CUSTOM_ID: 6/9d
 :END:
 #+TITLE: Neighboring Clusters Bond Contributions
 #+FILETAGS: :problem:part:spof:

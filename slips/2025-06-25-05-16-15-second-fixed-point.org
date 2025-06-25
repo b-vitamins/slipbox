@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       7034599e-a273-45b7-a72e-bb47d0c1703d
-:CUSTOM_ID: 4-4e
+:CUSTOM_ID: 4/4e
 :END:
 #+TITLE: Second Fixed Point
 #+FILETAGS: :problem:part:spof:

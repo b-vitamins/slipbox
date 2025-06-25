@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       373bad50-1a49-49e8-95c9-5c19da29beff
-:CUSTOM_ID: 7-8a
+:CUSTOM_ID: 7/8a
 :END:
 #+TITLE: Interface Energy
 #+FILETAGS: :problem:part:spof:

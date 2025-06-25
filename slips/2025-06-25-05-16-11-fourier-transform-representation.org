@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       3d506bc1-3bb5-474d-b22c-2532bb44e665
-:CUSTOM_ID: 4-4a
+:CUSTOM_ID: 4/4a
 :END:
 #+TITLE: Fourier Transform Representation
 #+FILETAGS: :problem:part:spof:

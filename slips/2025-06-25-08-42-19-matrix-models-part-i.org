@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ba6e8ac2-d7bd-4dae-af74-7550a81fd361
-:CUSTOM_ID: 8-2i
+:CUSTOM_ID: 8/2i
 :END:
 #+TITLE: Matrix models - Part (i): Differential RG equation
 #+FILETAGS: :problem:part:spof:
@@ -16,9 +16,9 @@ This is part (i) of problem 8-2 on Matrix models from Kardar's Statistical Physi
 
 * Navigation
 
-- [[8-2][Main Problem: Matrix models]]
-- [[8-2h][Previous: Part (h) - RG equation for K']]
-- [[8-2j][Next: Part (j) - Symmetry breaking field]]
+- [[8/2][Main Problem: Matrix models]]
+- [[8/2h][Previous: Part (h) - RG equation for K']]
+- [[8/2j][Next: Part (j) - Symmetry breaking field]]
 
 * Solution
 

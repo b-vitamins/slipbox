@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       795534c9-8171-4ccd-b55d-33b050cbc477
-:CUSTOM_ID: 8-5e
+:CUSTOM_ID: 8/5e
 :END:
 #+TITLE: Nonlinear sigma model with long-range interactions - Part (e): Renormalized interaction expression
 #+FILETAGS: :problem:part:spof:
@@ -16,9 +16,9 @@ This is part (e) of problem 8-5 on Nonlinear sigma model with long-range interac
 
 * Navigation
 
-- [[8-5][Main Problem: Nonlinear sigma model with long-range interactions]]
-- [[8-5d][Previous: Part (d) - Coarse grained expectation value]]
-- [[8-5f][Next: Part (f) - Differential RG equation]]
+- [[8/5][Main Problem: Nonlinear sigma model with long-range interactions]]
+- [[8/5d][Previous: Part (d) - Coarse grained expectation value]]
+- [[8/5f][Next: Part (f) - Differential RG equation]]
 
 * Solution
 

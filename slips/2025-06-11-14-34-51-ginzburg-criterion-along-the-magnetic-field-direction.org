@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ab4f8368-2ed1-4360-a455-d869bc75e3bd
-:CUSTOM_ID: 3-8
+:CUSTOM_ID: 3/8
 :END:
 #+TITLE: Ginzburg criterion along the magnetic field direction
 #+FILETAGS: :problem:main:spof:

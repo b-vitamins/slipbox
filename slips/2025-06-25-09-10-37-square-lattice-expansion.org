@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       e1ca3bf7-de26-42a7-9b0e-7e048038125b
-:CUSTOM_ID: 7-2d
+:CUSTOM_ID: 7/2d
 :END:
 #+TITLE: Square Lattice Expansion
 #+FILETAGS: :problem:part:spof:

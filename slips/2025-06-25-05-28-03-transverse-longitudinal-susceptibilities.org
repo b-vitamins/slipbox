@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       6f88be9d-9017-415e-b85c-434528b36688
-:CUSTOM_ID: 2-3c
+:CUSTOM_ID: 2/3c
 :END:
 #+TITLE: Transverse and Longitudinal Susceptibilities
 #+FILETAGS: :problem:part:spof:

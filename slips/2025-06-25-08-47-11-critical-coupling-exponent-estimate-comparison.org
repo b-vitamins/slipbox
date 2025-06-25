@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       8485aa97-ba4c-492c-8ce3-e0938444b156
-:CUSTOM_ID: 6-9g
+:CUSTOM_ID: 6/9g
 :END:
 #+TITLE: Critical Coupling Exponent Estimate Comparison
 #+FILETAGS: :problem:part:spof:

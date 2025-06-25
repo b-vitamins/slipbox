@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       1e0a6b03-cc55-43a9-bb84-7a7f42fa2867
-:CUSTOM_ID: 5-6
+:CUSTOM_ID: 5/6
 :END:
 #+TITLE: Anisotropic criticality
 #+FILETAGS: :problem:main:spof:

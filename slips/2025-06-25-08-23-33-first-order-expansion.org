@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       879fb210-6565-41e5-8a9c-b2d94cbf6b3d
-:CUSTOM_ID: 5-6i
+:CUSTOM_ID: 5/6i
 :END:
 #+TITLE: First Order Expansion
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       20cd0d61-7d2f-445a-b4b1-41599831b064
-:CUSTOM_ID: 8-4
+:CUSTOM_ID: 8/4
 :END:
 #+TITLE: Roughening and duality
 #+FILETAGS: :problem:main:spof:
@@ -34,9 +34,9 @@ have a roughening transition?
 
 * Navigation
 This problem is divided into parts:
-- [[8-4a][Part (a): Dual model construction]]
-- [[8-4b][Part (b): Large K and XY model connection]]
-- [[8-4c][Part (c): One-dimensional version]]
+- [[8/4a][Part (a): Dual model construction]]
+- [[8/4b][Part (b): Large K and XY model connection]]
+- [[8/4c][Part (c): One-dimensional version]]
 
 * Solution
 

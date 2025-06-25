@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       2d498b28-293f-45f9-be18-24e3b8465779
-:CUSTOM_ID: 6-8
+:CUSTOM_ID: 6/8
 :END:
 #+TITLE: Potts chain (RG)
 #+FILETAGS: :problem:main:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       f6a43a6d-b17e-413c-a6bd-b5c73f740e7c
-:CUSTOM_ID: 4-3a
+:CUSTOM_ID: 4/3a
 :END:
 #+TITLE: Correlation Length Divergence
 #+FILETAGS: :problem:part:spof:

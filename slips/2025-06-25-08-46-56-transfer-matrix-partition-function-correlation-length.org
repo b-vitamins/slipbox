@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       a3470c9f-acd0-4235-9204-feef98bd60fa
-:CUSTOM_ID: 6-8a
+:CUSTOM_ID: 6/8a
 :END:
 #+TITLE: Transfer Matrix Partition Function Correlation Length
 #+FILETAGS: :problem:part:spof:

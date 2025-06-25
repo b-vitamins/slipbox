@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       53a7411f-0128-4c45-8e86-285d0d6ab31e
-:CUSTOM_ID: 1-6b
+:CUSTOM_ID: 1/6b
 :END:
 #+TITLE: Magnetizations and Langevin Function
 #+FILETAGS: :problem:part:spof:

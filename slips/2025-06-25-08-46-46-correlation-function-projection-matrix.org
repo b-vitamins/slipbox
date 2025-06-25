@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       0b5b04a2-b3ba-4ae5-aaa7-3a57fa926bbc
-:CUSTOM_ID: 6-5d
+:CUSTOM_ID: 6/5d
 :END:
 #+TITLE: Correlation Function Projection Matrix
 #+FILETAGS: :problem:part:spof:

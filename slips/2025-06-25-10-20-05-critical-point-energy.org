@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       c159dda8-9d1b-4866-a90f-e791209bfccb
-:CUSTOM_ID: 7-10b
+:CUSTOM_ID: 7/10b
 :END:
 #+TITLE: Critical Point Energy
 #+FILETAGS: :problem:part:spof:

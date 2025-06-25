@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       12dfeb0e-a8a4-45b3-ac15-e7addf5378b8
-:CUSTOM_ID: 4-1
+:CUSTOM_ID: 4/1
 :END:
 #+TITLE: Scaling in fluids
 #+FILETAGS: :problem:main:spof:

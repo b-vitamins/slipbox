@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       8ad704e4-e61d-44f6-8ca4-585967752557
-:CUSTOM_ID: 2-2a
+:CUSTOM_ID: 2/2a
 :END:
 #+TITLE: Energy Density Sketching
 #+FILETAGS: :problem:part:spof:

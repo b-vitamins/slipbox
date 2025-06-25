@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       5fdbc273-23d5-4e94-87e7-a61af663345f
-:CUSTOM_ID: 5-2b
+:CUSTOM_ID: 5/2b
 :END:
 #+TITLE: Saddle Point Free Energies
 #+FILETAGS: :problem:part:spof:

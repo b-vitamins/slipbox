@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       a817e83f-b93f-48ef-ab05-a8c523e1586d
-:CUSTOM_ID: 2-5b
+:CUSTOM_ID: 2/5b
 :END:
 #+TITLE: Quartic Level Terms
 #+FILETAGS: :problem:part:spof:

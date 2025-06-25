@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       2d55c05f-e702-4c98-ad2d-9c8db9e322f3
-:CUSTOM_ID: 6-1e
+:CUSTOM_ID: 6/1e
 :END:
 #+TITLE: Magnetic Field Recursion
 #+FILETAGS: :problem:part:spof:

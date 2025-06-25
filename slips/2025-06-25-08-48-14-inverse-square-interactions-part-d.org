@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       c875e7b2-2f85-4f3e-95f8-88b701ac44fe
-:CUSTOM_ID: 8-8d
+:CUSTOM_ID: 8/8d
 :END:
 #+TITLE: Inverse-square interactions - Part (d): Differential recursion relations
 #+FILETAGS: :problem:part:spof:
@@ -22,9 +22,9 @@ This is part (d) of problem 8-8 on Inverse-square interactions from Kardar's Sta
 
 * Navigation
 
-- [[8-8][Main Problem: Inverse-square interactions]]
-- [[8-8c][Previous: Part (c) - Dilute domain walls energy]]
-- [[8-8e][Next: Part (e) - RG flows and phases]]
+- [[8/8][Main Problem: Inverse-square interactions]]
+- [[8/8c][Previous: Part (c) - Dilute domain walls energy]]
+- [[8/8e][Next: Part (e) - RG flows and phases]]
 
 * Solution
 

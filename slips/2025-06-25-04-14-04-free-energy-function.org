@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       84d34589-6ec9-4a0c-8a22-816d8bb7fa3c
-:CUSTOM_ID: 1-1d
+:CUSTOM_ID: 1/1d
 :END:
 #+TITLE: Free Energy Function
 #+FILETAGS: :problem:part:spof:

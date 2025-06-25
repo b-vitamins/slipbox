@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       b31a3052-28c2-45c0-aaf3-11eb1fd5e228
-:CUSTOM_ID: 6-4b
+:CUSTOM_ID: 6/4b
 :END:
 #+TITLE: Use Symmetry Properties Largest Eigenvalue
 #+FILETAGS: :problem:part:spof:

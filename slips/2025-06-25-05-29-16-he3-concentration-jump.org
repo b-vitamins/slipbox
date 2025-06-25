@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       203478dc-89f7-4381-88af-5aae2a2743e9
-:CUSTOM_ID: 2-4d
+:CUSTOM_ID: 2/4d
 :END:
 #+TITLE: He³ Concentration Jump
 #+FILETAGS: :problem:part:spof:

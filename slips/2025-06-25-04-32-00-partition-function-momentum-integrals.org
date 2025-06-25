@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       a3175e18-716b-4065-a843-f0a3a25ea5dc
-:CUSTOM_ID: 1-4a
+:CUSTOM_ID: 1/4a
 :END:
 #+TITLE: Partition Function and Momentum Integrals
 #+FILETAGS: :problem:part:spof:

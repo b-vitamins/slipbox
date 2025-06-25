@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       f58787bd-d687-4274-a50f-fcb93ccf4105
-:CUSTOM_ID: 2-3a
+:CUSTOM_ID: 2/3a
 :END:
 #+TITLE: Magnetization Field Relation
 #+FILETAGS: :problem:part:spof:

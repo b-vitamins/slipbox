@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       b15a1f62-db12-44ff-80f5-bf6f2b3d49e5
-:CUSTOM_ID: 8-1b
+:CUSTOM_ID: 8/1b
 :END:
 #+TITLE: RG Equation for g Eigenvalue
 #+FILETAGS: :problem:part:spof:

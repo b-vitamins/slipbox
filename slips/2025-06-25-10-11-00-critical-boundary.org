@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       c30d120e-e557-40f1-b149-f73df48130e4
-:CUSTOM_ID: 7-7b
+:CUSTOM_ID: 7/7b
 :END:
 #+TITLE: Critical Boundary
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ccdb18c3-cb38-4bbd-b0c5-d60c7e5aed8c
-:CUSTOM_ID: 3-3
+:CUSTOM_ID: 3/3
 :END:
 #+TITLE: Gauge fluctuations in superconductors
 #+FILETAGS: :problem:main:spof:

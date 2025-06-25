@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ddef9863-a33f-48c9-802b-eab766edf3d4
-:CUSTOM_ID: 3-1c
+:CUSTOM_ID: 3/1c
 :END:
 #+TITLE: Normal Modes 1D
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       83b25f6f-7ad3-48ba-91d6-a6b9ab5ad4b8
-:CUSTOM_ID: 8-2c
+:CUSTOM_ID: 8/2c
 :END:
 #+TITLE: Matrix models - Part (c): Small fluctuations and expansion
 #+FILETAGS: :problem:part:spof:
@@ -22,9 +22,9 @@ This is part (c) of problem 8-2 on Matrix models from Kardar's Statistical Physi
 
 * Navigation
 
-- [[8-2][Main Problem: Matrix models]]
-- [[8-2b][Previous: Part (b) - Symmetric and anti-symmetric matrices]]
-- [[8-2d][Next: Part (d) - Goldstone modes]]
+- [[8/2][Main Problem: Matrix models]]
+- [[8/2b][Previous: Part (b) - Symmetric and anti-symmetric matrices]]
+- [[8/2d][Next: Part (d) - Goldstone modes]]
 
 * Solution
 

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       674d0c22-5ee2-4c9d-bfd1-0290a7f6f2a8
-:CUSTOM_ID: 3-1f
+:CUSTOM_ID: 3/1f
 :END:
 #+TITLE: Spin Correlation Function
 #+FILETAGS: :problem:part:spof:

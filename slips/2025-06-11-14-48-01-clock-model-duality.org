@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ad3d6ceb-a2a7-411d-bf9b-72f8bd4fe50f
-:CUSTOM_ID: 7-11
+:CUSTOM_ID: 7/11
 :END:
 #+TITLE: Clock model duality
 #+FILETAGS: :problem:main:spof:

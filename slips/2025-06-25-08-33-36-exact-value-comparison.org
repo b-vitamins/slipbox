@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       6caf591e-0bd4-437b-bb68-ad48911c749d
-:CUSTOM_ID: 6-1f
+:CUSTOM_ID: 6/1f
 :END:
 #+TITLE: Exact Value Comparison
 #+FILETAGS: :problem:part:spof:

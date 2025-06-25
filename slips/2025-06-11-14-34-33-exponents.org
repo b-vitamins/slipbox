@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       91257a7f-f337-49ee-a930-a621e5b1e3db
-:CUSTOM_ID: 5-5
+:CUSTOM_ID: 5/5
 :END:
 #+TITLE: Exponents
 #+FILETAGS: :problem:main:spof:

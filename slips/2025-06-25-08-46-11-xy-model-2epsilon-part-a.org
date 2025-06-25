@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       0e4920ed-861f-431d-a34c-cb133040ae31
-:CUSTOM_ID: 8-6a
+:CUSTOM_ID: 8/6a
 :END:
 #+TITLE: The XY model in 2+epsilon dimensions - Part (a): Fixed point position
 #+FILETAGS: :problem:part:spof:
@@ -24,8 +24,8 @@ The recursion relations are:
 
 * Navigation
 
-- [[8-6][Main Problem: The XY model in 2+epsilon dimensions]]
-- [[8-6b][Next: Part (b) - Eigenvalues at fixed point]]
+- [[8/6][Main Problem: The XY model in 2+epsilon dimensions]]
+- [[8/6b][Next: Part (b) - Eigenvalues at fixed point]]
 
 * Solution
 

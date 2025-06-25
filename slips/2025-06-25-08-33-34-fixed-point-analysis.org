@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       89d9b9cd-ab98-47f5-aebe-5509d0065581
-:CUSTOM_ID: 6-1d
+:CUSTOM_ID: 6/1d
 :END:
 #+TITLE: Fixed Point Analysis
 #+FILETAGS: :problem:part:spof:

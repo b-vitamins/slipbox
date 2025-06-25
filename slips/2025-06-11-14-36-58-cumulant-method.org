@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       41145bcf-79f5-4aa5-8749-31a0d0432a96
-:CUSTOM_ID: 6-1
+:CUSTOM_ID: 6/1
 :END:
 #+TITLE: Cumulant method
 #+FILETAGS: :problem:main:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       6cda7526-f3f8-47f6-b17f-efb81ed24040
-:CUSTOM_ID: 6-6
+:CUSTOM_ID: 6/6
 :END:
 #+TITLE: XY model
 #+FILETAGS: :problem:main:spof:

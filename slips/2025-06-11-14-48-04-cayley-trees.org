@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       9335e759-e3b3-4f74-b0f0-875441acf012
-:CUSTOM_ID: 7-14
+:CUSTOM_ID: 7/14
 :END:
 #+TITLE: Cayley trees
 #+FILETAGS: :problem:main:spof:

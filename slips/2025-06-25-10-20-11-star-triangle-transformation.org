@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       7f59b8be-8a7a-4c55-9f67-bb7ab0e99a24
-:CUSTOM_ID: 7-12b
+:CUSTOM_ID: 7/12b
 :END:
 #+TITLE: Star-Triangle Transformation
 #+FILETAGS: :problem:part:spof:

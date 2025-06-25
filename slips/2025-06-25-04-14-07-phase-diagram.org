@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       6d6e8617-c530-4b6b-91a3-9f8243f49267
-:CUSTOM_ID: 1-1g
+:CUSTOM_ID: 1/1g
 :END:
 #+TITLE: Phase Diagram
 #+FILETAGS: :problem:part:spof:

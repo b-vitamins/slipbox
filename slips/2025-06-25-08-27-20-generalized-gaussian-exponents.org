@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       22d9fd06-0246-4290-9bc9-812aa73053c8
-:CUSTOM_ID: 5-7d
+:CUSTOM_ID: 5/7d
 :END:
 #+TITLE: Generalized Gaussian Exponents
 #+FILETAGS: :problem:part:spof:

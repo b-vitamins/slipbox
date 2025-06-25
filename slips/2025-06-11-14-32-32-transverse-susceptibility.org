@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       1372d39d-1f6a-42d3-b7e6-ab1e91448464
-:CUSTOM_ID: 2-3
+:CUSTOM_ID: 2/3
 :END:
 #+TITLE: Transverse susceptibility
 #+FILETAGS: :problem:main:spof:

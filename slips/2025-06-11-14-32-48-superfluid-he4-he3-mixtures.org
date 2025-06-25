@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       7e44b24f-e97b-461a-9250-ab24c07b1062
-:CUSTOM_ID: 2-4
+:CUSTOM_ID: 2/4
 :END:
 #+TITLE: Superfluid He^4-He^3 mixtures
 #+FILETAGS: :problem:main:spof:

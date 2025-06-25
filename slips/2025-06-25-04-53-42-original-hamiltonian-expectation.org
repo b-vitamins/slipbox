@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       acf6f30d-0a29-46f9-b15a-cca77c7344b4
-:CUSTOM_ID: 1-6c
+:CUSTOM_ID: 1/6c
 :END:
 #+TITLE: Original Hamiltonian Expectation
 #+FILETAGS: :problem:part:spof:

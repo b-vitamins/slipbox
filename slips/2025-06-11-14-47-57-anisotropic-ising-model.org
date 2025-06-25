@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       d56e697e-cef0-4c2d-96e3-e2074eaa0aa0
-:CUSTOM_ID: 7-7
+:CUSTOM_ID: 7/7
 :END:
 #+TITLE: Anisotropic ising model
 #+FILETAGS: :problem:main:spof:

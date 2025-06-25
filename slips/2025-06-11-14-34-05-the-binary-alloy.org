@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       0ac9a6a7-5c90-49a1-8963-08c21a6ae9db
-:CUSTOM_ID: 1-1
+:CUSTOM_ID: 1/1
 :END:
 #+TITLE: The binary alloy
 #+FILETAGS: :problem:main:spof:

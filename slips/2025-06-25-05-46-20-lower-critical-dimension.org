@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ed23e267-3587-4e66-81ec-3888d87214f7
-:CUSTOM_ID: 3-7b
+:CUSTOM_ID: 3/7b
 :END:
 #+TITLE: Lower Critical Dimension
 #+FILETAGS: :problem:part:spof:

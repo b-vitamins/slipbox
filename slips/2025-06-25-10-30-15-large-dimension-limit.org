@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       59022c81-852d-4073-a1ce-ff1167bc1a07
-:CUSTOM_ID: 7-16b
+:CUSTOM_ID: 7/16b
 :END:
 #+TITLE: Large Dimension Limit
 #+FILETAGS: :problem:part:spof:

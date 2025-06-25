@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       deda627e-fa21-479a-8ced-26f588a76edd
-:CUSTOM_ID: 8-6
+:CUSTOM_ID: 8/6
 :END:
 #+TITLE: The XY model in 2+epsilon dimensions
 #+FILETAGS: :problem:main:spof:
@@ -25,9 +25,9 @@ Be careful in keeping track of only the lowest nontrivial power of \epsilon in y
 
 * Navigation
 This problem is divided into parts:
-- [[8-6a][Part (a): Fixed point position]]
-- [[8-6b][Part (b): Eigenvalues at fixed point]]
-- [[8-6c][Part (c): Exponents for d=3 superfluid transition]]
+- [[8/6a][Part (a): Fixed point position]]
+- [[8/6b][Part (b): Eigenvalues at fixed point]]
+- [[8/6c][Part (c): Exponents for d=3 superfluid transition]]
 
 * Solution
 

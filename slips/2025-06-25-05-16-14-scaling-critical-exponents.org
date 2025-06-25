@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       15414141-c186-4020-abe8-cbe4de08809e
-:CUSTOM_ID: 4-4d
+:CUSTOM_ID: 4/4d
 :END:
 #+TITLE: Scaling and Critical Exponents
 #+FILETAGS: :problem:part:spof:

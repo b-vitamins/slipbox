@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       4a4ed520-36ea-42da-b86b-60dbc8d8549a
-:CUSTOM_ID: 1-6i
+:CUSTOM_ID: 1/6i
 :END:
 #+TITLE: Surface Magnetization Critical Behavior
 #+FILETAGS: :problem:part:spof:

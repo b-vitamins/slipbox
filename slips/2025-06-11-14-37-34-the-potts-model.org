@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       aa16ea7f-518c-4814-a1b4-5088b0d6f5e4
-:CUSTOM_ID: 6-3
+:CUSTOM_ID: 6/3
 :END:
 #+TITLE: The Potts model
 #+FILETAGS: :problem:main:spof:

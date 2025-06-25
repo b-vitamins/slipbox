@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       6ac6fefa-b74f-454d-9193-b7df4481d43d
-:CUSTOM_ID: 5-7a
+:CUSTOM_ID: 5/7a
 :END:
 #+TITLE: Power Law Hamiltonian
 #+FILETAGS: :problem:part:spof:

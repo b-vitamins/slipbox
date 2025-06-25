@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       aedea07d-0dac-4fd1-9bec-d2948962359c
-:CUSTOM_ID: 1-2a
+:CUSTOM_ID: 1/2a
 :END:
 #+TITLE: Equivalent Neighbor Model
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       96aa2a14-2758-4059-9f28-de6c8d65816f
-:CUSTOM_ID: 5-3b
+:CUSTOM_ID: 5/3b
 :END:
 #+TITLE: Stability Restrictions
 #+FILETAGS: :problem:part:spof:

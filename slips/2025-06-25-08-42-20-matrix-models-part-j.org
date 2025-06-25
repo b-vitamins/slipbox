@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       6855833b-ba2b-489d-bba8-3b25cb7f27cc
-:CUSTOM_ID: 8-2j
+:CUSTOM_ID: 8/2j
 :END:
 #+TITLE: Matrix models - Part (j): Symmetry breaking field
 #+FILETAGS: :problem:part:spof:
@@ -18,8 +18,8 @@ This is part (j) of problem 8-2 on Matrix models from Kardar's Statistical Physi
 
 * Navigation
 
-- [[8-2][Main Problem: Matrix models]]
-- [[8-2i][Previous: Part (i) - Differential RG equation]]
+- [[8/2][Main Problem: Matrix models]]
+- [[8/2i][Previous: Part (i) - Differential RG equation]]
 
 * Solution
 

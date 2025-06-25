@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       d607449d-e20b-456b-a478-9a4e2a8b63a2
-:CUSTOM_ID: 3-6e
+:CUSTOM_ID: 3/6e
 :END:
 #+TITLE: Scattering Line Shape
 #+FILETAGS: :problem:part:spof:

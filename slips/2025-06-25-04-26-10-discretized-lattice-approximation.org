@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       98368db3-9e2e-4c83-9d83-e41de7a3ea10
-:CUSTOM_ID: 1-3b
+:CUSTOM_ID: 1/3b
 :END:
 #+TITLE: Discretized Lattice Approximation
 #+FILETAGS: :problem:part:spof:

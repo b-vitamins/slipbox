@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ff352a6c-fe1a-4a75-80ea-62133d75f7af
-:CUSTOM_ID: 1-4c
+:CUSTOM_ID: 1/4c
 :END:
 #+TITLE: Potential Energy and Partition Function
 #+FILETAGS: :problem:part:spof:

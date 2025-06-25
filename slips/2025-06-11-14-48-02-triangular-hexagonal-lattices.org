@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       bdc0a744-5301-4c2b-bbd4-e9f9b693195b
-:CUSTOM_ID: 7-12
+:CUSTOM_ID: 7/12
 :END:
 #+TITLE: Triangular/hexagonal lattices
 #+FILETAGS: :problem:main:spof:

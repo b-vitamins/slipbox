@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ab9becb4-3cc0-4587-b548-0efe3e2e4e72
-:CUSTOM_ID: 3-3a
+:CUSTOM_ID: 3/3a
 :END:
 #+TITLE: Gauge Symmetry Invariance
 #+FILETAGS: :problem:part:spof:

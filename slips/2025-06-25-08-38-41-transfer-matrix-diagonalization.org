@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       28053b45-7fd9-4d5c-b97b-cd5b4d7b6b7d
-:CUSTOM_ID: 6-3a
+:CUSTOM_ID: 6/3a
 :END:
 #+TITLE: Transfer Matrix Diagonalization
 #+FILETAGS: :problem:part:spof:

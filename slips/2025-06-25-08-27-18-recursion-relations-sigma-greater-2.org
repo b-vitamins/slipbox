@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       9283921f-a415-4e15-9784-386ef5268b57
-:CUSTOM_ID: 5-7b
+:CUSTOM_ID: 5/7b
 :END:
 #+TITLE: Recursion Relations Sigma Greater 2
 #+FILETAGS: :problem:part:spof:

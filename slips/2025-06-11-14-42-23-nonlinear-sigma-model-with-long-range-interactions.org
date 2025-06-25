@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       0dc51c02-366a-4587-a35a-7d731e77745c
-:CUSTOM_ID: 8-5
+:CUSTOM_ID: 8/5
 :END:
 #+TITLE: Nonlinear sigma model with long-range interactions
 #+FILETAGS: :problem:main:spof:
@@ -33,14 +33,14 @@ We shall now construct a renormalization group by removing Fourier modes, $\vec{
 
 * Navigation
 This problem is divided into parts:
-- [[8-5a][Part (a): Long-range interaction decay]]
-- [[8-5b][Part (b): Effective Hamiltonian for fluctuations]]
-- [[8-5c][Part (c): Quadratic Hamiltonian and expectation values]]
-- [[8-5d][Part (d): Coarse grained expectation value]]
-- [[8-5e][Part (e): Renormalized interaction expression]]
-- [[8-5f][Part (f): Differential RG equation]]
-- [[8-5g][Part (g): Critical temperature and exponent]]
-- [[8-5h][Part (h): Symmetry breaking field renormalization]]
+- [[8/5a][Part (a): Long-range interaction decay]]
+- [[8/5b][Part (b): Effective Hamiltonian for fluctuations]]
+- [[8/5c][Part (c): Quadratic Hamiltonian and expectation values]]
+- [[8/5d][Part (d): Coarse grained expectation value]]
+- [[8/5e][Part (e): Renormalized interaction expression]]
+- [[8/5f][Part (f): Differential RG equation]]
+- [[8/5g][Part (g): Critical temperature and exponent]]
+- [[8/5h][Part (h): Symmetry breaking field renormalization]]
 
 * Solution
 

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       3ee4be74-6252-4d00-ae3e-6b8ba7064912
-:CUSTOM_ID: 1-6e
+:CUSTOM_ID: 1/6e
 :END:
 #+TITLE: Bulk Critical Temperature
 #+FILETAGS: :problem:part:spof:

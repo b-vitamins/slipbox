@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       4117ed07-8c68-40bf-a1f8-512bbd993c3a
-:CUSTOM_ID: 3-2
+:CUSTOM_ID: 3/2
 :END:
 #+TITLE: Capillary Waves
 #+FILETAGS: :problem:main:spof:

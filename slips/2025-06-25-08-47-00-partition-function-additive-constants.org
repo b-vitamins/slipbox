@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       02f7c8ee-0e6d-4813-87e1-bc179d956770
-:CUSTOM_ID: 6-8e
+:CUSTOM_ID: 6/8e
 :END:
 #+TITLE: Partition Function Additive Constants
 #+FILETAGS: :problem:part:spof:

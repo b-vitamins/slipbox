@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       269ad69e-b618-4184-832b-1b6464192e6b
-:CUSTOM_ID: 2-1c
+:CUSTOM_ID: 2/1c
 :END:
 #+TITLE: Correlation Length
 #+FILETAGS: :problem:part:spof:

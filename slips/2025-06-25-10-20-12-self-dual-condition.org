@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       e212f983-7f67-4472-8310-388648b0c167
-:CUSTOM_ID: 7-12c
+:CUSTOM_ID: 7/12c
 :END:
 #+TITLE: Self-Dual Condition
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       fced7b19-280f-40f3-93de-5437863e3549
-:CUSTOM_ID: 1-3c
+:CUSTOM_ID: 1/3c
 :END:
 #+TITLE: Ising Model Equivalence
 #+FILETAGS: :problem:part:spof:

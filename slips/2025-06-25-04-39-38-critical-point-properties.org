@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       10537825-5563-4f3b-a1b2-0325ecac73bd
-:CUSTOM_ID: 1-5a
+:CUSTOM_ID: 1/5a
 :END:
 #+TITLE: Critical Point Properties
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       91fdba71-8f1a-425e-bc65-86ff42cc6b47
-:CUSTOM_ID: 7-16
+:CUSTOM_ID: 7/16
 :END:
 #+TITLE: Position-space renormalization group
 #+FILETAGS: :problem:main:spof:

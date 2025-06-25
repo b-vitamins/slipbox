@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       2f96b3db-b527-4d85-b5fb-36c733429a3b
-:CUSTOM_ID: 6-8g
+:CUSTOM_ID: 6/8g
 :END:
 #+TITLE: Series Expression t Variable Reduction
 #+FILETAGS: :problem:part:spof:

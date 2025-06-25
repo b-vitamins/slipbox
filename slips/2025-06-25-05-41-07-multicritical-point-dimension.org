@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       40c5c4f1-9836-4a98-bf32-9a113c8dc114
-:CUSTOM_ID: 3-4g
+:CUSTOM_ID: 3/4g
 :END:
 #+TITLE: Multicritical Point Dimension
 #+FILETAGS: :problem:part:spof:

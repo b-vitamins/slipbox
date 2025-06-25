@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       408db81a-ded9-4105-873c-452c0e27a789
-:CUSTOM_ID: 1-1a
+:CUSTOM_ID: 1/1a
 :END:
 #+TITLE: Minimum Energy Configuration
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       dc1e8afc-9f04-467d-8b01-5f36f1d85bad
-:CUSTOM_ID: 6-8f
+:CUSTOM_ID: 6/8f
 :END:
 #+TITLE: Simplified Recursion Relations t Variable
 #+FILETAGS: :problem:part:spof:

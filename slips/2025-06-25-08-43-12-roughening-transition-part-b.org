@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       88231a8c-6cb9-4bd5-b4f2-7ce97576f373
-:CUSTOM_ID: 8-3b
+:CUSTOM_ID: 8/3b
 :END:
 #+TITLE: The roughening transition - Part (b): Height difference formula
 #+FILETAGS: :problem:part:spof:
@@ -24,9 +24,9 @@ This is part (b) of problem 8-3 on The roughening transition from Kardar's Stati
 
 * Navigation
 
-- [[8-3][Main Problem: The roughening transition]]
-- [[8-3a][Previous: Part (a) - Exponential expectation value]]
-- [[8-3c][Next: Part (c) - Perturbation theory calculation]]
+- [[8/3][Main Problem: The roughening transition]]
+- [[8/3a][Previous: Part (a) - Exponential expectation value]]
+- [[8/3c][Next: Part (c) - Perturbation theory calculation]]
 
 * Solution
 

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       a0527682-7b30-450a-9608-6d1f07792aae
-:CUSTOM_ID: 3-8f
+:CUSTOM_ID: 3/8f
 :END:
 #+TITLE: Correlation Lengths Calculation
 #+FILETAGS: :problem:part:spof:

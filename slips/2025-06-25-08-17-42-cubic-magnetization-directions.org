@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       83ce655f-dd2a-4964-b8e8-82944cd45d22
-:CUSTOM_ID: 5-3a
+:CUSTOM_ID: 5/3a
 :END:
 #+TITLE: Cubic Magnetization Directions
 #+FILETAGS: :problem:part:spof:

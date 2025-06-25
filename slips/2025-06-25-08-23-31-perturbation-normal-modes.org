@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       b0c8fb06-563e-477a-bd7d-ed27a502e745
-:CUSTOM_ID: 5-6g
+:CUSTOM_ID: 5/6g
 :END:
 #+TITLE: Perturbation Normal Modes
 #+FILETAGS: :problem:part:spof:

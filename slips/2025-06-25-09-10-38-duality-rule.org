@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       96d16054-f3b8-41a8-a6e3-47f549b6ff31
-:CUSTOM_ID: 7-2e
+:CUSTOM_ID: 7/2e
 :END:
 #+TITLE: Duality Rule
 #+FILETAGS: :problem:part:spof:

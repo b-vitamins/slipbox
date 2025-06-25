@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       6102036a-65da-4ad2-92b2-cf37d2d81ef1
-:CUSTOM_ID: 5-7c
+:CUSTOM_ID: 5/7c
 :END:
 #+TITLE: Sigma Less 2 Fixed Hamiltonian
 #+FILETAGS: :problem:part:spof:

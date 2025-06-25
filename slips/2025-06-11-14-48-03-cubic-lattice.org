@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       cc06ac20-0de2-4789-b840-d0c1628a00a4
-:CUSTOM_ID: 7-13
+:CUSTOM_ID: 7/13
 :END:
 #+TITLE: Cubic lattice
 #+FILETAGS: :problem:main:spof:

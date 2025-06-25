@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       4f81f2f0-3fdf-487f-9f34-8130f09a5fd6
-:CUSTOM_ID: 4-2a
+:CUSTOM_ID: 4/2a
 :END:
 #+TITLE: RG Flow Diagram
 #+FILETAGS: :problem:part:spof:

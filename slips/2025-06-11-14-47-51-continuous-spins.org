@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       9075b5ea-8230-4cb7-b4fe-1c560f965542
-:CUSTOM_ID: 7-1
+:CUSTOM_ID: 7/1
 :END:
 #+TITLE: Continuous spins
 #+FILETAGS: :problem:main:spof:

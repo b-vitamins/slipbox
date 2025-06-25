@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ae749d86-6fa4-4f7c-9f29-daa589801d8f
-:CUSTOM_ID: 3-8d
+:CUSTOM_ID: 3/8d
 :END:
 #+TITLE: Susceptibilities Calculation
 #+FILETAGS: :problem:part:spof:

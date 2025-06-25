@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       a30313a3-ba2f-41c2-8e37-a854d6d111b1
-:CUSTOM_ID: 8-3
+:CUSTOM_ID: 8/3
 :END:
 #+TITLE: The roughening transition
 #+FILETAGS: :problem:main:spof:
@@ -54,13 +54,13 @@ where $G_{k}(\mathbf{x}-\mathbf{y})=\langle\exp
 
 * Navigation
 This problem is divided into parts:
-- [[8-3a][Part (a): Exponential expectation value]]
-- [[8-3b][Part (b): Height difference formula]]
-- [[8-3c][Part (c): Perturbation theory calculation]]
-- [[8-3d][Part (d): Effective interaction and critical K]]
-- [[8-3e][Part (e): Renormalization group equations]]
-- [[8-3f][Part (f): Phase diagram and phases]]
-- [[8-3g][Part (g): Discontinuous jump magnitude]]
+- [[8/3a][Part (a): Exponential expectation value]]
+- [[8/3b][Part (b): Height difference formula]]
+- [[8/3c][Part (c): Perturbation theory calculation]]
+- [[8/3d][Part (d): Effective interaction and critical K]]
+- [[8/3e][Part (e): Renormalization group equations]]
+- [[8/3f][Part (f): Phase diagram and phases]]
+- [[8/3g][Part (g): Discontinuous jump magnitude]]
 
 * Solution
 

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       d3255c01-5c56-4424-a4bf-6f796c6064a0
-:CUSTOM_ID: 6-10
+:CUSTOM_ID: 6/10
 :END:
 #+TITLE: Transition probability matrix
 #+FILETAGS: :problem:main:spof:

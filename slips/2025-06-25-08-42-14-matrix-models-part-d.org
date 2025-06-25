@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       36aa90af-ab02-4d53-ae0c-cab952e3c69d
-:CUSTOM_ID: 8-2d
+:CUSTOM_ID: 8/2d
 :END:
 #+TITLE: Matrix models - Part (d): Goldstone modes
 #+FILETAGS: :problem:part:spof:
@@ -16,9 +16,9 @@ This is part (d) of problem 8-2 on Matrix models from Kardar's Statistical Physi
 
 * Navigation
 
-- [[8-2][Main Problem: Matrix models]]
-- [[8-2c][Previous: Part (c) - Small fluctuations and expansion]]
-- [[8-2e][Next: Part (e) - Two point correlation function]]
+- [[8/2][Main Problem: Matrix models]]
+- [[8/2c][Previous: Part (c) - Small fluctuations and expansion]]
+- [[8/2e][Next: Part (e) - Two point correlation function]]
 
 * Solution
 

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       f92ae50c-b8cd-4e74-bf01-40ad2d7754bf
-:CUSTOM_ID: 8-2b
+:CUSTOM_ID: 8/2b
 :END:
 #+TITLE: Matrix models - Part (b): Symmetric and anti-symmetric matrices
 #+FILETAGS: :problem:part:spof:
@@ -25,9 +25,9 @@ This is part (b) of problem 8-2 on Matrix models from Kardar's Statistical Physi
 
 * Navigation
 
-- [[8-2][Main Problem: Matrix models]]
-- [[8-2a][Previous: Part (a) - Hamiltonian rewrite and ground state]]
-- [[8-2c][Next: Part (c) - Small fluctuations and expansion]]
+- [[8/2][Main Problem: Matrix models]]
+- [[8/2a][Previous: Part (a) - Hamiltonian rewrite and ground state]]
+- [[8/2c][Next: Part (c) - Small fluctuations and expansion]]
 
 * Solution
 

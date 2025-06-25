@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       264f7761-5c6b-40d4-9e41-01576319e913
-:CUSTOM_ID: 6-1b
+:CUSTOM_ID: 6/1b
 :END:
 #+TITLE: Renormalized Spin Definition
 #+FILETAGS: :problem:part:spof:

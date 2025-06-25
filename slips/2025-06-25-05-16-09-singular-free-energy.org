@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       6493ffd7-d927-4d06-9c60-9c183466fa5d
-:CUSTOM_ID: 4-3b
+:CUSTOM_ID: 4/3b
 :END:
 #+TITLE: Singular Free Energy
 #+FILETAGS: :problem:part:spof:

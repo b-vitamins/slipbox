@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       3515fd7d-34c3-407f-9097-6994d9efd73b
-:CUSTOM_ID: 7-3c
+:CUSTOM_ID: 7/3c
 :END:
 #+TITLE: Lattice Animals
 #+FILETAGS: :problem:part:spof:

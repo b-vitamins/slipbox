@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       dda05888-c224-42e4-a180-f9e6733870c4
-:CUSTOM_ID: 2-4h
+:CUSTOM_ID: 2/4h
 :END:
 #+TITLE: Disordered Phase Decay
 #+FILETAGS: :problem:part:spof:

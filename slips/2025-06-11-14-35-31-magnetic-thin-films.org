@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ba4848ab-8c40-4dcd-86fd-d049b8b45246
-:CUSTOM_ID: 1-6
+:CUSTOM_ID: 1/6
 :END:
 #+TITLE: Magnetic thin films
 #+FILETAGS: :problem:main:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       bb6ee1e9-efb3-41f8-a034-daef2bab5622
-:CUSTOM_ID: 6-6a
+:CUSTOM_ID: 6/6a
 :END:
 #+TITLE: Transfer Matrix Diagonalization Eigenvectors
 #+FILETAGS: :problem:part:spof:

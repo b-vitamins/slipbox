@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       313e79a3-cba7-4a99-898b-aa074cb01b40
-:CUSTOM_ID: 8-7
+:CUSTOM_ID: 8/7
 :END:
 #+TITLE: Symmetry breaking fields
 #+FILETAGS: :problem:main:spof:
@@ -39,9 +39,9 @@ This is known as the sine-Gordon model, and is equivalent to the roughening tran
 
 * Navigation
 This problem is divided into parts:
-- [[8-7a][Part (a): Sine-Gordon model recursion relations]]
-- [[8-7b][Part (b): Recursion relations with vortices]]
-- [[8-7c][Part (c): Validity range and phase diagrams]]
+- [[8/7a][Part (a): Sine-Gordon model recursion relations]]
+- [[8/7b][Part (b): Recursion relations with vortices]]
+- [[8/7c][Part (c): Validity range and phase diagrams]]
 
 * Solution
 

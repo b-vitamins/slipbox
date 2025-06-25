@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       db1d40d7-0b61-4bc0-a118-debff01e9cfc
-:CUSTOM_ID: 6-5a
+:CUSTOM_ID: 6/5a
 :END:
 #+TITLE: Partition Function Transfer Matrix Form
 #+FILETAGS: :problem:part:spof:

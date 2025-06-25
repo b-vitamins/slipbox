@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       4d2f9b84-15d3-4855-b78f-6a3435b4e197
-:CUSTOM_ID: 4-2
+:CUSTOM_ID: 4/2
 :END:
 #+TITLE: The Ising model
 #+FILETAGS: :problem:main:spof:

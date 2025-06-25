@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       289d1868-c0f7-428b-8fec-7cd11c1350e4
-:CUSTOM_ID: 7-14c
+:CUSTOM_ID: 7/14c
 :END:
 #+TITLE: Mean Field Approximation
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       953aaa39-14da-420e-ad3c-d40959449317
-:CUSTOM_ID: 3-1e
+:CUSTOM_ID: 3/1e
 :END:
 #+TITLE: Free Energy and Heat Capacity
 #+FILETAGS: :problem:part:spof:

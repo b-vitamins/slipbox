@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       8c83faa8-094e-4de2-ab34-2b9549c42f67
-:CUSTOM_ID: 6-7c
+:CUSTOM_ID: 6/7c
 :END:
 #+TITLE: Gibbs Partition Function Laplace Transform
 #+FILETAGS: :problem:part:spof:

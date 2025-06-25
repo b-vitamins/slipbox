@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       620157f8-27f6-41f5-945c-59fc123f847b
-:CUSTOM_ID: 8-4a
+:CUSTOM_ID: 8/4a
 :END:
 #+TITLE: Roughening and duality - Part (a): Dual model construction
 #+FILETAGS: :problem:part:spof:
@@ -29,8 +29,8 @@ where the "$\infty$" power means no energy cost for $\Delta h=0$; energy cost of
 
 * Navigation
 
-- [[8-4][Main Problem: Roughening and duality]]
-- [[8-4b][Next: Part (b) - Large K and XY model connection]]
+- [[8/4][Main Problem: Roughening and duality]]
+- [[8/4b][Next: Part (b) - Large K and XY model connection]]
 
 * Solution
 

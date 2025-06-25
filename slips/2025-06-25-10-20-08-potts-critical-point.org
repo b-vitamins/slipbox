@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       4877c82c-2738-4107-aa2d-42fd3f8cd1a3
-:CUSTOM_ID: 7-11c
+:CUSTOM_ID: 7/11c
 :END:
 #+TITLE: Potts Critical Point
 #+FILETAGS: :problem:part:spof:

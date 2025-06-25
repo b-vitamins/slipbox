@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       075d36d8-22b9-4507-81b6-ad28c717ad78
-:CUSTOM_ID: 5-4
+:CUSTOM_ID: 5/4
 :END:
 #+TITLE: Cubic anisotropy \u03b5-expansion
 #+FILETAGS: :problem:main:spof:

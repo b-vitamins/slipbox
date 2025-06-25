@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       d5763b2b-6b38-415c-a18d-3aadcccd39a1
-:CUSTOM_ID: 3-8a
+:CUSTOM_ID: 3/8a
 :END:
 #+TITLE: Phase Boundary Diagram
 #+FILETAGS: :problem:part:spof:

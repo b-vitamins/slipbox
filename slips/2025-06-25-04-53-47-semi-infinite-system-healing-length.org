@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       aa7f0fac-743b-4386-bea7-9555a3576813
-:CUSTOM_ID: 1-6h
+:CUSTOM_ID: 1/6h
 :END:
 #+TITLE: Semi-infinite System and Healing Length
 #+FILETAGS: :problem:part:spof:

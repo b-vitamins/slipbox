@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       58f19717-e063-4310-954b-1a063be438ef
-:CUSTOM_ID: 6-6c
+:CUSTOM_ID: 6/6c
 :END:
 #+TITLE: Correlation Length Infinite K Behavior
 #+FILETAGS: :problem:part:spof:

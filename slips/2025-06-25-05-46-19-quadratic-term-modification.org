@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       9c137297-215d-44f3-a178-157026f6e5ea
-:CUSTOM_ID: 3-7a
+:CUSTOM_ID: 3/7a
 :END:
 #+TITLE: Quadratic Term Modification
 #+FILETAGS: :problem:part:spof:

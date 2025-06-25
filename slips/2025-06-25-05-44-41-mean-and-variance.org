@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       46ceff8a-254a-4535-9556-b96d0ee76889
-:CUSTOM_ID: 3-6d
+:CUSTOM_ID: 3/6d
 :END:
 #+TITLE: Mean and Variance
 #+FILETAGS: :problem:part:spof:

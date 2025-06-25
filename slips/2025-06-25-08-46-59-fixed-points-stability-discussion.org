@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       26f0f425-45fe-4b1c-b189-c199df7e6b3c
-:CUSTOM_ID: 6-8d
+:CUSTOM_ID: 6/8d
 :END:
 #+TITLE: Fixed Points Stability Discussion
 #+FILETAGS: :problem:part:spof:

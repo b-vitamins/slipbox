@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       7e506366-c941-499f-8b08-e49bd9fc1318
-:CUSTOM_ID: 7-15b
+:CUSTOM_ID: 7/15b
 :END:
 #+TITLE: Square Lattice Threshold
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       e7afaf6a-7d61-4dda-b04e-563c8dd4b603
-:CUSTOM_ID: 1-3a
+:CUSTOM_ID: 1/3a
 :END:
 #+TITLE: Grand Partition Function
 #+FILETAGS: :problem:part:spof:

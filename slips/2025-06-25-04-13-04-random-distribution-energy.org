@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ac774e73-d3ce-4e3f-ad98-204fc55a82a2
-:CUSTOM_ID: 1-1b
+:CUSTOM_ID: 1/1b
 :END:
 #+TITLE: Random Distribution Energy
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       f617b291-a945-4562-bc5d-88a27ed0b5d3
-:CUSTOM_ID: 8-9a
+:CUSTOM_ID: 8/9a
 :END:
 #+TITLE: Melting - Part (a): Energy in Fourier space and normal modes
 #+FILETAGS: :problem:part:spof:
@@ -24,8 +24,8 @@ where $u_{i j}(\mathbf{x})=\left(\partial_{i} u_{j}+\partial_{j} u_{i}\right) / 
 
 * Navigation
 
-- [[8-9][Main Problem: Melting]]
-- [[8-9b][Next: Part (b) - Expectation value calculation]]
+- [[8/9][Main Problem: Melting]]
+- [[8/9b][Next: Part (b) - Expectation value calculation]]
 
 * Solution
 

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       5c03d858-0874-4458-95ba-8dc966d82648
-:CUSTOM_ID: 1-5c
+:CUSTOM_ID: 1/5c
 :END:
 #+TITLE: Critical Isotherm
 #+FILETAGS: :problem:part:spof:

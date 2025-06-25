@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       8df7fdd1-13c5-47f0-a79d-2320bf5796f4
-:CUSTOM_ID: 3-3d
+:CUSTOM_ID: 3/3d
 :END:
 #+TITLE: Fourier Expectation Values
 #+FILETAGS: :problem:part:spof:

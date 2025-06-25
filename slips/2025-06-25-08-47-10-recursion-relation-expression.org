@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       65bd75c0-bdde-4cfb-88ba-86bea7820f1c
-:CUSTOM_ID: 6-9f
+:CUSTOM_ID: 6/9f
 :END:
 #+TITLE: Recursion Relation Expression
 #+FILETAGS: :problem:part:spof:

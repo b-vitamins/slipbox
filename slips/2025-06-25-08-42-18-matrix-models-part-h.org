@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       9a960790-b5c6-4e7d-b240-e93f3a381124
-:CUSTOM_ID: 8-2h
+:CUSTOM_ID: 8/2h
 :END:
 #+TITLE: Matrix models - Part (h): RG equation for K'
 #+FILETAGS: :problem:part:spof:
@@ -21,9 +21,9 @@ This is part (h) of problem 8-2 on Matrix models from Kardar's Statistical Physi
 
 * Navigation
 
-- [[8-2][Main Problem: Matrix models]]
-- [[8-2g][Previous: Part (g) - Coarse grained coupling constant]]
-- [[8-2i][Next: Part (i) - Differential RG equation]]
+- [[8/2][Main Problem: Matrix models]]
+- [[8/2g][Previous: Part (g) - Coarse grained coupling constant]]
+- [[8/2i][Next: Part (i) - Differential RG equation]]
 
 * Solution
 

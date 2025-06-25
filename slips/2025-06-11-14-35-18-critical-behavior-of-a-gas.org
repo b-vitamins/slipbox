@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       c0e2e030-7b97-4849-a4f6-3162e4f9f3cd
-:CUSTOM_ID: 1-5
+:CUSTOM_ID: 1/5
 :END:
 #+TITLE: Critical behavior of a gas
 #+FILETAGS: :problem:main:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ec21d25c-0086-4945-a73b-c79855ccfd8c
-:CUSTOM_ID: 8-1c
+:CUSTOM_ID: 8/1c
 :END:
 #+TITLE: Phase Diagram Sketch
 #+FILETAGS: :problem:part:spof:

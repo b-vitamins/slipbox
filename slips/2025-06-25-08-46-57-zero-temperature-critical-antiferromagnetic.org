@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       4a8b0260-c7a4-4538-83d5-bdafafafe4c7
-:CUSTOM_ID: 6-8b
+:CUSTOM_ID: 6/8b
 :END:
 #+TITLE: Zero Temperature Critical Antiferromagnetic
 #+FILETAGS: :problem:part:spof:

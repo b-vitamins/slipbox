@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       52d936ad-b77d-485b-8463-f7d6ab355f40
-:CUSTOM_ID: 3-1d
+:CUSTOM_ID: 3/1d
 :END:
 #+TITLE: Normal Modes d-Dimensional
 #+FILETAGS: :problem:part:spof:

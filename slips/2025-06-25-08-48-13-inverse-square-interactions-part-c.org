@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ac2fb809-2820-4161-99a4-cfb6b45e551c
-:CUSTOM_ID: 8-8c
+:CUSTOM_ID: 8/8c
 :END:
 #+TITLE: Inverse-square interactions - Part (c): Dilute domain walls energy
 #+FILETAGS: :problem:part:spof:
@@ -22,9 +22,9 @@ This is part (c) of problem 8-8 on Inverse-square interactions from Kardar's Sta
 
 * Navigation
 
-- [[8-8][Main Problem: Inverse-square interactions]]
-- [[8-8b][Previous: Part (b) - Critical coupling lower bound]]
-- [[8-8d][Next: Part (d) - Differential recursion relations]]
+- [[8/8][Main Problem: Inverse-square interactions]]
+- [[8/8b][Previous: Part (b) - Critical coupling lower bound]]
+- [[8/8d][Next: Part (d) - Differential recursion relations]]
 
 * Solution
 

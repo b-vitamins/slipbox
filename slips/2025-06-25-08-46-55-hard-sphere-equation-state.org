@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       767bbafc-6d73-496f-8bb0-0c7dbea1a66e
-:CUSTOM_ID: 6-7f
+:CUSTOM_ID: 6/7f
 :END:
 #+TITLE: Hard Sphere Equation State
 #+FILETAGS: :problem:part:spof:

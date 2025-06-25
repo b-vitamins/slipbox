@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       58af4595-d67d-4bc1-9942-5a91290c5238
-:CUSTOM_ID: 3-7
+:CUSTOM_ID: 3/7
 :END:
 #+TITLE: Long-range interactions
 #+FILETAGS: :problem:main:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       355e770f-1197-4521-bac8-20d5a433126a
-:CUSTOM_ID: 4-2b
+:CUSTOM_ID: 4/2b
 :END:
 #+TITLE: Critical Fixed Point Eigenvalues
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       4c0b6243-0cd2-4f77-9222-166ed52a5d13
-:CUSTOM_ID: 8-7a
+:CUSTOM_ID: 8/7a
 :END:
 #+TITLE: Symmetry breaking fields - Part (a): Sine-Gordon model recursion relations
 #+FILETAGS: :problem:part:spof:
@@ -28,8 +28,8 @@ The symmetry breaking term is:
 
 * Navigation
 
-- [[8-7][Main Problem: Symmetry breaking fields]]
-- [[8-7b][Next: Part (b) - Recursion relations with vortices]]
+- [[8/7][Main Problem: Symmetry breaking fields]]
+- [[8/7b][Next: Part (b) - Recursion relations with vortices]]
 
 * Solution
 

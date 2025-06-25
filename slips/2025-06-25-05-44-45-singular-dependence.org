@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       9974c88e-7097-4710-b142-60696236271b
-:CUSTOM_ID: 3-6h
+:CUSTOM_ID: 3/6h
 :END:
 #+TITLE: Singular Dependence
 #+FILETAGS: :problem:part:spof:

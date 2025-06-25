@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       b90f6903-80f2-435e-ac08-1b0a13e0f2c7
-:CUSTOM_ID: 2-2b
+:CUSTOM_ID: 2/2b
 :END:
 #+TITLE: Transition Parameters
 #+FILETAGS: :problem:part:spof:

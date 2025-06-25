@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       b9cdd8d6-9ee3-46b2-adb5-b828f9ab6056
-:CUSTOM_ID: 7-10
+:CUSTOM_ID: 7/10
 :END:
 #+TITLE: Energy by duality
 #+FILETAGS: :problem:main:spof:

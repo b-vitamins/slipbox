@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       4730dc56-c8eb-4a25-a0a1-33630e74fc16
-:CUSTOM_ID: 7-16a
+:CUSTOM_ID: 7/16a
 :END:
 #+TITLE: Migdal-Kadanoff Scheme
 #+FILETAGS: :problem:part:spof:

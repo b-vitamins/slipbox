@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       294a3d36-93b3-449c-9c1f-6dc9df2453ea
-:CUSTOM_ID: 7-10a
+:CUSTOM_ID: 7/10a
 :END:
 #+TITLE: Duality Relation
 #+FILETAGS: :problem:part:spof:

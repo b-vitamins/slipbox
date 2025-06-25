@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       9079cfb0-ba1c-412b-87be-105943e06871
-:CUSTOM_ID: 7-15d
+:CUSTOM_ID: 7/15d
 :END:
 #+TITLE: Triangular Hexagonal Duality
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       20439cb9-fa07-4b5e-911c-113d9bd947dd
-:CUSTOM_ID: 5-7f
+:CUSTOM_ID: 5/7f
 :END:
 #+TITLE: First Order Critical Exponents
 #+FILETAGS: :problem:part:spof:

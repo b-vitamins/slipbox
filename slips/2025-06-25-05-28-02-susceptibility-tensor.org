@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       8902540e-cb2a-4e00-a7b3-bc0bdbe3045b
-:CUSTOM_ID: 2-3b
+:CUSTOM_ID: 2/3b
 :END:
 #+TITLE: Susceptibility Tensor
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       69f8243e-9e63-4a7f-bfd7-c9cc22401f53
-:CUSTOM_ID: 6-9h
+:CUSTOM_ID: 6/9h
 :END:
 #+TITLE: Magnetic Thermal Exponents Zero Temperature
 #+FILETAGS: :problem:part:spof:

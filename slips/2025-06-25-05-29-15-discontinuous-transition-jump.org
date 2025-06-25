@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       3c2cdc53-c407-407e-a536-646232804fc0
-:CUSTOM_ID: 2-4c
+:CUSTOM_ID: 2/4c
 :END:
 #+TITLE: Discontinuous Transition Jump
 #+FILETAGS: :problem:part:spof:

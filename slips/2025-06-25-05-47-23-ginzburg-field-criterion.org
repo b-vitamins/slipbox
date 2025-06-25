@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       86ea61f8-ba06-4537-adfe-323abc56defc
-:CUSTOM_ID: 3-8j
+:CUSTOM_ID: 3/8j
 :END:
 #+TITLE: Ginzburg Field Criterion
 #+FILETAGS: :problem:part:spof:

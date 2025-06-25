@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       63a408b9-9043-4d72-b899-d9c3d195d61d
-:CUSTOM_ID: 6-9a
+:CUSTOM_ID: 6/9a
 :END:
 #+TITLE: Cluster Grouping Position Space RG
 #+FILETAGS: :problem:part:spof:

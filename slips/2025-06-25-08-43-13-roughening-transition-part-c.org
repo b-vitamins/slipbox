@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       5edc0447-f6e7-4cf6-8fc0-5aed7c662d89
-:CUSTOM_ID: 8-3c
+:CUSTOM_ID: 8/3c
 :END:
 #+TITLE: The roughening transition - Part (c): Perturbation theory calculation
 #+FILETAGS: :problem:part:spof:
@@ -21,9 +21,9 @@ The perturbation term is:
 
 * Navigation
 
-- [[8-3][Main Problem: The roughening transition]]
-- [[8-3b][Previous: Part (b) - Height difference formula]]
-- [[8-3d][Next: Part (d) - Effective interaction and critical K]]
+- [[8/3][Main Problem: The roughening transition]]
+- [[8/3b][Previous: Part (b) - Height difference formula]]
+- [[8/3d][Next: Part (d) - Effective interaction and critical K]]
 
 * Solution
 

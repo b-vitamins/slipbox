@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       714003c2-1403-4bec-b6cc-b6c4ad7d0a2d
-:CUSTOM_ID: 2-1b
+:CUSTOM_ID: 2/1b
 :END:
 #+TITLE: Transition Conditions
 #+FILETAGS: :problem:part:spof:

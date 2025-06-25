@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       c12925ba-f9c1-49c4-9960-5006f6082fb8
-:CUSTOM_ID: 2-5a
+:CUSTOM_ID: 2/5a
 :END:
 #+TITLE: Quadratic Hamiltonian Terms
 #+FILETAGS: :problem:part:spof:

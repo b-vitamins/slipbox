@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       0aa79c47-ac7c-433e-bf69-767f50cc30f5
-:CUSTOM_ID: 5-1
+:CUSTOM_ID: 5/1
 :END:
 #+TITLE: Longitudinal susceptibility
 #+FILETAGS: :problem:main:spof:

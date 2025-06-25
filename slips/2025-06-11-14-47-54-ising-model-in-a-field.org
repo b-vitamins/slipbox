@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       973778b5-1fbf-456d-bf52-463edcc9253b
-:CUSTOM_ID: 7-4
+:CUSTOM_ID: 7/4
 :END:
 #+TITLE: Ising model in a field
 #+FILETAGS: :problem:main:spof:

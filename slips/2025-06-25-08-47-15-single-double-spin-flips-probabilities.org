@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       65a69023-78c2-492a-b52a-83bbed90f102
-:CUSTOM_ID: 6-10b
+:CUSTOM_ID: 6/10b
 :END:
 #+TITLE: Single Double Spin Flips Probabilities
 #+FILETAGS: :problem:part:spof:

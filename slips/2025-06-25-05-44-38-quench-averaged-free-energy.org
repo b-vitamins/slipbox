@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       9ee151cb-f25c-49b9-aa62-ea6b8efd43b2
-:CUSTOM_ID: 3-6a
+:CUSTOM_ID: 3/6a
 :END:
 #+TITLE: Quench Averaged Free Energy
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       d33a27bb-d565-48eb-ba83-252602ed80bf
-:CUSTOM_ID: 5-2c
+:CUSTOM_ID: 5/2c
 :END:
 #+TITLE: Phase Diagram Sketch
 #+FILETAGS: :problem:part:spof:

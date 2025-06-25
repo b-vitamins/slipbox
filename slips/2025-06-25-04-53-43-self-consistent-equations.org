@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       c3d97c75-4deb-48a5-80c8-556aff0dc252
-:CUSTOM_ID: 1-6d
+:CUSTOM_ID: 1/6d
 :END:
 #+TITLE: Self-Consistent Equations
 #+FILETAGS: :problem:part:spof:

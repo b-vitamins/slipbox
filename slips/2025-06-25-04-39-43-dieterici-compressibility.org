@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       bcf97952-8b20-401f-b360-95466904a7be
-:CUSTOM_ID: 1-5f
+:CUSTOM_ID: 1/5f
 :END:
 #+TITLE: Dieterici Compressibility
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       221fde34-18c7-4e72-be72-e54cbfc5f81e
-:CUSTOM_ID: 1-4
+:CUSTOM_ID: 1/4
 :END:
 #+TITLE: Surfactant condensation
 #+FILETAGS: :problem:main:spof:

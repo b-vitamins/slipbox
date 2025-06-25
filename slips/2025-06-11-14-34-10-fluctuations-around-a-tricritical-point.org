@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       07317a1a-4c89-4bb7-9bb5-66b92e15c0de
-:CUSTOM_ID: 3-4
+:CUSTOM_ID: 3/4
 :END:
 #+TITLE: Fluctuations around a tricritical point
 #+FILETAGS: :problem:main:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       988cf4dc-dc4c-4915-809f-cb90abb95757
-:CUSTOM_ID: 1-2
+:CUSTOM_ID: 1/2
 :END:
 #+TITLE: The Ising model of magnetism
 #+FILETAGS: :problem:main:spof:

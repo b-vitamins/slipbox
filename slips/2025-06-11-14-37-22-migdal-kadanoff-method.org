@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       29d874fb-c417-483b-8c17-182f1f20b8c3
-:CUSTOM_ID: 6-2
+:CUSTOM_ID: 6/2
 :END:
 #+TITLE: Migdal-Kadanoff method
 #+FILETAGS: :problem:main:spof:

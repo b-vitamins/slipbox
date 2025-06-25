@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       d31bf186-ff01-4f1c-bd6f-31210ad26d8f
-:CUSTOM_ID: 6-8i
+:CUSTOM_ID: 6/8i
 :END:
 #+TITLE: Magnetic Eigenvalues Zero Temperature
 #+FILETAGS: :problem:part:spof:

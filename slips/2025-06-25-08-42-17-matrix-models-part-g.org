@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       08dfa008-1d52-4706-b530-a5a4ddffc48b
-:CUSTOM_ID: 8-2g
+:CUSTOM_ID: 8/2g
 :END:
 #+TITLE: Matrix models - Part (g): Coarse grained coupling constant
 #+FILETAGS: :problem:part:spof:
@@ -20,9 +20,9 @@ This is part (g) of problem 8-2 on Matrix models from Kardar's Statistical Physi
 
 * Navigation
 
-- [[8-2][Main Problem: Matrix models]]
-- [[8-2f][Previous: Part (f) - Coarse grained expectation value]]
-- [[8-2h][Next: Part (h) - RG equation for K']]
+- [[8/2][Main Problem: Matrix models]]
+- [[8/2f][Previous: Part (f) - Coarse grained expectation value]]
+- [[8/2h][Next: Part (h) - RG equation for K']]
 
 * Solution
 

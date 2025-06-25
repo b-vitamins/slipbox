@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       e54e6df9-9905-4360-876e-47b670714738
-:CUSTOM_ID: 3-4f
+:CUSTOM_ID: 3/4f
 :END:
 #+TITLE: Ginzburg Criterion
 #+FILETAGS: :problem:part:spof:

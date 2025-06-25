@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       8c20b945-a89d-4c3c-ae67-e1502e034d2e
-:CUSTOM_ID: 1-2b
+:CUSTOM_ID: 1/2b
 :END:
 #+TITLE: Partition Function Rewrite
 #+FILETAGS: :problem:part:spof:

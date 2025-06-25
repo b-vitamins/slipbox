@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ddaee0f8-eb2c-45b0-a44b-cb2c56fe2559
-:CUSTOM_ID: 7-16c
+:CUSTOM_ID: 7/16c
 :END:
 #+TITLE: Alternative PSRG Scheme
 #+FILETAGS: :problem:part:spof:

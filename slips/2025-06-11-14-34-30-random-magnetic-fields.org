@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       15963c6b-99ac-4135-a56d-f8a23d03382a
-:CUSTOM_ID: 3-6
+:CUSTOM_ID: 3/6
 :END:
 #+TITLE: Random magnetic fields
 #+FILETAGS: :problem:main:spof:

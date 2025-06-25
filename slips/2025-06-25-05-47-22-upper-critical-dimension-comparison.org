@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       8047ac0b-5a53-4538-86e7-994ea63ed4fc
-:CUSTOM_ID: 3-8i
+:CUSTOM_ID: 3/8i
 :END:
 #+TITLE: Upper Critical Dimension Comparison
 #+FILETAGS: :problem:part:spof:

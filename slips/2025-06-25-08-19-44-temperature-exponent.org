@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       e6931f6a-c802-42f4-8450-3c2c2c32d79e
-:CUSTOM_ID: 5-4c
+:CUSTOM_ID: 5/4c
 :END:
 #+TITLE: Temperature Exponent
 #+FILETAGS: :problem:part:spof:

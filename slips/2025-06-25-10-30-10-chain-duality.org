@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       c2c11ffc-93e1-4c64-819d-13568ec9116b
-:CUSTOM_ID: 7-15a
+:CUSTOM_ID: 7/15a
 :END:
 #+TITLE: Chain Duality
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       2632571e-efc1-4f48-88ad-4b25f950a5fd
-:CUSTOM_ID: 6-9b
+:CUSTOM_ID: 6/9b
 :END:
 #+TITLE: Majority Rule Modification Renormalized Spin
 #+FILETAGS: :problem:part:spof:

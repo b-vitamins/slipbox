@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       3143a0cc-df71-4491-9fe2-38a16d99e7f4
-:CUSTOM_ID: 6-8c
+:CUSTOM_ID: 6/8c
 :END:
 #+TITLE: RG Recursion Relations Decimation
 #+FILETAGS: :problem:part:spof:

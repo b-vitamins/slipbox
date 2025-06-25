@@ -1,9 +1,9 @@
 :PROPERTIES:
 :ID:       78bc89d8-be77-4d20-b968-bb0ed956d1cf
-:CUSTOM_ID: 8-2
+:CUSTOM_ID: 8/2
 :END:
 #+TITLE: Matrix models
-#+FILETAGS: :problem:main:spof:
+#+FILETAGS: :problem:main:spof:extended:
 #+SETUPFILE: ../../setupfile.org
 
 * Problem Statement
@@ -79,16 +79,16 @@ Combining RG and symmetry arguments, it can be shown that the $3 \times 3$ matri
 
 * Navigation
 This problem is divided into parts:
-- [[8-2a][Part (a): Hamiltonian rewrite and ground state]]
-- [[8-2b][Part (b): Symmetric and anti-symmetric matrices]]
-- [[8-2c][Part (c): Small fluctuations and expansion]]
-- [[8-2d][Part (d): Goldstone modes]]
-- [[8-2e][Part (e): Two point correlation function]]
-- [[8-2f][Part (f): Coarse grained expectation value]]
-- [[8-2g][Part (g): Coarse grained coupling constant]]
-- [[8-2h][Part (h): RG equation for K']]
-- [[8-2i][Part (i): Differential RG equation]]
-- [[8-2j][Part (j): Symmetry breaking field]]
+- [[8/2a][Part (a): Hamiltonian rewrite and ground state]]
+- [[8/2b][Part (b): Symmetric and anti-symmetric matrices]]
+- [[8/2c][Part (c): Small fluctuations and expansion]]
+- [[8/2d][Part (d): Goldstone modes]]
+- [[8/2e][Part (e): Two point correlation function]]
+- [[8/2f][Part (f): Coarse grained expectation value]]
+- [[8/2g][Part (g): Coarse grained coupling constant]]
+- [[8/2h][Part (h): RG equation for K']]
+- [[8/2i][Part (i): Differential RG equation]]
+- [[8/2j][Part (j): Symmetry breaking field]]
 
 * Solution
 

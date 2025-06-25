@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       116ce081-7ff5-4bb4-a63a-87e712071fc3
-:CUSTOM_ID: 2-4i
+:CUSTOM_ID: 2/4i
 :END:
 #+TITLE: Ordered Phase Decay
 #+FILETAGS: :problem:part:spof:

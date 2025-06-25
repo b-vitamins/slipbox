@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       38354aa9-08ad-44e7-bf75-6e9930a7dd3c
-:CUSTOM_ID: 4-3
+:CUSTOM_ID: 4/3
 :END:
 #+TITLE: The nonlinear sigma model
 #+FILETAGS: :problem:main:spof:

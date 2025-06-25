@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       7999391e-0437-4a03-a9cf-0ee30e6bf88a
-:CUSTOM_ID: 7-5
+:CUSTOM_ID: 7/5
 :END:
 #+TITLE: Potts duality
 #+FILETAGS: :problem:main:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       a6d814ac-d75b-44d4-bd87-51eddf9af624
-:CUSTOM_ID: 4-4
+:CUSTOM_ID: 4/4
 :END:
 #+TITLE: Coupled scalars
 #+FILETAGS: :problem:main:spof:

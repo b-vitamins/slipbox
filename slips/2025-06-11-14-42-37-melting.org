@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       58eb890f-14e1-41bd-ba8e-b7e99037a263
-:CUSTOM_ID: 8-9
+:CUSTOM_ID: 8/9
 :END:
 #+TITLE: Melting
 #+FILETAGS: :problem:main:spof:
@@ -27,10 +27,10 @@ where $u_{i j}(\mathbf{x})=\left(\partial_{i} u_{j}+\partial_{j} u_{i}\right) / 
 
 * Navigation
 This problem is divided into parts:
-- [[8-9a][Part (a): Energy in Fourier space and normal modes]]
-- [[8-9b][Part (b): Expectation value calculation]]
-- [[8-9c][Part (c): Deformation calculation with cutoff]]
-- [[8-9d][Part (d): Lindemann criterion and melting temperature]]
+- [[8/9a][Part (a): Energy in Fourier space and normal modes]]
+- [[8/9b][Part (b): Expectation value calculation]]
+- [[8/9c][Part (c): Deformation calculation with cutoff]]
+- [[8/9d][Part (d): Lindemann criterion and melting temperature]]
 
 * Solution
 

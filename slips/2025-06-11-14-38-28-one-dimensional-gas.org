@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       08b3ad1d-e5f9-4066-a356-dcee2cca31d0
-:CUSTOM_ID: 6-7
+:CUSTOM_ID: 6/7
 :END:
 #+TITLE: One-dimensional gas
 #+FILETAGS: :problem:main:spof:

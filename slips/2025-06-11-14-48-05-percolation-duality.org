@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       022b380a-7354-41b8-98b0-33b4d808f59a
-:CUSTOM_ID: 7-15
+:CUSTOM_ID: 7/15
 :END:
 #+TITLE: Percolation duality
 #+FILETAGS: :problem:main:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       f96e7ccb-a981-4c49-84ec-8bacaf3404cd
-:CUSTOM_ID: 4-2e
+:CUSTOM_ID: 4/2e
 :END:
 #+TITLE: Magnetization and Susceptibility
 #+FILETAGS: :problem:part:spof:

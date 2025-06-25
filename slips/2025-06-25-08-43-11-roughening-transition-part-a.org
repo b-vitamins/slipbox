@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       e3ef5143-68fd-42e2-a179-c0f0ce46a4f2
-:CUSTOM_ID: 8-3a
+:CUSTOM_ID: 8/3a
 :END:
 #+TITLE: The roughening transition - Part (a): Exponential expectation value
 #+FILETAGS: :problem:part:spof:
@@ -31,8 +31,8 @@ where $h(\mathbf{x})$ is the interface height.
 
 * Navigation
 
-- [[8-3][Main Problem: The roughening transition]]
-- [[8-3b][Next: Part (b) - Height difference formula]]
+- [[8/3][Main Problem: The roughening transition]]
+- [[8/3b][Next: Part (b) - Height difference formula]]
 
 * Solution
 

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ac1d911d-5e99-43fa-bc53-8b61fb924df1
-:CUSTOM_ID: 6-1a
+:CUSTOM_ID: 6/1a
 :END:
 #+TITLE: RG Bond Division
 #+FILETAGS: :problem:part:spof:

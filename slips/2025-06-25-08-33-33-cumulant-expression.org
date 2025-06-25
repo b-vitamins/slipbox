@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       41ccacc1-93c2-4521-8dfa-71cb8c532f3d
-:CUSTOM_ID: 6-1c
+:CUSTOM_ID: 6/1c
 :END:
 #+TITLE: Cumulant Expression
 #+FILETAGS: :problem:part:spof:

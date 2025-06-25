@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       9c4cff58-af7c-46bd-b764-6f9b172232f7
-:CUSTOM_ID: 8-5a
+:CUSTOM_ID: 8/5a
 :END:
 #+TITLE: Nonlinear sigma model with long-range interactions - Part (a): Long-range interaction decay
 #+FILETAGS: :problem:part:spof:
@@ -23,8 +23,8 @@ where $\vec{s}(\mathbf{x})$ are unit $n$-component spins with $|\vec{s}(\mathbf{
 
 * Navigation
 
-- [[8-5][Main Problem: Nonlinear sigma model with long-range interactions]]
-- [[8-5b][Next: Part (b) - Effective Hamiltonian for fluctuations]]
+- [[8/5][Main Problem: Nonlinear sigma model with long-range interactions]]
+- [[8/5b][Next: Part (b) - Effective Hamiltonian for fluctuations]]
 
 * Solution
 

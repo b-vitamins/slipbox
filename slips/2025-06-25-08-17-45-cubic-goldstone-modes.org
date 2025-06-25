@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       e0ca82a9-3627-4bcb-bcae-1b4f59f1f511
-:CUSTOM_ID: 5-3d
+:CUSTOM_ID: 5/3d
 :END:
 #+TITLE: Cubic Goldstone Modes
 #+FILETAGS: :problem:part:spof:

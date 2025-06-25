@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       f04607cb-1fa4-458b-a2d7-92d173e9690a
-:CUSTOM_ID: 6-5c
+:CUSTOM_ID: 6/5c
 :END:
 #+TITLE: Free Energy Expression Largest Eigenvalue
 #+FILETAGS: :problem:part:spof:

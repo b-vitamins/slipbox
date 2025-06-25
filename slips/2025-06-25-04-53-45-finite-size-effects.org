@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       1bbabd18-e3f5-47f7-aa80-eb8a62a0a317
-:CUSTOM_ID: 1-6f
+:CUSTOM_ID: 1/6f
 :END:
 #+TITLE: Finite Size Effects
 #+FILETAGS: :problem:part:spof:

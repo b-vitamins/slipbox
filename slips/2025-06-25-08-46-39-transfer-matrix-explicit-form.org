@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       4ff108a2-652f-41fd-8e5c-ad21137b028e
-:CUSTOM_ID: 6-4a
+:CUSTOM_ID: 6/4a
 :END:
 #+TITLE: Transfer Matrix Explicit Form
 #+FILETAGS: :problem:part:spof:

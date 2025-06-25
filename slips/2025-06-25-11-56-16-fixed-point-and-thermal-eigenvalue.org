@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       59e06795-a084-4a0d-b27d-aadc836de213
-:CUSTOM_ID: 8-1a
+:CUSTOM_ID: 8/1a
 :END:
 #+TITLE: Fixed Point and Thermal Eigenvalue
 #+FILETAGS: :problem:part:spof:

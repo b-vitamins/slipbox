@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       0229e850-81db-4d7d-8108-b74f2dc02d85
-:CUSTOM_ID: 7-12a
+:CUSTOM_ID: 7/12a
 :END:
 #+TITLE: Dual Lattice Interaction
 #+FILETAGS: :problem:part:spof:

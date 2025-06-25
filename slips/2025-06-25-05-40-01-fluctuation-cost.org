@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       60ee1352-1d32-4c6b-ba98-fca639e34fd2
-:CUSTOM_ID: 3-3c
+:CUSTOM_ID: 3/3c
 :END:
 #+TITLE: Fluctuation Cost
 #+FILETAGS: :problem:part:spof:

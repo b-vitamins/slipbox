@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       c7cc8de4-38ae-49ec-a4c6-2653466b737c
-:CUSTOM_ID: 6-5
+:CUSTOM_ID: 6/5
 :END:
 #+TITLE: Clock model
 #+FILETAGS: :problem:main:spof:

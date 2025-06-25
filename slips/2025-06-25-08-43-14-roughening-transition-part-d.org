@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       1bbfcaed-4d1f-4da6-995a-61bc15122569
-:CUSTOM_ID: 8-3d
+:CUSTOM_ID: 8/3d
 :END:
 #+TITLE: The roughening transition - Part (d): Effective interaction and critical K
 #+FILETAGS: :problem:part:spof:
@@ -16,9 +16,9 @@ This is part (d) of problem 8-3 on The roughening transition from Kardar's Stati
 
 * Navigation
 
-- [[8-3][Main Problem: The roughening transition]]
-- [[8-3c][Previous: Part (c) - Perturbation theory calculation]]
-- [[8-3e][Next: Part (e) - Renormalization group equations]]
+- [[8/3][Main Problem: The roughening transition]]
+- [[8/3c][Previous: Part (c) - Perturbation theory calculation]]
+- [[8/3e][Next: Part (e) - Renormalization group equations]]
 
 * Solution
 

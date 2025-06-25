@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       522bf640-9343-4627-b8e2-7d06ed93d699
-:CUSTOM_ID: 6-5b
+:CUSTOM_ID: 6/5b
 :END:
 #+TITLE: Transfer Matrix Diagonalization Fourier
 #+FILETAGS: :problem:part:spof:

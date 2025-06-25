@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       2b9f9332-36a0-4246-be24-9490fcffcaa5
-:CUSTOM_ID: 3-6c
+:CUSTOM_ID: 3/6c
 :END:
 #+TITLE: Fourier Mode Energy
 #+FILETAGS: :problem:part:spof:

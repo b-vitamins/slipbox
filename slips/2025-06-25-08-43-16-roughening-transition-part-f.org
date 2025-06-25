@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       a91f5082-21d9-4b2e-a08f-8985bdf9eb75
-:CUSTOM_ID: 8-3f
+:CUSTOM_ID: 8/3f
 :END:
 #+TITLE: The roughening transition - Part (f): Phase diagram and phases
 #+FILETAGS: :problem:part:spof:
@@ -16,9 +16,9 @@ This is part (f) of problem 8-3 on The roughening transition from Kardar's Stati
 
 * Navigation
 
-- [[8-3][Main Problem: The roughening transition]]
-- [[8-3e][Previous: Part (e) - Renormalization group equations]]
-- [[8-3g][Next: Part (g) - Discontinuous jump magnitude]]
+- [[8/3][Main Problem: The roughening transition]]
+- [[8/3e][Previous: Part (e) - Renormalization group equations]]
+- [[8/3g][Next: Part (g) - Discontinuous jump magnitude]]
 
 * Solution
 

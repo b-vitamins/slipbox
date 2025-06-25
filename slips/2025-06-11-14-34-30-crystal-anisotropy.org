@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       e83f6a87-0e50-44b4-b0e5-3ca4650fd0a6
-:CUSTOM_ID: 5-2
+:CUSTOM_ID: 5/2
 :END:
 #+TITLE: Crystal anisotropy
 #+FILETAGS: :problem:main:spof:

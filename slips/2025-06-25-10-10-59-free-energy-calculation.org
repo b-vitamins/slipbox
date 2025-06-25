@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       ad6b9483-1589-4228-9689-ec1c4f094f01
-:CUSTOM_ID: 7-7a
+:CUSTOM_ID: 7/7a
 :END:
 #+TITLE: Free Energy Calculation
 #+FILETAGS: :problem:part:spof:

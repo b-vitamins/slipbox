@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       2dec987e-fac2-4171-be73-d105634cfbd6
-:CUSTOM_ID: 3-7c
+:CUSTOM_ID: 3/7c
 :END:
 #+TITLE: Upper Critical Dimension
 #+FILETAGS: :problem:part:spof:

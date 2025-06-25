@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       90c95c36-6582-4a9b-8de7-80573659f629
-:CUSTOM_ID: 3-2c
+:CUSTOM_ID: 3/2c
 :END:
 #+TITLE: Symmetry Breaking
 #+FILETAGS: :problem:part:spof:

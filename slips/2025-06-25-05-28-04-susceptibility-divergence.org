@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       8579dd8e-8367-4277-b032-e83f59a1d921
-:CUSTOM_ID: 2-3d
+:CUSTOM_ID: 2/3d
 :END:
 #+TITLE: Susceptibility Divergence
 #+FILETAGS: :problem:part:spof:

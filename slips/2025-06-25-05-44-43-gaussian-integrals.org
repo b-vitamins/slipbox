@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       970e70ff-5b9d-40fc-8854-49e9b50705f5
-:CUSTOM_ID: 3-6f
+:CUSTOM_ID: 3/6f
 :END:
 #+TITLE: Gaussian Integrals
 #+FILETAGS: :problem:part:spof:

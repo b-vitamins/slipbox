@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       0eee1410-9773-40f4-9db8-bb173cd4e125
-:CUSTOM_ID: 6-10a
+:CUSTOM_ID: 6/10a
 :END:
 #+TITLE: Transition Matrix Single Spin Flips Metropolis
 #+FILETAGS: :problem:part:spof:

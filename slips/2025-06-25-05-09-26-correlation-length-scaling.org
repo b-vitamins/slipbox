@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       6eb6f702-7dfe-4958-a5c7-c661e1f70f43
-:CUSTOM_ID: 4-2c
+:CUSTOM_ID: 4/2c
 :END:
 #+TITLE: Correlation Length Scaling
 #+FILETAGS: :problem:part:spof:

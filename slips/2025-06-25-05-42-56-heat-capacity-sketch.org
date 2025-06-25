@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       1141a365-fbe1-4721-af55-501770f7177b
-:CUSTOM_ID: 3-5b
+:CUSTOM_ID: 3/5b
 :END:
 #+TITLE: Heat Capacity Sketch
 #+FILETAGS: :problem:part:spof:

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       8053968f-16c2-4b8c-bf3f-939e4d38287d
-:CUSTOM_ID: 8-8a
+:CUSTOM_ID: 8/8a
 :END:
 #+TITLE: Inverse-square interactions - Part (a): Domain wall energy cost
 #+FILETAGS: :problem:part:spof:
@@ -25,8 +25,8 @@ where the local energy $\Phi[s]$ strongly favors $s(x)= \pm 1$ (e.g. $\Phi[s]=g\
 
 * Navigation
 
-- [[8-8][Main Problem: Inverse-square interactions]]
-- [[8-8b][Next: Part (b) - Critical coupling lower bound]]
+- [[8/8][Main Problem: Inverse-square interactions]]
+- [[8/8b][Next: Part (b) - Critical coupling lower bound]]
 
 * Solution
 

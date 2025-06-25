@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       1aac47eb-7372-4e5a-9f62-bada5cd4de58
-:CUSTOM_ID: 7-6
+:CUSTOM_ID: 7/6
 :END:
 #+TITLE: Anisotropic random walks
 #+FILETAGS: :problem:main:spof:

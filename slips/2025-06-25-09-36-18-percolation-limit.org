@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       0c90d45e-a874-4915-8842-fbb85a81b83a
-:CUSTOM_ID: 7-3b
+:CUSTOM_ID: 7/3b
 :END:
 #+TITLE: Percolation Limit
 #+FILETAGS: :problem:part:spof:

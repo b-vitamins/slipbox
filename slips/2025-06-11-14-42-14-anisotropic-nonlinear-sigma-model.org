@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       2f93a70c-6794-4a37-ad85-3fc5333444c7
-:CUSTOM_ID: 8-1
+:CUSTOM_ID: 8/1
 :END:
 #+TITLE: Anisotropic nonlinear sigma model
 #+FILETAGS: :problem:main:spof:

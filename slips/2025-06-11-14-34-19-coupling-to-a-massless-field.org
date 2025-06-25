@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       26d9c772-42f6-4f5d-9336-a64e976d375e
-:CUSTOM_ID: 3-5
+:CUSTOM_ID: 3/5
 :END:
 #+TITLE: Coupling to a "massless" field
 #+FILETAGS: :problem:main:spof:

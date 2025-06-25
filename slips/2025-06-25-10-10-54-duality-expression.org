@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       3f5f3327-14f9-42d8-93f4-f837fdc4b1f4
-:CUSTOM_ID: 7-5a
+:CUSTOM_ID: 7/5a
 :END:
 #+TITLE: Duality Expression
 #+FILETAGS: :problem:part:spof:

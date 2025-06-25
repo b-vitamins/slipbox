@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       4fe45c12-dfbe-4e13-9898-6ae9bf9892eb
-:CUSTOM_ID: 6-7b
+:CUSTOM_ID: 6/7b
 :END:
 #+TITLE: Partition Function Variable Change
 #+FILETAGS: :problem:part:spof:

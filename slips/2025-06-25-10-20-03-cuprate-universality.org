@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       8f1483aa-39d7-4be8-a8e6-14c6565b5a7e
-:CUSTOM_ID: 7-9c
+:CUSTOM_ID: 7/9c
 :END:
 #+TITLE: Cuprate Universality
 #+FILETAGS: :problem:part:spof:

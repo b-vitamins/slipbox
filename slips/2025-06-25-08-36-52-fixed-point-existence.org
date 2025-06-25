@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       8d13330d-0df4-4635-b327-a25469c964a1
-:CUSTOM_ID: 6-2c
+:CUSTOM_ID: 6/2c
 :END:
 #+TITLE: Fixed Point Existence
 #+FILETAGS: :problem:part:spof:

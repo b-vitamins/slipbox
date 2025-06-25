@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       db1a4a0a-e035-4af5-8032-7a6d1e9bce57
-:CUSTOM_ID: 7-13d
+:CUSTOM_ID: 7/13d
 :END:
 #+TITLE: Gauge Symmetry
 #+FILETAGS: :problem:part:spof:

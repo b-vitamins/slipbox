@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       11ae0e43-8bc7-440b-bd7a-e51b0d469edc
-:CUSTOM_ID: 7-14a
+:CUSTOM_ID: 7/14a
 :END:
 #+TITLE: Recursion Relation
 #+FILETAGS: :problem:part:spof:

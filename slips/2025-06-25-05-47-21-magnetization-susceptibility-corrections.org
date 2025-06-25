@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       8aa363de-2040-4a7a-b5d6-73f170d087c7
-:CUSTOM_ID: 3-8h
+:CUSTOM_ID: 3/8h
 :END:
 #+TITLE: Magnetization Susceptibility Corrections
 #+FILETAGS: :problem:part:spof:

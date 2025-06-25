@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       1ea911b5-15e3-4a87-9d60-aa2440af5284
-:CUSTOM_ID: 6-7a
+:CUSTOM_ID: 6/7a
 :END:
 #+TITLE: Hamiltonian Hard Core Screening
 #+FILETAGS: :problem:part:spof:

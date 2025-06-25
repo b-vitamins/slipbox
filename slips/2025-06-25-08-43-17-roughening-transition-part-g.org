@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       02568b70-df0b-48a7-9dc7-1f9ec1c17fcc
-:CUSTOM_ID: 8-3g
+:CUSTOM_ID: 8/3g
 :END:
 #+TITLE: The roughening transition - Part (g): Discontinuous jump magnitude
 #+FILETAGS: :problem:part:spof:
@@ -16,8 +16,8 @@ This is part (g) of problem 8-3 on The roughening transition from Kardar's Stati
 
 * Navigation
 
-- [[8-3][Main Problem: The roughening transition]]
-- [[8-3f][Previous: Part (f) - Phase diagram and phases]]
+- [[8/3][Main Problem: The roughening transition]]
+- [[8/3f][Previous: Part (f) - Phase diagram and phases]]
 
 * Solution
 

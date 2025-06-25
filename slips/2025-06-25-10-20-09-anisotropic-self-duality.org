@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       accccc1c-e52d-4a55-ae9b-cc6db41322cd
-:CUSTOM_ID: 7-11d
+:CUSTOM_ID: 7/11d
 :END:
 #+TITLE: Anisotropic Self-Duality
 #+FILETAGS: :problem:part:spof:

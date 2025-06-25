@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       3c6e1265-283e-41b0-8962-da09cf2fb36c
-:CUSTOM_ID: 7-3
+:CUSTOM_ID: 7/3
 :END:
 #+TITLE: Potts model II
 #+FILETAGS: :problem:main:spof:

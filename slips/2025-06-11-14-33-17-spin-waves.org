@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       55016535-36c8-4fe1-963e-c86b760aa563
-:CUSTOM_ID: 3-1
+:CUSTOM_ID: 3/1
 :END:
 #+TITLE: Spin Waves
 #+FILETAGS: :problem:main:spof:

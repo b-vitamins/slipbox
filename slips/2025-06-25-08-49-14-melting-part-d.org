@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       b66f26f6-d5c0-45b3-8b9e-5f4c8d039fee
-:CUSTOM_ID: 8-9d
+:CUSTOM_ID: 8/9d
 :END:
 #+TITLE: Melting - Part (d): Lindemann criterion and melting temperature
 #+FILETAGS: :problem:part:spof:
@@ -16,8 +16,8 @@ This is part (d) of problem 8-9 on Melting from Kardar's Statistical Physics of 
 
 * Navigation
 
-- [[8-9][Main Problem: Melting]]
-- [[8-9c][Previous: Part (c) - Deformation calculation with cutoff]]
+- [[8/9][Main Problem: Melting]]
+- [[8/9c][Previous: Part (c) - Deformation calculation with cutoff]]
 
 * Solution
 

@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       21f720a0-ad53-438b-9bde-e7a0b69512d8
-:CUSTOM_ID: 3-8c
+:CUSTOM_ID: 3/8c
 :END:
 #+TITLE: Scaling Exponents
 #+FILETAGS: :problem:part:spof:

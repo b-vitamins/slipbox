@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       a9752a98-9df0-45fd-a417-50ee5654a973
-:CUSTOM_ID: 4-1a
+:CUSTOM_ID: 4/1a
 :END:
 #+TITLE: Internal Energy and Entropy
 #+FILETAGS: :problem:part:spof:

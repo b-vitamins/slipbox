@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       a100bea7-f315-4a40-992e-72e458b3438b
-:CUSTOM_ID: 3-5f
+:CUSTOM_ID: 3/5f
 :END:
 #+TITLE: Scalar Correlation Function
 #+FILETAGS: :problem:part:spof:

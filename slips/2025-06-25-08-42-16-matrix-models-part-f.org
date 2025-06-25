@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       aa470130-47cc-4473-98d4-ad71e288180d
-:CUSTOM_ID: 8-2f
+:CUSTOM_ID: 8/2f
 :END:
 #+TITLE: Matrix models - Part (f): Coarse grained expectation value
 #+FILETAGS: :problem:part:spof:
@@ -16,9 +16,9 @@ This is part (f) of problem 8-2 on Matrix models from Kardar's Statistical Physi
 
 * Navigation
 
-- [[8-2][Main Problem: Matrix models]]
-- [[8-2e][Previous: Part (e) - Two point correlation function]]
-- [[8-2g][Next: Part (g) - Coarse grained coupling constant]]
+- [[8/2][Main Problem: Matrix models]]
+- [[8/2e][Previous: Part (e) - Two point correlation function]]
+- [[8/2g][Next: Part (g) - Coarse grained coupling constant]]
 
 * Solution
 

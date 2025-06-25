@@ -1,6 +1,6 @@
 :PROPERTIES:
 :ID:       5f3701b5-645d-4f2e-bc53-dd9a5b436c3f
-:CUSTOM_ID: 5-2f
+:CUSTOM_ID: 5/2f
 :END:
 #+TITLE: Fourth Order Fourier Term
 #+FILETAGS: :problem:part:spof:
