@@ -1,8 +1,9 @@
 :PROPERTIES:
 :ID:       fd3a029d-5d77-4218-9d25-eae87227fc15
+:CUSTOM_ID: 5-3
 :END:
 #+TITLE: Cubic anisotropy - mean-field treatment
-#+FILETAGS: :problem:
+#+FILETAGS: :problem:main:spof:
 #+SETUPFILE: ../../setupfile.org
 
 3. Cubic anisotropy - mean-field treatment: Consider the modified Landau-Ginzburg Hamiltonian
@@ -22,4 +23,11 @@ for an \(n\)-component vector \(\vec{m}(\mathbf{x})=\left(m_{1}, m_{2}, \cdots, 
 (c) In general, higher order terms (e.g. \(u_{6}\left(\vec{m}^{2}\right)^{3}\) with \(u_{6}>0\) ) are present and insure stability in the regions not allowed in part (b) (as in the case of the tricritical point discussed in earlier problems). With such terms in mind, sketch the saddle point phase diagram in the \((t, v)\) plane for \(u>0\); clearly identifying the phases, and order of the transition lines.
 
 (d) Are there any Goldstone modes in the ordered phases?
+
+* Navigation
+- **First Part**: [[id:83ce655f-dd2a-4964-b8e8-82944cd45d22][Cubic Magnetization Directions]]
+
+* Solution
+
+* Related Concepts
 

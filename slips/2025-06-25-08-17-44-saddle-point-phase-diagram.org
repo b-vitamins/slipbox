@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       8ee90bb6-bb4f-4339-9a3e-16754200cc0f
+:CUSTOM_ID: 5-3c
+:END:
+#+TITLE: Saddle Point Phase Diagram
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (c) Problem
+In general, higher order terms (e.g. \(u_{6}\left(\vec{m}^{2}\right)^{3}\) with \(u_{6}>0\) ) are present and insure stability in the regions not allowed in part (b) (as in the case of the tricritical point discussed in earlier problems). With such terms in mind, sketch the saddle point phase diagram in the \((t, v)\) plane for \(u>0\); clearly identifying the phases, and order of the transition lines.
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:fd3a029d-5d77-4218-9d25-eae87227fc15][Cubic anisotropy - mean-field treatment]]
+- **Previous**: [[id:96aa2a14-2758-4059-9f28-de6c8d65816f][Stability Restrictions]]
+- **Next**: [[id:e0ca82a9-3627-4bcb-bcae-1b4f59f1f511][Cubic Goldstone Modes]]
+
+* Related Concepts

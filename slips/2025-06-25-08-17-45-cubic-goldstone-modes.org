@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       e0ca82a9-3627-4bcb-bcae-1b4f59f1f511
+:CUSTOM_ID: 5-3d
+:END:
+#+TITLE: Cubic Goldstone Modes
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (d) Problem
+Are there any Goldstone modes in the ordered phases?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:fd3a029d-5d77-4218-9d25-eae87227fc15][Cubic anisotropy - mean-field treatment]]
+- **Previous**: [[id:8ee90bb6-bb4f-4339-9a3e-16754200cc0f][Saddle Point Phase Diagram]]
+
+* Related Concepts

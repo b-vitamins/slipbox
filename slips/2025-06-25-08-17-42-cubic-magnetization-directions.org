@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       83ce655f-dd2a-4964-b8e8-82944cd45d22
+:CUSTOM_ID: 5-3a
+:END:
+#+TITLE: Cubic Magnetization Directions
+#+FILETAGS: :problem:part:spof:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+* Part (a) Problem
+For a fixed magnitude \(|\vec{m}|\), what directions in the \(n\) component magnetization space are selected for \(v>0\) and for \(v<0\) ? What is the degeneracy of easy magnetization axes in each case?
+
+* Solution
+
+
+* Navigation
+- **Main Problem**: [[id:fd3a029d-5d77-4218-9d25-eae87227fc15][Cubic anisotropy - mean-field treatment]]
+- **Next**: [[id:96aa2a14-2758-4059-9f28-de6c8d65816f][Stability Restrictions]]
+
+* Related Concepts
