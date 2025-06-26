@@ -1,0 +1,105 @@
+:PROPERTIES:
+:ID:       ee00e617-43fa-42a8-b3bf-b63b12b9e334
+:CUSTOM_ID: 91/1a
+:END:
+#+TITLE: Transformers: Static Attention-Based Sequence Models
+#+FILETAGS: :concept:machine-learning:transformers:attention:
+#+SETUPFILE: ../../setupfile.org
+
+Transformers process sequences through self-attention mechanisms that compute pairwise relationships between all positions simultaneously, enabling parallel computation at the cost of quadratic complexity.
+
+* Task Definition
+
+Given sequence $\mathbf{x} = (x_1, \ldots, x_n)$ where $x_i \in \mathbb{R}^d$, compute output sequence $\mathbf{y} = (y_1, \ldots, y_n)$ where $y_i \in \mathbb{R}^d$.
+
+* Mathematical Formulation
+
+** Self-Attention Mechanism
+
+\begin{equation}
+\text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+\end{equation}
+
+where:
+- $Q = XW_Q$ (queries)
+- $K = XW_K$ (keys)  
+- $V = XW_V$ (values)
+- $W_Q, W_K, W_V \in \mathbb{R}^{d \times d_k}$
+
+** Attention Weights
+
+\begin{equation}
+\alpha_{ij} = \frac{\exp(q_i \cdot k_j / \sqrt{d_k})}{\sum_{k=1}^n \exp(q_i \cdot k_k / \sqrt{d_k})}
+\end{equation}
+
+** Output Computation
+
+\begin{equation}
+y_i = \sum_{j=1}^n \alpha_{ij} v_j
+\end{equation}
+
+* Architecture Diagram
+
+#+BEGIN_SRC
+┌─────────────┐
+│    Input    │
+└──────┬──────┘
+       │
+┌──────▼──────┐
+│  Multi-Head │
+│  Attention  │◄────┐
+└──────┬──────┘     │
+       │            │ Residual
+┌──────▼──────┐     │
+│    Add &    │     │
+│    Norm     ├─────┘
+└──────┬──────┘
+       │
+┌──────▼──────┐
+│  Feed-Fwd   │◄────┐
+│   Network   │     │
+└──────┬──────┘     │
+       │            │ Residual
+┌──────▼──────┐     │
+│    Add &    │     │
+│    Norm     ├─────┘
+└──────┬──────┘
+       │
+┌──────▼──────┐
+│   Output    │
+└─────────────┘
+#+END_SRC
+
+* Key Properties
+
+| Property | Value |
+|----------+-------|
+| Time Complexity | $O(n^2 d)$ |
+| Memory Complexity | $O(n^2)$ |
+| Parallelizable | ✓ (fully) |
+| Receptive Field | Global from layer 1 |
+| Parameter Count | $O(d^2)$ per layer |
+
+* Task Specializations
+
+** Language Modeling
+- *Causal masking*: $\alpha_{ij} = 0$ for $j > i$
+- *Positional encoding*: $\text{PE}(pos, 2i) = \sin(pos/10000^{2i/d})$
+
+** Vision (ViT)
+- *Patch embedding*: $16 \times 16$ patches → tokens
+- *[CLS] token*: Prepended for classification
+- *2D position encoding*: Learnable or sinusoidal
+
+** Long Sequences
+- *Sparse attention*: Local, strided, or random patterns
+- *Linear attention*: Kernel approximation for $O(n)$
+- *Flash attention*: IO-aware implementation
+
+* Limitations
+
+1. **Quadratic scaling**: Prohibitive for $n > 10k$
+2. **No inductive bias**: Must learn time/space from data
+3. **Position encoding**: Ad-hoc solution for order
+
+*Next*: [[id:7783bdea-d39f-457f-8505-cf392d416b4e][Convolutional Neural Networks: Local Feature Extraction]]
