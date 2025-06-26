@@ -1,0 +1,181 @@
+:PROPERTIES:
+:ID:       be4f0d49-69a8-42ba-b7c3-3bd18e3dbe97
+:CUSTOM_ID: 91/3
+:END:
+#+TITLE: Recurrent Neural Networks and LSTMs: Nonlinear Hidden State Dynamics
+#+FILETAGS: :concept:machine-learning:rnn:lstm:sequential:
+#+SETUPFILE: ../../setupfile.org
+
+RNNs process sequences through nonlinear hidden state recursion, with LSTMs adding gated memory cells to mitigate gradient flow issues, though both remain fundamentally sequential and struggle with long-range dependencies.
+
+* Task Definition
+
+Process sequences $\{x_1, x_2, \ldots, x_T\}$ via hidden state recursion with nonlinear dynamics, maintaining memory across time steps.
+
+* Mathematical Formulation
+
+** Vanilla RNN
+
+\begin{align}
+h_t &= \tanh(W_{hh}h_{t-1} + W_{xh}x_t + b_h) \\
+y_t &= W_{hy}h_t + b_y
+\end{align}
+
+where:
+- $h_t \in \mathbb{R}^d$: Hidden state
+- $x_t \in \mathbb{R}^n$: Input at time $t$
+- $W_{hh} \in \mathbb{R}^{d \times d}$: Hidden-to-hidden weights
+
+** LSTM Formulation
+
+\begin{equation}
+\begin{bmatrix} 
+i_t \\ f_t \\ o_t \\ \tilde{c}_t 
+\end{bmatrix} = 
+\begin{bmatrix} 
+\sigma \\ \sigma \\ \sigma \\ \tanh 
+\end{bmatrix} 
+\left(W \begin{bmatrix} h_{t-1} \\ x_t \end{bmatrix} + b\right)
+\end{equation}
+
+Cell state update:
+\begin{align}
+c_t &= f_t \odot c_{t-1} + i_t \odot \tilde{c}_t \\
+h_t &= o_t \odot \tanh(c_t)
+\end{align}
+
+Gates:
+- $i_t$: Input gate (what to store)
+- $f_t$: Forget gate (what to discard)
+- $o_t$: Output gate (what to expose)
+
+* Gradient Flow Analysis
+
+** Vanilla RNN Gradients
+
+\begin{equation}
+\frac{\partial L}{\partial h_0} = \prod_{t=1}^T \frac{\partial h_t}{\partial h_{t-1}} \cdot \frac{\partial L}{\partial h_T}
+\end{equation}
+
+where:
+\begin{equation}
+\frac{\partial h_t}{\partial h_{t-1}} = W_{hh}^T \cdot \text{diag}(\tanh'(W_{hh}h_{t-1} + W_{xh}x_t))
+\end{equation}
+
+Problem: $\left\|\frac{\partial h_t}{\partial h_{t-1}}\right\|$ can be $\gg 1$ or $\ll 1$
+
+** LSTM Gradient Highway
+
+\begin{equation}
+\frac{\partial c_t}{\partial c_{t-1}} = f_t
+\end{equation}
+
+Forget gates near 1 → gradient highway → long-range learning
+
+* Architecture Diagrams
+
+** RNN Cell
+#+BEGIN_SRC
+     x_t
+      │
+      ▼
+┌─────────────┐
+│  W_xh, b_h  │
+└──────┬──────┘
+       │
+h_{t-1}│    ┌─────┐
+───────┼───►│  +  │
+       │    └──┬──┘
+       │       │
+       │    ┌──▼──┐
+       │    │tanh │
+       │    └──┬──┘
+       │       │
+       └───────┼──► h_t
+               │
+            ┌──▼──┐
+            │W_hy │
+            └──┬──┘
+               │
+              y_t
+#+END_SRC
+
+** LSTM Cell
+#+BEGIN_SRC
+        x_t, h_{t-1}
+             │
+    ┌────────┴────────┐
+    │        │        │
+┌───▼──┐ ┌──▼──┐ ┌──▼──┐
+│   i   │ │  f  │ │  o  │  Gates
+└───┬──┘ └──┬──┘ └──┬──┘
+    │       │       │
+    │   c_{t-1}     │
+    │       │       │
+    │   ┌───▼───┐   │
+    │   │   ×   │   │     Forget
+    │   └───┬───┘   │
+    │       │       │
+┌───▼───┐   │       │
+│   ×   │◄──┘       │     Input
+└───┬───┘           │
+    │               │
+┌───▼───┐           │
+│  tanh │           │     Output
+└───┬───┘           │
+    │               │
+┌───▼───┐           │
+│   ×   │◄──────────┘
+└───┬───┘
+    │
+   h_t
+#+END_SRC
+
+* Key Properties
+
+| Property | RNN | LSTM |
+|----------+-----+------|
+| Parameters | $O(d^2)$ | $O(4d^2)$ |
+| Memory per step | $O(d)$ | $O(2d)$ |
+| Gradient flow | Poor | Better |
+| Long-range | ✗ | Limited |
+| Parallelizable | ✗ | ✗ |
+
+* Vanishing/Exploding Gradients
+
+For sequence length $T$:
+\begin{equation}
+\left\|\frac{\partial L}{\partial h_0}\right\| \approx \rho(W_{hh})^T
+\end{equation}
+
+where $\rho(W_{hh})$ is spectral radius.
+
+- $\rho < 1$: Vanishing gradients
+- $\rho > 1$: Exploding gradients
+- $\rho = 1$: Difficult to achieve
+
+* Practical Considerations
+
+** Initialization
+- Orthogonal initialization for $W_{hh}$
+- Small random values for other weights
+- Forget gate bias = 1 (remember by default)
+
+** Gradient Clipping
+\begin{equation}
+g \leftarrow \min\left(1, \frac{\text{threshold}}{||g||}\right) \cdot g
+\end{equation}
+
+** Bidirectional Processing
+- Forward: $\overrightarrow{h}_t = f(x_t, \overrightarrow{h}_{t-1})$
+- Backward: $\overleftarrow{h}_t = f(x_t, \overleftarrow{h}_{t+1})$
+- Combine: $h_t = [\overrightarrow{h}_t; \overleftarrow{h}_t]$
+
+* Limitations
+
+1. **Sequential computation**: Cannot parallelize across time
+2. **Limited context**: Effective range ~100-200 steps
+3. **Training instability**: Sensitive to initialization
+4. **Memory bottleneck**: Fixed-size hidden state
+
+*Next*: [[id:87623ddc-193b-4dcf-adf2-6825c0f1dec2][Neural ODEs: Continuous-Time Dynamics via Differential Equations]]

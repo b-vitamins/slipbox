@@ -1,0 +1,157 @@
+:PROPERTIES:
+:ID:       0d7e1915-8737-4bca-9a4b-945363839fe4
+:CUSTOM_ID: 91/3b
+:END:
+#+TITLE: Oscillatory Networks (AKOrN): Kuramoto Synchronization for Feature Binding
+#+FILETAGS: :concept:machine-learning:oscillatory:kuramoto:synchronization:
+#+SETUPFILE: ../../setupfile.org
+
+AKOrN uses Kuramoto synchronization dynamics where neurons as oscillators bind coherent features through phase alignment, providing biologically plausible object segmentation with natural robustness.
+
+* Task Definition
+
+Learn feature binding and object segmentation through Kuramoto synchronization dynamics, where neurons are oscillators that synchronize to represent coherent objects.
+
+* Mathematical Formulation
+
+** Original Kuramoto Model
+
+\begin{equation}
+\dot{\theta}_i = \omega_i + \sum_j J_{ij} \sin(\theta_j - \theta_i)
+\end{equation}
+
+where:
+- $\theta_i \in [0, 2\pi)$: Phase of oscillator $i$
+- $\omega_i$: Natural frequency
+- $J_{ij}$: Coupling strength
+
+** Vector-Valued Generalization
+
+Each neuron is a unit vector on $S^{N-1}$:
+\begin{equation}
+\dot{\mathbf{x}}_i = \Omega_i \mathbf{x}_i + \text{Proj}_{\mathbf{x}_i}\left(\mathbf{c}_i + \sum_j \mathbf{J}_{ij} \mathbf{x}_j\right)
+\end{equation}
+
+where:
+- $\mathbf{x}_i \in S^{N-1}$: Oscillator on unit sphere
+- $\Omega_i \in \mathbb{R}^{N \times N}$: Anti-symmetric (rotation)
+- $\mathbf{c}_i$: Conditional stimuli (data-dependent)
+- $\text{Proj}_{\mathbf{x}}(\mathbf{y}) = \mathbf{y} - \langle\mathbf{y}, \mathbf{x}\rangle\mathbf{x}$
+
+** Energy Function
+
+\begin{equation}
+E = -\frac{1}{2}\sum_{i,j} \mathbf{x}_i^T \mathbf{J}_{ij} \mathbf{x}_j - \sum_i \mathbf{c}_i^T \mathbf{x}_i
+\end{equation}
+
+Dynamics minimize this energy (Lyapunov function).
+
+* Discretization
+
+** Implicit Update
+\begin{align}
+\mathbf{z}_n &= \mathbf{z}_{n-1} + \Delta t(-\mathbf{A}\mathbf{y}_n + \mathbf{B}\mathbf{u}_n) \\
+\mathbf{y}_n &= \mathbf{y}_{n-1} + \Delta t \mathbf{z}_n \\
+\mathbf{x}_n &= \Pi[\mathbf{x}_{n-1} + \gamma \Delta \mathbf{x}_n]
+\end{align}
+
+where $\Pi(\mathbf{v}) = \mathbf{v}/\|\mathbf{v}\|$ projects back to sphere.
+
+* Architecture
+
+#+BEGIN_SRC
+Input Image
+     │
+┌────▼────┐
+│ Patchify │ → C^(0) (Initial stimuli)
+└─────────┘
+     │
+┌────▼────────────────┐
+│ Initialize X^(0)    │ (Random on sphere)
+└──────┬──────────────┘
+       │
+    ┌──▼──┐
+    │Block│ ┌─────────────────────┐
+    │  1  │ │ Kuramoto Layer:     │
+    └──┬──┘ │ - Update X for T    │
+       │    │   timesteps         │
+       │    │ - Synchronization   │
+       │    │   emerges           │
+       │    ├─────────────────────┤
+       │    │ Readout Module:     │
+       │    │ - m_k = ||Σ U_ki x_i|| │
+       │    │ - Phase invariant  │
+       │    └─────────────────────┘
+    ┌──▼──┐
+    │Block│
+    │  2  │
+    └──┬──┘
+       │
+      ...
+       │
+┌──────▼──────┐
+│  Clustering  │ → Object segments
+└─────────────┘
+#+END_SRC
+
+* Synchronization and Binding
+
+** Order Parameter
+\begin{equation}
+r = \left\|\frac{1}{N}\sum_{i=1}^N \mathbf{x}_i\right\|
+\end{equation}
+- $r = 0$: Incoherent (no sync)
+- $r = 1$: Full synchronization
+
+** Feature Binding
+Oscillators representing same object synchronize:
+\begin{equation}
+\mathbf{x}_i \approx \mathbf{x}_j \text{ if } i,j \text{ belong to same object}
+\end{equation}
+
+* Key Properties
+
+| Property | Value |
+|----------+-------|
+| Dynamics | Nonlinear on sphere |
+| Stability | Energy minimization |
+| Binding | Through synchronization |
+| Interpretability | Energy landscapes |
+| Biological plausibility | High |
+
+* Connectivity Types
+
+** Convolutional
+\begin{equation}
+\mathbf{y}_{c,h,w} = \mathbf{c}_{c,h,w} + \sum_{d} \sum_{h',w' \in R} \mathbf{J}_{c,d,h',w'} \mathbf{x}_{d,(h+h'),(w+w')}
+\end{equation}
+
+** Attentive (QKV-style)
+\begin{align}
+A_h(l,m) &= \text{softmax}(d_h(l,m)) \\
+d_h(l,m) &= \sum_a \langle\sum_i \mathbf{W}_{h,a,i}^Q \mathbf{x}_{l,i}, \sum_i \mathbf{W}_{h,a,i}^K \mathbf{x}_{m,i}\rangle
+\end{align}
+
+* Empirical Results
+
+** Object Discovery
+- CLEVRTex: 88.5% FG-ARI (competitive with slot models)
+- Pascal VOC: 52.0% MBO (beats DINO)
+
+** Reasoning (Sudoku)
+- 100% on in-distribution
+- 89.5% on out-of-distribution
+- Energy correlates with correctness
+
+** Robustness
+- 58.9% accuracy under adversarial attack
+- Near-perfect calibration (ECE = 1.4%)
+- No adversarial training needed!
+
+* Theoretical Insights
+
+1. **Synchronization = Compression**: Objects emerge
+2. **Energy = Confidence**: Low energy → correct
+3. **Dynamics = Regularization**: Natural robustness
+4. **Phase invariance**: Rotation-equivariant features
+
