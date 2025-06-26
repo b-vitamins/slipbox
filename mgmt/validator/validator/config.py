@@ -41,7 +41,6 @@ def dump_toml(data, file_path):
 class ValidationConfig:
     """Configuration for validation settings."""
     word_limit: int = 500
-    require_backlinks: bool = False
     check_external_links: bool = True
     orphan_grace_period_days: int = 7
     url_timeout_seconds: int = 10
@@ -81,7 +80,6 @@ class SlipboxConfig:
                     val_data = config_data["validation"]
                     validation_config = ValidationConfig(
                         word_limit=val_data.get("word_limit", validation_config.word_limit),
-                        require_backlinks=val_data.get("require_backlinks", validation_config.require_backlinks),
                         check_external_links=val_data.get("check_external_links", validation_config.check_external_links),
                         orphan_grace_period_days=val_data.get("orphan_grace_period_days", validation_config.orphan_grace_period_days),
                         url_timeout_seconds=val_data.get("url_timeout_seconds", validation_config.url_timeout_seconds),
@@ -125,7 +123,6 @@ def create_sample_config(output_path: Path) -> None:
     sample_config = {
         "validation": {
             "word_limit": 500,
-            "require_backlinks": False,
             "check_external_links": True,
             "orphan_grace_period_days": 7,
             "url_timeout_seconds": 10,
