@@ -1,0 +1,159 @@
+:PROPERTIES:
+:ID:       81fa26ab-7181-440d-8233-0f275d382743
+:CUSTOM_ID: 91/2a
+:END:
+#+TITLE: Selective State-Space Models (Mamba): Input-Dependent Dynamics
+#+FILETAGS: :concept:machine-learning:ssm:mamba:selective:
+#+SETUPFILE: ../../setupfile.org
+
+Mamba introduces input-dependent (selective) parameters to state-space models, enabling content-aware sequence processing while maintaining linear complexity through hardware-aware parallel scan implementations.
+
+* Task Definition
+
+State-space model with input-dependent (selective) dynamics, enabling content-aware sequence processing while maintaining linear complexity.
+
+* Mathematical Formulation
+
+** Selective SSM Dynamics
+
+\begin{align}
+x_k &= \mathbf{A}_k x_{k-1} + \mathbf{B}_k u_k \\
+y_k &= \mathbf{C}_k x_k
+\end{align}
+
+Key innovation: Parameters depend on input:
+\begin{align}
+\mathbf{B}_k &= \text{Linear}_B(u_k) \\
+\mathbf{C}_k &= \text{Linear}_C(u_k) \\
+\Delta_k &= \text{softplus}(\text{Linear}_\Delta(u_k))
+\end{align}
+
+** Discretization with Selection
+
+\begin{align}
+\overline{\mathbf{A}}_k &= \exp(-\Delta_k \cdot \mathbf{A}) \\
+\overline{\mathbf{B}}_k &= \Delta_k \cdot \mathbf{B}_k
+\end{align}
+
+* Algorithm
+
+#+BEGIN_SRC python
+def selective_scan(u, A, Linear_B, Linear_C, Linear_Δ):
+    """
+    u: (batch, length, d_model)
+    A: (d_state, ) - diagonal elements
+    """
+    batch, length, d_model = u.shape
+    x = torch.zeros(batch, d_state)
+    outputs = []
+    
+    for k in range(length):
+        # Selection mechanism
+        Δ_k = softplus(Linear_Δ(u[:, k]))      # (batch, d_state)
+        B_k = Linear_B(u[:, k])                # (batch, d_state)
+        C_k = Linear_C(u[:, k])                # (batch, d_state)
+        
+        # Discretization
+        A_bar = torch.exp(-Δ_k * A)           # (batch, d_state)
+        B_bar = Δ_k * B_k                     # (batch, d_state)
+        
+        # State update
+        x = A_bar * x + B_bar * u[:, k].unsqueeze(-1)
+        
+        # Output
+        y_k = (C_k * x).sum(dim=-1)
+        outputs.append(y_k)
+    
+    return torch.stack(outputs, dim=1)
+#+END_SRC
+
+* Hardware-Aware Implementation
+
+** Parallel Scan with Selection
+
+The selective scan can still use parallel algorithms:
+
+#+BEGIN_SRC
+┌────────────────────────────────────┐
+│ Precompute B_k, C_k, Δ_k for all k │
+└─────────────┬──────────────────────┘
+              │
+┌─────────────▼──────────────────────┐
+│ Materialize A_bar_k = exp(-Δ_k·A)  │
+└─────────────┬──────────────────────┘
+              │
+┌─────────────▼──────────────────────┐
+│ Parallel scan with variable A_bar   │
+│ Using work-efficient algorithm      │
+└─────────────┬──────────────────────┘
+              │
+┌─────────────▼──────────────────────┐
+│ Apply output projection C_k         │
+└────────────────────────────────────┘
+#+END_SRC
+
+** Memory Optimization
+
+- Recomputation in backward pass
+- Fused CUDA kernels
+- No materialization of large intermediate tensors
+
+* Architecture Integration
+
+#+BEGIN_SRC
+┌─────────────┐
+│   Input     │
+└──────┬──────┘
+       │
+┌──────▼──────┐
+│   Linear    │ Expand: d → 2d
+└──────┬──────┘
+       │
+     ┌─┴─┐
+     ▼   ▼
+┌────┐ ┌──────────┐
+│Conv│ │  SiLU    │
+└──┬─┘ └────┬─────┘
+   │        │
+   │ ┌──────▼──────┐
+   │ │ Selective   │
+   │ │   SSM       │
+   │ └──────┬──────┘
+   │        │
+   │ ┌──────▼──────┐
+   └►│  Multiply   │ Gating
+     └──────┬──────┘
+            │
+     ┌──────▼──────┐
+     │   Linear    │ Contract: 2d → d
+     └──────┬──────┘
+            │
+     ┌──────▼──────┐
+     │   Output    │
+     └─────────────┘
+#+END_SRC
+
+* Key Properties
+
+| Property | Value |
+|----------+-------|
+| Time Complexity | $O(L)$ with $O(\log L)$ depth |
+| Memory | $O(L)$ with recomputation |
+| Selectivity | Input-dependent dynamics |
+| Hardware Efficiency | Fused kernels, no materialization |
+| Long-Range | ✓ (selective forgetting) |
+
+* Selection Mechanism Interpretation
+
+The input-dependent $\Delta_k$ controls:
+1. **Integration rate**: How much new information to incorporate
+2. **Forgetting rate**: How quickly to decay old states
+3. **Effective discretization**: Adaptive time steps
+
+\begin{equation}
+\Delta_k \rightarrow 0: \text{ignore input, maintain state}
+\end{equation}
+\begin{equation}
+\Delta_k \rightarrow \infty: \text{reset state, focus on current}
+\end{equation}
+
