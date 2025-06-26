@@ -42,7 +42,6 @@ slipbox-validate --help
 
 ### Network Analysis
 - **Orphan Detection**: Find slips with no incoming/outgoing links
-- **Bidirectional Links**: Suggest missing back-links (warning)
 - **Connection Points**: Validate marked connection syntax
 
 ## Development
@@ -69,7 +68,6 @@ Create `slipbox.toml` in your slipbox root:
 ```toml
 [validation]
 word_limit = 500
-require_backlinks = false
 check_external_links = true
 orphan_grace_period_days = 7
 

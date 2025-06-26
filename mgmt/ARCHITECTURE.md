@@ -50,7 +50,6 @@ slips/
 ```toml
 [validation]
 word_limit = 500
-require_backlinks = false
 
 [paths]
 slips_dir = "slips/"
@@ -224,7 +223,7 @@ mgmt/newproject/
 **Content excision**:
 - Extract tangential content into separate notes
 - Replace sections with links to maintain reading flow
-- Ensure bidirectional linking between parent and excised content
+- Create forward links from parent to excised content
 
 ### Link Management
 **Connection discovery**:

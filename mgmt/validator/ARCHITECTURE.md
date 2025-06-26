@@ -110,13 +110,6 @@ class Violation:
 - **Validation**: Graph traversal, HTTP HEAD requests, file system checks
 - **Error**: Broken internal link, missing bibliography entry, missing file
 
-### Bidirectional Linking
-- **Rule**: `BIDIRECTIONAL_LINKS`
-- **Spec**: For every link A→B, should have back-link B→A (warning, not error)
-- **Detection**: Build graph of all links, identify unidirectional edges
-- **Validation**: Graph analysis to find missing back-links
-- **Warning**: Suggest creating back-link (not enforced)
-
 ### Orphan Detection  
 - **Rule**: `ORPHAN_DETECTION`
 - **Spec**: Slips with zero incoming or outgoing links
@@ -137,7 +130,7 @@ class Violation:
 ├── validators/         # Validation rule implementations
 │   ├── __init__.py
 │   ├── structure.py    # Properties, word count
-│   ├── links.py        # Link integrity, bidirectional
+│   ├── links.py        # Link integrity, orphan detection
 │   ├── network.py      # Orphan detection, graph analysis
 │   └── content.py      # Connection points, formatting
 ├── reporters/          # Output formatting
@@ -204,7 +197,6 @@ slipbox-validate content [PATH]       # Connection points, formatting
 
 # Maintenance operations
 slipbox-validate orphans [PATH]       # Find orphaned slips
-slipbox-validate backlinks [PATH]     # Suggest missing back-links
 slipbox-validate health [PATH]        # Overall health report
 
 # Utilities
@@ -238,7 +230,6 @@ slipbox-validate graph [PATH]         # Export graph data
 # slipbox.toml
 [validation]
 word_limit = 500
-require_backlinks = false
 check_external_links = true
 orphan_grace_period_days = 7
 
@@ -338,7 +329,7 @@ highlight_violations = true
 ### Error Categories
 - **Fatal**: Cannot continue (missing slips directory)
 - **Error**: Validation rule violation  
-- **Warning**: Potential issue (missing back-link)
+- **Warning**: Potential issue (orphaned slip)
 - **Info**: Informational (orphan slip)
 
 ### User Experience

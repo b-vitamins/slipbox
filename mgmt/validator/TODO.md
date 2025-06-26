@@ -125,8 +125,7 @@ class InternalLinkValidator(BaseValidator):
 class OrphanDetector(BaseValidator):
     # Find slips with no incoming/outgoing links (with grace period)
     
-class BidirectionalLinkAnalyzer(BaseValidator):
-    # Suggest missing back-links (warnings, not errors)
+# BidirectionalLinkAnalyzer removed - Luhmann's system only used forward links
 ```
 
 #### 2.2 Build Slip Graph ✅ COMPLETE
@@ -136,7 +135,7 @@ class BidirectionalLinkAnalyzer(BaseValidator):
 # Graph functionality integrated into:
 # - InternalLinkValidator._build_slip_index()
 # - OrphanDetector._build_connection_graph() 
-# - BidirectionalLinkAnalyzer._collect_all_links()
+# - (BidirectionalLinkAnalyzer removed)
 ```
 
 #### 2.3 Add Links Commands ✅ COMPLETE
