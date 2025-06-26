@@ -10,7 +10,6 @@ from .structure import (
 from .links import (
     InternalLinkValidator,
     OrphanDetector,
-    BidirectionalLinkAnalyzer,
     SlipLinkValidator
 )
 from .external import (
@@ -29,7 +28,6 @@ __all__ = [
     'SlipStructureValidator',
     'InternalLinkValidator',
     'OrphanDetector', 
-    'BidirectionalLinkAnalyzer',
     'SlipLinkValidator',
     'BibliographyValidator',
     'ExternalURLValidator',

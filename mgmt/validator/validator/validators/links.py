@@ -192,68 +192,6 @@ class OrphanDetector(BaseValidator):
             return 0  # Default to new file
 
 
-class BidirectionalLinkAnalyzer(BaseValidator):
-    """Suggests missing back-links between slips."""
-    
-    def __init__(self, slips_dir: Path):
-        """Initialize with slips directory."""
-        self.slips_dir = slips_dir
-        self.all_links = self._collect_all_links()
-    
-    def _collect_all_links(self) -> Dict[str, Set[str]]:
-        """Collect all links from all slips."""
-        links = {}
-        parser = OrgParser()
-        
-        if not self.slips_dir.exists():
-            return links
-        
-        for org_file in self.slips_dir.glob("*.org"):
-            try:
-                slip = parser.parse_slip(org_file)
-                source_id = slip.properties.custom_id or slip.properties.id
-                
-                if not source_id:
-                    continue
-                
-                links[source_id] = set()
-                
-                for link in slip.links:
-                    if link.link_type == LinkType.INTERNAL:
-                        target = link.target
-                        if target.startswith("id:"):
-                            target = target[3:]  # Remove id: prefix
-                        links[source_id].add(target)
-                        
-            except Exception:
-                continue
-        
-        return links
-    
-    def validate(self, slip: Slip) -> List[Violation]:
-        """Suggest missing back-links for this slip."""
-        violations = []
-        
-        slip_id = slip.properties.custom_id or slip.properties.id
-        if not slip_id:
-            return violations
-        
-        # Find slips that link to this slip but don't have back-links
-        for other_id, other_links in self.all_links.items():
-            if slip_id in other_links:  # Other slip links to this one
-                # Check if this slip links back
-                current_links = self.all_links.get(slip_id, set())
-                if other_id not in current_links:
-                    violations.append(Violation(
-                        rule="MISSING_BACKLINK",
-                        message=f"Consider adding back-link to {other_id} "
-                               f"(it links to this slip but no back-link exists)",
-                        severity=Severity.INFO
-                    ))
-        
-        return violations
-
-
 class SlipLinkValidator(BaseValidator):
     """Meta-validator that runs all link validations."""
     
@@ -261,8 +199,7 @@ class SlipLinkValidator(BaseValidator):
         """Initialize with configuration."""
         self.validators = [
             InternalLinkValidator(slips_dir, org_roam_priority),
-            OrphanDetector(slips_dir, grace_period_days),
-            BidirectionalLinkAnalyzer(slips_dir)
+            OrphanDetector(slips_dir, grace_period_days)
         ]
     
     def validate(self, slip: Slip) -> List[Violation]:

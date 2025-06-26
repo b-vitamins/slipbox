@@ -7,8 +7,7 @@ import os
 
 from validator.validators.links import (
     InternalLinkValidator,
-    OrphanDetector,
-    BidirectionalLinkAnalyzer
+    OrphanDetector
 )
 from validator.models import Slip, SlipProperties, Link, LinkType, Severity
 
@@ -374,66 +373,3 @@ This slip has no connections.
         assert len(orphan_violations) == 1
         assert orphan_violations[0].severity == Severity.WARNING
 
-
-class TestBidirectionalLinkAnalyzer:
-    """Test cases for BidirectionalLinkAnalyzer."""
-
-    def setup_method(self):
-        """Set up test fixtures."""
-        self.temp_dir = tempfile.mkdtemp()
-        self.slips_dir = Path(self.temp_dir)
-        
-        # Create test slips
-        self._create_test_slips()
-        
-        self.validator = BidirectionalLinkAnalyzer(self.slips_dir)
-
-    def teardown_method(self):
-        """Clean up temporary directory."""
-        import shutil
-        shutil.rmtree(self.temp_dir)
-
-    def _create_test_slips(self):
-        """Create test slips for bidirectional analysis."""
-        # Slip 1 links to Slip 2 (but Slip 2 doesn't link back)
-        slip1_content = """
-:PROPERTIES:
-:ID: id1
-:CUSTOM_ID: 1/1
-:END:
-#+TITLE: Slip 1
-#+FILETAGS: :test:
-
-This links to [[1/2][Slip 2]].
-"""
-        
-        # Slip 2 does not link back to Slip 1
-        slip2_content = """
-:PROPERTIES:
-:ID: id2
-:CUSTOM_ID: 1/2
-:END:
-#+TITLE: Slip 2
-#+FILETAGS: :test:
-
-This slip doesn't link back.
-"""
-        
-        with open(self.slips_dir / "slip1.org", 'w') as f:
-            f.write(slip1_content)
-        with open(self.slips_dir / "slip2.org", 'w') as f:
-            f.write(slip2_content)
-
-    def test_missing_backlink_suggestion(self):
-        """Test that missing back-links are suggested."""
-        from validator.parser import OrgParser
-        parser = OrgParser()
-        
-        # Test slip 2 (should suggest linking back to slip 1)
-        slip2 = parser.parse_slip(self.slips_dir / "slip2.org")
-        violations = self.validator.validate(slip2)
-        
-        backlink_suggestions = [v for v in violations if v.rule == "MISSING_BACKLINK"]
-        assert len(backlink_suggestions) == 1
-        assert backlink_suggestions[0].severity == Severity.INFO
-        assert "1/1" in backlink_suggestions[0].message
