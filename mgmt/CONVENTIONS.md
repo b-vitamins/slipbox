@@ -31,7 +31,7 @@
 
 ### Required Sections
 - Content with marked connection points
-- Links to other slips (bidirectional)
+- Links to other slips
 
 ## Individual Slip Rules
 
@@ -100,7 +100,7 @@
 - **Mark connection points** - Indicate within text where branches/links attach
 
 ### Linking Strategy
-- **Link generously and immediately** - Create references radially with immediate back-links
+- **Link generously and immediately** - Create references radially to related concepts
 - **No privileged slips** - Every slip gets quality only from network connections
 - **Multiple storage via links** - Same concept can be referenced from many contexts
 

@@ -18,7 +18,7 @@ This is a digital implementation of the Zettelkasten method. The system is desig
 
 #### DO:
 - **Use fixed IDs** - Once assigned, never change a note's ID
-- **Link generously** - Create both forward links AND back-links immediately
+- **Link generously** - Create forward links to related notes
 - **Embrace disorder** - The apparent disorder has "non-arbitrary internal structure"
 - **Allow organic growth** - Let notes branch internally at any point
 - **Maintain the register** - Constantly update keyword indices for rediscovery
@@ -54,7 +54,7 @@ This is a digital implementation of the Zettelkasten method. The system is desig
 - Deep branching: `57/12a1`, `57/12a2`
 
 #### Linking Strategy
-1. When creating a link, immediately create the back-link
+1. Create forward links when you see connections
 2. Mark connection points within text
 3. Central concepts should accumulate many links
 4. Links solve the "multiple storage" problem
@@ -71,7 +71,7 @@ This is a digital implementation of the Zettelkasten method. The system is desig
 1. Capture the thought immediately (fleeting note)
 2. Assign a permanent ID
 3. Find connection points to existing notes
-4. Create bidirectional links
+4. Create links to relevant notes
 5. Update relevant registers
 6. Let the note find its own importance through connections
 
@@ -88,7 +88,7 @@ This is a digital implementation of the Zettelkasten method. The system is desig
 - Keeping notes isolated without connections
 - Expecting the system to work like hierarchical storage
 - Treating the register as optional
-- Ignoring back-links
+- Creating links without considering their relevance
 
 ### Growth Stages
 
