@@ -1,2 +1,27 @@
 elpa/
 .claude/settings.local.json
+
+# Org-mode generated files
+slips/ltximg/
+**/ltximg/
+*.tex
+*.pdf
+*.html
+*.txt~
+*.org~
+
+# LaTeX temporary files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+
+# Python temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
