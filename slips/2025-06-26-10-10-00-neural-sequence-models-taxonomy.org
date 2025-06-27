@@ -3,7 +3,7 @@
 :CUSTOM_ID: 91/1
 :END:
 #+TITLE: Neural Sequence Models: A Taxonomy
-#+FILETAGS: :concept:machine-learning:neural-networks:taxonomy:
+#+FILETAGS: :concept:machinelearning:neuralnetworks:taxonomy:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Neural sequence models fall into two fundamental categories: static models that process entire sequences simultaneously, and dynamical models that evolve internal states over time.

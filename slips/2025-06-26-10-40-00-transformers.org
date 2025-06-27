@@ -3,7 +3,7 @@
 :CUSTOM_ID: 91/1a
 :END:
 #+TITLE: Transformers: Static Attention-Based Sequence Models
-#+FILETAGS: :concept:machine-learning:transformers:attention:
+#+FILETAGS: :concept:machinelearning:transformers:attention:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Transformers process sequences through self-attention mechanisms that compute pairwise relationships between all positions simultaneously, enabling parallel computation at the cost of quadratic complexity.

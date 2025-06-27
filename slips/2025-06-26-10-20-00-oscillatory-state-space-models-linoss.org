@@ -3,7 +3,7 @@
 :CUSTOM_ID: 91/2b
 :END:
 #+TITLE: Oscillatory State-Space Models (LinOSS): Harmonic Dynamics
-#+FILETAGS: :concept:machine-learning:ssm:oscillatory:physics:
+#+FILETAGS: :concept:machinelearning:ssm:oscillatory:physics:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 LinOSS models sequences through forced harmonic oscillators, leveraging simple physics-based dynamics to achieve stable long-range propagation without complex initialization schemes.

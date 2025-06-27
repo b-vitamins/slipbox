@@ -3,7 +3,7 @@
 :CUSTOM_ID: 91/2a
 :END:
 #+TITLE: Selective State-Space Models (Mamba): Input-Dependent Dynamics
-#+FILETAGS: :concept:machine-learning:ssm:mamba:selective:
+#+FILETAGS: :concept:machinelearning:ssm:mamba:selective:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Mamba introduces input-dependent (selective) parameters to state-space models, enabling content-aware sequence processing while maintaining linear complexity through hardware-aware parallel scan implementations.

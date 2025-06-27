@@ -3,7 +3,7 @@
 :CUSTOM_ID: 91/3a
 :END:
 #+TITLE: Neural ODEs: Continuous-Time Dynamics via Differential Equations
-#+FILETAGS: :concept:machine-learning:neural-ode:continuous:dynamical-systems:
+#+FILETAGS: :concept:machinelearning:neuralode:continuous:dynamicalsystems:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Neural ODEs parameterize differential equations with neural networks, enabling adaptive computation, memory-efficient backpropagation through the adjoint method, and natural handling of continuous-time data.

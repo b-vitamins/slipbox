@@ -3,7 +3,7 @@
 :CUSTOM_ID: 91/2
 :END:
 #+TITLE: Structured State-Space Models (S4/S5): Linear Dynamics for Sequences
-#+FILETAGS: :concept:machine-learning:ssm:s4:s5:dynamical-systems:
+#+FILETAGS: :concept:machinelearning:ssm:s4:s5:dynamicalsystems:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 S4 and S5 model sequences through continuous-time linear dynamical systems with structured state matrices, achieving efficient parallel computation while maintaining long-range dependencies.
