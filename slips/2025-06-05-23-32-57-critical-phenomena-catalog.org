@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/19
 :END:
 #+TITLE: Critical Phenomena Catalog
-#+FILETAGS: :physics:spof:ch1:critical-phenomena:universality:
+#+FILETAGS: :physics:spof:ch1:criticalphenomena:universality:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 

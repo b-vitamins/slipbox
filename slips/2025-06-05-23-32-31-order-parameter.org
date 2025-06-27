@@ -3,6 +3,6 @@
 :CUSTOM_ID: 92/6
 :END:
 #+TITLE: Order Parameter
-#+FILETAGS: :physics:spof:ch1:order-parameter:placeholder:
+#+FILETAGS: :physics:spof:ch1:orderparameter:placeholder:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 

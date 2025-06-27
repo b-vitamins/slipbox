@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/34
 :END:
 #+TITLE: Free Energy Landscape
-#+FILETAGS: :physics:spof:ch1:phase-transitions:visualization:
+#+FILETAGS: :physics:spof:ch1:phasetransitions:visualization:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 

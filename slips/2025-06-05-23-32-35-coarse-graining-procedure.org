@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/8
 :END:
 #+TITLE: Coarse Graining Procedure
-#+FILETAGS: :physics:spof:ch1:renormalization:effective-theory:
+#+FILETAGS: :physics:spof:ch1:renormalization:effectivetheory:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 

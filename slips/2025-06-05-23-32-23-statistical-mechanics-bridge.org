@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/2
 :END:
 #+TITLE: Statistical Mechanics Bridge
-#+FILETAGS: :physics:spof:ch1:partition-function:fluctuation:
+#+FILETAGS: :physics:spof:ch1:partitionfunction:fluctuation:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 

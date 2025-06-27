@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/24
 :END:
 #+TITLE: Microscopic Hamiltonian Expansion
-#+FILETAGS: :physics:spof:ch1:phonons:harmonic-approximation:
+#+FILETAGS: :physics:spof:ch1:phonons:harmonicapproximatio:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 
