@@ -1,0 +1,158 @@
+:PROPERTIES:
+:ID:       87623ddc-193b-4dcf-adf2-6825c0f1dec2
+:CUSTOM_ID: 91/3a
+:END:
+#+TITLE: Neural ODEs: Continuous-Time Dynamics via Differential Equations
+#+FILETAGS: :concept:machinelearning:neuralode:continuous:dynamicalsystems:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Neural ODEs parameterize differential equations with neural networks, enabling adaptive computation, memory-efficient backpropagation through the adjoint method, and natural handling of continuous-time data.
+
+* Task Definition
+
+Learn continuous-time dynamics by parameterizing differential equations with neural networks, enabling adaptive computation and memory-efficient backpropagation.
+
+* Mathematical Formulation
+
+** Forward Dynamics
+
+\begin{equation}
+\frac{dh(t)}{dt} = f_\theta(h(t), t)
+\end{equation}
+
+Solution via integration:
+\begin{equation}
+h(t_1) = h(t_0) + \int_{t_0}^{t_1} f_\theta(h(t), t) dt
+\end{equation}
+
+where $f_\theta: \mathbb{R}^d \times \mathbb{R} \rightarrow \mathbb{R}^d$ is a neural network.
+
+** Adjoint Method (Backpropagation)
+
+Define adjoint state: $a(t) = \frac{\partial L}{\partial h(t)}$
+
+Adjoint dynamics:
+\begin{equation}
+\frac{da(t)}{dt} = -a(t)^T \frac{\partial f_\theta(h(t), t)}{\partial h}
+\end{equation}
+
+Gradient w.r.t. parameters:
+\begin{equation}
+\frac{dL}{d\theta} = -\int_{t_1}^{t_0} a(t)^T \frac{\partial f_\theta(h(t), t)}{\partial \theta} dt
+\end{equation}
+
+* ODE Solvers
+
+** Euler Method (1st order)
+\begin{equation}
+h_{n+1} = h_n + \Delta t \cdot f_\theta(h_n, t_n)
+\end{equation}
+
+** Runge-Kutta 4 (4th order)
+\begin{align}
+k_1 &= f_\theta(h_n, t_n) \\
+k_2 &= f_\theta(h_n + \frac{\Delta t}{2}k_1, t_n + \frac{\Delta t}{2}) \\
+k_3 &= f_\theta(h_n + \frac{\Delta t}{2}k_2, t_n + \frac{\Delta t}{2}) \\
+k_4 &= f_\theta(h_n + \Delta t k_3, t_n + \Delta t) \\
+h_{n+1} &= h_n + \frac{\Delta t}{6}(k_1 + 2k_2 + 2k_3 + k_4)
+\end{align}
+
+** Adaptive Solvers (e.g., Dopri5)
+- Adjust $\Delta t$ based on error estimates
+- More evaluations for difficult regions
+- Fewer for smooth regions
+
+* Architecture Diagram
+
+#+BEGIN_SRC
+┌─────────────┐
+│  Input h(0) │
+└──────┬──────┘
+       │
+┌──────▼──────────────────┐
+│  ODE Solve from 0 to T  │
+│  ┌────────────────────┐ │
+│  │ While t < T:       │ │
+│  │   Eval f_θ(h,t)    │ │
+│  │   Update h         │ │
+│  │   Adapt timestep   │ │
+│  └────────────────────┘ │
+└──────┬──────────────────┘
+       │
+┌──────▼──────┐
+│ Output h(T) │
+└─────────────┘
+
+Backprop (Adjoint):
+┌─────────────┐
+│   ∂L/∂h(T)  │
+└──────┬──────┘
+       │
+┌──────▼──────────────────┐
+│  ODE Solve from T to 0  │
+│  (Backward in time)      │
+└──────┬──────────────────┘
+       │
+┌──────▼──────┐
+│   ∂L/∂h(0)  │
+│   ∂L/∂θ     │
+└─────────────┘
+#+END_SRC
+
+* Key Properties
+
+| Property | Value |
+|----------+-------|
+| Memory | $O(d)$ constant! |
+| Computation | Adaptive (problem-dependent) |
+| Invertibility | ✓ (run dynamics backward) |
+| Continuous time | ✓ (query at any $t$) |
+| Stability | Depends on $f_\theta$ |
+
+* Variants and Extensions
+
+** Augmented Neural ODEs
+Add extra dimensions to avoid crossing trajectories:
+\begin{equation}
+\frac{d[h; a]}{dt} = f_\theta([h; a], t)
+\end{equation}
+where $a \in \mathbb{R}^p$ are auxiliary dimensions.
+
+** Neural Controlled DEs (NCDEs)
+Incorporate control signal:
+\begin{equation}
+dh(t) = f_\theta(h(t)) \cdot dx(t)
+\end{equation}
+where $x(t)$ is input path.
+
+** Stochastic Neural ODEs
+Add noise:
+\begin{equation}
+dh(t) = f_\theta(h(t), t)dt + g_\phi(h(t), t)dW(t)
+\end{equation}
+where $W(t)$ is Brownian motion.
+
+* Continuous Normalizing Flows
+
+Change of variables formula:
+\begin{equation}
+\log p(h(T)) = \log p(h(0)) - \int_0^T \text{Tr}\left(\frac{\partial f_\theta}{\partial h}\right) dt
+\end{equation}
+
+Enables density estimation and generation.
+
+* Advantages and Limitations
+
+** Advantages
+1. **Memory efficient**: Constant memory via adjoint
+2. **Adaptive computation**: Spend more compute on hard regions
+3. **Invertible**: Useful for generative modeling
+4. **Continuous**: Natural for irregular time series
+
+** Limitations
+1. **Speed**: Many function evaluations
+2. **Discrete data**: Awkward for text/discrete sequences
+3. **Training instability**: Exploding/vanishing dynamics
+4. **Non-parallelizable**: Sequential ODE solving
+
+*Next*: [[id:0d7e1915-8737-4bca-9a4b-945363839fe4][Oscillatory Networks (AKOrN): Kuramoto Synchronization for Feature Binding]]

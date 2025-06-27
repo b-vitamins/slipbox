@@ -1,0 +1,118 @@
+:PROPERTIES:
+:ID:       7783bdea-d39f-457f-8505-cf392d416b4e
+:CUSTOM_ID: 91/1b
+:END:
+#+TITLE: Convolutional Neural Networks: Local Feature Extraction
+#+FILETAGS: :concept:machinelearning:cnn:convolution:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+CNNs extract hierarchical features through local linear operations applied across spatial dimensions, achieving translation equivariance with parameter sharing but limited by fixed receptive fields.
+
+* Task Definition
+
+Given input tensor $\mathbf{x} \in \mathbb{R}^{C \times L}$ (1D) or $\mathbb{R}^{C \times H \times W}$ (2D), compute output $\mathbf{y} \in \mathbb{R}^{C' \times L'}$ via local linear operations.
+
+* Mathematical Formulation
+
+** 1D Discrete Convolution
+
+\begin{equation}
+(f * g)[n] = \sum_{m=-\infty}^{\infty} f[m] \cdot g[n-m]
+\end{equation}
+
+** Neural Convolution Layer
+
+\begin{equation}
+y_{c',i} = \sigma\left(\sum_{c=1}^C \sum_{k=1}^K w_{c',c,k} \cdot x_{c,i+k-\lfloor K/2 \rfloor} + b_{c'}\right)
+\end{equation}
+
+where:
+- $w \in \mathbb{R}^{C' \times C \times K}$: Convolution kernels
+- $b \in \mathbb{R}^{C'}$: Bias terms
+- $\sigma$: Activation function
+- $K$: Kernel size
+
+** Matrix Form
+
+\begin{equation}
+\mathbf{y} = \sigma(\mathbf{W} * \mathbf{x} + \mathbf{b})
+\end{equation}
+
+* Architecture Diagram
+
+#+BEGIN_SRC
+┌─────────────────────────────────────┐
+│          Input (C×L)                │
+└────────────┬────────────────────────┘
+             │
+    ┌────────▼────────┐
+    │   Conv(K₁)      │ Local receptive field: K₁
+    ├─────────────────┤
+    │   ReLU          │
+    ├─────────────────┤
+    │   MaxPool(2)    │ Subsample by 2
+    └────────┬────────┘
+             │
+    ┌────────▼────────┐
+    │   Conv(K₂)      │ Effective RF: K₁ + 2(K₂-1)
+    ├─────────────────┤
+    │   ReLU          │
+    ├─────────────────┤
+    │   MaxPool(2)    │ Subsample by 2
+    └────────┬────────┘
+             │
+           (...) 
+             │
+    ┌────────▼────────┐
+    │   Output        │
+    └─────────────────┘
+#+END_SRC
+
+* Key Properties
+
+| Property | Value |
+|----------+-------|
+| Time Complexity | $O(n \cdot K \cdot C \cdot C')$ |
+| Memory Complexity | $O(K \cdot C \cdot C')$ |
+| Parallelizable | ✓ (across positions) |
+| Receptive Field | $K^L$ for $L$ layers |
+| Parameter Sharing | ✓ (across positions) |
+| Translation Equivariance | ✓ (before pooling) |
+
+* Convolution as Matrix Multiplication
+
+For input $\mathbf{x} \in \mathbb{R}^n$ and kernel $\mathbf{w} \in \mathbb{R}^K$:
+
+\begin{equation}
+\mathbf{y} = \begin{bmatrix}
+w_1 & w_2 & \cdots & w_K & 0 & \cdots & 0 \\
+0 & w_1 & w_2 & \cdots & w_K & \cdots & 0 \\
+\vdots & & \ddots & & & \ddots & \vdots \\
+0 & \cdots & 0 & w_1 & w_2 & \cdots & w_K
+\end{bmatrix} \mathbf{x}
+\end{equation}
+
+* Task Specializations
+
+** Computer Vision (2D)
+- *Architecture*: Conv → BN → ReLU → Pool
+- *Kernels*: Typically $3 \times 3$ or $5 \times 5$
+- *Depth*: Deep networks (ResNet: 50-152 layers)
+
+** Audio/Speech (1D)
+- *Large kernels*: $K > 100$ for temporal context
+- *Dilated convolutions*: Exponentially growing RF
+- *Causal*: Only look at past (for streaming)
+
+** Sequences/NLP
+- *1D convolutions*: Over embedding dimension
+- *Gated units*: GLU(x) = x₁ ⊙ σ(x₂)
+- *Depthwise separable*: Spatial then channel-wise
+
+* Limitations
+
+1. **Fixed receptive field**: Quadratic growth with depth
+2. **No adaptive computation**: Same ops everywhere
+3. **Local only**: Hard to capture long-range dependencies
+4. **Not permutation invariant**: Unlike attention
+

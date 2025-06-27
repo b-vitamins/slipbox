@@ -1,0 +1,136 @@
+:PROPERTIES:
+:ID:       46fe01da-803d-41d7-8d77-7adc6f25a615
+:CUSTOM_ID: 91/2
+:END:
+#+TITLE: Structured State-Space Models (S4/S5): Linear Dynamics for Sequences
+#+FILETAGS: :concept:machinelearning:ssm:s4:s5:dynamicalsystems:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+S4 and S5 model sequences through continuous-time linear dynamical systems with structured state matrices, achieving efficient parallel computation while maintaining long-range dependencies.
+
+* Task Definition
+
+Model sequence-to-sequence transformations $u(t) \rightarrow y(t)$ via continuous-time linear dynamical systems, discretized for efficient computation.
+
+* Mathematical Formulation
+
+** Continuous-Time System
+
+\begin{align}
+\frac{dx(t)}{dt} &= \mathbf{A}x(t) + \mathbf{B}u(t) \\
+y(t) &= \mathbf{C}x(t) + \mathbf{D}u(t)
+\end{align}
+
+where:
+- $x(t) \in \mathbb{R}^N$: Hidden state
+- $u(t) \in \mathbb{R}^1$: Input signal
+- $y(t) \in \mathbb{R}^1$: Output signal
+- $\mathbf{A} \in \mathbb{R}^{N \times N}$: State matrix
+
+** Discretization (Zero-Order Hold)
+
+\begin{align}
+x_k &= \overline{\mathbf{A}}x_{k-1} + \overline{\mathbf{B}}u_k \\
+y_k &= \mathbf{C}x_k + \mathbf{D}u_k
+\end{align}
+
+where:
+\begin{align}
+\overline{\mathbf{A}} &= e^{\Delta \mathbf{A}} \\
+\overline{\mathbf{B}} &= (\Delta \mathbf{A})^{-1}(e^{\Delta \mathbf{A}} - I) \cdot \Delta \mathbf{B}
+\end{align}
+
+** S4's HiPPO Matrix
+
+\begin{equation}
+\mathbf{A}_{nk} = -\begin{cases}
+(2n+1)^{1/2}(2k+1)^{1/2} & \text{if } n > k \\
+n+1 & \text{if } n = k \\
+0 & \text{if } n < k
+\end{cases}
+\end{equation}
+
+This measures input $u(t)$ with Legendre polynomials.
+
+* Computational Methods
+
+** Convolution View
+
+The discrete SSM is a convolution:
+\begin{equation}
+y = \mathcal{K} * u
+\end{equation}
+
+where kernel:
+\begin{equation}
+\mathcal{K} = (\mathbf{C}\mathbf{B}, \mathbf{C}\overline{\mathbf{A}}\mathbf{B}, \mathbf{C}\overline{\mathbf{A}}^2\mathbf{B}, \ldots)
+\end{equation}
+
+** Fast Computation (S4)
+
+Using FFT for $O(L \log L)$ training:
+\begin{equation}
+\hat{y} = \text{FFT}^{-1}(\text{FFT}(\mathcal{K}) \odot \text{FFT}(u))
+\end{equation}
+
+** S5 Simplification
+
+- Diagonal $\mathbf{A} = \text{diag}(a_1, \ldots, a_N)$
+- Parallel scan instead of FFT:
+
+#+BEGIN_SRC
+def parallel_scan(A_bar, B_bar, u):
+    # Associative operation
+    def combine(x1, x2):
+        A1, b1 = x1
+        A2, b2 = x2
+        return A2 @ A1, A2 @ b1 + b2
+    
+    # Apply scan
+    return scan(combine, (A_bar, B_bar * u))
+#+END_SRC
+
+* Architecture Diagram
+
+#+BEGIN_SRC
+┌──────────────────┐
+│   Input u(t)     │
+└────────┬─────────┘
+         │
+┌────────▼─────────┐     ┌─────────────┐
+│  Discretize to   │────►│ x[k] = Āx[k-1] + B̄u[k] │
+│  u[0],...,u[L]   │     │ y[k] = Cx[k] + Du[k]   │
+└──────────────────┘     └─────────────┘
+         │                       │
+         │                       │ Parallel
+         │                       │ Scan/FFT
+         ▼                       ▼
+┌──────────────────┐     ┌─────────────┐
+│ Convolve with    │────►│   Output    │
+│ Kernel K         │     │ y[0],...,y[L]│
+└──────────────────┘     └─────────────┘
+#+END_SRC
+
+* Key Properties
+
+| Property | S4 | S5 |
+|----------+----+-----|
+| State Matrix | HiPPO (dense) | Diagonal |
+| Computation | FFT | Parallel Scan |
+| Time Complexity | $O(L \log L)$ | $O(L \log L)$ |
+| Memory | $O(N^2 + L)$ | $O(N + L)$ |
+| Long-Range | ✓ (HiPPO) | ✓ (careful init) |
+
+* Initialization Strategies
+
+** S4: HiPPO Variants
+- *LegS*: Legendre measure
+- *LagT*: Laguerre (truncated)
+- *FouT*: Fourier (truncated)
+
+** S5: Diagonal
+- Random complex eigenvalues
+- Magnitude near unit circle
+- Uniform phase distribution
+
+*Next*: [[id:81fa26ab-7181-440d-8233-0f275d382743][Selective State-Space Models (Mamba): Input-Dependent Dynamics]]

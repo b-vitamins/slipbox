@@ -1,0 +1,80 @@
+:PROPERTIES:
+:ID:       d4a419c0-679c-4708-b6ee-4f99fb61cb26
+:CUSTOM_ID: 91/1
+:END:
+#+TITLE: Neural Sequence Models: A Taxonomy
+#+FILETAGS: :concept:machinelearning:neuralnetworks:taxonomy:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Neural sequence models fall into two fundamental categories: static models that process entire sequences simultaneously, and dynamical models that evolve internal states over time.
+
+* Taxonomy Tree
+
+#+BEGIN_SRC
+Neural Sequence Models
+├── Static Models
+│   ├── [SM-1] Transformers
+│   │   └── Process all positions simultaneously via attention
+│   └── [SM-2] Convolutional Neural Networks (CNNs)
+│       └── Extract local features through sliding windows
+│
+└── Dynamical Models
+    ├── State-Space Models (SSMs)
+    │   ├── [DM-SSM-1] Structured (S4, S5)
+    │   │   └── Linear dynamics with HiPPO/diagonal parameterization
+    │   ├── [DM-SSM-2] Selective (Mamba)
+    │   │   └── Input-dependent state transitions
+    │   └── [DM-SSM-3] Oscillatory (LinOSS)
+    │       └── Forced harmonic oscillators
+    │
+    └── Other Dynamical Networks
+        ├── [DM-OD-1] RNNs/LSTMs
+        │   └── Nonlinear hidden state recursion
+        ├── [DM-OD-2] Neural ODEs
+        │   └── Continuous-time dynamics via ODE solvers
+        └── [DM-OD-3] Oscillatory Networks (AKOrN)
+            └── Kuramoto synchronization for feature binding
+#+END_SRC
+
+* Comparative Analysis
+
+| Model Type | Parallelizable | Long-Range | Complexity | Biological |
+|------------+----------------+------------+------------+------------|
+| [SM-1]     | ✓              | ✓          | O(n²)      | ✗          |
+| [SM-2]     | ✓              | ✗          | O(n)       | ✗          |
+| [DM-SSM-1] | ✓              | ✓          | O(n log n) | ✗          |
+| [DM-SSM-2] | ✓              | ✓          | O(n)       | ✗          |
+| [DM-SSM-3] | ✓              | ✓          | O(n log n) | ✓          |
+| [DM-OD-1]  | ✗              | ✗          | O(n)       | ✓          |
+| [DM-OD-2]  | ✗              | ✓          | O(n·steps) | ✓          |
+| [DM-OD-3]  | ✗              | ✓          | O(n·iters) | ✓          |
+
+* Key Distinctions
+
+** Static vs Dynamical
+- *Static*: Fixed computation graph, no temporal dynamics
+- *Dynamical*: Evolving states, differential equations
+
+** Linear vs Nonlinear Dynamics
+- *Linear SSMs*: [DM-SSM-1,2,3] - Enables fast parallel computation
+- *Nonlinear*: [DM-OD-1,2,3] - More expressive but sequential
+
+** Oscillatory Models
+- *LinOSS*: Linear oscillators for stability
+- *AKOrN*: Nonlinear oscillators for synchronization
+
+* Model Categories
+
+** Static Models
+- [[id:ee00e617-43fa-42a8-b3bf-b63b12b9e334][Transformers: Static Attention-Based Sequence Models]]
+- [[id:7783bdea-d39f-457f-8505-cf392d416b4e][Convolutional Neural Networks: Local Feature Extraction]]
+
+** State-Space Models
+- [[id:46fe01da-803d-41d7-8d77-7adc6f25a615][Structured State-Space Models (S4/S5): Linear Dynamics for Sequences]]
+- [[id:81fa26ab-7181-440d-8233-0f275d382743][Selective State-Space Models (Mamba): Input-Dependent Dynamics]]
+- [[id:7a6d2753-3392-41f7-ad84-a34e0a8a9850][Oscillatory State-Space Models (LinOSS): Harmonic Dynamics]]
+
+** Other Dynamical Networks
+- [[id:be4f0d49-69a8-42ba-b7c3-3bd18e3dbe97][Recurrent Neural Networks and LSTMs: Nonlinear Hidden State Dynamics]]
+- [[id:87623ddc-193b-4dcf-adf2-6825c0f1dec2][Neural ODEs: Continuous-Time Dynamics via Differential Equations]]
+- [[id:0d7e1915-8737-4bca-9a4b-945363839fe4][Oscillatory Networks (AKOrN): Kuramoto Synchronization for Feature Binding]]

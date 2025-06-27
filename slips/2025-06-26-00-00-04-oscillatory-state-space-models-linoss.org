@@ -1,0 +1,149 @@
+:PROPERTIES:
+:ID:       7a6d2753-3392-41f7-ad84-a34e0a8a9850
+:CUSTOM_ID: 91/2b
+:END:
+#+TITLE: Oscillatory State-Space Models (LinOSS): Harmonic Dynamics
+#+FILETAGS: :concept:machinelearning:ssm:oscillatory:physics:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+LinOSS models sequences through forced harmonic oscillators, leveraging simple physics-based dynamics to achieve stable long-range propagation without complex initialization schemes.
+
+* Task Definition
+
+Model sequences via forced harmonic oscillators, leveraging natural oscillatory dynamics for stable long-range propagation without complex parameterization.
+
+* Mathematical Formulation
+
+** Second-Order ODE System
+
+\begin{align}
+y''(t) &= -\mathbf{A}y(t) + \mathbf{B}u(t) + b \\
+x(t) &= \mathbf{C}y(t) + \mathbf{D}u(t)
+\end{align}
+
+Physical interpretation:
+- $y(t)$: Position of oscillators
+- $y'(t)$: Velocity of oscillators
+- $\mathbf{A}$: Spring constants (diagonal)
+- $\mathbf{B}u(t)$: External forcing
+
+** First-Order Reformulation
+
+\begin{equation}
+\begin{bmatrix} z'(t) \\ y'(t) \end{bmatrix} = 
+\begin{bmatrix} 
+-\mathbf{A} & 0 \\ 
+I & 0 
+\end{bmatrix} 
+\begin{bmatrix} y(t) \\ z(t) \end{bmatrix} + 
+\begin{bmatrix} \mathbf{B}u(t) \\ 0 \end{bmatrix}
+\end{equation}
+
+* Discretization Schemes
+
+** Implicit (IM) - Dissipative
+
+\begin{align}
+z_n &= z_{n-1} + \Delta t(-\mathbf{A}y_n + \mathbf{B}u_n) \\
+y_n &= y_{n-1} + \Delta t \cdot z_n
+\end{align}
+
+Matrix form: $\mathbf{M} \mathbf{x}_n = \mathbf{x}_{n-1} + \mathbf{F}_n$
+
+\begin{equation}
+\mathbf{M}^{-1} = \begin{bmatrix}
+(I + \Delta t^2 \mathbf{A})^{-1} & -\Delta t \mathbf{A}(I + \Delta t^2 \mathbf{A})^{-1} \\
+\Delta t(I + \Delta t^2 \mathbf{A})^{-1} & (I + \Delta t^2 \mathbf{A})^{-1}
+\end{bmatrix}
+\end{equation}
+
+** IMEX - Energy Conserving
+
+\begin{align}
+z_n &= z_{n-1} + \Delta t(-\mathbf{A}y_{n-1} + \mathbf{B}u_n) \\
+y_n &= y_{n-1} + \Delta t \cdot z_n
+\end{align}
+
+\begin{equation}
+\mathbf{M}^{IMEX} = \begin{bmatrix}
+I & -\Delta t \mathbf{A} \\
+\Delta t I & I - \Delta t^2 \mathbf{A}
+\end{bmatrix}
+\end{equation}
+
+* Stability Analysis
+
+** Eigenvalues (IM)
+
+For diagonal entry $\mathbf{A}_{kk} \geq 0$:
+
+\begin{equation}
+\lambda_j = \frac{1}{1 + \Delta t^2 \mathbf{A}_{kk}} + i \cdot \frac{\Delta t \sqrt{\mathbf{A}_{kk}}}{1 + \Delta t^2 \mathbf{A}_{kk}}
+\end{equation}
+
+Key result: $|\lambda_j| < 1$ for all $\mathbf{A}_{kk} \geq 0$
+
+** Eigenvalues (IMEX)
+
+\begin{equation}
+|\lambda_j| = 1 \text{ for all } j
+\end{equation}
+
+This is symplectic (volume-preserving).
+
+* Implementation
+
+** Parallel Scan
+
+Both schemes use associative scan with operation:
+\begin{equation}
+(a_1, a_2) \bullet (b_1, b_2) = (b_1 \cdot a_1, b_1 \cdot a_2 + b_2)
+\end{equation}
+
+Complexity: $O(\log L)$ depth, $O(L)$ work
+
+** Simple Parameterization
+
+Just need $\mathbf{A} \geq 0$:
+#+BEGIN_SRC python
+A = ReLU(A_hat)  # That's it!
+# or
+A = A_hat ** 2
+#+END_SRC
+
+Compare to S4's complex HiPPO initialization!
+
+* Hamiltonian Structure
+
+The system has Hamiltonian:
+\begin{equation}
+\mathcal{H}(y, z, t) = \frac{1}{2}\sum_{k=1}^m \left(\mathbf{A}_k y_k^2 + z_k^2 - 2\sum_{l=1}^p \mathbf{B}_{kl}u_l(t) y_k\right)
+\end{equation}
+
+IMEX discretization preserves this (symplectic integrator).
+
+* Universal Approximation
+
+**Theorem**: LinOSS can approximate any continuous causal operator $\Phi: C_0([0,T]; \mathbb{R}^p) \rightarrow C_0([0,T]; \mathbb{R}^q)$.
+
+Key insight: Oscillators compute time-windowed sine transforms:
+\begin{equation}
+y(t) = A^{-1} \int_0^t u(\tau) \sin(A(t-\tau)) d\tau
+\end{equation}
+
+* Empirical Performance
+
+| Dataset | Sequence Length | LinOSS vs Mamba |
+|---------+----------------+-----------------|
+| PPG-DaLiA | 50k | 2x better |
+| EigenWorms | 18k | 95% vs 71% |
+| Weather Forecast | 720 steps | Best MAE |
+
+* Key Advantages
+
+1. **Simple**: Only constraint is $\mathbf{A} \geq 0$
+2. **Stable**: Guaranteed by construction
+3. **Interpretable**: Physics-based dynamics
+4. **Flexible**: Choose dissipative or conservative
+
+*Next*: [[id:be4f0d49-69a8-42ba-b7c3-3bd18e3dbe97][Recurrent Neural Networks and LSTMs: Nonlinear Hidden State Dynamics]]
