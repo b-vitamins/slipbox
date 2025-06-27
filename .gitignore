@@ -1,5 +1,6 @@
 elpa/
 .claude/settings.local.json
+.fleeting/
 
 # Org-mode generated files
 slips/ltximg/
