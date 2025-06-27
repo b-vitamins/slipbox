@@ -5,6 +5,7 @@ orphan_grace_period_days = 7
 url_timeout_seconds = 10
 org_roam_priority = true
 require_custom_id = true
+expected_formats = ["^\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}-\\d{2}-"]
 
 [paths]
 slips_dir = "slips/"
