@@ -52,7 +52,7 @@ class FilenameFormatValidator(BaseValidator):
                 rule="INCONSISTENT_FILENAME_FORMAT",
                 message=f"Filename '{filename}' does not match expected format. "
                        f"Detected format: {format_type}",
-                severity=Severity.WARNING
+                severity=Severity.ERROR
             ))
         
         return violations

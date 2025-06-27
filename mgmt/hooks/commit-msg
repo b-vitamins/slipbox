@@ -1,0 +1,63 @@
+#!/bin/sh
+# Commit message validation for Zettelkasten
+# Enforces: add|remove|connect|source|update|mgmt[:subproject]: description
+# Additional restrictions on master branch
+
+msg_file="$1"
+msg=$(cat "$msg_file")
+
+# Get current branch
+current_branch=$(git symbolic-ref --short HEAD 2>/dev/null)
+
+# Skip validation for merge commits and reverts
+if echo "$msg" | grep -qE "^(Merge|Revert)"; then
+    exit 0
+fi
+
+# Check format: type: description
+if ! echo "$msg" | grep -qE "^(add|remove|connect|source|update|mgmt(:[a-z]+)?): .+"; then
+    echo ""
+    echo "Invalid commit message format"
+    echo ""
+    echo "Expected: type: brief description"
+    echo "For management subprojects: mgmt:subproject: description"
+    echo ""
+    echo "Valid types:"
+    echo "  add:     New slips or concepts"
+    echo "  remove:  Deleting slips or content"
+    echo "  connect: Links between existing ideas"
+    echo "  source:  Bibliography and references"
+    echo "  update:  Changes to existing content"
+    echo "  mgmt:    Management tools and maintenance scripts"
+    echo "  mgmt:validator: Slip validation and linting tools"
+    echo ""
+    echo "Examples:"
+    echo "  add: statistical mechanics note 57/12a"
+    echo "  mgmt:validator: implement org file parser"
+    echo ""
+    exit 1
+fi
+
+# Additional restrictions for master branch
+if [ "$current_branch" = "master" ]; then
+    # Check if commit message starts with mgmt:
+    if echo "$msg" | grep -qE "^mgmt:"; then
+        echo ""
+        echo "Error: Management commits not allowed on master branch"
+        echo ""
+        echo "Management work should be done on the 'mgmt' branch:"
+        echo "  1. git checkout -b mgmt"
+        echo "  2. git commit"
+        echo ""
+        echo "Master branch should only contain:"
+        echo "  - add: New slips or concepts"
+        echo "  - remove: Deleting slips or content"
+        echo "  - connect: Links between existing ideas"
+        echo "  - source: Bibliography and references"
+        echo "  - update: Changes to existing content"
+        echo ""
+        exit 1
+    fi
+fi
+
+exit 0

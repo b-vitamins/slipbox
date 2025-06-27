@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# prepare-commit-msg hook: Add new tags to commit messages on master branch
+
+COMMIT_MSG_FILE=$1
+COMMIT_SOURCE=$2
+SHA1=$3
+
+# Get current branch
+current_branch=$(git symbolic-ref --short HEAD 2>/dev/null)
+
+# Only process on master branch and for normal commits (not merges/amends)
+if [ "$current_branch" = "master" ] && [ -z "$COMMIT_SOURCE" ]; then
+    # Check if we're adding slips
+    if git diff --cached --name-only | grep -q "^slips/.*\.org$"; then
+        # Run tag tracker to get new tags
+        new_tags=$(bash mgmt/tag-tracker.sh)
+        
+        if [ -n "$new_tags" ]; then
+            # Format new tags for commit message
+            formatted_tags=$(echo "$new_tags" | tr '\n' ' ' | sed 's/ *$//')
+            
+            # Read existing commit message
+            existing_msg=$(cat "$COMMIT_MSG_FILE")
+            
+            # Append new tags section
+            {
+                echo "$existing_msg"
+                echo ""
+                echo "New tags: $formatted_tags"
+            } > "$COMMIT_MSG_FILE"
+        fi
+    fi
+fi

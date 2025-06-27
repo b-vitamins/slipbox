@@ -196,6 +196,46 @@ mgmt:validator: implement org file parser
 - Add connection point detection
 ```
 
+#### Branch Workflow and Git Hooks
+
+**Strict Branch Separation**: Master branch is for content only, management work requires separate branch.
+
+**Git Hooks Enforcement**:
+
+1. **pre-commit hook** - Blocks on master:
+   - Files in `mgmt/` directory
+   - Housekeeping files (.gitignore, CLAUDE.md, README.md)
+   - Infrastructure changes
+
+2. **commit-msg hook** - Validates format and blocks `mgmt:` commits on master
+
+3. **prepare-commit-msg hook** - Automatically adds new tags to commits:
+   - Maintains tag index in `.git/tags-index`
+   - Appends "New tags: ..." section when new tags introduced
+   - Only on master branch for content commits
+
+**Workflow Examples**:
+
+For content (on master):
+```bash
+git add slips/2024-12-23-*.org
+git commit -m "add: quantum field theory concepts from lecture notes"
+# Hook automatically adds: "New tags: physics qft renormalization"
+```
+
+For management:
+```bash
+git checkout -b mgmt
+git add mgmt/new-validator.py
+git commit -m "mgmt:validator: add citation format checker"
+git checkout master
+git merge mgmt
+```
+
+**Validation Rules (Enforced as Errors)**:
+- **Tag format**: Lowercase letters and numbers only (a-z0-9). Hyphenated tags like `:machine-learning:` must use `:machinelearning:` instead
+- **Filename format**: Must match dominant pattern `YYYY-MM-DD-HH-MM-SS-slug`. Files using `YYYY-MM-DD-slug` format are errors that must be fixed immediately
+
 ## Org-roam Integration
 
 This slipbox uses Org-roam for enhanced node management, link tracking, and database caching. Understanding Org-roam concepts is essential for proper validation and maintenance.
@@ -366,3 +406,20 @@ This slipbox uses both Org-roam and traditional identification:
 - **Skip subjective evaluations** - Don't say "excellent", "perfect", "great success"
 - **Avoid marketing language** - No hype, no celebration, just results
 - **Be nonchalant** - Treat all outcomes as routine
+
+### Version Control Workflow
+
+**Git Workflow Patterns**:
+- For management work:
+  ```
+  git checkout -b mgmt
+  git add mgmt/
+  git commit -m "mgmt: description"
+  ```
+
+- For content work:
+  ```
+  git checkout master
+  git add slips/{files-*}.org # Avoid monolithic git add slips
+  git commit -m "add: new concept"
+  ```

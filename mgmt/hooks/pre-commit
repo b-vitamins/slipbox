@@ -1,0 +1,55 @@
+#!/bin/bash
+
+# Pre-commit hook: Prevent management commits on master branch
+
+current_branch=$(git symbolic-ref --short HEAD)
+
+# Only check if we're on master
+if [ "$current_branch" = "master" ]; then
+    # Get the commit message that will be used
+    # For pre-commit, we need to check staged files instead
+    
+    # Check if any staged files are in mgmt/ directory
+    if git diff --cached --name-only | grep -q "^mgmt/"; then
+        echo "Error: Management files cannot be committed directly to master branch"
+        echo "Please create a separate 'mgmt' branch for housekeeping work"
+        echo ""
+        echo "To fix this:"
+        echo "  1. git reset HEAD mgmt/"
+        echo "  2. git checkout -b mgmt"
+        echo "  3. git add mgmt/"
+        echo "  4. git commit"
+        exit 1
+    fi
+    
+    # Check for common housekeeping patterns in staged files
+    housekeeping_patterns=(
+        "\.gitignore"
+        "CLAUDE\.md"
+        "README\.md"
+        "\.github/"
+        "\.git/"
+        "scripts/"
+        "tools/"
+        "validators/"
+    )
+    
+    for pattern in "${housekeeping_patterns[@]}"; do
+        if git diff --cached --name-only | grep -q "$pattern"; then
+            echo "Warning: Detected potential housekeeping changes to: $pattern"
+            echo "Consider using 'mgmt' branch for infrastructure changes"
+            echo ""
+            echo "To override this warning and commit anyway, use:"
+            echo "  git commit --no-verify"
+            echo ""
+            echo "To move to mgmt branch:"
+            echo "  1. git reset HEAD"
+            echo "  2. git checkout -b mgmt"
+            echo "  3. git add <files>"
+            echo "  4. git commit"
+            exit 1
+        fi
+    done
+fi
+
+exit 0
