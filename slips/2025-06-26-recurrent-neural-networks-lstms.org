@@ -6,11 +6,11 @@
 #+FILETAGS: :concept:machine-learning:rnn:lstm:sequential:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
-RNNs process sequences through nonlinear hidden state recursion, with LSTMs adding gated memory cells to mitigate gradient flow issues, though both remain fundamentally sequential and struggle with long-range dependencies.
+RNNs process sequences through nonlinear hidden state recursion. LSTMs add gated memory cells to improve gradient flow, though both remain sequential with limited long-range capability.
 
 * Task Definition
 
-Process sequences $\{x_1, x_2, \ldots, x_T\}$ via hidden state recursion with nonlinear dynamics, maintaining memory across time steps.
+Process sequences $\{x_1, x_2, \ldots, x_T\}$ via hidden state recursion with memory across time steps.
 
 * Mathematical Formulation
 
@@ -21,10 +21,7 @@ h_t &= \tanh(W_{hh}h_{t-1} + W_{xh}x_t + b_h) \\
 y_t &= W_{hy}h_t + b_y
 \end{align}
 
-where:
-- $h_t \in \mathbb{R}^d$: Hidden state
-- $x_t \in \mathbb{R}^n$: Input at time $t$
-- $W_{hh} \in \mathbb{R}^{d \times d}$: Hidden-to-hidden weights
+$h_t \in \mathbb{R}^d$: hidden state, $x_t \in \mathbb{R}^n$: input, $W_{hh} \in \mathbb{R}^{d \times d}$: recurrent weights
 
 ** LSTM Formulation
 
@@ -44,10 +41,7 @@ c_t &= f_t \odot c_{t-1} + i_t \odot \tilde{c}_t \\
 h_t &= o_t \odot \tanh(c_t)
 \end{align}
 
-Gates:
-- $i_t$: Input gate (what to store)
-- $f_t$: Forget gate (what to discard)
-- $o_t$: Output gate (what to expose)
+Gates: $i_t$ (input), $f_t$ (forget), $o_t$ (output)
 
 * Gradient Flow Analysis
 
@@ -62,7 +56,7 @@ where:
 \frac{\partial h_t}{\partial h_{t-1}} = W_{hh}^T \cdot \text{diag}(\tanh'(W_{hh}h_{t-1} + W_{xh}x_t))
 \end{equation}
 
-Problem: $\left\|\frac{\partial h_t}{\partial h_{t-1}}\right\|$ can be $\gg 1$ or $\ll 1$
+Problem: $\left\|\frac{\partial h_t}{\partial h_{t-1}}\right\|$ unstable
 
 ** LSTM Gradient Highway
 
@@ -70,7 +64,7 @@ Problem: $\left\|\frac{\partial h_t}{\partial h_{t-1}}\right\|$ can be $\gg 1$ o
 \frac{\partial c_t}{\partial c_{t-1}} = f_t
 \end{equation}
 
-Forget gates near 1 → gradient highway → long-range learning
+$f_t \approx 1$ creates gradient highway
 
 * Architecture Diagrams
 
@@ -148,34 +142,26 @@ For sequence length $T$:
 \left\|\frac{\partial L}{\partial h_0}\right\| \approx \rho(W_{hh})^T
 \end{equation}
 
-where $\rho(W_{hh})$ is spectral radius.
-
-- $\rho < 1$: Vanishing gradients
-- $\rho > 1$: Exploding gradients
-- $\rho = 1$: Difficult to achieve
+$\rho(W_{hh})$ = spectral radius. $\rho < 1$: vanishing, $\rho > 1$: exploding, $\rho = 1$: unstable
 
 * Practical Considerations
 
 ** Initialization
-- Orthogonal initialization for $W_{hh}$
-- Small random values for other weights
-- Forget gate bias = 1 (remember by default)
+- Orthogonal $W_{hh}$, small random others, forget bias = 1
 
 ** Gradient Clipping
 \begin{equation}
 g \leftarrow \min\left(1, \frac{\text{threshold}}{||g||}\right) \cdot g
 \end{equation}
 
-** Bidirectional Processing
-- Forward: $\overrightarrow{h}_t = f(x_t, \overrightarrow{h}_{t-1})$
-- Backward: $\overleftarrow{h}_t = f(x_t, \overleftarrow{h}_{t+1})$
-- Combine: $h_t = [\overrightarrow{h}_t; \overleftarrow{h}_t]$
+** Bidirectional
+$\overrightarrow{h}_t = f(x_t, \overrightarrow{h}_{t-1})$, $\overleftarrow{h}_t = f(x_t, \overleftarrow{h}_{t+1})$, combine: $h_t = [\overrightarrow{h}_t; \overleftarrow{h}_t]$
 
 * Limitations
 
-1. **Sequential computation**: Cannot parallelize across time
-2. **Limited context**: Effective range ~100-200 steps
-3. **Training instability**: Sensitive to initialization
-4. **Memory bottleneck**: Fixed-size hidden state
+1. Sequential computation (no parallelization)
+2. Limited context (~100-200 steps)
+3. Training instability
+4. Fixed-size memory bottleneck
 
 *Next*: [[id:87623ddc-193b-4dcf-adf2-6825c0f1dec2][Neural ODEs: Continuous-Time Dynamics via Differential Equations]]
