@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Inverse-square interactions - Part (a): Domain wall energy cost
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Problem Statement
 

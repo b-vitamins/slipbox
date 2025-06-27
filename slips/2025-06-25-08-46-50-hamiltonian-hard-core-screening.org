@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Hamiltonian Hard Core Screening
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (a) Problem
 Show that for a potential with a hard core that screens the interactions from further neighbors, the Hamiltonian for \(N\) particles can be written as

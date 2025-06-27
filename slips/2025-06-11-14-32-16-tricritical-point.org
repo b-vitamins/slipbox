@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Tricritical point
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Tricritical point: By tuning an additional parameter, a second order transition can be made first order. The special point separating the two types of transitions is known as a tricritical point, and can be studied by examining the Landau-Ginzburg Hamiltonian
 

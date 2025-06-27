@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Clock model duality
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Clock model duality: Consider spins s_{i}=(1,2, \cdots, q) placed on the sites of a square lattice, interacting via the clock model Hamiltonian
 

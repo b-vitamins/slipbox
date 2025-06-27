@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Free Energy Expression Largest Eigenvalue
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (c) Problem
 Show that \(Z=\sum_{k=1}^{q} \lambda(k)^{N} \approx \lambda(0)^{N}\) for \(N \rightarrow \infty\). Write down the expression for the free energy per site \(\beta f=-\ln Z / N\).

@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Anisotropic nonlinear sigma model
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Anisotropic nonlinear \(\sigma\) model: Consider unit $n$-component spins, $\vec{s}(\mathbf{x})=\left(s_{1}, \cdots, s_{n}\right)$ with $\sum_{\alpha} s_{\alpha}^{2}=1$, subject to a Hamiltonian
 

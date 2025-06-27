@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Roughening and duality - Part (c): One-dimensional version
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Problem Statement
 

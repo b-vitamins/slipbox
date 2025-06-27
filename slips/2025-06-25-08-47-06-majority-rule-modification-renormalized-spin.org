@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Majority Rule Modification Renormalized Spin
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (b) Problem
 How can the majority rule be modified to define the renormalized spin of each cluster?

@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Anisotropic criticality
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Anisotropic criticality: A number of materials, such as liquid crystals, are anisotropic and behave differently along distinct directions, which shall be denoted parallel and perpendicular, respectively. Let us assume that the \(d\) spatial dimensions are grouped into \(n\) parallel directions \(\mathbf{x}_{\|}\), and \(d-n\) perpendicular directions \(\mathbf{x}_{\perp}\). Consider a one-component field \(m\left(\mathbf{x}_{\|}, \mathbf{x}_{\perp}\right)\) subject to a Landau-Ginzburg Hamiltonian, \(\beta \mathcal{H}=\) \(\beta \mathcal{H}_{0}+U\), with
 

@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Oscillatory Networks (AKOrN): Kuramoto Synchronization for Feature Binding
 #+FILETAGS: :concept:machine-learning:oscillatory:kuramoto:synchronization:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 AKOrN uses Kuramoto synchronization dynamics where neurons as oscillators bind coherent features through phase alignment, providing biologically plausible object segmentation with natural robustness.
 

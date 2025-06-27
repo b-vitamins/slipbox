@@ -4,7 +4,7 @@
 :END:
 #+TITLE: The roughening transition
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The roughening transition: In an earlier problem we examined a continuum interface model which in $d=3$ is described by the Hamiltonian
 

@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Cubic invariants
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Cubic invariants: When the order parameter \(m\), goes to zero discontinuously, the phase transition is said to be first order (discontinuous). A common example occurs in systems where symmetry considerations do not exclude a cubic term in the Landau free energy, as in
 

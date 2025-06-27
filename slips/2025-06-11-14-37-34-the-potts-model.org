@@ -4,7 +4,7 @@
 :END:
 #+TITLE: The Potts model
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 
 The Potts model: The transfer matrix procedure can be extended to the Potts models, where the spin \(s_{i}\) on each site takes \(q\) values \(s_{i}=(1,2, \cdots, q)\); and the Hamiltonian is \(-\beta \mathcal{H}=K \sum_{i=1}^{N} \delta_{s_{i}, s_{i+1}}+K \delta_{s_{N}, s_{1}}\).

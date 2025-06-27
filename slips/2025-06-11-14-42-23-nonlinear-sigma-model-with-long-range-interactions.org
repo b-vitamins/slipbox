@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Nonlinear sigma model with long-range interactions
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Nonlinear \sigma model with long-range interactions: Consider unit $n$-component spins, $\vec{s}(\mathbf{x})=\left(s_{1}, s_{2}, \cdots, s_{n}\right)$ with $|\vec{s}(\mathbf{x})|^{2}=\sum_{i} s_{i}(\mathbf{x})^{2}=1$, interacting via a Hamiltonian
 

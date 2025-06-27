@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Clock model
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 
 Clock model: Each site of the lattice is occupied by a \(q\)-valued spin \(s_{i} \equiv 1,2,\cdots, q\), with an underlying translational symmetry modulus \(q\), i.e. the system is invariant under \(s_{i} \rightarrow\left(s_{i}+n\right)_{\text {mod } q}\). The most general Hamiltonian subject to this symmetry with nearest-neighbor interactions is

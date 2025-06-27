@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Magnetic Thermal Exponents Zero Temperature
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (h) Problem
 What are the values of the magnetic and thermal exponents \(\left(y_{h}, y_{t}\right)\) at the zero temperature ferromagnetic fixed point?

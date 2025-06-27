@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Partition Function Additive Constants
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (e) Problem
 Write the expression for \(\ln Z\) in terms of the additive constants of successive rescalings.

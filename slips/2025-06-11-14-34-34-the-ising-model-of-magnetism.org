@@ -4,7 +4,7 @@
 :END:
 #+TITLE: The Ising model of magnetism
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The Ising model of magnetism: The local environment of an electron in a crystal sometimes forces its spin to stay parallel or anti-parallel to a given lattice direction. As a model of magnetism in such materials we denote the direction of the spin by a single variable \(\sigma_{i}= \pm 1\) (an Ising spin). The energy of a configuration \(\left\{\sigma_{i}\right\}\) of spins is then given by
 

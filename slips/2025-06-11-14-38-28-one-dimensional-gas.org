@@ -4,7 +4,7 @@
 :END:
 #+TITLE: One-dimensional gas
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 
 One-dimensional gas: The transfer matrix method can also be applied to a one dimensional gas of particles with short-range interactions, as described in this problem.

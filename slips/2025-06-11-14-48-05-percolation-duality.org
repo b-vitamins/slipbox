@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Percolation duality
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Percolation duality: Duality has a very natural interpretation in percolation: If a bond is occupied, its dual is empty, and vice versa. Thus the occupation probability for dual bonds is \tilde{p}=1-p \equiv q. Since, by construction, the original and dual elements do not intersect, one or the other percolates through the system.
 

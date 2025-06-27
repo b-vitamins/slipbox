@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Nonlinear sigma model with long-range interactions - Part (e): Renormalized interaction expression
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Problem Statement
 

@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Zero Temperature Critical Antiferromagnetic
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (b) Problem
 Is the system critical at zero temperature for antiferromagnetic couplings \(J<0\) ?

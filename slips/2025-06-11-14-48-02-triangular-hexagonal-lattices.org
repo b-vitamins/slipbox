@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Triangular/hexagonal lattices
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Triangular/hexagonal lattices: For any planar network of bonds, one can define a geometrical dual by connecting the centers of neighboring plaquettes. Each bond of the dual lattice crosses a bond of the original lattice, allowing for a local mapping. Clearly, the dual of a triangular lattice is a hexagonal (or honeycomb) lattice, and vice versa.
 

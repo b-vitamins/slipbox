@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Transition probability matrix
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 
 Transition probability matrix: Consider a system of two Ising spins with a coupling \(K\), which can thus be in one of four states.

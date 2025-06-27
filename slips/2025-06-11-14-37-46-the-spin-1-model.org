@@ -4,7 +4,7 @@
 :END:
 #+TITLE: The spin-1 model
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 
 The spin-1 model: Consider a linear chain where the spin \(s_{i}\) at each site takes on three values \(s_{i}=-1,0,+1\). The spins interact via a Hamiltonian

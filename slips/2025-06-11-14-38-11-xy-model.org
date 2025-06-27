@@ -4,7 +4,7 @@
 :END:
 #+TITLE: XY model
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 
 XY model: Consider two component unit spins \(\vec{s}_{i}=\left(\cos \theta_{i}, \sin \theta_{i}\right)\) in one dimension, with the nearest-neighbor interactions described by \(-\beta \mathcal{H}=K \sum_{i=1}^{N} \vec{s}_{i} \cdot s_{i+1}^{\overrightarrow{1}}\).

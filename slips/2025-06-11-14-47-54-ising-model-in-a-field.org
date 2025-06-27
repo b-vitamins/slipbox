@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Ising model in a field
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Ising model in a field: Consider the partition function for the Ising model (\sigma_{i}= \pm 1) on a square lattice, in a magnetic field h; i.e.
 

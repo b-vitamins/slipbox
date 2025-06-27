@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Anisotropic Landau theory
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Anisotropic Landau theory: Consider an n-component magnetization field \vec{m}(\mathbf{x}) in d-dimensions.
 

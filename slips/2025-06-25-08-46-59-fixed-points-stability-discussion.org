@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Fixed Points Stability Discussion
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (d) Problem
 Discuss the fixed points, and their stability.

@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Melting - Part (a): Energy in Fourier space and normal modes
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Problem Statement
 

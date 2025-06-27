@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Potts chain (RG)
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 
 Potts chain (RG): Consider a one-dimensional array of \(N\) Potts spins \(s_{i}=1,2, \cdots, q\), subject to the Hamiltonian \(-\beta \mathcal{H}=J \sum_{i} \delta_{s_{i}, s_{i+1}}\).

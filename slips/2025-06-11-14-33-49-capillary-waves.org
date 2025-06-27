@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Capillary Waves
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Capillary waves: A reasonably flat surface in \(d\)-dimensions can be described by its height \(h\), as a function of the remaining \((d-1)\) coordinates \(\mathbf{x}=\left(x_{1}, \ldots x_{d-1}\right)\). Convince yourself that the generalized "area" is given by \(\mathcal{A}=\int \mathrm{d}^{d-1} \mathbf{x} \sqrt{1+(\nabla h)^{2}}\). With a surface tension \(\sigma\), the Hamiltonian is simply \(\mathcal{H}=\sigma \mathcal{A}\).
 

@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Central Site Tie Breaker Configuration Table
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (c) Problem
 For a scheme in which the central site is chosen as the tie-breaker, make a table of all possible configurations of site-spins for a given value of the cluster-spin.

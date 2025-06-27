@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Recursion Relation Expression
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (f) Problem
 Find the expression for the resulting recursion relation \(J^{\prime}(J)\).

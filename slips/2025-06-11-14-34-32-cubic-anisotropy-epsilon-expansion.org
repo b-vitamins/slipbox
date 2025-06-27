@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Cubic anisotropy \u03b5-expansion
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Cubic anisotropy \u03b5-expansion:
 

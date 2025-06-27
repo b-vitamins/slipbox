@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Continuous spins
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Continuous spins: In the standard \(\mathcal{O}(n)\) model, n component unit vectors are placed on the sites of a lattice. The nearest-neighbor spins are then connected by a bond
 J \vec{s}_{i} \cdot \vec{s}_{j}. In fact, if we are only interested in universal properties, any generalized interaction f(\vec{s}_{i} \cdot \vec{s}_{j}) leads to the same critical behavior. By analogy with the Ising model, a suitable choice is

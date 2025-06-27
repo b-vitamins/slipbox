@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Anisotropic random walks
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Anisotropic random walks: Consider the ensemble of all random walks on a square lattice starting at the origin (0,0). Each walk has a weight of t_{x}^{\ell_{x}} \times t_{y}^{\ell_{y}}, where \ell_{x} and \ell_{y} are the number of steps taken along the x and y directions, respectively.
 

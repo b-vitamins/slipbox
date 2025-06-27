@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Migdal-Kadanoff method
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 
 Migdal-Kadanoff method: Consider Potts spins \(s_{i}=(1,2, \cdots, q)\), on sites \(i\) of a hypercubic lattice, interacting with their nearest neighbors via a Hamiltonian

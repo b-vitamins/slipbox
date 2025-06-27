@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Inverse-square interactions - Part (b): Critical coupling lower bound
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Problem Statement
 

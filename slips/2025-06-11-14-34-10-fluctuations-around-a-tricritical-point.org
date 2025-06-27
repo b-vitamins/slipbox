@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Fluctuations around a tricritical point
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Fluctuations around a tricritical point: As shown in a previous problem, the Hamiltonian
 

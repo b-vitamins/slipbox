@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Ginzburg criterion along the magnetic field direction
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Ginzburg criterion along the magnetic field direction: Consider the Hamiltonian
 

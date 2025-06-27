@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Gauge fluctuations in superconductors
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Gauge fluctuations in superconductors: The Landau-Ginzburg model of superconductivity describes a complex superconducting order parameter \(\Psi(\mathbf{x})=\Psi_{1}(\mathbf{x})+\)
 \(\mathrm{i} \Psi_{2}(\mathbf{x})\), and the electromagnetic vector potential \(\vec{A}(\mathbf{x})\), which are subject to a Hamiltonian

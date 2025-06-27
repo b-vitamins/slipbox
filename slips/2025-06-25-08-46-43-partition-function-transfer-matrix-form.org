@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Partition Function Transfer Matrix Form
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (a) Problem
 For a closed linear chain of \(N\) clock spins subject to the above Hamiltonian show that the partition function \(Z=\operatorname{tr}[\exp (-\beta \mathcal{H})]\) can be written as

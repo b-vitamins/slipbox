@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Long-range interactions
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Long-range interactions: Consider a continuous spin field \(\vec{s}(\mathbf{x})\), subject to a long-range ferromagnetic interaction
 

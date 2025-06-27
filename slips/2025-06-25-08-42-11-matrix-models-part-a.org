@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Matrix models - Part (a): Hamiltonian rewrite and ground state
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Problem Statement
 

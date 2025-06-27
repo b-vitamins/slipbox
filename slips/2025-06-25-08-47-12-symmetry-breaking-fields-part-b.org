@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Symmetry breaking fields - Part (b): Recursion relations with vortices
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Problem Statement
 

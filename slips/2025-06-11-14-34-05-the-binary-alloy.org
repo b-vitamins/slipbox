@@ -4,7 +4,7 @@
 :END:
 #+TITLE: The binary alloy
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The binary alloy: A binary alloy (as in \(\beta\) brass) consists of \(N_{A}\) atoms of type \(A\), and \(N_{B}\) atoms of type \(B\). The atoms form a simple cubic lattice, each interacting only with its six nearest neighbors. Assume an attractive energy of \(-J \quad(J>0)\) between like neighbors \(A-A\) and \(B-B\), but a repulsive energy of \(+J\) for an \(A-B\) pair.
 

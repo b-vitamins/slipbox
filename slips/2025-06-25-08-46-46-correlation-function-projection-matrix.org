@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Correlation Function Projection Matrix
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (d) Problem
 Show that the correlation function can be calculated from

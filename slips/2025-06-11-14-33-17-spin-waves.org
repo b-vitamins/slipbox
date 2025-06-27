@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Spin Waves
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Spin waves: In the XY model of \(n=2\) magnetism, a unit vector \(\vec{s}=\left(s_{x}, s_{y}\right)\) (with \(s_{x}^{2}+s_{y}^{2}=1\) ) is placed on each site of a \(d\)-dimensional lattice. There is an interaction that tends to keep nearest-neighbors parallel, i.e. a Hamiltonian
 

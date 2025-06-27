@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Inverse-square interactions
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Inverse-square interactions: Consider a scalar field $s(x)$ in one-dimension, subject to an energy
 

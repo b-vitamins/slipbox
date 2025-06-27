@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Variable Change Product Form
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (d) Problem
 Change variables from \(L\) to \(\delta_{N+1}=L-\sum_{i=1}^{N} \delta_{i}\), and find the expression for \(\mathcal{Z}(T, N, P)\) as a product over one-dimensional integrals over each \(\delta_{i}\).

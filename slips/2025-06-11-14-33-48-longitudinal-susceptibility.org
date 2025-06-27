@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Longitudinal susceptibility
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Longitudinal susceptibility: While there is no reason for the longitudinal susceptibility to diverge at the mean-field level, it in fact does so due to fluctuations in dimensions \(d<4\). This problem is intended to show you the origin of this divergence in perturbation theory. There are actually a number of subtleties in this calculation
 which you are instructed to ignore at various steps. You may want to think about why they are justified.

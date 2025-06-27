@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Crumpled surfaces
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Crumpled surfaces: The configurations of a crumpled sheet of paper can be described by a vector field \(\vec{r}(\mathbf{x})\), denoting the position in three-dimensional space, \(\vec{r}=\left(r_{1}, r_{2}, r_{3}\right)\), of the point at location \(\mathbf{x}=\left(x_{1}, x_{2}\right)\) on the flat sheet. The energy of each configuration is assumed to be invariant under translations and rotations of the sheet of paper.
 

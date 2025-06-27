@@ -4,7 +4,7 @@
 :END:
 #+TITLE: The nonlinear sigma model
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The nonlinear \(\sigma\) model describes \(n\) component unit spins. As we shall demonstrate later, in \(d=2\) dimensions, the recursion relations for temperature \(T\), and magnetic field \(h\), are (for \(\mathrm{b}=\mathrm{e}^{\ell}\) )
 

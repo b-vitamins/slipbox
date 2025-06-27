@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Transition Matrix Single Spin Flips Metropolis
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (a) Problem
 Explicitly write the \(4 \times 4\) transition matrix corresponding to single spin flips for a Metropolis algorithm. Verify that the equilibrium weights are indeed a left eigenvector of this matrix.

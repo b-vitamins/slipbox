@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Anisotropic ising model
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Anisotropic ising model: Consider the anisotropic Ising model on a square lattice with a Hamiltonian
 

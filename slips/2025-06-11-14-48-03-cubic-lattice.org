@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Cubic lattice
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Cubic lattice: The geometric concept of duality can be extended to general dimensions d. However, the dual of a geometric element of dimension D is an entity of dimension d-D. For example, the dual of a bond (D=1) in d=3 is a plaquette (D=2), as demonstrated in this problem.
 

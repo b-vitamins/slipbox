@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Critical behavior of a gas
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Critical behavior of a gas: The pressure \(P\) of a gas is related to its density \(n=N / V\), and temperature \(T\) by the truncated expansion
 \begin{align*}

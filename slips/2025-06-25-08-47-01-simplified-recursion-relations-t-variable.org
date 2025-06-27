@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Simplified Recursion Relations t Variable
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (f) Problem
 Show that the recursion relations are simplified when written in terms of \(t(J) \equiv\) \(\mathrm{e}^{-1 / \xi(J)}\).

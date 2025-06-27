@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Coupling to a "massless" field
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Coupling to a "massless" field: Consider an \(n\)-component vector field \(\vec{m}(\mathbf{x})\) coupled to a scalar field \(A(\mathbf{x})\), through the effective Hamiltonian
 

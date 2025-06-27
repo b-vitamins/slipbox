@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Critical Coupling Exponent Estimate Comparison
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (g) Problem
 Estimate the critical ferromagnetic coupling \(J_{c}\), and the exponent \(\nu\) obtained from this RG scheme, and compare with the exact values.

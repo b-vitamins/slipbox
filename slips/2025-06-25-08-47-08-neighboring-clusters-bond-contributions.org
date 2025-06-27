@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Neighboring Clusters Bond Contributions
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (d) Problem
 Focus on a pair of neighboring clusters. Indicate the contributions of intracluster and intercluster bonds to the total energy.

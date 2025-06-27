@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Scaling in fluids
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Scaling in fluids: Near the liquid-gas critical point, the free energy is assumed to take the scaling form \(F / N=t^{2-\alpha} g\left(\delta \rho / t^{\beta}\right)\), where \(t=\left|T-T_{c}\right| / T_{c}\) is the reduced temperature, and \(\delta \rho=\rho-\rho_{c}\) measures deviations from the critical point density. The leading singular behavior of any thermodynamic parameter \(Q(t, \delta \rho)\) is of the form \(t^{x}\) on approaching the critical point along the isochore \(\rho=\rho_{c}\); or \(\delta \rho^{y}\) for a path along the isotherm \(T=T_{c}\). Find the exponents \(x\) and \(y\) for the following quantities:
 

@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Matrix models
 #+FILETAGS: :problem:main:spof:extended:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Matrix models: In some situations, the order parameter is a matrix rather than a vector. For example, in triangular (Heisenberg) antiferromagnets each triplet of spins aligns at 120^{\circ}, locally defining a plane. The variations of this plane across the system are described by a 3 \times 3 rotation matrix. We can construct a nonlinear \sigma model to describe a generalization of this problem as follows. Consider the Hamiltonian
 

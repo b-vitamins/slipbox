@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Surfactant condensation
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Surfactant condensation: \(N\) surfactant molecules are added to the surface of water over an area \(A\). They are subject to a Hamiltonian
 \begin{align*}

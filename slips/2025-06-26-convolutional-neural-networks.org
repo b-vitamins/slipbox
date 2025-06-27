@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Convolutional Neural Networks: Local Feature Extraction
 #+FILETAGS: :concept:machine-learning:cnn:convolution:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 CNNs extract hierarchical features through local linear operations applied across spatial dimensions, achieving translation equivariance with parameter sharing but limited by fixed receptive fields.
 

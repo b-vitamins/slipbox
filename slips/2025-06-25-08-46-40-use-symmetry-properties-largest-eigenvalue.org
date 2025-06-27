@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Use Symmetry Properties Largest Eigenvalue
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (b) Problem
 Use symmetry properties to find the largest eigenvalue of \(T\) and hence obtain the expression for the free energy per site \((\ln Z / N)\).

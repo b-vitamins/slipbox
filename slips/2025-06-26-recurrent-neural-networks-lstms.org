@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Recurrent Neural Networks and LSTMs: Nonlinear Hidden State Dynamics
 #+FILETAGS: :concept:machine-learning:rnn:lstm:sequential:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 RNNs process sequences through nonlinear hidden state recursion, with LSTMs adding gated memory cells to mitigate gradient flow issues, though both remain fundamentally sequential and struggle with long-range dependencies.
 

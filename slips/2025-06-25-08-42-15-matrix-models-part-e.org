@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Matrix models - Part (e): Two point correlation function
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Problem Statement
 

@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Cayley trees
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Cayley trees: Consider a hierarchical lattice in which each site at one level is connected to z sites at the level below. Thus the n-th level of the tree has z^{n} sites.
 

@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Partition Function Variable Change
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (b) Problem
 Write the expression for the partition function \(Z(T, N, L)\). Change variables to \(\delta_{1}=x_{1}, \delta_{2}=x_{2}-x_{1}, \cdots, \delta_{N}=x_{N}-x_{N-1}\), and carefully indicate the allowed ranges of integration and the constraints.

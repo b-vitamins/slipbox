@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Crystal anisotropy
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Crystal anisotropy: Consider a ferromagnet with a tetragonal crystal structure. Coupling of the spins to the underlying lattice may destroy their full rotational symmetry. The resulting anisotropies can be described by modifying the LandauGinzburg Hamiltonian to
 

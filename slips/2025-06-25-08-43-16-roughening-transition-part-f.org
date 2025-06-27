@@ -4,7 +4,7 @@
 :END:
 #+TITLE: The roughening transition - Part (f): Phase diagram and phases
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Problem Statement
 

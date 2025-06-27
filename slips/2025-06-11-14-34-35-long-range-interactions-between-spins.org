@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Long-range interactions between spins
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Long-range interactions between spins can be described by adding a term
 

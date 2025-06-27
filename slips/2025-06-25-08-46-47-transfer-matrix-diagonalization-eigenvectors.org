@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Transfer Matrix Diagonalization Eigenvectors
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (a) Problem
 Write down the transfer matrix \(\left\langle\theta|T| \theta^{\prime}\right\rangle\), and show that it can be diagonalized with eigenvectors \(f_{m}(\theta) \propto \mathrm{e}^{\mathrm{i} m \theta}\) for integer \(m\).

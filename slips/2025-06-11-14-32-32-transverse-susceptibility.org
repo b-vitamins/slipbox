@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Transverse susceptibility
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Transverse susceptibility: An \(n\)-component magnetization field \(\vec{m}(\mathbf{x})\) is coupled to an external field \(\vec{h}\) through a term \(-\int \mathrm{d}^{d} \mathbf{x} \vec{h} \cdot \vec{m}(\mathbf{x})\) in the Hamiltonian \(\beta \mathcal{H}\). If \(\beta \mathcal{H}\) for \(\vec{h}=0\) is invariant under rotations of \(\vec{m}(\mathbf{x})\); then the free energy density \((f=-\ln Z / V)\) only depends on the absolute value of \(\vec{h}\); i.e. \(f(\vec{h})=f(h)\), where \(h=|\vec{h}|\).
 

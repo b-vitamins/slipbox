@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Hard Sphere Equation State
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (f) Problem
 For a hard sphere gas, with minimum separation \(a\) between particles, calculate the equation of state \(P(T, n)\).

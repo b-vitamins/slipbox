@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Coupled scalars
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Coupled scalars: Consider the Hamiltonian
 

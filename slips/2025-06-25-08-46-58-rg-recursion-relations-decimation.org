@@ -4,7 +4,7 @@
 :END:
 #+TITLE: RG Recursion Relations Decimation
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (c) Problem
 Construct a renormalization group (RG) treatment by eliminating every other spin. Write down the recursion relations for the coupling \(J\), and the additive constant \(g\).

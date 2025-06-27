@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Potts model I
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Potts model I: Consider Potts spins s_{i}=(1,2, \cdots, q), interacting via the Hamiltonian -\beta \mathcal{H}=K \sum_{\langle i j\rangle} \delta_{s_{i}, s_{j}}.
 

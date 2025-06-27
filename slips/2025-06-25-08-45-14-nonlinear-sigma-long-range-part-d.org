@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Nonlinear sigma model with long-range interactions - Part (d): Coarse grained expectation value
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Problem Statement
 

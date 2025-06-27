@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Series Expression t Variable Reduction
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (g) Problem
 Use the result in (f) to express the series in (e) in terms of \(t\). Show that the answer can be reduced to that obtained in part (a), upon using the result

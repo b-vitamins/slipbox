@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Roughening and duality
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Roughening and duality: Consider a discretized version of the Hamiltonian in the previous problem, in which for each site $i$ of a square lattice there is an integer valued height $h_{i}$. The Hamiltonian is
 

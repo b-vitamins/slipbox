@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Magnetic thin films
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Magnetic thin films: A crystalline film (simple cubic) is obtained by depositing a finite number of layers \(n\). Each atom has a three component (Heisenberg) spin, and they interact through the Hamiltonian
 \begin{align*}

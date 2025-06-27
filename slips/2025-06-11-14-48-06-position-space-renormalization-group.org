@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Position-space renormalization group
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Position-space renormalization group (PSRG): In the Migdal-Kadanoff approximation, a decimation is performed after bonds are moved to connect the remaining sites in a one-dimensional geometry. For a PSRG rescaling factor b on a d-dimensional hypercubic lattice, the retained sites are connected by b^{d-1} strands in parallel, each strand having b bonds in series. This scheme is naturally exact for d=1, and becomes progressively worse in higher dimensions.
 

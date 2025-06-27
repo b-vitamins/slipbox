@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Exponents
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Exponents: Two critical exponents at second order are,
 

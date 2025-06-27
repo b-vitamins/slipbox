@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Single Double Spin Flips Probabilities
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (b) Problem
 Repeat the above exercise if both single spin and double spin flips are allowed. The two types of moves are chosen randomly with probabilities \(p\) and \(q=1-p\).

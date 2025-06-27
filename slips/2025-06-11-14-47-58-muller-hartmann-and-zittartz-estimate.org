@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Muller-Hartmann and Zittartz estimate
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Muller-Hartmann and Zittartz estimate of the interfacial energy of the d=2 Ising model on a square lattice: (image reference)
 

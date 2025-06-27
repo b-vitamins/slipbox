@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Energy by duality
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Energy by duality: Consider the Ising model (\sigma_{i}= \pm 1) on a square lattice with -\beta \mathcal{H}=K \sum_{\langle i j\rangle} \sigma_{i} \sigma_{j}.
 

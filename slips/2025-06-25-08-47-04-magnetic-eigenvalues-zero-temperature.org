@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Magnetic Eigenvalues Zero Temperature
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (i) Problem
 Find the magnetic eigenvalues at the zero temperature fixed point where \(J \rightarrow \infty\), and obtain the form of the correlation length close to zero temperature.

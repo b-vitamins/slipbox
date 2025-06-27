@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Free Energy Heat Capacity Behavior
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (b) Problem
 Calulate the free energy per site, and comment on the behavior of the heat capacity as \(T \propto K^{-1} \rightarrow 0\).

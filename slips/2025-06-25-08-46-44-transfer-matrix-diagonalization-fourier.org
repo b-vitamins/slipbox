@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Transfer Matrix Diagonalization Fourier
 #+FILETAGS: :problem:part:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 * Part (b) Problem
 Write down the transfer matrix explicitly and diagonalize it. Note that you do not have to solve a \(q\) th order secular equation; because of the translational symmetry, the eigenvalues are easily obtained by discrete Fourier transformation as

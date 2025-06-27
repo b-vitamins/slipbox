@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Random magnetic fields
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Random magnetic fields: Consider the Hamiltonian
 

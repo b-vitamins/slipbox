@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Cumulant method
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 
 Cumulant method: Apply the Niemeijer-van Leeuwen first order cumulant expansion to the Ising model on a square lattice with \(-\beta \mathcal{H}=K \sum_{\langle i j\rangle} \sigma_{i} \sigma_{j}\), by following these steps:

@@ -4,7 +4,7 @@
 :END:
 #+TITLE: The lattice-gas model
 #+FILETAGS: :problem:main:spof:
-#+SETUPFILE: ../../setupfile.org
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The lattice-gas model: Consider a gas of particles subject to a Hamiltonian
 \begin{align*}
