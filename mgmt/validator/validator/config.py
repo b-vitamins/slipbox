@@ -47,6 +47,7 @@ class ValidationConfig:
     # Org-roam integration settings
     org_roam_priority: bool = True  # Prioritize ID properties for Org-roam compatibility
     require_custom_id: bool = True  # Whether CUSTOM_ID is required (traditional Zettelkasten)
+    expected_formats: Optional[list[str]] = None  # Expected filename formats (regex patterns)
 
 
 @dataclass
@@ -84,7 +85,8 @@ class SlipboxConfig:
                         orphan_grace_period_days=val_data.get("orphan_grace_period_days", validation_config.orphan_grace_period_days),
                         url_timeout_seconds=val_data.get("url_timeout_seconds", validation_config.url_timeout_seconds),
                         org_roam_priority=val_data.get("org_roam_priority", validation_config.org_roam_priority),
-                        require_custom_id=val_data.get("require_custom_id", validation_config.require_custom_id)
+                        require_custom_id=val_data.get("require_custom_id", validation_config.require_custom_id),
+                        expected_formats=val_data.get("expected_formats")
                     )
                 
                 # Load path settings
@@ -127,7 +129,8 @@ def create_sample_config(output_path: Path) -> None:
             "orphan_grace_period_days": 7,
             "url_timeout_seconds": 10,
             "org_roam_priority": True,
-            "require_custom_id": True
+            "require_custom_id": True,
+            "expected_formats": ["^\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}-\\d{2}-"]
         },
         "paths": {
             "slips_dir": "slips/",

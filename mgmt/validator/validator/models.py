@@ -53,6 +53,16 @@ class ConnectionPoint:
 
 
 @dataclass
+class HeadlineNode:
+    """A headline within a slip that has its own ID property."""
+    level: int  # Org headline level (1 = *, 2 = **, etc.)
+    title: str  # Headline text
+    properties: SlipProperties  # Can have full properties block
+    line_number: int  # Where in file this headline starts
+    parent_id: Optional[str] = None  # ID of parent node (file or headline)
+
+
+@dataclass
 class Slip:
     """A complete slip with all its components."""
     file_path: Path
@@ -61,6 +71,7 @@ class Slip:
     links: List[Link]
     word_count: int
     connection_points: List[ConnectionPoint]
+    headline_nodes: List[HeadlineNode] = None  # Headlines with ID properties
 
 
 @dataclass

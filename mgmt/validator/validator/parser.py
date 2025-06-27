@@ -5,7 +5,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import List, Optional
 
-from .models import Slip, SlipProperties, Link, LinkType, ConnectionPoint
+from .models import Slip, SlipProperties, Link, LinkType, ConnectionPoint, HeadlineNode
 
 
 class OrgParser:
@@ -20,6 +20,7 @@ class OrgParser:
         links = self.extract_links(content)
         word_count = self.count_words(content)
         connection_points = self.find_connection_points(content)
+        headline_nodes = self.extract_headline_nodes(content, properties.id)
 
         return Slip(
             file_path=file_path,
@@ -27,7 +28,8 @@ class OrgParser:
             content=content,
             links=links,
             word_count=word_count,
-            connection_points=connection_points
+            connection_points=connection_points,
+            headline_nodes=headline_nodes
         )
 
     def extract_properties(self, content: str) -> SlipProperties:
@@ -226,3 +228,68 @@ class OrgParser:
                         matched_ranges.append((start, end))
         
         return connection_points
+    
+    def extract_headline_nodes(self, content: str, file_id: str) -> List[HeadlineNode]:
+        """Extract headlines that have their own ID properties."""
+        headline_nodes = []
+        lines = content.split('\n')
+        
+        i = 0
+        while i < len(lines):
+            line = lines[i]
+            
+            # Check if this is a headline
+            headline_match = re.match(r'^(\*+)\s+(.+)', line)
+            if headline_match:
+                level = len(headline_match.group(1))
+                title = headline_match.group(2).strip()
+                line_number = i + 1
+                
+                # Look for properties block immediately after headline
+                if (i + 1 < len(lines) and 
+                    lines[i + 1].strip() == ':PROPERTIES:'):
+                    
+                    # Extract properties block for this headline
+                    props_start = i + 1
+                    props_end = props_start
+                    
+                    # Find :END: 
+                    for j in range(props_start + 1, len(lines)):
+                        if lines[j].strip() == ':END:':
+                            props_end = j
+                            break
+                    
+                    if props_end > props_start:
+                        # Extract properties content
+                        props_lines = lines[props_start:props_end + 1]
+                        props_content = '\n'.join(props_lines[1:-1])  # Exclude :PROPERTIES: and :END:
+                        
+                        # Check if this headline has an ID
+                        id_match = re.search(r':ID:\s*([^\n]+)', props_content)
+                        if id_match:
+                            # Parse full properties for this headline
+                            headline_props_text = '\n'.join(props_lines) + '\n' + f'#+TITLE: {title}'
+                            
+                            try:
+                                headline_props = self.extract_properties(headline_props_text)
+                                # Override title with headline title
+                                headline_props.title = title
+                                
+                                headline_node = HeadlineNode(
+                                    level=level,
+                                    title=title,
+                                    properties=headline_props,
+                                    line_number=line_number,
+                                    parent_id=file_id
+                                )
+                                headline_nodes.append(headline_node)
+                            except ValueError:
+                                # Skip if properties extraction fails
+                                pass
+                        
+                        # Skip past the properties block
+                        i = props_end
+            
+            i += 1
+        
+        return headline_nodes
