@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID: 84da4381-1cf3-4264-9b89-e9febefc99e9
+:CUSTOM_ID: 92/14
+:END:
+#+TITLE: Phonon Heat Capacity
+#+FILETAGS: :physics:spof:ch1:thermodynamics:phonons:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+
+
+The low-temperature heat capacity of solids exhibits universal power-law behavior \(C \propto T^d\), a remarkable result that emerges from the interplay of linear dispersion relations and Bose statistics. This universality transcends material-specific details, depending only on dimensionality and the nature of low-energy excitations.
+
+Starting from the quantized elastic Hamiltonian, each normal mode contributes \(\hbar\omega(\vec{k})[n(\vec{k}) + 1/2]\) to the total energy, where the thermal occupation follows Bose-Einstein statistics: \(\langle n(\vec{k}) \rangle = 1/[\exp(\hbar\omega(\vec{k})/k_B T) - 1]\). The internal energy in a volume \(L^d\) becomes
+
+\[E(T) = \mathcal{V}^* + L^d \int \frac{d^d\mathbf{k}}{(2\pi)^d}\left[\frac{\hbar v_\ell k}{\exp(\hbar v_\ell k/k_B T) - 1} + \frac{(d-1)\hbar v_t k}{\exp(\hbar v_t k/k_B T) - 1}\right]\]
+
+At low temperatures, only modes with \(\hbar\omega(\vec{k}) \lesssim k_B T\) contribute appreciably. Since \(\omega = v|k|\) for acoustic phonons, this restricts the integral to \(k \lesssim k_B T/\hbar v\). The detailed form of \(\omega(k)\) at large \(k\) becomes irrelevant; only the linear behavior near \(k = 0\) matters. Extending the integral to infinity and substituting \(x = \hbar vk/k_B T\) yields
+
+\[E(T) - \mathcal{V}^* = L^d(k_B T)^{d+1}\int_0^\infty \frac{d^d x}{(2\pi)^d}\left[\frac{x}{v_\ell^d(\exp(x) - 1)} + \frac{(d-1)x}{v_t^d(\exp(x) - 1)}\right]\]
+
+The integral evaluates to a numerical constant, giving \(C = dE/dT \propto T^d\). This scaling depends only on the linear dispersion at long wavelengths and the density of states in \(d\) dimensions, not on microscopic parameters like atomic masses or interaction strengths.
+
+**Meta-observation**: The universality of phonon specific heat exemplifies how collective excitations dominate thermodynamics. Individual atomic properties become irrelevant; only the emergent sound waves matter. Landau's recognition that superfluid helium exhibits \(C \propto T^3\) rather than \(T^{3/2}\) immediately implied phonon-like excitations, demonstrating how thermodynamic measurements reveal collective physics.
+
+**See also**: [[id:e84cefc1-1521-4774-a191-6d83b7dec564][Normal Mode Analysis]] (normal modes), [[id:8133d24a-bc6d-4421-9b08-054cffc91fb6][Hydrodynamic Limit]] (hydrodynamic limit), [[id:382e5f1a-1e52-44f1-9b87-8973ed46a79a][Universality]] (universality concept)

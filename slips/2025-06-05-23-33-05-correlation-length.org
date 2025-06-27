@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID: 7567af1a-237d-4e1c-b0ca-388c767561ce
+:CUSTOM_ID: 92/23
+:END:
+#+TITLE: Correlation Length
+#+FILETAGS: :physics:spof:ch1:critical-phenomena:correlations:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+
+
+The correlation length \(\xi\) sets the fundamental scale for spatial variations in statistical systems, measuring the distance over which microscopic degrees of freedom remain correlated. In ordered phases, \(\xi\) may be infinite, reflecting long-range order; in disordered phases away from criticality, it remains finite, confining fluctuations to microscopic regions. At critical points, \(\xi\) diverges, creating scale-free correlations that dominate thermodynamics.
+
+The connected correlation function \(G_c(r) = \langle m(\vec{r})m(0)\rangle_c\) typically exhibits exponential decay at large separations: \(G_c(r) \sim \exp(-r/\xi)\) for \(r \gg \xi\). This form, derivable from analyticity of the free energy away from phase transitions, confines the influence of local fluctuations to regions of linear dimension \(\xi\). Within this correlation volume \(\xi^d\), spins or density fluctuations move coherently; beyond it, different regions fluctuate independently.
+
+Near critical points, the correlation length diverges as a power law:
+\[\xi_\pm(T, h=0) \propto |t|^{-\nu_\pm}\]
+Typically \(\nu_+ = \nu_- = \nu\), reflecting critical point symmetry. This divergence transforms the correlation function from exponential to algebraic decay: \(G_c(r) \sim r^{-(d-2+\eta)}\) at \(T = T_c\). The exponent \(\eta\) is typically small (\(\eta \approx 0.04\) for three-dimensional Ising), representing a small correction to mean-field behavior.
+
+The diverging correlation length explains all critical phenomena. Susceptibility diverges because \(\chi \propto \int d^dr \, G_c(r) \sim \xi^{2-\eta}\). Critical opalescence occurs when \(\xi\) reaches optical wavelengths. Specific heat anomalies arise from fluctuations in correlation volumes. Critical slowing down reflects the time required for correlations to propagate over distance \(\xi\).
+
+**Meta-observation**: The correlation length bridges microscopic and macroscopic physics. Away from criticality, \(\xi\) provides the natural cutoff separating microscopic details (relevant at \(r < \xi\)) from universal hydrodynamic behavior (dominating at \(r > \xi\)). At criticality, the divergence of \(\xi\) eliminates this separation, creating a scale-invariant state where microscopic and macroscopic merge. This explains both why critical phenomena are universal (no microscopic scale remains) and why they require special theoretical tools (no separation of scales exists).
+
+**See also**: [[id:96f2fbf4-f9c5-4795-9556-c93407a8b7f1][Fluctuation Response Connection]] (relation to susceptibility), [[id:d43e3644-81c9-4e17-afc6-68597e8b42a8][Critical Opalescence]] (critical opalescence), [[id:085c3b0d-b202-4134-a2d0-afa176907859][Critical Exponent Definitions]] (correlation length exponent)

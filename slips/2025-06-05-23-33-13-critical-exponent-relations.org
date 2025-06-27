@@ -1,0 +1,54 @@
+:PROPERTIES:
+:ID: 721da5f2-0ddc-4956-b5b4-f4f149fb86cb
+:CUSTOM_ID: 92/27
+:END:
+#+TITLE: Critical Exponent Relations
+#+FILETAGS: :physics:spof:ch1:critical-phenomena:scaling:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+
+
+The mathematical definitions of critical exponents provide precise characterization of the various power-law singularities at phase transitions. Each exponent captures a specific aspect of critical behavior through the leading power-law dependence on reduced temperature \(t = (T_c - T)/T_c\) or field \(h\).
+
+The order parameter exponent \(\beta\) is defined through:
+\[m(T, h=0) \propto \begin{cases}
+0 & \text{for } T > T_c \\
+B(-t)^\beta & \text{for } T < T_c
+\end{cases}\]
+where \(B\) is a non-universal amplitude. The notation explicitly shows that \(m\) vanishes above \(T_c\) and grows continuously from zero below. For liquid-gas transitions, replace \(m\) with \(\rho_\ell - \rho_c\) or \(\rho_c - \rho_g\).
+
+The critical isotherm exponent \(\delta\) characterizes the field dependence at \(T = T_c\):
+\[m(T = T_c, h) = D|h|^{1/\delta}\text{sgn}(h)\]
+The sign function ensures proper symmetry for systems where \(h \rightarrow -h\) reverses the order parameter. The nonlinear response \(1/\delta < 1\) contrasts with the linear response \(m \propto h\) away from criticality.
+
+Response function exponents describe divergences above and below \(T_c\):
+\[\chi_\pm(T, h=0) = \begin{cases}
+\Gamma_+ t^{-\gamma_+} & \text{for } T > T_c \\
+\Gamma_- |t|^{-\gamma_-} & \text{for } T < T_c
+\end{cases}\]
+
+\[C_\pm(T, h=0) = \begin{cases}
+\frac{A_+}{\alpha} t^{-\alpha_+} & \text{for } T > T_c \\
+\frac{A_-}{\alpha} |t|^{-\alpha_-} & \text{for } T < T_c
+\end{cases}\]
+
+The specific heat notation accommodates \(\alpha = 0\) (logarithmic divergence) and \(\alpha < 0\) (finite but cusped). In practice, \(\gamma_+ = \gamma_- \equiv \gamma\) and \(\alpha_+ = \alpha_- \equiv \alpha\) for most systems, reflecting critical point symmetry.
+
+The correlation length exponent \(\nu\) governs spatial correlations:
+\[\xi_\pm(T, h=0) = \begin{cases}
+\xi_0^+ t^{-\nu_+} & \text{for } T > T_c \\
+\xi_0^- |t|^{-\nu_-} & \text{for } T < T_c
+\end{cases}\]
+Again, typically \(\nu_+ = \nu_- \equiv \nu\). The correlation function itself exhibits anomalous dimension \(\eta\) at criticality:
+\[G(r, T = T_c) \sim r^{-(d-2+\eta)}\]
+
+These exponents satisfy scaling relations reflecting underlying symmetries:
+- Rushbrooke: \(\alpha + 2\beta + \gamma = 2\)
+- Griffiths: \(\alpha + \beta(1 + \delta) = 2\)
+- Widom: \(\gamma = \beta(\delta - 1)\)
+- Fisher: \(\gamma = \nu(2 - \eta)\)
+- Josephson: \(\nu d = 2 - \alpha\) (hyperscaling)
+
+**Meta-observation**: The proliferation of exponents might suggest complexity, but scaling theory reveals only two are independent. All others follow from scaling relations, reflecting the fundamental simplicity of scale-invariant critical points. The precise mathematical definitions enable experimental determination of exponents and theoretical calculation via renormalization group. The agreement between experiment, simulation, and theory to many decimal places represents a triumph of modern statistical physics.
+
+**See also**: [[id:085c3b0d-b202-4134-a2d0-afa176907859][Critical Exponent Definitions]] (physical meaning), [[id:a138292d-84ca-4a86-88bc-467373342655][Critical Universality]] (universality of values), [[id:4299a153-19d3-458a-8880-da2174763879][Critical Phenomena Catalog]] (phenomena described)

@@ -1,0 +1,47 @@
+:PROPERTIES:
+:ID: 7e661894-6d0e-48cc-aad1-9b98bc2a3b35
+:CUSTOM_ID: 92/25
+:END:
+#+TITLE: 1d Chain Mathematics
+#+FILETAGS: :physics:spof:ch1:phonons:mathematical-physics:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+
+
+The one-dimensional chain provides a complete worked example demonstrating how microscopic interactions yield universal macroscopic behavior. Consider particles constrained to move along a line with equilibrium spacing \(a\). The most general harmonic potential including interactions between \(\ell\)-th neighbors takes the form:
+
+\[\mathcal{V} = \mathcal{V}^* + \frac{K_1}{2}\sum_n (u_{n+1} - u_n)^2 + \frac{K_2}{2}\sum_n (u_{n+2} - u_n)^2 + \cdots\]
+
+This form explicitly respects translational invariance—only relative displacements appear. The Fourier transformation employs the specific normalization:
+
+\[u_n = \int_{-\pi/a}^{\pi/a} \frac{dk}{2\pi} e^{-ikna} u(k), \quad \text{where} \quad u(k) = a\sum_n e^{ikna} u_n\]
+
+The nearest-neighbor term transforms as:
+
+\[\frac{K_1}{2}\sum_n (u_{n+1} - u_n)^2 = \frac{K_1}{2}\sum_n \int_{-\pi/a}^{\pi/a} \frac{dk}{2\pi}\frac{dk'}{2\pi} (e^{ika} - 1)(e^{ik'a} - 1)e^{-i(k+k')na} u(k)u(k')\]
+
+The crucial identity \(\sum_n e^{-i(k+k')na} = \frac{2\pi}{a}\delta(k+k')\) enforces momentum conservation, while \(u(-k) = u^*(k)\) ensures real displacements. The potential energy becomes:
+
+\[\mathcal{V} = \mathcal{V}^* + \frac{1}{2a}\int_{-\pi/a}^{\pi/a} \frac{dk}{2\pi}[K_1(2-2\cos ka) + K_2(2-2\cos 2ka) + \cdots]|u(k)|^2\]
+
+The dispersion relation emerges immediately:
+
+\[\omega(k) = \sqrt{\frac{2}{m}[K_1(1-\cos ka) + K_2(1-\cos 2ka) + \cdots]}\]
+
+In the long-wavelength limit \(ka \ll 1\), Taylor expansion yields:
+
+\[\frac{K(k)}{2} = K_1(1-\cos ka) + K_2(1-\cos 2ka) + \cdots \rightarrow \frac{\bar{K}}{2}k^2a^2\]
+
+where \(\bar{K} = K_1 + 4K_2 + 9K_3 + \cdots = \sum_\ell \ell^2 K_\ell\). This defines the sound velocity \(v = a\sqrt{\bar{K}/m}\). Remarkably, all microscopic details collapse into this single parameter for long-wavelength physics.
+
+The internal energy for a chain of \(N\) particles is:
+
+\[E(T) = \mathcal{V}^* + Na\int_{-\pi/a}^{\pi/a} \frac{dk}{2\pi} \frac{\hbar\omega(k)}{\exp(\hbar\omega(k)/k_B T) - 1}\]
+
+At low temperatures, only \(k \sim k_B T/\hbar v \ll \pi/a\) contribute, allowing extension of integration limits to infinity:
+
+\[E(T) \approx \mathcal{V}^* + Na\int_{-\infty}^{\infty} \frac{dk}{2\pi} \frac{\hbar v|k|}{\exp(\hbar v|k|/k_B T) - 1} = \mathcal{V}^* + Na\frac{\pi^2}{6\hbar v}(k_B T)^2\]
+
+**Meta-observation**: The mathematical structure reveals a hierarchy of approximations. First, harmonic approximation linearizes dynamics. Second, Fourier transformation exploits translational symmetry. Third, the continuum limit \(k \rightarrow 0\) extracts universal physics. Each step discards information—anharmonicity, discreteness, short-wavelength details—yet the final result captures the essential low-temperature thermodynamics. This selective retention of relevant features exemplifies effective theory philosophy.
+
+**See also**: [[id:6f3418fe-e47f-497a-8a96-c97f703a4c60][Microscopic Hamiltonian Expansion]] (general formalism), [[id:c48ba34e-50dc-4813-8f13-7917f12c3a8d][Elastic Hamiltonian 1d]] (continuum limit), [[id:84da4381-1cf3-4264-9b89-e9febefc99e9][Phonon Heat Capacity]] (specific heat result)

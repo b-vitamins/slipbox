@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID: 63727a53-a92a-4432-a4d3-d6fc31f3c1fb
+:CUSTOM_ID: 92/32
+:END:
+#+TITLE: Correlation Length Cartoon
+#+FILETAGS: :physics:spof:ch1:correlations:visualization:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+
+
+This visualization, created to illuminate the microscopic origin of critical opalescence, displays the evolution of correlation functions \(G(r) = \langle m(\vec{r})m(0)\rangle_c\) as the system approaches criticality. The main panel shows a series of curves for different temperatures approaching \(T_c\), each labeled with its reduced temperature \(t = (T - T_c)/T_c\).
+
+Far from criticality (\(t = 0.1\)), the correlation function exhibits rapid exponential decay: \(G(r) \sim \exp(-r/\xi)\) with a short correlation length \(\xi \approx 5a\) where \(a\) is the lattice constant. I shade the region \(r < \xi\) to emphasize that correlations are effectively confined to microscopic scales. At this temperature, different regions of the sample fluctuate independently beyond nearest neighbors.
+
+As temperature approaches \(T_c\) (curves for \(t = 0.01, 0.001, 0.0001\)), the correlation length grows as \(\xi \propto t^{-\nu}\). Each curve extends further before decaying, with the shaded correlation volume growing dramatically. I use logarithmic spacing for the temperature sequence to show the power-law divergence clearly. Annotations mark key scales: when \(\xi\) reaches \(100a\), mesoscopic correlations emerge; at \(\xi \sim 1000a \approx 100\text{ nm}\), optical wavelengths are reached.
+
+At criticality (\(t = 0\)), the correlation function transforms qualitatively from exponential to power-law decay: \(G(r) \sim r^{-(d-2+\eta)}\). This curve extends across the entire plot without ever reaching zero, indicating correlations at all length scales. The power-law form appears as a straight line on an inset log-log plot, with slope \(-(d-2+\eta)\) clearly marked.
+
+A companion panel illustrates light scattering, showing incident photons interacting with density fluctuations. For \(T \gg T_c\), small uncorrelated regions (dots) scatter weakly and independently—normal Rayleigh scattering producing blue skies. Near \(T_c\), correlated domains of size \(\xi\) (large shaded regions) scatter coherently. When \(\xi\) approaches optical wavelengths, all visible light scatters strongly, producing the milky appearance.
+
+Mathematical annotations connect the physics: the scattered intensity \(I \propto \int d^3r \, e^{i\vec{q} \cdot \vec{r}} G(r)\) shows how the structure factor peaks at \(q \sim 1/\xi\). For visible light with \(q \sim 2\pi/\lambda_{\text{light}}\), maximum scattering occurs when \(\xi \sim \lambda_{\text{light}}/2\pi \sim 100\text{ nm}\).
+
+An additional panel shows the real-space configuration of a two-dimensional Ising model at various temperatures, using grayscale to represent local magnetization. Far from \(T_c\), small isolated clusters appear. Near \(T_c\), domains of all sizes create a fractal-like structure with no characteristic length scale—a visual representation of scale invariance.
+
+**Meta-observation**: This visualization bridges the conceptual gap between microscopic correlations and macroscopic phenomena. The diverging correlation length transforms the system from a collection of weakly coupled regions to a single correlated entity. Critical opalescence thus provides direct visual evidence of the correlation length—one can literally see \(\xi\) through the scattered light, making abstract theoretical concepts tangible.
+
+**See also**: [[id:7567af1a-237d-4e1c-b0ca-388c767561ce][Correlation Length]] (correlation length), [[id:d43e3644-81c9-4e17-afc6-68597e8b42a8][Critical Opalescence]] (critical opalescence), [[id:96f2fbf4-f9c5-4795-9556-c93407a8b7f1][Fluctuation Response Connection]] (fluctuation-response)

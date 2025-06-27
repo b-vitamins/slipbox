@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID: da12e3ff-f2ea-4375-b1bc-7ac2582337d5
+:CUSTOM_ID: 92/26
+:END:
+#+TITLE: Field Theory Mathematics
+#+FILETAGS: :physics:spof:ch1:field-theory:mathematical-physics:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+
+
+The mathematical structure of continuum elastic theory emerges from systematic gradient expansion of the potential energy functional. Starting from the most general local form consistent with translational invariance, we expand in powers of derivatives:
+
+\[\mathcal{V}[u] = \int dx \left[\frac{K}{2}\left(\frac{\partial u}{\partial x}\right)^2 + \frac{L}{2}\left(\frac{\partial^2 u}{\partial x^2}\right)^2 + \cdots + M\left(\frac{\partial u}{\partial x}\right)^2\left(\frac{\partial^2 u}{\partial x^2}\right) + \cdots\right]\]
+
+Each term's relevance is determined by dimensional analysis. In Fourier space with \(u(x) = \int \frac{dk}{2\pi} e^{ikx} u(k)\), derivatives become powers of \(k\):
+
+\[\mathcal{V}[u] = \int \frac{dk}{2\pi}\left[\frac{K}{2}k^2 + \frac{L}{2}k^4 + \cdots\right]|u(k)|^2 - iM\int \frac{dk_1}{2\pi}\frac{dk_2}{2\pi} k_1 k_2(k_1+k_2)^2 u(k_1)u(k_2)u(-k_1-k_2) + \cdots\]
+
+The quadratic terms reveal that higher derivatives are suppressed by powers of \(k^2/\Lambda^2\) where \(\Lambda\) is an ultraviolet cutoff. Near \(k = 0\), only the lowest derivative term survives, justifying truncation at quadratic order in gradients.
+
+The generalization to \(d\) dimensions introduces the strain tensor as the fundamental object. For displacement field \(\vec{u}(\vec{x})\), the symmetric combination:
+
+\[u_{\alpha\beta}(\vec{x}) = \frac{1}{2}\left(\frac{\partial u_\alpha}{\partial x_\beta} + \frac{\partial u_\beta}{\partial x_\alpha}\right)\]
+
+ensures rotational invariance. The antisymmetric part \((\partial u_\alpha/\partial x_\beta - \partial u_\beta/\partial x_\alpha)/2\) represents local rotations that cost no elastic energy in isotropic media. The most general quadratic elastic energy is:
+
+\[\mathcal{H} = \frac{1}{2}\int d^d\vec{x} \left[\sum_\alpha \rho\frac{\partial u_\alpha}{\partial t}\frac{\partial u_\alpha}{\partial t} + \sum_{\alpha,\beta}\left(2\mu u_{\alpha\beta}u_{\alpha\beta} + \lambda u_{\alpha\alpha}u_{\beta\beta}\right)\right]\]
+
+Only two independent rotational invariants exist at quadratic order: the shear modulus \(\mu\) multiplies \(\text{tr}(u^2)\) while the bulk modulus combination \(\lambda\) multiplies \((\text{tr} u)^2\).
+
+Fourier transformation makes the physics transparent:
+
+\[\mathcal{H} = \int \frac{d^d\mathbf{k}}{(2\pi)^d}\left[\frac{\rho}{2}|\dot{\vec{u}}(\vec{k})|^2 + \frac{\mu}{2}k^2|\vec{u}(\vec{k})|^2 + \frac{\mu+\lambda}{2}(\vec{k} \cdot \vec{u}(\vec{k}))^2\right]\]
+
+The longitudinal projection operator \(P_\parallel = \hat{k}\hat{k}\) and transverse projector \(P_\perp = \mathbb{1} - \hat{k}\hat{k}\) separate the modes: \(v_\ell^2 = (2\mu + \lambda)/\rho\) for longitudinal, \(v_t^2 = \mu/\rho\) for transverse.
+
+The thermal energy integrates over all modes:
+
+\[E(T) = L^d\int \frac{d^d\mathbf{k}}{(2\pi)^d}\left[\frac{\hbar v_\ell k}{\exp(\hbar v_\ell k/k_B T) - 1} + \frac{(d-1)\hbar v_t k}{\exp(\hbar v_t k/k_B T) - 1}\right]\]
+
+Scaling \(k \rightarrow xk_B T/\hbar v\) demonstrates the universal form \(E - E_0 \propto T^{d+1}\).
+
+**Meta-observation**: The field theory formulation reveals why continuum mechanics succeeds. Symmetry reduces infinite possible terms to a few, dimensional analysis organizes them by relevance, and the infrared physics depends only on the leading terms. The mathematical structure—gradient expansion, symmetry constraints, dimensional analysis—provides a template for constructing effective theories in any context.
+
+**See also**: [[id:76199329-ed11-4dab-898b-a162e9479caa][Elastic Hamiltonian D D]] (physical interpretation), [[id:733d117f-54af-4660-98fd-948b6cd96654][Hamiltonian Construction Recipe]] (construction principles), [[id:0713e87c-758b-40df-9f55-a9f3e54ec22c][Symmetry Constrain]] (symmetry role)

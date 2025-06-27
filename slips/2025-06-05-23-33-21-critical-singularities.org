@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID: 51595f42-1e8f-4a58-b4c0-055b88a9d5c7
+:CUSTOM_ID: 92/31
+:END:
+#+TITLE: Critical Singularities
+#+FILETAGS: :physics:spof:ch1:critical-phenomena:visualization:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+
+
+My comprehensive "singularity atlas" unifies the various critical behaviors into a single visual framework, employing log-log plots to reveal power-law relationships as straight lines. The diagram arranges six panels in a \(2 \times 3\) grid, each showing a different thermodynamic quantity versus reduced temperature \(|t| = |T - T_c|/T_c\) on logarithmic scales.
+
+The order parameter panel shows \(m\) versus \(|t|\) for \(T < T_c\), appearing as a straight line with slope \(\beta \approx 0.326\) for three-dimensional Ising systems. I annotate the mathematical form \(m = B|t|^\beta\) and include error bars from real experimental data to show the precision with which this power law is observed. A dashed line extends the power law to show where data deviates at larger \(|t|\) due to non-universal corrections.
+
+The susceptibility panel displays the divergence on both sides of \(T_c\). Two lines with identical slopes \(-\gamma\) extend from \(T < T_c\) and \(T > T_c\), demonstrating the symmetry \(\gamma_+ = \gamma_-\). The amplitude ratio \(\Gamma_+/\Gamma_-\) appears as the vertical offset between lines. I mark the crossover region near \(T_c\) where the simple power law fails and more sophisticated scaling forms apply.
+
+The specific heat panel accommodates various scenarios. For \(\alpha > 0\) (two-dimensional Ising), a diverging straight line with slope \(-\alpha\). For \(\alpha < 0\) (three-dimensional Ising), the log-log plot shows saturation at small \(|t|\), indicating a finite but cusped specific heat. For \(\alpha = 0\), I show the logarithmic divergence as a slowly curving line. Each case includes its mathematical form: \(C \sim |t|^{-\alpha}\), \(C \sim A + B|t|^\alpha\), or \(C \sim \ln|t|\).
+
+The correlation length panel emphasizes its fundamental role. The line with slope \(-\nu\) extends over many decades, from microscopic scales at large \(|t|\) to macroscopic scales as \(t \rightarrow 0\). I mark characteristic scales: the lattice constant \(a\) at the bottom, the optical wavelength \(\lambda_{\text{light}}\) where critical opalescence begins, and system size \(L\) where finite-size effects appear.
+
+The critical isotherm panel shows \(m\) versus \(h\) at \(T = T_c\) on a log-log plot, yielding slope \(1/\delta\). This nonlinear response contrasts with the linear \(m \propto h\) behavior away from criticality (shown as a dashed line with slope 1). The crossover field \(h^* \sim |t|^{\beta\delta}\) marks where critical behavior gives way to regular behavior.
+
+A master panel synthesizes all exponents, showing their values for different universality classes in a table format: 2D Ising (\(\beta = 1/8\), \(\gamma = 7/4\), \(\nu = 1\)), 3D Ising (\(\beta \approx 0.326\), \(\gamma \approx 1.237\), \(\nu \approx 0.630\)), and mean field (\(\beta = 1/2\), \(\gamma = 1\), \(\nu = 1/2\)). Scaling relations like \(\gamma = \beta(\delta - 1)\) appear as mathematical constraints.
+
+**Meta-observation**: The log-log representation transforms the complexity of critical singularities into geometric simplicity—power laws become straight lines whose slopes encode universal information. This visualization reveals why decades of experiments seeking "the" critical exponents eventually recognized universality: different materials yield identical slopes, differing only in non-universal amplitudes (vertical positions). The atlas thus captures both the diversity of critical phenomena and their underlying unity.
+
+**See also**: [[id:085c3b0d-b202-4134-a2d0-afa176907859][Critical Exponent Definitions]] (exponent definitions), [[id:721da5f2-0ddc-4956-b5b4-f4f149fb86cb][Critical Exponent Relations]] (mathematical forms), [[id:a138292d-84ca-4a86-88bc-467373342655][Critical Universality]] (universality)

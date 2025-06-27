@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID: 459cad00-4d96-45e6-8622-db1e823ab68e
+:CUSTOM_ID: 92/7
+:END:
+#+TITLE: Phase Transition As Singularity
+#+FILETAGS: :physics:spof:ch1:phase-transition:singularity:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+
+
+Phase transitions manifest as singularities in thermodynamic functions, but only in the thermodynamic limit \(N \rightarrow \infty\). For any finite system, the partition function \(Z = \sum_\mu \exp(-\beta\mathcal{H}(\mu))\) remains a finite sum of analytic functions, hence analytic everywhere. The free energy \(F = -k_B T \ln Z\) inherits this analyticity, precluding true phase transitions in finite systems.
+
+The resolution of this apparent paradox lies in examining the \(N \rightarrow \infty\) limit carefully. As \(N\) increases, the free energy per particle \(f = F/N\) develops increasingly sharp features at certain points in parameter space. In the infinite system limit, these features become true non-analyticities: discontinuities in derivatives of \(f\). The liquid-gas transition exhibits a line of first-order transitions where the density jumps discontinuously, terminating at a critical point where the transition becomes continuous but non-analytic.
+
+Mathematically, singularities arise from the coalescence of zeros of the partition function in the complex temperature plane. Lee and Yang showed that these zeros approach the real axis as \(N \rightarrow \infty\), pinching the real axis at the transition temperature. This beautiful result connects the physical phenomenon of phase transitions to the mathematical structure of analytic continuation.
+
+The nature of the singularity determines the order of the transition. First-order transitions exhibit discontinuities in first derivatives of \(f\) (density, magnetization), while continuous transitions show divergences in second derivatives (susceptibility, compressibility). Critical points represent higher-order singularities where multiple derivatives diverge with characteristic power laws.
+
+**Meta-observation**: The requirement of the thermodynamic limit reveals a deep truth: phase transitions are inherently collective phenomena that cannot exist in small systems. This mathematical fact has profound physical implications, explaining why nanoscale systems exhibit broadened transitions and finite-size effects that vanish only as \(N \rightarrow \infty\).
+
+**See also**: [[id:c574aafe-76d4-4427-8529-c87f5eee213e][Statistical Mechanics Bridge]], [[id:4299a153-19d3-458a-8880-da2174763879][Critical Phenomena Catalog]], [[id:74767f92-bb18-4c5b-9d1b-5e60e0b58f06][Phase Diagram Topology]]

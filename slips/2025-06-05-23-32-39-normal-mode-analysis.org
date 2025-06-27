@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID: e84cefc1-1521-4774-a191-6d83b7dec564
+:CUSTOM_ID: 92/10
+:END:
+#+TITLE: Normal Mode Analysis
+#+FILETAGS: :physics:spof:ch1:phonons:oscillators:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+
+
+Normal mode decomposition transforms coupled oscillator systems into independent harmonic oscillators, revealing the natural excitations of the system. For a discrete chain with translational symmetry, Fourier transformation exploits this symmetry to diagonalize the dynamical matrix. The transformation \(u_n = \int_{-\pi/a}^{\pi/a} \frac{dk}{2\pi} e^{-ikna} u(k)\) converts position-space couplings into momentum-space diagonal form.
+
+The power of this approach becomes evident when analyzing the potential energy. Starting from general neighbor couplings \(\mathcal{V} = \mathcal{V}^* + \frac{K_1}{2}\sum_n (u_{n+1} - u_n)^2 + \frac{K_2}{2}\sum_n (u_{n+2} - u_n)^2 + \ldots\), Fourier transformation yields \(\mathcal{V} = \mathcal{V}^* + \frac{1}{2a} \int_{-\pi/a}^{\pi/a} \frac{dk}{2\pi} K(k)|u(k)|^2\) where \(K(k) = 2K_1(1-\cos ka) + 2K_2(1-\cos 2ka) + \ldots\). Each Fourier mode evolves independently with frequency \(\omega(k) = \sqrt{K(k)/m}\).
+
+The dispersion relation \(\omega(k)\) encodes the complete dynamics of small oscillations. In the long-wavelength limit \(k \rightarrow 0\), translational invariance demands \(\omega(k) \rightarrow v|k|\) where the sound velocity \(v = a\sqrt{\bar{K}/m}\) depends on microscopic parameters only through the combination \(\bar{K} = K_1 + 4K_2 + 9K_3 + \ldots\). This linear dispersion, universal across different materials, determines low-temperature thermodynamics.
+
+Quantization promotes each mode to a quantum harmonic oscillator with energy \(\hbar\omega(k)(n(k) + 1/2)\). The thermal average occupation \(\langle n(k) \rangle = 1/[\exp(\hbar\omega(k)/k_B T) - 1]\) weights modes by their Boltzmann factor, automatically selecting low-frequency modes at low temperatures. This natural infrared dominance justifies focusing on the \(k \rightarrow 0\) behavior.
+
+**Meta-observation**: Normal mode analysis succeeds because quadratic Hamiltonians possess a hidden linearity in phase space. The transformation to normal coordinates is essentially finding the eigenvectors of the dynamical matrix. Near equilibrium, this quadratic approximation captures the essential physics, with anharmonic corrections providing finite lifetimes and interactions between modes.
+
+**See also**: [[id:8133d24a-bc6d-4421-9b08-054cffc91fb6][Hydrodynamic Limit]] (hydrodynamic limit), [[id:84da4381-1cf3-4264-9b89-e9febefc99e9][Phonon Heat Capacity]] (phonon results), [[id:6f3418fe-e47f-497a-8a96-c97f703a4c60][Microscopic Hamiltonian Expansion]] (microscopic mathematics)

@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID: 4299a153-19d3-458a-8880-da2174763879
+:CUSTOM_ID: 92/19
+:END:
+#+TITLE: Critical Phenomena Catalog
+#+FILETAGS: :physics:spof:ch1:critical-phenomena:universality:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+
+
+Critical phenomena manifest through a constellation of anomalous behaviors that appear simultaneously as a system approaches its critical point. These phenomena, while diverse in their physical manifestations, stem from a single underlying cause: the divergence of correlation lengths that couples fluctuations across all scales. Understanding their interconnections reveals the unified nature of criticality.
+
+The order parameter provides the most direct signature, vanishing continuously at the critical temperature. For magnets, the spontaneous magnetization \(m(T < T_c, h = 0)\) decreases smoothly to zero as \(T \rightarrow T_c^-\), contrasting sharply with the discontinuous jump at first-order transitions. This continuous vanishing follows a power law \(m \propto (T_c - T)^\beta\), where the exponent \(\beta\) characterizes the critical universality class. Along the critical isotherm \(T = T_c\), the order parameter responds nonlinearly to external fields: \(m \propto h^{1/\delta}\).
+
+Response functions diverge as the system becomes infinitely susceptible to perturbations. The magnetic susceptibility \(\chi = \partial m/\partial h|_{h=0}\) and isothermal compressibility \(\kappa_T\) grow without bound as \(|t|^{-\gamma}\). This divergence reflects the system's inability to distinguish between phases—any infinitesimal field suffices to tip the balance. The specific heat may diverge (\(\alpha > 0\)) or remain finite with a cusp (\(\alpha < 0\)), but always exhibits non-analytic behavior signaling the underlying phase transition.
+
+Correlation functions develop power-law tails replacing exponential decay. Away from criticality, \(G(r) \sim \exp(-r/\xi)\) confines fluctuations to regions of size \(\xi\). At criticality, \(\xi \rightarrow \infty\) and correlations become scale-free: \(G(r) \sim r^{-(d-2+\eta)}\). This algebraic decay implies that fluctuations at any point influence the entire system, creating the long-range order characteristic of critical states.
+
+Fluctuations occur on all length and time scales, from microscopic to macroscopic. This scale invariance produces self-similar patterns—the system looks statistically identical when viewed at different magnifications. Droplets of all sizes appear in near-critical fluids, spin clusters of all scales in near-critical magnets. These fluctuations scatter radiation across the spectrum, slow dynamics to a crawl, and render mean-field theories invalid.
+
+**Meta-observation**: The catalog of critical phenomena demonstrates how a single mathematical fact—the divergence of \(\xi\)—generates diverse physical consequences. Each phenomenon provides a different window into criticality: thermodynamics through response functions, scattering through correlations, transport through dynamics. Their unity emerges only through the renormalization group understanding that all stem from scale invariance at the critical fixed point.
+
+**See also**: [[id:085c3b0d-b202-4134-a2d0-afa176907859][Critical Exponent Definitions]] (critical exponents), [[id:bbfa4ef3-2510-4fe8-b3d7-47ee7383c512][Critical Point]] (critical point), [[id:96f2fbf4-f9c5-4795-9556-c93407a8b7f1][Fluctuation Response Connection]] (fluctuation-response connection)

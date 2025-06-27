@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID: 085c3b0d-b202-4134-a2d0-afa176907859
+:CUSTOM_ID: 92/20
+:END:
+#+TITLE: Critical Exponent Definitions
+#+FILETAGS: :physics:spof:ch1:critical-phenomena:scaling:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+
+
+Critical exponents provide the precise mathematical characterization of singular behavior near phase transitions. These exponents quantify how thermodynamic quantities diverge or vanish as power laws, replacing the essential singularities and discontinuities with universal numbers that depend only on fundamental properties like dimensionality and symmetry. Their values encode the nature of the critical fixed point in renormalization group theory.
+
+The order parameter exponent \(\beta\) describes the continuous vanishing of spontaneous order:
+\[m(T, h=0) \propto \begin{cases} 
+0 & \text{for } T > T_c \\
+|t|^\beta & \text{for } T < T_c
+\end{cases}\]
+where \(t = (T_c - T)/T_c\) is the reduced temperature. For the liquid-gas transition, \(\beta\) characterizes how \(\rho_\ell - \rho_g\) vanishes; for magnets, how spontaneous magnetization disappears. Typical values are \(\beta \approx 0.326\) in three dimensions and \(\beta = 1/8\) in two dimensions for Ising symmetry.
+
+The susceptibility exponent \(\gamma\) quantifies the diverging response to conjugate fields:
+\[\chi_\pm(T, h=0) \propto |t|^{-\gamma_\pm}\]
+In practice, \(\gamma_+ = \gamma_- = \gamma\) in almost all cases, reflecting the symmetry of the critical point. The divergence of \(\chi\) directly connects to diverging fluctuations through \(\chi = \beta\langle M^2 \rangle_c/V\).
+
+The specific heat exponent \(\alpha\) characterizes thermal response:
+\[C_\pm(T, h=0) \propto |t|^{-\alpha_\pm}\]
+Unlike other exponents, \(\alpha\) can be negative (as in three-dimensional Ising models where \(\alpha \approx -0.11\)), indicating a finite but cusped specific heat. When \(\alpha = 0\), logarithmic divergences appear.
+
+The correlation length exponent \(\nu\) describes the divergence of spatial correlations:
+\[\xi_\pm(T, h=0) \propto |t|^{-\nu_\pm}\]
+This exponent is particularly fundamental as \(\xi\) sets the scale for all critical phenomena. Typically \(\nu_+ = \nu_- = \nu\), with values like \(\nu \approx 0.63\) for three-dimensional Ising systems.
+
+The critical isotherm exponent \(\delta\) characterizes the nonlinear field response at \(T = T_c\):
+\[m(T = T_c, h) \propto h^{1/\delta}\]
+This exponent is related to others through scaling relations like \(\beta\delta = \beta + \gamma\).
+
+**Meta-observation**: Critical exponents transform the qualitative notion of "singular behavior" into precise quantitative characterization. Their universality—identical values for microscopically different systems in the same universality class—provides the most striking evidence for the renormalization group picture. The exponents are not independent but satisfy scaling relations that reflect the underlying scale invariance of critical phenomena.
+
+**See also**: [[id:a138292d-84ca-4a86-88bc-467373342655][Critical Universality]] (critical universality), [[id:721da5f2-0ddc-4956-b5b4-f4f149fb86cb][Critical Exponent Relations]] (mathematical forms), [[id:4299a153-19d3-458a-8880-da2174763879][Critical Phenomena Catalog]] (phenomena catalog)

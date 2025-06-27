@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID: bbfa4ef3-2510-4fe8-b3d7-47ee7383c512
+:CUSTOM_ID: 92/17
+:END:
+#+TITLE: Critical Point
+#+FILETAGS: :physics:spof:ch1:phase-transitions:critical-phenomena:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+
+
+The critical point represents a unique thermodynamic state where distinctions between phases vanish and fluctuations dominate on all length scales. At the liquid-gas critical point, the meniscus disappears as densities converge: \(\rho_\ell \rightarrow \rho_g\) as \(T \rightarrow T_c^-\). The isothermal compressibility \(\kappa_T = -\frac{1}{V}\frac{\partial V}{\partial P}\big|_T\) diverges, signaling infinite response to infinitesimal pressure changes. Most dramatically, critical opalescence emerges as density fluctuations reach wavelengths comparable to visible light, scattering photons and rendering the fluid milky.
+
+These phenomena stem from a common origin: the vanishing of a characteristic length scale. Away from criticality, fluctuations are bounded by the correlation length \(\xi\), beyond which different regions fluctuate independently. As criticality approaches, \(\xi \rightarrow \infty\), creating correlated domains of all sizes up to the system dimension. This scale invariance manifests in power-law correlations \(G(r) \sim r^{-(d-2+\eta)}\) replacing exponential decay \(G(r) \sim \exp(-r/\xi)\).
+
+The critical point marks the terminus of a line of first-order transitions, representing a higher-order singularity in the free energy. While first-order transitions exhibit discontinuous jumps in order parameters, the critical transition shows continuous but non-analytic behavior. The order parameter vanishes as \(m \propto |t|^\beta\) where \(t = (T_c - T)/T_c\), with the exponent \(\beta\) characterizing the nature of the singularity. Response functions diverge with characteristic exponents: susceptibility as \(\chi \propto |t|^{-\gamma}\), specific heat as \(C \propto |t|^{-\alpha}\).
+
+The universality of critical phenomena emerges because microscopic details become irrelevant when correlation lengths exceed all microscopic scales. Only symmetry, dimensionality, and conservation laws matter, grouping diverse systems into universality classes sharing identical exponents. This explains why water and iron, despite vastly different microscopic physics, exhibit the same critical behavior.
+
+**Meta-observation**: The critical point exemplifies emergence in its purest form. Microscopic interactions produce macroscopic correlations spanning the entire system, generating new physics absent at any smaller scale. The mathematical description requires new tools—scaling theory, renormalization group—that transcend traditional thermodynamics. Critical phenomena thus bridge statistical mechanics and quantum field theory, revealing deep connections between seemingly disparate areas of physics.
+
+**See also**: [[id:4299a153-19d3-458a-8880-da2174763879][Critical Phenomena Catalog]] (critical phenomena catalog), [[id:085c3b0d-b202-4134-a2d0-afa176907859][Critical Exponent Definitions]] (critical exponents), [[id:7567af1a-237d-4e1c-b0ca-388c767561ce][Correlation Length]] (correlation length)

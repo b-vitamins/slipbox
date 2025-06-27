@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID: 76199329-ed11-4dab-898b-a162e9479caa
+:CUSTOM_ID: 92/13
+:END:
+#+TITLE: Elastic Hamiltonian D D
+#+FILETAGS: :physics:spof:ch1:elasticity:symmetry:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+
+
+The generalization of elasticity theory to \(d\) dimensions reveals how rotational symmetry enriches the phenomenology while preserving universality. The vector displacement field \(\vec{u}(\vec{x})\) now carries \(d\) components, and rotational invariance constrains their couplings through the symmetric strain tensor
+
+\[u_{\alpha\beta}(\vec{x}) = \frac{1}{2}\left(\frac{\partial u_\alpha}{\partial x_\beta} + \frac{\partial u_\beta}{\partial x_\alpha}\right)\]
+
+This symmetrization ensures invariance under local rotations, which would contribute antisymmetrically. The most general isotropic quadratic Hamiltonian involves only two independent combinations of the strain tensor:
+
+\[\mathcal{H} = \frac{1}{2} \int d^d\vec{x} \left[\sum_\alpha \rho\frac{\partial u_\alpha}{\partial t}\frac{\partial u_\alpha}{\partial t} + \sum_{\alpha,\beta}\left(2\mu u_{\alpha\beta}u_{\alpha\beta} + \lambda u_{\alpha\alpha}u_{\beta\beta}\right)\right]\]
+
+The Lamé coefficients \(\mu\) and \(\lambda\) completely characterize the elastic properties of an isotropic medium. Rotational invariance permits no other quadratic combinations—a remarkable constraint that reduces potentially \(d^4\) elastic constants to just two.
+
+Fourier transformation reveals the physical content more transparently:
+
+\[\mathcal{H} = \int \frac{d^d\mathbf{k}}{(2\pi)^d}\left[\frac{\rho}{2}|\dot{\vec{u}}(\vec{k})|^2 + \frac{\mu}{2}k^2|\vec{u}(\vec{k})|^2 + \frac{\mu+\lambda}{2}(\vec{k} \cdot \vec{u}(\vec{k}))^2\right]\]
+
+The mode structure becomes evident: longitudinal modes with \(\vec{k} \parallel \vec{u}\) propagate with velocity \(v_\ell = \sqrt{(2\mu + \lambda)/\rho}\), while \((d-1)\) transverse modes with \(\vec{k} \perp \vec{u}\) travel at \(v_t = \sqrt{\mu/\rho}\). This decomposition reflects the fundamental fact that compressions (longitudinal) and shears (transverse) represent independent deformation modes in continuous media.
+
+**Meta-observation**: The \(d\)-dimensional theory exhibits a universal structure independent of dimension, with the same Lamé form describing elasticity in any spatial dimension. Only the number of transverse modes scales with \(d\), reflecting the dimension of the orthogonal subspace. This dimensional universality extends to the thermodynamic predictions, with specific heat scaling as \(T^d\) regardless of microscopic details.
+
+**See also**: [[id:c48ba34e-50dc-4813-8f13-7917f12c3a8d][Elastic Hamiltonian 1d]] (1D limit), [[id:0713e87c-758b-40df-9f55-a9f3e54ec22c][Symmetry Constrain]] (rotational symmetry), [[id:da12e3ff-f2ea-4375-b1bc-7ac2582337d5][Field Theory Mathematics]] (mathematical structure)

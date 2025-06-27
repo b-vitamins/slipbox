@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID: 733d117f-54af-4660-98fd-948b6cd96654
+:CUSTOM_ID: 92/9
+:END:
+#+TITLE: Hamiltonian Construction Recipe
+#+FILETAGS: :physics:spof:ch1:symmetry:effective-theory:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+
+
+The systematic construction of effective Hamiltonians follows a hierarchy of principles that progressively constrain the allowed terms. Beginning with the most general functional \(\mathcal{H}[u]\) of the coarse-grained fields, we impose physical requirements that dramatically reduce the possibilities to a manageable form characterized by a few material-dependent parameters.
+
+Locality represents the first constraint. Short-range microscopic interactions typically produce effective theories where the energy density at position \(x\) depends only on fields and their derivatives evaluated at that point. This allows us to write \(\mathcal{H}[u] = \int d^d x \, \mathcal{L}(u, \partial u/\partial x, \partial^2 u/\partial x^2, \ldots)\) where \(\mathcal{L}\) is a local Lagrangian density. Long-range interactions modify this picture but can often be accommodated by including higher-derivative terms with appropriate scaling.
+
+Symmetry provides the most powerful constraints. Translational invariance eliminates direct dependence on \(u\) itself, permitting only derivatives. Rotational invariance in isotropic systems restricts the allowed combinations of derivatives to scalar contractions. For vector fields in \(d\) dimensions, the symmetric strain tensor \(u_{\alpha\beta} = (\partial u_\alpha/\partial x_\beta + \partial u_\beta/\partial x_\alpha)/2\) provides the basic building block.
+
+Stability around equilibrium requires the absence of linear terms and positive-definiteness of the quadratic form. This eliminates half the parameter space and ensures that small fluctuations increase the energy. Higher-order terms must respect the same symmetries but become progressively less relevant at long wavelengths, justifying truncation at low orders.
+
+The final step involves power counting to identify relevant, marginal, and irrelevant terms. In the elastic theory, terms with more derivatives are suppressed by additional powers of \(k/\Lambda\) where \(\Lambda\) is the ultraviolet cutoff. This organization by scaling dimension explains why simple theories with few parameters describe complex systems at macroscopic scales.
+
+**Meta-observation**: The construction recipe embodies the modern viewpoint of effective field theory. We need not derive the Hamiltonian from microscopic principles; instead, we write down the most general form consistent with symmetries and analyze its consequences. This approach succeeds because universality ensures that microscopic details enter only through a few parameters.
+
+**See also**: [[id:0713e87c-758b-40df-9f55-a9f3e54ec22c][Symmetry Constrain]] (symmetry constraints), [[id:76199329-ed11-4dab-898b-a162e9479caa][Elastic Hamiltonian D D]] (elastic examples), [[id:0df87be6-af53-48e8-a252-cea7b1627daa][Phenomenological Power]] (phenomenological power)

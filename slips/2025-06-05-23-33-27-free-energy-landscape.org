@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID: 8778b911-aaa9-4ed3-8784-16eac191d556
+:CUSTOM_ID: 92/34
+:END:
+#+TITLE: Free Energy Landscape
+#+FILETAGS: :physics:spof:ch1:phase-transitions:visualization:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+
+
+The free energy landscape \(F(m)\) provides geometric visualization of phase transitions. Multi-panel construction shows temperature evolution, illustrating the qualitative change at \(T_c\).
+
+For \(T > T_c\), single minimum at \(m = 0\). Parabolic shape \(F(m) \approx F(0) + \frac{1}{2\chi^{-1}}m^2\) shows fluctuation energy cost proportional to inverse susceptibility. As \(T \rightarrow T_c^+\), parabola flattens (\(\chi^{-1} \rightarrow 0\)), shown through progressively shallower curves. Flattening indicates vanishing energy cost for magnetization—system cannot decide whether to order.
+
+At \(T = T_c\), quartic form \(F(m) \approx F(0) + am^4\) (\(a > 0\)). Ultra-flat landscape allows large fluctuations with minimal energy cost. Magnified inset shows quartic form, contrasting with parabolic shapes above/below \(T_c\). Annotations show critical isotherm \(h = \partial F/\partial m \propto m^3\), yielding \(m \propto h^{1/3}\) (\(\delta = 3\) in mean-field).
+
+Below \(T_c\), double-well structure develops. Symmetric minima at \(m = \pm m_0(T)\) represent two magnetization states. Barrier height decreases as \(T \rightarrow T_c^-\), vanishing at criticality. Trajectory shows \(m_0(T) \propto (T_c - T)^\beta\). Curvature at minima gives inverse susceptibility in ordered phase.
+
+Finite-size panel: \(N\)-spin system has thermal fluctuations \(\sim\sqrt{N}\) smearing sharp features. Free energy remains analytic, transitions broadened over \(\Delta T \sim T_c/N^{1/\nu d}\). Only as \(N \rightarrow \infty\) do wells sharpen and transition becomes singular. Progression shown for \(N = 10^2, 10^4, 10^6, \infty\).
+
+External field \(h\) adds linear tilt \(-hm\). For \(T < T_c\), breaks well symmetry, favoring one minimum. Increasing \(h\) from negative to positive switches between minima—first-order transition at \(h = 0\). For \(T > T_c\), field shifts single minimum continuously.
+
+Annotations connect to dynamics: well depth determines activation barriers. Near \(T_c\), barriers vanish, enabling critical fluctuations. Arrows show force \(-\partial F/\partial m\) driving equilibrium.
+
+**Meta-observation**: Free energy landscape geometrizes thermodynamics. Phase transitions are topology changes—single to double wells. Critical points mark topology boundaries. Visualization shows why polynomial mean-field approximation captures essential features while missing fluctuation corrections to exponents.
+
+**See also**: [[id:459cad00-4d96-45e6-8622-db1e823ab68e][Phase Transition As Singularity]] (singularities in thermodynamic limit), [[id:c574aafe-76d4-4427-8529-c87f5eee213e][Statistical Mechanics Bridge]] (free energy from partition function), [[id:bbfa4ef3-2510-4fe8-b3d7-47ee7383c512][Critical Point]] (critical phenomena)

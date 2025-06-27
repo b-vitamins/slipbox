@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID: 1343dd5d-60aa-437b-aff1-f865c06c0b55
+:CUSTOM_ID: 92/30
+:END:
+#+TITLE: Phase Diagram Topology
+#+FILETAGS: :physics:spof:ch1:phase-transitions:visualization:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+
+
+The unified phase diagram I construct synthesizes the topological structures common to liquid-gas and magnetic transitions, revealing their deep similarity despite superficial differences. The master diagram employs a split-screen approach: the left half shows the \((P,T)\) plane for fluids with corresponding \((P,v)\) isotherms below, while the right half displays the \((h,T)\) plane for magnets with \(M(h)\) isotherms below.
+
+The liquid-gas coexistence line emerges from the triple point and terminates at the critical point \((T_c, P_c)\). I shade the coexistence region to emphasize its finite extent. Crucial annotations mark paths that circumvent the critical point, demonstrating how one can continuously transform liquid to gas without crossing a phase boundary—proof that these are not fundamentally distinct phases but differ only in density. The \((P,v)\) isotherms below show the characteristic flat regions within the coexistence zone where pressure remains constant as volume changes, reflecting the Maxwell construction.
+
+The magnetic diagram mirrors this structure with elegant simplicity imposed by symmetry. The coexistence line extends from \(T = 0\) to \(T = T_c\) along \(h = 0\), separating regions of positive and negative magnetization. The \(h \rightarrow -h\) symmetry ensures the critical point sits at zero field. The \(M(h)\) isotherms below show discontinuous jumps at \(h = 0\) for \(T < T_c\), with the jump magnitude decreasing as \(T \rightarrow T_c^-\).
+
+I connect corresponding features with visual cues: the critical points in both systems marked with emphasized circles, the coexistence lines highlighted with matching styles, and the symmetry axes (\(h = 0\) for magnets, no equivalent for fluids) clearly marked. Arrows indicate the direction of increasing order parameter—density for fluids, magnetization for magnets.
+
+The critical isotherms receive special attention. For fluids, the \(T = T_c\) isotherm in the \((P,v)\) plane shows the characteristic critical flattening with infinite compressibility at the critical density. For magnets, the \(T = T_c\) curve in the \(M(h)\) plane exhibits the nonlinear response \(M \propto h^{1/\delta}\) with \(\delta > 1\). These are annotated with their power-law forms to emphasize the universal critical behavior.
+
+Insets zoom into the critical regions, showing how the order parameter vanishes: \(\rho_\ell - \rho_g \propto |T_c - T|^\beta\) for fluids and \(M \propto |T_c - T|^\beta\) for magnets. The identical exponent \(\beta\) across systems underscores universality. Additional annotations mark the spinodal lines within the coexistence region and the Widom line extending into the supercritical region.
+
+**Meta-observation**: The topological unity of phase diagrams transcends material specifics. Whether atoms condensing into liquids or spins aligning into magnets, the mathematical structure remains invariant: lines of first-order transitions terminating at critical points where order parameters vanish continuously. This topological universality suggests that phase transitions represent a fundamental organizational principle in nature, independent of microscopic constituents.
+
+**See also**: [[id:74767f92-bb18-4c5b-9d1b-5e60e0b58f06][Phase Diagram Topology]] (phase diagram topology), [[id:bbfa4ef3-2510-4fe8-b3d7-47ee7383c512][Critical Point]] (critical point), [[id:d7e91430-09bf-4e0a-9864-7147f48ae218][Order Parameter]] (order parameter)

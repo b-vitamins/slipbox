@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID: d7e91430-09bf-4e0a-9864-7147f48ae218
+:CUSTOM_ID: 92/6
+:END:
+#+TITLE: Order Parameter
+#+FILETAGS: :physics:spof:ch1:order-parameter:placeholder:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+

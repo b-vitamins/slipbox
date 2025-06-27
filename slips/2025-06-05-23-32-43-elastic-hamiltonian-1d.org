@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID: c48ba34e-50dc-4813-8f13-7917f12c3a8d
+:CUSTOM_ID: 92/12
+:END:
+#+TITLE: Elastic Hamiltonian 1d
+#+FILETAGS: :physics:spof:ch1:elasticity:phonons:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+
+
+The one-dimensional elastic Hamiltonian represents the simplest field theory exhibiting the essential features of collective phenomena. After coarse-graining discrete displacements into a continuous field \(u(x,t)\), the most general quadratic Hamiltonian consistent with translational symmetry takes the form
+
+\[\mathcal{H} = \frac{\rho}{2} \int dx \left[\left(\frac{\partial u}{\partial t}\right)^2 + v^2 \left(\frac{\partial u}{\partial x}\right)^2\right]\]
+
+where \(\rho = m/a\) is the mass density and \(v = \sqrt{K/\rho}\) the sound velocity. This deceptively simple expression encodes the long-wavelength dynamics of arbitrarily complex microscopic interactions through just two parameters.
+
+The phenomenological construction of this Hamiltonian begins with the observation that the potential energy must vanish for uniform translations, depending only on gradients. The leading term \((K/2)(\partial u/\partial x)^2\) represents the elastic energy of local compressions and extensions. Higher gradient terms like \((L/2)(\partial^2 u/\partial x^2)^2\) are present but suppressed by powers of \(k^2/\Lambda^2\) in Fourier space, becoming negligible for long-wavelength excitations.
+
+The dispersion relation emerging from this Hamiltonian, \(\omega = v|k|\), exhibits the universal linear form demanded by translational invariance. Remarkably, all microscopic information—the detailed form of interatomic potentials, the range of interactions, the crystal structure—collapses into the single parameter \(v\). For a chain with interactions between \(\ell\)-th neighbors with spring constants \(K_\ell\), the sound velocity depends only on the combination \(\bar{K} = \sum_\ell \ell^2 K_\ell\).
+
+**Meta-observation**: The 1D elastic Hamiltonian exemplifies the power of effective field theory. Starting from potentially thousands of microscopic parameters, symmetry and scale separation reduce the low-energy physics to a two-parameter theory. This dimensional reduction from microscopic complexity to macroscopic simplicity underlies the success of continuum mechanics.
+
+**See also**: [[id:76199329-ed11-4dab-898b-a162e9479caa][Elastic Hamiltonian D D]] (d-dimensional generalization), [[id:84da4381-1cf3-4264-9b89-e9febefc99e9][Phonon Heat Capacity]] (thermodynamic predictions), [[id:da12e3ff-f2ea-4375-b1bc-7ac2582337d5][Field Theory Mathematics]] (field theory mathematics)

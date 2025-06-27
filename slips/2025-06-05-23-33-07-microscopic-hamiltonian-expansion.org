@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID: 6f3418fe-e47f-497a-8a96-c97f703a4c60
+:CUSTOM_ID: 92/24
+:END:
+#+TITLE: Microscopic Hamiltonian Expansion
+#+FILETAGS: :physics:spof:ch1:phonons:harmonic-approximation:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+
+
+The systematic expansion of the potential energy around equilibrium positions provides the mathematical foundation for phonon theory. Starting from a general many-body potential \(\mathcal{V}(\vec{q}_1, \vec{q}_2, \ldots, \vec{q}_N)\), we first identify equilibrium positions \(\vec{q}_{\vec{r}}^*\) by minimizing \(\mathcal{V}\). For crystals, these form a regular lattice with positions labeled by integer triplets \(\vec{r} = \{\ell, m, n\}\). Small displacements \(\vec{u}(\vec{r}) = \vec{q}_{\vec{r}} - \vec{q}_{\vec{r}}^*\) then permit Taylor expansion:
+
+\[\mathcal{V} = \mathcal{V}^* + \frac{1}{2}\sum_{\substack{\vec{r},\vec{r}' \\ \alpha,\beta}} \frac{\partial^2\mathcal{V}}{\partial q_{\vec{r},\alpha}\partial q_{\vec{r}',\beta}} u_\alpha(\vec{r})u_\beta(\vec{r}') + O(u^3)\]
+
+The linear term vanishes by the equilibrium condition, while the quadratic term defines the harmonic approximation. Translational symmetry of the crystal ensures that the force constant matrix depends only on the separation:
+
+\[\frac{\partial^2\mathcal{V}}{\partial q_{\vec{r},\alpha}\partial q_{\vec{r}',\beta}} = K_{\alpha\beta}(\vec{r} - \vec{r}')\]
+
+This symmetry enables diagonalization through Fourier transformation. Introducing normal coordinates:
+
+\[u_\alpha(\vec{r}) = \sum_{\vec{k}}' \frac{e^{i\vec{k} \cdot \vec{r}}}{\sqrt{N}} u_\alpha(\vec{k})\]
+
+where the sum is restricted to the first Brillouin zone, transforms the potential energy to:
+
+\[\mathcal{V} = \mathcal{V}^* + \frac{1}{2}\sum_{\vec{k},\alpha,\beta} K_{\alpha\beta}(\vec{k}) u_\alpha(\vec{k})u_\beta(\vec{k})^*\]
+
+The \(3 \times 3\) matrix \(K_{\alpha\beta}(\vec{k})\) encodes all information about interatomic forces. Its eigenvalues \(\{\kappa_\alpha(\vec{k})\}\) yield squared frequencies \(\omega_\alpha(\vec{k})^2 = \kappa_\alpha(\vec{k})/m\), where \(m\) is the atomic mass. The complete Hamiltonian including kinetic energy becomes:
+
+\[\mathcal{H} = \mathcal{V}^* + \frac{1}{2}\sum_{\vec{k},\alpha,\beta}\left[\frac{|p_\alpha(\vec{k})|^2}{m} + K_{\alpha\beta}(\vec{k})u_\alpha(\vec{k})u_\beta(\vec{k})^*\right]\]
+
+Quantization promotes each mode to a harmonic oscillator:
+
+\[\mathcal{H} = \mathcal{V}^* + \sum_{\vec{k},\alpha} \hbar\omega_\alpha(\vec{k})\left(n_\alpha(\vec{k}) + \frac{1}{2}\right)\]
+
+The thermal energy at temperature \(T\) follows from Bose-Einstein statistics:
+
+\[E(T) = \mathcal{V}^* + \sum_{\vec{k},\alpha} \hbar\omega_\alpha(\vec{k})\left(\langle n_\alpha(\vec{k})\rangle + \frac{1}{2}\right)\]
+
+where \(\langle n_\alpha(\vec{k})\rangle = 1/[\exp(\hbar\omega_\alpha(\vec{k})/k_B T) - 1]\).
+
+**Meta-observation**: This mathematical development reveals how symmetry simplifies complexity. The original problem involves \(3N\) coupled degrees of freedom with potentially \(O(N^2)\) coupling constants. Translational symmetry reduces this to \(3N\) independent oscillators characterized by the single function \(K_{\alpha\beta}(\vec{k})\). The price is conceptual: we must think in reciprocal space where crystal momentum \(\vec{k}\) labels collective excitations rather than individual particle motions.
+
+**See also**: [[id:e84cefc1-1521-4774-a191-6d83b7dec564][Normal Mode Analysis]] (normal mode philosophy), [[id:7e661894-6d0e-48cc-aad1-9b98bc2a3b35][1d Chain Mathematics]] (1D worked example), [[id:84da4381-1cf3-4264-9b89-e9febefc99e9][Phonon Heat Capacity]] (thermodynamic consequences)
