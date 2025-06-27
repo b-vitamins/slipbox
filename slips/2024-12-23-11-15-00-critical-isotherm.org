@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID: 05fc08bb-143e-4a3e-8415-5af4652db753
+:CUSTOM_ID: 92/49
+:END:
+#+TITLE: Critical Isotherm
+#+FILETAGS: :physics:spof:ch2:critical:isotherm:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+At the critical temperature, the system exhibits its most singular response to external fields. The critical isotherm—the relationship between magnetization and field precisely at \(T = T_c\)—reveals the non-analytic behavior that defines criticality.
+
+Setting \(t = 0\) in the minimization equation eliminates the linear term:
+
+\[4u\bar{m}^3 = h\]
+
+The solution follows immediately:
+
+\[\bar{m}(t=0) = \left(\frac{h}{4u}\right)^{1/3}\]
+
+This cube-root relationship embodies critical singularity. Unlike the linear response \(m \propto h\) in the paramagnetic phase or the discontinuous jump in the ferromagnetic phase, the critical isotherm shows fractional power-law behavior. The exponent \(\delta = 3\) (defined through \(h \propto m^\delta\) at criticality) represents another universal critical exponent.
+
+The non-analyticity becomes manifest in the susceptibility:
+
+\[\chi = \frac{\partial\bar{m}}{\partial h}\bigg|_{t=0} = \frac{1}{3}(4u)^{-1/3}h^{-2/3}\]
+
+As \(h \to 0\), the susceptibility diverges—the hallmark of critical response. The system becomes infinitely sensitive to external perturbations, with correlation length diverging to infinity. This divergence differs qualitatively from the finite susceptibility jumps at first-order transitions.
+
+The critical isotherm interpolates between paramagnetic and ferromagnetic behaviors. For large \(|h|\), the cube-root form approaches linear response, recovering non-critical behavior far from the phase transition. Near \(h = 0\), the infinite slope signals the incipient spontaneous magnetization that emerges for \(t < 0\). The critical point thus represents the marginal case between induced and spontaneous order.
+
+Physically, the cube-root form arises from the vanishing quadratic term in the effective potential. At \(t = 0\), the potential \(\Psi(m) = um^4 - hm\) has no characteristic scale for \(m\). The balance between quartic self-interaction and linear field coupling yields the fractional exponent. This scale-free form reflects the critical point's self-similar nature—no length or energy scale dominates.
+
+The universality of \(\delta = 3\) within mean-field theory extends across all systems with scalar order parameters. Whether describing magnetization in iron, density in carbon dioxide, or concentration in binary alloys, the same cube-root isotherm emerges at criticality. Only the non-universal amplitude \((4u)^{-1/3}\) distinguishes different materials.
+
+Experimental measurements of critical isotherms provide stringent tests of theoretical predictions. In three-dimensional systems, experiments yield \(\delta \approx 4.8\), significantly larger than the mean-field value. This discrepancy arises from fluctuations that become increasingly important near criticality. Nevertheless, the power-law form and its universality survive, confirming the general framework while highlighting the limitations of mean-field approximations.
+
+The critical isotherm also reveals dynamical critical phenomena. The vanishing restoring force for small perturbations implies critical slowing down—relaxation times diverge as the system struggles to respond to changing fields. This connection between static non-analyticity and dynamical singularities exemplifies the deep unity of critical phenomena.
+
+**See also:** [[id:251c3820-b80c-469c-a327-39daae39e6d1][Minimization Equation]] for the general minimization equation, [[id:596df11c-4c1c-4be5-88fb-c92d091856d9][Free Energy]] for susceptibility divergence, [[id:b30c9675-7ca8-4102-a99a-5670087d8621][Heat Capacity Jump]] for complete exponent set.

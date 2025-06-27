@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID: fda35ee1-f6c3-44d7-8da2-23e55efe6365
+:CUSTOM_ID: 92/60
+:END:
+#+TITLE: Domain Wall Solution
+#+FILETAGS: :physics:spof:ch2:domainwall:profile:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The domain wall equation admits an elegant analytical solution—a hyperbolic tangent profile that smoothly interpolates between opposite magnetization states. This solution reveals how microscopic parameters determine mesoscopic structure, connecting the correlation length to domain wall properties.
+
+The solution takes the form:
+
+\[m_w(x) = \bar{m}\tanh\left[\frac{x - x_0}{w}\right]\]
+
+where \(x_0\) marks the wall's center (arbitrary due to translational invariance) and \(w\) sets its width. Direct substitution confirms this solves the nonlinear equation, provided:
+
+\[w = \sqrt{\frac{2K}{-t}} \quad \text{and} \quad \bar{m} = \sqrt{\frac{-t}{4u}}\]
+
+The tanh profile embodies optimal energy balance. Near the wall center where \(|x - x_0| \ll w\), the magnetization varies linearly: \(m_w \approx \bar{m}(x - x_0)/w\). This linear region minimizes gradient energy while transitioning between states. Far from the center where \(|x - x_0| \gg w\), the magnetization saturates exponentially to \(\pm\bar{m}\), minimizing bulk energy by reaching the equilibrium value.
+
+The wall width \(w\) diverges at the critical point as:
+
+\[w = \sqrt{\frac{2K}{a(T_c - T)}} \propto (T_c - T)^{-1/2}\]
+
+This divergence reflects the vanishing energy difference between opposing phases as \(T \to T_c\). Near criticality, thermal fluctuations can easily flip large regions between states, effectively broadening the interface. The diverging width signals the incipient loss of phase distinction at \(T_c\).
+
+The connection to correlation length proves fundamental. The bulk correlation length \(\xi = \sqrt{K/|t|}\) sets the scale for magnetization fluctuations. Comparing with the wall width yields \(w = \sqrt{2}\xi\)—domain walls are precisely \(\sqrt{2}\) correlation lengths wide. This numerical factor, emerging from the nonlinear mathematics, shows that domain walls represent the natural interpolation scale between different phases.
+
+The tanh solution's stability follows from energy considerations. Linear stability analysis, perturbing \(m_w(x) + \delta m(x)\) and linearizing, yields a Schrödinger-like equation with bound states. The zero-energy mode corresponds to wall translations—moving \(x_0\) costs no energy. All other modes have positive energy, confirming stability against small perturbations.
+
+Higher-dimensional generalizations maintain the essential structure. A planar wall in \(d\) dimensions has the same one-dimensional profile, constant along the \((d-1)\) transverse directions. Curved walls acquire additional energy from surface tension, driving domain coarsening dynamics. The competition between bulk and surface energies determines equilibrium domain sizes in finite systems.
+
+The universality of tanh profiles extends across physics. Interfaces in binary fluids, walls between superconducting and normal regions, and even certain quantum field theory instantons share this mathematical form. The reason lies in the universal structure of symmetry-breaking potentials: a double well with quadratic behavior near minima and quartic behavior overall necessarily yields tanh interpolations between minima.
+
+Modern experiments directly image domain walls through various techniques—magnetic force microscopy in ferromagnets, optical birefringence in liquid crystals, or electron microscopy in alloys. These observations confirm both the tanh profile and the temperature-dependent width, providing quantitative tests of the Landau-Ginzburg framework. The agreement validates the coarse-graining philosophy: mesoscopic physics emerges predictably from symmetry and dimensional analysis, independent of microscopic details.
+
+**See also:** [[id:842934d1-aec9-44ab-b00a-20028668b788][Domain Wall Equation]] for the differential equation, [[id:6024201e-a88a-4223-9ff8-8c3e24ce0490][Domain Wall Energy Calculation]] for wall energy, [[id:b18f1285-af57-4779-a743-cef651d60642][Goldstone Mode Energy]] for correlation length connection.

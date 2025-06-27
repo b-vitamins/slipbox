@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID: 5943d945-1b25-469e-9be5-c7c857619dd6
+:CUSTOM_ID: 92/40
+:END:
+#+TITLE: Analyticity at Mesoscale
+#+FILETAGS: :physics:spof:ch2:analyticity:emergence:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+A profound simplification occurs in the passage from microscopic to mesoscopic scales: analyticity emerges from chaos. While microscopic degrees of freedom may be discrete, quantized, or constrained to manifolds, the coarse-grained field \(\vec{m}(\mathbf{x})\) obtained by averaging over many such degrees of freedom becomes a smooth, analytic function amenable to polynomial expansions.
+
+This emergence of analyticity rests on a generalization of the central limit theorem. Consider averaging \(N\) microscopic spins within a coarse-graining volume. For independent spins, the central limit theorem guarantees that their sum approaches a Gaussian distribution as \(N \to \infty\), regardless of the microscopic probability distribution. The coarse-grained probability density becomes analytic, with higher cumulants suppressed by powers of \(1/N\).
+
+Interactions complicate but do not fundamentally alter this picture. Short-range interactions create correlations within the coarse-graining volume, modifying the effective number of independent degrees of freedom but preserving the essential averaging that produces analyticity. The key requirement is that the coarse-graining length scale exceeds the microscopic correlation length—a condition naturally satisfied except precisely at criticality.
+
+This analyticity justifies polynomial expansions of the effective Hamiltonian in powers of \(\vec{m}\). Terms like \(m^2\), \(m^4\), and \(m^6\) represent successive approximations to the coarse-grained energy landscape. Near criticality, where the order parameter is small, truncation at low orders becomes increasingly accurate. The coefficients of these terms inherit analyticity from the coarse-graining process, permitting Taylor expansions in temperature and other external parameters.
+
+A subtle but crucial point deserves emphasis: while the Hamiltonian \(\mathcal{H}[\vec{m}]\) is analytic, the free energy obtained from it need not be. The free energy emerges from minimizing the Hamiltonian (in mean-field theory) or integrating the partition function (more generally). These operations—minimization and integration over infinitely many degrees of freedom—can generate non-analyticities even from analytic starting points. A simple example: minimizing \(\Psi(m) = tm^2 + um^4\) yields \(F \propto -t^2\) for \(t < 0\), introducing a non-analyticity at \(t = 0\) despite \(\Psi\) itself being polynomial.
+
+This distinction between Hamiltonian analyticity and free energy singularities resolves an apparent paradox. How can smooth, analytic energy functions produce the sharp singularities characteristic of phase transitions? The answer lies in the thermodynamic limit: for finite systems, all quantities remain analytic, but as system size approaches infinity, the competition between different configurations sharpens, ultimately producing genuine non-analyticities.
+
+The mesoscopic scale thus occupies a privileged position. Large enough to average out microscopic discreteness through the central limit mechanism, yet small enough to avoid the collective singularities of the thermodynamic limit, it provides the natural arena for constructing statistical field theories. This analyticity at intermediate scales represents not merely a mathematical convenience but a deep physical principle underlying the universality of critical phenomena.
+
+**See also:** [[id:02a9278b-81b7-4c24-8014-07765c7e5e60][Coarse-Graining Philosophy]] for coarse-graining philosophy, [[id:a4e3940d-1db8-47db-9eb8-bd0cf9f1e1f0][Power Counting]] for power counting near criticality, [[id:251c3820-b80c-469c-a327-39daae39e6d1][Minimization Equation]] for how minimization generates singularities.

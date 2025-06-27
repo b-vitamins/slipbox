@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID: b18f1285-af57-4779-a743-cef651d60642
+:CUSTOM_ID: 92/57
+:END:
+#+TITLE: Goldstone Mode Energy
+#+FILETAGS: :physics:spof:ch2:goldstone:stiffness:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Phase fluctuation energy in broken-symmetry states reveals Goldstone modes' nature. Examining the system's response to slow spatial phase variations uncovers both gapless excitation origins and critical softening at transitions.
+
+Consider a superfluid in its ordered phase with \(\psi(\mathbf{x}) = \bar{\psi}e^{i\theta(\mathbf{x})}\), where \(\bar{\psi} = \sqrt{-t/4u}\) is the equilibrium magnitude. Inserting this form into the Landau-Ginzburg Hamiltonian yields:
+
+\[\beta\mathcal{H} = \beta\mathcal{H}_0 + \frac{\bar{K}}{2}\int d^d\mathbf{x}(\nabla\theta)^2\]
+
+The constant \(\beta\mathcal{H}_0\) contains the bulk energy of the uniform ordered state. The gradient term, with stiffness \(\bar{K} = K\bar{\psi}^2 = K(-t/4u)\), represents the energy cost of phase variations.
+
+This quadratic form embodies several profound principles. First, no term linear in \(\theta\) appears—such a term would violate the original \(U(1)\) symmetry. Second, no term proportional to \(\theta^2\) exists—uniform phase shifts must cost zero energy. Only gradients matter, enforcing the Goldstone theorem's requirement of gapless excitations.
+
+The stiffness \(\bar{K}\) inherits temperature dependence from the order parameter:
+
+\[\bar{K} = K\bar{\psi}^2 = K\frac{-t}{4u} = \frac{Ka}{4u}(T_c - T)\]
+
+As \(T \to T_c^-\), the stiffness vanishes linearly. This softening reflects the diminishing energy scale for phase fluctuations as the ordered phase becomes marginally stable. At the critical point, phase rigidity disappears entirely—any phase configuration costs zero energy, enabling the restoration of full rotational symmetry.
+
+The physical meaning of \(\bar{K}\) extends beyond mere mathematics. In superfluids, it determines the superfluid density \(\rho_s = \bar{K}m/\hbar^2\) where \(m\) is the particle mass. The vanishing stiffness at \(T_c\) thus corresponds to vanishing superfluid fraction—no particles participate in coherent flow. In magnets, \(\bar{K}\) sets the spin wave velocity \(c = \sqrt{\bar{K}/\chi_\perp}\) where \(\chi_\perp\) is the transverse susceptibility.
+
+The gradient expansion truncated at \((\nabla\theta)^2\) assumes slow phase variations. Higher terms like \((\nabla^2\theta)^2\) become important for shorter wavelengths but are irrelevant for the long-wavelength Goldstone modes that dominate critical behavior. This truncation parallels the harmonic approximation for phonons—valid precisely where it matters most.
+
+The energy functional equation (2.23) serves as the starting point for analyzing phase dynamics. Its variations yield the classical equation of motion \(\nabla^2\theta = 0\) for static configurations, admitting topological solutions like vortices where \(\theta\) winds by \(2\pi n\). Its quantum version generates the Bogoliubov spectrum of elementary excitations. Its statistical mechanics determines the Berezinskii-Kosterlitz-Thouless transition in two dimensions.
+
+This phase-only description breaks down when amplitude fluctuations become important. Near vortex cores where \(|\psi| \to 0\), or close to \(T_c\) where \(|\psi|\) is small, the full complex field theory is required. Yet for low-energy, long-wavelength physics in the ordered phase, the phase approximation captures the essential physics with remarkable economy.
+
+Equation (2.23)'s universal form—depending only on symmetry, not microscopic details—explains similar Goldstone physics across systems. Whether describing spin waves in magnets, second sound in superfluids, or sliding phases in charge density waves, the same gradient-squared energy emerges. This universality, revealed through phenomenological reasoning, stands confirmed by microscopic calculations across countless systems.
+
+**See also:** [[id:5b4b24eb-5239-42e7-8b4a-8e5dd81ba1cb][Goldstone Theorem]] for Goldstone theorem foundations, [[id:9e5bb625-4b21-4741-9a37-02145a849a8f][Goldstone Mode Decomposition]] for phase mode decomposition, [[id:6cadde9f-3a49-474c-aa0a-a1c652fc3237][Superfluid Order Parameter]] for superfluid context, [[id:ac0ad91b-86c0-423e-9502-1fefb47fc752][Gradient Expansion]] for gradient term origins.

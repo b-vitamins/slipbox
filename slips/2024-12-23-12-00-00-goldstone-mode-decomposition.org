@@ -1,0 +1,47 @@
+:PROPERTIES:
+:ID: 9e5bb625-4b21-4741-9a37-02145a849a8f
+:CUSTOM_ID: 92/58
+:END:
+#+TITLE: Goldstone Mode Decomposition
+#+FILETAGS: :physics:spof:ch2:fourier:fluctuations:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The power of translational symmetry transforms the phase fluctuation problem from a functional challenge to simple harmonic oscillators. Decomposing the phase field into normal modes reveals the characteristic \(q^2\) dispersion of Goldstone excitations and enables quantitative analysis of their thermodynamic contributions.
+
+The Fourier decomposition takes the standard form:
+
+\[\theta(\mathbf{x}) = \frac{1}{\sqrt{V}}\sum_{\mathbf{q}}e^{i\mathbf{q}\cdot\mathbf{x}}\theta_{\mathbf{q}}\]
+
+Here \(V\) is the system volume, and the wavevectors \(\mathbf{q}\) are quantized by boundary conditions: \(q_i = 2\pi n_i/L_i\) for a box of dimensions \(L_i\). The reality condition \(\theta(\mathbf{x}) \in \mathbb{R}\) requires \(\theta_{-\mathbf{q}} = \theta_{\mathbf{q}}^*\).
+
+Substituting into the gradient energy yields a remarkable simplification:
+
+\[\beta\mathcal{H} = \beta\mathcal{H}_0 + \frac{\bar{K}}{2}\sum_{\mathbf{q}}q^2|\theta(\mathbf{q})|^2\]
+
+The convolution theorem transforms the real-space gradient into momentum-space multiplication. Each Fourier mode contributes independently—a consequence of the quadratic Hamiltonian. The energy of mode \(\mathbf{q}\) is proportional to \(q^2 = |\mathbf{q}|^2\), vanishing as \(q \to 0\).
+
+This quadratic dispersion distinguishes Goldstone modes from massive excitations. Ordinary excitations have \(E = \Delta + \hbar^2q^2/2m^*\) with a gap \(\Delta\). Goldstone modes have \(E = \hbar cq\) (relativistic) or \(E = \hbar q^2/2m^*\) (non-relativistic), gapless in either case. The quadratic form here indicates non-relativistic Goldstone modes, appropriate for condensed matter systems.
+
+The mode decomposition enables immediate statistical mechanical analysis. Each mode acts as an independent harmonic oscillator with "spring constant" \(\bar{K}q^2\). The classical partition function factorizes:
+
+\[Z = \prod_{\mathbf{q}}\int d\theta_{\mathbf{q}}d\theta_{\mathbf{q}}^*\exp\left(-\frac{\bar{K}q^2}{2k_BT}|\theta_{\mathbf{q}}|^2\right)\]
+
+Equipartition yields \(\langle|\theta_{\mathbf{q}}|^2\rangle = k_BT/\bar{K}q^2\), showing enhanced fluctuations at small \(q\).
+
+The thermodynamic consequences follow directly. The free energy contribution from Goldstone modes:
+
+\[F_{\text{Goldstone}} = k_BT\sum_{\mathbf{q}}\ln\left(\frac{\bar{K}q^2}{k_BT}\right)\]
+
+Converting the sum to an integral for large \(V\) yields the specific heat \(C \propto T^{d/2}\) in \(d\) dimensions. This explains universal low-temperature behavior across ordered systems.
+
+Long-wavelength fluctuations deserve special attention. The mean-square phase fluctuation:
+
+\[\langle(\theta(\mathbf{x}) - \theta(0))^2\rangle = \frac{2}{V}\sum_{\mathbf{q}}(1-\cos(\mathbf{q}\cdot\mathbf{x}))\langle|\theta_{\mathbf{q}}|^2\rangle\]
+
+In dimensions \(d \leq 2\), the integral over small \(q\) diverges logarithmically with system size. These infrared divergences destroy true long-range order at finite temperature—the Mermin-Wagner theorem's content. Only in \(d > 2\) do Goldstone fluctuations remain bounded, permitting stable ordered phases.
+
+The mode expansion also reveals interaction effects. Anharmonic terms like \((\nabla\theta)^4\) couple different Fourier modes, leading to finite Goldstone mode lifetimes and thermal conductivity. Vortices, where \(\theta\) winds by \(2\pi\), contribute non-linear terms that cannot be captured by Fourier analysis alone. These topological excitations ultimately limit the phase-only description's validity.
+
+Yet for temperatures well below \(T_c\) where amplitude fluctuations are frozen out, the harmonic phase approximation captures essential physics. The \(q^2\) dispersion, the enhanced low-\(q\) fluctuations, and the dimensional dependence of stability all follow from the simple mode decomposition. This success exemplifies effective field theory's power: focusing on relevant low-energy degrees of freedom yields quantitative predictions despite ignoring microscopic complexity.
+
+**See also:** [[id:b18f1285-af57-4779-a743-cef651d60642][Goldstone Mode Energy]] for the real-space energy functional, [[id:5b4b24eb-5239-42e7-8b4a-8e5dd81ba1cb][Goldstone Theorem]] for Goldstone theorem, [[id:b09ab03e-5340-4589-acf7-001ba67e09b6][Symmetry Breaking Taxonomy]] for dimensional restrictions on ordering.

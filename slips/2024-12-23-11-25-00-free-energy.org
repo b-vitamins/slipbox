@@ -1,0 +1,47 @@
+:PROPERTIES:
+:ID: 596df11c-4c1c-4be5-88fb-c92d091856d9
+:CUSTOM_ID: 92/51
+:END:
+#+TITLE: Free Energy
+#+FILETAGS: :physics:spof:ch2:thermodynamics:freeenergy:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Free energy encapsulates all thermodynamic information. Within mean-field theory, evaluating the effective potential at its minimum yields the free energy, revealing how singularities emerge from smooth functions through minimization.
+
+At zero field, the free energy per unit volume follows from inserting the saddle-point magnetization into the effective potential:
+
+\[\frac{\beta F}{V} = \frac{\beta F_0}{V} + \Psi(\bar{m}) = \frac{\beta F_0}{V} + \begin{cases}
+0 & \text{for } t > 0 \\
+-\frac{t^2}{16u} & \text{for } t < 0
+\end{cases}\]
+
+The piecewise structure embodies the phase transition. Above \(T_c\), the free energy coincides with that of the non-magnetic state. Below \(T_c\), spontaneous magnetization lowers the free energy by an amount proportional to \(t^2\).
+
+This non-analyticity at \(t = 0\) emerges despite the analytic effective potential \(\Psi(m)\). The minimization operation—selecting the global minimum among competing solutions—introduces the singularity. For \(t > 0\), only \(m = 0\) minimizes \(\Psi\). For \(t < 0\), the minimum shifts to \(m = \pm\sqrt{-t/4u}\), changing the functional form of \(F(t)\). This mechanism explains how phase transitions arise from competition between different configurations rather than from microscopic singularities.
+
+The free energy's second derivative yields the heat capacity discontinuity. Using \(t = a(T - T_c)\) and differentiating twice:
+
+\[\frac{\partial^2 F}{\partial T^2} = \begin{cases}
+0 & \text{for } T > T_c \\
+-\frac{Vk_Ba^2T_c}{8u} & \text{for } T < T_c
+\end{cases}\]
+
+The heat capacity thus jumps at \(T_c\), characteristic of mean-field transitions. Unlike the divergences in susceptibility or correlation length, the heat capacity remains finite, defining the critical exponent \(\alpha = 0\). This discontinuity reflects the sudden onset of order: below \(T_c\), thermal fluctuations must disorder an increasingly stable ferromagnetic state, requiring additional heat capacity.
+
+The free energy also determines the equation of state \(m(h,T)\) through:
+
+\[h = -\frac{\partial F}{\partial m} = \frac{\partial\Psi}{\partial m}\bigg|_{m=\bar{m}}\]
+
+This relationship, combined with the minimization condition, yields all thermodynamic response functions. The magnetization, susceptibility, and higher derivatives of \(F\) provide a complete thermodynamic description.
+
+Near the critical point, the free energy exhibits scaling behavior. For small \(t\) and \(h\), dimensional analysis yields:
+
+\[F(t,h) - F(0,0) \sim |t|^{2-\alpha}f_\pm(h/|t|^{\beta\delta})\]
+
+where \(f_\pm\) are universal scaling functions. This scaling form, with mean-field exponents \(\alpha = 0\), \(\beta = 1/2\), \(\delta = 3\), encapsulates the scale invariance of critical phenomena. All thermodynamic quantities follow from derivatives of this scaling function.
+
+The free energy's convexity properties ensure thermodynamic stability. The effective potential \(\Psi(m)\) is convex at its minimum, guaranteeing positive susceptibility. The Maxwell construction for first-order transitions ensures convexity of \(F(h)\) despite the non-convex regions of \(\Psi(m)\) for \(t < 0\). These mathematical requirements reflect physical stability: systems evolve toward states minimizing free energy.
+
+Mean-field free energy provides the reference point for systematic improvements. Fluctuation corrections add terms like \(T\ln Z_{\text{fluct}}\) to the saddle-point result. These corrections, while quantitatively important in low dimensions, preserve the qualitative picture: a non-analytic free energy emerging from competing phases, with universal behavior near criticality governed by a few critical exponents.
+
+**See also:** [[id:15473268-6d54-4cad-926a-b62621df24ca][Saddle Point Method]] for saddle-point derivation, [[id:7b3d7669-1b2b-4cd1-8acd-8b94babcb58d][Spontaneous Magnetization]] for the minimization yielding \(t^2\) dependence, [[id:b30c9675-7ca8-4102-a99a-5670087d8621][Heat Capacity Jump]] for heat capacity analysis and critical exponent systematics.

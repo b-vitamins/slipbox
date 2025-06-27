@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID: ccff70ed-3bb2-4ccd-b014-24c5a077b5bf
+:CUSTOM_ID: 92/43
+:END:
+#+TITLE: Temperature Dependence
+#+FILETAGS: :physics:spof:ch2:critical:temperature:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The phenomenological parameters of the Landau-Ginzburg Hamiltonian encode all temperature dependence of the system. While the microscopic Hamiltonian typically has no explicit temperature dependence, the effective parameters \(\{t, u, K, \ldots\}\) inherit strong temperature variation through the coarse-graining process. Understanding this temperature dependence proves crucial for connecting the abstract field theory to experimental reality.
+
+The coarse-graining procedure integrates out short-wavelength fluctuations, incorporating their entropic contributions into effective parameters. This integration depends sensitively on temperature, as thermal fluctuations become more pronounced at higher \(T\). The resulting parameters are smooth, analytic functions of temperature, permitting Taylor expansion around the critical point:
+
+\[\begin{align}
+t(T) &= a_0 + a_1(T - T_c) + a_2(T - T_c)^2 + \cdots \\
+u(T) &= u_0 + u_1(T - T_c) + u_2(T - T_c)^2 + \cdots \\
+K(T) &= K_0 + K_1(T - T_c) + K_2(T - T_c)^2 + \cdots
+\end{align}\]
+
+The crucial observation is that phase transitions require \(t\) to change sign at \(T_c\). For \(T > T_c\), the paramagnetic phase is stable, requiring \(t > 0\). For \(T < T_c\), the ferromagnetic phase emerges, requiring \(t < 0\). This sign change demands \(a_0 = 0\) and \(a_1 \neq 0\). Matching to experimental phase diagrams further requires \(a_1 > 0\), yielding the minimal form:
+
+\[t = a(T - T_c) + \mathcal{O}(T - T_c)^2\]
+
+The parameters \(u\) and \(K\) must remain positive near \(T_c\) to ensure stability and finite correlation lengths. While they may vary with temperature, they need not vanish at the critical point. This leads to the minimal parameterization:
+
+\[t = a(T - T_c), \quad u = u_0 > 0, \quad K = K_0 > 0\]
+
+Higher-order terms in the temperature expansions produce only quantitative corrections to critical behavior, not qualitative changes.
+
+This minimal parameterization contains profound physics. The linear vanishing of \(t\) drives the continuous phase transition. The finite values of \(u\) and \(K\) ensure the transition remains second-order rather than first-order or unstable. The single parameter \(a\) sets the temperature scale for critical fluctuations.
+
+Pressure and other external variables enter similarly. Near a critical line in the \((T,P)\) plane, we expand \(t(T,P) = a_T(T - T_c(P)) + a_P(P - P_c(T)) + \cdots\). The critical line itself is determined by \(t = 0\). Multi-critical points, where multiple parameters vanish simultaneously, require more careful analysis.
+
+The temperature dependence of phenomenological parameters embodies a key lesson: effective theories need not—and generally do not—resemble their microscopic origins. The microscopic Hamiltonian knows nothing of temperature, yet the effective parameters depend sensitively on \(T\). This dependence arises from integrating out degrees of freedom, converting their entropy into effective energies. The art of phenomenology lies in identifying which parameters must vanish at criticality (here, only \(t\)) and which remain finite, then constructing the minimal theory consistent with observations.
+
+**See also:** [[id:ad2feb69-5119-48d8-b4cd-d3ec815e8d46][Landau-Ginzburg Framework]] for how these parameters enter the Hamiltonian, [[id:d57b2f9a-2f06-402b-a543-fe4181cb1e25][Susceptibility Divergence]] for critical exponents emerging from this parameterization, [[id:b18f1285-af57-4779-a743-cef651d60642][Goldstone Mode Energy]] for the correlation length's temperature dependence.

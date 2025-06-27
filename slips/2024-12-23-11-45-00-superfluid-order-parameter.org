@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID: 6cadde9f-3a49-474c-aa0a-a1c652fc3237
+:CUSTOM_ID: 92/55
+:END:
+#+TITLE: Superfluid Order Parameter
+#+FILETAGS: :physics:spof:ch2:superfluid:quantum:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Superfluidity exemplifies continuous symmetry breaking in its purest form. The complex order parameter encodes both the density of the condensate and its quantum mechanical phase, with the latter's dynamics giving rise to the remarkable properties that define the superfluid state.
+
+The order parameter takes the complex form:
+
+\[\psi(\mathbf{x}) \equiv \psi_\mathfrak{R}(\mathbf{x}) + i\psi_\mathfrak{I}(\mathbf{x}) \equiv |\psi(\mathbf{x})|e^{i\theta(\mathbf{x})}\]
+
+This complex field roughly represents the macroscopic wavefunction—the quantum amplitude for finding the system in its condensed state near position \(\mathbf{x}\). While a complete derivation requires second quantization of interacting bosons, the phenomenological approach captures the essential physics through symmetry arguments alone.
+
+The fundamental symmetry is \(U(1)\)—global phase transformations \(\psi \to e^{i\alpha}\psi\) leave all physical observables unchanged. This gauge invariance severely constrains the effective Hamiltonian:
+
+\[\beta\mathcal{H} = \beta F_0 + \int d^d\mathbf{x}\left[\frac{K}{2}|\nabla\psi|^2 + \frac{t}{2}|\psi|^2 + u|\psi|^4 + \cdots\right]\]
+
+Only combinations invariant under phase rotation appear: \(|\psi|^2\), \(|\psi|^4\), and \(|\nabla\psi|^2 = (\nabla\psi^*)\cdot(\nabla\psi)\). Terms like \(\psi\) or \(\psi^2\) are forbidden by gauge symmetry.
+
+This Hamiltonian is precisely the Landau-Ginzburg form with \(n = 2\), identifying the real and imaginary parts of \(\psi\) as a two-component vector: \(\vec{m} = (\psi_\mathfrak{R}, \psi_\mathfrak{I})\). The \(U(1)\) symmetry is isomorphic to \(O(2)\) rotations in this two-dimensional space. Below the transition temperature where \(t < 0\), the system spontaneously selects a phase, breaking the continuous symmetry.
+
+The physics encoded in this order parameter is remarkably rich. The magnitude \(|\psi|^2\) represents the superfluid density—the fraction of particles participating in the condensate. Its spatial variations cost energy \(\propto K|\nabla|\psi||^2\), explaining why density remains nearly uniform except at interfaces or in the presence of external potentials.
+
+The phase \(\theta(\mathbf{x})\) carries even deeper significance. Its gradient determines the superfluid velocity:
+
+\[\mathbf{v}_s = \frac{\hbar}{m}\nabla\theta\]
+
+This relationship, following from quantum mechanical arguments, makes superfluidity a macroscopic quantum phenomenon. The velocity field is irrotational (\(\nabla \times \mathbf{v}_s = 0\) where \(\theta\) is single-valued), explaining why superfluid flow is dissipationless in simply connected geometries.
+
+Phase singularities create quantized vortices. Where \(\theta\) is undefined, \(|\psi| = 0\)—the vortex core. The phase winds by \(2\pi n\) around the core, quantizing circulation in units of \(h/m\). These topological defects, predicted by the order parameter structure and confirmed spectacularly in experiments, provide the mechanism for angular momentum in superfluids.
+
+The superfluid transition itself occurs when \(t\) changes sign. Above \(T_c\), thermal fluctuations destroy phase coherence, yielding \(\langle\psi\rangle = 0\). Below \(T_c\), the system spontaneously develops \(\langle|\psi|\rangle = \sqrt{-t/4u}\) with an arbitrary but uniform phase. This broken symmetry state supports the spectacular phenomena of superfluidity: flow without viscosity, quantized vortices, and the fountain effect.
+
+Modern understanding recognizes this order parameter as emerging from Bose-Einstein condensation modified by interactions. Yet Landau's phenomenological approach, based solely on symmetry, captured the essential physics decades before microscopic theories. This success exemplifies the power of symmetry-based reasoning in condensed matter physics.
+
+**See also:** [[id:5b4b24eb-5239-42e7-8b4a-8e5dd81ba1cb][Goldstone Theorem]] for Goldstone modes in the broken phase, [[id:ad2feb69-5119-48d8-b4cd-d3ec815e8d46][Landau-Ginzburg Framework]] for the general Hamiltonian structure, [[id:b09ab03e-5340-4589-acf7-001ba67e09b6][Symmetry Breaking Taxonomy]] for symmetry breaking classification.

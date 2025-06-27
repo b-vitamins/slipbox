@@ -1,0 +1,44 @@
+:PROPERTIES:
+:ID: 251c3820-b80c-469c-a327-39daae39e6d1
+:CUSTOM_ID: 92/47
+:END:
+#+TITLE: Minimization Equation
+#+FILETAGS: :physics:spof:ch2:equation:meanfield:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The entire mean-field phenomenology flows from a single cubic equation. The minimization condition for the effective potential yields:
+
+\[\frac{\partial\Psi}{\partial m} = t\bar{m} + 4u\bar{m}^3 - h = 0\]
+
+This deceptively simple equation encodes phase transitions, spontaneous symmetry breaking, critical phenomena, and thermodynamic response functions. Its solutions \(\bar{m}(t,h)\) determine the system's macroscopic state as a function of temperature and field.
+
+The cubic nature is no accident. With \(\mathrm{O}(n)\) symmetry restricting the potential to even powers of \(m\), the derivative necessarily contains only odd powers. Truncating at the quartic level in \(\Psi\) yields a cubic equation for \(\bar{m}\)—the minimal non-linearity capable of describing continuous phase transitions.
+
+For \(h = 0\), factorization reveals the essential physics:
+
+\[t\bar{m} + 4u\bar{m}^3 = \bar{m}(t + 4u\bar{m}^2) = 0\]
+
+Two classes of solutions emerge: \(\bar{m} = 0\) (paramagnetic) and \(\bar{m}^2 = -t/4u\) (ferromagnetic). The paramagnetic solution always exists but becomes unstable for \(t < 0\) where the curvature \(\partial^2\Psi/\partial m^2|_{m=0} = t\) turns negative. The ferromagnetic solutions exist only for \(t < 0\), appearing precisely when the paramagnetic state destabilizes—a beautiful example of spontaneous symmetry breaking.
+
+With finite field \(h \neq 0\), the cubic equation has no simple factorization, but its solutions remain analytically tractable. For small \(h\), perturbation theory yields:
+
+\[\bar{m} \approx \begin{cases}
+h/t & \text{for } t > 0 \\
+\text{sign}(h)\sqrt{-t/4u} + h/(-2t) & \text{for } t < 0
+\end{cases}\]
+
+The discontinuity at \(h = 0^+\) versus \(h = 0^-\) for \(t < 0\) signals a first-order transition. The jump in magnetization equals \(2\sqrt{-t/4u}\), vanishing as \(t \to 0^-\).
+
+At the critical point \(t = 0\), the linear term vanishes, leaving:
+
+\[4u\bar{m}^3 = h\]
+
+This yields the critical isotherm \(\bar{m} = (h/4u)^{1/3}\), exhibiting the non-analytic response characteristic of criticality. The infinite slope \(\partial\bar{m}/\partial h|_{h=0} = \infty\) manifests as a diverging susceptibility.
+
+The cubic equation also determines metastability. For \(t < 0\) and small \(|h|\), three real roots exist: one stable (global minimum), one metastable (local minimum), and one unstable (maximum). The metastable solution represents superheated or supercooled states, accessible experimentally through careful field cycling. The spinodal lines, where metastable solutions vanish, are found by demanding \(\partial^2\Psi/\partial m^2 = 0\) simultaneously with the minimization condition.
+
+Graphical solution provides intuition. Plotting \(h\) versus \(m\) shows a cubic curve \(h = tm + 4um^3\). For \(t > 0\), this curve increases monotonically—each \(h\) yields a unique \(\bar{m}\). For \(t < 0\), the curve develops a region of negative slope, creating the characteristic S-shape. The Maxwell construction, ensuring equal areas above and below the horizontal line at \(h = 0\), determines the equilibrium transition while the S-curve boundaries mark stability limits.
+
+This single equation thus captures the rich phenomenology of phase transitions: continuous response in the paramagnetic phase, spontaneous symmetry breaking in the ferromagnetic phase, first-order transitions with metastability, and critical phenomena at the phase boundary. Its solutions provide the foundation for calculating all thermodynamic quantities within mean-field theory.
+
+**See also:** [[id:8326cfc7-f0f2-4831-a35f-c8aad57d939e][Phase Diagram Architecture]] for phase diagram consequences, [[id:7b3d7669-1b2b-4cd1-8acd-8b94babcb58d][Spontaneous Magnetization]]-[[id:596df11c-4c1c-4be5-88fb-c92d091856d9][Free Energy]] for specific solutions and their physics.

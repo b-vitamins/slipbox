@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID: 5be62f44-c082-4ba6-97bb-8438e48f3276
+:CUSTOM_ID: 92/42
+:END:
+#+TITLE: Symmetry Constraints
+#+FILETAGS: :physics:spof:ch2:symmetry:constraints:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Symmetry stands as the most powerful organizing principle in constructing statistical field theories. While coarse-graining may obscure microscopic details, it faithfully preserves the symmetries of the underlying Hamiltonian. These surviving symmetries severely constrain the allowed terms in the effective theory, often determining its structure almost completely.
+
+For magnetic systems without external fields, rotational invariance in order parameter space demands \(O(n)\) symmetry: the Hamiltonian must remain unchanged under \(\vec{m}(\mathbf{x}) \to R_n\vec{m}(\mathbf{x})\) where \(R_n\) represents any rotation in \(n\)-dimensional space. This immediately forbids any term linear in \(\vec{m}\)—there is no preferred direction. The first allowed term is the rotationally invariant combination \(m^2(\mathbf{x}) = \vec{m} \cdot \vec{m}\). Higher-order invariants follow as powers: \(m^4 = (m^2)^2\), \(m^6 = (m^2)^3\), and so forth.
+
+Spatial symmetries impose parallel constraints. In isotropic systems, rotational invariance in real space restricts gradient terms. The combination \(\partial_\alpha m_i\) transforms as a tensor under spatial rotations. The simplest scalar combination is \((\nabla\vec{m})^2 = \sum_{i,\alpha}(\partial_\alpha m_i)^2\), invariant under both spatial and order parameter rotations. More complex invariants like \((\nabla^2\vec{m})^2\) or \(m^2(\nabla\vec{m})^2\) arise at higher orders.
+
+External fields break symmetries explicitly. A magnetic field \(\vec{h}\) singles out a direction in order parameter space, reducing \(O(n)\) symmetry to \(O(n-1)\)—rotations perpendicular to \(\vec{h}\). This symmetry breaking permits the linear term \(\vec{h} \cdot \vec{m}\) in the Hamiltonian. The field may also generate previously forbidden terms like \(m^2(\vec{m} \cdot \vec{h})\), though these typically remain less important than the leading linear coupling.
+
+Discrete symmetries require special attention. Ising systems possess only \(\mathbb{Z}_2\) symmetry: \(m \to -m\). This weaker constraint still forbids odd powers of \(m\), permitting only \(m^2\), \(m^4\), \(m^6\), etc. The absence of continuous rotations eliminates Goldstone modes, fundamentally altering the low-energy physics.
+
+Crystal symmetries introduce anisotropies. On a rectangular lattice, different spatial directions become inequivalent. The gradient term splits: \(K_1(\partial_x m)^2 + K_2(\partial_y m)^2\) with potentially different stiffnesses. While coordinate rescaling can sometimes restore isotropy, this is not always possible, particularly when anisotropies appear in multiple terms.
+
+Symmetry also constrains the phenomenological parameters. Time-reversal invariance, when present, requires real coefficients. Stability demands the highest-order coefficient be positive, preventing runaway field configurations. The interplay between symmetry and stability often determines the minimal viable truncation of the Hamiltonian.
+
+The profound lesson is that symmetry bridges microscopic and macroscopic physics. Though we may not solve—or even know—the microscopic Hamiltonian, its symmetries survive coarse-graining intact. These symmetries, combined with locality and analyticity, reduce the infinite complexity of many-body physics to a handful of phenomenological parameters. This reduction explains both the success of Landau-Ginzburg theory and the universality of critical phenomena.
+
+**See also:** [[id:ad2feb69-5119-48d8-b4cd-d3ec815e8d46][Landau-Ginzburg Framework]] for the symmetric Hamiltonian form, [[id:15473268-6d54-4cad-926a-b62621df24ca][Saddle Point Method]] for symmetry in saddle-point solutions, [[id:b09ab03e-5340-4589-acf7-001ba67e09b6][Symmetry Breaking Taxonomy]] for continuous symmetry breaking consequences.

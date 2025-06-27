@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID: 4abbcaad-0fa8-415a-9181-2d89360ef4d6
+:CUSTOM_ID: 92/53
+:END:
+#+TITLE: Mean-Field Exponents Summary
+#+FILETAGS: :physics:spof:ch2:exponents:universality:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Mean-field theory predicts critical exponents characterizing universal behavior near phase transitions. While quantitatively incorrect for three-dimensional systems, they capture critical singularities and satisfy exact scaling relations.
+
+The primary critical exponents emerge from our analysis:
+- Order parameter: \(\bar{m} \sim (T_c - T)^\beta\) with \(\beta = 1/2\) from equation (2.16)
+- Susceptibility: \(\chi \sim |T - T_c|^{-\gamma}\) with \(\gamma = 1\) from equation (2.18)  
+- Critical isotherm: \(h \sim \bar{m}^\delta\) with \(\delta = 3\) from equation (2.17)
+- Heat capacity: \(C - C_0 \sim |T - T_c|^{-\alpha}\) with \(\alpha = 0\) from equation (2.20)
+
+Additional exponents characterize spatial correlations:
+- Correlation length: \(\xi \sim |T - T_c|^{-\nu}\) with \(\nu = 1/2\)
+- Correlation function: \(G(r) \sim r^{-(d-2+\eta)}\) with \(\eta = 0\)
+
+These exponents satisfy exact scaling relations:
+
+Rushbrooke: \(\alpha + 2\beta + \gamma = 2\) → \(0 + 2(1/2) + 1 = 2\) ✓
+Griffiths: \(\alpha + \beta(1 + \delta) = 2\) → \(0 + (1/2)(1 + 3) = 2\) ✓  
+Widom: \(\gamma = \beta(\delta - 1)\) → \(1 = (1/2)(3 - 1)\) ✓
+Fisher: \(\gamma = \nu(2 - \eta)\) → \(1 = (1/2)(2 - 0)\) ✓
+Josephson: \(\nu d = 2 - \alpha\) → \((1/2)(4) = 2 - 0\) ✓ (for \(d = 4\))
+
+The last relation reveals \(d = 4\) as the upper critical dimension where mean-field exponents become exact. Below four dimensions, fluctuations modify exponents while preserving scaling relations.
+
+Mean-field exponents are rational numbers with small denominators, reflecting their origin in polynomial equations. Balancing powers in the Landau-Ginzburg expansion yields rational exponents. Real systems show irrational exponents like \(\beta \approx 0.326\) for 3D Ising, arising from fluctuation effects beyond simple power balancing.
+
+Mean-field exponents are universal across systems described by the Landau-Ginzburg framework. Magnets, fluids, and superconductors share \(\{\alpha=0, \beta=1/2, \gamma=1, \delta=3, \nu=1/2, \eta=0\}\). Only amplitudes distinguish materials. This motivated the renormalization group theory explaining shared critical behavior.
+
+Mean-field theory predicts universal amplitude ratios: susceptibility ratio \(A_+/A_- = 2\) and other thermodynamic ratios emerge as material-independent numbers, providing additional experimental tests.
+
+The failure of mean-field exponents in low dimensions teaches profound lessons. As dimension decreases, fluctuations grow stronger, eventually dominating mean-field behavior. In \(d = 1\), most systems lack phase transitions entirely. In \(d = 2\), marginal behavior appears—logarithmic corrections replace pure power laws. Only above the upper critical dimension \(d_c = 4\) do mean-field exponents become exact, explaining why mean-field theory works well for long-range interactions that effectively increase dimensionality.
+
+Despite quantitative inaccuracies, mean-field exponents provide the conceptual framework for criticality. They demonstrate universal power-law behavior, scaling relations between observables, and the crucial role of dimension. These insights remain valid even as renormalization group methods provide accurate values.
+
+**See also:** [[id:7b3d7669-1b2b-4cd1-8acd-8b94babcb58d][Spontaneous Magnetization]]-[[id:b30c9675-7ca8-4102-a99a-5670087d8621][Heat Capacity Jump]] for individual exponent derivations, [[id:b18f1285-af57-4779-a743-cef651d60642][Goldstone Mode Energy]] for correlation length, [[id:a4e3940d-1db8-47db-9eb8-bd0cf9f1e1f0][Power Counting]] for power counting justification.

@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID: ac0ad91b-86c0-423e-9502-1fefb47fc752
+:CUSTOM_ID: 92/39
+:END:
+#+TITLE: Gradient Expansion
+#+FILETAGS: :physics:spof:ch2:stiffness:fluctuations:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The gradient term \(\frac{K}{2}(\nabla\vec{m})^2\) in the Landau-Ginzburg Hamiltonian carries profound physical meaning. This quadratic form represents the energetic cost of spatial variations in the order parameter—a cost that proves essential for understanding both the stability of ordered phases and the nature of critical fluctuations.
+
+The positive stiffness constant \(K > 0\) embodies the microscopic tendency toward parallel alignment. In magnets, exchange interactions favor parallel spins; in fluids, molecular attractions resist density gradients. This microscopic preference manifests at the coarse-grained level as an energy penalty for field gradients. The quadratic form ensures this penalty is independent of the gradient's sign, reflecting the underlying isotropy.
+
+The gradient expansion's structure follows from symmetry and power counting. With rotational invariance in both space and order parameter space, the lowest-order gradient term must take the form \(\sum_{i,\alpha}(\partial_\alpha m_i)^2\). Higher-order terms like \((\nabla^2\vec{m})^2\) or \(m^2(\nabla\vec{m})^2\) carry additional powers of either derivatives or fields, making them less relevant near criticality where both \(m\) and \(\nabla\) are small.
+
+This stiffness plays a crucial role in selecting the uniform configuration as the saddle point. Any spatial variation from uniformity costs energy proportional to \(K\int d^d\mathbf{x}(\nabla\vec{m})^2\) with no compensating energy gain for small variations. This observation justifies the mean-field approximation's focus on uniform configurations, at least as a starting point.
+
+The interplay between stiffness and other parameters determines the system's characteristic length scale. Balancing the gradient term against the local potential terms yields the correlation length \(\xi \sim \sqrt{K/|t|}\). As the transition approaches and \(t \to 0\), this length diverges, signaling the emergence of scale invariance. The same balance determines domain wall widths in systems with discrete symmetry breaking.
+
+Near criticality, the stiffness itself becomes temperature dependent through its microscopic origins. However, unlike the parameter \(t\) which vanishes at \(T_c\), the stiffness \(K\) typically remains finite. This difference reflects a deep distinction: \(t\) controls the local stability of the ordered phase, while \(K\) governs the energy scale for spatial variations. Only in special cases, such as approaching a Lifshitz point, does the stiffness itself vanish.
+
+The gradient expansion thus provides more than a mathematical convenience. It encodes the physical principle that ordered systems resist spatial inhomogeneity, quantifies this resistance through the stiffness \(K\), and explains why uniform mean-field solutions capture essential physics despite ignoring fluctuations. The expansion's truncation at second derivatives suffices for most critical phenomena, with higher terms providing only quantitative corrections.
+
+**See also:** [[id:260f18a3-665e-4dcd-89c3-5b8f7b363b41][Locality Principle]] for locality's role in gradient expansions, [[id:6cadde9f-3a49-474c-aa0a-a1c652fc3237][Superfluid Order Parameter]] for stiffness softening in Goldstone modes, [[id:b18f1285-af57-4779-a743-cef651d60642][Goldstone Mode Energy]] for the correlation length emerging from stiffness.

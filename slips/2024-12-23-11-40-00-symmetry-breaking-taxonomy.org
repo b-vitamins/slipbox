@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID: b09ab03e-5340-4589-acf7-001ba67e09b6
+:CUSTOM_ID: 92/54
+:END:
+#+TITLE: Symmetry Breaking Taxonomy
+#+FILETAGS: :physics:spof:ch2:symmetry:goldstone:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Phase transitions involve symmetry changes. The distinction between continuous and discrete symmetry breaking determines low-energy excitations, defect structure, and long-range order in low dimensions. This taxonomy organizes understanding of ordered phases.
+
+Continuous symmetries involve groups with continuously varying parameters—rotations \(O(n)\), phase transformations \(U(1)\), or translations \(\mathbb{R}^d\). When broken spontaneously, Goldstone's theorem guarantees massless excitations. Broken symmetry generators become zero-frequency modes, as uniform transformations cost no energy. Spatial variations yield low-energy excitations with \(E \propto q^2\) dispersion.
+
+Discrete symmetries involve finite groups—reflection \(\mathbb{Z}_2\), permutation \(S_n\), or crystal point groups. Breaking discrete symmetries produces no Goldstone modes because finite transformations cannot be made arbitrarily small. Instead, domain walls separate regions of different broken-symmetry states. These walls cost finite energy per unit area, unlike the vanishing energy of long-wavelength Goldstone modes.
+
+The physical manifestations differ dramatically. In the \(O(3)\) Heisenberg ferromagnet, spontaneous magnetization breaks rotational symmetry, producing two transverse magnon branches—spin waves that cost arbitrarily little energy at long wavelengths. In the \(\mathbb{Z}_2\) Ising ferromagnet, magnetization can only point up or down, creating domain walls between oppositely magnetized regions with no low-energy excitations.
+
+This distinction profoundly affects low-dimensional behavior. The Mermin-Wagner theorem forbids continuous symmetry breaking in \(d \leq 2\) dimensions at finite temperature—Goldstone mode fluctuations destroy long-range order. Discrete symmetries face no such restriction; the two-dimensional Ising model exhibits genuine ferromagnetism. This explains why planar ferromagnets show only quasi-long-range order while Ising films can be truly ferromagnetic.
+
+Mixed symmetries create rich phenomena. Liquid crystals may break rotational symmetry continuously while breaking translational symmetry discretely, yielding both Goldstone modes (director fluctuations) and defects (disclinations and grain boundaries). Superfluid helium-3 breaks both gauge and spin rotation symmetries, producing a complex spectrum of collective modes.
+
+The order parameter structure reflects the symmetry. Continuous symmetries require vector order parameters \(\vec{m} \in \mathbb{R}^n\) with \(n \geq 2\)—at least two components are needed to rotate continuously. Discrete symmetries can have scalar order parameters, as in Ising systems. The order parameter manifold—the space of equivalent broken-symmetry states—is the quotient \(G/H\) where \(G\) is the original symmetry group and \(H\) is the residual symmetry.
+
+Topological considerations enter through the homotopy groups of the order parameter manifold. Different homotopy groups classify different defect types: \(\pi_0\) (disconnected components) yields domain walls, \(\pi_1\) (loops) yields line defects, \(\pi_2\) (spheres) yields point defects. The Ising model with \(\pi_0(\mathbb{Z}_2) = \mathbb{Z}_2\) has domain walls. The XY model with \(\pi_1(S^1) = \mathbb{Z}\) has vortices. The Heisenberg model with \(\pi_2(S^2) = \mathbb{Z}\) supports skyrmions.
+
+This mathematical structure has profound consequences. It determines which defects exist, how they interact, and whether they can be continuously deformed into the ground state. It explains quantized flux expulsion in superconductors, characteristic defect patterns in nematics, and phase transitions through defect unbinding.
+
+**See also:** [[id:5b4b24eb-5239-42e7-8b4a-8e5dd81ba1cb][Goldstone Theorem]] for Goldstone theorem details, [[id:9e5bb625-4b21-4741-9a37-02145a849a8f][Goldstone Mode Decomposition]] for domain wall structure, [[id:59774402-482a-4c8f-9ab2-17689c64da6f][Field Theory Dictionary]] for order parameter classification, [[id:5be62f44-c082-4ba6-97bb-8438e48f3276][Symmetry Constraints]] for symmetry constraints on Hamiltonians.

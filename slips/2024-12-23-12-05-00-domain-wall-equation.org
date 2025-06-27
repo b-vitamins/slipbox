@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID: 842934d1-aec9-44ab-b00a-20028668b788
+:CUSTOM_ID: 92/59
+:END:
+#+TITLE: Domain Wall Equation
+#+FILETAGS: :physics:spof:ch2:domainwall:soliton:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Domain walls separate regions of different broken-symmetry states in systems with discrete symmetry breaking. Unlike gentle Goldstone phase variations, domain walls are sharp interfaces where the order parameter changes sign. Their structure balances bulk energy minimization against spatial variation costs.
+
+Consider a one-dimensional interface in an Ising ferromagnet, with boundary conditions forcing opposite magnetizations at infinity: \(m(x \to -\infty) = -\bar{m}\) and \(m(x \to +\infty) = +\bar{m}\), where \(\bar{m} = \sqrt{-t/4u}\) is the bulk magnetization. The optimal profile \(m_w(x)\) minimizes the total energy while interpolating between these states.
+
+The Euler-Lagrange equation for this variational problem yields:
+
+\[\frac{d^2m_w(x)}{dx^2} = tm_w(x) + 4um_w(x)^3\]
+
+This nonlinear differential equation balances three effects. The Laplacian term \(d^2m_w/dx^2\) arises from the gradient energy penalty \(K(\nabla m)^2\). The linear term \(tm_w\) (with \(t < 0\)) drives the system toward finite magnetization. The cubic term \(4um_w^3\) provides the nonlinear saturation preventing runaway growth.
+
+The equation reveals deep physics. Unlike linear equations for small fluctuations, this nonlinear equation admits soliton solutions—localized structures maintaining their shape. Balancing dispersive (gradient) and nonlinear (cubic) effects creates stable profiles of finite width. Linear systems would produce either diffusive spreading or discontinuous interfaces.
+
+The boundary conditions distinguish domain walls from other solutions. Uniform states \(m = \pm\bar{m}\) satisfy the equation trivially but fail to interpolate between opposite magnetizations. Small fluctuations about these states decay exponentially, unable to bridge the gap. Only the special soliton solution connects the two phases while minimizing energy.
+
+Multiplying the equation by \(dm_w/dx\) enables a first integral:
+
+\[\frac{1}{2}\left(\frac{dm_w}{dx}\right)^2 = \frac{t}{2}m_w^2 + um_w^4 + C\]
+
+The constant \(C\) is fixed by boundary conditions: as \(x \to \pm\infty\), both \(dm_w/dx \to 0\) and \(m_w \to \pm\bar{m}\), yielding \(C = -t\bar{m}^2/2 - u\bar{m}^4 = t^2/16u\). This reduces the second-order equation to first-order—a hallmark of integrable systems.
+
+The domain wall equation exemplifies spontaneous symmetry breaking's consequences. In the symmetric phase (\(t > 0\)), only the trivial solution \(m = 0\) exists—no domain walls separate different phases because only one phase exists. Below \(T_c\) where \(t < 0\), the \(\mathbb{Z}_2\) symmetry breaks, creating two degenerate ground states. Domain walls necessarily appear as topological defects separating regions that made different symmetry-breaking choices.
+
+This equation generalizes to diverse contexts. In cosmology, similar equations describe bubble walls between different vacuum states during phase transitions in the early universe. In superconductors, they describe interfaces between normal and superconducting regions. In liquid crystals, they govern defect core structures. The mathematical similarity—nonlinear equations balancing gradient and potential terms—reflects universal physics independent of microscopic details.
+
+Stable domain wall solutions have thermodynamic implications. Unlike Goldstone modes costing vanishing energy at long wavelengths, domain walls have finite energy per unit area. This barrier stabilizes domains against thermal fluctuations, enabling metastability and hysteresis. Ferromagnetic domain structures with complex patterns and slow dynamics stem from these topological constraints.
+
+**See also:** [[id:fda35ee1-f6c3-44d7-8da2-23e55efe6365][Domain Wall Solution]] for the explicit solution, [[id:b09ab03e-5340-4589-acf7-001ba67e09b6][Symmetry Breaking Taxonomy]] for discrete symmetry breaking, [[id:6024201e-a88a-4223-9ff8-8c3e24ce0490][Domain Wall Energy Calculation]] for energy calculations, [[id:ac0ad91b-86c0-423e-9502-1fefb47fc752][Gradient Expansion]] for gradient term origin.

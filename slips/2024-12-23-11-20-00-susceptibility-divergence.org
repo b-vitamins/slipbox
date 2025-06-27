@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID: d57b2f9a-2f06-402b-a543-fe4181cb1e25
+:CUSTOM_ID: 92/50
+:END:
+#+TITLE: Susceptibility Divergence
+#+FILETAGS: :physics:spof:ch2:susceptibility:divergence:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The magnetic susceptibility—the system's response to infinitesimal fields—provides the most direct probe of critical correlations. Its divergence at \(T_c\) signals the emergence of scale-invariant fluctuations that define the critical state.
+
+The longitudinal susceptibility, measuring response parallel to the magnetization, follows from differentiating the minimization equation:
+
+\[\chi_\ell^{-1} = \frac{\partial h}{\partial\bar{m}}\bigg|_{h=0} = t + 12u\bar{m}^2\]
+
+Evaluating at zero field yields:
+
+\[\chi_\ell^{-1} = \begin{cases}
+t = a(T - T_c) & \text{for } t > 0 \\
+-2t = -2a(T - T_c) & \text{for } t < 0
+\end{cases}\]
+
+The susceptibility thus diverges as \(|T - T_c|^{-1}\) from both sides of the transition, defining the critical exponent \(\gamma = 1\). This divergence, more robust than the vanishing order parameter, often provides the clearest experimental signature of criticality.
+
+The amplitude ratio \(A_+/A_- = 2\) emerges as a universal prediction of mean-field theory. Despite material-specific values of \(a\) and \(u\), the ratio of susceptibility amplitudes above and below \(T_c\) remains fixed. This universality extends beyond mean-field: renormalization group calculations yield different but still universal amplitude ratios for each universality class.
+
+The physical origin of diverging susceptibility lies in the flattening effective potential. Near criticality, \(\partial^2\Psi/\partial m^2 = t + 12u\bar{m}^2\) approaches zero, implying vanishing restoring force for magnetization fluctuations. An infinitesimal field can then produce a finite response—the essence of critical sensitivity. The system sits poised between ordered and disordered phases, ready to tip either way.
+
+The distinction between longitudinal and transverse susceptibilities proves important for vector order parameters. The longitudinal susceptibility \(\chi_\ell\) measures response to fields parallel to the spontaneous magnetization, while transverse susceptibility \(\chi_t\) measures response to perpendicular fields. In the ferromagnetic phase, \(\chi_t = \infty\) at \(h = 0\) because transverse fields rotate the magnetization without energy cost—a consequence of continuous symmetry breaking.
+
+The susceptibility divergence connects to correlation length through the fluctuation-dissipation theorem. In the paramagnetic phase, \(\chi = \beta\int d^d\mathbf{x}\langle m(\mathbf{x})m(0)\rangle\), relating susceptibility to magnetization correlations. The diverging integral implies long-range correlations, with correlation length \(\xi \propto \chi^{1/d} \propto |t|^{-\nu}\) where \(\nu = 1/2\) in mean-field theory.
+
+Experimental measurements of susceptibility provide crucial tests of universality. While mean-field theory predicts \(\gamma = 1\), experiments yield \(\gamma \approx 1.24\) for three-dimensional Ising systems and \(\gamma \approx 1.32\) for Heisenberg magnets. The non-universal amplitudes vary widely between materials, but the exponents cluster into discrete universality classes, confirming the renormalization group picture.
+
+The susceptibility's role extends beyond equilibrium response. Through the fluctuation-dissipation theorem, it governs the spectrum of thermal fluctuations. Near criticality, enhanced susceptibility implies giant fluctuations visible in scattering experiments. These fluctuations, neglected in mean-field theory but dominant in low dimensions, ultimately determine the true critical exponents. Yet the mean-field prediction of diverging susceptibility with power-law form captures the essential physics, making it an indispensable starting point for understanding critical phenomena.
+
+**See also:** [[id:251c3820-b80c-469c-a327-39daae39e6d1][Minimization Equation]] for derivation from minimization, [[id:b30c9675-7ca8-4102-a99a-5670087d8621][Heat Capacity Jump]] for critical exponent systematics, [[id:b18f1285-af57-4779-a743-cef651d60642][Goldstone Mode Energy]] for connection to correlation length.

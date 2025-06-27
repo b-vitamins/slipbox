@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID: 5b4b24eb-5239-42e7-8b4a-8e5dd81ba1cb
+:CUSTOM_ID: 92/56
+:END:
+#+TITLE: Goldstone Theorem
+#+FILETAGS: :physics:spof:ch2:goldstone:theorem:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Goldstone's theorem: spontaneous breaking of continuous symmetry produces massless excitations. These Goldstone modes dominate low-energy physics, determining transport properties, phase stability, and ordered phases in low dimensions.
+
+The logic is simple. Consider a system with continuous symmetry spontaneously broken by selecting a particular ground state. Since all symmetry-related orientations have identical energy, rotating the entire system costs nothing. By continuity, slowly varying spatial rotations—where orientation changes gradually—cost little energy. In the long-wavelength limit, this energy vanishes, producing gapless excitations.
+
+For the superfluid with broken \(U(1)\) symmetry, the argument becomes concrete. The ordered state has \(\psi = \bar{\psi}e^{i\theta_0}\) with arbitrary phase \(\theta_0\). A uniform phase shift \(\theta_0 \to \theta_0 + \alpha\) costs no energy—the Hamiltonian is phase-invariant. Now consider a slowly varying phase \(\theta(\mathbf{x})\). The energy density can only depend on gradients:
+
+\[\beta\mathcal{H} = \beta\mathcal{H}_0 + \frac{\bar{K}}{2}\int d^d\mathbf{x}(\nabla\theta)^2\]
+
+where \(\bar{K} = K|\bar{\psi}|^2 = K(-t/4u)\). No term proportional to \(\theta\) itself can appear—this would violate the original symmetry.
+
+The quadratic dispersion \(E \propto q^2\) characterizes Goldstone modes. Unlike massive excitations with \(E = \Delta + cq^2\) having a gap \(\Delta\), Goldstone modes have \(E = cq^2\) going to zero as \(q \to 0\). This gapless spectrum enables long-wavelength fluctuations that ultimately limit or destroy order in low dimensions.
+
+The stiffness \(\bar{K}\) vanishes at the critical point as \(|\bar{\psi}|^2 \to 0\). This softening reflects the incipient instability—at \(T_c\), rotating the order parameter costs nothing even for finite wavelengths. The vanishing stiffness signals the loss of rigidity against phase fluctuations, allowing the paramagnetic phase where all orientations are explored equally.
+
+Different broken symmetries yield different numbers of Goldstone modes. Breaking \(O(n) \to O(n-1)\) produces \(n-1\) Goldstone modes—the generators of rotations perpendicular to the selected direction. Heisenberg ferromagnets (\(n=3\)) have two transverse magnons. XY systems (\(n=2\)) have one phase mode. Crystalline solids, breaking continuous translations, have \(d\) phonon branches.
+
+The theorem has exceptions requiring careful analysis. Explicit symmetry breaking by external fields gaps out Goldstone modes—magnetic fields give magnons mass. Long-range interactions can also gap Goldstone modes, as in plasmons. In relativistic theories, spontaneously broken gauge symmetries produce massive gauge bosons through the Higgs mechanism rather than massless Goldstone bosons.
+
+Goldstone modes dominate thermodynamics at low temperatures. Their density of states \(g(E) \propto E^{d/2-1}\) yields specific heat \(C \propto T^{d/2}\) in \(d\) dimensions. This explains the \(T^{3/2}\) magnon contribution in three-dimensional ferromagnets and the \(T^3\) phonon contribution in solids. At low \(T\), Goldstone modes provide the only thermally accessible excitations.
+
+The implications extend beyond equilibrium. Goldstone modes carry currents—spin currents in magnets, mass currents in superfluids. They mediate defect interactions and dominate transport. Their existence explains dissipationless superfluid flow and anomalously large spin diffusion lengths in ferromagnets. Goldstone modes embody the rigidity of ordered phases against symmetry-restoring fluctuations.
+
+**See also:** [[id:b09ab03e-5340-4589-acf7-001ba67e09b6][Symmetry Breaking Taxonomy]] for symmetry classification, [[id:b18f1285-af57-4779-a743-cef651d60642][Goldstone Mode Energy]] for explicit phase mode analysis, [[id:ac0ad91b-86c0-423e-9502-1fefb47fc752][Gradient Expansion]] for stiffness origin, [[id:6cadde9f-3a49-474c-aa0a-a1c652fc3237][Superfluid Order Parameter]] for superfluid application.

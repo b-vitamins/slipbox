@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID: 260f18a3-665e-4dcd-89c3-5b8f7b363b41
+:CUSTOM_ID: 92/38
+:END:
+#+TITLE: Locality Principle
+#+FILETAGS: :physics:spof:ch2:locality:effectivetheory:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The principle of locality stands as a cornerstone of field theory construction. In its purest form, locality asserts that the probability of finding a particular field configuration factorizes into independent contributions from each spatial region when these regions are disconnected. This fundamental assumption leads directly to an additive structure for the effective Hamiltonian.
+
+For disconnected regions, probabilities multiply, implying that logarithms—and hence Hamiltonians—add. In the continuum limit, this additivity becomes an integral over space:
+
+\[\beta\mathcal{H} = \int d^d\mathbf{x}\,\Phi[\vec{m}(\mathbf{x}), \mathbf{x}]\]
+
+The energy density \(\Phi\) can in principle depend explicitly on position \(\mathbf{x}\), capturing effects of external potentials or material inhomogeneities. For uniform systems, translational invariance eliminates this explicit spatial dependence, leaving \(\Phi\) as a functional only of the field and its derivatives at each point.
+
+Real systems, of course, exhibit interactions coupling different regions. The locality principle accommodates this through gradient expansions:
+
+\[\beta\mathcal{H} = \int d^d\mathbf{x}\,\Phi[\vec{m}(\mathbf{x}), \nabla\vec{m}, \nabla^2\vec{m}, \ldots]\]
+
+Each additional gradient represents increasingly non-local interactions. The utility of this expansion rests on a crucial observation: for short-range interactions, including van der Waals forces, only the first few derivatives matter. Higher gradients come with progressively smaller coefficients, allowing systematic truncation.
+
+This truncation fails catastrophically for long-range interactions. Coulomb forces, decaying as \(1/r\), cannot be captured by any finite number of local derivatives. The distinction between "short" and "long" range proves sharp: interactions decaying faster than \(r^{-d}\) in \(d\) dimensions permit local descriptions, while slower decays demand explicitly non-local treatments. This criterion explains why critical phenomena in magnets and fluids (short-range) differ qualitatively from those in charged systems (long-range).
+
+The gradient expansion encodes a deep physical insight. At criticality, correlations extend over distances \(\xi \gg a\) where \(a\) denotes the microscopic scale. Field variations over distances comparable to \(\xi\) dominate the physics. Since \(\nabla \sim 1/\xi\), each gradient brings a factor \(a/\xi \ll 1\), justifying truncation at low orders. This same reasoning fails below the lower critical dimension where fluctuations destroy long-range order entirely.
+
+The locality principle thus provides both a practical computational tool and a conceptual framework. It explains why similar mathematics describes diverse physical systems: locality plus symmetry severely constrains possible Hamiltonians. When applicable, it reduces the functional complexity of field theory to polynomial expressions in fields and finite-order derivatives—a remarkable and non-trivial simplification.
+
+**See also:** [[id:ad2feb69-5119-48d8-b4cd-d3ec815e8d46][Landau-Ginzburg Framework]] for the resulting Hamiltonian form, [[id:ac0ad91b-86c0-423e-9502-1fefb47fc752][Gradient Expansion]] for the gradient expansion's physical content, [[id:5be62f44-c082-4ba6-97bb-8438e48f3276][Symmetry Constraints]] for symmetry constraints on local terms.

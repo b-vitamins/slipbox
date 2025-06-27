@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID: 7b3d7669-1b2b-4cd1-8acd-8b94babcb58d
+:CUSTOM_ID: 92/48
+:END:
+#+TITLE: Spontaneous Magnetization
+#+FILETAGS: :physics:spof:ch2:orderparameter:critical:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Spontaneous magnetization—finite order in zero field—stands as the defining characteristic of the ferromagnetic phase. Its temperature dependence near criticality exhibits universal behavior, captured by the critical exponent \(\beta\) (not to be confused with inverse temperature).
+
+In zero field, the minimization equation admits the solution:
+
+\[\bar{m}(h=0) = \begin{cases}
+0 & \text{for } t > 0 \\
+\sqrt{\frac{-t}{4u}} = \sqrt{\frac{a}{4u}}(T_c - T)^{1/2} & \text{for } t < 0
+\end{cases}\]
+
+The square-root singularity at \(T_c\) is mean-field theory's most famous prediction. The spontaneous magnetization vanishes continuously but with infinite slope, signaling a second-order phase transition. The critical exponent \(\beta = 1/2\) proves universal within mean-field theory, independent of the specific values of \(a\) and \(u\).
+
+This universality has deep roots. Near criticality, the system "forgets" microscopic details, responding only to symmetry and dimensionality. The amplitude \(\sqrt{a/4u}\), while material-specific, factors out from the universal power law. Experiments on diverse ferromagnets yield \(\beta \approx 0.33\) in three dimensions—different from mean-field but equally universal, confirming the renormalization group picture.
+
+The physical interpretation illuminates the order-disorder transition. For \(T > T_c\), thermal fluctuations dominate, randomizing spin orientations despite their tendency to align. The free energy minimum at \(m = 0\) reflects this entropic victory. As temperature decreases through \(T_c\), the balance tips toward energetic ordering. The continuous growth of \(\bar{m}\) from zero represents the gradual establishment of long-range order as thermal agitation weakens.
+
+The square-root form emerges from the competition between quadratic and quartic terms in the free energy. Near \(T_c\), where \(m\) is small, these are the only relevant terms. The quadratic coefficient \(t\) vanishes linearly at \(T_c\), while the quartic coefficient \(u\) remains finite. Balancing \(tm^2 \sim um^4\) immediately yields \(m \sim \sqrt{|t|/u}\), explaining the universal exponent.
+
+Spontaneous magnetization breaks ergodicity in the thermodynamic limit. While the Hamiltonian preserves \(\mathrm{O}(n)\) symmetry, the system selects a specific direction \(\hat{m}\) for its magnetization. Different choices, related by rotations, have identical energies but are separated by extensive barriers proportional to system volume. In finite systems, fluctuations eventually explore all directions; in the thermodynamic limit, the selected direction persists forever.
+
+The direction of spontaneous magnetization depends on history—how the system was cooled through \(T_c\). Infinitesimal perturbations during cooling, including inevitable experimental asymmetries, select the final orientation. This extreme sensitivity to boundary conditions near criticality reflects the flatness of the effective potential, where tiny forces produce macroscopic effects.
+
+Modern experiments confirm the mean-field picture qualitatively while revealing quantitative deviations. The exponent \(\beta \approx 0.33\) in three-dimensional magnets differs from the mean-field value \(0.5\) due to fluctuations neglected in the saddle-point approximation. Yet the continuous vanishing of order parameter at \(T_c\), the universality of the exponent, and the square-root form near \(T_c\) all survive beyond mean-field theory, testament to Landau's insight.
+
+**See also:** [[id:251c3820-b80c-469c-a327-39daae39e6d1][Minimization Equation]] for the minimization yielding this solution, [[id:d57b2f9a-2f06-402b-a543-fe4181cb1e25][Susceptibility Divergence]] for the universal exponent, [[id:b09ab03e-5340-4589-acf7-001ba67e09b6][Symmetry Breaking Taxonomy]] for symmetry breaking mechanism.

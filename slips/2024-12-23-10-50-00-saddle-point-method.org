@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID: 15473268-6d54-4cad-926a-b62621df24ca
+:CUSTOM_ID: 92/44
+:END:
+#+TITLE: Saddle Point Method
+#+FILETAGS: :physics:spof:ch2:meanfield:optimization:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The saddle point approximation transforms the formidable functional integral of statistical field theory into a tractable optimization problem. This approximation, exact in the thermodynamic limit, provides the foundation for mean-field theory and reveals how phase transitions emerge from competing field configurations.
+
+Starting from the full partition function, we restrict attention to spatially uniform configurations. This restriction, justified by the positive stiffness \(K > 0\) that penalizes gradients, yields:
+
+\[Z \approx Z_{sp} = e^{-\beta F_0}\int d\vec{m}\, \exp\left[-V\left(\frac{t}{2}m^2 + um^4 + \cdots - \vec{h}\cdot\vec{m}\right)\right]\]
+
+The system volume \(V\) appears as an extensive prefactor, rendering the integral increasingly sharp as \(V \to \infty\). In this thermodynamic limit, the integral is dominated by its maximum—the saddle point.
+
+The saddle point free energy takes the remarkably simple form:
+
+\[\beta F_{sp} = -\ln Z_{sp} \approx \beta F_0 + V\min_{\vec{m}}\{\Psi(\vec{m})\}\]
+
+where the effective potential is:
+
+\[\Psi(\vec{m}) \equiv \frac{t}{2}\vec{m}^2 + u(\vec{m}^2)^2 + \cdots - \vec{h}\cdot\vec{m}\]
+
+This transformation is profound. The original problem involved summing over all possible field configurations \(\vec{m}(\mathbf{x})\)—an infinite-dimensional integral. The saddle point approximation reduces this to finding the minimum of a finite-dimensional function \(\Psi(\vec{m})\). For an \(n\)-component order parameter, this is merely an \(n\)-dimensional optimization.
+
+The mathematical justification relies on Laplace's method. For large \(V\), the integrand \(\exp[-V\Psi(\vec{m})]\) becomes sharply peaked around its maximum. Fluctuations about this peak contribute corrections of order \(1/V\), vanishing in the thermodynamic limit. The saddle point thus captures the exact free energy per unit volume, though it misses fluctuation effects important for critical exponents in dimensions below four.
+
+Physically, the saddle point corresponds to the most probable field configuration—the macroscopic state observed experimentally. In the paramagnetic phase, thermal fluctuations dominate, and the most probable configuration has \(\vec{m} = 0\). In the ferromagnetic phase, interactions dominate, stabilizing a finite magnetization. The competition between entropy (favoring disorder) and energy (favoring order) plays out through the temperature-dependent parameter \(t\).
+
+The reduction to uniform fields might seem overly restrictive, but it captures essential physics. Spatial variations cost energy proportional to \(K(\nabla\vec{m})^2\) without providing compensating benefits (at least within mean-field theory). The uniform saddle point thus represents not just a mathematical convenience but the physical ground state. Fluctuations about this state, incorporating spatial variations, provide corrections to mean-field theory but do not alter its qualitative predictions.
+
+This approach extends beyond magnetism. Any system described by a Landau-Ginzburg Hamiltonian—superfluids, liquid crystals, or even cosmological phase transitions—yields to the same analysis. The universality of the saddle point method explains why mean-field theory, despite its simplicity, captures phase transition phenomenology across diverse physical systems.
+
+**See also:** [[id:8326cfc7-f0f2-4831-a35f-c8aad57d939e][Phase Diagram Architecture]] for the minimization equation determining the saddle point, [[id:d57b2f9a-2f06-402b-a543-fe4181cb1e25][Susceptibility Divergence]] for the resulting free energy structure, [[id:611c7df6-087d-4715-a869-5ed673785adb][Order Parameter Alignment]] for order parameter alignment in external fields.

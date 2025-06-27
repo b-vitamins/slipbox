@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID: 8326cfc7-f0f2-4831-a35f-c8aad57d939e
+:CUSTOM_ID: 92/46
+:END:
+#+TITLE: Phase Diagram Architecture
+#+FILETAGS: :physics:spof:ch2:phasediagram:critical:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The effective potential \(\Psi(m)\) encodes the entire phase diagram. As temperature varies through \(t = a(T - T_c)\), this potential transforms from a parabola to the "wine bottle" or "Mexican hat" shape, with profound consequences for macroscopic behavior.
+
+For \(t > 0\) (above \(T_c\)), the potential has a single minimum at \(m = 0\). The quadratic term dominates, creating a simple parabolic well. An external field \(h\) tilts this parabola, shifting the minimum to finite \(m\), but the response remains smooth and continuous. This is the paramagnetic phase: no spontaneous order, with magnetization induced only by external fields. The system retains full \(\mathrm{O}(n)\) symmetry at \(h = 0\).
+
+The transformation at \(t = 0\) marks the critical point. Here, the quadratic term vanishes, leaving \(\Psi(m) = um^4 - hm\). The potential becomes extremely flat near \(m = 0\), signaling the onset of critical fluctuations. The slightest field produces a substantial response, as we shall see in the diverging susceptibility. This critical flatness reflects the system's indecision between ordered and disordered phases.
+
+For \(t < 0\) (below \(T_c\)), the negative quadratic term creates an instability at \(m = 0\). The quartic term stabilizes the system at finite \(m\), producing a wine bottle potential with a circular valley of minima at \(|\vec{m}| = \sqrt{-t/4u}\). Without an external field, any direction in this valley is equally probable—the hallmark of spontaneous symmetry breaking. The system must choose a direction, breaking \(\mathrm{O}(n)\) symmetry spontaneously.
+
+An external field lifts this degeneracy, selecting a unique minimum aligned with \(\vec{h}\). For small fields, the system has two competing minima: one at positive \(m\) (aligned with \(h > 0\)) and another at negative \(m\) (a metastable remnant of the \(h = 0\) degeneracy). The barrier between these minima has height \(\Delta\Psi \sim t^2/u\), vanishing at the critical point. This barrier permits metastability and hysteresis, characteristic of first-order transitions away from criticality.
+
+The resulting phase diagram in the \((h,t)\) plane has elegant simplicity. A line of first-order transitions extends along the \(h = 0\) axis for \(t < 0\), where the system jumps discontinuously between \(\pm\bar{m}\) states. This line terminates at the critical point \((0,0)\), beyond which transitions become continuous. The critical point represents the terminus of the coexistence line, analogous to the liquid-gas critical point where the distinction between phases vanishes.
+
+The mean-field phase diagram captures universal features observed across diverse systems. The topology—a first-order line terminating at a critical point—appears in magnets, fluids, and alloys. Only microscopic details like transition temperatures and field scales vary between materials. This universality of phase diagram architecture provides compelling evidence for the renormalization group picture of criticality.
+
+Mean-field theory omits fluctuation effects important in low dimensions. These can shift critical temperature, modify transition order, or destroy long-range order entirely. Yet the basic architecture—the interplay between temperature-driven and field-driven transitions—remains robust, making mean-field theory indispensable for understanding phase transitions.
+
+**See also:** [[id:251c3820-b80c-469c-a327-39daae39e6d1][Minimization Equation]] for the minimization determining phases, [[id:b09ab03e-5340-4589-acf7-001ba67e09b6][Symmetry Breaking Taxonomy]] for symmetry breaking mechanisms.

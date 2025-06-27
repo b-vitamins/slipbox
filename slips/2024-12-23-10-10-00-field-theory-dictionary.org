@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID: 59774402-482a-4c8f-9ab2-17689c64da6f
+:CUSTOM_ID: 92/36
+:END:
+#+TITLE: Field Theory Dictionary
+#+FILETAGS: :physics:spof:ch2:classification:symmetry:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Statistical field theory achieves remarkable economy through its \((n,d)\) classification scheme. The integer \(n\) counts the components of the order parameter field \(\vec{m} \equiv (m_1, m_2, \ldots, m_n) \in \mathbb{R}^n\), while \(d\) specifies the spatial dimensionality \(\mathbf{x} \equiv (x_1, x_2, \ldots, x_d) \in \mathbb{R}^d\). This simple labeling encompasses an extraordinary range of physical phenomena, each sharing the same critical behavior within its universality class.
+
+The magnitude of the order parameter, fundamental to constructing rotationally invariant theories, is defined as:
+\[m^2(\mathbf{x}) \equiv \vec{m}(\mathbf{x}) \cdot \vec{m}(\mathbf{x}) \equiv \sum_{i=1}^{n} m_i(\mathbf{x})m_i(\mathbf{x})\]
+
+Similarly, the gradient term that penalizes spatial variations takes the rotationally invariant form:
+\[(\nabla\vec{m})^2 \equiv \sum_{i=1}^{n}\sum_{\alpha=1}^{d}\partial_\alpha m_i\partial_\alpha m_i\]
+
+The power of this classification emerges from its universality. The \(n=1\) case describes scalar order parameters: liquid-gas transitions where density varies, binary alloys where concentration fluctuates, and uniaxial magnets where only the magnitude of magnetization matters. These systems exhibit Ising-like behavior with \(\mathbb{Z}_2\) symmetry—the order parameter can only flip sign.
+
+For \(n=2\), the order parameter becomes complex, describing systems with \(U(1)\) or \(O(2)\) symmetry. Superfluidity and superconductivity belong here, with \(\psi = |\psi|e^{i\theta}\) as the macroscopic wavefunction. Planar (XY) magnets, where spins rotate in a plane, share this universality class. The continuous symmetry permits phase fluctuations that cost arbitrarily little energy at long wavelengths.
+
+Classical Heisenberg magnets occupy the \(n=3\) class, with full three-dimensional rotation symmetry \(O(3)\). The order parameter \(\vec{m} = (m_x, m_y, m_z)\) can point anywhere on a sphere. More exotic cases exist: \(n=4\) describes certain quantum phase transitions, while \(n\to\infty\) provides a solvable limit connecting to mean-field theory.
+
+Spatial dimensionality \(d\) proves equally crucial. One-dimensional systems \((d=1)\) often lack true phase transitions due to strong fluctuations. Two dimensions \((d=2)\) marks a marginal case where topology becomes essential—vortices in XY models, for instance. Three dimensions \((d=3)\) hosts most experimental realizations, while \(d=4\) represents the upper critical dimension where mean-field theory becomes exact. Even fractional dimensions, accessed through fractal substrates or theoretical continuation, find experimental realization.
+
+This classification transcends its original magnetic context. The same \((n,d)\) framework describes neural networks, ecological population dynamics, and even aspects of the early universe. The deep lesson is that symmetry and dimensionality, not microscopic details, govern critical phenomena.
+
+**See also:** [[id:02a9278b-81b7-4c24-8014-07765c7e5e60][Coarse-Graining Philosophy]] for why such universal classification exists, [[id:611c7df6-087d-4715-a869-5ed673785adb][Order Parameter Alignment]] for how symmetry determines order parameter alignment, [[id:b09ab03e-5340-4589-acf7-001ba67e09b6][Symmetry Breaking Taxonomy]] for consequences of continuous symmetries, [[id:5b4b24eb-5239-42e7-8b4a-8e5dd81ba1cb][Goldstone Theorem]] for discrete symmetry phenomena.

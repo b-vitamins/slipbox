@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID: b57a2579-aa79-40d2-a2d0-797305564ed8
+:CUSTOM_ID: 92/62
+:END:
+#+TITLE: Interface Free Energy
+#+FILETAGS: :physics:spof:ch2:interface:criticalscaling:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The interface free energy—the thermodynamic cost of domain boundaries—governs phase separation dynamics and determines the stability of multi-domain states. Its critical behavior, vanishing as a universal power law, distinguishes continuous from first-order transitions and controls the proliferation of interfaces near criticality.
+
+The complete calculation yields the surface tension:
+
+\[\beta F_w = -\frac{2}{3}t\bar{m}^2w\mathcal{A}\]
+
+where \(\mathcal{A}\) is the interfacial area, \(\bar{m} = \sqrt{-t/4u}\) is the bulk magnetization, and \(w = \sqrt{2K/(-t)}\) is the wall width. Expressing in terms of fundamental parameters:
+
+\[\frac{\beta F_w}{\mathcal{A}} = \frac{2\sqrt{2K}}{3}\frac{[a(T_c-T)]^{3/2}}{4u}\]
+
+The \((T_c - T)^{3/2}\) scaling represents a universal prediction of mean-field theory, independent of microscopic details. Only the amplitude depends on material-specific parameters \(a\), \(u\), and \(K\).
+
+This scaling has profound physical consequences. Near criticality, creating interfaces becomes progressively easier, with the energy barrier vanishing continuously. Unlike first-order transitions where surface tension remains finite at the transition temperature, continuous transitions allow arbitrary interface proliferation as \(T \to T_c\). This proliferation manifests as critical opalescence—the milky appearance of fluids near critical points due to light scattering from density fluctuations on all scales.
+
+The prefactor reveals the energy scales. Dimensionally analyzing \(\beta F_w/\mathcal{A} \sim K^{1/2}|t|^{3/2}/u\), we see three contributions: \(K^{1/2}\) sets the gradient energy scale, \(|t|^{3/2}\) provides the critical scaling, and \(u^{-1}\) normalizes by the interaction strength. The numerical factor \(2\sqrt{2}/3 \approx 0.94\) emerges from the detailed tanh profile—remarkably close to unity, confirming dimensional analysis captures the essential physics.
+
+Temperature variation follows directly:
+
+\[\frac{d}{dT}\left(\frac{\beta F_w}{\mathcal{A}}\right) = -\frac{\sqrt{2Ka^3}}{2u}(T_c-T)^{1/2}\]
+
+The surface tension decreases monotonically approaching \(T_c\), with diverging slope. This singular temperature dependence provides a clear experimental signature, measurable through contact angle experiments or nucleation studies.
+
+The vanishing surface tension enables critical phenomena. As interfaces become free, the system explores configurations with arbitrarily complex domain structures. The correlation length \(\xi\)—the typical domain size—diverges as surface tension vanishes. This connection, \(\xi \sim (\beta F_w/\mathcal{A})^{-1/2}\), links thermodynamic (surface tension) and structural (correlation length) properties.
+
+Comparison with first-order transitions illuminates the distinction. There, phases coexist with finite surface tension at the transition temperature. Interfaces remain sharp and costly, leading to metastability and hysteresis. The order parameter jumps discontinuously, with latent heat marking the transition. In continuous transitions, vanishing surface tension allows gentle interpolation between phases, continuous order parameter evolution, and no latent heat.
+
+Beyond mean-field theory, the \(3/2\) exponent receives corrections from fluctuations. In three dimensions, experiments and simulations yield exponents closer to \(1.26\). In two dimensions, logarithmic corrections appear. Yet the qualitative picture—vanishing surface tension enabling continuous transitions—remains robust. This success exemplifies effective field theory: capturing essential physics through symmetry and scaling, even when quantitative details require more sophisticated treatments.
+
+The interface free energy thus bridges microscopic interactions and macroscopic phase behavior. Its critical vanishing explains why continuous transitions appear continuous, how critical fluctuations proliferate, and when mean-field theory provides reliable guidance. From this single quantity flow deep insights into the nature of phase transitions.
+
+**See also:** [[id:6024201e-a88a-4223-9ff8-8c3e24ce0490][Domain Wall Energy Calculation]] for the detailed calculation, [[id:fda35ee1-f6c3-44d7-8da2-23e55efe6365][Domain Wall Solution]] for wall structure, [[id:b18f1285-af57-4779-a743-cef651d60642][Goldstone Mode Energy]] for correlation length scaling, [[id:b09ab03e-5340-4589-acf7-001ba67e09b6][Symmetry Breaking Taxonomy]] for continuous versus first-order transitions.

@@ -1,0 +1,55 @@
+:PROPERTIES:
+:ID: 6024201e-a88a-4223-9ff8-8c3e24ce0490
+:CUSTOM_ID: 92/61
+:END:
+#+TITLE: Domain Wall Energy Calculation
+#+FILETAGS: :physics:spof:ch2:surfacetension:critical:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The energy cost of creating a domain wall provides crucial insight into the stability of domains and the dynamics of phase separation. This calculation reveals how interfacial free energy vanishes at criticality, enabling the continuous disordering that characterizes second-order phase transitions.
+
+The domain wall free energy equals the energy difference between the wall configuration and uniform magnetization:
+
+\[\beta F_w \equiv \beta F[m_w(x)] - \beta F[\bar{m}] = \int d^d\mathbf{x}\left[\frac{K}{2}\left(\frac{dm_w}{dx}\right)^2 + \frac{t}{2}(m_w^2 - \bar{m}^2) + u(m_w^4 - \bar{m}^4)\right]\]
+
+Each term has clear physical meaning. The gradient term \(\frac{K}{2}(dm_w/dx)^2\) represents the excess energy from spatial magnetization variations—absent in the uniform state. The potential terms account for deviations from the bulk equilibrium value \(\bar{m}\).
+
+The calculation simplifies using the domain wall equation. The identity:
+
+\[\frac{d^2m_w}{dx^2} = tm_w + 4um_w^3\]
+
+combined with integration by parts, transforms the gradient contribution:
+
+\[\int dx\,\frac{K}{2}\left(\frac{dm_w}{dx}\right)^2 = -\frac{K}{2}\int dx\,m_w\frac{d^2m_w}{dx^2} = -\frac{K}{2}\int dx\,m_w(tm_w + 4um_w^3)\]
+
+This manipulation, exploiting the equation of motion, reduces the energy to integrals of the potential alone.
+
+Substituting the tanh solution and using the equilibrium condition \(t = -4u\bar{m}^2\):
+
+\[\beta F_w = \int d^{d-1}\mathbf{x}_\perp\int dx\left[-\frac{t}{2}(m_w^2 - \bar{m}^2) - u(m_w^4 - \bar{m}^4)\right]\]
+
+The transverse integral yields the wall area \(\mathcal{A}\). The longitudinal integral involves:
+
+\[\int dx\,(m_w^2 - \bar{m}^2) = \bar{m}^2\int dx\,(\tanh^2(x/w) - 1) = -\bar{m}^2\int dx\,\text{sech}^2(x/w) = -2\bar{m}^2w\]
+
+Similarly:
+
+\[\int dx\,(m_w^4 - \bar{m}^4) = -\frac{4}{3}\bar{m}^4w\]
+
+Combining terms yields the remarkably simple result:
+
+\[\beta F_w = -\frac{2}{3}t\bar{m}^2w\mathcal{A}\]
+
+Using \(\bar{m}^2 = -t/4u\) and \(w = \sqrt{2K/(-t)}\):
+
+\[\frac{\beta F_w}{\mathcal{A}} = \frac{\sqrt{2}}{3}\frac{(-t)^{3/2}}{\sqrt{K}u} = \frac{2\sqrt{2K}}{3}\frac{(a(T_c-T))^{3/2}}{4u}\]
+
+The surface tension thus vanishes as \((T_c - T)^{3/2}\) approaching criticality. This power law, universal within mean-field theory, reflects the diminishing distinction between phases as \(T \to T_c\).
+
+The energy scale reveals physical insights. Dimensionally, \(\beta F_w/\mathcal{A} \sim \bar{m}^2w \sim \xi\) where \(\xi\) is the correlation length. The wall energy equals roughly the bulk energy density times the wall width—the price of the transition region where magnetization deviates from equilibrium.
+
+This finite interfacial energy stabilizes domain structures. Creating or destroying domain walls requires overcoming energy barriers proportional to wall area. Small domains shrink to reduce surface energy, while thermal fluctuations occasionally nucleate new domains. The competition between bulk and surface energies drives the complex domain dynamics observed in ferromagnets.
+
+At criticality, the vanishing surface tension enables free domain wall creation. Interfaces proliferate, destroying long-range order through critical fluctuations. This picture, while modified by fluctuations beyond mean-field theory, captures the essential mechanism of continuous phase transitions: the gradual loss of interfacial integrity rather than abrupt phase separation.
+
+**See also:** [[id:fda35ee1-f6c3-44d7-8da2-23e55efe6365][Domain Wall Solution]] for the tanh solution, [[id:842934d1-aec9-44ab-b00a-20028668b788][Domain Wall Equation]] for the domain wall equation, [[id:b57a2579-aa79-40d2-a2d0-797305564ed8][Interface Free Energy]] for the final result, [[id:b09ab03e-5340-4589-acf7-001ba67e09b6][Symmetry Breaking Taxonomy]] for topological aspects.

@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID: 611c7df6-087d-4715-a869-5ed673785adb
+:CUSTOM_ID: 92/45
+:END:
+#+TITLE: Order Parameter Alignment
+#+FILETAGS: :physics:spof:ch2:alignment:externalfield:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The external field \(\vec{h}\) plays a dual role in statistical field theory: it breaks the order parameter symmetry explicitly while simultaneously selecting a preferred direction for magnetization. This symmetry breaking simplifies the saddle point analysis dramatically, reducing the vector problem to a scalar one.
+
+In the presence of an external field, the most probable magnetization aligns with the field direction: \(\vec{m} = \bar{m}\hat{h}\), where \(\hat{h} = \vec{h}/|\vec{h}|\) is the unit vector along the field. This alignment follows from minimizing the effective potential \(\Psi(\vec{m})\). Any component perpendicular to \(\vec{h}\) would increase the energy without reducing other terms, making alignment energetically favorable.
+
+This reduction from vector to scalar has profound consequences. The \(n\)-component order parameter problem collapses to finding a single number \(\bar{m}\). The effective potential becomes a function of one variable:
+
+\[\Psi(\bar{m}) = \frac{t}{2}\bar{m}^2 + u\bar{m}^4 - h\bar{m}\]
+
+where \(h = |\vec{h}|\) is the field magnitude. The minimization condition \(\partial\Psi/\partial\bar{m} = 0\) yields a cubic equation for \(\bar{m}\), solvable analytically or graphically.
+
+The alignment principle extends beyond mean-field theory. Even with fluctuations, the average magnetization aligns with the external field, though instantaneous configurations may deviate. This average alignment reflects a general principle: external fields couple linearly to order parameters, making parallel alignment energetically preferred.
+
+For \(n = 1\) (Ising systems), "alignment" is trivial—the scalar order parameter simply has the same sign as the field. For \(n = 2\) (XY models) and \(n = 3\) (Heisenberg models), the reduction from \(n\) to 1 dimension represents a significant simplification. The \((n-1)\) transverse directions, perpendicular to \(\vec{h}\), become soft modes with no restoring force at the linear level.
+
+This dimensional reduction has experimental consequences. In a ferromagnet, applying even a tiny field selects the magnetization direction, breaking the spontaneous \(\mathrm{O}(3)\) symmetry down to \(\mathrm{O}(2)\). The two transverse modes become Goldstone bosons—magnons with gapless dispersions. The longitudinal mode, parallel to \(\vec{m}\), remains massive with a gap proportional to the field strength.
+
+At the critical point where \(t = 0\) and \(h \to 0\), the alignment principle still holds, but its consequences become subtle. The magnetization magnitude vanishes as \(\bar{m} \sim h^{1/\delta}\), yet its direction remains locked to the field. This behavior manifests in critical scattering experiments, where the order parameter fluctuations become strongly anisotropic near criticality.
+
+The alignment principle thus provides both computational simplification and physical insight. It explains why mean-field theory, despite treating only uniform configurations, captures the essential physics of symmetry breaking. The reduction from vector to scalar problems makes analytical progress possible while preserving the key features of the phase transition.
+
+**See also:** [[id:15473268-6d54-4cad-926a-b62621df24ca][Saddle Point Method]] for the saddle point framework, [[id:59774402-482a-4c8f-9ab2-17689c64da6f][Field Theory Dictionary]] for order parameter classification, [[id:8326cfc7-f0f2-4831-a35f-c8aad57d939e][Phase Diagram Architecture]] for the scalar minimization problem.

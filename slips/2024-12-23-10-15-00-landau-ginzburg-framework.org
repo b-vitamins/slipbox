@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID: ad2feb69-5119-48d8-b4cd-d3ec815e8d46
+:CUSTOM_ID: 92/37
+:END:
+#+TITLE: Landau-Ginzburg Framework
+#+FILETAGS: :physics:spof:ch2:hamiltonian:phenomenology:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Landau-Ginzburg Hamiltonian represents a triumph of phenomenological reasoning. Starting from symmetry principles alone, without solving any microscopic model, we arrive at the effective Hamiltonian:
+
+\[\beta\mathcal{H} = \beta F_0 + \int d^d\mathbf{x}\left[\frac{t}{2}m^2(\mathbf{x}) + um^4(\mathbf{x}) + \frac{K}{2}(\nabla m)^2 + \cdots - \vec{h}\cdot\vec{m}(\mathbf{x})\right]\]
+
+Each term has clear physical meaning. The constant \(\beta F_0\) contains all analytic contributions from integrated-out degrees of freedom—important for absolute free energies but irrelevant for critical behavior. The parameter \(t\) controls the local energetic preference for zero or finite magnetization. The quartic term with coefficient \(u > 0\) ensures stability by preventing runaway growth of the order parameter. The gradient term with stiffness \(K > 0\) penalizes spatial variations, encoding the tendency toward uniform ordering.
+
+The external field \(\vec{h} = \beta\vec{B}\) enters linearly, breaking the order parameter symmetry explicitly. Note the technical subtlety: including magnetic work transforms our ensemble from canonical to Gibbs, though we continue using \(F\) for the free energy by convention.
+
+The partition function takes the functional integral form:
+\[Z = \int\mathcal{D}\vec{m}(\mathbf{x})\exp\{-\beta\mathcal{H}[\vec{m}(\mathbf{x})]\}\]
+
+This functional integral, while formal, has precise meaning through lattice regularization. The continuous field emerges as the limit of discrete variables on progressively finer meshes.
+
+The phenomenological parameters \(\{t, u, K, \ldots\}\) encode all microscopic complexity. They are not constants but functions of temperature, pressure, and other external conditions. Near the critical temperature \(T_c\), analyticity permits Taylor expansion:
+
+\[t = a(T - T_c) + \mathcal{O}(T - T_c)^2\]
+
+with \(a > 0\) ensuring proper phase diagram topology. The parameters \(u\) and \(K\) remain positive and finite at \(T_c\) for a generic continuous transition.
+
+This framework's power lies in its universality. The same Hamiltonian describes magnets, superfluids, and binary mixtures—only the interpretation of \(\vec{m}(\mathbf{x})\) changes. Higher-order terms like \(m^6\) or \(m^2(\nabla m)^2\), while present in principle, prove irrelevant near criticality where \(m\) is small. This systematic truncation, justified self-consistently, reduces infinitely many possible terms to a handful of relevant ones.
+
+The Landau-Ginzburg Hamiltonian thus achieves remarkable compression: the complex microscopic physics of \(10^{23}\) interacting quantum particles reduces to three phenomenological parameters near criticality. This dimensional reduction explains why critical phenomena admit universal description despite their microscopic diversity.
+
+**See also:** [[id:02a9278b-81b7-4c24-8014-07765c7e5e60][Coarse-Graining Philosophy]] for the coarse-graining that justifies this form, [[id:260f18a3-665e-4dcd-89c3-5b8f7b363b41][Locality Principle]]-[[id:ccff70ed-3bb2-4ccd-b014-24c5a077b5bf][Temperature Dependence]] for the construction principles, [[id:8326cfc7-f0f2-4831-a35f-c8aad57d939e][Phase Diagram Architecture]] for the saddle-point analysis revealing phase structure.

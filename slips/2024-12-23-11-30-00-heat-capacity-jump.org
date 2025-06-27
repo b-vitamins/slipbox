@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID: b30c9675-7ca8-4102-a99a-5670087d8621
+:CUSTOM_ID: 92/52
+:END:
+#+TITLE: Heat Capacity Jump
+#+FILETAGS: :physics:spof:ch2:thermodynamics:heatcapacity:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Heat capacity reveals thermal energy distribution among degrees of freedom. At phase transitions, this distribution changes abruptly, manifesting in mean-field theory as a finite discontinuity rather than divergence seen in other response functions.
+
+Starting from the free energy, the heat capacity at zero field follows from:
+
+\[C(h=0) = -T\frac{\partial^2 F}{\partial T^2} \approx -T_c a^2\frac{\partial^2}{\partial t^2}(k_BT_c\beta F)\]
+
+Using the piecewise free energy structure yields:
+
+\[C(h=0) = C_0 + Vk_Ba^2T_c^2 \times \begin{cases}
+0 & \text{for } t > 0 \\
+\frac{1}{8u} & \text{for } t < 0
+\end{cases}\]
+
+The discontinuity \(\Delta C = Vk_Ba^2T_c^2/8u\) characterizes the mean-field transition. Unlike susceptibility or correlation length, which diverge at \(T_c\), the heat capacity jumps by a finite amount. This defines the critical exponent \(\alpha = 0\)—if we insist on writing \(C \sim |t|^{-\alpha}\), mean-field theory demands \(\alpha = 0\).
+
+The physical interpretation illuminates the order-disorder transition. Above \(T_c\), thermal energy excites only paramagnetic fluctuations—independent spin flips with no collective behavior. Below \(T_c\), a new channel opens: excitations of the ordered state, including long-wavelength spin waves. These collective modes absorb thermal energy, enhancing the heat capacity. The discontinuous onset reflects the sudden appearance of spontaneous order at \(T_c\).
+
+The jump's magnitude connects to other thermodynamic quantities through exact relations. Using the Clausius-Clapeyron equation generalized to second-order transitions:
+
+\[\Delta C = T_c\left(\frac{\partial\bar{m}}{\partial T}\right)^2\bigg/\left(\frac{\partial^2\Psi}{\partial m^2}\right)\bigg|_{m=\bar{m}}\]
+
+Near \(T_c\), where \(\bar{m} \sim (T_c - T)^{1/2}\) and \(\partial^2\Psi/\partial m^2 \sim (T_c - T)\), this yields \(\Delta C \sim T_c\), consistent with our explicit calculation. The heat capacity jump thus relates directly to the order parameter's critical behavior.
+
+Mean-field's finite jump contrasts with experiments in three dimensions, where \(C\) diverges weakly with \(\alpha \approx 0.1\). Two-dimensional systems show logarithmic divergences; one-dimensional systems often lack true transitions. Deviations from mean-field increase as dimensionality decreases, reflecting growing fluctuation importance.
+
+The absence of heat capacity divergence in mean-field theory has deep roots. The saddle-point approximation includes only the most probable configuration, missing the proliferation of nearly degenerate states near criticality. These states, explored by thermal fluctuations, contribute additional heat capacity. In high dimensions or long-range interactions, where mean-field theory becomes exact, fluctuations are suppressed, and the heat capacity indeed jumps discontinuously.
+
+The heat capacity also distinguishes between types of phase transitions. First-order transitions show latent heat—a delta function in \(C(T)\)—reflecting the energy difference between coexisting phases. Continuous transitions like the ferromagnetic transition show no latent heat but may have heat capacity discontinuities (mean-field) or divergences (with fluctuations). The order of the transition thus manifests directly in calorimetric measurements.
+
+Despite quantitative failures in low dimensions, mean-field theory predicts universal features: absence of latent heat at continuous transitions, connection between heat capacity and order parameter derivatives, and characteristic energy scale \(k_BT_c\) governing thermal properties. These successes explain why mean-field remains the starting point for understanding phase transitions, with fluctuations as corrections.
+
+**See also:** [[id:596df11c-4c1c-4be5-88fb-c92d091856d9][Free Energy]] for free energy calculation, [[id:6cadde9f-3a49-474c-aa0a-a1c652fc3237][Superfluid Order Parameter]] for equation of state connection, [[id:4abbcaad-0fa8-415a-9181-2d89360ef4d6][Mean Field Exponents Summary]] for critical exponent systematics.

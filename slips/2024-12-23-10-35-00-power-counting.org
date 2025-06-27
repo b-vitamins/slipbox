@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID: a4e3940d-1db8-47db-9eb8-bd0cf9f1e1f0
+:CUSTOM_ID: 92/41
+:END:
+#+TITLE: Power Counting
+#+FILETAGS: :physics:spof:ch2:scaling:renormalization:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Power counting provides the systematic framework for deciding which terms to retain in the Landau-Ginzburg expansion. Near criticality, where the order parameter \(\vec{m}\) becomes small, not all terms in the expansion contribute equally. A careful analysis of scaling dimensions reveals which terms are relevant, marginal, or irrelevant—a classification that proves fundamental to understanding universality.
+
+The basic principle is dimensional analysis applied to the critical regime. As \(T \to T_c\), the order parameter vanishes as \(m \sim |t|^\beta\) with \(\beta = 1/2\) in mean-field theory. Simultaneously, the correlation length diverges as \(\xi \sim |t|^{-\nu}\) with \(\nu = 1/2\). Since gradients scale as \(\nabla \sim 1/\xi\), we can assign scaling dimensions to each term in the Hamiltonian.
+
+Consider the terms in our expansion. The quadratic term scales as \(m^2 \sim |t|^{2\beta} = |t|\). The quartic term scales as \(m^4 \sim |t|^{4\beta} = |t|^2\). The gradient term scales as \((\nabla m)^2 \sim m^2/\xi^2 \sim |t|^{2\beta + 2\nu} = |t|^2\). A general term \(m^p(\nabla^q m)^r\) scales as \(|t|^{p\beta + r\beta + r q\nu}\).
+
+The free energy density must scale as \(|t|^{2-\alpha}\) where \(\alpha\) is the specific heat exponent. In mean-field theory with \(\alpha = 0\), this means the free energy density scales as \(|t|^2\). Terms that scale with higher powers of \(|t|\) become increasingly negligible as \(t \to 0\). This observation justifies truncating the expansion: near criticality, only the most relevant terms matter.
+
+The classification emerges naturally. Terms scaling as \(|t|^0\) are marginal—they neither grow nor shrink at criticality. Terms scaling as positive powers of \(|t|\) are irrelevant—they vanish at the critical point. Terms scaling as negative powers would be relevant, dominating the physics, but stability requirements typically exclude such terms.
+
+In our Hamiltonian, the \(t m^2\) term is relevant (scales as \(|t|\)), while \(u m^4\) and \(K(\nabla m)^2\) are marginal in mean-field theory. Higher-order terms like \(m^6\) (scaling as \(|t|^3\)) or \(m^2(\nabla m)^2\) (scaling as \(|t|^3\)) are irrelevant. This hierarchy explains why the minimal Landau-Ginzburg form suffices: irrelevant terms can be neglected without affecting universal properties.
+
+Power counting also reveals when mean-field theory itself breaks down. Fluctuation corrections involve integrals over momenta up to the cutoff \(\Lambda\). In dimensions below the upper critical dimension \(d_c = 4\), these fluctuations become relevant, modifying the mean-field exponents. The marginal terms in mean-field theory acquire anomalous dimensions, becoming relevant or irrelevant depending on spatial dimensionality.
+
+Self-consistency provides a crucial check. After solving for critical behavior, we verify that neglected terms indeed remain small. For instance, including \(m^6\) would contribute terms scaling as \(|t|^3\) to the free energy—negligible compared to the \(|t|^2\) terms we retain. This a posteriori validation completes the power-counting argument.
+
+**See also:** [[id:5943d945-1b25-469e-9be5-c7c857619dd6][Analyticity at Mesoscale]] for analyticity enabling these expansions, [[id:ad2feb69-5119-48d8-b4cd-d3ec815e8d46][Landau-Ginzburg Framework]] for the resulting minimal Hamiltonian, [[id:d57b2f9a-2f06-402b-a543-fe4181cb1e25][Susceptibility Divergence]] for mean-field exponents used in scaling arguments.
