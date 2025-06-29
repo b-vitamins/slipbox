@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID: 2a8f9c4d-5e1b-7a2f-9c8d-4e1b7a2f9c8d
+:CUSTOM_ID: 92/224
+:END:
+#+TITLE: Potts Model
+#+FILETAGS: :physics:spof:ch6:lattice:potts:discrete:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The q-state Potts model extends the Ising framework to discrete variables taking q distinct values, introducing permutation symmetry that fundamentally alters critical behavior. Each lattice site hosts a variable \(\sigma_i \in \{1,2,\ldots,q\}\), with the nearest-neighbor interaction
+
+\[\mathcal{H}=-J\sum_{\langle i,j\rangle}\delta_{\sigma_i,\sigma_j}\]
+
+favoring alignment through the Kronecker delta. This simple form belies rich physics: the q=2 case reduces to the Ising model through the transformation \(\delta_{\sigma_i,\sigma_j} = (\sigma_i\sigma_j+1)/2\), while q≥3 generates new universality classes with distinct critical exponents.
+
+The permutation symmetry \(S_q\) distinguishes the Potts model from O(n) systems. While both exhibit global order parameters, the Potts model's discrete nature precludes continuous rotations, fundamentally altering the topological structure of the order parameter space. The model exhibits first-order transitions for q≥5 in two dimensions, marking a dramatic departure from the continuous transitions of smaller q.
+
+Temperature-driven transitions occur when thermal fluctuations compete with energetic preference for aligned neighbors. The critical temperature satisfies \(J = k_BT_c\ln(1+\sqrt{q})\) in mean-field theory, though exact results exist only for special cases like the q=3 triangular lattice. The model's simplicity makes it amenable to transfer matrix analysis, Monte Carlo simulation, and series expansion techniques.
+
+The Potts model serves as a testing ground for understanding discrete symmetry breaking and provides the theoretical foundation for studying crystalline phases, where lattice orientations replace spin orientations. Its q→1 limit connects to percolation theory, while q→0 describes random walks and polymer statistics, demonstrating the model's remarkable theoretical versatility.
+
+**See also:** [[id:8c4d6f2a-1e38-4b9c-a7d5-2f8e1c9b0e3a][Ising Model Foundation]] for the q=2 case, [[id:f7e2d8b9-4c1a-5e6f-8a9b-2d3c4e5f6a7b][O(n) Model Hierarchy]] for continuous symmetry comparison, [[id:3e6f8a9b-4c5d-7e8f-0a1b-4c5d6e7f8a9b][Model Universality Bridge]] for the connection to real systems.

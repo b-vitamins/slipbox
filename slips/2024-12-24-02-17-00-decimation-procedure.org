@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID: f2d9a8e1-7c3b-5e4f-8a2d-7c3b5e4f8a2d
+:CUSTOM_ID: 92/239
+:END:
+#+TITLE: Decimation Procedure
+#+FILETAGS: :physics:spof:ch6:rg:decimation:procedure:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Decimation systematically eliminates alternating spins while preserving nearest-neighbor structure through careful accounting of induced interactions. The partition function's bond-factorized form enables sequential summation:
+
+\[Z = \sum_{\{\sigma_i\}}^N \exp\left[\sum_{i=1}^N B(\sigma_i,\sigma_{i+1})\right] = \sum_{\{\sigma'_i\}}^{N/2}\sum_{\{s_i\}}^{N/2}\exp\left[\sum_{i=1}^{N/2}[B(\sigma'_i,s_i)+B(s_i,\sigma'_{i+1})]\right]\]
+
+Here \(\sigma'_i\) denote retained spins while \(s_i = \sigma_{2i}\) represent decimated spins. The factorization exploits the linear chain topology—each decimated spin couples only to its two neighbors, enabling independent summation.
+
+Performing the trace over decimated spins generates effective interactions:
+
+\[e^{-\beta\mathcal{H}'[\sigma'_i]} \equiv \prod_{i=1}^{N/2}\left[\sum_{s_i=\pm 1} e^{[B(\sigma'_i,s_i)+B(s_i,\sigma'_{i+1})]}\right] \equiv e^{\sum_{i=1}^{N/2} B'(\sigma'_i,\sigma'_{i+1})}\]
+
+The renormalized bond B' incorporates the statistical weight of all decimated spin configurations compatible with fixed neighboring spins. This construction ensures partition function preservation while maintaining the nearest-neighbor form essential for iterative application.
+
+The decimation map possesses a crucial property: it preserves the Ising character of spins. Unlike block-spin transformations that might generate multi-valued variables, decimation by selecting alternating spins maintains \(\sigma'_i = \pm 1\). This preservation of the microscopic degrees of freedom's structure simplifies the renormalization group recursion relations and enables exact solution in one dimension.
+
+Decimation embodies the renormalization philosophy in its purest form: we observe the system at reduced resolution, integrating out fine-scale fluctuations to reveal coarse-grained behavior. The one-dimensional chain's special property—that decimated spins couple only to nearest neighbors—fails spectacularly in higher dimensions, where a removed spin leaves behind a cage of interactions among all its former neighbors. This topological distinction between one and higher dimensions explains why exact real-space renormalization remains confined to chains while requiring approximations elsewhere.
+
+**See also:** [[id:c5a8f2e9-6d1b-4e7a-9c2f-8b3e6d1b4e7a][RG Preservation Principle]] for the foundational principle, [[id:8f3c9e2a-1d6b-7f4a-9e3c-1d6b7f4a9e3c][Bond Renormalization]] for the calculation details, [[id:9f4c8e2a-1d7b-6e3f-8a4c-1d7b6e3f8a4c][Interaction Proliferation Principle]] for higher-dimensional complications.

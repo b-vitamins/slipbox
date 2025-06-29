@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID: e9f2c3a8-1d4b-5e7a-9f2c-3a8d1e4b5e7a
+:CUSTOM_ID: 92/231
+:END:
+#+TITLE: Eigenvalue Dominance
+#+FILETAGS: :physics:spof:ch6:transfer:matrix:eigenvalue:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The thermodynamic limit extracts macroscopic behavior from the transfer matrix through eigenvalue dominance. For the trace of the Nth power, the eigenvalue decomposition yields
+
+\[Z = \lambda_+^N + \lambda_-^N = \lambda_+^N\left[1+\left(\frac{\lambda_-}{\lambda_+}\right)^N\right] \approx \lambda_+^N\]
+
+The approximation becomes exact as \(N \to \infty\) provided \(\lambda_+ > \lambda_-\), reducing the free energy to
+
+\[\beta f = -\frac{\ln Z}{N} = -\ln\lambda_+\]
+
+The characteristic equation for the Ising transfer matrix yields eigenvalues
+
+\[\lambda_\pm = e^K\cosh h \pm \sqrt{e^{2K}\sinh^2 h + e^{-2K}}\]
+
+The square root ensures \(\lambda_+ > \lambda_-\) for all parameters, precluding level crossing and hence phase transitions at finite temperature. The free energy inherits analyticity from the eigenvalue formula, remaining smooth across the entire (K,h) parameter space.
+
+Frobenius' theorem guarantees this eigenvalue hierarchy for any finite matrix with positive elements: the largest eigenvalue is non-degenerate and exceeded by all others in magnitude. Since transfer matrix elements \(e^{B(s_i,s_j)} > 0\) for finite interactions, one-dimensional systems with short-range forces cannot exhibit singularities except at zero temperature where matrix elements diverge.
+
+The eigenvalue dominance principle reveals why phase transitions require either infinite dimensions or long-range interactions to occur at finite temperature. The finite size gap \(|\lambda_+ - \lambda_-|\) generates exponentially decaying correlations, preventing the power-law correlations characteristic of criticality. This mathematical constraint—that finite positive matrices have non-degenerate largest eigenvalues—translates into physical law: one-dimensional order succumbs to thermal fluctuations. The transfer matrix thus proves the absence of phase transitions more elegantly than any thermodynamic argument.
+
+**See also:** [[id:8b5c9d1e-2f4a-6e7f-9a8b-3c4d5e6f7a8b][1D Ising Transfer Matrix]] for the matrix construction, [[id:1a3b5c8d-9f2e-6a4b-7c5d-9f2e6a4b7c5d][Spin Correlations via Transfer Matrix]] for eigenvector applications, [[id:b8c9e5f2-3a4d-7e1f-8b2c-3a4d7e1f8b2c][Correlation Length Extraction]] for the connection to physics.

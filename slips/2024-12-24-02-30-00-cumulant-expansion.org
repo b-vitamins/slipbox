@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID: 2b8f9c4d-8e3a-6f1b-7d4c-8e3a6f1b7d4c
+:CUSTOM_ID: 92/251
+:END:
+#+TITLE: Cumulant Expansion
+#+FILETAGS: :physics:spof:ch6:rg:nvl:cumulant:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The cumulant expansion systematically organizes perturbative corrections through connected correlation functions, providing a hierarchy of approximations with improving accuracy. Starting from the exact relation
+
+\[e^{-\beta\mathcal{H}'} = Z_0 e^{\langle e^{-\mathcal{U}}\rangle_0}\]
+
+where the constrained average employs the unperturbed distribution, the cumulant series emerges from expanding the exponential:
+
+\[\beta\mathcal{H}'[\sigma'_\alpha] = -\ln Z_0[\sigma'_\alpha] + \langle\mathcal{U}\rangle_0 - \frac{1}{2}(\langle\mathcal{U}^2\rangle_0 - \langle\mathcal{U}\rangle_0^2) + \mathcal{O}(\mathcal{U}^3)\]
+
+Each cumulant captures increasingly complex correlations: the first gives mean perturbation energy, the second incorporates fluctuations, while higher orders account for non-Gaussian statistics.
+
+The cumulant expansion's superiority over direct perturbation theory stems from its connected structure. While \(\langle\mathcal{U}^n\rangle_0\) grows with system size, cumulants remain intensive, involving correlations within finite regions. This locality property ensures well-defined thermodynamic limits and meaningful truncations.
+
+For the NvL calculation, evaluation proceeds cell by cell. The constraint of fixed \(\sigma'_\alpha\) reduces the trace over each cell's internal spins to configurations compatible with the renormalized value. Since cells are independent under \(\mathcal{H}_0\), expectation values factorize:
+
+\[\langle\sigma^i_\alpha\sigma^j_\beta\rangle_0 = \langle\sigma^i_\alpha\rangle_0\langle\sigma^j_\beta\rangle_0 \quad \text{for } \alpha \neq \beta\]
+
+This factorization dramatically simplifies calculations, reducing many-body averages to single-cell problems.
+
+Truncation at second order in the cumulant expansion corresponds to assuming Gaussian fluctuations around mean values—a controlled approximation whose accuracy improves near criticality where the central limit theorem increasingly applies to collective variables.
+
+The cumulant expansion reveals deep connections between statistical mechanics and field theory. In field-theoretic language, cumulants generate connected Feynman diagrams, with truncation corresponding to neglecting higher-loop corrections. The expansion's convergence properties depend on the perturbation's structure rather than its magnitude—a well-connected perturbation may converge rapidly even when individual terms are large. This explains the NvL method's success: while inter-cell couplings aren't necessarily weak, their connected correlations decay rapidly, validating truncation [[id:4d8f9c3e-7a2b-5f1c-8e4d-7a2b5f1c8e4d][Convergence Properties]].
+
+**See also:** [[id:8f9d2c3e-7a4b-1f8c-9e3d-7a4b1f8c9e3d][NvL Philosophy]] for the framework, [[id:1a9f8d3c-7e2b-5f4a-9c3d-7e2b5f4a9c3d][Perturbative Split]] for the decomposition, [[id:3c9f8d4e-9f3a-7e2b-8d5c-9f3a7e2b8d5c][Cell Calculations]] for implementation.

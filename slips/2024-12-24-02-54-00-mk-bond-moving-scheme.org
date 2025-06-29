@@ -1,0 +1,48 @@
+:PROPERTIES:
+:ID: 6e8d9f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d
+:CUSTOM_ID: 92/275
+:END:
+#+TITLE: MK Bond Moving Scheme
+#+FILETAGS: :physics:spof:ch6:mk:bondmoving:figure:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+*Reference: Figure 6.10 - The bond moving scheme for Migdal-Kadanoff RG for b=2 in d=2*
+
+The Migdal-Kadanoff bond moving visualization reveals how two-dimensional connectivity transforms into one-dimensional problems through systematic bond redistribution [[id:6f8d9c3e-7a5b-4f2c-8e9d-7a5b4f2c8e9d][MK Bond Moving]]. The procedure unfolds in three stages:
+
+**Stage 1: Original square lattice**
+#+begin_example
+│   │   │   │
+●───●───●───●
+│   │   │   │
+●───●───●───●
+│   │   │   │
+●───●───●───●
+│   │   │   │
+#+end_example
+
+**Stage 2: Bond moving (strengthen horizontal, remove vertical)**
+#+begin_example
+        
+●═══●───●═══●  (doubled bonds ═)
+        
+●═══●───●═══●
+        
+#+end_example
+
+**Stage 3: Decimation along strengthened direction**
+#+begin_example
+●───────●      (effective bond incorporates decimated spins)
+
+●───────●
+#+end_example
+
+The bond-moving step doubles horizontal bonds while removing vertical ones, preserving total interaction strength but drastically altering topology. This transforms the connected 2D network into parallel 1D chains amenable to exact decimation.
+
+The approximation's severity appears starkly: diagonal paths between retained spins, crucial for 2D phase transitions, vanish entirely. The method replaces a multiply-connected network with parallel chains, explaining why it underestimates critical temperatures—the system appears less connected than reality.
+
+For d-dimensional hypercubic lattices, each bond gains strength factor b^(d-1) from (d-1) perpendicular directions [[id:9e8d7f3c-6a5b-4e2f-8c9d-6a5b4e2f8c9d][MK Dimension Dependence]]. This systematic prescription maintains consistency across dimensions while reducing all problems to one-dimensional form.
+
+The MK bond-moving visualization exposes both the method's cleverness and crudeness. By concentrating interaction strength along retained directions, it partially compensates for lost connectivity. Yet the geometric mutation—from mesh to parallel strands—fundamentally alters the system's collective behavior. The success despite such drastic approximation suggests phase transitions depend more on total connectivity than detailed topology. This visual makes transparent what algebra obscures: we're not slightly perturbing the lattice but radically restructuring it to achieve analytical tractability.
+
+**See also:** [[id:7e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Connectivity Preservation]] for topology, [[id:8e8d9f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Approximation Severity]] for limitations, [[id:9e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Visual Methods]] for pedagogy.

@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID: 2e4a9f6c-3d1b-8e7f-9a3c-3d1b8e7f9a3c
+:CUSTOM_ID: 92/242
+:END:
+#+TITLE: 1D Recursion Relations
+#+FILETAGS: :physics:spof:ch6:rg:decimation:recursion:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The recursion relations for one-dimensional Ising decimation simplify dramatically in zero field, where the magnetic field term h vanishes. The coupling constant transformation reduces to
+
+\[e^{4K'} = \frac{e^{4K} + e^{-4K}}{2} = \cosh(4K)\]
+
+\[K' = \frac{1}{4}\ln[\cosh(4K)]\]
+
+The factor of 4 arises from the variable transformation algebra, encoding how four bonds (two incoming, two outgoing) reduce to one effective bond. For small K (high temperature), Taylor expansion gives \(K' \approx K^2\), demonstrating the irrelevance of ferromagnetic coupling at high temperatures. For large K (low temperature), \(K' \approx K - \ln 2/4\), showing convergence toward perfect order.
+
+The recursion admits an elegant closed form through the substitution \(K = -\ln(\tanh\varphi)/2\):
+
+\[\tanh\varphi' = (\tanh\varphi)^2\]
+
+This reveals the multiplicative structure: each RG iteration squares the tanh variable, generating the sequence \(\tanh\varphi_n = (\tanh\varphi_0)^{2^n}\). The geometric progression in this transformed variable contrasts with the complex behavior in the original coupling K.
+
+The zero-field restriction is crucial—with h≠0, the recursion relations couple K and h, generating complex flows. The h=0 line forms an invariant manifold under RG flow, reflecting the system's Z₂ symmetry. Points with h=0 remain on this manifold under all RG iterations, allowing the one-dimensional reduction that enables exact solution.
+
+The recursion relation encodes the fundamental physics of one-dimensional systems: the absence of phase transitions manifests as the absence of non-trivial fixed points at finite K. The only fixed points are K*=0 (infinite temperature) and K*=∞ (zero temperature), with all finite-temperature initial conditions flowing to the high-temperature fixed point. This universal flow toward disorder reflects thermal fluctuations' ultimate dominance in one dimension, where any finite temperature destroys long-range order.
+
+**See also:** [[id:1f3d8e9a-2c4b-7f5a-8d3e-2c4b7f5a8d3e][Variable Transformation]] for the derivation, [[id:3f4d8e9a-5c1b-9f6a-7d3e-5c1b9f6a7d3e][Fixed Point Analysis]] for stability, [[id:4e5a9f7b-2d3c-8f9a-1e4b-2d3c8f9a1e4b][Scaling Forms]] for critical behavior.

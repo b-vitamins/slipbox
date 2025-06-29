@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID: 7d9e1f2a-8b3c-4f5d-9e1a-8b3c4f5d9e1a
+:CUSTOM_ID: 92/229
+:END:
+#+TITLE: Field Effects and Symmetry Breaking
+#+FILETAGS: :physics:spof:ch6:lattice:field:symmetrybreaking:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+External fields explicitly break the symmetries that spontaneous ordering would otherwise preserve, fundamentally altering phase transition character. In the Ising model, the magnetic field term \(h\sum_i\sigma_i\) favors one spin orientation, eliminating the phase transition by removing the degeneracy between up and down states. The free energy becomes analytic for all temperatures when \(h \neq 0\), with the transition surviving only along the h=0 line.
+
+For O(n) models, the field \(\vec{h} \cdot \sum_i\vec{S}_i\) reduces O(n) symmetry to O(n-1) rotations perpendicular to \(\vec{h}\). This dimensional reduction profoundly affects critical behavior: the n=2 XY model in a field exhibits Ising-like criticality, while the n=3 Heisenberg model reduces to XY behavior. The Potts model field \(h\sum_i\delta_{S_i,1}\) breaks S_q permutation symmetry completely, selecting a unique ground state.
+
+Fields enter renormalization group analysis as relevant perturbations with scaling dimension \(y_h > 0\). Under RG flow, infinitesimal fields grow, driving systems away from critical fixed points toward ordered or disordered sinks. The magnetic scaling exponent \(y_h\) determines how order parameters respond to fields: \(m \sim h^{1/\delta}\) at criticality, with δ related to other exponents through scaling relations.
+
+Fields provide experimental control over phase transitions while revealing theoretical structure. The analytical continuation to imaginary fields connects statistical mechanics to quantum field theory, where symmetry breaking drives mass generation. The response to infinitesimal fields—encoded in susceptibilities—diverges at criticality, signaling long-range correlations. This divergence represents the system's maximal sensitivity when poised between ordered and disordered phases, making critical points ideal for sensing applications despite their theoretical complexity.
+
+**See also:** [[id:6c8d9f2e-4b9f-3a7c-5d8f-9b3a7c5d8f9b][Order Parameters and Broken Symmetry]] for spontaneous breaking, [[id:5b7c9e1f-3a8d-2f6b-8c4e-7f2a8d3f6b8c][Symmetry Classification Principle]] for symmetry groups, [[id:2d4a9e6f-1b8c-3f7d-5e9a-1b8c3f7d5e9a][Magnetic Field Treatment]] for RG analysis.

@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID: 3f4d8e9a-5c1b-9f6a-7d3e-5c1b9f6a7d3e
+:CUSTOM_ID: 92/243
+:END:
+#+TITLE: Fixed Point Analysis
+#+FILETAGS: :physics:spof:ch6:rg:fixedpoint:analysis:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Fixed points of the RG transformation, satisfying K* = K'(K*), organize the global flow structure and determine phase behavior. The one-dimensional Ising model exhibits two fixed points with contrasting stability:
+
+The infinite-temperature fixed point at K*=0 governs the disordered phase. Near this point, \(K' \approx \ln(1 + 4K^2/2)/2 \approx K^2\), revealing quadratic approach to zero—a stable sink. This super-stable fixed point with relevant eigenvalue 0 (marginal stability becoming relevant at second order) reflects the robust nature of disorder in one dimension where thermal fluctuations destroy any incipient order.
+
+The zero-temperature fixed point at K*→∞ describes perfect ferromagnetic order. For large but finite K, the recursion \(K' \approx \ln(e^{2K}/2)/2 \approx K - \ln 2/2\) shows linear retreat from infinity—an unstable fixed point. Any finite temperature, however small, initiates flow toward disorder, confirming the absence of long-range order at T>0.
+
+The complete flow diagram reveals no intermediate fixed point, precluding phase transitions at finite temperature. Every trajectory originating at finite K terminates at K*=0, with the flow velocity \(dK/d\ell = K'(K) - K\) vanishing at both fixed points. The absence of limit cycles or chaotic behavior follows from the RG's monotonic nature in one dimension.
+
+Linearization near fixed points yields critical exponents through \(b^{y_t} = \partial K'/\partial K|_{K*}\). At the unstable fixed point, \(y_t = \ln(\sqrt{2})/\ln(2) = 1/2\), though the essential singularity at T=0 makes exponent identification ambiguous. The eigenvalue's magnitude less than unity seems to contradict instability, but this apparent paradox resolves by noting that K→∞ requires the inverse parametrization where eigenvalues exceed unity.
+
+Fixed point analysis reveals the RG's power to classify phase behavior through purely mathematical properties of transformation maps. The fixed point structure—stable disorder, unstable order, no intermediate points—emerges from the recursion relation's analytic properties without thermodynamic reasoning. This mathematical determination of physical behavior exemplifies the RG philosophy: phase transitions represent fixed points of scale transformations, with universality arising from the local flow structure near these special points.
+
+**See also:** [[id:2e4a9f6c-3d1b-8e7f-9a3c-3d1b8e7f9a3c][1D Recursion Relations]] for the flow equations, [[id:4e5a9f7b-2d3c-8f9a-1e4b-2d3c8f9a1e4b][Scaling Forms]] for critical behavior, [[id:5e6a9f8b-3d4c-1f9a-8e5b-3d4c1f9a8e5b][RG Flow Diagrams]] for visualization.

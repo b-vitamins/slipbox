@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       1dc154aa-873c-4900-a58a-c19893a1aaee
+:CUSTOM_ID: 92/227
+:END:
+#+TITLE: Symmetry Classification Principle
+#+FILETAGS: :symmetry:universality:classification:z2:on:potts:
+
+Symmetry provides the organizing principle for statistical models, determining both their static universality classes and dynamic behavior. The symmetry group of the Hamiltonian—discrete or continuous, Abelian or non-Abelian—dictates which order parameters can emerge and what phase transitions are possible. This classification transcends specific models: any system with identical symmetry, dimensionality, and interaction range shares the same critical behavior.
+
+For discrete symmetries, the Ising model's Z₂ invariance under global spin flip σᵢ → -σᵢ represents the minimal non-trivial case. The Potts model's Sₛ permutation symmetry generates distinct universality classes for each q, though large q drives first-order transitions. Clock models with Zₛ symmetry interpolate between Ising and XY behavior as q increases.
+
+Continuous symmetries fundamentally alter the physics through the Mermin-Wagner theorem: continuous symmetries cannot spontaneously break in d≤2 with short-range interactions. The O(n) models exemplify this, with n=2 (XY) supporting quasi-long-range order and topological transitions, while n=3 (Heisenberg) exhibits even richer behavior. The n→∞ limit becomes exactly solvable through saddle-point methods.
+
+Symmetry classification extends beyond equilibrium criticality to dynamic universality classes and quantum phase transitions. The mapping between classical d-dimensional and quantum (d-1)-dimensional systems preserves symmetry content while adding temporal structure. This deep connection between symmetry, dimensionality, and universality provides the theoretical foundation for understanding why simplified lattice models capture real physical phenomena—nature's complexity organizes itself according to these symmetry principles.
+
+** See also:
+- [[id:c28e2051-0186-4a16-adbf-c255ad7d013a][Ising Model Foundation]]
+- [[id:1d9f52e1-b17a-47c0-a181-d0de520afdbe][O(n) Model Hierarchy]]
+- [[id:e0455732-a000-4676-a471-618304d77efb][Potts Model]]
+- [[id:88a1d693-b085-402f-9fc7-bd1ab16c5640][Model Universality Bridge]]

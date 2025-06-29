@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID: 8f3c9e2a-1d6b-7f4a-9e3c-1d6b7f4a9e3c
+:CUSTOM_ID: 92/240
+:END:
+#+TITLE: Bond Renormalization
+#+FILETAGS: :physics:spof:ch6:rg:decimation:bond:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The renormalization of bonds through decimation transforms microscopic interactions into effective coarse-grained couplings. The general Ising bond energy maintains its functional form under RG:
+
+\[B(\sigma_1,\sigma_2) = g + \frac{h}{2}(\sigma_1+\sigma_2) + K\sigma_1\sigma_2\]
+
+\[B'(\sigma'_1,\sigma'_2) = g' + \frac{h'}{2}(\sigma'_1+\sigma'_2) + K'\sigma'_1\sigma'_2\]
+
+This preservation of functional form—that nearest-neighbor Ising interactions renormalize to nearest-neighbor Ising interactions—represents a non-trivial property specific to one dimension with decimation.
+
+The recursion relation emerges from equating the statistical weight of a renormalized bond to the decimated configuration sum:
+
+\[R(\sigma'_1,\sigma'_2) \equiv \exp[K'\sigma'_1\sigma'_2 + \frac{h'}{2}(\sigma'_1+\sigma'_2) + g']\]
+\[= \sum_{s_1=\pm 1}\exp[K s_1(\sigma'_1+\sigma'_2) + \frac{h}{2}(\sigma'_1+\sigma'_2) + hs_1 + 2g]\]
+
+The sum over the intermediate spin s₁ generates effective interactions between \(\sigma'_1\) and \(\sigma'_2\). The factor of 2g arises from two bonds contributing to each decimated spin, while the field h enters both through direct coupling and through the decimated spin.
+
+This construction reveals how microscopic parameters flow under coarse-graining. The coupling K measures the energetic preference for alignment, the field h breaks the up-down symmetry, while g provides an overall energy shift. Under RG, these parameters mix: even with h=0 initially, field-like terms could be generated through asymmetric decimation rules. The preservation of h=0 under the symmetric decimation used here reflects the RG's respect for symmetries.
+
+The bond renormalization equation encapsulates the RG philosophy: effective interactions at larger scales emerge from integrating out shorter-scale fluctuations. The mathematical structure—that exponentials of sums become products of exponentials—enables the factorization essential for exact solution. In higher dimensions, this elegant factorization fails because decimated spins generate not just renormalized bonds but new interaction types, forcing approximate truncations that nonetheless preserve universal properties through the magic of irrelevance.
+
+**See also:** [[id:f2d9a8e1-7c3b-5e4f-8a2d-7c3b5e4f8a2d][Decimation Procedure]] for the method, [[id:1f3d8e9a-2c4b-7f5a-8d3e-2c4b7f5a8d3e][Variable Transformation]] for solving the recursion, [[id:2e4a9f6c-3d1b-8e7f-9a3c-3d1b8e7f9a3c][1D Recursion Relations]] for the explicit solutions.

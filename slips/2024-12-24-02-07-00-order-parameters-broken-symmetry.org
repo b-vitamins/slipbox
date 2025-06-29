@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       644d01cd-cb33-4684-99bc-e6e6de363f3f
+:CUSTOM_ID: 92/228
+:END:
+#+TITLE: Order Parameters and Broken Symmetry
+#+FILETAGS: :order:parameter:symmetry:breaking:magnetization:scaling:
+
+Order parameters quantify spontaneous symmetry breaking, vanishing in disordered phases while acquiring non-zero values in ordered states. For the Ising model, the magnetization m = ⟨σᵢ⟩ distinguishes up from down states, breaking Z₂ symmetry. The O(n) models employ vector order parameters m⃗ = ⟨S⃗ᵢ⟩, whose direction breaks rotational symmetry while preserving magnitude.
+
+The Potts model requires a more subtle construction: the order parameter must distinguish which of q states dominates. One choice uses mα = ⟨δₛᵢ,α⟩ - 1/q, ensuring Σα mα = 0 by symmetry. Alternatively, complex representations on the vertices of a regular (q-1)-simplex provide geometric insight into the symmetry breaking.
+
+Near criticality, order parameters exhibit universal scaling: m ~ |T-Tᵨ|β for T < Tᵨ, with the exponent β depending only on universality class. Fluctuations of the order parameter define correlation functions G(r) = ⟨m(r)m(0)⟩ - ⟨m⟩², whose decay length ξ diverges at criticality. This divergence signals the system's inability to distinguish ordered from disordered phases.
+
+Order parameters bridge microscopic and macroscopic descriptions through coarse-graining: local spin averages over correlation volumes yield smooth fields amenable to continuum description. This connection justifies Landau-Ginzburg theory while explaining its limitations—the assumption of analyticity fails at criticality where fluctuations span all scales. The renormalization group reconciles these perspectives by showing how order parameter fluctuations flow under scale transformations, generating universal critical behavior from symmetry principles alone.
+
+** See also:
+- [[id:c28e2051-0186-4a16-adbf-c255ad7d013a][Ising Model Foundation]]
+- [[id:1d9f52e1-b17a-47c0-a181-d0de520afdbe][O(n) Model Hierarchy]]
+- [[id:e0455732-a000-4676-a471-618304d77efb][Potts Model]]
+- [[id:88a1d693-b085-402f-9fc7-bd1ab16c5640][Model Universality Bridge]]
+- [[id:02b45039-6355-42d2-a6e2-1c406e997172][RG Preservation Principle]]
+- [[id:730af6fd-5650-4a6b-b2a5-98f807dce04e][Scaling Forms]]

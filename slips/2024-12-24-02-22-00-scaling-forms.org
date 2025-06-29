@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID: 4e5a9f7b-2d3c-8f9a-1e4b-2d3c8f9a1e4b
+:CUSTOM_ID: 92/244
+:END:
+#+TITLE: Scaling Forms
+#+FILETAGS: :physics:spof:ch6:rg:scaling:critical:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The RG transformation generates scaling forms for thermodynamic quantities through the fundamental relation \(\xi' = \xi/b\), encoding how correlation lengths transform under coarse-graining. Near the zero-temperature fixed point, this yields the homogeneous form:
+
+\[\xi(e^{-K}, h) = 2\xi(\sqrt{2}e^{-K}, 2h) = 2^{\ell}\xi(2^{\ell/2}e^{-K}, 2^{\ell}h)\]
+
+Choosing ℓ such that \(2^{\ell/2}e^{-K} \approx 1\) reduces one argument to order unity, yielding the scaling form:
+
+\[\xi(e^{-K}, h) = e^{2K}g_\xi(he^{2K})\]
+
+The correlation length diverges exponentially as T→0 for h=0, contrasting with the power-law divergence \(\xi \sim |T-T_c|^{-\nu}\) at conventional critical points. This essential singularity reflects the marginal stability of the T=0 fixed point—thermal fluctuations at any finite temperature destroy long-range order.
+
+Hyperscaling relates the singular free energy to correlation length: \(f_{sing} \propto \xi^{-d}\). In one dimension:
+
+\[f_{sing}(K,h) \propto \xi^{-1} = e^{-2K}g_f(he^{2K})\]
+
+The susceptibility, obtained through field derivatives, inherits the correlation length's temperature dependence:
+
+\[\chi(K) \sim \left.\frac{\partial^2 f}{\partial h^2}\right|_{h=0} \sim e^{2K}\]
+
+The general correlation function form \(\langle s_i s_{i+x}\rangle \sim e^{-x/\xi}/x^{d-2+\eta}\) combined with \(\chi \sim \int d^d\mathbf{x}\langle s_0 s_{\mathbf{x}}\rangle_c \sim \xi^{2-\eta}\) determines the anomalous dimension η=1 for the one-dimensional Ising model.
+
+Scaling forms encode the RG's central insight: near critical points, systems exhibit scale invariance manifest as homogeneous functions. The one-dimensional Ising model's essential singularity represents a limiting case where the correlation length diverges faster than any power law, yet scaling forms remain valid with exponential rather than power-law factors. This extreme behavior—infinitely rapid divergence—reflects one dimension's marginality, poised precisely at the boundary between ordered and disordered behavior. The scaling functions g_ξ and g_f contain non-universal details, but their existence and asymptotic properties follow from RG invariance.
+
+**See also:** [[id:3f4d8e9a-5c1b-9f6a-7d3e-5c1b9f6a7d3e][Fixed Point Analysis]] for the RG foundation, [[id:b8c9e5f2-3a4d-7e1f-8b2c-3a4d7e1f8b2c][Correlation Length Extraction]] for exact results, [[id:a2c7e9f1-4b8d-6f3a-9c1e-4b8d6f3a9c1e][Correlation Length Central]] for the unifying role.

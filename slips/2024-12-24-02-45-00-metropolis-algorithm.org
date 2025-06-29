@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID: 2e8d9f3c-7a6b-4f2c-8e9d-7a6b4f2c8e9d
+:CUSTOM_ID: 92/266
+:END:
+#+TITLE: Metropolis Algorithm
+#+FILETAGS: :physics:spof:ch6:mc:metropolis:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Metropolis algorithm implements detailed balance [[id:1e9d8f3c-8a6b-5f2c-9d7e-8a6b5f2c9d7e][Detailed Balance]] through an elegant acceptance criterion that requires only energy differences, not absolute probabilities. For a proposed transition from state α to state β, the algorithm accepts with probability:
+
+\[\Pi_{\alpha\beta} = q_{\alpha\beta} \times \begin{cases}
+1 & \text{for } E_\alpha > E_\beta \\
+\exp[-\beta(E_\beta - E_\alpha)] & \text{for } E_\alpha < E_\beta
+\end{cases}\]
+
+where q_αβ represents the proposal probability for attempting this move.
+
+The algorithm's genius lies in its asymmetry: always accept moves that lower energy, sometimes accept moves that raise energy. This implements the Boltzmann distribution's essential feature—lower energy states are exponentially more probable—without computing partition functions or absolute probabilities.
+
+For symmetric proposals (q_αβ = q_βα), detailed balance is manifest. When E_α < E_β:
+- Forward rate: P_α × q_αβ × exp[-β(E_β - E_α)]
+- Reverse rate: P_β × q_βα × 1
+
+The Boltzmann factor ratio P_β/P_α = exp[-β(E_β - E_α)] ensures these rates balance.
+
+Implementation for Ising models is particularly efficient. Proposing single spin flips σ_i → -σ_i requires calculating only the energy change:
+
+\[\Delta E = 2\sigma_i\sum_{j \in \text{neighbors}} J_{ij}\sigma_j + 2h\sigma_i\]
+
+involving only local information. For short-range interactions, this calculation requires O(1) operations independent of system size.
+
+The algorithm naturally interpolates between different regimes. At high temperature (β→0), acceptance probability approaches unity—the system explores configuration space freely. At low temperature (β→∞), only energy-decreasing moves are accepted—the dynamics becomes steepest descent toward local energy minima. The intermediate regime balances exploration with exploitation, enabling barrier crossing through thermal activation.
+
+The Metropolis algorithm embodies the minimum machinery needed for thermal simulation: local moves, energy differences, and temperature-dependent acceptance. Its universality spans any system where energies are computable—from simple spins to complex molecules, from classical mechanics to quantum path integrals. The algorithm's 1953 introduction at Los Alamos launched computational physics, demonstrating that simple rules can generate complex thermal behavior. Its enduring dominance reflects a deep truth: nature's own thermal dynamics, while more complex in detail, follows the same principle of balancing energetic preference with entropic exploration.
+
+**See also:** [[id:1e9d8f3c-8a6b-5f2c-9d7e-8a6b5f2c9d7e][Detailed Balance]] for theoretical foundation, [[id:1f9d8c3e-9a8b-6f2c-8e9d-9a8b6f2c8e9d][Heat Bath Algorithm]] for alternative, [[id:2f9d8c3e-8a8b-5f2c-9e8d-8a8b5f2c9e8d][Cluster Algorithms]] for advanced methods.

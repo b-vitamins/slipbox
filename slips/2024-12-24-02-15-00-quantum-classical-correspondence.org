@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID: c9d1f4a8-5e3b-8f2a-7d6c-5e3b8f2a7d6c
+:CUSTOM_ID: 92/237
+:END:
+#+TITLE: Quantum-Classical Correspondence
+#+FILETAGS: :physics:spof:ch6:transfer:quantum:classical:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The transfer matrix formalism unveils a profound correspondence between d-dimensional classical statistical mechanics and (d-1)-dimensional quantum mechanics. The classical partition function \(Z = \operatorname{tr}[T^N]\) mirrors the quantum evolution operator \(U(t) = e^{-iHt/\hbar}\), with the transfer matrix playing the role of imaginary-time evolution \(T = e^{-H\tau}\) where the lattice spacing provides the time step τ.
+
+This mapping transforms classical concepts into quantum analogs. The classical ground state (all spins aligned) becomes the quantum ground state (lowest energy eigenstate). Classical thermal fluctuations at temperature T correspond to quantum fluctuations in the ground state of the mapped system. The correlation length ξ in the classical system equals the inverse energy gap in the quantum system: \(\xi = 1/\Delta E\).
+
+Critical points in classical systems map to quantum phase transitions at zero temperature. A classical system at its critical temperature T_c corresponds to a quantum system precisely at its quantum critical point, where the energy gap vanishes and correlations become long-ranged. The dynamical critical exponent z relates classical and quantum scaling: classical criticality in d dimensions exhibits the same exponents as quantum criticality in d-1 dimensions with appropriate z.
+
+The correspondence extends to symmetries: classical global symmetries become quantum symmetries, with order parameters mapping to ground state expectation values. The O(n) models in d dimensions correspond to (d-1)-dimensional quantum rotors, while the classical Ising chain maps to free quantum fermions via Jordan-Wigner transformation.
+
+This quantum-classical duality represents more than mathematical analogy—it reflects the fundamental unity of statistical and quantum mechanics through path integrals. The classical partition function sums over configurations weighted by Boltzmann factors, while the quantum path integral sums over paths weighted by phase factors. Analytical continuation from real to imaginary time interconverts these formulations. This deep connection enables cross-fertilization: quantum techniques solve classical problems (as in conformal field theory approaches to 2D criticality), while classical simulations probe quantum systems through imaginary-time evolution.
+
+**See also:** [[id:d8e9f2a1-6b3c-5f7a-8d4e-6b3c5f7a8d4e][Transfer Matrix Synthesis]] for the general framework, [[id:b8c9e5f2-3a4d-7e1f-8b2c-3a4d7e1f8b2c][Correlation Length Extraction]] for the gap-correlation connection, [[id:4c8e9f3a-1d7b-5e2a-9f3c-1d7b5e2a9f3c][MC Foundation]] for Monte Carlo quantum mappings.

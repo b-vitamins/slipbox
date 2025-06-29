@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID: 8f8d9c3e-8a9b-5f2c-9e8d-8a9b5f2c9e8d
+:CUSTOM_ID: 92/268
+:END:
+#+TITLE: Methods Comparison Matrix
+#+FILETAGS: :physics:spof:ch6:comparison:methods:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The computational methods for lattice systems—transfer matrices, position-space RG, and Monte Carlo—offer complementary approaches with distinct strengths and limitations. Their comparative analysis illuminates when each method excels and why no single approach dominates.
+
+Transfer matrices [[id:8c3d4f5e-9a2b-7f1c-3d4e-9a2b7f1c3d4e][Transfer Matrix Core]] achieve exact solutions in one dimension through algebraic reduction of statistical sums to eigenvalue problems. The method's elegance—partition functions become traces, correlations become matrix elements—provides complete analytical control. Yet this very elegance limits scope: only one-dimensional factorization permits finite-dimensional matrices. Higher dimensions require infinite-dimensional operators, forcing approximations that sacrifice exactness.
+
+Position-space RG attempts systematic coarse-graining, preserving partition functions while reducing degrees of freedom. The one-dimensional decimation [[id:1e8f3d2c-7a9b-4f5c-8d3e-7a9b4f5c8d3e][1D Decimation Success]] succeeds exactly, revealing fixed point structure and scaling forms. Higher dimensions face interaction proliferation [[id:9f4c8e2a-1d7b-6e3f-8a4c-1d7b6e3f8a4c][Interaction Proliferation Principle]], requiring approximations: NvL's controlled perturbation theory [[id:8f9d2c3e-7a4b-1f8c-9e3d-7a4b1f8c9e3d][NvL Philosophy]] yields reasonable exponents through systematic expansion, while Migdal-Kadanoff's bond moving [[id:6f8d9c3e-7a5b-4f2c-8e9d-7a5b4f2c8e9d][MK Bond Moving]] achieves simplicity by drastically reshaping connectivity. Both capture universal features despite uncontrolled approximations.
+
+Monte Carlo simulation [[id:8f9d7c3e-6a5b-4f2c-9e8d-6a5b4f2c9e8d][MC Foundation]] sidesteps analytical difficulties through stochastic sampling. The method's universality—applicable to any computable Hamiltonian—and honesty—providing statistical error estimates—make it the workhorse of modern computational physics. Yet critical slowing down [[id:5f8d9c3e-8a7b-6f2c-9e8d-8a7b6f2c9e8d][MC Averaging]] limits efficiency precisely where phase transitions make physics most interesting. Finite-size effects require careful extrapolation to thermodynamic limits.
+
+The methods' complementarity reflects fundamental trade-offs. Exact methods (transfer matrices in 1D) provide complete understanding but limited scope. Approximate analytical methods (RG schemes) offer physical insight and universal predictions but uncontrolled errors. Numerical methods (Monte Carlo) give controlled accuracy for finite systems but require extrapolation and suffer critical slowing down. 
+
+The diversity of methods mirrors the richness of critical phenomena itself. No single approach captures all aspects because criticality inherently involves all length scales, defying both microscopic and macroscopic descriptions. Transfer matrices excel at quantum-classical connections [[id:5d8f3c2e-9a7b-4f6c-8e3d-9a7b4f6c8e3d][Quantum Classical Correspondence]], RG reveals universality and scaling [[id:5c7d9f3e-2a8b-4f6c-9e3d-2a8b4f6c9e3d][Universality]], while Monte Carlo enables quantitative predictions and discovers unexpected phenomena. The practitioner's art lies in choosing methods that illuminate specific questions: use transfer matrices for exact 1D results, RG for universal features and phase diagrams, Monte Carlo for quantitative accuracy and complex models. The methods' convergence on consistent results—when each is pushed to its limits—validates our understanding of critical phenomena.
+
+**See also:** [[id:9f9d8c3e-8a9b-5f2c-9e8d-8a9b5f2c9e8d][Computational Strategy]] for method selection, [[id:1e8d9f3c-9a9b-6f2c-8e9d-9a9b6f2c8e9d][Approximation Hierarchy]] for error control, [[id:2e9d8f3c-8a9b-5f2c-9e8d-8a9b5f2c9e8d][Critical Phenomena Overview]] for physical context.

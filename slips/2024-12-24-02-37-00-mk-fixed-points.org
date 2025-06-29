@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID: 8f9d7c3e-5a4b-6e2f-9d7c-5a4b6e2f9d7c
+:CUSTOM_ID: 92/258
+:END:
+#+TITLE: MK Fixed Points
+#+FILETAGS: :physics:spof:ch6:rg:mk:fixedpoint:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Migdal-Kadanoff recursion relation [[id:2e9d8f3c-7a5b-6f2c-8e9d-7a5b6f2c8e9d][MK Recursion Relation]] generates the familiar three-fixed-point structure characteristic of systems with phase transitions. The high-temperature fixed point K*=0 remains stable, with linearization yielding:
+
+\[K \ll 1 \Rightarrow K' \approx \frac{1}{2}\ln(1 + 8K^2) \approx 4K^2 \ll K\]
+
+The quadratic approach to zero indicates super-stability, with correlations decaying rapidly under repeated RG iterations.
+
+The low-temperature fixed point K*→∞ exhibits instability:
+
+\[K \gg 1 \Rightarrow K' \approx \frac{1}{2}\ln\left(\frac{e^{4K}}{2}\right) \approx 2K - \frac{\ln 2}{2} \gg K\]
+
+The factor of 2 shows that ordered regions grow under coarse-graining, with the ordered phase flowing toward perfect alignment.
+
+The non-trivial fixed point separating these basins of attraction satisfies:
+
+\[e^{2K*} = \frac{e^{4K*} + e^{-4K*}}{2} = \cosh(4K*)\]
+
+This transcendental equation yields K* ≈ 0.305, compared to the exact value K_c ≈ 0.441 for the square lattice Ising model—a 31% underestimate reflecting the approximation's severity.
+
+Linearization around the critical fixed point gives the thermal eigenvalue:
+
+\[b^{y_t} = \left.\frac{\partial K'}{\partial K}\right|_{K*} = 2\tanh(4K*) \approx 1.6786\]
+
+For b=2 decimation:
+
+\[y_t = \frac{\ln(1.6786)}{\ln(2)} \approx 0.747\]
+
+This yields critical exponents ν = 1/y_t ≈ 1.34 and α = 2-d/y_t ≈ -0.68, compared to exact values ν = 1 and α = 0. The approximation significantly overestimates correlation length divergence while predicting a stronger specific heat singularity than actually occurs.
+
+The MK fixed point analysis reveals how drastic approximations can still capture qualitative physics while failing quantitatively. The method correctly identifies the phase transition's existence and continuous nature but mislocates it and mischaracterizes its strength. The systematic underestimate of K*—making the system appear more disordered than reality—reflects the neglect of indirect interaction paths that would strengthen ordering. This bias toward disorder pervades the approximation: by keeping only direct bonds, the method underestimates the system's connectivity and hence its tendency to order [[id:3e9d7f8c-6a4b-5e2f-8c9d-6a4b5e2f8c9d][Connectivity and Order]].
+
+**See also:** [[id:6f8d9c3e-7a5b-4f2c-8e9d-7a5b4f2c8e9d][MK Bond Moving]] for the approximation scheme, [[id:9e8d7f3c-6a5b-4e2f-8c9d-6a5b4e2f8c9d][MK Dimension Dependence]] for d-dimensional results, [[id:4e9d8f3c-7a5b-6e2f-9c8d-7a5b6e2f9c8d][MK Assessment]] for overall evaluation.

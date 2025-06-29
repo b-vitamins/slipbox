@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID: 8c4d6f2a-1e38-4b9c-a7d5-2f8e1c9b0e3a
+:CUSTOM_ID: 92/222
+:END:
+#+TITLE: Ising Model Foundation
+#+FILETAGS: :physics:spof:ch6:lattice:ising:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Ising model represents the most elementary paradigm in statistical mechanics, stripping interaction to its barest essence. At each lattice site \(i\), a spin \(\sigma_i\) takes values ±1, embodying a binary choice that suffices to capture phase transitions. The Hamiltonian for nearest-neighbor interactions reads
+
+\[\mathcal{H}=\sum_{\langle i, j\rangle} \hat{B}(\sigma_{i}, \sigma_{j})\]
+
+where \(\langle i, j\rangle\) denotes summation over nearest-neighbor pairs, a notation whose meaning becomes transparent only through lattice visualization. Since \(\sigma_i^2 = 1\) identically, the most general two-spin interaction takes the form
+
+\[\hat{B}(\sigma, \sigma')=-\hat{g}-\frac{\hat{h}}{z}(\sigma+\sigma')-J\sigma\sigma'\]
+
+Here \(z\) represents the coordination number—the number of bonds per site—which encodes the lattice geometry into the interaction strength. The partition function for \(N\) spins encompasses \(2^N\) microstates:
+
+\[Z=\sum_{\{\sigma_i\}}\exp\left[K\sum_{\langle i,j\rangle}\sigma_i\sigma_j+h\sum_i\sigma_i+g\right]\]
+
+where the dimensionless couplings \(K = \beta J\), \(h = \beta\hat{h}\), and \(g = z\beta\hat{g}/2\) emerge naturally. The parameter \(g\) merely shifts the energy origin without affecting relative Boltzmann weights or macroscopic properties.
+
+The Ising model's profound simplicity conceals its richness: it exhibits no phase transition in one dimension, undergoes a continuous transition in two dimensions, and serves as the n=1 case of the O(n) hierarchy. Its discrete nature makes it amenable to exact transfer matrix solutions, position-space renormalization, and Monte Carlo simulations. The model's universality ensures that any system with Z₂ symmetry and short-range interactions shares its critical exponents.
+
+**See also:** [[id:f7e2d8b9-4c1a-5e6f-8a9b-2d3c4e5f6a7b][O(n) Model Hierarchy]] for the continuous spin generalization, [[id:8b5c9d1e-2f4a-6e7f-9a8b-3c4d5e6f7a8b][1D Ising Transfer Matrix]] for exact solution methods, [[id:3e6f8a9b-4c5d-7e8f-0a1b-4c5d6e7f8a9b][Model Universality Bridge]] for the connection to real systems.

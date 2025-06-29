@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID: e4d8a1f7-9c2b-6e5f-1a9c-7e2b6e5f1a9c
+:CUSTOM_ID: 92/235
+:END:
+#+TITLE: Heisenberg Transfer Matrix
+#+FILETAGS: :physics:spof:ch6:transfer:matrix:heisenberg:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The transfer matrix formalism extends elegantly to continuous spins, exemplified by the Heisenberg chain with three-component unit vectors \(\vec{s}_i = (s_i^x, s_i^y, s_i^z)\). The Hamiltonian preserves O(3) symmetry:
+
+\[-\beta\mathcal{H} = K\sum_{i=1}^N \vec{s}_i \cdot \vec{s}_{i+1}\]
+
+The partition function sum over spin configurations becomes a functional integral:
+
+\[Z = \underset{s_i}{\operatorname{tr}} e^{K\sum_{i=1}^N \vec{s}_i \cdot \vec{s}_{i+1}} = \underset{s_i}{\operatorname{tr}} e^{K\vec{s}_1 \cdot \vec{s}_2}e^{K\vec{s}_2 \cdot \vec{s}_3}\cdots e^{K\vec{s}_N \cdot \vec{s}_1} = \operatorname{tr}T^N\]
+
+The transfer function \(\langle\vec{s}_1|T|\vec{s}_2\rangle = e^{K\vec{s}_1 \cdot \vec{s}_2}\) operates on the space of functions on the two-sphere.
+
+The crucial insight exploits rotational invariance: eigenfunctions must be spherical harmonics. The dot product exponential admits the expansion
+
+\[e^{K\vec{s}_1 \cdot \vec{s}_2} = \sum_{\ell=0}^{\infty}\sum_{m=-\ell}^{\ell} 4\pi i^{\ell} j_{\ell}(-iK) Y_{\ell m}^*(\vec{s}_1)Y_{\ell m}(\vec{s}_2)\]
+
+where \(j_\ell\) denotes spherical Bessel functions. This immediately identifies eigenvalues \(\lambda_{\ell m}(K) = 4\pi i^{\ell} j_{\ell}(-iK)\), independent of m due to rotational symmetry. The (2ℓ+1)-fold degeneracy reflects the dimension of the ℓ-th angular momentum multiplet.
+
+The partition function sums over all angular momenta:
+
+\[Z = \operatorname{tr}T^N = \sum_{\ell=0}^{\infty}\sum_{m=-\ell}^{\ell}\lambda_{\ell m}^N = \sum_{\ell=0}^{\infty}(2\ell+1)\lambda_\ell^N \approx \lambda_0^N\]
+
+with \(\lambda_0 = 4\pi\sinh K/K\) dominating. The gap to the first excited state \(\lambda_1 = 4\pi[\cosh K/K - \sinh K/K^2]\) determines the correlation length.
+
+The spherical harmonic solution exemplifies how symmetry dictates transfer matrix eigenfunctions. For O(n) models, hyperspherical harmonics on S^{n-1} provide the natural basis, though explicit expressions exist only for specific n. This geometric approach—identifying transfer operators with integral kernels on symmetric spaces—connects statistical mechanics to harmonic analysis. The angular momentum quantum number ℓ labels universality classes of operators, anticipating conformal field theory where scaling dimensions organize critical behavior.
+
+**See also:** [[id:f7e2d8b9-4c1a-5e6f-8a9b-2d3c4e5f6a7b][O(n) Model Hierarchy]] for the model family, [[id:8e7f6d3c-2a9b-5e1f-8c3d-2a9b5e1f8c3d][General Transfer Matrix]] for the framework, [[id:d8e9f2a1-6b3c-5f7a-8d4e-6b3c5f7a8d4e][Transfer Matrix Synthesis]] for broader implications.

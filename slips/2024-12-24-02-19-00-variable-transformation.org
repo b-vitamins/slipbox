@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID: 1f3d8e9a-2c4b-7f5a-8d3e-2c4b7f5a8d3e
+:CUSTOM_ID: 92/241
+:END:
+#+TITLE: Variable Transformation
+#+FILETAGS: :physics:spof:ch6:rg:decimation:variables:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The algebraic solution of RG recursion relations benefits from exponential parametrization, transforming additive bond energies into multiplicative variables:
+
+\[x = e^K, \quad y = e^h, \quad z = e^g\]
+
+This transformation converts the bond renormalization equation into products, with the four possible configurations yielding:
+
+\[\begin{cases}
+R(+,+) = x'y'z' = z^2y(x^2y + x^{-2}y^{-1}) \\
+R(-,-) = x'y'^{-1}z' = z^2y^{-1}(x^{-2}y + x^2y^{-1}) \\
+R(+,-) = x'^{-1}z' = z^2(y + y^{-1}) \\
+R(-,+) = x'z' = z^2(y + y^{-1})
+\end{cases}\]
+
+The equality of the last two equations reflects the statistical equivalence of (+,−) and (−,+) configurations, reducing four equations to three for three unknowns. This reduction is not coincidental but mandated by symmetry: the interaction energy must depend only on whether spins align, not on their specific values.
+
+Solving the system yields:
+
+\[\begin{cases}
+z'^4 = z^8(x^2y + x^{-2}y^{-1})(x^{-2}y + x^2y^{-1})(y + y^{-1})^2 \\
+y'^2 = y^2\frac{x^2y + x^{-2}y^{-1}}{x^{-2}y + x^2y^{-1}} \\
+x'^4 = \frac{(x^2y + x^{-2}y^{-1})(x^{-2}y + x^2y^{-1})}{(y + y^{-1})^2}
+\end{cases}\]
+
+These exact relations encode the complete RG flow in the three-dimensional parameter space. The multiplicative structure in exponential variables contrasts with the additive structure in the original parameters, reflecting the statistical mechanics principle that probabilities multiply while energies add.
+
+The exponential transformation reveals hidden algebraic structure in the RG equations, converting transcendental equations into polynomial systems. This simplification is not merely computational convenience but reflects deeper mathematical structure: the RG acts multiplicatively on partition functions while acting additively on free energies. The transformation also clarifies fixed point analysis—fixed points correspond to algebraic relations among exponential variables rather than transcendental equations in energy variables. This algebraic clarity in one dimension contrasts sharply with higher-dimensional cases where even determining the number of generated couplings becomes non-trivial.
+
+**See also:** [[id:8f3c9e2a-1d6b-7f4a-9e3c-1d6b7f4a9e3c][Bond Renormalization]] for the setup, [[id:2e4a9f6c-3d1b-8e7f-9a3c-3d1b8e7f9a3c][1D Recursion Relations]] for simplified forms, [[id:3f4d8e9a-5c1b-9f6a-7d3e-5c1b9f6a7d3e][Fixed Point Analysis]] for critical behavior.

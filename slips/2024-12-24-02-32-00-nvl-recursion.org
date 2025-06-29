@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID: 5d9f7c3e-8b4a-6e2f-9d5c-8b4a6e2f9d5c
+:CUSTOM_ID: 92/253
+:END:
+#+TITLE: NvL Recursion
+#+FILETAGS: :physics:spof:ch6:rg:nvl:recursion:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The first-order cumulant calculation yields the renormalized Hamiltonian by evaluating inter-cell interactions with intra-cell averages:
+
+\[-\langle\mathcal{U}\rangle_0 = K\sum_{\langle\alpha,\beta\rangle}[\langle\sigma^1_\beta\rangle_0\langle\sigma^2_\alpha\rangle_0 + \langle\sigma^1_\beta\rangle_0\langle\sigma^3_\alpha\rangle_0] = 2K\sum_{\langle\alpha,\beta\rangle}\langle\sigma^i_\alpha\rangle_0\langle\sigma^j_\beta\rangle_0\]
+
+Substituting the single-spin averages [[id:c8f3d7e2-9a5b-4e7c-b3d8-9a5b4e7cb3d8][Cell Flexibility]]:
+
+\[-\langle\mathcal{U}\rangle_0 = 2K\left(\frac{e^{3K} + e^{-K}}{e^{3K} + 3e^{-K}}\right)^2\sum_{\langle\alpha,\beta\rangle}\sigma'_\alpha\sigma'_\beta\]
+
+The renormalized Hamiltonian maintains nearest-neighbor form at first order:
+
+\[-\beta\mathcal{H}'[\sigma'_\alpha] = \frac{N}{3}\ln(e^{3K} + 3e^{-K}) + 2K\left(\frac{e^{3K} + e^{-K}}{e^{3K} + 3e^{-K}}\right)^2\sum_{\langle\alpha,\beta\rangle}\sigma'_\alpha\sigma'_\beta + \mathcal{O}(\mathcal{U}^2)\]
+
+This identifies the recursion relation:
+
+\[K' = 2K\left(\frac{e^{3K} + e^{-K}}{e^{3K} + 3e^{-K}}\right)^2\]
+
+The factor of 2 arises because each renormalized bond corresponds to two original inter-cell bonds. The rational function in parentheses, bounded between 0 and 1, modulates the coupling strength based on intra-cell correlations.
+
+At second order, the cumulant \(\frac{1}{2}(\langle\mathcal{U}^2\rangle_0 - \langle\mathcal{U}\rangle_0^2)\) generates three types of interactions: nearest-neighbor corrections, next-nearest-neighbor couplings, and three-spin terms. While these proliferating interactions [[id:9f4c8e2a-1d7b-6e3f-8a4c-1d7b6e3f8a4c][Interaction Proliferation Principle]] complicate the analysis, their small magnitude near the fixed point justifies truncation. The second-order recursion relations form a three-dimensional flow in coupling space, with improved critical exponent estimates [[id:3d7f8c2e-9b4a-5f8c-7e3d-9b4a5f8c7e3d][Improved Exponents]].
+
+The NvL recursion exemplifies how microscopic averaging generates macroscopic flow. The recursion relation's mathematical form—K multiplied by a bounded positive function—ensures fixed points exist where this function equals 1/2. The appearance of exponentials reflects the Boltzmann weight origins, while the rational structure emerges from discrete state counting. This first-order calculation already captures the essence of criticality: competition between order-promoting interactions and disorder-inducing entropy, mediated by the temperature-dependent weights in the recursion function [[id:3d7f8c2e-9b4a-5f8c-7e3d-9b4a5f8c7e3d][Improved Exponents]].
+
+**See also:** [[id:3c9f8d4e-9f3a-7e2b-8d5c-9f3a7e2b8d5c][Cell Calculations]] for explicit evaluations, [[id:2b8f9c4d-8e3a-6f1b-7d4c-8e3a6f1b7d4c][Cumulant Expansion]] for systematic approach, [[id:8c9f3d7e-2a5b-4f8c-6a4d-2a5b4f8c6a4d][Fixed Point Analysis]] for critical behavior.

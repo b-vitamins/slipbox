@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID: b8c9e5f2-3a4d-7e1f-8b2c-3a4d7e1f8b2c
+:CUSTOM_ID: 92/233
+:END:
+#+TITLE: Correlation Length Extraction
+#+FILETAGS: :physics:spof:ch6:transfer:matrix:correlationlength:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The correlation length emerges from transfer matrix eigenvalues as the characteristic decay scale of spatial correlations. From the asymptotic form
+
+\[\langle\sigma_0\sigma_r\rangle \approx \left(\frac{\lambda_-}{\lambda_+}\right)^r = \exp\left[-r\ln\left(\frac{\lambda_+}{\lambda_-}\right)\right] \equiv e^{-r/\xi}\]
+
+we identify the correlation length
+
+\[\xi = -\frac{1}{\ln(\lambda_-/\lambda_+)} = \frac{1}{\ln(\lambda_+/\lambda_-)}\]
+
+For the Ising model, explicit evaluation yields
+
+\[\xi^{-1} = \ln\left[\frac{e^K\cosh h + \sqrt{e^{2K}\sinh^2 h + e^{-2K}}}{e^K\cosh h - \sqrt{e^{2K}\sinh^2 h + e^{-2K}}}\right]\]
+
+The correlation length remains finite for all finite temperatures, diverging only as \(T \to 0\) where \(\lambda_-/\lambda_+ \to 1\). In the low-temperature limit (\(K \to \infty\)), expansion gives \(\xi \approx (1/2)e^{2K}\), revealing exponential growth with inverse temperature—a hallmark of activated behavior across energy gaps.
+
+The eigenvalue ratio interpretation extends beyond correlations: the spectral gap \(\Delta = \lambda_+ - \lambda_-\) determines relaxation times in dynamic processes, with \(\tau \sim 1/\Delta\). Near critical points in higher dimensions, this gap vanishes as \(\Delta \sim L^{-z}\) where z is the dynamic critical exponent, connecting equilibrium correlations to non-equilibrium relaxation.
+
+The transfer matrix thus unifies static and dynamic properties through its spectrum. The largest eigenvalue determines thermodynamics, the gap controls correlations and dynamics, while higher eigenvalues contribute to short-distance behavior. This spectral decomposition transforms statistical mechanics into an eigenvalue problem, where phase transitions correspond to spectral degeneracies—impossible in one dimension with finite-range interactions but ubiquitous in higher dimensions.
+
+**See also:** [[id:1a3b5c8d-9f2e-6a4b-7c5d-9f2e6a4b7c5d][Spin Correlations via Transfer Matrix]] for the correlation derivation, [[id:e9f2c3a8-1d4b-5e7a-9f2c-3a8d1e4b5e7a][Eigenvalue Dominance]] for thermodynamic implications, [[id:a2c7e9f1-4b8d-6f3a-9c1e-4b8d6f3a9c1e][Correlation Length Central]] for the unifying role of ξ.

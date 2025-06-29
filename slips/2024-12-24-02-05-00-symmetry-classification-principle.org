@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID: 5b7c9e1f-3a8d-2f6b-8c4e-7f2a8d3f6b8c
+:CUSTOM_ID: 92/227
+:END:
+#+TITLE: Symmetry Classification Principle
+#+FILETAGS: :physics:spof:ch6:lattice:symmetry:universality:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Symmetry provides the organizing principle for statistical models, determining both their static universality classes and dynamic behavior. The symmetry group of the Hamiltonian—discrete or continuous, Abelian or non-Abelian—dictates which order parameters can emerge and what phase transitions are possible. This classification transcends specific models: any system with identical symmetry, dimensionality, and interaction range shares the same critical behavior.
+
+For discrete symmetries, the Ising model's Z₂ invariance under global spin flip \(\sigma_i \to -\sigma_i\) represents the minimal non-trivial case. The Potts model's S_q permutation symmetry generates distinct universality classes for each q, though large q drives first-order transitions. Clock models with Z_q symmetry interpolate between Ising and XY behavior as q increases.
+
+Continuous symmetries fundamentally alter the physics through the Mermin-Wagner theorem: continuous symmetries cannot spontaneously break in d≤2 with short-range interactions. The O(n) models exemplify this, with n=2 (XY) supporting quasi-long-range order and topological transitions, while n=3 (Heisenberg) exhibits even richer behavior. The n→∞ limit becomes exactly solvable through saddle-point methods.
+
+Symmetry classification extends beyond equilibrium criticality to dynamic universality classes and quantum phase transitions. The mapping between classical d-dimensional and quantum (d-1)-dimensional systems preserves symmetry content while adding temporal structure. This deep connection between symmetry, dimensionality, and universality provides the theoretical foundation for understanding why simplified lattice models capture real physical phenomena—nature's complexity organizes itself according to these symmetry principles.
+
+**See also:** [[id:8c4d6f2a-1e38-4b9c-a7d5-2f8e1c9b0e3a][Ising Model Foundation]] for Z₂ symmetry, [[id:f7e2d8b9-4c1a-5e6f-8a9b-2d3c4e5f6a7b][O(n) Model Hierarchy]] for continuous symmetries, [[id:2a8f9c4d-5e1b-7a2f-9c8d-4e1b7a2f9c8d][Potts Model]] for discrete multi-state symmetries.

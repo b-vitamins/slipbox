@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID: f7e2d8b9-4c1a-5e6f-8a9b-2d3c4e5f6a7b
+:CUSTOM_ID: 92/223
+:END:
+#+TITLE: O(n) Model Hierarchy
+#+FILETAGS: :physics:spof:ch6:lattice:on:symmetry:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The O(n) model generalizes the Ising paradigm by promoting spins to n-component unit vectors, thereby introducing continuous symmetries that fundamentally alter the physics. Each lattice site carries a vector
+
+\[\vec{S}_i \equiv (S_i^1, S_i^2, \cdots, S_i^n), \quad \text{with} \quad \sum_{\alpha=1}^n(S_i^\alpha)^2=1\]
+
+The constraint to unit magnitude preserves the discreteness of energy scales while allowing continuous orientations. The nearest-neighbor Hamiltonian respecting O(n) symmetry takes the form
+
+\[\mathcal{H}=-J\sum_{\langle i,j\rangle}\vec{S}_i\cdot\vec{S}_j-\hat{\vec{h}}\cdot\sum_i\vec{S}_i\]
+
+Rotational invariance permits only scalar products in the interaction, though the most general form could involve any function \(f(\vec{S}_i \cdot \vec{S}_j)\). The external field \(\hat{\vec{h}}\) breaks the symmetry to a preferred direction, while higher-order symmetry-breaking terms like \(\sum_i(\vec{h}_p \cdot \vec{S}_i)^p\) generate increasingly complex phase diagrams.
+
+The hierarchy encompasses fundamentally different physics: the Ising model (n=1) exhibits discrete symmetry, the XY model (n=2) supports topological defects and Kosterlitz-Thouless transitions, while the Heisenberg model (n=3) describes quantum spins and magnetic materials. For continuous spins, the transfer matrix treatment requires spherical harmonic decomposition, transforming the discrete eigenvalue problem into one on the sphere.
+
+The parameter n acts as a knob tuning between universality classes. While n=1,2,3 correspond to physical realizations, the model admits formal continuation to arbitrary n, enabling the n→0 limit for polymer physics and the n→∞ limit yielding spherical models amenable to exact solution. This continuous interpolation between discrete universality classes exemplifies the power of field-theoretic thinking applied to statistical mechanics.
+
+**See also:** [[id:8c4d6f2a-1e38-4b9c-a7d5-2f8e1c9b0e3a][Ising Model Foundation]] for the n=1 case, [[id:2a8f9c4d-5e1b-7a2f-9c8d-4e1b7a2f9c8d][Potts Model]] for discrete q-state generalizations, [[id:e4d8a1f7-9c2b-6e5f-1a9c-7e2b6e5f1a9c][Heisenberg Transfer Matrix]] for the spherical harmonic approach.

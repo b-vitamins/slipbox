@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID: 7d9f8c3e-4b5a-6e2f-8c4d-4b5a6e2f8c4d
+:CUSTOM_ID: 92/255
+:END:
+#+TITLE: Magnetic Field Treatment
+#+FILETAGS: :physics:spof:ch6:rg:nvl:field:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The magnetic field enters the NvL formalism as an additional perturbation, preserving the systematic structure while breaking the up-down symmetry. The modified Hamiltonian reads:
+
+\[\beta\mathcal{H} = \beta\mathcal{H}_0 + \mathcal{U} - h\sum_i\sigma^i_\alpha\]
+
+Since the critical fixed point occurs at h*=0, the field perturbation admits first-order treatment alongside the inter-cell coupling. The renormalized Hamiltonian to lowest order becomes:
+
+\[\beta\mathcal{H}' = \beta\mathcal{H}_0 + \langle\mathcal{U}\rangle_0 - h\sum_\alpha\langle(\sigma^1_\alpha + \sigma^2_\alpha + \sigma^3_\alpha)\rangle_0\]
+
+Grouping spins by cells and using the single-spin average [[id:c8f3d7e2-9a5b-4e7c-b3d8-9a5b4e7cb3d8][Cell Flexibility]]:
+
+\[\beta\mathcal{H}' = \ln Z_0 + K'\sum_{\langle\alpha,\beta\rangle}\sigma'_\alpha\sigma'_\beta - 3h\sum_\alpha\left(\frac{e^{3K} + e^{-K}}{e^{3K} + 3e^{-K}}\right)\sigma'_\alpha\]
+
+This identifies the field recursion relation:
+
+\[h' = 3h\left(\frac{e^{3K} + e^{-K}}{e^{3K} + 3e^{-K}}\right)\]
+
+The factor of 3 reflects the three original spins contributing to each renormalized spin. Near the critical fixed point [[id:3d7f8c2e-9b4a-5f8c-7e3d-9b4a5f8c7e3d][Improved Exponents]]:
+
+\[b^{y_h} = \left.\frac{\partial h'}{\partial h}\right|_{K*} = 3\frac{e^{4K*}+1}{e^{4K*}+3} = \frac{3}{\sqrt{2}}\]
+
+The magnetic eigenvalue becomes:
+
+\[y_h = \frac{\ln(3/\sqrt{2})}{\ln(\sqrt{3})} \approx 1.37\]
+
+This underestimates the exact value y_h = 1.875, yielding magnetic exponents through scaling relations. The discrepancy exceeds that for thermal exponents, suggesting that field effects are more sensitive to approximations than temperature effects.
+
+The field recursion's linear form h' ∝ h confirms that infinitesimal fields grow under RG, making the critical point unstable in the field direction. This relevant perturbation drives the system away from criticality toward either ordered or disordered phases depending on field sign.
+
+Magnetic field treatment reveals the NvL method's systematic nature: additional perturbations enter naturally without restructuring the formalism. The underestimate of y_h compared to y_t suggests that field fluctuations are poorly captured by mean-field-like cell averages. This deficiency makes physical sense—fields couple to collective magnetization modes extending beyond single cells, while temperature effects are more local. The linear field recursion also demonstrates RG's respect for symmetry: at zero field, no field is generated, preserving the Z₂ invariance essential for Ising criticality [[id:8e9f7d3c-2b4a-5f8c-9e7d-2b4a5f8c9e7d][Field Symmetry]].
+
+**See also:** [[id:8c9f3d7e-2a5b-4f8c-6a4d-2a5b4f8c6a4d][NvL Fixed Points]] for critical behavior, [[id:9d8f7c3e-5b4a-6f2c-7e8d-5b4a6f2c7e8d][Magnetic Scaling]] for exponent relations, [[id:3d7f8c2e-9b4a-5f8c-7e3d-9b4a5f8c7e3d][Improved Exponents]] for corrections.

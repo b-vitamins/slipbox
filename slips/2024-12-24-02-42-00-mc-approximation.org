@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID: 1f9d8c3e-8a6b-5f2c-9e7d-8a6b5f2c9e7d
+:CUSTOM_ID: 92/263
+:END:
+#+TITLE: MC Approximation
+#+FILETAGS: :physics:spof:ch6:mc:approximation:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Monte Carlo approximation replaces infinite configuration sums with finite sample averages, converting exact statistical mechanics into controlled numerical experiments:
+
+\[\langle\mathcal{O}\rangle \approx \bar{\mathcal{O}} = \frac{1}{M}\sum_{\alpha=1}^M \mathcal{O}(\underline{s}_\alpha)\]
+
+The configurations {s_α} must be drawn from the Boltzmann distribution P(s) [[id:3f8d9c3e-9a6b-5f2c-8d7e-9a6b5f2c8d7e][Boltzmann Sampling]], a non-trivial requirement achieved through Markov chain evolution [[id:9f8d7c3e-7a6b-5f2c-8e9d-7a6b5f2c8e9d][Markov Chain Dynamics]].
+
+The approximation quality depends on three factors: sample size M, correlation between successive configurations, and proximity to criticality. For independent samples, the central limit theorem yields error estimates:
+
+\[\sigma_{\bar{\mathcal{O}}} = \frac{\sigma_\mathcal{O}}{\sqrt{M}}\]
+
+where σ_O represents the thermal fluctuation of the observable. Near critical points, these fluctuations diverge, requiring larger samples for fixed accuracy.
+
+Successive configurations in Markov chains exhibit strong correlations, reducing the effective number of independent samples. If configurations are correlated over time τ (the autocorrelation time), then M samples provide only M/τ independent measurements. The statistical error becomes:
+
+\[\sigma_{\bar{\mathcal{O}}} \approx \sigma_\mathcal{O}\sqrt{\frac{2\tau}{M}}\]
+
+Critical slowing down near phase transitions makes τ grow as ξ^z where ξ is the correlation length and z the dynamical critical exponent. For local update algorithms, z≈2, causing severe sampling difficulties at criticality.
+
+Finite-size effects provide another error source. Simulations necessarily study finite systems, while thermodynamic behavior emerges only as N→∞. Finite-size scaling theory relates results at different N, enabling extrapolation to infinite systems. The art lies in choosing N large enough to exhibit scaling behavior yet small enough for computational tractability.
+
+The Monte Carlo approximation transforms theoretical physics into experimental science conducted in silico. Like real experiments, simulations yield statistical errors requiring careful analysis. Unlike real experiments, we control all parameters exactly, isolate specific effects, and access microscopic details impossible to measure physically. This computational experimentation bridges theory and experiment: testing theoretical predictions while discovering unexpected phenomena that inspire new theory. The method's statistical nature—embracing rather than eliminating randomness—reflects a deep truth: thermal systems are inherently statistical, making stochastic simulation more natural than deterministic calculation [[id:4f9d8c3e-9a7b-6f2c-8d9e-9a7b6f2c8d9e][Statistical Nature]].
+
+**See also:** [[id:8f9d7c3e-6a5b-4f2c-9e8d-6a5b4f2c9e8d][MC Foundation]] for theoretical basis, [[id:5f8d9c3e-8a7b-6f2c-9e8d-8a7b6f2c9e8d][MC Averaging]] for practical implementation, [[id:6f9d8c3e-9a7b-5f2c-8e9d-9a7b5f2c8e9d][Critical Slowing Down]] for sampling challenges.

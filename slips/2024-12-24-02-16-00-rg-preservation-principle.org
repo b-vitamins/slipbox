@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID: c5a8f2e9-6d1b-4e7a-9c2f-8b3e6d1b4e7a
+:CUSTOM_ID: 92/238
+:END:
+#+TITLE: RG Preservation Principle
+#+FILETAGS: :physics:spof:ch6:rg:decimation:preservation:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The renormalization group achieves scale transformation while preserving the partition function, embodying the fundamental principle that physics remains invariant under systematic coarse-graining. For a system with N spins reduced to N/b degrees of freedom, this preservation requires
+
+\[Z = \sum_{\{\sigma_i \mid i=1,\cdots,N\}} e^{-\beta\mathcal{H}[\sigma_i]} = \sum_{\{\sigma'_i \mid i'=1,\cdots,N/b\}} e^{-\beta\mathcal{H}'[\sigma'_i]}\]
+
+The mapping \(\{\sigma_i\} \mapsto \{\sigma'_i\}\) admits infinite realizations—any transformation preserving Z suffices. The art lies in choosing mappings that maintain computational tractability while capturing essential physics. For Ising spins with b=2, the decimation choice \(\sigma'_i = \sigma_{2i-1}\) eliminates even-numbered spins without introducing ambiguity, since the retained spins already take values ±1.
+
+The renormalized Hamiltonian \(\mathcal{H}'\) emerges from tracing over decimated degrees of freedom. This partial trace generates new interactions: decimating a spin coupled to four neighbors produces four-spin couplings among those neighbors. The proliferation of interactions under repeated RG transformations represents the central challenge in implementing exact renormalization beyond one dimension.
+
+The preservation principle extends beyond partition functions to correlation functions, provided we account for rescaling. A correlation function \(G(r)\) at scale r becomes \(G'(r/b)\) after coarse-graining by factor b, reflecting the fundamental scale invariance at criticality. This rescaling property enables extraction of critical exponents from RG flows.
+
+The partition function preservation principle encodes a deep truth: thermodynamics cares only about statistical weights, not microscopic details. By maintaining Z while systematically removing degrees of freedom, RG reveals which microscopic features determine macroscopic behavior and which constitute irrelevant noise. This filtering process—preserving essential physics while discarding microscopic complications—explains both the method's power and its difficulty. The exact preservation achieved here in one dimension becomes approximate in higher dimensions, yet universality ensures that even approximate schemes capture correct critical behavior.
+
+**See also:** [[id:f2d9a8e1-7c3b-5e4f-8a2d-7c3b5e4f8a2d][Decimation Procedure]] for the implementation, [[id:3e6f8a9b-4c5d-7e8f-0a1b-4c5d6e7f8a9b][Model Universality Bridge]] for universality principles, [[id:9f4c8e2a-1d7b-6e3f-8a4c-1d7b6e3f8a4c][Interaction Proliferation Principle]] for higher-dimensional challenges.

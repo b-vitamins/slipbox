@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID: 3c9f8d4e-9f3a-7e2b-8d5c-9f3a7e2b8d5c
+:CUSTOM_ID: 92/252
+:END:
+#+TITLE: Cell Calculations
+#+FILETAGS: :physics:spof:ch6:rg:nvl:calculations:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The NvL method's computational core involves evaluating partition functions and expectation values for isolated three-spin cells. The eight possible spin configurations separate into two classes based on their majority-rule renormalization:
+
+| \(\sigma^1\) | \(\sigma^2\) | \(\sigma^3\) | \(\sigma'\) | Energy |
+|--------------+--------------+--------------+-------------+--------|
+| +            | +            | +            | +           | -3K    |
+| +            | +            | -            | +           | -K     |
+| +            | -            | +            | +           | -K     |
+| -            | +            | +            | +           | -K     |
+| -            | -            | -            | -           | -3K    |
+| -            | -            | +            | -           | -K     |
+| -            | +            | -            | -           | -K     |
+| +            | -            | -            | -           | -K     |
+
+The restricted partition function for cells with fixed renormalized spin becomes:
+
+\[Z_0[\sigma'_\alpha] = \prod_\alpha\left[\sum_{\{\sigma^i_\alpha \mapsto \sigma'_\alpha\}} e^{K(\sigma^1_\alpha\sigma^2_\alpha + \sigma^2_\alpha\sigma^3_\alpha + \sigma^3_\alpha\sigma^1_\alpha)}\right] = (e^{3K} + 3e^{-K})^{N/3}\]
+
+Remarkably, this quantity is independent of the renormalized configuration \(\{\sigma'_\alpha\}\), contributing only an additive constant to the free energy. This independence reflects the symmetry between up and down states in zero field.
+
+The restricted average of individual spins within a cell evaluates to:
+
+\[\langle\sigma^i_\alpha\rangle_0 = \begin{cases}
+\frac{+e^{3K} - e^{-K} + 2e^{-K}}{e^{3K} + 3e^{-K}} & \text{for } \sigma'_\alpha = +1 \\
+\frac{-e^{3K} + e^{-K} - 2e^{-K}}{e^{3K} + 3e^{-K}} & \text{for } \sigma'_\alpha = -1
+\end{cases} = \frac{e^{3K} + e^{-K}}{e^{3K} + 3e^{-K}}\sigma'_\alpha\]
+
+The final form's linearity in \(\sigma'_\alpha\) proves crucial for maintaining the Ising model's structure under renormalization. All three spins in a cell share identical averages due to the cell Hamiltonian's permutation symmetry.
+
+These cell calculations exemplify statistical mechanics at its most elementary: enumerate states, compute Boltzmann weights, evaluate thermal averages. Yet from these simple computations emerge the recursion relations governing critical behavior. The restricted ensemble—fixing macroscopic variables while averaging microscopic ones—mirrors the grand canonical ensemble's treatment of particle number. The independence of Z₀ from renormalized spins represents a conspiracy of energy and entropy: configurations compatible with either renormalized value have identical statistical weights, a property specific to the symmetric three-spin cell that would fail for even-sized blocks [[id:4d8f9c3e-7a2b-5f1c-8e4d-7a2b5f1c8e4d][Convergence Properties]].
+
+**See also:** [[id:8f9d2c3e-7a4b-1f8c-9e3d-7a4b1f8c9e3d][NvL Philosophy]] for the conceptual framework, [[id:1a9f8d3c-7e2b-5f4a-9c3d-7e2b5f4a9c3d][Perturbative Split]] for Hamiltonian decomposition, [[id:5d9f7c3e-8b4a-6e2f-9d5c-8b4a6e2f9d5c][Recursion Derivation]] for complete calculation.

@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID: 9f4c8e2a-1d7b-6e3f-8a4c-1d7b6e3f8a4c
+:CUSTOM_ID: 92/248
+:END:
+#+TITLE: Interaction Proliferation Principle
+#+FILETAGS: :physics:spof:ch6:rg:proliferation:principle:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The proliferation of interactions under real-space RG in dimensions d>1 reflects a fundamental property of spatial networks: removing nodes creates connections among all former neighbors. A decimated spin on a d-dimensional hypercubic lattice couples to 2d neighbors, generating (2d choose 2) = d(2d-1) two-body interactions plus higher-order terms. This combinatorial explosion precludes exact treatment beyond one dimension.
+
+The generated interactions possess hierarchical structure. Primary couplings connect originally adjacent spins, secondary couplings link next-nearest neighbors, while n-body terms for n≤2d emerge at each decimation step. The interaction range doubles with each RG iteration: nearest-neighbor becomes next-nearest, next-nearest becomes fourth-nearest, ultimately generating long-range forces from purely local origins.
+
+Three strategies address this proliferation. Truncation simply discards couplings deemed irrelevant, maintaining a finite parameter space at the cost of uncontrolled approximation. Variational methods optimize the retained couplings to best approximate the full RG transformation. Field-theoretic approaches work in momentum space where interactions remain local, though at the price of dealing with continuous fields rather than discrete spins.
+
+The proliferation principle explains why mean-field theory improves with dimension. In high dimensions, each spin couples to many neighbors, making the mean-field replacement of fluctuations by averages increasingly accurate. The upper critical dimension d_c represents where mean-field becomes exact—beyond this dimension, the proliferating interactions become truly irrelevant rather than merely approximately so.
+
+Interaction proliferation embodies the central tension in renormalization group theory: the very process of coarse-graining that reveals universality also generates complexity that obscures it. The resolution lies in recognizing that most generated couplings are irrelevant—they decay under further RG iterations rather than growing to influence critical behavior. This separation of relevant from irrelevant, not the prevention of proliferation itself, enables successful RG schemes. The art lies in identifying which couplings matter before performing the full calculation, using symmetry, dimensionality, and physical intuition as guides.
+
+**See also:** [[id:7f8c9d1e-6a4b-2f3c-6a4b2f3c6a4b][2D Decimation Complication]] for the specific example, [[id:8f9d2c3e-7a4b-1f8c-9e3d-7a4b1f8c9e3d][NvL Philosophy]] for systematic treatment, [[id:9c8e3f7a-2d5b-4f9c-1a8e-2d5b4f9c1a8e][Dimension Dependence Master]] for d-dependence.

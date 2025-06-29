@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID: 9f8d7c3e-7a6b-5f2c-8e9d-7a6b5f2c8e9d
+:CUSTOM_ID: 92/264
+:END:
+#+TITLE: Markov Process
+#+FILETAGS: :physics:spof:ch6:mc:markov:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Markov processes generate Boltzmann-distributed configurations through memoryless stochastic dynamics. The transition probability Π_αβ from configuration α to configuration β depends only on the current state, not the history—the Markov property. These probabilities form a matrix constrained by conservation:
+
+\[\Pi_{\alpha\alpha} = 1 - \sum_{\beta \neq \alpha}\Pi_{\alpha\beta}\]
+
+ensuring total probability remains unity.
+
+Starting from initial distribution P(0), the probability vector evolves through matrix multiplication:
+
+\[P_\alpha(1) = \sum_{\beta=1}^{q^N} P_\beta(0)\Pi_{\beta\alpha}\]
+
+In vector notation:
+
+\[\vec{P}(1) = \vec{P}(0) \cdot \Pi\]
+
+After t steps:
+
+\[\vec{P}(t) = \vec{P}(0) \cdot \Pi^t\]
+
+The long-time limit yields the steady state satisfying:
+
+\[\vec{P}^* = \vec{P}^* \cdot \Pi\]
+
+This identifies P* as the left eigenvector of Π with eigenvalue 1. The Perron-Frobenius theorem guarantees uniqueness: for irreducible, aperiodic Markov chains with finite state spaces, a unique stationary distribution exists independent of initial conditions.
+
+Irreducibility requires that any configuration be reachable from any other through finite transition sequences—the Markov chain must explore the entire configuration space. Aperiodicity prevents cyclic behavior where certain states are accessible only at specific time intervals. Together, these conditions ensure ergodicity: time averages equal ensemble averages.
+
+The convergence rate to steady state depends on the spectral gap—the difference between the largest eigenvalue (unity) and the second largest. This gap determines the correlation time τ [[id:7f9d8c3e-8a7b-5f2c-9e8d-8a7b5f2c9e8d][Correlation Time]], with slower convergence near critical points where the gap vanishes.
+
+Markov processes embody the arrow of time in statistical mechanics. While microscopic dynamics are reversible, the Markov chain introduces irreversibility through stochastic transitions, driving systems toward thermal equilibrium. This artificial dynamics need not—and typically does not—correspond to actual physical dynamics. We're free to design transition rules for computational efficiency rather than physical realism. The only constraint is reaching the correct equilibrium distribution, guaranteed by detailed balance [[id:4f8d9c3e-8a5b-6f2c-9d7e-8a5b6f2c9d7e][Model Space Exploration]]. This freedom to invent dynamics purely for sampling represents a conceptual liberation: we simulate not nature's actual dynamics but any dynamics yielding nature's equilibrium.
+
+**See also:** [[id:1e9d8f3c-8a6b-5f2c-9d7e-8a6b5f2c9d7e][Detailed Balance]] for equilibrium conditions, [[id:2e8d9f3c-7a6b-4f2c-8e9d-7a6b4f2c8e9d][Metropolis Algorithm]] for implementation, [[id:8f8d9c3e-9a7b-6f2c-8e9d-9a7b6f2c8e9d][Ergodicity]] for theoretical foundations.

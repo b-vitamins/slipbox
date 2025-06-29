@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID: 6c8d9f2e-4b9f-3a7c-5d8f-9b3a7c5d8f9b
+:CUSTOM_ID: 92/228
+:END:
+#+TITLE: Order Parameters and Broken Symmetry
+#+FILETAGS: :physics:spof:ch6:lattice:orderparameter:symmetrybreaking:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Order parameters quantify spontaneous symmetry breaking, vanishing in disordered phases while acquiring non-zero values in ordered states. For the Ising model, the magnetization \(m = \langle\sigma_i\rangle\) distinguishes up from down states, breaking Z₂ symmetry. The O(n) models employ vector order parameters \(\vec{m} = \langle\vec{S}_i\rangle\), whose direction breaks rotational symmetry while preserving magnitude.
+
+The Potts model requires a more subtle construction: the order parameter must distinguish which of q states dominates. One choice uses \(m_\alpha = \langle\delta_{S_i,\alpha}\rangle - 1/q\), ensuring \(\sum_\alpha m_\alpha = 0\) by symmetry. Alternatively, complex representations on the vertices of a regular (q-1)-simplex provide geometric insight into the symmetry breaking.
+
+Near criticality, order parameters exhibit universal scaling: \(m \sim |T-T_c|^\beta\) for \(T < T_c\), with the exponent β depending only on universality class. Fluctuations of the order parameter define correlation functions \(G(r) = \langle m(r)m(0)\rangle - \langle m\rangle^2\), whose decay length ξ diverges at criticality. This divergence signals the system's inability to distinguish ordered from disordered phases.
+
+Order parameters bridge microscopic and macroscopic descriptions through coarse-graining: local spin averages over correlation volumes yield smooth fields amenable to continuum description. This connection justifies Landau-Ginzburg theory while explaining its limitations—the assumption of analyticity fails at criticality where fluctuations span all scales. The renormalization group reconciles these perspectives by showing how order parameter fluctuations flow under scale transformations, generating universal critical behavior from symmetry principles alone.
+
+**See also:** [[id:5b7c9e1f-3a8d-2f6b-8c4e-7f2a8d3f6b8c][Symmetry Classification Principle]] for the symmetry foundation, [[id:3e6f8a9b-4c5d-7e8f-0a1b-4c5d6e7f8a9b][Model Universality Bridge]] for universality classes, [[id:7d9e1f2a-8b3c-4f5d-9e1a-8b3c4f5d9e1a][Field Effects and Symmetry Breaking]] for explicit breaking.

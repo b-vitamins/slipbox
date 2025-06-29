@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID: 5f6b9e8c-4d3a-2f1b-9e6a-4d3a2f1b9e6a
+:CUSTOM_ID: 92/245
+:END:
+#+TITLE: Alternative RG via Transfer Matrix
+#+FILETAGS: :physics:spof:ch6:rg:transfer:matrix:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The transfer matrix provides an alternative route to RG transformations, connecting the algebraic eigenvalue structure to geometric coarse-graining. For decimation by factor b, the partition function identity \(Z = \operatorname{tr}[(T^b)^{N/b}]\) suggests defining the renormalized transfer matrix through:
+
+\[e^{B'(s'_i,s'_j)} \equiv \langle s'_i|T'|s'_j\rangle = \langle s'_i|T^b|s'_j\rangle\]
+
+This construction ensures partition function preservation while maintaining the transfer matrix structure. The b-fold product T^b incorporates the statistical weight of b consecutive bonds, naturally implementing the coarse-graining scale.
+
+For the Ising chain, explicit computation yields the same recursion relations as the decimation approach, confirming the methods' equivalence. The transfer matrix formulation extends more naturally to continuous spins where decimation becomes ambiguous—which values represent coarse-grained continuous variables? The eigenfunction expansion provides a systematic answer: project onto lower angular momentum sectors.
+
+The power of this approach lies in its algebraic nature. Fixed points correspond to transfer matrices satisfying \(T' = T\) up to normalization, while stability analysis examines how eigenvalue ratios transform. The correlation length formula \(\xi = -1/\ln(\lambda_2/\lambda_1)\) immediately yields the RG eigenvalue through \(\xi' = \xi/b\).
+
+This method also clarifies why one-dimensional systems lack finite-temperature transitions: the RG transformation T→T^b preserves the positivity and finite-dimensionality that Frobenius' theorem requires for non-degenerate largest eigenvalues. No amount of coarse-graining can generate the degeneracy necessary for phase transitions.
+
+The transfer matrix RG reveals how different formulations of statistical mechanics—configuration sums versus eigenvalue problems—yield identical physics through different mathematics. This equivalence is not coincidental but reflects the underlying unity: both methods implement the same coarse-graining transformation in different bases. The transfer matrix approach excels for exact calculations while decimation provides clearer physical intuition. Their agreement in one dimension, where both are exact, validates approximate schemes in higher dimensions where only decimation-type approaches remain tractable.
+
+**See also:** [[id:8b5c9d1e-2f4a-6e7f-9a8b-3c4d5e6f7a8b][1D Ising Transfer Matrix]] for the foundation, [[id:f2d9a8e1-7c3b-5e4f-8a2d-7c3b5e4f8a2d][Decimation Procedure]] for the geometric approach, [[id:6f7c9e8d-5a3b-4f1c-8e6a-5a3b4f1c8e6a][One-Dimensional RG Synthesis]] for unified perspective.

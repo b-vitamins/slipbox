@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID: 5e8d9f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d
+:CUSTOM_ID: 92/274
+:END:
+#+TITLE: RG Flow Diagrams
+#+FILETAGS: :physics:spof:ch6:rg:flow:figure:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+*Reference: Figures 6.4 and 6.5 - Fixed points and RG flows for coupling K in one dimension*
+
+The flow diagram provides a phase portrait of the renormalization group transformation, revealing global system behavior through local flow structure. For the one-dimensional Ising model, the K-axis flow exhibits pristine simplicity:
+
+**Flow structure on K-axis (h=0)**:
+- K=0 (T=∞): Stable fixed point (sink) ← ← ← ←
+- 0 < K < ∞: Monotonic flow toward K=0
+- K=∞ (T=0): Unstable fixed point (source) → → → →
+
+Trajectories satisfy dK/dℓ = K'(K) - K < 0 for all finite K, confirming monotonic approach to disorder. The absence of intermediate fixed points precludes phase transitions—any finite coupling eventually renormalizes to zero under repeated coarse-graining.
+
+**Two-dimensional flow in (K,h) space reveals richer structure**:
+- Line of fixed points: K=0 with arbitrary h (stable manifold)
+- Single unstable point: K=∞, h=0 (perfect order)
+- Flow lines: Curves emanating from (∞,0) terminating on (0,h*)
+
+The field h represents a relevant perturbation—infinitesimal fields grow under RG flow, driving systems away from criticality. The flow's topology shows that h=0 is the only subspace where long-range correlations can develop, elsewhere field effects dominate at large scales.
+
+Linearization near fixed points yields eigenvalues and eigendirections:
+- At (K=0, h=0): Both directions stable (disorder wins)
+- At (K=∞, h=0): K-direction unstable (y_K=1/2), h-direction unstable (y_h=1)
+
+Flow diagrams transform abstract recursion relations [[id:4d8f3c2e-7a9b-5f2c-8e3d-7a9b5f2c8e3d][Recursion Relations]] into geometric intuition. Stable fixed points are attractors where physics becomes scale-invariant; unstable fixed points are organizing centers separating different phases. The one-dimensional flow's simplicity—no closed orbits, no chaotic regions, no intermediate fixed points—reflects the absence of competing ordered phases. This visual representation makes clear why no phase transition occurs: every finite-temperature system flows inexorably toward disorder. The method extends to any parameter space, with fixed points corresponding to scale-invariant theories and flows revealing how microscopic parameters determine macroscopic behavior.
+
+**See also:** [[id:5d8f4c3e-7a9b-6f2c-8e3d-7a9b6f2c8e3d][Fixed Point Structure]] for mathematical analysis, [[id:6e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Phase Portraits]] for visualization techniques, [[id:7e8d9f3c-9a9b-5f2c-8e8d-9a9b5f2c8e8d][Flow Topology]] for classification.

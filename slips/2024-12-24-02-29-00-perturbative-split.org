@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID: 1a9f8d3c-7e2b-5f4a-9c3d-7e2b5f4a9c3d
+:CUSTOM_ID: 92/250
+:END:
+#+TITLE: Perturbative Split
+#+FILETAGS: :physics:spof:ch6:rg:nvl:perturbation:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The NvL method's success hinges on judiciously partitioning the Hamiltonian to maximize the exactly solvable portion while minimizing perturbative corrections. The intra-cell Hamiltonian
+
+\[-\beta\mathcal{H}_0 = K\sum_\alpha(\sigma^1_\alpha\sigma^2_\alpha + \sigma^2_\alpha\sigma^3_\alpha + \sigma^3_\alpha\sigma^1_\alpha)\]
+
+treats each triangular cell as an isolated three-spin cluster. This choice exploits the triangular lattice's natural decomposition into up-pointing triangles, with every bond belonging to exactly one cell in the unperturbed Hamiltonian.
+
+The inter-cell perturbation
+
+\[-\mathcal{U} = K\sum_{\langle\alpha,\beta\rangle}(\sigma^{(1)}_\beta\sigma^{(2)}_\alpha + \sigma^{(1)}_\beta\sigma^{(3)}_\alpha)\]
+
+couples adjacent cells through precisely two bonds. The notation indicates that spin 1 from cell β connects to spins 2 and 3 from cell α, with specific indices determined by relative cell orientations. This systematic accounting ensures every original bond appears exactly once in \(\beta\mathcal{H}_0 + \mathcal{U}\).
+
+The perturbative expansion's validity requires \(\mathcal{U} \ll \beta\mathcal{H}_0\) in some sense. Near the critical point where correlations extend across many cells, this assumption becomes questionable. However, the expansion remains useful because: (1) Only the first few terms are needed to capture universal behavior, (2) The perturbation couples cells through a fraction of possible bonds, maintaining relative weakness, (3) Higher-order terms, while present, prove increasingly irrelevant under RG flow.
+
+The decomposition respects lattice symmetries—rotations by 120° and reflections—ensuring the renormalized Hamiltonian preserves the original model's symmetry group [[id:a2f7c9d3-8b4e-5c1a-4f8b-2e5c1a4f8b2e][Group Invariance]]. This symmetry preservation is crucial for obtaining the correct universality class, as symmetry-breaking approximations could artificially shift critical behavior.
+
+The perturbative split exemplifies effective theory construction: identify the dominant physics (intra-cell correlations), treat it exactly, then incorporate corrections systematically. The arbitrariness in choosing the split—one could assign bonds differently between \(\mathcal{H}_0\) and \(\mathcal{U}\)—represents a strength rather than weakness. Different decompositions provide independent approximations whose agreement validates the results. The method's extensibility to other lattices and models [[id:c8f3d7e2-9a5b-4e7c-b3d8-9a5b4e7cb3d8][Cell Flexibility]] demonstrates that the principle, not its specific implementation, carries physical content.
+
+**See also:** [[id:8f9d2c3e-7a4b-1f8c-9e3d-7a4b1f8c9e3d][NvL Philosophy]] for the overall approach, [[id:2b8f9c4d-8e3a-6f1b-7d4c-8e3a6f1b7d4c][Cumulant Expansion]] for systematic corrections, [[id:3c9f8d4e-9f3a-7e2b-8d5c-9f3a7e2b8d5c][Cell Calculations]] for explicit evaluation.

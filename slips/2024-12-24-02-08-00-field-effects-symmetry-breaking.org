@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       dda64d97-9229-4ec2-bb7d-87699084a4b1
+:CUSTOM_ID: 92/229
+:END:
+#+TITLE: Field Effects and Symmetry Breaking
+#+FILETAGS: :field:symmetry:breaking:magnetic:scaling:rg:
+
+External fields explicitly break the symmetries that spontaneous ordering would otherwise preserve, fundamentally altering phase transition character. In the Ising model, the magnetic field term hΣᵢσᵢ favors one spin orientation, eliminating the phase transition by removing the degeneracy between up and down states. The free energy becomes analytic for all temperatures when h ≠ 0, with the transition surviving only along the h=0 line.
+
+For O(n) models, the field h⃗ · ΣᵢS⃗ᵢ reduces O(n) symmetry to O(n-1) rotations perpendicular to h⃗. This dimensional reduction profoundly affects critical behavior: the n=2 XY model in a field exhibits Ising-like criticality, while the n=3 Heisenberg model reduces to XY behavior. The Potts model field hΣᵢδₛᵢ,₁ breaks Sₛ permutation symmetry completely, selecting a unique ground state.
+
+Fields enter renormalization group analysis as relevant perturbations with scaling dimension yₕ > 0. Under RG flow, infinitesimal fields grow, driving systems away from critical fixed points toward ordered or disordered sinks. The magnetic scaling exponent yₕ determines how order parameters respond to fields: m ~ h¹/δ at criticality, with δ related to other exponents through scaling relations.
+
+Fields provide experimental control over phase transitions while revealing theoretical structure. The analytical continuation to imaginary fields connects statistical mechanics to quantum field theory, where symmetry breaking drives mass generation. The response to infinitesimal fields—encoded in susceptibilities—diverges at criticality, signaling long-range correlations. This divergence represents the system's maximal sensitivity when poised between ordered and disordered phases, making critical points ideal for sensing applications despite their theoretical complexity.
+
+** See also:
+- [[id:c28e2051-0186-4a16-adbf-c255ad7d013a][Ising Model Foundation]]
+- [[id:1d9f52e1-b17a-47c0-a181-d0de520afdbe][O(n) Model Hierarchy]]
+- [[id:e0455732-a000-4676-a471-618304d77efb][Potts Model]]
+- [[id:2b21c13a-9139-4b75-8fde-c5387276d92f][RG Analysis]]
+- [[id:47a23be8-23da-43d0-b491-03181ccf08d8][Correlation Functions]]

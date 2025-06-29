@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       a8bd3dfa-99d5-4f96-a14f-89797ce519c7
+:CUSTOM_ID: 92/226
+:END:
+#+TITLE: Spin-s Models
+#+FILETAGS: :lattice:spins:universality:beg:
+
+Spin-s models interpolate between discrete and continuous variables by allowing each site to assume 2s+1 values: s_i ∈ {-s, -s+1, ..., +s}. The interaction Hamiltonian admits polynomial coupling of arbitrary order:
+
+H = Σ_{⟨i,j⟩} (J₁ sᵢsⱼ + J₂(sᵢsⱼ)² + ... + J₂ₛ(sᵢsⱼ)²ˢ) - h Σᵢ sᵢ
+
+The Ising model corresponds to s=1/2, while s=1 yields the Blume-Emery-Griffiths (BEG) model describing mixtures of non-magnetic (s=0) and magnetic (s=±1) elements. Higher powers of interaction become possible as s increases, generating rich phase diagrams with tricritical points where continuous and discontinuous transition lines meet.
+
+Despite the enlarged local Hilbert space and complex interactions, the ordered phase preserves only Z₂ symmetry—distinguishing positive from negative magnetization. Consequently, all spin-s models belong to the Ising universality class, their critical exponents independent of s. The additional states and interaction terms constitute irrelevant perturbations under renormalization group flow.
+
+The spin-s hierarchy illuminates a subtle aspect of universality: enlarged microscopic freedom need not generate new universality classes. The BEG model's tricritical point, where three phases meet, represents different physics from the critical point, yet the critical behavior itself remains Ising-like. This exemplifies how symmetry, not complexity, determines universality—a principle that extends to the distinction between Ising, O(n), and Potts models. The proliferation of coupling constants J₁, J₂, ..., J₂ₛ merely provides additional knobs for tuning to criticality without altering its character.
+
+** See also:
+- [[id:c28e2051-0186-4a16-adbf-c255ad7d013a][Ising Model Foundation]]
+- [[id:1d9f52e1-b17a-47c0-a181-d0de520afdbe][O(n) Model Hierarchy]]
+- [[id:e0455732-a000-4676-a471-618304d77efb][Potts Model]]

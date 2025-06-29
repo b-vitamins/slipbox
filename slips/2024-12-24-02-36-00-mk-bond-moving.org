@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID: 6f8d9c3e-7a5b-4f2c-8e9d-7a5b4f2c8e9d
+:CUSTOM_ID: 92/257
+:END:
+#+TITLE: MK Bond Moving
+#+FILETAGS: :physics:spof:ch6:rg:mk:bondmoving:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Migdal-Kadanoff approximation circumvents interaction proliferation [[id:9f4c8e2a-1d7b-6e3f-8a4c-1d7b6e3f8a4c][Interaction Proliferation Principle]] through a radical simplification: redistribute bonds before decimation to maintain one-dimensional topology. For a square lattice with b=2 decimation [[id:2c9e8d7f-3a5b-4e8c-9f2d-3a5b4e8c9f2d][Square Lattice Decimation]], the procedure removes bonds not connected to retained spins, then doubles the remaining bonds to preserve total interaction strength.
+
+This bond-moving step transforms the two-dimensional decimation problem into multiple one-dimensional chains. Each retained spin connects to its neighbors through pairs of doubled bonds (strength 2K), reducing the decimation to the exactly solvable one-dimensional case [[id:7e9f3c8d-2a4b-5f7c-9d3e-2a4b5f7c9d3e][1D Transfer Matrix]]:
+
+\[K' = \frac{1}{2}\ln\cosh(2 \times 2K) = \frac{1}{2}\ln\cosh(4K)\]
+
+The factor of 2 arises from bond doubling, while the additional factor of 2 comes from two parallel bonds connecting retained spins after decimation.
+
+The approximation's severity appears in what it discards: all indirect paths between retained spins through decimated sites. In the exact decimation [[id:5e8d9f3c-7a4b-6f2c-8d9e-7a4b6f2c8d9e][Exact Decimation]], removing a spin generates interactions among all four neighbors. The MK scheme keeps only direct paths, discarding diagonal interactions entirely. This reduction from a connected cluster to parallel chains represents a drastic but systematic approximation.
+
+The method's appeal lies in its simplicity and exact solvability. No truncation of generated couplings is needed because the bond-moving step prevents their generation entirely. The one-dimensional character ensures analytical tractability while the bond strengthening partially compensates for neglected interactions.
+
+The MK bond-moving philosophy embodies a different approach to approximation: rather than treating complicated interactions perturbatively [[id:4e7f9d3c-8b5a-6c2f-9d7c-8b5a6c2f9d7c][Approximation Quality]], reshape the problem into one admitting exact solution. This geometric manipulation—moving bonds while preserving their total strength—lacks rigorous justification yet yields surprisingly accurate results. The success suggests that critical behavior depends more on total connectivity than detailed topology, with the enhanced direct bonds capturing essential physics lost through removed indirect paths. The method's exact implementation on hierarchical lattices [[id:7f8d9c3e-4a5b-6e2f-9c8d-4a5b6e2f9c8d][Hierarchical Validation]] provides post-hoc validation of its physical reasonableness.
+
+**See also:** [[id:8f9d7c3e-5a4b-6e2f-9d7c-5a4b6e2f9d7c][MK Fixed Points]] for critical behavior, [[id:9e8d7f3c-6a5b-4e2f-8c9d-6a5b4e2f8c9d][MK Dimension Dependence]] for d-dimensional extension, [[id:1f8d9c3e-7a5b-6e2f-9d8c-7a5b6e2f9d8c][MK Generalization]] for other lattices.

@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID: 6d8f9c3e-7b4a-5f2c-8e9d-7b4a5f2c8e9d
+:CUSTOM_ID: 92/256
+:END:
+#+TITLE: NvL Method Assessment
+#+FILETAGS: :physics:spof:ch6:rg:nvl:assessment:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Niemeijer-van Leeuwen cumulant method achieves controlled approximation to real-space renormalization through systematic perturbation theory. Its successes and limitations illuminate both the power and challenges of position-space RG approaches in dimensions greater than one.
+
+The method's strengths emerge from its systematic nature. Unlike ad hoc truncations, the cumulant expansion provides a hierarchy of improving approximations with clear organizational principles [[id:5f9d8c3e-7b4a-6f2c-8d9e-7b4a6f2c8d9e][Systematic Approximation]]. The preservation of lattice symmetry and spin discreteness maintains the model's essential features throughout the calculation. Most remarkably, even the crudest first-order truncation yields critical exponents within 15% of exact values—far superior to mean-field theory's qualitative failures.
+
+Limitations stem from the perturbative foundation. Near criticality, where correlations span many cells, the assumption of weak inter-cell coupling becomes questionable. The expansion parameter—the ratio of inter-cell to intra-cell interactions—does not obviously small at the critical point. Convergence of higher-order terms remains uncontrolled, though second-order calculations [[id:4d8f9c3e-7a2b-5f1c-8e4d-7a2b5f1c8e4d][Convergence Properties]] yielding y_t = 1.053 (compared to the exact 1.000) suggest rapid improvement.
+
+The method's extension to second order generates three coupling constants: nearest-neighbor, next-nearest-neighbor, and three-spin interactions. This controlled proliferation [[id:9f4c8e2a-1d7b-6e3f-8a4c-1d7b6e3f8a4c][Interaction Proliferation Principle]] demonstrates how systematic approaches manage the complexity that defeats exact treatment. The three-dimensional parameter space still possesses a unique unstable fixed point governing critical behavior.
+
+The NvL approach influenced subsequent RG developments by demonstrating that approximate position-space methods could yield quantitative results. Its systematic nature inspired field-theoretic approaches that organize perturbative corrections more efficiently. The method remains pedagogically valuable for its transparent physics: cells provide local order, perturbations couple these ordered regions, and the balance determines criticality.
+
+The NvL method's success despite its apparent crudeness exemplifies universality's power [[id:f5d9c7a3-2e8b-4f7c-9a5d-2e8b4f7c9a5d][Universality and Approximation]]. Critical behavior emerges from long-wavelength fluctuations insensitive to short-range details—precisely what cell approximations preserve while sacrificing microscopic accuracy. The method works not because inter-cell couplings are weak, but because they are irrelevant: under RG flow, only a few coupling combinations matter for critical behavior. This separation of relevant from irrelevant, not perturbative smallness, underlies the approximation's validity. The NvL approach thus demonstrates how universality licenses approximations that would seem unjustifiable from a microscopic perspective.
+
+**See also:** [[id:8f9d2c3e-7a4b-1f8c-9e3d-7a4b1f8c9e3d][NvL Philosophy]] for the approach, [[id:3d7f8c2e-9b4a-5f8c-7e3d-9b4a5f8c7e3d][Improved Exponents]] for second-order results, [[id:6f8d9c3e-7a5b-4f2c-8e9d-7a5b4f2c8e9d][MK Bond Moving]] for alternative methods.

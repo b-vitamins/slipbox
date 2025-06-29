@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID: 1e9d8f3c-8a6b-5f2c-9d7e-8a6b5f2c9d7e
+:CUSTOM_ID: 92/265
+:END:
+#+TITLE: Detailed Balance
+#+FILETAGS: :physics:spof:ch6:mc:detailedbalance:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Detailed balance provides the fundamental principle ensuring Markov chains converge to thermal equilibrium. The condition requires microscopic reversibility: probability currents between any pair of states must balance in steady state:
+
+\[P_\alpha\Pi_{\alpha\beta} = P_\beta\Pi_{\beta\alpha}\]
+
+This stronger requirement than global balance (steady state) ensures not just equilibrium but the absence of persistent currents.
+
+For Boltzmann distributions, detailed balance becomes:
+
+\[\frac{\Pi_{\alpha\beta}}{\Pi_{\beta\alpha}} = \frac{P_\beta}{P_\alpha} = \exp[-\beta(E_\beta - E_\alpha)]\]
+
+The transition probability ratio must equal the Boltzmann factor ratio, encoding temperature into the dynamics. This constraint leaves considerable freedom in choosing specific transition rules, enabling optimization for computational efficiency.
+
+Detailed balance automatically ensures steady state. Summing over β:
+
+\[(\vec{P} \cdot \Pi)_\alpha = \sum_\beta P_\beta\Pi_{\beta\alpha} = P_\alpha\sum_\beta\Pi_{\alpha\beta} = P_\alpha\]
+
+where the second equality uses detailed balance and the third uses probability conservation. Thus P satisfying detailed balance is indeed the stationary distribution.
+
+The physical interpretation connects to time-reversal symmetry. In equilibrium, a movie of the system looks equally plausible running forward or backward. Detailed balance enforces this microscopic reversibility at the transition level: the rate of α→β transitions equals the rate of β→α transitions when weighted by equilibrium probabilities.
+
+Not all valid Monte Carlo schemes satisfy detailed balance. Some algorithms violate it locally while maintaining global balance, achieving correct equilibrium through more complex dynamics. However, detailed balance provides the simplest sufficient condition for proving convergence and remains the basis for most practical algorithms [[id:9c8e3f7a-2d5b-4f9c-1a8e-2d5b4f9c1a8e][Dimension Dependence Master]].
+
+Detailed balance represents a profound principle: macroscopic irreversibility emerges from microscopically reversible dynamics. The Markov chain drives systems toward equilibrium not through biased dynamics but through unbiased exploration that naturally finds probable states. This principle extends beyond Monte Carlo to fundamental physics—the fluctuation-dissipation theorem, Onsager reciprocity relations, and linear response theory all reflect detailed balance in different guises. By encoding this principle into algorithms, Monte Carlo methods capture not just equilibrium distributions but the fundamental symmetries governing approach to equilibrium.
+
+**See also:** [[id:9f8d7c3e-7a6b-5f2c-8e9d-7a6b5f2c8e9d][Markov Process]] for dynamics, [[id:2e8d9f3c-7a6b-4f2c-8e9d-7a6b4f2c8e9d][Metropolis Algorithm]] for implementation, [[id:9f9d8c3e-8a8b-6f2c-8e9d-8a8b6f2c8e9d][Global Balance]] for weaker conditions.

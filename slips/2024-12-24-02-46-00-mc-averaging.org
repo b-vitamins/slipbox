@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID: 5f8d9c3e-8a7b-6f2c-9e8d-8a7b6f2c9e8d
+:CUSTOM_ID: 92/267
+:END:
+#+TITLE: MC Averaging
+#+FILETAGS: :physics:spof:ch6:mc:averaging:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Monte Carlo averaging extracts thermal expectation values from time series of configurations, converting dynamics into thermodynamics:
+
+\[\langle\mathcal{O}\rangle \approx \bar{\mathcal{O}} = \frac{1}{T}\sum_{t=\tau}^{T+\tau}\mathcal{O}[\sigma(t)]\]
+
+The initial equilibration period τ must be discarded, as early configurations reflect initial conditions rather than thermal equilibrium.
+
+Equilibration time depends on the initial state's distance from equilibrium and the dynamics' relaxation rate. Starting from random configurations at temperature T typically requires τ ~ ξ^z Monte Carlo steps, where ξ is the correlation length and z≈2 for local dynamics. Near critical points where ξ diverges, equilibration becomes prohibitively slow—the critical slowing down phenomenon.
+
+The averaging period T must exceed the autocorrelation time to gather independent samples. For observable O, the autocorrelation function:
+
+\[C_O(t) = \langle O(t')O(t'+t)\rangle - \langle O\rangle^2\]
+
+decays exponentially with characteristic time τ_O. The integrated autocorrelation time:
+
+\[\tau_{int} = \frac{1}{2} + \sum_{t=1}^{\infty}\frac{C_O(t)}{C_O(0)}\]
+
+determines the statistical efficiency: T Monte Carlo steps yield approximately T/(2τ_int) independent measurements.
+
+Error estimation requires careful treatment of correlations. The naive variance σ²/T underestimates errors by factor 2τ_int. Proper error analysis employs blocking, jackknife, or bootstrap methods that account for temporal correlations. Near criticality, different observables exhibit different autocorrelation times—energy equilibrates faster than magnetization, which equilibrates faster than correlations.
+
+Finite-size effects complicate averaging near phase transitions. On lattices of linear size L, the correlation length saturates at ξ ~ L, modifying critical behavior. Finite-size scaling analysis studies multiple system sizes to extrapolate infinite-volume behavior: critical points appear as crossing points of dimensionless ratios like the Binder cumulant.
+
+Monte Carlo averaging embodies the ergodic hypothesis: time averages equal ensemble averages for sufficiently long observations. This equivalence, assumed in statistical mechanics, becomes operational through simulation. The method's honesty—explicitly tracking statistical errors—contrasts with analytical approximations whose errors remain uncontrolled. Yet this honesty reveals harsh realities: near critical points where physics is most interesting, simulations become most difficult. The exponential growth of correlation times with system size limits accessible scales, making true critical behavior observable only through finite-size extrapolation. This limitation drives algorithmic innovation—cluster algorithms, multicanonical methods, parallel tempering—all attempting to accelerate equilibration and sampling.
+
+**See also:** [[id:1f9d8c3e-8a6b-5f2c-9e7d-8a6b5f2c9e7d][MC Approximation]] for error analysis, [[id:6f9d8c3e-9a7b-5f2c-8e9d-9a7b5f2c8e9d][Critical Slowing Down]] for equilibration challenges, [[id:7f8d9c3e-9a8b-6f2c-8e9d-9a8b6f2c8e9d][Finite Size Scaling]] for extrapolation methods.

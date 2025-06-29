@@ -1,0 +1,61 @@
+:PROPERTIES:
+:ID: 8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d
+:CUSTOM_ID: 92/277
+:END:
+#+TITLE: Visual-Algebraic Dictionary
+#+FILETAGS: :physics:spof:ch6:visual:algebraic:dictionary:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The translation between visual representations and algebraic formulas bridges intuitive understanding with rigorous calculation. This dictionary enables bidirectional conversion: from figures to equations and from mathematical expressions to physical pictures.
+
+**Notation to Geometry Mappings:**
+
+⟨i,j⟩ (nearest neighbors) ↔ Adjacent sites connected by single bonds in lattice figures [[id:3e8d9f3c-8a9b-6f2c-9e8d-8a9b6f2c9e8d][Square Lattice Topology]]
+- On square lattice: Four bonds per site
+- On triangular lattice: Six bonds per site  
+- On chain: Two bonds per interior site
+
+Σ_α (sum over cells) ↔ Summation over spatial regions in RG diagrams [[id:9e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Cell Diagrams]]
+- Each triangle in NvL represents one term
+- Overlapping cells require careful bond assignment
+
+∏ᵢ exp(Bᵢ) ↔ Product of bond factors along paths [[id:4e8d9f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Decimation Visualization]]
+- Transfer matrix: products along time direction
+- Decimation: products over removed spins
+
+**RG Flow Visualizations:**
+
+K' > K ↔ Arrows pointing away from fixed point (unstable)
+K' < K ↔ Arrows pointing toward fixed point (stable)
+dK/dℓ = 0 ↔ Fixed points where flow vanishes [[id:5e8d9f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][RG Flow Diagrams]]
+
+Eigenvalue |λ| > 1 ↔ Unstable direction (relevant operator)
+Eigenvalue |λ| < 1 ↔ Stable direction (irrelevant operator)
+Eigenvalue |λ| = 1 ↔ Marginal direction (requires higher-order analysis)
+
+**Correlation Function Pictures:**
+
+exp(-r/ξ) decay ↔ Exponential falloff over distance ξ [[id:1f9d8c3e-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Correlation Decay]]
+- Rapid decay: Small ξ (high T)
+- Slow decay: Large ξ (near Tc)
+- Power law: ξ → ∞ (at Tc)
+
+⟨σ₀σᵣ⟩ ~ r^(-(d-2+η)) ↔ Algebraic decay at criticality
+- Straight line on log-log plot
+- Slope determines exponent η
+
+**Lattice Surgery Operations:**
+
+Decimation [[id:4e8d9f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Decimation Visualization]]: Remove alternating sites → halve number of spins
+Bond moving [[id:6e8d9f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][MK Bond Moving Scheme]]: Redistribute bonds → maintain total coupling
+Cell construction [[id:9e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Cell Diagrams]]: Group neighboring spins → coarse-grained units
+
+**Phase Diagram Features:**
+
+Intersection of flow lines ↔ Separatrix between phases
+Closed flow loops ↔ Limit cycles (absent in systems studied)
+Flow line density ↔ Rate of parameter change under RG
+
+This visual-algebraic correspondence reveals that mathematical physics operates through dual representations: geometric intuition guides algebraic manipulation while equations quantify visual insights. Mastery requires fluid translation between these languages—seeing the lattice in the Hamiltonian, finding fixed points in flow diagrams, recognizing universality in diverse plots. The notation ⟨i,j⟩ is meaningless without visualizing connected sites; eigenvalues remain abstract without flow arrows. This dictionary ensures that every equation evokes a picture and every diagram implies precise mathematics.
+
+**See also:** [[id:2f9d8c3e-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Mathematical Notation]] for symbols, [[id:3f8d9c3e-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Visualization Techniques]] for methods, [[id:4f9d8c3e-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Geometric Interpretation]] for physics.

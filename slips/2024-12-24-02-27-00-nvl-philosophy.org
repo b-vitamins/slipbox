@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID: 8f9d2c3e-7a4b-1f8c-9e3d-7a4b1f8c9e3d
+:CUSTOM_ID: 92/249
+:END:
+#+TITLE: NvL Philosophy
+#+FILETAGS: :physics:spof:ch6:rg:nvl:philosophy:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Niemeijer-van Leeuwen approach attacks interaction proliferation through systematic perturbation theory, treating inter-cell couplings as weak perturbations to exactly solvable intra-cell problems. Applied to the triangular lattice, the method groups sites into three-spin cells, defining renormalized spins through majority rule:
+
+\[\sigma'_\alpha = \text{sign}[\sigma^1_\alpha + \sigma^2_\alpha + \sigma^3_\alpha]\]
+
+This majority rule avoids ambiguity inherent in odd-sized cells while preserving Ising character—renormalized spins remain two-valued. The constrained trace over original spins consistent with fixed renormalized values ensures partition function preservation:
+
+\[e^{-\beta\mathcal{H}'[\sigma'_\alpha]} = \sum_{\{\sigma^i_\alpha \mapsto \sigma'_\alpha\}}' e^{-\beta\mathcal{H}[\sigma^i_\alpha]}\]
+
+The key insight partitions the Hamiltonian strategically: \(\beta\mathcal{H} = \beta\mathcal{H}_0 + \mathcal{U}\). The unperturbed piece
+
+\[-\beta\mathcal{H}_0 = K\sum_\alpha(\sigma^1_\alpha\sigma^2_\alpha + \sigma^2_\alpha\sigma^3_\alpha + \sigma^3_\alpha\sigma^1_\alpha)\]
+
+contains only intra-cell interactions, rendering cells independent and exactly solvable. The perturbation
+
+\[-\mathcal{U} = K\sum_{\langle\alpha,\beta\rangle}(\sigma^{(1)}_\beta\sigma^{(2)}_\alpha + \sigma^{(1)}_\beta\sigma^{(3)}_\alpha)\]
+
+couples neighboring cells through two bonds each, depending on relative cell orientations.
+
+The cumulant expansion provides systematic improvement:
+
+\[\beta\mathcal{H}'[\sigma'_\alpha] = -\ln Z_0[\sigma'_\alpha] + \langle\mathcal{U}\rangle_0 - \frac{1}{2}(\langle\mathcal{U}^2\rangle_0 - \langle\mathcal{U}\rangle_0^2) + \mathcal{O}(\mathcal{U}^3)\]
+
+where expectation values employ the unperturbed distribution with fixed renormalized spins.
+
+The NvL philosophy embodies a profound strategy: rather than preventing interaction proliferation, control it through systematic expansion. By choosing cells that respect lattice symmetry and interactions that admit exact cell treatment, the method converts an intractable global problem into tractable local problems coupled perturbatively. The majority rule's preservation of spin character contrasts with block-spin approaches that generate continuous variables, maintaining mathematical simplicity. This divide-and-conquer approach—exact where possible, approximate where necessary—recurs throughout theoretical physics from quantum field theory's perturbation expansion to many-body physics' cluster methods.
+
+**See also:** [[id:1a9f8d3c-7e2b-5f4a-9c3d-7e2b5f4a9c3d][Perturbative Split]] for the Hamiltonian decomposition, [[id:2b8f9c4d-8e3a-6f1b-7d4c-8e3a6f1b7d4c][Cumulant Expansion]] for systematic improvement, [[id:3c9f8d4e-9f3a-7e2b-8d5c-9f3a7e2b8d5c][Cell Calculations]] for implementation.

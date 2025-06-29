@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID: 3e8d9f3c-8a9b-6f2c-9e8d-8a9b6f2c9e8d
+:CUSTOM_ID: 92/272
+:END:
+#+TITLE: Square Lattice Topology
+#+FILETAGS: :physics:spof:ch6:lattice:square:figure:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+*Reference: Figure 6.1 - Interacting spins {s_i} defined on a square lattice*
+
+The square lattice exemplifies the regular connectivity that makes nearest-neighbor notation ⟨i,j⟩ meaningful [[id:3c2d4f5e-8a1b-6f1c-2d4e-8a1b6f1c2d4e][Ising Definition]]. Each site i possesses exactly four neighbors at unit distance, creating coordination number z=4. This regular topology generates three key features: translation invariance (all sites equivalent), discrete rotational symmetry (90° rotations), and absence of frustration for antiferromagnetic interactions.
+
+The connectivity matrix elements C_ij = 1 for nearest neighbors and 0 otherwise defines the lattice structure algebraically. For an L×L lattice with periodic boundaries, each row and column of C contains exactly four ones, making it a regular graph. This regularity enables mean-field approximations that replace neighboring spin averages with bulk magnetization.
+
+Visualizing the square lattice reveals why decimation complications arise in two dimensions [[id:7f8c9d3e-6a4b-2f3c-6a4b2f3c6a4b][2D Decimation Complication]]. Each interior spin touches four others—removing it leaves a square plaquette requiring diagonal interactions to maintain connectivity. The lattice contains elementary squares (plaquettes) as the shortest closed loops, supporting the feedback mechanisms essential for phase transitions absent in one dimension.
+
+The square lattice's bipartite nature—decomposition into two interpenetrating sublattices with connections only between sublattices—proves crucial for antiferromagnetic order and enables certain analytical techniques. This structure also suggests natural coarse-graining schemes: retain one sublattice (b=√2) or block spins into 2×2 cells (b=2).
+
+The square lattice's ubiquity in statistical mechanics reflects a deeper principle: it provides the simplest two-dimensional structure exhibiting phase transitions while remaining analytically tractable for certain models. Its regular connectivity makes mean-field approximations reasonable first attempts, its symmetry constrains possible ordered phases, and its planarity enables certain exact solutions. Understanding the square lattice topology is prerequisite to grasping why interactions proliferate under RG [[id:9f4c8e2a-1d7b-6e3f-8a4c-1d7b6e3f8a4c][Interaction Proliferation Principle]] and why the Migdal-Kadanoff approximation [[id:6f8d9c3e-7a5b-4f2c-8e9d-7a5b4f2c8e9d][MK Bond Moving]] deliberately breaks this connectivity to achieve analytical progress.
+
+**See also:** [[id:4e9d8f3c-9a9b-5f2c-8e8d-9a9b5f2c8e8d][Lattice Geometry]] for other structures, [[id:5e8d9f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Bipartite Structure]] for sublattices, [[id:6e9d8f3c-8a9b-5f2c-9e8d-8a9b5f2c9e8d][Coordination Number]] for connectivity.

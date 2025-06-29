@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID: 1e8d9f3c-8a9b-6f2c-9e7d-8a9b6f2c9e7d
+:CUSTOM_ID: 92/270
+:END:
+#+TITLE: Correlation Length Central
+#+FILETAGS: :physics:spof:ch6:correlation:central:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The correlation length ξ serves as the fundamental scale governing critical phenomena, unifying diverse computational approaches through its central role in each method. This length scale, measuring the spatial extent of thermal fluctuations, diverges at criticality, signaling the system's inability to distinguish between phases.
+
+Transfer matrix formalism extracts ξ from eigenvalue ratios [[id:ad4f5e6b-9c3d-7f2e-5e6b-9c3d7f2e5e6b][Correlation from Eigenvalues]]:
+
+\[\xi = -\frac{1}{\ln(\lambda_-/\lambda_+)}\]
+
+The gap between the two largest eigenvalues directly determines correlation decay. This spectral interpretation—correlation length as inverse gap—extends throughout physics from quantum mechanics to stochastic processes. In one dimension, the exact formula ξ = -1/ln(tanh K) reveals exponential divergence at T=0.
+
+Renormalization group tracks ξ through scale transformations [[id:6d8f4c3e-7a9b-5f2c-8e3d-7a9b5f2c8e3d][RG Scale Transformation]]:
+
+\[\xi' = \xi/b\]
+
+This fundamental RG relation encodes scale invariance: correlation lengths measured in lattice units decrease by factor b under coarse-graining. Near fixed points, ξ transforms homogeneously, generating scaling forms for all thermodynamic quantities through hyperscaling ξ ~ |T-T_c|^(-ν).
+
+Monte Carlo simulations experience ξ through dynamics [[id:5f8d9c3e-8a7b-6f2c-9e8d-8a7b6f2c9e8d][MC Averaging]]. Autocorrelation times grow as τ ~ ξ^z, causing critical slowing down. The correlation length sets the scale for equilibration (τ_eq ~ ξ^z), cluster sizes in percolation, and domain sizes in phase separation. Finite-size effects become important when ξ ~ L, requiring systems larger than correlation volumes to exhibit bulk behavior.
+
+Physical manifestations of ξ appear throughout critical phenomena. Light scattering intensifies as ξ⁴ (critical opalescence), specific heat diverges as ξ^(α/ν), while susceptibility scales as ξ^(2-η). The correlation function itself decays as exp(-r/ξ)/r^((d-2+η)/2), interpolating between exponential decay far from criticality and power-law decay at the critical point.
+
+The correlation length's universality transcends specific models or methods—it represents the emergent scale where microscopic details yield to collective behavior. This length marks the boundary between microscopic and macroscopic, between fluctuations and mean behavior, between computational tractability and difficulty. Every successful method must grapple with ξ: transfer matrices through spectral gaps, RG through scale invariance, Monte Carlo through dynamic slowing. The divergence of ξ at criticality represents nature's way of saying "all scales matter"—the very condition that makes critical phenomena both beautiful and challenging. Understanding phase transitions ultimately means understanding how and why correlation lengths diverge.
+
+**See also:** [[id:3c9f7d8e-8a9b-5f2c-9e8d-8a9b5f2c9e8d][Scaling Theory]] for critical behavior, [[id:6f9d8c3e-9a7b-5f2c-8e9d-9a7b5f2c8e9d][Critical Slowing Down]] for dynamics, [[id:7f8d9c3e-9a8b-6f2c-8e9d-9a8b6f2c8e9d][Finite Size Scaling]] for simulations.

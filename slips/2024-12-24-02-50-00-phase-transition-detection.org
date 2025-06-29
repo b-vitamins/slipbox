@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID: 2e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d
+:CUSTOM_ID: 92/271
+:END:
+#+TITLE: Phase Transition Detection
+#+FILETAGS: :physics:spof:ch6:phase:transition:detection:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Phase transition detection requires identifying singularities in thermodynamic functions—a subtle task when working with finite systems or approximate methods. Each computational approach offers distinct signatures of criticality, whose synthesis provides robust identification.
+
+Renormalization group methods locate phase transitions through fixed point analysis [[id:5d8f4c3e-7a9b-6f2c-8e3d-7a9b6f2c8e3d][Fixed Point Structure]], [[id:8c9f3d7e-2a5b-4f8c-6a4d-2a5b4f8c6a4d][NvL Fixed Points]], [[id:8f9d7c3e-5a4b-6e2f-9d7c-5a4b6e2f9d7c][MK Fixed Points]]. A fixed point with exactly one unstable direction signals a critical point separating ordered and disordered phases. The linearization eigenvalue exceeding unity confirms instability, while the eigenvector identifies the relevant scaling field. Multiple unstable directions indicate multicritical points where several phase boundaries meet. The elegance lies in determining criticality through mathematical properties of transformation maps rather than thermodynamic singularities.
+
+Transfer matrix approaches detect transitions through eigenvalue crossings—impossible in one dimension by Frobenius' theorem [[id:9d3f4e5a-8b2c-6f1d-4e5a-8b2c6f1d4e5a][1D No Phase Transition]]. The correlation length ξ = -1/ln(λ₂/λ₁) diverges when the gap closes, providing a spectral signature of criticality. For finite systems, avoided crossings replace true crossings, with the gap minimum indicating the effective transition.
+
+Monte Carlo simulations face the challenge that finite systems cannot exhibit true singularities. Instead, pseudo-transitions sharpen with increasing system size. The Binder cumulant:
+
+\[U_4 = 1 - \frac{\langle m^4\rangle}{3\langle m^2\rangle^2}\]
+
+provides a powerful diagnostic: its value at criticality is universal (system-size independent), causing curves for different L to cross at T_c. This crossing point locates the transition more accurately than peaks in specific heat or susceptibility.
+
+Additional signatures reinforce identification: correlation functions transition from exponential to power-law decay, the correlation length ξ(T) exhibits a peak that sharpens with system size, histograms of the order parameter become double-peaked (phase coexistence), and finite-size scaling functions collapse when plotted appropriately.
+
+Phase transition detection exemplifies how different methods provide complementary information. RG reveals the mathematical structure—fixed points organizing parameter space—while simulations exhibit physical signatures—diverging fluctuations and scale invariance. The convergence of multiple indicators builds confidence: when RG fixed points coincide with Binder crossings and correlation length divergences, we have truly located a phase transition. This multi-method validation is crucial given that each approach has limitations: RG approximations may spuriously generate or miss fixed points, while finite-size simulations can mistake crossovers for true transitions. The art lies in synthesizing partial information into coherent understanding.
+
+**See also:** [[id:3e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Critical Signatures]] for observables, [[id:7f8d9c3e-9a8b-6f2c-8e9d-9a8b6f2c8e9d][Finite Size Scaling]] for extrapolation, [[id:4e8d9f3c-8a9b-6f2c-9e8d-8a9b6f2c9e8d][Multicritical Points]] for complex phase diagrams.

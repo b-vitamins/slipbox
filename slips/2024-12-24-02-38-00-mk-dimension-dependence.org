@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID: 9e8d7f3c-6a5b-4e2f-8c9d-6a5b4e2f8c9d
+:CUSTOM_ID: 92/259
+:END:
+#+TITLE: MK Dimension Dependence
+#+FILETAGS: :physics:spof:ch6:rg:mk:dimension:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Migdal-Kadanoff method extends naturally to arbitrary dimensions through systematic bond strengthening. On a d-dimensional hypercubic lattice, each retained spin connects to 2d neighbors. The bond-moving step [[id:6f8d9c3e-7a5b-4f2c-8e9d-7a5b4f2c8e9d][MK Bond Moving]] strengthens each surviving bond by factor 2^(d-1), accounting for the (d-1) perpendicular directions from which bonds are moved:
+
+\[K' = \frac{1}{2}\ln\cosh(2 \times 2^{d-1}K) = \frac{1}{2}\ln\cosh(2^d K)\]
+
+This dimension-dependent recursion exhibits qualitatively different behavior across dimensions. For d=1, it reduces to the exact decimation result [[id:7e9f3c8d-2a4b-5f7c-9d3e-2a4b5f7c9d3e][1D Transfer Matrix]]. For d>1, the approximation becomes increasingly severe as more indirect paths are neglected.
+
+The high-temperature fixed point analysis yields:
+
+\[K \ll 1 \Rightarrow K' \approx \frac{1}{2}\ln(1 + 2^{2d-1}K^2) \approx 2^{2(d-1)}K^2\]
+
+Stability increases dramatically with dimension, reflecting enhanced connectivity that promotes disorder through increased fluctuation paths.
+
+The low-temperature behavior shows:
+
+\[K \gg 1 \Rightarrow K' \approx \frac{1}{2}\ln\left(\frac{e^{2^d K}}{2}\right) \approx 2^{d-1}K - \frac{\ln 2}{2}\]
+
+The eigenvalue 2^(d-1) exceeds unity only for d>1, correctly identifying the lower critical dimension. One-dimensional systems lack a stable ordered phase, while higher dimensions support spontaneous symmetry breaking.
+
+The thermal eigenvalue at the non-trivial fixed point becomes:
+
+\[2^{y_t} = 2^{d-1}\tanh(2^d K*)\]
+
+For d=3, this yields K* ≈ 0.065 and y_t ≈ 0.934, compared to exact values K_c ≈ 0.222 and y_t ≈ 1.59. The approximation worsens with dimension, severely underestimating both critical temperature and correlation length exponent.
+
+As d→∞, the fixed point approaches K* → 2^(2(1-d)) → 0, while y_t → 1. The method fails to identify an upper critical dimension where mean-field theory becomes exact, instead predicting non-classical exponents in all dimensions.
+
+The dimensional trends in MK reveal the approximation's fundamental limitation: neglecting indirect paths becomes catastrophic in high dimensions where connectivity proliferates. The method works best near the lower critical dimension where systems are marginally ordered and direct paths dominate. Its failure to reproduce mean-field behavior at high d stems from the bond-moving step's inability to capture the mean-field limit's essential feature—each spin effectively interacting with all others through the mesh of indirect connections. The approximation thus complements mean-field theory: MK excels in low dimensions where fluctuations dominate, while mean-field succeeds in high dimensions where connectivity overwhelms fluctuations [[id:9c8e3f7a-2d5b-4f9c-1a8e-2d5b4f9c1a8e][Dimension Dependence Master]].
+
+**See also:** [[id:8f9d7c3e-5a4b-6e2f-9d7c-5a4b6e2f9d7c][MK Fixed Points]] for critical behavior, [[id:1f8d9c3e-7a5b-6e2f-9d8c-7a5b6e2f9d8c][MK Generalization]] for other lattices, [[id:5e9d8f3c-7a6b-4e2f-9c8d-7a6b4e2f9c8d][Mean Field Validity]] for upper critical dimension.

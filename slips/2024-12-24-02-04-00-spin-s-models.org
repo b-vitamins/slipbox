@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID: 9a4f3c2d-8e5b-1f6a-7c3d-5e8b1f6a7c3d
+:CUSTOM_ID: 92/226
+:END:
+#+TITLE: Spin-s Models
+#+FILETAGS: :physics:spof:ch6:lattice:spins:ising:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Spin-s models interpolate between discrete and continuous variables by allowing each site to assume \(2s+1\) values: \(s_i \in \{-s, -s+1, \ldots, +s\}\). The interaction Hamiltonian admits polynomial coupling of arbitrary order:
+
+\[\mathcal{H}=\sum_{\langle i,j\rangle}\left(J_1 s_i s_j+J_2(s_i s_j)^2+\cdots+J_{2s}(s_i s_j)^{2s}\right)-\hat{h}\sum_i s_i\]
+
+The Ising model corresponds to \(s=1/2\), while \(s=1\) yields the Blume-Emery-Griffiths (BEG) model describing mixtures of non-magnetic (\(s=0\)) and magnetic (\(s=\pm 1\)) elements. Higher powers of interaction become possible as s increases, generating rich phase diagrams with tricritical points where continuous and discontinuous transition lines meet.
+
+Despite the enlarged local Hilbert space and complex interactions, the ordered phase preserves only Z₂ symmetry—distinguishing positive from negative magnetization. Consequently, all spin-s models belong to the Ising universality class, their critical exponents independent of s. The additional states and interaction terms constitute irrelevant perturbations under renormalization group flow.
+
+The spin-s hierarchy illuminates a subtle aspect of universality: enlarged microscopic freedom need not generate new universality classes. The BEG model's tricritical point, where three phases meet, represents different physics from the critical point, yet the critical behavior itself remains Ising-like. This exemplifies how symmetry, not complexity, determines universality—a principle that extends to the distinction between Ising, O(n), and Potts models. The proliferation of coupling constants \(J_1, J_2, \ldots, J_{2s}\) merely provides additional knobs for tuning to criticality without altering its character.
+
+**See also:** [[id:8c4d6f2a-1e38-4b9c-a7d5-2f8e1c9b0e3a][Ising Model Foundation]] for the s=1/2 case, [[id:3e6f8a9b-4c5d-7e8f-0a1b-4c5d6e7f8a9b][Model Universality Bridge]] for the universality principle, [[id:4a8b9f2c-7e1d-5f9a-8c2e-6f1d5f9a8c2e][Methods Comparison Matrix]] for computational approaches.

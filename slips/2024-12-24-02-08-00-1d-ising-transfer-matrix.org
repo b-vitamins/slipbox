@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID: 8b5c9d1e-2f4a-6e7f-9a8b-3c4d5e6f7a8b
+:CUSTOM_ID: 92/230
+:END:
+#+TITLE: 1D Ising Transfer Matrix
+#+FILETAGS: :physics:spof:ch6:transfer:matrix:ising:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The transfer matrix method transforms the partition function sum into a matrix product, exploiting the sequential nature of one-dimensional interactions. For a chain of N Ising spins with periodic boundaries, the Hamiltonian reads
+
+\[-\beta\mathcal{H}=K(\sigma_1\sigma_2+\sigma_2\sigma_3+\cdots+\sigma_{N-1}\sigma_N+\sigma_N\sigma_1)+h\sum_{i=1}^N\sigma_i\]
+
+The partition function's factorization over bonds enables a profound reformulation:
+
+\[Z = \sum_{\sigma_1=\pm 1}\sum_{\sigma_2=\pm 1}\cdots\sum_{\sigma_N=\pm 1}\prod_{i=1}^N\exp\left[K\sigma_i\sigma_{i+1}+\frac{h}{2}(\sigma_i+\sigma_{i+1})\right]\]
+
+This product structure admits matrix representation through
+
+\[Z = \operatorname{tr}\left[\langle\sigma_1|T|\sigma_2\rangle\langle\sigma_2|T|\sigma_3\rangle\cdots\langle\sigma_N|T|\sigma_1\rangle\right] = \operatorname{tr}[T^N]\]
+
+The transfer matrix elements encode single-bond contributions:
+
+\[\langle\sigma_i|T|\sigma_j\rangle = \exp\left[K\sigma_i\sigma_j+\frac{h}{2}(\sigma_i+\sigma_j)\right]\]
+
+Explicitly, the 2×2 transfer matrix takes the form
+
+\[T = \begin{pmatrix} e^{K+h} & e^{-K} \\ e^{-K} & e^{K-h} \end{pmatrix}\]
+
+The trace operation closes the chain, enforcing periodic boundaries while summing over all spin configurations. The field h enters symmetrically, distributed equally between adjacent spins to preserve translational invariance.
+
+The transfer matrix revelation—that configuration sums become matrix powers—extends far beyond one dimension or discrete spins. This algebraic transmutation converts statistical mechanics into linear algebra: thermodynamics emerges from eigenvalues, correlations from eigenvector overlaps, and phase transitions from eigenvalue crossings. The method's limitation to one dimension reflects a deeper truth: only when interactions factorize sequentially can we construct finite-dimensional transfer operators. Higher dimensions require infinite-dimensional operators, though Migdal-Kadanoff cleverly reduces them back to one-dimensional form through bond moving.
+
+**See also:** [[id:e9f2c3a8-1d4b-5e7a-9f2c-3a8d1e4b5e7a][Eigenvalue Dominance]] for thermodynamic extraction, [[id:1a3b5c8d-9f2e-6a4b-7c5d-9f2e6a4b7c5d][Spin Correlations via Transfer Matrix]] for correlation functions, [[id:8e7f6d3c-2a9b-5e1f-8c3d-2a9b5e1f8c3d][General Transfer Matrix]] for extensions.
