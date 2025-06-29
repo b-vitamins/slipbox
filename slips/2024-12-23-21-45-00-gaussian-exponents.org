@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       a8b9c0d1-e2f3-4a5b-c6d7-e8f9a0b1c2d3
+:CUSTOM_ID: 92/154
+:END:
+#+TITLE: Gaussian Exponents
+#+FILETAGS: :physics:statistical:fieldtheory:gaussian:exponents:
+
+These mean-field exponents become exact above the upper critical dimension d = 4, where the quartic interaction is irrelevant. In physical dimensions d = 2 and d = 3, the Gaussian exponents provide a reference point, with real exponents deviating due to the relevant φ⁴ interaction.
+
+The dimensional dependence of Gaussian exponents—particularly α changing sign at d = 4—signals the special role of four dimensions. Below d = 4, α < 0 implies a specific heat divergence, while above, α > 0 means the specific heat approaches a finite limit, though with a possible jump discontinuity at d = 4 where logarithmic corrections appear.
+
+Cross-references: [[id:5a743de9-c8f1-4b2a-9d3e-4f5a6b7c8d90][Gaussian Fixed Point]], [[id:1e02f461-10f0-4ed7-936a-9bac6fcd0e40][From RG Analysis]], [[id:e0812a92-87a6-438d-af2f-e21271585d5b][Gaussian Direct Solution]]

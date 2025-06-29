@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       e8f9a0b1-c2d3-4e5f-a6b7-c8d9e0f1a2b3
+:CUSTOM_ID: 92/156
+:END:
+#+TITLE: From RG Analysis
+#+FILETAGS: :physics:statistical:fieldtheory:exponents:renormalization:
+
+The agreement between RG-derived and directly calculated exponents validates the RG procedure and demonstrates its power. While the direct solution requires explicit integration and careful extraction of singularities, the RG approach yields exponents from simple dimensional analysis once the fixed point is identified.
+
+Moreover, the RG framework extends naturally beyond the Gaussian model through perturbative corrections in ε = 4 - d, providing a systematic approach to critical phenomena in physical dimensions. The RG eigenvalues also determine dynamic critical exponents and guide the construction of effective theories for critical dynamics.
+
+Cross-references: [[id:0b3907b5-eb1b-4f22-9793-f85e599d9436][Parameter Flow]], [[id:a8b9c0d1-e2f3-4a5b-c6d7-e8f9a0b1c2d3][Gaussian Exponents]], [[id:5f665483-ba40-445a-bb64-01273ea1d742][Gaussian RG Calculation]]

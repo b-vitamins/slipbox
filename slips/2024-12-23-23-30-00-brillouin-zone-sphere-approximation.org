@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       a2b3c4d5-e6f7-4a8b-c9d0-e1f2a3b4c5d6
+:CUSTOM_ID: 92/175
+:END:
+#+TITLE: Brillouin Zone → Sphere Approximation
+#+FILETAGS: :physics:statistical:visualization:momentum:brillouin:
+
+Transformation from cubic Brillouin zone to spherical cutoff:
+
+```
+    +-------+                      .-'-.
+   /|      /|                    ,'     '.
+  + +-----+ |                   /         \
+  |/     /| +     →            |     •     | radius Λ
+  +-----+ |/                   \         /
+  |     |/                      '.     .'
+  +-----+                         '-.-'
+  
+  side: 2π/a                    Λ ≈ π/a
+```
+
+Critical singularities arise from long-wavelength modes near q = 0, where the Brillouin zone shape is irrelevant. The spherical approximation:
+1. Preserves isotropy of long-wavelength physics
+2. Simplifies momentum integrals: ∫_BZ → K_d ∫₀^Λ dq q^(d-1)
+3. Introduces only analytic corrections from zone boundary
+
+RG implementation: Integrate out modes in spherical shells Λ/b < |q| < Λ, maintaining the cutoff at Λ after rescaling. The systematic reduction implements momentum-space RG:
+- Step 1: Integrate Λ/b < |q| < Λ
+- Step 2: Rescale q' = bq
+- Step 3: Restore cutoff to Λ
+
+Cross-references: [[id:df911964-3bd8-4162-ad2c-20ef23bd4a80][Gaussian Model Setup]], [[id:5f665483-ba40-445a-bb64-01273ea1d742][Gaussian RG Calculation]], [[id:ec9a6bac-caee-42d3-b4be-6cdab5d0c5d3][Momentum Cutoff Conventions]]

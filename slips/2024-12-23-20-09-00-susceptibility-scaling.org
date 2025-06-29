@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 72332205-efce-4143-bc7b-eb81e91ee691
+:CUSTOM_ID: 92/121
+:END:
+#+TITLE: Susceptibility Scaling
+#+FILETAGS: :physics:spof:ch4:susceptibility:
+
+The susceptibility χ = ∂²f/∂h² follows from the second derivative of the [[id:a662555e-24b7-4740-a0c4-fabf9e2f11d4][Free Energy Scaling Form]], yielding χ = |t|^(2-α-2Δ) g_χ(h/|t|^Δ) where g_χ(x) = g_f''(x). The susceptibility thus involves the second derivative of the original free energy scaling function, with the power of |t| reduced by 2Δ compared to the free energy itself.
+
+At zero field, the scaling function approaches a constant: g_χ(0) = const, giving the divergence χ ~ |t|^(-γ) where γ = -(2-α-2Δ) = 2Δ - 2 + α. This relation connects the susceptibility exponent to the gap exponent and specific heat exponent, providing a key scaling relation. The divergence of χ as t → 0 reflects the system's increasing sensitivity to external perturbations as correlations extend throughout the sample.
+
+The susceptibility scaling function g_χ(x) describes how the divergence is cut off by finite field. For large x (strong field compared to temperature), dimensional analysis requires g_χ(x) ~ x^(-γ/Δ) to ensure proper field dependence along the critical isotherm. This scaling form enables the collapse of susceptibility data from different temperatures onto a single universal curve when plotted as |t|^γ χ versus h/|t|^Δ, providing a powerful experimental test of scaling.
+
+See also: [[id:22d8738e-34aa-4aae-ab84-9e0300254249][Thermodynamic Derivatives Cascade]], [[id:79c67aed-2ba3-4f2b-ac8e-bcff1df9622c][Magnetization from Free Energy]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]

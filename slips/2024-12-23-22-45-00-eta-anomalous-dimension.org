@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       c0d1e2f3-a4b5-4c6d-e7f8-a9b0c1d2e3f4
+:CUSTOM_ID: 92/166
+:END:
+#+TITLE: η (Anomalous Dimension)
+#+FILETAGS: :physics:statistical:exponents:anomalous:eta:
+
+The anomalous dimension η modifies the classical correlation decay: G(x) ~ 1/|x|^(d-2+η).
+
+In momentum space, the anomalous dimension manifests as G(q) ~ 1/q^(2-η) for small q, directly measurable in scattering experiments. The structure factor at small momentum thus provides S(q) ~ q^(-(2-η)), with deviations from q^(-2) signaling the presence of anomalous scaling.
+
+The emergence of non-zero η from relevant interactions marks the breakdown of Gaussian theory and the onset of truly critical behavior. Even the small values observed in three dimensions represent a qualitative departure from mean-field predictions. The anomalous dimension quantifies how interactions modify the naive dimensional analysis.
+
+Cross-references: [[id:c8411d15-e158-4dca-9c2d-ec9131181805][Power Law Decay at Criticality]], [[id:9812fa5a-6ca9-40bf-9382-f9552dc28bdf][Correlation Function Mathematics]], [[id:de716b3d-8e3d-4fcd-bdd5-40a813f929b6][Exponent Relations Complete Set]]

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: aaeee0ab-91d5-4186-a7b7-8ad92572f72f
+:CUSTOM_ID: 92/112
+:END:
+#+TITLE: Homogeneity Assumption
+#+FILETAGS: :physics:spof:ch4:scaling:
+
+The homogeneity assumption is the foundational principle underlying all critical phenomena scaling theory. It posits that at criticality, physical quantities exhibit power-law scaling behavior with characteristic exponents.
+
+This assumption leads directly to the scaling hypothesis: thermodynamic functions become homogeneous functions of their arguments near the critical point, allowing the extraction of universal critical exponents through dimensional analysis.
+
+The mathematical formalization appears in [[id:1bb44a5f-852b-4fca-8634-3e3746cc9a1a][Homogeneity Mathematical Framework]], where all scaling forms are systematically derived from this single principle.
+
+See also: [[id:03135b91-b9bd-4cfc-bf6c-e9ff0279e938][Free Energy Scaling Form]], [[id:22d8738e-34aa-4aae-ab84-9e0300254249][Thermodynamic Derivatives Cascade]]

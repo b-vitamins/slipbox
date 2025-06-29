@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 3e5756a3-ea86-4619-8a47-2b124f20d107
+:CUSTOM_ID: 92/139
+:END:
+#+TITLE: Widom Identity
+#+FILETAGS: :physics:spof:ch4:exponents:
+
+The Widom identity δ - 1 = γ/β relates the critical isotherm exponent δ to the ratio of susceptibility and order parameter exponents, expressing the constraint between field and temperature scaling.
+
+Using the definitions δ = Δ/β and γ = 2Δ - 2 + α, we can derive: δ - 1 = Δ/β - 1 = (2Δ - 2 + α)/(2 - α - Δ) = γ/β, where we used γ = 2Δ - 2 + α. This relation constrains the shape of the critical isotherm relative to the temperature dependence of the order parameter and susceptibility.
+
+Widom's identity played a crucial historical role in the development of scaling theory, as it was one of the first exact relations among critical exponents to be experimentally verified across diverse systems.
+
+See also: [[id:5f983926-ed74-4070-91b3-be036b307a89][Exponent Relations Complete Set]], [[id:d46c4ed5-ef81-4b98-9358-7b8e6b64ecfb][Gap Exponent]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]

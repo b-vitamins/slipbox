@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       a2b3c4d5-e6f7-4a8b-c9d0-e1f2a3b4c5d6
+:CUSTOM_ID: 92/158
+:END:
+#+TITLE: XY Model (n=2) Exponents
+#+FILETAGS: :physics:statistical:xy:exponents:continuous:
+
+Critical exponents for the 3D XY universality class:
+- β = 0.35 (order parameter)
+- γ = 1.32 (susceptibility)  
+- δ = 4.7 (critical isotherm)
+- ν = 0.67 (correlation length)
+- η = 0.04 (anomalous dimension)
+
+Physical realizations include superfluid helium-4 transition, easy-plane ferromagnets, Josephson junction arrays, and certain structural phase transitions.
+
+Notable features:
+- Nearly zero α indicates logarithmic specific heat divergence
+- Larger ν than Ising reflects enhanced fluctuations from continuous symmetry
+- η remains small, similar to Ising case
+- β and γ slightly larger than Ising values
+
+The XY model in 2D exhibits the Kosterlitz-Thouless transition, fundamentally different from conventional critical phenomena. In 3D, the transition is conventional but with enhanced fluctuations due to the continuous O(2) symmetry.
+
+Cross-references: [[id:f0a1b2c3-d4e5-4f6a-b7c8-d9e0f1a2b3c4][Ising Model (n=1) Exponents]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]

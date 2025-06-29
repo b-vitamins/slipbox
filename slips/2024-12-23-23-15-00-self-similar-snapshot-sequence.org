@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       c4d5e6f7-a8b9-4c0d-e1f2-a3b4c5d6e7f8
+:CUSTOM_ID: 92/172
+:END:
+#+TITLE: Self-Similar Snapshot Sequence
+#+FILETAGS: :physics:statistical:visualization:selfsimilarity:fractal:
+
+Visual sequence showing critical system at different magnifications:
+
+```
+████░░██         ██░░░░░░██       █░░░░░░░█
+██░░████   →     ░░████░░░░   →   ░░░██░░░░
+░░██░░██         ██░░░░██░░       █░░░░░░█░
+██░░██░░         ░░██░░░░██       ░██░░░██░
+
+Zoom out b →     Zoom out b →
+Contrast ×ζ      Contrast ×ζ
+```
+
+Key features of self-similarity:
+1. Statistical invariance: Each zoomed image is statistically identical to the original after contrast adjustment
+2. No characteristic scale: Features appear at all length scales from a to ξ
+3. Power-law correlations: Connected regions follow fractal statistics
+
+Under RG transformation:
+- Spatial scale: x → x/b
+- Field amplitude: m → m/ζ where ζ = b^((d-2+η)/2)
+- Configuration probability: P[m'] = P[m] (statistically)
+
+Physical manifestations include critical opalescence (density fluctuations on all scales scatter light), fractal domain structures, and scale-free avalanches.
+
+Cross-references: [[id:d61c162e-51ba-4a68-aff2-e34a5e6927fb][Statistical Self-Similarity]], [[id:afba5389-ac75-4e21-b0ab-62b8319c7d75][RG Transformation Mathematics]], [[id:c8411d15-e158-4dca-9c2d-ec9131181805][Power Law Decay at Criticality]]

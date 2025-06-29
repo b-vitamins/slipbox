@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 9cd4934e-166a-4e42-a651-42632c7ea05d
+:CUSTOM_ID: 92/136
+:END:
+#+TITLE: Rushbrooke Identity
+#+FILETAGS: :physics:spof:ch4:exponents:
+
+The Rushbrooke identity α + 2β + γ = 2 emerges directly from the homogeneity of thermodynamic functions and represents one of the fundamental constraints on critical exponents.
+
+This identity provides a stringent test of experimental measurements and theoretical calculations—any violation indicates either experimental error or breakdown of the scaling hypothesis. The identity holds exactly at all critical points described by homogeneous scaling, regardless of microscopic details or spatial dimension. Its universality across diverse physical systems from magnets to fluids to alloys provided early compelling evidence for the scaling hypothesis before the development of renormalization group theory offered a microscopic justification.
+
+The identity connects the specific heat exponent α, order parameter exponent β, and susceptibility exponent γ, demonstrating that only two of these three are independent.
+
+See also: [[id:5f983926-ed74-4070-91b3-be036b307a89][Exponent Relations Complete Set]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]], [[id:3e5756a3-ea86-4619-8a47-2b124f20d107][Widom Identity]]

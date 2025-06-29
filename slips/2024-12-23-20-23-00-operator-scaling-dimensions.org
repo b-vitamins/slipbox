@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID: 41e16051-695f-4ec8-9400-96847c53ffe6
+:CUSTOM_ID: 92/135
+:END:
+#+TITLE: Operator Scaling Dimensions
+#+FILETAGS: :physics:spof:ch4:operators:
+
+The scaling dimensions of operators determine their relevance under RG flow, providing the key to understanding which interactions matter for critical behavior.
+
+Using the field rescaling ζ = b^(1-d/2) that keeps the Gaussian fixed point invariant: u_n' = b^d b^(n(2-d)/2) u_n = b^(n-d(n/2-1)) u_n
+
+Therefore the scaling dimension is: y_n = n - d(n/2 - 1) (Equation 4.71)
+
+This formula yields the scaling dimensions for all local operators:
+- y_1 = 1 + d/2 (magnetic field)
+- y_2 = 2 (temperature)
+- y_4 = 4 - d (quartic coupling)
+- y_6 = 6 - 2d (sextic coupling)
+
+The operator m⁴ is relevant (y_4 > 0) for d < 4, marginal at d = 4, and irrelevant for d > 4. This identifies d_c = 4 as the upper critical dimension where the Gaussian fixed point loses stability to quartic perturbations. For d < 4, the true critical behavior is controlled by a non-Gaussian fixed point where the m⁴ interaction plays an essential role. The majority of higher-order operators are irrelevant for d > 2, explaining why only a few parameters need to be tuned to observe criticality.
+
+See also: [[id:f005296d-5b11-45df-8b6a-13c5fa3b471e][Eigenoperators at Gaussian FP]], [[id:6393ed47-d4af-4e90-a01a-48b3cba8fbb7][d-Dependence of Gaussian Exponents]], [[id:912a3e7c-76e1-4f8b-bd44-7832c81abbc8][Upper Critical Dimension]]

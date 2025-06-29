@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 271b4406-4e94-4d46-b80a-51eaaa341016
+:CUSTOM_ID: 92/124
+:END:
+#+TITLE: Partition Function Preservation
+#+FILETAGS: :physics:spof:ch4:rg:
+
+The fundamental constraint Z = Z' requires that the partition function remains invariant under RG transformations. This preservation connects the microscopic coarse-graining of configurations to the macroscopic scaling of thermodynamic quantities, providing the key bridge between geometric and analytical aspects of the renormalization group.
+
+Substituting the parameter transformations t' = b^(yt) t and h' = b^(yh) h gives the homogeneous form f(t,h) = b^(-d) f(b^(yt) t, b^(yh) h), establishing that the free energy is a generalized homogeneous function.
+
+The preservation of Z extends to all thermodynamic relations. The magnetization m = -(1/V) ∂ln Z/∂h transforms as m = b^(yh-d) m', determining its scaling dimension. Similarly, the energy density transforms as e = b^(yt-d) e'. These transformation laws follow from the chain rule applied to preserved quantities, ensuring thermodynamic consistency. The partition function preservation thus provides the bridge between the microscopic RG transformation of configurations and the macroscopic scaling of thermodynamic observables, unifying the geometric and analytical aspects of the renormalization group.
+
+See also: [[id:afba5389-ac75-4e21-b0ab-62b8319c7d75][RG Transformation Mathematics]], [[id:be961221-98ca-41d4-b32c-3b758e0a69e3][RG Transformation Equations]], [[id:2a9cd4f2-ac26-474b-8e5e-fa43e65caf0a][Volume/Length Scaling Under RG]]

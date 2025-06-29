@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       e6f7a8b9-c0d1-4e2f-a3b4-c5d6e7f8a9b0
+:CUSTOM_ID: 92/170
+:END:
+#+TITLE: Homogeneous Function Visualization
+#+FILETAGS: :physics:statistical:visualization:scaling:homogeneous:
+
+Log-log plots reveal the power-law structure of critical phenomena:
+
+```
+log Q
+  ↑
+  |     m: slope = β
+  |    /
+  |   /  χ: slope = -γ  
+  |  /  /
+  | / _/- - - - - ξ: slope = -ν
+  |/_/- - - - -/- C: slope = -α
+  +----------------→ log|t|
+```
+
+Universal scaling collapse: When plotted as |t|^(-p_Q)Q versus h/|t|^Δ, all data collapse onto universal curves. The parallel lines in log-log plots reflect the universal gap exponent Δ—all quantities scale with the same combination h/|t|^Δ.
+
+Different systems in the same universality class yield identical plots up to non-universal metric factors (vertical and horizontal shifts in log space). This visualization guides experimental analysis—successful data collapse confirms scaling hypothesis and yields critical exponents.
+
+Cross-references: [[id:1bb44a5f-852b-4fca-8634-3e3746cc9a1a][Homogeneity Mathematical Framework]], [[id:22d8738e-34aa-4aae-ab84-9e0300254249][Thermodynamic Derivatives Cascade]], [[id:03135b91-b9bd-4cfc-bf6c-e9ff0279e938][Susceptibility Scaling]]

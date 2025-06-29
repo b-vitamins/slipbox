@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID: 5f983926-ed74-4070-91b3-be036b307a89
+:CUSTOM_ID: 92/127
+:END:
+#+TITLE: Exponent Relations Complete Set
+#+FILETAGS: :physics:spof:ch4:exponents:
+
+The complete set of exponent relations emerges from the thermodynamic derivatives of the scaling form, providing fundamental constraints on critical behavior.
+
+**Key definitions**: β = 2-α-Δ (Equation 4.13, from m ~ |t|^β at h=0)
+
+δ = Δ/β = Δ/(2-α-Δ) (Equation 4.15, from m ~ h^(1/δ) at t=0)
+
+γ = 2Δ - 2 + α (Equation 4.16, from χ ~ |t|^(-γ) at h=0)
+
+**Classical exponent identities**:
+
+*Rushbrooke's identity*: α + 2β + γ = α + 2(2-α-Δ) + (2Δ-2+α) = 2 (Equation 4.17)
+
+*Widom's identity*: δ - 1 = Δ/(2-α-Δ) - 1 = (2Δ-2+α)/(2-α-Δ) = γ/β (Equation 4.17)
+
+These identities serve as crucial consistency checks for experimental and theoretical determinations of critical exponents. Their universal validity across diverse physical systems provides the strongest evidence for the scaling hypothesis.
+
+See also: [[id:461855d0-9227-4da9-ba1b-f8bad53e15ff][Thermodynamic Derivatives Cascade]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]], [[id:d46c4ed5-ef81-4b98-9358-7b8e6b64ecfb][Gap Exponent]]

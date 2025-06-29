@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       e8f9a0b1-c2d3-4e5f-a6b7-c8d9e0f1a2b3
+:CUSTOM_ID: 92/183
+:END:
+#+TITLE: Momentum Cutoff Conventions
+#+FILETAGS: :physics:statistical:momentum:cutoff:fourier:
+
+Spherical momentum cutoff approximation: cubic Brillouin zone → sphere of radius Λ ≈ π/a.
+
+This approximation affects only non-universal quantities while preserving universal critical behavior. The momentum integration measure becomes:
+
+∫_BZ d^d q/(2π)^d → K_d ∫₀^Λ dq q^(d-1)
+
+where K_d = S_d/(2π)^d and S_d = 2π^(d/2)/Γ(d/2) is the surface area of a unit sphere in d dimensions.
+
+Fourier conventions:
+- Forward: m(q) = ∫d^d x e^(iq⋅x) m(x)
+- Inverse: m(x) = ∫d^d q/(2π)^d e^(-iq⋅x) m(q)
+
+RG shell integration divides modes:
+- Fast modes: Λ/b < |q| < Λ
+- Slow modes: |q| < Λ/b
+
+The spherical approximation becomes exact in the critical limit where only |q| → 0 matters. The systematic reduction of the cutoff by factors of b implements momentum-space RG.
+
+Cross-references: [[id:df911964-3bd8-4162-ad2c-20ef23bd4a80][Gaussian Model Setup]], [[id:5f665483-ba40-445a-bb64-01273ea1d742][Gaussian RG Calculation]], [[id:a2b3c4d5-e6f7-4a8b-c9d0-e1f2a3b4c5d6][Brillouin Zone → Sphere Approximation]]

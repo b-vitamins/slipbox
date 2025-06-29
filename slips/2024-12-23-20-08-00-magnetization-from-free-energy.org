@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 79c67aed-2ba3-4f2b-ac8e-bcff1df9622c
+:CUSTOM_ID: 92/120
+:END:
+#+TITLE: Magnetization from Free Energy
+#+FILETAGS: :physics:spof:ch4:thermodynamics:
+
+The magnetization is obtained as the thermodynamic derivative m = ∂f/∂h, which when applied to the [[id:a662555e-24b7-4740-a0c4-fabf9e2f11d4][Free Energy Scaling Form]] yields m = |t|^(2-α-Δ) g_m(h/|t|^Δ), where g_m(x) = g_f'(x) is the derivative of the free energy scaling function. This demonstrates that thermodynamic derivatives preserve the homogeneous structure while reducing the overall power of |t| by the gap exponent Δ.
+
+The magnetization scaling function determines the behavior in different regimes. Along the coexistence curve (h = 0, t < 0), g_m(0) is finite, giving m ~ |t|^(2-α-Δ) ≡ |t|^β, which identifies β = 2 - α - Δ. On the critical isotherm (t = 0), the requirement that m be independent of t demands g_m(x) ~ x^((2-α-Δ)/Δ) for large x, yielding m ~ h^(1/δ) with δ = Δ/(2-α-Δ) = Δ/β.
+
+The equation of state near criticality thus takes the universal form m = |t|^β ℳ(h/|t|^Δ), where the scaling function ℳ encodes the crossover from spontaneous magnetization to field-induced magnetization.
+
+See also: [[id:22d8738e-34aa-4aae-ab84-9e0300254249][Thermodynamic Derivatives Cascade]], [[id:a662555e-24b7-4740-a0c4-fabf9e2f11d4][Free Energy Scaling Form]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]

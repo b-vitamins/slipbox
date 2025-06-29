@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 8373d2dd-1564-4f96-9425-0ca1e8eb9435
+:CUSTOM_ID: 92/137
+:END:
+#+TITLE: Josephson Identity
+#+FILETAGS: :physics:spof:ch4:hyperscaling:
+
+The Josephson identity 2 - α = dν establishes the crucial hyperscaling relation connecting the specific heat exponent α to the correlation length exponent ν through the spatial dimension d.
+
+This relation emerges from dimensional analysis of the free energy density in terms of the correlation length: f_sing ~ ξ^(-d) ~ |t|^(dν). Combined with the scaling form f_sing ~ |t|^(2-α), this directly yields the Josephson identity.
+
+The identity is fundamental to hyperscaling theory and is valid below the upper critical dimension d_c = 4. Above d_c, the identity breaks down as mean-field theory becomes exact and fluctuation effects vanish.
+
+See also: [[id:21c05252-cd10-47f3-a8ea-e2dc44bccab5][Hyperscaling]], [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Correlation Function Mathematics]], [[id:b41e2d14-3737-4c1d-b87e-bd501a46ddeb][Correlation Length as Master Scale]]

@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID: 461855d0-9227-4da9-ba1b-f8bad53e15ff
+:CUSTOM_ID: 92/126
+:END:
+#+TITLE: Thermodynamic Derivatives Cascade
+#+FILETAGS: :physics:spof:ch4:thermodynamics:
+
+The thermodynamic derivatives cascade demonstrates how successive derivatives of the free energy generate the complete hierarchy of critical exponents while preserving the scaling structure.
+
+**Magnetization** (field derivative): m(t,h) ~ ∂f/∂h ~ |t|^(2-α-Δ) g_m(h/|t|^Δ) (Equation 4.5)
+
+**Specific heat** (second temperature derivative): C_sing ~ -∂²f/∂t² ~ |t|^(-α) g_C(h/|t|^Δ) (Equation 4.6)
+
+**Susceptibility** (second field derivative): χ(t,h) ~ ∂m/∂h ~ |t|^(2-α-2Δ) g_χ(h/|t|^Δ) (Equation 4.16)
+
+The preservation of the scaling variable h/|t|^Δ throughout this cascade demonstrates the universality of the gap exponent—a single Δ describes the relative scaling of all thermodynamic quantities. Each derivative reduces the power of |t| in predictable ways, generating the web of exponent relations.
+
+See also: [[id:d6401778-fc86-456b-8abd-692f1f4e9a1b][Homogeneity Mathematical Framework]], [[id:79c67aed-2ba3-4f2b-ac8e-bcff1df9622c][Magnetization from Free Energy]], [[id:72332205-efce-4143-bc7b-eb81e91ee691][Susceptibility Scaling]]

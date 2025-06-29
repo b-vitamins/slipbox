@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       a0b1c2d3-e4f5-4a6b-c7d8-e9f0a1b2c3d4
+:CUSTOM_ID: 92/171
+:END:
+#+TITLE: RG Flow in Parameter Space
+#+FILETAGS: :physics:statistical:visualization:renormalization:flow:
+
+RG trajectories in (t,h) parameter space:
+
+```
+      |  ⟋ ⟋ ⟋ 
+      | ⟋ ⟋ ⟋    Flow away from
+      |⟋ ⟋ ⟋     critical point
+    --•---------- → t
+     S*⟍ ⟍ ⟍
+      | ⟍ ⟍ ⟍
+      |  ⟍ ⟍ ⟍
+      
+Critical manifold: h = 0, t = 0
+```
+
+Near S*: t' = b²t, h' = b^(1+d/2)h. The fixed point S* at origin is unstable with basin of attraction perpendicular to (t,h) plane.
+
+Physical interpretation:
+1. High T (t > 0): System flows to trivial fixed point at t → ∞
+2. Low T (t < 0): System flows to ordered fixed point  
+3. Near criticality: Initial approach to S* along irrelevant directions, then departure along relevant ones
+4. Critical surface: Fine-tuned trajectory with t = h = 0
+
+The "time" spent near S* (in RG steps) determines the range of critical behavior observed.
+
+Cross-references: [[id:0fada92d-d038-4eab-b37e-73ced8aca89c][RG Fixed Point Topology]], [[id:afba5389-ac75-4e21-b0ab-62b8319c7d75][RG Transformation Mathematics]], [[id:0b3907b5-eb1b-4f22-9793-f85e599d9436][Parameter Flow]]

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID: fbb01064-5ffe-47be-aef8-58e07d1e2a59
+:CUSTOM_ID: 92/130
+:END:
+#+TITLE: Analyticity Argument
+#+FILETAGS: :physics:spof:ch4:universality:
+
+The analyticity argument proves that critical exponents must be universal by showing that thermodynamic smoothness constrains scaling forms on both sides of the phase transition.
+
+If we postulate different scaling forms above and below: C_±(t,h) = |t|^(-α_±) g_±(h/|t|^(Δ_±)) (Equation 4.7)
+
+Then for large h/|t|^(Δ_±), the scaling functions behave as: C_± = |t|^(-α_±)[A_±(h/|t|^(Δ_±))^(p_±) + B_±(h/|t|^(Δ_±))^(q_±) + ...] (Equation 4.9)
+
+Matching to the Taylor series requires p_± Δ_± = -α_± and q_± Δ_± = -(1+α_±), yielding: C_±(t ≪ h^Δ) = A_± h^(-α_±/Δ_±) + B_± h^(-(1+α_±)/Δ_±)|t| + ... (Equation 4.10)
+
+Continuity at t=0 then forces: α_+ = α_- ≡ α, Δ_+ = Δ_- ≡ Δ (Equation 4.11)
+
+This elegant argument shows that symmetry between the two phases is not assumed but rather follows from analyticity, providing a fundamental proof of universal critical exponents.
+
+See also: [[id:aaeee0ab-91d5-4186-a7b7-8ad92572f72f][Homogeneity Assumption]], [[id:d6401778-fc86-456b-8abd-692f1f4e9a1b][Homogeneity Mathematical Framework]], [[id:3bf87284-ef15-4bb2-a699-69cfab387379][Universality Principle]]

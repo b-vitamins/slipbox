@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       e0f1a2b3-c4d5-4e6f-a7b8-c9d0e1f2a3b4
+:CUSTOM_ID: 92/160
+:END:
+#+TITLE: 2D Ising Exact Solution
+#+FILETAGS: :physics:statistical:ising:2d:exact:onsager:
+
+Onsager's exact critical exponents for the 2D Ising model:
+- γ = 7/4 (susceptibility)
+- δ = 15 (critical isotherm)
+- ν = 1 (correlation length)
+- η = 1/4 (anomalous dimension)
+- Logarithmic specific heat: C ~ ln|t|
+
+Historical significance of Onsager's 1944 solution:
+1. First rigorous demonstration that mean-field theory fails in low dimensions
+2. Critical exponents can take non-classical values
+3. Scaling relations hold exactly
+
+Special features:
+- Large anomalous dimension η = 1/4 (maximum for any known system)
+- Correlation length exponent ν = 1 saturates the bound ν ≥ 1/d
+- All exponents are rational numbers (not true in 3D)
+
+Verification of scaling:
+- Rushbrooke: 0 + 2(1/8) + 7/4 = 2 ✓
+- Josephson: 0 = 2 - 2(1) = 0 ✓
+- Fisher: 7/4 = (2 - 1/4) × 1 = 7/4 ✓
+
+The rational exponents arise from conformal field theory in two dimensions, where additional symmetries constrain the critical behavior.
+
+Cross-references: [[id:f0a1b2c3-d4e5-4f6a-b7c8-d9e0f1a2b3c4][Ising Model (n=1) Exponents]], [[id:e715b16b-8dd4-43b4-99a3-a765bf51f1b7][Scaling Relations Summary]]

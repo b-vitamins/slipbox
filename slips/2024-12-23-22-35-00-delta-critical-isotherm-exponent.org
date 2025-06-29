@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       e2f3a4b5-c6d7-4e8f-a9b0-c1d2e3f4a5b6
+:CUSTOM_ID: 92/164
+:END:
+#+TITLE: δ (Critical Isotherm Exponent)
+#+FILETAGS: :physics:statistical:exponents:isotherm:delta:
+
+The critical isotherm exponent δ relates field and order parameter at criticality: h ~ m^δ at t = 0.
+
+The measurement of δ requires careful approach to the critical temperature, as any deviation introduces temperature-dependent corrections. The critical isotherm often provides the most precise determination of T_c, as it exhibits pure power-law behavior without the competing temperature scales present along other thermodynamic paths.
+
+The universality of δ, like other critical exponents, extends across diverse physical systems from magnets to fluids, demonstrating the profound unity underlying critical phenomena. The critical isotherm represents the cleanest experimental manifestation of scaling behavior.
+
+Cross-references: [[id:22d8738e-34aa-4aae-ab84-9e0300254249][Thermodynamic Derivatives Cascade]], [[id:a4b5c6d7-e8f9-4a0b-c1d2-e3f4a5b6c7d8][β (Order Parameter Exponent)]], [[id:de716b3d-8e3d-4fcd-bdd5-40a813f929b6][Exponent Relations Complete Set]]

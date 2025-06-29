@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: b41e2d14-3737-4c1d-b87e-bd501a46ddeb
+:CUSTOM_ID: 92/115
+:END:
+#+TITLE: Correlation Length as Master Scale
+#+FILETAGS: :physics:spof:ch4:correlations:
+
+The correlation length ξ serves as the master scale that determines all singular behavior near the critical point. As the only divergent length scale in the system, it controls the spatial structure of correlations and governs the scaling of all thermodynamic quantities.
+
+The correlation length diverges as ξ ~ |t|^(-ν) where ν is the correlation length exponent. This divergence signals the onset of long-range correlations and scale invariance at criticality. All other length-dependent quantities must scale with powers of ξ.
+
+Through hyperscaling relations, the correlation length connects spatial and thermodynamic properties: the free energy density scales as ξ^(-d), linking geometric and energetic aspects of critical phenomena.
+
+See also: [[id:9812fa5a-6ca9-40bf-9382-f9552dc28bdf][Correlation Function Mathematics]], [[id:1a3b349a-4c19-4c08-a7c5-540314465c18][Correlation Length Block Decomposition]], [[id:aaeee0ab-91d5-4186-a7b7-8ad92572f72f][Homogeneity Assumption]]

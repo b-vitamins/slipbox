@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       e6f7a8b9-c0d1-4e2f-a3b4-c5d6e7f8a9b0
+:CUSTOM_ID: 92/180
+:END:
+#+TITLE: Saddle Point Results
+#+FILETAGS: :physics:statistical:fieldtheory:saddlepoint:meanfield:
+
+Mean-field free energy scaling form:
+
+f(t,h) = |t|² g_f(h/|t|^Δ) with classical gap exponent Δ = 3/2
+
+The saddle-point exponents follow as:
+- α = 0 (jump discontinuity in specific heat)
+- β = 1/2 (from m ~ √(-t/2u))  
+- γ = 1 (from χ = 1/t)
+- δ = 3 (from cubic equation at t = 0)
+
+These classical values satisfy all scaling relations exactly, providing a consistency check. The breakdown of saddle-point approximation below four dimensions occurs because fluctuations around the saddle point become comparable to the mean-field values themselves.
+
+The saddle-point results remain valuable as they become exact in several limits: above four dimensions, for long-range interactions with sufficiently slow decay, and in the thermodynamic limit of infinite-range models. They also provide the starting point for systematic fluctuation expansions around mean-field theory.
+
+Cross-references: [[id:e0812a92-87a6-438d-af2f-e21271585d5b][Gaussian Direct Solution]], [[id:a8b9c0d1-e2f3-4a5b-c6d7-e8f9a0b1c2d3][Gaussian Exponents]]

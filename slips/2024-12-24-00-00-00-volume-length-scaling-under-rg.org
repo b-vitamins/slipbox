@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       a0b1c2d3-e4f5-4a6b-c7d8-e9f0a1b2c3d4
+:CUSTOM_ID: 92/181
+:END:
+#+TITLE: Volume/Length Scaling Under RG
+#+FILETAGS: :physics:statistical:renormalization:scaling:geometric:
+
+Geometric transformations under RG:
+- Volume: V' = V/b^d
+- Length scale: L' = L/b
+- Correlation length: ξ' = ξ/b
+
+These geometric transformations ensure that the coarse-grained system appears identical to the original when viewed at the appropriate scale. The volume reduction reflects the decrease in the number of degrees of freedom after integrating out short-wavelength fluctuations.
+
+The free energy relation Vf(t,h) = V'f(t',h') combined with V' = V/b^d yields the fundamental homogeneity relation f(t,h) = b^(-d)f(t',h'). This connects the microscopic RG transformation to macroscopic scaling behavior.
+
+The magnetization transforms as:
+m(t,h) = b^(y_h-d)m(t',h')
+
+The systematic appearance of the factor b^d in all extensive quantities reflects the fundamental role of dimension in critical phenomena. The RG procedure effectively trades resolution in space (factor b) for movement in parameter space (factors b^y_i).
+
+Cross-references: [[id:afba5389-ac75-4e21-b0ab-62b8319c7d75][RG Transformation Mathematics]], [[id:e44875a8-b5ad-48ad-b47d-1206a5d205c0][Partition Function Preservation]]

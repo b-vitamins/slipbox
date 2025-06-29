@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 3bf87284-ef15-4bb2-a699-69cfab387379
+:CUSTOM_ID: 92/117
+:END:
+#+TITLE: Universality Principle
+#+FILETAGS: :physics:spof:ch4:universality:
+
+The universality principle states that systems with different microscopic details can exhibit identical critical behavior, characterized by the same set of critical exponents. This remarkable feature arises because microscopic details correspond to irrelevant operators under renormalization group flow.
+
+Different microscopic systems flow to the same infrared fixed point if they share the same symmetries and dimensionality. The fixed point acts as an attractor in the space of possible theories, washing out microscopic differences and producing universal critical behavior.
+
+This principle explains why systems as diverse as liquid-gas transitions, magnetic phase transitions, and binary alloys all exhibit the same critical exponents when they belong to the same universality class.
+
+See also: [[id:e627ad42-996f-4fcb-bb38-1eab2d8c03ab][Critical Point as RG Fixed Point]], [[id:429deb29-ca65-406a-ac14-0b33cf975fb0][Fixed Point Analysis]], [[id:0fada92d-d038-4eab-b37e-73ced8aca89c][RG Fixed Point Topology]]

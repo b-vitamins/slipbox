@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       c8d9e0f1-a2b3-4c4d-e5f6-a7b8c9d0e1f2
+:CUSTOM_ID: 92/163
+:END:
+#+TITLE: γ (Susceptibility Exponent)
+#+FILETAGS: :physics:statistical:exponents:susceptibility:gamma:
+
+The susceptibility exponent γ controls the divergence of response functions: χ ~ |t|^(-γ).
+
+The exponent γ appears in the fluctuation-dissipation theorem connecting susceptibility to order parameter fluctuations: χ = ∫d^d x⟨m(x)m(0)⟩. This integral representation, combined with the power-law decay of correlations, provides the microscopic foundation for Fisher's identity.
+
+The universality of γ within each symmetry class, despite vast differences in microscopic interactions, provided early compelling evidence for the scaling hypothesis before the development of renormalization group theory. The susceptibility divergence represents the system's enhanced response to external perturbations near criticality.
+
+Cross-references: [[id:03135b91-b9bd-4cfc-bf6c-e9ff0279e938][Susceptibility Scaling]], [[id:de716b3d-8e3d-4fcd-bdd5-40a813f929b6][Exponent Relations Complete Set]], [[id:22d8738e-34aa-4aae-ab84-9e0300254249][Thermodynamic Derivatives Cascade]]

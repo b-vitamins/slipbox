@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID:       a4b5c6d7-e8f9-4a0b-c1d2-e3f4a5b6c7d8
+:CUSTOM_ID: 92/178
+:END:
+#+TITLE: Critical Exponent Relationships Web
+#+FILETAGS: :physics:statistical:visualization:exponents:relations:
+
+Network diagram of critical exponent relationships:
+
+```
+                   /|              /
+    [Josephson]   / |             /
+        ↙        /  |            /
+       α ←------+   |           /
+       ↑        |   |          /
+[Rushbrooke]    |   |    γ ←--
+       ↓        |   |  ↗ ↑
+       β ←------+---+-    |
+         \      |   |  [Widom]
+          \     |   |     |
+           `----+---+-----δ
+                 \
+                  Δ (gap)
+```
+
+Relation equations:
+- Rushbrooke: α + 2β + γ = 2 (from homogeneity)
+- Widom: δ - 1 = γ/β (from scaling forms)
+- Fisher: γ = (2-η)ν (from correlation functions)
+- Josephson: α = 2 - dν (hyperscaling)
+
+From homogeneity principles:
+- β = 2 - α - Δ
+- δ = Δ/β  
+- γ = 2Δ - 2 + α
+
+Only 2 independent exponents needed—all others follow from scaling relations. Common choices include (ν,η) for correlation-based approach or (α,Δ) for thermodynamic approach.
+
+Cross-references: [[id:de716b3d-8e3d-4fcd-bdd5-40a813f929b6][Exponent Relations Complete Set]], [[id:e715b16b-8dd4-43b4-99a3-a765bf51f1b7][Scaling Relations Summary]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]

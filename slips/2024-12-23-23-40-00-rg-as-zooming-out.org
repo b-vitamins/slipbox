@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       e0f1a2b3-c4d5-4e6f-a7b8-c9d0e1f2a3b4
+:CUSTOM_ID: 92/177
+:END:
+#+TITLE: RG as Zooming Out
+#+FILETAGS: :physics:statistical:visualization:renormalization:scale:
+
+The RG as systematic zooming process:
+
+```
+Fine detail (scale a)     High-k modes (k ~ Λ)
+    ↓ RG step            ↓ Integrate out
+Medium scale (scale ba)   Medium-k (k ~ Λ/b)
+    ↓ RG step            ↓ Integrate out  
+Coarse view (scale b²a)  Low-k modes (k ~ Λ/b²)
+```
+
+The RG zoom sequence:
+1. Start: System with fluctuations on all scales up to Λ ~ 1/a
+2. Integrate shell: Remove modes Λ/b < k < Λ (blur fine details)
+3. Rescale: k' = bk restores cutoff (zoom out camera)
+4. Renormalize: Adjust contrast to maintain normalization
+5. Result: Effective description at scale ba
+
+At criticality: Each zoom reveals statistically identical structure. The pattern remains unchanged under successive zooming.
+
+Away from criticality: Pattern changes under zooming until reaching scale ξ:
+- For length < ξ: Looks critical
+- For length > ξ: Looks trivial (ordered or disordered)
+
+This makes clear why the RG is the natural tool for critical phenomena—it systematically implements the scale transformations under which critical systems are invariant.
+
+Cross-references: [[id:c4d5e6f7-a8b9-4c0d-e1f2-a3b4c5d6e7f8][Self-Similar Snapshot Sequence]], [[id:afba5389-ac75-4e21-b0ab-62b8319c7d75][RG Transformation Mathematics]], [[id:a2b3c4d5-e6f7-4a8b-c9d0-e1f2a3b4c5d6][Brillouin Zone → Sphere Approximation]]

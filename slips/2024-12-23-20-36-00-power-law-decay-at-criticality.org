@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 55d654a9-9ff8-4246-b407-ee9ca4210b24
+:CUSTOM_ID: 92/148
+:END:
+#+TITLE: Power Law Decay at Criticality
+#+FILETAGS: :physics:spof:ch4:correlations:
+
+At the critical point, correlation functions exhibit universal power-law decay G^c(x) ~ 1/|x|^(d-2+η), where η is the anomalous dimension characterizing deviations from simple dimensional scaling.
+
+The universality of power-law correlations at criticality extends beyond the order parameter to all local operators. Energy density correlations decay as |x|^(-(d-2+η')), defining another anomalous dimension η'. The complete spectrum of power laws at criticality encodes the full content of the critical theory, with each operator acquiring its own anomalous dimension. These power laws are measured directly in scattering experiments, where the structure factor S(q) ~ q^(-(2-η)) at small momenta provides a direct probe of η.
+
+The power-law form reflects the absence of any characteristic length scale at criticality, making the system self-similar across all length scales accessible to measurement.
+
+See also: [[id:e2229eaf-efce-4be5-a860-38034580d306][Statistical Self-Similarity]], [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Correlation Function Mathematics]], [[id:b41e2d14-3737-4c1d-b87e-bd501a46ddeb][Correlation Length as Master Scale]]

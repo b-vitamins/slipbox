@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: be961221-98ca-41d4-b32c-3b758e0a69e3
+:CUSTOM_ID: 92/122
+:END:
+#+TITLE: RG Transformation Equations
+#+FILETAGS: :physics:spof:ch4:rg:
+
+Near a fixed point, RG transformations can be linearized as g_i' = b^(y_i) g_i, where g_i are coupling constants and y_i are scaling dimensions. The linearization matrix is (ℜ_b^L)_αβ = ∂S_α'/∂S_β|_(S*), evaluated at the fixed point S*.
+
+The crucial property of RG transformations is their semi-group structure: successive applications with scale factors b₁ and b₂ equal a single transformation with scale factor b₁b₂. This implies ℜ_(b₁)^L ℜ_(b₂)^L = ℜ_(b₁b₂)^L, meaning linearization matrices for different scale factors commute and can be simultaneously diagonalized. The eigenvalues must satisfy λ(b₁)λ(b₂) = λ(b₁b₂), which combined with the boundary condition λ(1) = 1 uniquely determines λᵢ(b) = b^(yᵢ).
+
+The eigenvectors 𝒪ᵢ with eigenvalues b^(yᵢ) are the scaling operators of the theory. Near the fixed point, any Hamiltonian can be expanded as S = S* + Σᵢ gᵢ𝒪ᵢ, where the coupling constants transform simply as gᵢ' = b^(yᵢ) gᵢ. This diagonal form reveals the hierarchy of operators: relevant (yᵢ > 0), irrelevant (yᵢ < 0), and marginal (yᵢ = 0), determining which microscopic details affect macroscopic critical behavior.
+
+See also: [[id:429deb29-ca65-406a-ac14-0b33cf975fb0][Fixed Point Analysis]], [[id:f005296d-5b11-45df-8b6a-13c5fa3b471e][Eigenoperators at Gaussian FP]], [[id:c8411d15-e158-4dca-9c2d-ec9131181805][Power Law Decay at Criticality]]

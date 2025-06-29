@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID: 767b74b1-0c38-41e1-af84-817b283cb1fd
+:CUSTOM_ID: 92/129
+:END:
+#+TITLE: RG Transformation Mathematics
+#+FILETAGS: :physics:spof:ch4:rg:
+
+The mathematical formulation of RG transformations combines coarse-graining, rescaling, and field renormalization in a systematic procedure: m'(x) = ζm̃(x/b) (Equation 4.29). This combines coarse-graining (integration over cells), rescaling (x_new = x_old/b), and field renormalization (factor ζ).
+
+**Parameter flow near fixed points**: t' = b^(yt) t + ..., h' = b^(yh) h + ... (Equation 4.32)
+
+The exponents y_t and y_h are RG eigenvalues determining the relevance of operators.
+
+**Free energy transformation**: f(t,h) = b^(-d) f(b^(yt) t, b^(yh) h) (Equation 4.35)
+
+This follows from partition function preservation: Z = Z' with V' = V/b^d.
+
+**General observable scaling**: X(t,h) = b^(yX) X(b^(yt) t, b^(yh) h) (Equation 4.40)
+
+For conjugate pairs contributing ∫d^d x F·X to the Hamiltonian, dimensions satisfy y_X = y_F - d.
+
+See also: [[id:271b4406-4e94-4d46-b80a-51eaaa341016][Partition Function Preservation]], [[id:0b3907b5-eb1b-4f22-9793-f85e599d9436][Parameter Flow]], [[id:be961221-98ca-41d4-b32c-3b758e0a69e3][RG Transformation Equations]]

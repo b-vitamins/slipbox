@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: fb83d107-8e2b-41e1-90ab-3e1876501531
+:CUSTOM_ID: 92/149
+:END:
+#+TITLE: Energy Correlations
+#+FILETAGS: :physics:spof:ch4:correlations:
+
+Energy correlations at criticality follow the same power-law structure as order parameter correlations but with a distinct anomalous dimension η', leading to the relation α = (2-η')ν connecting the specific heat exponent to correlation properties.
+
+For the Gaussian model, η' = 2 exactly, leading to α = 0 and logarithmic specific heat divergence. This value changes under renormalization group flow away from the Gaussian fixed point, but the relation α = (2-η')ν remains exact. The measurement of energy correlations provides an independent route to critical exponents, particularly valuable in systems where the order parameter is not easily accessible but energy fluctuations can be measured through specific heat or thermal conductivity experiments.
+
+The energy-energy correlation function captures fluctuations in the local energy density, providing insight into the thermal properties of critical systems and their response to temperature variations.
+
+See also: [[id:55d654a9-9ff8-4246-b407-ee9ca4210b24][Power Law Decay at Criticality]], [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Correlation Function Mathematics]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]

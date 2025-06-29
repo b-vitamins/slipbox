@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 20e2bc3a-6544-44e6-8dc5-9d820f4e7a89
+:CUSTOM_ID: 92/150
+:END:
+#+TITLE: Off-Critical Correlations
+#+FILETAGS: :physics:spof:ch4:correlations:
+
+Off-critical correlations exhibit the Ornstein-Zernike form with exponential cutoff at the correlation length, smoothly interpolating between power-law critical behavior and exponential decay in the ordered or disordered phases.
+
+In the scaling limit where t → 0 and |x| → ∞ with |x|/ξ fixed, the correlation function takes the homogeneous form G(x, t) = |x|^(-(d-2+η)) g(|x|/ξ), where the scaling function g(z) interpolates between g(0) = const and g(z→∞) ~ z^((d-2+η)/2) e^(-z). This scaling form encapsulates the full temperature dependence of correlations near criticality and can be tested directly in scattering experiments through the momentum-dependent structure factor.
+
+The crossover from critical power-law behavior at short distances to exponential decay at distances comparable to the correlation length provides a direct experimental signature of the finite correlation length and its divergence as criticality is approached.
+
+See also: [[id:b41e2d14-3737-4c1d-b87e-bd501a46ddeb][Correlation Length as Master Scale]], [[id:55d654a9-9ff8-4246-b407-ee9ca4210b24][Power Law Decay at Criticality]], [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Correlation Function Mathematics]]

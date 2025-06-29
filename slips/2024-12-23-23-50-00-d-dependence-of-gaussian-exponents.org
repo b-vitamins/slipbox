@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       c8d9e0f1-a2b3-4c4d-e5f6-a7b8c9d0e1f2
+:CUSTOM_ID: 92/179
+:END:
+#+TITLE: d-Dependence of Gaussian Exponents
+#+FILETAGS: :physics:statistical:visualization:dimension:gaussian:
+
+Scaling dimensions vs spatial dimension:
+
+```
+    |
+  6 +     y₂ = 2 (always relevant)
+    |     --------
+  4 +         
+    |           y₄ = 4-d
+  2 +     ___⟍ 
+    |  ⟍'     '⟍___
+  0 +---------------⟍--------→ d
+    |              4  '⟍___
+ -2 +                      '⟍_ y₆ = 6-2d
+    |                     
+    1    2    3    4    5    6
+    
+Shaded: d < 4 where φ⁴ is relevant
+```
+
+Critical dimensions: d_n = 2n/(n-2)
+- d₄ = 4: φ⁴ becomes relevant
+- d₆ = 3: φ⁶ becomes relevant  
+- d₈ = 8/3 ≈ 2.67: φ⁸ becomes relevant
+
+Physical interpretation:
+- d > 4: Gaussian fixed point stable, mean-field exponents exact
+- d = 4: Marginal case, logarithmic corrections
+- 3 < d < 4: Wilson-Fisher fixed point with φ⁴ interaction
+- d ≤ 2: Even φ⁴ theory requires further modifications
+
+Gradient operators: y_(∇ᵏm)² = 2k - d are always irrelevant for k ≥ 1 in physical dimensions, justifying the derivative expansion.
+
+Cross-references: [[id:0972ac7a-fd86-47ca-bdfd-6519f20c93cb][Operator Scaling Dimensions]], [[id:e4f5a6b7-c8d9-4e0f-a1b2-c3d4e5f6a7b8][Why Gaussian Theory Fails]], [[id:c2d3e4f5-a6b7-4c8d-e9f0-a1b2c3d4e5f6][Upper Critical Dimension]]

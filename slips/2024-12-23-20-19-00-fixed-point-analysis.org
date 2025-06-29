@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID: 4214ec4a-6a11-4dfa-be2c-a9dc0967cbba
+:CUSTOM_ID: 92/131
+:END:
+#+TITLE: Fixed Point Analysis
+#+FILETAGS: :physics:spof:ch4:rg:
+
+Fixed point analysis provides the mathematical foundation for understanding critical behavior through linearization of RG transformations around scale-invariant theories.
+
+The linearization matrix ∂g_i'/∂g_j|_(g*) has eigenvalues satisfying the group property λ(b₁)λ(b₂) = λ(b₁b₂), which combined with λ(1) = 1 uniquely determines: λ(b)ᵢ = b^(yᵢ) (Equation 4.46)
+
+The eigenvectors 𝒪ᵢ with eigenvalues yᵢ are the scaling operators. Near the fixed point, any Hamiltonian can be expanded as S = S* + Σᵢ gᵢ𝒪ᵢ, and under RG these coupling constants transform as gᵢ' = b^(yᵢ) gᵢ.
+
+For the correlation length near a critical fixed point: ξ(g₁, g₂, ...) = bξ(b^(y₁)g₁, b^(y₂)g₂, ...) (Equation 4.47)
+
+Choosing b such that b^(y₁)g₁ = 1 for the most relevant operator: ξ(g₁, g₂, ...) = g₁^(-1/y₁) f(g₂/g₁^(y₂/y₁), ...) (Equation 4.48)
+
+This yields ν = 1/y₁ and gap exponents Δ_α = y_α/y₁.
+
+See also: [[id:e627ad42-996f-4fcb-bb38-1eab2d8c03ab][Critical Point as RG Fixed Point]], [[id:be961221-98ca-41d4-b32c-3b758e0a69e3][RG Transformation Equations]], [[id:0fada92d-d038-4eab-b37e-73ced8aca89c][RG Fixed Point Topology]]

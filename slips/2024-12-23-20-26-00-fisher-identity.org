@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 060317cf-f020-4c3c-8cb4-917384b54be1
+:CUSTOM_ID: 92/138
+:END:
+#+TITLE: Fisher Identity
+#+FILETAGS: :physics:spof:ch4:correlations:
+
+The Fisher identity γ = (2-η)ν connects the susceptibility exponent γ to the correlation length exponent ν and the anomalous dimension η, emerging from the spatial integration of correlation functions.
+
+The identity arises from the fluctuation-dissipation relation χ = ∫d^d x G(x) and the power-law form of correlations G(x) ~ |x|^(-(d-2+η)) at criticality. The spatial integral converges at the correlation length scale, yielding χ ~ ξ^(2-η) ~ |t|^(-ν(2-η)).
+
+This fundamental relation bridges thermodynamic response functions and spatial correlation structure, demonstrating how macroscopic susceptibility emerges from microscopic correlations.
+
+See also: [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Correlation Function Mathematics]], [[id:c8411d15-e158-4dca-9c2d-ec9131181805][Power Law Decay at Criticality]], [[id:72332205-efce-4143-bc7b-eb81e91ee691][Susceptibility Scaling]]

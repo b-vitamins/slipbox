@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       e4f5a6b7-c8d9-4e0f-a1b2-c3d4e5f6a7b8
+:CUSTOM_ID: 92/167
+:END:
+#+TITLE: Why Gaussian Theory Fails
+#+FILETAGS: :physics:statistical:fieldtheory:gaussian:failure:
+
+The failure of Gaussian theory below four dimensions necessitates finding a new fixed point where the quartic interaction takes a finite, non-zero value. This Wilson-Fisher fixed point, accessible through ε = 4 - d expansion, controls the true critical behavior in physical dimensions.
+
+The crossover at d = 4 from Gaussian to non-Gaussian behavior represents one of the most important results in critical phenomena, explaining why mean-field theory fails for most real phase transitions while becoming exact in high-dimensional or long-range systems.
+
+The quartic term becomes relevant (grows under RG flow) when its scaling dimension becomes positive, which occurs precisely at d = 4. Below this dimension, interactions fundamentally alter the critical behavior from the Gaussian fixed point predictions.
+
+Cross-references: [[id:f005296d-5b11-45df-8b6a-13c5fa3b471e][Eigenoperators at Gaussian FP]], [[id:0972ac7a-fd86-47ca-bdfd-6519f20c93cb][Operator Scaling Dimensions]], [[id:4dfb5d5f-05fd-4192-8cb2-5f42bd13bb97][Upper Critical Dimension]]

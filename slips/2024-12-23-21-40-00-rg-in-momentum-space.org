@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       d9e8f7ab-c5d6-4e5f-b7a8-9c0d1e2f3a4b
+:CUSTOM_ID: 92/153
+:END:
+#+TITLE: RG in Momentum Space
+#+FILETAGS: :physics:statistical:fieldtheory:renormalization:momentum:
+
+The choice z = b^(1+d/2) keeps the gradient term fixed (K' = K), establishing the Gaussian fixed point. This determines the eigenvalues y_t = 2 and y_h = 1 + d/2, from which all critical exponents follow. The momentum space RG clearly shows why the Gaussian fixed point is stable above d = 4: all interaction terms have negative scaling dimensions and flow to zero.
+
+Below four dimensions, the quartic interaction becomes relevant, signaling the need for a non-perturbative treatment. The momentum space formulation thus provides both a practical calculational tool and deep insight into the dimensional dependence of critical phenomena.
+
+Cross-references: [[id:0b3907b5-eb1b-4f22-9793-f85e599d9436][Parameter Flow]], [[id:5f665483-ba40-445a-bb64-01273ea1d742][Gaussian RG Calculation]], [[id:0972ac7a-fd86-47ca-bdfd-6519f20c93cb][Operator Scaling Dimensions]]

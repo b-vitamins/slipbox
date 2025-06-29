@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID: 397b5adc-48ce-4ef3-ba89-bf63c869503a
+:CUSTOM_ID: 92/128
+:END:
+#+TITLE: Correlation Function Mathematics
+#+FILETAGS: :physics:spof:ch4:correlations:
+
+The mathematical structure of correlation functions provides the spatial foundation for critical phenomena, connecting thermodynamic quantities to real-space behavior.
+
+**Correlation length scaling**: ξ ~ |t|^(-ν) (Equation 4.18). On the critical isotherm t=0, this gives ξ ~ h^(-ν/Δ), defining ν_h = ν/Δ.
+
+**Free energy from correlation length**: f_sing ~ ξ^(-d) ~ |t|^(dν) g_f(h/|t|^Δ) (Equation 4.20)
+
+This dimensional analysis yields Josephson's hyperscaling relation: 2 - α = dν (Equation 4.21)
+
+**Critical correlation functions**: G_{m,m}^c(x) ≡ ⟨m(x)m(0)⟩ - ⟨m⟩² ~ 1/|x|^(d-2+η) (Equation 4.22)
+
+The exponent η characterizes anomalous scaling beyond simple dimensional analysis.
+
+**Fisher's identity** (from χ = ∫d^d x G_{mm}(x)): χ ~ ∫^ξ d^d x/|x|^(d-2+η) ~ ξ^(2-η) ~ |t|^(-ν(2-η)) ⇒ γ = (2-η)ν (Equation 4.24)
+
+Similarly for specific heat with energy correlations: α = (2-η')ν (Equation 4.25)
+
+See also: [[id:b41e2d14-3737-4c1d-b87e-bd501a46ddeb][Correlation Length as Master Scale]], [[id:c8411d15-e158-4dca-9c2d-ec9131181805][Power Law Decay at Criticality]], [[id:1a3b349a-4c19-4c08-a7c5-540314465c18][Correlation Length Block Decomposition]]

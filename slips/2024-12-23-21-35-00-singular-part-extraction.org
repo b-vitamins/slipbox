@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       f7d8e9ab-c3d4-4f5e-a6b7-8c9d0e1f2a3b
+:CUSTOM_ID: 92/152
+:END:
+#+TITLE: Singular Part Extraction
+#+FILETAGS: :physics:statistical:fieldtheory:singularities:extraction:
+
+This extraction procedure illustrates general principles for identifying critical singularities. First, singularities arise from infrared physics—the small-momentum, long-wavelength modes. Second, appropriate scaling variables must be introduced to make the t-dependence manifest. Third, the singular part typically emerges from the asymptotic behavior of integrals as scaling variables approach limits.
+
+The same principles apply beyond the Gaussian model, though the technical implementation becomes considerably more complex when interactions are present. The successful extraction of f_sing ~ t^(2-α) with α = 2 - d/2 confirms the hyperscaling relation at the Gaussian level.
+
+Cross-references: [[id:b3c47195-e8d4-4a5f-9f12-7e2a1b3c8d95][Direct Gaussian Solution]], [[id:e0812a92-87a6-438d-af2f-e21271585d5b][Gaussian Direct Solution]], [[id:22caa9ef-cbf1-4986-8227-b5b07053a02e][Gaussian Exponents]]

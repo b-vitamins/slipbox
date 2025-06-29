@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       e8f9a0b1-c2d3-4e5f-a6b7-c8d9e0f1a2b3
+:CUSTOM_ID: 92/173
+:END:
+#+TITLE: Correlation Length Block Decomposition
+#+FILETAGS: :physics:statistical:visualization:correlation:blocks:
+
+System as array of correlation volumes:
+
+```
+| ξ | ξ | ξ | ξ |  
++---+---+---+---+
+| ξ | ξ | ξ | ξ |  ← Each block size ξ × ξ
++---+---+---+---+
+| ξ | ξ | ξ | ξ |  
++---+---+---+---+
+←--------- L -------→
+```
+
+The system contains N_blocks = (L/ξ)^d approximately independent correlation volumes. Within each block, spins are strongly correlated; between blocks, correlations are weak. This decomposition provides the physical basis for the hyperscaling relation f_sing ~ ξ^(-d).
+
+Critical implications: As ξ → ∞ at criticality, the number of independent blocks vanishes, and the entire system becomes one correlated unit. This explains why extensive quantities must scale with system volume through the correlation length: ln Z ~ (L/ξ)^d.
+
+The block picture underlies finite-size scaling, where system properties depend on the ratio L/ξ rather than L and ξ separately. The renormalization group formalizes this by systematically integrating out fluctuations within blocks of size ba.
+
+Cross-references: [[id:d61c162e-51ba-4a68-aff2-e34a5e6927fb][Correlation Length as Master Scale]], [[id:9812fa5a-6ca9-40bf-9382-f9552dc28bdf][Correlation Function Mathematics]], [[id:c8afdb79-823f-4152-803a-64e6694f27dd][Josephson Identity]]

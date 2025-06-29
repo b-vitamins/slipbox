@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: 7db84edc-1dd0-4608-9361-10ad78dcea00
+:CUSTOM_ID: 92/147
+:END:
+#+TITLE: Basin of Attraction
+#+FILETAGS: :physics:spof:ch4:universality:
+
+The basin of attraction defines the stable manifold of a critical fixed point, encompassing all parameter configurations that flow to the same long-distance physics under repeated RG transformations.
+
+The basin is spanned by irrelevant operators with negative scaling dimensions y_i < 0. Systems starting anywhere within this basin converge to identical critical behavior, explaining why different microscopic models can exhibit the same critical exponents. Only relevant operators (y_i > 0) must be tuned to reach the critical surface.
+
+The basin structure also explains why critical points are experimentally accessible despite requiring infinite correlation length. Starting from any point within the basin, the RG flow brings the system arbitrarily close to the fixed point, with deviations dying off as b^(-|y_i|) for the least irrelevant operator. In practice, when the correlation length exceeds all other relevant scales in the system, the behavior is indistinguishable from the true critical point. The basin of attraction thus defines a universality class—the set of all microscopic models sharing the same long-distance physics.
+
+See also: [[id:3bf87284-ef15-4bb2-a699-69cfab387379][Universality Principle]], [[id:6337dbd5-3bdf-44ec-8c11-21a713ea94c4][Operator Classification]], [[id:4214ec4a-6a11-4dfa-be2c-a9dc0967cbba][Fixed Point Analysis]]

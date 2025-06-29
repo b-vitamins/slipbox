@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID: 9c25f0c0-d069-4853-a6be-48926c6014b0
+:CUSTOM_ID: 92/141
+:END:
+#+TITLE: Kadanoff Three Steps
+#+FILETAGS: :physics:spof:ch4:rg:
+
+Kadanoff's systematic three-step procedure provides the conceptual foundation for all renormalization group transformations, breaking the complex coarse-graining process into manageable components.
+
+**Step 1: Coarse-grain** - Divide the system into cells of linear size b and average the field within each cell: m̃(ᵆ5) = 〈m(x)〉_cell. This eliminates short-wavelength fluctuations while preserving the long-distance physics.
+
+**Step 2: Rescale** - Restore the original lattice spacing by contracting all lengths: x_new = x_old/b. This step is crucial for comparing the coarse-grained system to the original, as it ensures both are described on the same length scale.
+
+**Step 3: Renormalize** - Adjust the field amplitude by m⃗_new(x_new) = m̃(x_new)/ζ to restore the proper normalization of fluctuations. The factor ζ is chosen to preserve some convenient normalization condition.
+
+The combined transformation maps configurations at one scale to statistically similar configurations at a larger scale, with the Hamiltonian parameters flowing according to t' = b^(yt) t, h' = b^(yh) h. At a critical point, the system appears identical at all scales, corresponding to a fixed point of this transformation.
+
+See also: [[id:767b74b1-0c38-41e1-af84-817b283cb1fd][RG Transformation Mathematics]], [[id:36e56466-5313-4266-90e7-8fed9aca2b90][Momentum Space RG]], [[id:b7a56bbc-6187-4e39-997b-298683acebe3][Self-Similar Snapshot Sequence]]

@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID: d6401778-fc86-456b-8abd-692f1f4e9a1b
+:CUSTOM_ID: 92/125
+:END:
+#+TITLE: Homogeneity Mathematical Framework
+#+FILETAGS: :physics:spof:ch4:mathematics:
+
+The mathematical framework for homogeneity derives from the assumption that the free energy must have generalized homogeneous form: f_sing(λ^a t, λ^b h) = λ f_sing(t,h) (Equation 4.2).
+
+**General scaling form**: f_sing(t,h) = |t|^(2-α) g_f(h/|t|^Δ) (Equation 4.4)
+
+**RG derivation**: Starting from f(t,h) = b^(-d) f(b^(yt) t, b^(yh) h) (Equation 4.35) and choosing b = t^(-1/yt): f(t,h) = t^(d/yt) g_f(h/t^(yh/yt)) (Equation 4.36)
+
+This identifies the critical exponents as 2-α = d/yt and Δ = yh/yt. The scaling function g_f(x) encodes the crossover behavior: for x → 0 it approaches a constant (giving pure temperature dependence), while for x → ∞ it must scale as g_f(x) ~ x^((2-α)/Δ) to eliminate temperature dependence along the critical isotherm.
+
+This framework provides the foundation for all scaling forms in critical phenomena, connecting the [[id:aaeee0ab-91d5-4186-a7b7-8ad92572f72f][Homogeneity Assumption]] to concrete mathematical expressions.
+
+See also: [[id:afba5389-ac75-4e21-b0ab-62b8319c7d75][RG Transformation Mathematics]], [[id:a662555e-24b7-4740-a0c4-fabf9e2f11d4][Free Energy Scaling Form]], [[id:22d8738e-34aa-4aae-ab84-9e0300254249][Thermodynamic Derivatives Cascade]]

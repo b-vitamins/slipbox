@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: ac6a8119-a7a9-4e06-9b01-478c24200311
+:CUSTOM_ID: 92/123
+:END:
+#+TITLE: Gaussian Model Kernel
+#+FILETAGS: :physics:spof:ch4:gaussian:
+
+The Gaussian model exhibits a diagonal structure in momentum space, where the kernel G⁻¹(q) = t + Kq² + Lq⁴ + ... represents the inverse propagator. Each term corresponds to a specific gradient order in real space: the term Kq² arises from (∇m)², while Lq⁴ comes from (∇²m)², and so forth.
+
+The diagonal structure in momentum space has profound consequences. First, it enables exact solution through independent Gaussian integrations for each mode. Second, it clearly identifies the infrared divergence at t = 0, q = 0 as the source of critical singularities. Third, it reveals why higher gradient terms are increasingly irrelevant—their contributions are suppressed by higher powers of q, becoming negligible at long wavelengths.
+
+The coupling to the external field affects only the q = 0 mode, reflecting the uniform nature of the applied magnetic field. This diagonal form is preserved under RG transformations in the Gaussian model, though interactions generally couple different momentum modes, necessitating more sophisticated treatments.
+
+See also: [[id:df911964-3bd8-4162-ad2c-20ef23bd4a80][Gaussian Model Setup]], [[id:22caa9ef-cbf1-4986-8227-b5b07053a02e][Gaussian Exponents]], [[id:e0812a92-87a6-438d-af2f-e21271585d5b][Gaussian Direct Solution]]

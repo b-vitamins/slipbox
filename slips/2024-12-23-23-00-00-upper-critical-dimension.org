@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       c2d3e4f5-a6b7-4c8d-e9f0-a1b2c3d4e5f6
+:CUSTOM_ID: 92/169
+:END:
+#+TITLE: Upper Critical Dimension
+#+FILETAGS: :physics:statistical:fieldtheory:dimension:critical:
+
+The existence of an upper critical dimension reconciles the apparent contradiction between the success of mean-field theory in many contexts and its failure for most phase transitions. Systems effectively become high-dimensional when interactions are long-ranged: for interactions decaying as 1/r^(d+σ), the effective dimension is d_eff = d + σ, and mean-field theory applies when d_eff > 4.
+
+This explains why mean-field theory works for systems with long-range forces (like gravity or unscreened Coulomb interactions) while failing for typical short-range systems in three dimensions. The upper critical dimension d_c = 4 marks the boundary between fluctuation-dominated and mean-field regimes.
+
+Above d = 4, the Gaussian fixed point is stable and all interaction terms are irrelevant, making mean-field theory exact. Below d = 4, interactions become relevant and drive the system to a new, non-Gaussian fixed point.
+
+Cross-references: [[id:e4f5a6b7-c8d9-4e0f-a1b2-c3d4e5f6a7b8][Why Gaussian Theory Fails]], [[id:f005296d-5b11-45df-8b6a-13c5fa3b471e][Eigenoperators at Gaussian FP]], [[id:0972ac7a-fd86-47ca-bdfd-6519f20c93cb][Operator Scaling Dimensions]]

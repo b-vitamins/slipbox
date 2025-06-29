@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID: 23c95cbc-5659-4b27-9e7e-b24b81569aab
+:CUSTOM_ID: 92/133
+:END:
+#+TITLE: Gaussian Direct Solution
+#+FILETAGS: :physics:spof:ch4:gaussian:
+
+The direct solution of the Gaussian model through exact integration provides the prototype for extracting critical behavior from quadratic theories.
+
+The complete partition function, after integrating all modes: Z = exp[Vh²/(2t)] ∏_q (2π/(t + Kq² + Lq⁴ + ...))^(n/2) (Equation 4.55)
+
+The free energy density becomes: f(t,h) = (n/2) ∫_BZ d^d q/(2π)^d ln(t + Kq² + Lq⁴ + ...) - h²/(2t) (Equation 4.56)
+
+To extract singular behavior, approximate the Brillouin zone by a sphere of radius Λ and introduce the scaling variable x = q√(K/t): f_sing(t,h) = (n/2)K_d (t/K)^(d/2) ∫_0^(Λ√(K/t)) dx x^(d-1) [ln t + ln(1 + x² + Ltx⁴/K² + ...)] - h²/(2t) (Equation 4.58)
+
+The leading singular behavior: f_sing(t,h) = -t^(d/2) [A + h²/(2t^(1+d/2))] ≡ t^(2-α) g_f(h/t^Δ) (Equation 4.59)
+
+This identifies the Gaussian exponents: α_+ = 2 - d/2, Δ = 1/2 + d/4 (Equation 4.60)
+
+The higher gradient terms (L, etc.) do not affect the leading singularity, confirming their irrelevance at the Gaussian fixed point.
+
+See also: [[id:6b78d283-9779-4cd9-ade6-d34768db74fa][Gaussian Model Setup]], [[id:22caa9ef-cbf1-4986-8227-b5b07053a02e][Gaussian Exponents]], [[id:d35cedf1-3a6a-455a-b4d3-2fb37c51915c][Gaussian RG Calculation]]

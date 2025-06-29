@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       c6d7e8f9-a0b1-4c2d-e3f4-a5b6c7d8e9f0
+:CUSTOM_ID: 92/176
+:END:
+#+TITLE: Why Dimensions Matter Visually
+#+FILETAGS: :physics:statistical:visualization:dimension:hyperscaling:
+
+Visual dimensional counting for correlation blocks:
+
+```
+d=2:  [ξ][ξ]            N_blocks = (L/ξ)²
+      [ξ][ξ]
+d=3:  [Volume with       N_blocks = (L/ξ)³
+       (L/ξ)³ blocks]
+```
+
+Free energy counting: Each correlation volume contributes equally to the free energy:
+- Free energy: F ~ N_blocks × f_per_block ~ (L/ξ)^d
+- Free energy density: f = F/L^d ~ ξ^(-d)  
+- Using ξ ~ |t|^(-ν): f ~ |t|^(dν)
+- Definition f ~ |t|^(2-α) gives: 2 - α = dν
+
+Visual understanding of dimensional dependence:
+- Higher d → more blocks → stronger dependence on ξ
+- Lower d → fewer blocks → weaker finite-size effects
+- d = 1: Only linear chains, special behavior
+
+Breakdown above d_c = 4: When d > 4, the block picture remains valid but additional length scales (Ginzburg length) enter, invalidating simple counting. The visual block decomposition directly explains both the origin and limitations of hyperscaling.
+
+Cross-references: [[id:e8f9a0b1-c2d3-4e5f-a6b7-c8d9e0f1a2b3][Correlation Length Block Decomposition]], [[id:c8afdb79-823f-4152-803a-64e6694f27dd][Josephson Identity]], [[id:9812fa5a-6ca9-40bf-9382-f9552dc28bdf][Correlation Function Mathematics]]

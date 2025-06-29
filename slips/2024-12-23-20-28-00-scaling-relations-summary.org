@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID: 0e1f0487-2220-44e8-a38d-ebca00ff2696
+:CUSTOM_ID: 92/140
+:END:
+#+TITLE: Scaling Relations Summary
+#+FILETAGS: :physics:spof:ch4:exponents:
+
+The complete set of scaling relations among critical exponents reduces the six primary exponents (α, β, γ, δ, ν, η) to only two independent quantities, demonstrating the profound constraints imposed by scaling symmetry.
+
+The fundamental identities are:
+- Rushbrooke: α + 2β + γ = 2
+- Josephson: 2 - α = dν (hyperscaling)
+- Fisher: γ = (2-η)ν
+- Widom: δ - 1 = γ/β
+
+These relations serve multiple purposes: they provide consistency checks for experimental and theoretical determinations of exponents, reduce the number of independent measurements needed to characterize a universality class, and encode the deep connection between thermodynamics and correlation functions that underlies critical phenomena. Their universal validity across systems as diverse as ferromagnets, superfluids, and polymer solutions testifies to the profound unity of critical behavior.
+
+See also: [[id:9cd4934e-166a-4e42-a651-42632c7ea05d][Rushbrooke Identity]], [[id:8373d2dd-1564-4f96-9425-0ca1e8eb9435][Josephson Identity]], [[id:060317cf-f020-4c3c-8cb4-917384b54be1][Fisher Identity]], [[id:3e5756a3-ea86-4619-8a47-2b124f20d107][Widom Identity]]

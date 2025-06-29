@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: bb36bb0f-369b-4006-98c4-c11bc0d7525d
+:CUSTOM_ID: 92/145
+:END:
+#+TITLE: Gaussian Fixed Point
+#+FILETAGS: :physics:spof:ch4:gaussian:
+
+The Gaussian fixed point βℋ* = K/2 ∫d^d x (∇m)² represents the scale-invariant quadratic theory that serves as the foundation for understanding critical phenomena in the mean-field regime.
+
+The physical significance of the Gaussian fixed point extends beyond its mathematical simplicity. It describes systems where fluctuations are weak and uncorrelated beyond a microscopic scale, corresponding to mean-field behavior. Above four dimensions, critical phenomena are essentially mean-field-like on scales larger than the Ginzburg length, with logarithmic corrections at exactly d = 4.
+
+The Gaussian fixed point is stable for d > 4 but becomes unstable to quartic perturbations for d < 4, where fluctuations dominate and drive the system to a non-Gaussian fixed point. This instability marks the breakdown of mean-field theory in physical dimensions.
+
+See also: [[id:e627ad42-996f-4fcb-bb38-1eab2d8c03ab][Critical Point as RG Fixed Point]], [[id:22caa9ef-cbf1-4986-8227-b5b07053a02e][Gaussian Exponents]], [[id:6b78d283-9779-4cd9-ade6-d34768db74fa][Gaussian Model Setup]]

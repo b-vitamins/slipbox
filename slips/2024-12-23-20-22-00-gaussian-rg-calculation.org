@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID: d35cedf1-3a6a-455a-b4d3-2fb37c51915c
+:CUSTOM_ID: 92/134
+:END:
+#+TITLE: Gaussian RG Calculation
+#+FILETAGS: :physics:spof:ch4:rg:
+
+The RG implementation for the Gaussian model demonstrates the systematic momentum-space approach to extracting critical exponents through coarse-graining operations.
+
+**Step 1: Coarse grain** by integrating out modes with Λ/b < |q| < Λ: Z ~ exp[-nV/2 ∫_(Λ/b)^Λ d^d q/(2π)^d ln(t + Kq² + ...)] × ∫ 𝓟ᵅᵀ⃗(q^<) e^(-βℋ[ᵅ̃]) (Equation 4.64)
+
+**Step 2: Rescale** momenta q' = bq to restore the cutoff: Z = e^(-Vδf_b(t)) × ∫ 𝓟ᵅᵀ⃗(q') exp[-∫_0^Λ d^d q'/(2π)^d b^(-d) (t + Kb^(-2)q'^2 + ...)/(2) |ᵅ̃(q')|² + h⃗·ᵅᵀ⃗(0)] (Equation 4.65)
+
+**Step 3: Renormalize** fields m⃗'(q') = ᵅ̃(q')/z. The transformed parameters are: t' = z² b^(-d) t, h' = zh, K' = z² b^(-d-2) K, L' = z² b^(-d-4) L (Equation 4.67)
+
+Choosing z = b^(1+d/2) to keep K' = K (fixing the kinetic term): t' = b² t, h' = b^(1+d/2) h ⇒ y_t = 2, y_h = 1 + d/2 (Equation 4.68)
+
+These eigenvalues reproduce the Gaussian exponents: ν = 1/y_t = 1/2, Δ = y_h/y_t = (1+d/2)/2 = 1/2 + d/4, α = 2 - dν = 2 - d/2.
+
+See also: [[id:6b78d283-9779-4cd9-ade6-d34768db74fa][Gaussian Model Setup]], [[id:23c95cbc-5659-4b27-9e7e-b24b81569aab][Gaussian Direct Solution]], [[id:1e02f461-10f0-4ed7-936a-9bac6fcd0e40][From RG Analysis]]

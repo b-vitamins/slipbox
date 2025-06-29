@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       c6d7e8f9-a0b1-4c2d-e3f4-a5b6c7d8e9f0
+:CUSTOM_ID: 92/159
+:END:
+#+TITLE: Heisenberg Model (n=3) Exponents
+#+FILETAGS: :physics:statistical:heisenberg:exponents:o3:
+
+Critical exponents for the 3D Heisenberg universality class:
+- β = 0.36 (order parameter)
+- γ = 1.39 (susceptibility)
+- δ = 4.9 (critical isotherm)
+- ν = 0.70 (correlation length)
+- η = 0.04 (anomalous dimension)
+
+Physical realizations include isotropic ferromagnets (EuO, EuS, RbMnF₃), antiferromagnets with weak anisotropy, and some structural transitions with O(3) symmetry.
+
+Systematic trends with n:
+- α decreases: 0.11 (n=1) → −0.01 (n=2) → −0.11 (n=3)
+- ν increases: 0.63 → 0.67 → 0.70
+- γ increases: 1.24 → 1.32 → 1.39
+- η remains nearly constant ≈ 0.04
+
+The continuous O(3) symmetry allows for Goldstone modes in the ordered phase, enhancing critical fluctuations. The systematic increase in ν with n reflects the growing phase space for fluctuations as the order parameter components increase.
+
+Cross-references: [[id:a2b3c4d5-e6f7-4a8b-c9d0-e1f2a3b4c5d6][XY Model (n=2) Exponents]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]

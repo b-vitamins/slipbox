@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       a4b5c6d7-e8f9-4a0b-c1d2-e3f4a5b6c7d8
+:CUSTOM_ID: 92/162
+:END:
+#+TITLE: β (Order Parameter Exponent)
+#+FILETAGS: :physics:statistical:exponents:orderparameter:beta:
+
+The order parameter exponent β controls the approach to order: m ~ |t|^β for t < 0.
+
+The exponent β relates intimately to the correlation length exponent through hyperscaling: β = ν(d - 2 + η)/2. This shows that β vanishes at d = 2 - η, marking the lower critical dimension below which continuous symmetry breaking is impossible (Mermin-Wagner theorem).
+
+The measurement of β through neutron scattering, magnetization, or other order parameter probes provides one of the most direct experimental determinations of critical exponents. The universality of β across different physical systems demonstrates the power of the scaling hypothesis.
+
+Cross-references: [[id:22d8738e-34aa-4aae-ab84-9e0300254249][Thermodynamic Derivatives Cascade]], [[id:de716b3d-8e3d-4fcd-bdd5-40a813f929b6][Exponent Relations Complete Set]], [[id:b416f32e-399e-467e-90d2-b061c88275e1][δ (Critical Isotherm Exponent)]]

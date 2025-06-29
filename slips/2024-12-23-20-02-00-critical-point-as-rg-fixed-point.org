@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: e627ad42-996f-4fcb-bb38-1eab2d8c03ab
+:CUSTOM_ID: 92/114
+:END:
+#+TITLE: Critical Point as RG Fixed Point
+#+FILETAGS: :physics:spof:ch4:rg:
+
+The critical point corresponds to a fixed point of the renormalization group transformation, characterized by the invariance condition S* = ℜ_b S*. This means scale-invariant theories remain unchanged under coarse-graining operations.
+
+At the fixed point, all length scales are equivalent, leading to power-law correlations without characteristic scale. The critical point's universal properties emerge from this scale invariance, independent of microscopic details.
+
+The fixed point structure explains universality: different microscopic systems flow to the same infrared fixed point, yielding identical critical exponents. This provides the theoretical foundation for understanding why diverse physical systems exhibit the same critical behavior.
+
+See also: [[id:429deb29-ca65-406a-ac14-0b33cf975fb0][Fixed Point Analysis]], [[id:0fada92d-d038-4eab-b37e-73ced8aca89c][RG Fixed Point Topology]], [[id:c8411d15-e158-4dca-9c2d-ec9131181805][Power Law Decay at Criticality]]

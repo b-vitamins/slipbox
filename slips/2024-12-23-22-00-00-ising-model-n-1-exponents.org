@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       f0a1b2c3-d4e5-4f6a-b7c8-d9e0f1a2b3c4
+:CUSTOM_ID: 92/157
+:END:
+#+TITLE: Ising Model (n=1) Exponents
+#+FILETAGS: :physics:statistical:ising:exponents:experimental:
+
+Critical exponents for the 3D Ising universality class:
+- β = 0.32 (order parameter)
+- γ = 1.24 (susceptibility)
+- δ = 4.9 (critical isotherm)
+- ν = 0.63 (correlation length)
+- η = 0.04 (anomalous dimension)
+
+Physical realizations include uniaxial ferromagnets (Fe, Ni with strong anisotropy), liquid-gas critical points, binary alloy order-disorder transitions, and lattice gas models.
+
+Verification of scaling relations:
+- Rushbrooke: 0.11 + 2(0.32) + 1.24 = 1.99 ≈ 2 ✓
+- Widom: 4.9 - 1 = 3.9 ≈ 1.24/0.32 = 3.88 ✓
+- Fisher: 1.24 ≈ (2 - 0.04) × 0.63 = 1.23 ✓
+
+Modern experiments achieve 0.1% accuracy in exponent determination. The small η = 0.04 indicates nearly classical correlation decay with minimal anomalous scaling.
+
+Cross-references: [[id:e715b16b-8dd4-43b4-99a3-a765bf51f1b7][Scaling Relations Summary]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID: e2229eaf-efce-4be5-a860-38034580d306
+:CUSTOM_ID: 92/116
+:END:
+#+TITLE: Statistical Self-Similarity
+#+FILETAGS: :physics:spof:ch4:fractals:
+
+Critical systems exhibit statistical self-similarity, meaning they look the same at all length scales. This fractal property is mathematically expressed through the scaling relation G(λx) = λ^p G(x), where G is a correlation function and p is the scaling dimension.
+
+Self-similarity emerges because the [[id:b41e2d14-3737-4c1d-b87e-bd501a46ddeb][Correlation Length as Master Scale]] diverges at criticality, eliminating any characteristic length scale. Without a natural scale, the system appears identical under scale transformations.
+
+This property underlies the success of the renormalization group: coarse-graining operations preserve the statistical structure of critical systems, allowing systematic analysis of scale-invariant physics through iterative transformations.
+
+See also: [[id:c8411d15-e158-4dca-9c2d-ec9131181805][Power Law Decay at Criticality]], [[id:b7a56bbc-6187-4e39-997b-298683acebe3][Self-Similar Snapshot Sequence]], [[id:e627ad42-996f-4fcb-bb38-1eab2d8c03ab][Critical Point as RG Fixed Point]]

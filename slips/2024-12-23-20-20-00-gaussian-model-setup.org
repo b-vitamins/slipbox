@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID: 6b78d283-9779-4cd9-ade6-d34768db74fa
+:CUSTOM_ID: 92/132
+:END:
+#+TITLE: Gaussian Model Setup
+#+FILETAGS: :physics:spof:ch4:gaussian:
+
+The Gaussian model provides the foundational quadratic theory for critical phenomena, establishing the framework for exact calculations and serving as the fixed point for mean-field behavior.
+
+The Fourier transform conventions establish our normalization: m⃗(q) = ∫d^d x e^(iq·x) m⃗(x), m⃗(x) = Σ_q e^(-iq·x)/V m⃗(q) (Equation 4.50)
+
+In momentum space, the quadratic form becomes diagonal: βℋ = Σ_q (t + Kq² + Lq⁴ + ...)/(2V) |m(q)|² - h⃗·m⃗(q=0) (Equation 4.52)
+
+The Brillouin zone cutoff Λ ≈ π/a regularizes the theory, with the spherical approximation justified by the isotropy of long-wavelength modes that dominate critical behavior. The absence of quartic terms restricts validity to t ≥ 0, but the model correctly captures the approach to criticality from the disordered phase.
+
+See also: [[id:ac6a8119-a7a9-4e06-9b01-478c24200311][Gaussian Model Kernel]], [[id:23c95cbc-5659-4b27-9e7e-b24b81569aab][Gaussian Direct Solution]], [[id:d35cedf1-3a6a-455a-b4d3-2fb37c51915c][Gaussian RG Calculation]]

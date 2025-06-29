@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       c4d5e6f7-a8b9-4c0d-e1f2-a3b4c5d6e7f8
+:CUSTOM_ID: 92/182
+:END:
+#+TITLE: General Hamiltonian Forms
+#+FILETAGS: :physics:statistical:hamiltonian:symmetry:expansion:
+
+General Landau-Ginzburg-Wilson Hamiltonian expansion:
+
+βH = f_b + ∫d^d x[t/2 m² + um⁴ + ... + K/2(∇m)² + ...]
+
+This expansion represents a point in the infinite-dimensional parameter space S ≡ (t, u, v, ..., K, L, ...). Under RG, the renormalized Hamiltonian maintains the same form with transformed couplings.
+
+The Gaussian fixed point corresponds to:
+βH* = K/2 ∫d^d x(∇m)²
+
+with all non-gradient terms vanishing. This fixed point is stable only above d = 4.
+
+Symmetry constraints determine allowed operators:
+- Z₂ symmetry: only even powers m^(2n)
+- O(n) symmetry: only rotationally invariant combinations (m⋅m)^k
+- No symmetry: all powers allowed, including odd terms
+
+The RG analysis proceeds by tracking how each coupling constant flows under scale transformations, with only relevant operators affecting critical behavior.
+
+Cross-references: [[id:d61c162e-51ba-4a68-aff2-e34a5e6927fb][Universality Principle]], [[id:5a743de9-c8f1-4b2a-9d3e-4f5a6b7c8d90][Gaussian Fixed Point]], [[id:0972ac7a-fd86-47ca-bdfd-6519f20c93cb][Operator Scaling Dimensions]]

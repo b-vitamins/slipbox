@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID: 6337dbd5-3bdf-44ec-8c11-21a713ea94c4
+:CUSTOM_ID: 92/144
+:END:
+#+TITLE: Operator Classification
+#+FILETAGS: :physics:spof:ch4:operators:
+
+The classification of operators by their scaling dimensions y_i determines their fate under RG flow and provides the foundation for understanding universality in critical phenomena.
+
+**Relevant operators** (y_i > 0) grow under RG iterations, dominating the long-distance physics. Only a few operators are typically relevant: the temperature deviation t and magnetic field h are the primary examples. These must be fine-tuned to reach criticality.
+
+**Irrelevant operators** (y_i < 0) shrink under RG flow, becoming negligible at long distances. These span the basin of attraction of the fixed point. Higher gradient terms like (∇²m)² with y = -2 and most higher-power interactions fall into this category, explaining why microscopic details don't affect critical exponents.
+
+**Marginal operators** (y_i = 0) require analysis beyond linear order to determine their fate. The quartic coupling um⁴ is marginal at d = 4, marking the upper critical dimension. Below four dimensions it becomes relevant, destabilizing the Gaussian fixed point and necessitating a non-Gaussian description of criticality.
+
+This classification provides the microscopic foundation for universality: only the few relevant operators matter for critical behavior, while the infinite-dimensional space of irrelevant operators accommodates all microscopic variations within a universality class.
+
+See also: [[id:4214ec4a-6a11-4dfa-be2c-a9dc0967cbba][Fixed Point Analysis]], [[id:41e16051-695f-4ec8-9400-96847c53ffe6][Operator Scaling Dimensions]], [[id:3bf87284-ef15-4bb2-a699-69cfab387379][Universality Principle]]
