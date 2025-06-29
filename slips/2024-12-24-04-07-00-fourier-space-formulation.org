@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       c3e8a2f5-9b1d-4e6a-8c7f-2a9b3e4d5f6c
+:CUSTOM_ID: 92/346
+:END:
+#+title: Fourier Space Formulation
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+#+FILETAGS: :physics:spof:ch8:momentumspace:propagator:vertex:
+
+The translation to momentum space reveals the structure of the field theory. The quadratic Hamiltonian becomes diagonal:
+\[\beta\mathcal{H}_0 = \frac{K}{2}\int\frac{d^d\mathbf{q}}{(2\pi)^d} q^2|\vec{\pi}(\mathbf{q})|^2\]
+
+establishing the Goldstone propagator \(G(q) = 1/(Kq^2)\). The quartic interaction in U₁ transforms into:
+\[U_1^{(4)} = -\frac{K}{2}\int\frac{d^d\mathbf{q}_1 d^d\mathbf{q}_2 d^d\mathbf{q}_3}{(2\pi)^{3d}} \pi_\alpha(\mathbf{q}_1)\pi_\alpha(\mathbf{q}_2)\pi_\beta(\mathbf{q}_3)\pi_\beta(-\mathbf{q}_1-\mathbf{q}_2-\mathbf{q}_3)(\mathbf{q}_1 \cdot \mathbf{q}_3)\]
+
+where momentum conservation is built into the argument of the fourth field.
+
+The vertex factor \((\mathbf{q}_1 \cdot \mathbf{q}_3)\) encodes crucial physics. It vanishes when external momenta are orthogonal, suppressing certain scattering processes. More importantly, it vanishes as any momentum approaches zero—a manifestation of Goldstone's theorem ensuring that long-wavelength modes remain gapless. This momentum dependence also improves the ultraviolet behavior, making loop integrals convergent for d > 2.
+
+The quadratic term \(-\rho\pi^2/2\) appears trivial in momentum space: \(U_1^{(2)} = -\frac{\rho}{2}\int\frac{d^d\mathbf{q}}{(2\pi)^d}|\vec{\pi}(\mathbf{q})|^2\). However, its role becomes clear in the RG analysis where it tracks the density of coarse-grained degrees of freedom. The interplay between this "mass" term and the quartic interaction determines the stability of the ordered phase.
+
+**Meta observation**: Fourier space is the natural language for Goldstone physics. The 1/q² propagator immediately reveals the absence of a mass gap, while the momentum-dependent vertices encode the constraints of broken symmetry.
+
+**See also:** [[id:PLACEHOLDER-07][zettel:07]], [[id:PLACEHOLDER-09][zettel:09]]

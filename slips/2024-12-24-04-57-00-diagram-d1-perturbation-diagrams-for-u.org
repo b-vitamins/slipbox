@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID: d9f8e7a4-8c6b-4e9f-9a3d-7e8f9a7b8d6f
+:CUSTOM_ID: 92/396
+:END:
+#+title: Diagram D1: Perturbation Diagrams for U₁
+#+filetags: :physics:spof:ch8:diagram:perturbationtheory:vertex:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+**Diagrammatic Content:**
+The first-order perturbation U₁ contains two terms represented diagrammatically:
+
+**Quartic vertex (gradient interaction):**
+#+begin_example
+      π_α(q₁) ----\    /---- π_α(q₂)
+                   \  /
+                    ><  
+                   /  \
+      π_β(q₃) ----/    \---- π_β(-q₁-q₂-q₃)
+#+end_example
+- Four lines meet at central vertex (×)
+- Momentum conservation: q₁ + q₂ + q₃ + q₄ = 0
+- Vertex factor: -K(q₁·q₃)/2
+- Repeated indices α, β summed (Einstein convention)
+- Represents (∫**π**·∇**π**)² term
+
+**Mass vertex (quadratic term):**
+#+begin_example
+      π_α(q) ----O---- π_α(-q)
+#+end_example
+- Two lines connected by loop (O)
+- Vertex factor: -ρ/2
+- Represents -ρπ²/2 term
+- Same index α on both legs
+
+**Mathematical correspondence:**
+The quartic vertex enforces rotational invariance through its tensor structure π_α π_α π_β π_β with momentum factor. The mass-like vertex seems to destabilize the system but is compensated by higher-order terms maintaining |**π**| < 1. These vertices form building blocks for perturbative calculations, with the quartic vertex generating the interactions between Goldstone modes that lead to the nonlinear σ-model's rich physics.
+
+**Renormalization group significance:** Under coarse-graining, the quartic vertex renormalizes the coupling K while the mass vertex tracks the density of degrees of freedom ρ.
+
+**See also:** [[id:PLACEHOLDER-07][zettel:07]], [[id:PLACEHOLDER-10][zettel:10]]

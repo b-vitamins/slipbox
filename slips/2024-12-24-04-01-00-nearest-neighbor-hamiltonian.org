@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       c68b33e8-4abd-4967-9651-29c8a8a785ab
+:CUSTOM_ID: 92/340
+:END:
+#+title: Nearest-Neighbor Hamiltonian
+#+FILETAGS: :physics:spof:ch8:hamiltonian:gradientexpansion:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The nearest-neighbor interaction Hamiltonian takes the standard ferromagnetic form \(-\beta\mathcal{H} = K \sum_{\langle\mathbf{i}\mathbf{j}\rangle} \vec{s}(\mathbf{i}) \cdot \vec{s}(\mathbf{j})\), where K = J/kT is the dimensionless coupling. The crucial rewriting \(\vec{s}(\mathbf{i}) \cdot \vec{s}(\mathbf{j}) = 1 - (\vec{s}(\mathbf{i}) - \vec{s}(\mathbf{j}))^2/2\) transforms the energy from a measure of alignment to a penalty for variation. This form naturally suggests a gradient expansion when neighboring spins are nearly aligned.
+
+This reformulation contains a deep insight: at low temperatures where spins vary slowly, the discrete difference \((\vec{s}(\mathbf{i}) - \vec{s}(\mathbf{j}))^2\) can be approximated by the continuum gradient \(a^2(\nabla\vec{s})^2\), where a is the lattice spacing. The energy thus penalizes spatial variations, with stiffness proportional to K. The constant term in the rewriting contributes only to the ground state energy and can be dropped when studying excitations.
+
+The transition from discrete to continuum is not merely mathematical convenience. It reveals that the low-energy physics is governed by long-wavelength modes, justifying the field-theoretic approach. The discreteness of the lattice provides a natural ultraviolet cutoff Λ ≈ π/a, regularizing divergences that would otherwise plague the continuum theory.
+
+**Meta observation**: The rewriting of dot products as squared differences is a recurring motif in statistical mechanics. It shifts perspective from "reward for alignment" to "penalty for misalignment," facilitating expansions around ordered states. This mirrors the transition from thinking about forces to thinking about potentials in mechanics.
+
+**See also:** [[id:placeholder-01][Placeholder 01]], [[id:placeholder-03][Placeholder 03]]

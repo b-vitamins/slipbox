@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID: e3f8a7c2-9b4d-4f1e-8a6b-7c5d9f2a3b8e
+:CUSTOM_ID: 92/373
+:END:
+#+title: Elastic Energy
+#+filetags: :physics:spof:ch8:elasticity:hamiltonian:lamecoefficients:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The elastic energy functional to quadratic order in strains takes the general form:
+\[\beta\mathcal{H} = \frac{1}{2}\int d^2\mathbf{x}\,[2\mu u_{ij}u_{ij} + \lambda u_{ii}u_{jj}]\]
+
+The Lamé coefficients μ (shear modulus) and λ characterize the material's resistance to shear and compression respectively. For an isotropic solid—one whose properties are identical in all directions—these two parameters completely specify the linear elastic response.
+
+In Fourier space, the energy becomes:
+\[\beta\mathcal{H} = \frac{1}{2}\int\frac{d^2\mathbf{q}}{(2\pi)^2}[\mu q^2 u^2 + (\mu + \lambda)(\mathbf{q} \cdot \mathbf{u})^2]\]
+
+This form makes manifest the isotropy—the energy depends only on the rotationally invariant combinations q², |**u**|², and (**q**·**u**)². The first term penalizes all distortions equally, while the second provides additional resistance to longitudinal (compressional) modes.
+
+The triangular lattice possesses full rotational symmetry at the continuum level, making the isotropic form exact. Other lattices have discrete rotational symmetry, requiring additional elastic constants. For instance, a square lattice permits terms like ∫d²**x**(u²₁₁ + u²₂₂) that distinguish x and y directions. However, these anisotropies often prove irrelevant for universal long-wavelength physics, justifying the isotropic approximation.
+
+The elastic constants relate to microscopic interactions but their precise values don't affect universal behavior. What matters is that both μ and λ are positive (stability requirement) and that μ measures resistance to shear. The vanishing of μ defines the solid-to-fluid transition, as fluids cannot sustain static shear stress. This identification proves crucial for understanding two-dimensional melting.
+
+**Meta observation**: The simplicity of isotropic elasticity—just two parameters—reflects deep symmetry principles. Rotational invariance is so constraining that only two independent quadratic invariants exist from the strain tensor.
+
+**See also:** [[id:PLACEHOLDER-34][zettel:34]], [[id:PLACEHOLDER-36][zettel:36]]

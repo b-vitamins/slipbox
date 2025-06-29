@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID: a8f9e7c3-2d4b-4f5e-8a7c-3b4d5e6f8a9b
+:CUSTOM_ID: 92/384
+:END:
+#+title: Dislocation RG
+#+filetags: :physics:spof:ch8:renormalizationgroup:vectorcoulomb:cubicterms:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The renormalization group for the dislocation-mediated melting follows the Coulomb gas framework but with crucial modifications due to the vector nature. The recursion relations to third order are:
+\[\begin{cases}
+\frac{d\bar{K}^{-1}}{d\ell} = Ay^2 + By^3 \\
+\frac{dy_0}{d\ell} = (2 - \pi\bar{K})y + Dy^2
+\end{cases}\]
+
+where A, B, and D are constants depending on lattice geometry and elastic moduli.
+
+The appearance of cubic terms differentiates the vector from scalar Coulomb gas. In the scalar case, neutral configurations require even numbers of particles, making y³ terms vanish by symmetry. For vector charges on the triangular lattice, three dislocations with Burger's vectors at 120° form a neutral triplet. These contribute at order y³, modifying the RG flow near the fixed point. The cubic term in dK̄⁻¹/dℓ represents screening by neutral triplets, while that in dy/dℓ captures triplet formation/dissociation kinetics.
+
+The fixed line at y₀ = 0, K̄ ≥ K̄_c represents the solid phase with all dislocations bound into neutral clusters (pairs and triplets). The critical point (K̄_c⁻¹, 0) where the fixed line terminates marks the dislocation unbinding transition. Near this point, the nonlinear flow becomes:
+\[x^2 - \pi^4 y^2 = c + \text{cubic corrections}\]
+
+The cubic terms modify the critical exponents from their XY values. Detailed calculations yield ν̄ = 0.36963... for the correlation length exponent, distinct from the XY value of 1/2. This difference, though numerically small, has observable consequences in experiments on two-dimensional melting.
+
+**Meta observation**: The emergence of new terms in the RG from lattice symmetry illustrates how microscopic details can affect universal properties. While the existence of a transition is universal, its precise critical behavior depends on seemingly minor details like the possibility of three-fold neutral configurations.
+
+**See also:** [[id:PLACEHOLDER-45][zettel:45]], [[id:PLACEHOLDER-47][zettel:47]]

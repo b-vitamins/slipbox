@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID: f7a8e9c4-3d6b-4e5f-9a1c-8b2d3e4f7a9b
+:CUSTOM_ID: 92/383
+:END:
+#+title: Dislocation Hamiltonian
+#+filetags: :physics:spof:ch8:vectorcoulombgas:interaction:elasticenergy:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The elastic energy in the presence of dislocations separates into phonon and dislocation contributions: β𝓗 = β𝓗₀[**φ**] + β𝓗₁. After calculations paralleling the XY model but accounting for the tensor nature of strain, the dislocation Hamiltonian becomes:
+\[\beta\mathcal{H}_1 = \sum_i\beta\mathcal{E}_{|\mathbf{b}_i|}^0 - \bar{K}\sum_{i<j}b_i^\alpha b_j^\beta C_{\alpha\beta}(\mathbf{x}_i - \mathbf{x}_j)\]
+
+where the vector Coulomb interaction is:
+\[C_{\alpha\beta}(\mathbf{x}) = \frac{1}{2\pi}\left[\delta_{\alpha\beta}\ln\left(\frac{|\mathbf{x}|}{a}\right) - \frac{x_\alpha x_\beta}{x^2}\right]\]
+
+The interaction strength K̄a² = 2μ(μ+λ)/(2μ+λ) combines elastic moduli in a specific way. Unlike scalar charges, the vector nature produces an anisotropic interaction—parallel Burger's vectors interact more strongly than perpendicular ones.
+
+The tensor structure of C_αβ has clear physical interpretation. The isotropic logarithmic term δ_αβ ln(r) represents the long-range elastic distortion, identical for all orientations. The anisotropic term -x_αx_β/x² modulates the interaction based on the relative orientation of the Burger's vectors and their separation. Dislocations aligned perpendicular to their separation interact most strongly, while those aligned parallel interact weakly. This anisotropy profoundly affects the statistical mechanics.
+
+The dislocation gas must satisfy overall neutrality ∑ᵢ**b**ᵢ = 0, a vector constraint stronger than scalar neutrality. On the triangular lattice, the minimal neutral configuration involves three dislocations at 120° angles, while scalar charges require only pairs. This allows neutral triplets to appear at finite temperature even when pairs are bound, enriching the phase diagram compared to the XY model.
+
+**Meta observation**: The vector nature of topological charges in crystals creates qualitatively new physics. The tensor interaction couples orientational and positional degrees of freedom in ways impossible for scalar theories.
+
+**See also:** [[id:PLACEHOLDER-44][zettel:44]], [[id:PLACEHOLDER-46][zettel:46]]

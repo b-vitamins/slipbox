@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID: d8e9f7a5-4c3b-4e6f-9a1d-7c8e5f9a6b4d
+:CUSTOM_ID: 92/390
+:END:
+#+title: Complete Phase Diagram
+#+filetags: :physics:spof:ch8:phasediagram:melting:kthnytheory:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The KTHNY theory predicts two-dimensional crystals melt via two continuous transitions:
+
+**Solid Phase (T < T₁):** Both translational and orientational order persist, though translational order is quasi-long-range while orientational order is truly long-range. Characterized by:
+- Quasi-long-range translational order: ⟨ρ_**G**(**x**)ρ*_**G**(0)⟩ ~ |**x**|^{-η_G}
+- True long-range orientational order: ⟨Ψ(**x**)Ψ*(0)⟩ = constant × exp(-9/(a²μ))
+- Power-law Bragg peaks: S(**q**) ~ |**q**-**G**|^{-(2-η_G)}
+- Finite shear modulus μ with universal jump at T₁
+- All dislocations bound in neutral pairs/triplets
+
+**Hexatic Phase (T₁ < T < T₂):** An intermediate phase with orientational but not translational order:
+- No translational order: exponentially decaying ρ_**G** correlations
+- Quasi-long-range orientational order: ⟨Ψ(**x**)Ψ*(0)⟩ ~ |**x**|^{-η_ψ} with η_ψ = 18/(πK_A)
+- Six-fold modulated diffraction patterns without Bragg peaks
+- Zero shear modulus but finite Frank constant K_A
+- Unbound dislocations forming a screened plasma
+- K_A ∝ ξ² where ξ is the dislocation screening length
+
+**Liquid Phase (T > T₂):** Complete disorder with neither translational nor orientational order:
+- Exponential decay of all correlation functions
+- Isotropic diffraction patterns
+- Zero shear modulus and zero Frank constant
+- Unbound dislocations and disclinations
+
+The transitions occur when topological defects unbind: dislocations at T₁ destroy translational order, disclinations at T₂ destroy orientational order. Both transitions exhibit essential singularities characteristic of Kosterlitz-Thouless type transitions, with correlation lengths ξ ~ exp(const/√|T-T_c|).
+
+This scenario applies to systems where crystalline symmetry permits the hexatic phase. Simple pair potentials often lead to direct first-order melting instead. However, the KTHNY theory successfully describes melting in complex systems like liquid crystal films, colloidal crystals, and electrons on helium.
+
+**Meta observation**: The two-stage melting exemplifies how different symmetries can break at different temperatures. The mathematical machinery (Coulomb gas, topological defects, RG flows) provides a unified framework for understanding diverse two-dimensional phase transitions.
+
+**See also:** [[id:PLACEHOLDER-51][zettel:51]], all branches

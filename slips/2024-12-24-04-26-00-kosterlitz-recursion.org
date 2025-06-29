@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       e7f3a6b2-5d4c-4f8e-9a1b-3c2d8e9f0a7b
+:CUSTOM_ID: 92/365
+:END:
+#+title: Kosterlitz Recursion
+#+FILETAGS: :physics:spof:ch8:recursionrelations:rgflow:phasediagram:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The complete Kosterlitz recursion relations, capturing both fugacity and coupling evolution, are:
+\[\begin{cases}
+\frac{dK^{-1}}{d\ell} = 4\pi^3 a^4 y_0^2 + O(y_0^4) \\
+\frac{dy_0}{d\ell} = (2 - \pi K)y_0 + O(y_0^3)
+\end{cases}\]
+
+These coupled equations determine the RG flow in the (K⁻¹, y₀) plane. The structure reveals the competition between two effects: fugacity drives screening (increasing K⁻¹), while the scaling dimension (2 - πK) determines whether vortices proliferate or bind.
+
+The fixed points are y₀ = 0 with arbitrary K ≥ 2/π, forming a line of fixed points characteristic of systems with continuously variable exponents. Each point on this line represents a different low-temperature phase with specific power-law correlations. The line terminates at the critical point (K_c⁻¹ = π/2, y₀ = 0) where the fugacity eigenvalue changes sign.
+
+The topology of the flow diagram divides the parameter space into two basins. Initial conditions with K > 2/π flow to the fixed line—this is the low-temperature phase with bound vortex pairs. Initial conditions with K < 2/π or large y₀ flow to strong coupling where perturbation theory breaks down—the high-temperature plasma phase. The separatrix between these basins defines the critical surface.
+
+The absence of a conventional isolated fixed point reflects the marginal nature of the transition. Instead of exponential approach to a fixed point, trajectories follow hyperbolic paths, leading to the unusual critical behavior characteristic of the Kosterlitz-Thouless transition.
+
+**Meta observation**: The line of fixed points is not a mathematical curiosity but encodes physical reality—the low-temperature phase of the XY model exhibits continuously variable exponents depending on temperature. This richness is unique to marginal systems.
+
+**See also:** [[id:PLACEHOLDER-26][zettel:26]], [[id:PLACEHOLDER-28][zettel:28]], [[figure:F2]]

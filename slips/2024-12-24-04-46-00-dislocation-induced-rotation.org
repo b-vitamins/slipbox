@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID: d9e8f7a4-3c6b-4d5e-8f7a-2b3c9d8e5f6a
+:CUSTOM_ID: 92/385
+:END:
+#+title: Dislocation-Induced Rotation
+#+filetags: :physics:spof:ch8:rotation:dislocations:orientationalfield:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Dislocations create rotations in the crystal through their displacement fields. Using θ = -ẑ·∇×**u**/2 and the dislocation field, the rotation due to a collection of dislocations is:
+\[\tilde{\theta}(\mathbf{x}) = \frac{1}{2\pi}\sum_i\frac{\mathbf{b}_i \cdot (\mathbf{x} - \mathbf{x}_i)}{|\mathbf{x} - \mathbf{x}_i|^2}\]
+
+In terms of the continuum dislocation density **b**(**x**) = ∑ᵢ**b**ᵢδ²(**x** - **x**ᵢ):
+\[\tilde{\theta}(\mathbf{x}) = \frac{1}{2\pi}\int d^2\mathbf{x}'\frac{\mathbf{b}(\mathbf{x}') \cdot (\mathbf{x} - \mathbf{x}')}{|\mathbf{x} - \mathbf{x}'|^2}\]
+
+This integral kernel is precisely the 2D Biot-Savart law, with dislocation density playing the role of current density.
+
+The Fourier transform reveals the crucial property:
+\[\tilde{\theta}(\mathbf{q}) = i\frac{\mathbf{b}(\mathbf{q}) \cdot \mathbf{q}}{q^2}\]
+
+The factor **b**·**q** in the numerator has profound consequences. For a single dislocation, **b**(**q**) = **b**, independent of **q**. Thus θ̃(**q**) ~ **b**·**q**/q² ~ 1/q for small q, indicating that angular fluctuations from a single dislocation decay as 1/r in real space. This long-range rotation field means that even dilute dislocations significantly affect orientational order.
+
+The projection **b**·**q** encodes geometric information: dislocations create rotations primarily perpendicular to their Burger's vector. An edge dislocation with **b** along x̂ creates rotations that are strongest along the y-direction and vanish along x. This anisotropy means that the orientational distortion pattern around a dislocation depends on both its position and its Burger's vector orientation.
+
+**Meta observation**: The long-range 1/r rotation field from dislocations contrasts with the short-range exponential decay of translational distortions in the liquid phase. This difference enables the existence of phases with orientational but not translational order.
+
+**See also:** [[id:PLACEHOLDER-46][zettel:46]], [[id:PLACEHOLDER-48][zettel:48]]

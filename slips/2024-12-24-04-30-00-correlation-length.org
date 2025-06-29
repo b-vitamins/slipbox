@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       e4f7a3c8-9d2b-4f1e-8c5a-7b6d3e2f4a5c
+:CUSTOM_ID: 92/369
+:END:
+#+title: Correlation Length
+#+FILETAGS: :physics:spof:ch8:correlationlength:scaling:essentialsingularity:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+In the high-temperature phase, correlations decay exponentially with a characteristic length ξ. The RG flow in this phase follows the positive branch of the hyperbola x² - π⁴y² = b²(T - T_c). The recursion relation for x becomes:
+\[\frac{dx}{d\ell} = 4\pi^3 y^2 = \frac{4}{\pi}(x^2 + b^2(T - T_c))\]
+
+This differential equation admits an exact solution:
+\[\frac{1}{b\sqrt{T - T_c}}\arctan\left(\frac{x}{b\sqrt{T - T_c}}\right) = \frac{4}{\pi}\ell\]
+
+The flow must be terminated when perturbation theory breaks down at x(ℓ*) ~ y(ℓ*) ~ 1. Near criticality, x₀ ∝ (T - T_c) ≪ 1, so the initial condition contributes negligibly. Using arctan(∞) = π/2:
+\[\ell^* \approx \frac{\pi}{4b\sqrt{T - T_c}} \times \frac{\pi}{2} = \frac{\pi^2}{8b\sqrt{T - T_c}}\]
+
+The correlation length thus exhibits an essential singularity:
+\[\xi \approx a e^{\ell^*} \approx a\exp\left(\frac{\pi^2}{8b\sqrt{T - T_c}}\right)\]
+
+This is fundamentally different from the power-law divergence ξ ~ |T - T_c|^{-ν} at conventional critical points. The essential singularity reflects the marginal nature of the transition—no relevant scaling field exists to drive the system away from criticality. Instead, the approach to the transition is controlled by dangerously irrelevant variables that become marginal at T_c.
+
+The exponential sensitivity of ξ to temperature near T_c makes experimental observation challenging. Small temperature inhomogeneities can cause enormous variations in correlation length, requiring exceptional temperature control to observe critical behavior.
+
+**Meta observation**: Essential singularities in statistical mechanics signal new universality classes. They arise when the standard machinery of relevant operators and linear scaling breaks down, requiring fundamentally new theoretical approaches.
+
+**See also:** [[id:PLACEHOLDER-30][zettel:30]], [[id:PLACEHOLDER-32][zettel:32]]

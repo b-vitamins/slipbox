@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID: a7f9e8c3-5d4b-4e6f-8a2c-3b5d6e7f9a4c
+:CUSTOM_ID: 92/389
+:END:
+#+title: Disclination Energy
+#+filetags: :physics:spof:ch8:disclination:topologicaldefect:hexaticliquid:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Disclinations are rotational defects in the hexatic phase, analogous to vortices in the XY model. A path encircling a disclination accumulates bond angle rotation:
+\[\oint\nabla\theta \cdot d\mathbf{s} = \frac{2\pi}{6}\]
+
+for the elementary disclination in a triangular lattice. The factor 1/6 reflects the six-fold symmetry—rotating bonds by 60° maps the lattice onto itself.
+
+The energy of an isolated disclination follows from the Frank constant Hamiltonian:
+\[\mathcal{E}_1 = \frac{K_A}{2}\int d^2\mathbf{x}(\nabla\theta)^2 = \frac{\pi K_A}{36}\ln\left(\frac{L}{a}\right)\]
+
+where we used ∇θ = 1/(6r) in circular coordinates around the defect. The configurational entropy contributes 2ln(L/a) from possible positions, giving a free energy:
+\[F_1 = \left(\frac{\pi K_A}{36} - 2\right)\ln\left(\frac{L}{a}\right)\]
+
+Disclinations proliferate when F₁ < 0, occurring for K_A < 72/π. This marks the hexatic-liquid transition where orientational order is destroyed.
+
+The disclination unbinding transition belongs to the scalar Coulomb gas universality class, like the original Kosterlitz-Thouless transition but with different parameters. The charge is 1/6 rather than 1, and the coupling is K_A rather than K. The critical value K_A = 72/π ensures universal behavior independent of microscopic details. Above this temperature, unbound disclinations destroy the last remnant of crystalline order, creating an isotropic liquid.
+
+Disclinations can exist in the solid phase but only as bound pairs separated by strings of dislocations. Their unbinding in the hexatic phase doesn't require such strings because translational order is already destroyed. This separation of energy scales—dislocations unbind first, then disclinations—enables the two-stage melting scenario.
+
+**Meta observation**: The factor of 6 difference between vortex and disclination charges (2π vs 2π/6) exemplifies how lattice symmetry modifies topological defects. The universal structure (Coulomb gas) remains, but symmetry determines the specific parameters.
+
+**See also:** [[id:PLACEHOLDER-50][zettel:50]], [[id:PLACEHOLDER-52][zettel:52]]

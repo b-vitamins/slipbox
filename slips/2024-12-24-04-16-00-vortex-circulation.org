@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       8f5c9a3e-2d47-4b81-9e4c-7a8f2c9b5d63
+:CUSTOM_ID: 92/355
+:END:
+#+title: Vortex Circulation
+#+FILETAGS: :physics:spof:ch8:vortex:topologicaldefect:circulation:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+A vortex is characterized by the phase winding around a closed path. For a contour of radius r centered on a vortex, the constraint \(\oint\nabla\theta \cdot d\vec{s} = 2\pi n\) determines the angular gradient. By symmetry, ∇θ has constant magnitude and points tangentially, yielding:
+\[\frac{d\theta}{dr}(2\pi r) = 2\pi n \quad \Rightarrow \quad \frac{d\theta}{dr} = \frac{n}{r}\]
+
+The integer n is the topological charge or winding number. Elementary vortices have n = ±1, corresponding to counterclockwise and clockwise circulation respectively.
+
+The gradient field can be written in vector form as:
+\[\nabla\theta = n\left(-\frac{y}{r^2}, \frac{x}{r^2}, 0\right) = -\frac{n}{r}\hat{r} \times \hat{z} = -n\nabla \times (\hat{z}\ln r)\]
+
+This identifies ln r as the "stream function" for the vortex flow. The analogy with fluid mechanics is precise—vortices in the XY model generate the same velocity field as point vortices in an ideal fluid. The curl of ∇θ vanishes everywhere except at the vortex center where it has a delta function singularity, reflecting the localized nature of the topological charge.
+
+The continuum approximation breaks down at the vortex core where θ changes by 2π over a lattice spacing. This region, roughly of size a, contributes a finite core energy β𝓸ₙ(a) to the vortex. The precise value depends on microscopic details, but the long-range physics is universal, determined solely by the logarithmic interaction arising from equation above.
+
+**Meta observation**: Topological defects represent the failure of naive continuum descriptions. Yet their long-range effects can be captured by singular solutions of continuum equations. This interplay between discrete topology and continuous fields pervades modern physics.
+
+**See also:** [[id:PLACEHOLDER-16][zettel:16]], [[id:PLACEHOLDER-18][zettel:18]], [[figure:F1]]

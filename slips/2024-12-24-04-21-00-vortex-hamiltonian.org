@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       a7c9b4e2-8f3d-4a5e-b1c6-d2e7f9a0b8c3
+:CUSTOM_ID: 92/360
+:END:
+#+title: Vortex Hamiltonian
+#+FILETAGS: :physics:spof:ch8:coulombgas:hamiltonian:interaction:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The energy of the vortex configuration emerges from substituting the Poisson solution into the kinetic energy:
+\[\beta\mathcal{H}_1 = -\frac{K}{2}\int d^2\mathbf{x}\left(\sum_i n_i\ln|\mathbf{x} - \mathbf{x}_i|\right)\left(2\pi\sum_j n_j\delta^2(\mathbf{x} - \mathbf{x}_j)\right)\]
+
+Evaluating the delta functions yields:
+\[\beta\mathcal{H}_1 = -2\pi^2 K\sum_{i,j} n_i n_j C(\mathbf{x}_i - \mathbf{x}_j)\]
+
+where C(**x**) = ln(|**x**|)/(2π) is the two-dimensional Coulomb potential.
+
+The diagonal terms i = j diverge, reflecting the breakdown of the continuum approximation at the vortex core. These self-energy divergences are regularized by the finite core size a, contributing the bare core energies β𝓸ₙᵢ⁰. The properly regularized Hamiltonian reads:
+\[\beta\mathcal{H}_1 = \sum_i\beta\mathcal{E}_{n_i}^0 - 4\pi^2 K\sum_{i<j} n_i n_j C(\mathbf{x}_i - \mathbf{x}_j)\]
+
+This is precisely the Hamiltonian of a two-dimensional Coulomb gas with charges {nᵢ} at positions {**x**ᵢ}. The coupling strength 4π²K plays the role of inverse temperature in the Coulomb gas. Vortices of like sign repel while opposite signs attract, with forces that decay as 1/r. The logarithmic potential ensures that the integrated interaction energy grows logarithmically with system size, matching the entropy and enabling a phase transition.
+
+**Meta observation**: The emergence of electrostatic interactions from a completely different physical system—spins with local ferromagnetic coupling—exemplifies universality. The long-range nature of topological constraints inevitably leads to Coulomb-like forces.
+
+**See also:** [[id:PLACEHOLDER-20][zettel:20]], [[id:PLACEHOLDER-21][zettel:21]], [[id:PLACEHOLDER-23][zettel:23]]

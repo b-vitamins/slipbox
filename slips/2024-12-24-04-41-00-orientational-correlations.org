@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID: d7f9e8a3-4c6b-4d5e-8a7f-2b3c9e8d4f5a
+:CUSTOM_ID: 92/380
+:END:
+#+title: Orientational Correlations
+#+filetags: :physics:spof:ch8:correlations:longrangeorder:surprisingresult:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The orientational correlation function reveals a remarkable property of two-dimensional crystals:
+\[\langle\Psi(\mathbf{x})\Psi^*(\mathbf{0})\rangle = \langle e^{i6[\theta(\mathbf{x}) - \theta(\mathbf{0})]}\rangle = \exp\left(-\frac{36}{2}\langle[\theta(\mathbf{x}) - \theta(\mathbf{0})]^2\rangle\right)\]
+
+Using θ = -ẑ·∇×**u**/2, the angular fluctuations become:
+\[\langle[\theta(\mathbf{x}) - \theta(\mathbf{0})]^2\rangle = \frac{1}{4}\langle[\nabla \times \mathbf{u}(\mathbf{x}) - \nabla \times \mathbf{u}(\mathbf{0})]^2\rangle\]
+
+In Fourier space, using ∇×**u** → i**q**×**u** and the identity |**q**×**u**|² = q²|**u**|² - (**q**·**u**)²:
+\[\langle[\theta(\mathbf{x}) - \theta(\mathbf{0})]^2\rangle = \frac{1}{4}\int\frac{d^2\mathbf{q}}{(2\pi)^2}(2 - 2\cos\mathbf{q} \cdot \mathbf{x})\left[q^2\langle|\mathbf{u}(\mathbf{q})|^2\rangle - \langle(\mathbf{q} \cdot \mathbf{u})^2\rangle\right]\]
+
+The crucial observation is that the integrand vanishes as q → 0 due to the explicit q² factor. This infrared convergence yields a finite result:
+\[\langle\Psi(\mathbf{x})\Psi^*(\mathbf{0})\rangle = \exp\left(-\frac{9}{a^2\mu}\right)\]
+
+independent of separation |**x**|!
+
+This demonstrates true long-range orientational order in two-dimensional crystals, contrasting sharply with the quasi-long-range translational order. The physical reason is profound: orientational order measures the average direction of bonds, which is preserved even when atoms are significantly displaced from their ideal positions. The convergent integral arises because long-wavelength phonons, which destroy translational order, create nearly uniform rotations that don't affect relative orientations.
+
+The exponential factor exp(-9/(a²μ)) shows that orientational order decreases with temperature (μ ∝ 1/T) but never vanishes. Soft crystals (small μ) have weaker orientational order but still maintain long-range coherence. This separation of translational and orientational ordering enables the existence of the hexatic phase.
+
+**Meta observation**: The survival of orientational order when translational order is lost exemplifies a general principle—different symmetries can disorder at different temperatures. The mathematical origin (infrared convergence for rotations but not translations) has deep physical consequences.
+
+**See also:** [[id:PLACEHOLDER-41][zettel:41]], [[id:PLACEHOLDER-43][zettel:43]]

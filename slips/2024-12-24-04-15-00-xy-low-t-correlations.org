@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       a3d2e8f5-b9c4-4e12-8f7a-2d9b5c6a3e4f
+:CUSTOM_ID: 92/354
+:END:
+#+title: XY Low-T Correlations
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+#+FILETAGS: :physics:spof:ch8:xymodel:lowtemperature:quasilongrangeorder:
+
+At low temperatures, small fluctuations around the ordered state permit a Gaussian approximation with Hamiltonian \(\beta\mathcal{H} = \frac{K}{2}\int d^2\mathbf{x}(\nabla\theta)^2\). The correlation function evaluates to:
+\[\langle\vec{s}_0 \cdot \vec{s}_\mathbf{r}\rangle = \langle\cos(\theta_0 - \theta_\mathbf{r})\rangle = \Re\,e^{-\frac{1}{2}\langle(\theta_0 - \theta_\mathbf{r})^2\rangle}\]
+
+where we used the Gaussian identity for a real field with zero mean.
+
+The angular fluctuations grow logarithmically in two dimensions:
+\[\frac{1}{2}\langle(\theta_0 - \theta_\mathbf{r})^2\rangle = \int\frac{d^2\mathbf{q}}{(2\pi)^2}\frac{1-\cos(\mathbf{q} \cdot \mathbf{r})}{Kq^2} = \frac{1}{2\pi K}\ln\left(\frac{r}{a}\right)\]
+
+This yields power-law correlations:
+\[\langle\vec{s}_0 \cdot \vec{s}_\mathbf{r}\rangle \approx \left(\frac{a}{r}\right)^{\frac{1}{2\pi K}}\]
+
+The power-law decay signifies quasi-long-range order—correlations decay to zero but more slowly than any exponential. This behavior is unique to two dimensions where angular fluctuations grow logarithmically. In three dimensions, fluctuations saturate at large distances, preserving true long-range order. In one dimension, fluctuations grow linearly, destroying order entirely.
+
+The exponent 1/(2πK) decreases with increasing K (lower temperature), indicating stronger correlations. The Gaussian approximation assumes small fluctuations, requiring K ≫ 1/(2π). This suggests a transition near K ~ 1/π, remarkably close to the exact Kosterlitz-Thouless value K_c = 2/π. The agreement is fortuitous—the Gaussian theory cannot capture the vortex unbinding mechanism of the actual transition.
+
+**Meta observation**: The logarithmic growth of fluctuations in two dimensions repeatedly appears across physics—from quantum field theory anomalies to conformal field theory. It signals marginal behavior where perturbative and non-perturbative effects compete.
+
+**See also:** [[id:PLACEHOLDER-01][zettel:01]], [[id:PLACEHOLDER-15][zettel:15]], [[id:PLACEHOLDER-21][zettel:21]]

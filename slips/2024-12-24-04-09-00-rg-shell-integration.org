@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       aac6435d-5072-442d-980d-c00409c01983
+:CUSTOM_ID: 92/348
+:END:
+#+title: RG Shell Integration
+#+FILETAGS: :physics:spof:ch8:renormalizationgroup:coarsegraining:momentumshell:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The renormalization group analysis proceeds by integrating out short-wavelength modes in a thin momentum shell. Decomposing \(\vec{\pi}(\mathbf{q}) = \vec{\pi}^<(\mathbf{q}) + \vec{\pi}^>(\mathbf{q})\), where superscripts denote slow (0 < |q| < Λ/b) and fast (Λ/b < |q| < Λ) modes respectively, we systematically eliminate the fast modes to derive an effective theory for the slow modes.
+
+To first order in the temperature expansion, the coarse-grained Hamiltonian is:
+\[\tilde{\beta\mathcal{H}}[\vec{\pi}^<] = V\delta f_b^0 + \beta\mathcal{H}_0[\vec{\pi}^<] + \langle U_1[\vec{\pi}^< + \vec{\pi}^>]\rangle_0^> + O(T^2)\]
+
+The quartic term in U₁ generates sixteen terms when expanded. Most vanish by symmetry (odd powers of Gaussian fields) or merely renormalize the overall constant. Three types of contractions prove important: vanishing terms from odd moments, dressing of the quadratic term leading to K renormalization, and modification of the density ρ.
+
+The key result is the renormalization of stiffness from integrating the shell:
+\[\tilde{K} = K\left(1 + \frac{I_d(b)}{K}\right)\]
+where \(I_d(b) = \int_{\Lambda/b}^{\Lambda} \frac{d^d\mathbf{k}}{(2\pi)^d}\frac{1}{k^2} = \frac{K_d\Lambda^{d-2}(1-b^{2-d})}{d-2}\). This integral captures how high-momentum fluctuations dress the interaction between remaining modes. For d > 2, the correction is finite and perturbation theory is controlled. At d = 2, the integral diverges logarithmically, signaling marginal behavior.
+
+**Meta observation**: The momentum shell RG reveals how physics at different scales communicates. High-energy modes don't simply disappear—they renormalize the interactions among low-energy modes. This hierarchical structure is why universality emerges.
+
+**See also:** [[id:PLACEHOLDER-09][zettel:09]], [[id:PLACEHOLDER-11][zettel:11]], [[figure:D2]], [[figure:D3]]

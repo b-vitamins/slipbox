@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       f9d1a2b4-6c8e-4a93-b7f9-3e2d4c5a8b71
+:CUSTOM_ID: 92/363
+:END:
+#+title: Fugacity Renormalization
+#+FILETAGS: :physics:spof:ch8:renormalization:fugacity:coreenergy:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The renormalization group for the Coulomb gas requires tracking how vortex parameters change under coarse-graining. The key insight is that changing the core size from a to ba modifies the bare vortex energy. From the single vortex partition function:
+\[\tilde{y}_0(ba) = b^{2-\pi K}y_0(a)\]
+
+This transformation captures how the entropy-energy balance shifts with scale. The factor b² arises from the reduced number of possible vortex positions after coarse-graining (fewer microscopic sites in the rescaled lattice). The factor b^{-πK} reflects the change in core energy as small-scale fluctuations are integrated out.
+
+The scaling dimension 2 - πK determines vortex relevance. For K > 2/π, this dimension is negative and y₀ decreases under coarse-graining—vortices are irrelevant. For K < 2/π, the dimension becomes positive and y₀ grows, signaling vortex proliferation. The marginal point K = 2/π where the dimension vanishes marks the phase transition.
+
+This renormalization differs from conventional field theory where couplings change due to quantum/thermal fluctuations. Here, the fugacity changes because we redefine what constitutes the "core" of a topological defect. The arbitrariness in this definition is not a weakness but a strength—physical observables must be independent of this choice, leading to RG equations that capture universal behavior.
+
+**Meta observation**: Renormalization of topological defects involves both energetic (field fluctuations) and entropic (counting of states) contributions. The interplay between these effects, both scaling logarithmically in 2D, enables the Kosterlitz-Thouless transition.
+
+**See also:** [[id:PLACEHOLDER-24][zettel:24]], [[id:PLACEHOLDER-26][zettel:26]]

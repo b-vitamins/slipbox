@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID: c02e3081-546d-4af0-82c3-7c9c1adc759a
+:CUSTOM_ID: 92/370
+:END:
+#+title: Essential Singularity
+#+filetags: :physics:spof:ch8:freeenergy:thermodynamics:criticalbehavior:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The singular part of the free energy density in the high-temperature phase scales as:
+\[f_{\text{sing}} \propto \xi^{-2} \propto \exp\left(-\frac{\pi^2}{4b\sqrt{T - T_c}}\right)\]
+
+This dimensional analysis follows from the fact that in the disordered phase, ξ is the only relevant length scale. The free energy density must scale as (length)^{-d} = ξ^{-2} in two dimensions.
+
+The essential singularity has profound thermodynamic consequences. All derivatives of f_sing with respect to temperature remain finite at T_c:
+\[\frac{\partial^n f_{\text{sing}}}{\partial T^n}\bigg|_{T=T_c} = 0 \quad \text{for all } n\]
+
+This contrasts sharply with conventional phase transitions where specific heat (∂²f/∂T²) diverges or jumps discontinuously. The Kosterlitz-Thouless transition is thus thermodynamically invisible—no divergence or discontinuity appears in any thermodynamic quantity.
+
+The specific heat shows only a smooth, broad maximum above T_c, corresponding to the entropy released as vortex pairs unbind. Berker and Nelson's detailed RG calculations confirm this smooth behavior, with the maximum occurring at a temperature where typical dipole sizes become comparable to their separation. The absence of a sharp thermodynamic signature long obscured the existence of this transition.
+
+The essential singularity encodes the physics of vortex deconfinement. As T → T_c⁺, the free energy cost of creating free vortices vanishes not as a power law but exponentially slowly. This marginal deconfinement produces a plasma phase that differs qualitatively from both the bound phase and a conventional disordered phase.
+
+**Meta observation**: The absence of thermodynamic signatures doesn't imply absence of a phase transition. The Kosterlitz-Thouless transition teaches us to look beyond thermodynamics to correlation functions and topological properties to fully characterize phases of matter.
+
+**See also:** [[id:PLACEHOLDER-31][zettel:31]], [[id:PLACEHOLDER-33][zettel:33]]

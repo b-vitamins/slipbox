@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID: e9f8a7d3-4c5b-4e6f-8a9d-3b2c4e7f9a8d
+:CUSTOM_ID: 92/382
+:END:
+#+title: Dislocation Field
+#+filetags: :physics:spof:ch8:displacementfield:singularsolution:elasticity:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The displacement field around dislocations has a singular part analogous to the vortex solution in the XY model. For a collection of dislocations with Burger's vectors {**b**ᵢ} at positions {**x**ᵢ}, the singular contribution to the displacement gradient is:
+\[\nabla\tilde{u}_\alpha^* = -\nabla \times \left(\hat{z}\sum_i\frac{b_i^\alpha}{2\pi}\ln|\mathbf{x} - \mathbf{x}_i|\right)\]
+
+This ensures the correct circulation ∮∇u_α·d**s** = b^α around each dislocation.
+
+However, ũ*_α is not the physical displacement field—it doesn't satisfy elastic equilibrium. The actual displacement ũ_α minimizes elastic energy subject to the topological constraint, satisfying:
+\[2\mu\tilde{u}_{\alpha\beta} + \lambda\delta_{\alpha\beta}\tilde{u}_{\gamma\gamma} = 0\]
+
+everywhere except at dislocation cores. The difference between ũ_α and ũ*_α is a regular (single-valued) displacement field that ensures elastic equilibrium.
+
+The mathematical machinery parallels magnetostatics: ũ*_α is like the vector potential of current loops, while ũ_α is the physical field after imposing Maxwell's equations. The elastic equilibrium condition replaces Gauss's law, determining how the medium responds to the imposed topological constraint. This response is non-local—a dislocation creates displacement fields throughout the crystal, not just near its core.
+
+The decomposition **u** = **φ** + ũ, where **φ** represents phonons and ũ captures dislocations, separates topological and energetic excitations. Phonons are harmonic oscillations that preserve the perfect lattice topology. Dislocations are topological defects whose positions fluctuate thermally. This separation enables independent treatment of the two types of excitations, though they interact through the elastic medium.
+
+**Meta observation**: The distinction between the "bare" topological field ũ* and the physical elastic field ũ exemplifies a general principle—topology provides constraints, but energetics determines the actual configuration within those constraints.
+
+**See also:** [[id:PLACEHOLDER-43][zettel:43]], [[id:PLACEHOLDER-45][zettel:45]]

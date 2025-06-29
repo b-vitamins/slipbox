@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       c4a7f8d3-9b2e-4f1a-8c7d-3e5f6a8b9c2d
+:CUSTOM_ID: 92/366
+:END:
+#+title: Critical Trajectory
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+#+FILETAGS: :physics:spof:ch8:criticalbehavior:nonlinearflow:hyperbolic:
+
+Near the termination point of the fixed line, the recursion relations require careful analysis. Setting x = K⁻¹ - π/2 and y = y₀a², the linearized equations become:
+\[\begin{cases}
+\frac{dx}{d\ell} = 4\pi^3 y^2 + O(xy^2, y^4) \\
+\frac{dy}{d\ell} = \frac{4}{\pi}xy + O(x^2y, y^3)
+\end{cases}\]
+
+These equations are inherently nonlinear—no linear terms exist near the critical point. This nonlinearity is not a perturbative artifact but reflects the marginal nature of the transition.
+
+A crucial conservation law emerges from these equations:
+\[\frac{dx^2}{d\ell} = 8\pi^3 y^2 x = \pi^4\frac{dy^2}{d\ell}\]
+
+Therefore:
+\[\frac{d}{d\ell}(x^2 - \pi^4 y^2) = 0 \quad \Rightarrow \quad x^2 - \pi^4 y^2 = c\]
+
+The RG flows follow hyperbolas characterized by the constant c. For c > 0, flows have x > 0 asymptotically and proceed to the high-temperature phase. For c < 0, two branches exist: x < 0 flows reach the fixed line (low-temperature phase), while x > 0 flows escape to strong coupling. The critical trajectory has c = 0, corresponding to straight lines x = ±π²y.
+
+The nonlinear flow near criticality has profound consequences. Instead of exponential approach to a fixed point with linearized eigenvalues, the system exhibits power-law approach along hyperbolic trajectories. This leads to essential singularities rather than power-law singularities in thermodynamic quantities, a hallmark of the Kosterlitz-Thouless transition.
+
+**Meta observation**: Nonlinear RG flows arise when the fixed point is marginal—linear eigenvalues vanish and higher-order terms control the dynamics. The resulting hyperbolic flows create a new universality class distinct from conventional critical phenomena.
+
+**See also:** [[id:PLACEHOLDER-27][zettel:27]], [[id:PLACEHOLDER-29][zettel:29]], [[figure:F3]]

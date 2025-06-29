@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       f7a8e9c3-2b4d-4e6f-9a1b-8c3d5e6f7a9b
+:CUSTOM_ID: 92/350
+:END:
+#+title: RG Flow Equations
+#+FILETAGS: :physics:spof:ch8:renormalizationgroup:flowequations:criticalbehavior:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The complete RG transformation combines coarse-graining with rescaling. After integrating out the shell and rescaling lengths by b and fields by ζ, the coupling constant transforms as:
+\[K' = b^{d-2}\zeta^2\tilde{K} = b^{d-2}\left[1 - \frac{n-1}{2K}I_d(b)\right]^2 K\left[1 + \frac{1}{K}I_d(b)\right]\]
+
+Expanding to first order in 1/K yields:
+\[K' = b^{d-2}K\left[1 - \frac{n-2}{K}I_d(b) + O(1/K^2)\right]\]
+
+The appearance of (n-2) rather than (n-1) is crucial—it signals special behavior for the XY model.
+
+For infinitesimal transformations b = 1 + δℓ, we obtain the differential recursion relations:
+\[\frac{dK}{d\ell} = (d-2)K - (n-2)K_d\Lambda^{d-2}\]
+or equivalently for temperature T = K⁻¹:
+\[\frac{dT}{d\ell} = -(d-2)T + (n-2)K_d\Lambda^{d-2}T^2\]
+
+These flow equations reveal the competition between two effects. The linear term (d-2)T represents the naive engineering dimension—temperature is irrelevant above two dimensions. The quadratic term, proportional to (n-2), arises from fluctuation-induced interactions among Goldstone modes. At d = 2, the linear term vanishes and the behavior is controlled entirely by fluctuations.
+
+The factor (n-2) has profound consequences. For n > 2, temperature is relevant even at d = 2, flowing to strong coupling where our perturbative analysis breaks down. For n = 2 (XY model), the flow equation suggests marginal behavior—the quadratic term vanishes to this order, and higher-order calculations show that dT/dℓ = 0 to all orders in perturbation theory.
+
+*Meta observation*: The emergence of (n-2) from (n-1) through subtle cancellations exemplifies how symmetry considerations can produce non-obvious results. The special role of n = 2 was not input but emerged from the calculation.
+
+*See also:* [[id:PLACEHOLDER-11][zettel:11]], [[id:PLACEHOLDER-13][zettel:13]]

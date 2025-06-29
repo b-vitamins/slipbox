@@ -1,0 +1,44 @@
+:PROPERTIES:
+:ID: e8f9a7d5-9c4b-4e8f-9a2d-8e9f7a8c9d7f
+:CUSTOM_ID: 92/397
+:END:
+#+title: Diagram D2: Fourier Mode Decomposition
+#+filetags: :physics:spof:ch8:diagram:momentumshell:renormalization:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+**Diagrammatic Content:**
+Spherical shell in momentum space showing the division into slow and fast modes for RG.
+
+**Momentum space picture:**
+#+begin_example
+         |q| = Λ (UV cutoff)
+          _____
+       /         \
+     /    FAST     \  } Λ/b < |q| < Λ
+    |               |    (modes to integrate)
+    |      ___      |
+    |    /     \    |  } 0 < |q| < Λ/b  
+    |   | SLOW  |   |    (modes to keep)
+    |   |   •   |   |
+    |    \ ___ /    |
+    |               |
+     \             /
+       \ _______ /
+#+end_example
+
+**Key features:**
+- Inner sphere: radius Λ/b containing slow modes **π**<(**q**)
+- Spherical shell: Λ/b < |**q**| < Λ containing fast modes **π**>(**q**)
+- Origin (•) at |**q**| = 0
+- Rescaling factor b > 1 (typically b = e^δℓ for infinitesimal RG)
+
+**Shell integration:**
+The integral over the shell gives:
+\[I_d(b) = \int_{\Lambda/b}^{\Lambda} \frac{d^d\mathbf{k}}{(2\pi)^d}\frac{1}{k^2} = \frac{K_d\Lambda^{d-2}(1-b^{2-d})}{d-2}\]
+
+For d = 2, this becomes logarithmic: I₂(b) = K₂ln(b)/(2π), signaling marginal behavior.
+
+**Physical interpretation:**
+Fast modes represent high-energy fluctuations that can be integrated out, their effect captured by renormalizing couplings of slow modes. The spherical shell ensures isotropy of the coarse-graining procedure. The thickness δℓ = ln(b) of the shell in logarithmic coordinates becomes the "time" parameter for RG flow.
+
+**See also:** [[id:PLACEHOLDER-10][zettel:10]], [[id:PLACEHOLDER-26][zettel:26]]

@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID: b9f8e7a5-6d4c-4e8f-9a3d-5e6f8a9b7c5f
+:CUSTOM_ID: 92/394
+:END:
+#+title: Figure F4: Dislocation Geometry
+#+filetags: :physics:spof:ch8:figure:dislocation:burgersvector:crystal:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+**Sketch Description:**
+Edge dislocations in triangular and square lattices showing extra half-planes and Burgers circuits.
+
+**Triangular lattice (top):**
+- Regular triangular array of atoms (dots)
+- Extra half-row of atoms inserted from top, ending at dislocation core (marked ⊥)
+- Burgers circuit: hexagonal path around dislocation
+  - Start at atom A, make closed path in perfect lattice
+  - Path fails to close by vector **b** (shown as arrow)
+  - |**b**| = a (lattice constant)
+  - Six possible directions for **b** (nearest neighbors)
+
+**Square lattice (bottom):**
+- Regular square array of atoms
+- Extra half-column inserted from left, ending at core (⊥)
+- Burgers circuit: rectangular path around dislocation
+  - Closure failure gives **b** pointing right
+  - |**b**| = a
+  - Four possible directions for **b**
+
+**Key features:**
+The displacement field must be multivalued: ∮∇**u**·d**s** = **b**. Near the core (~a), continuum elasticity breaks down. Far from core, elastic distortions decay as 1/r. The Burgers vector is quantized in units of lattice vectors, making dislocations topologically stable.
+
+**Physical significance:** Dislocations mediate plastic deformation and, in 2D, drive the solid-hexatic transition by unbinding at T₁.
+
+**See also:** [[id:PLACEHOLDER-06][zettel:06]], [[id:PLACEHOLDER-43][zettel:43]], [[id:PLACEHOLDER-44][zettel:44]]

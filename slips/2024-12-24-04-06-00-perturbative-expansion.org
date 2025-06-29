@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       a7e9f3d2-4b6c-4d8e-9fa0-c1d2e3f4a5b6
+:CUSTOM_ID: 92/345
+:END:
+#+title: Perturbative Expansion
+#+FILETAGS: :physics:spof:ch8:perturbationtheory:temperatureexpansion:vertex:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The effective Hamiltonian admits a systematic expansion in powers of temperature: \(\beta\mathcal{H}[\vec{\pi}] = \beta\mathcal{H}_0 + U_1 + U_2 + \cdots\). The Gaussian term \(\beta\mathcal{H}_0 = \frac{K}{2}\int d^d\mathbf{x}(\nabla\vec{\pi})^2\) describes free Goldstone modes, while the perturbations capture their interactions. Since \(\langle\pi^2\rangle \propto T\) in the Gaussian theory, successive terms in this expansion are suppressed by powers of temperature.
+
+The first-order perturbation contains two distinct contributions:
+\[U_1 = \int d^d\mathbf{x}\left[\frac{K}{2}(\vec{\pi} \cdot \nabla\vec{\pi})^2 - \frac{\rho}{2}\pi^2\right]\]
+
+The quartic gradient term represents the lowest-order scattering between Goldstone modes, arising from the spherical constraint. Its specific tensorial structure—a squared dot product—reflects the rotational invariance of the original model. The negative mass-like term \(-\rho\pi^2/2\) seems to indicate an instability, but this is compensated by higher-order terms maintaining \(|\vec{\pi}| < 1\).
+
+In momentum space, the interaction vertex takes a characteristic form involving four fields and two dot products with momenta. This momentum dependence is crucial: it vanishes when any momentum approaches zero, reflecting the Goldstone theorem. The vertex grows with momentum, making the theory super-renormalizable in d > 2 and marginal at d = 2.
+
+**Meta observation**: The organization of perturbation theory around temperature rather than coupling constant reflects deep physics. Temperature controls the population of Goldstone modes, making it the natural expansion parameter for systems with continuous symmetry breaking.
+
+**See also:** [[id:PLACEHOLDER-06][zettel:06]], [[id:PLACEHOLDER-08][zettel:08]], [[figure:D1]]

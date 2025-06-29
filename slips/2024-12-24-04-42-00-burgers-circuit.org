@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID: c8e7f9d4-3b5a-4e6f-9a8c-2d4e5f7a8b9c
+:CUSTOM_ID: 92/381
+:END:
+#+title: Burger's Circuit
+#+filetags: :physics:spof:ch8:dislocation:topologicaldefect:burgersvector:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+A dislocation is identified through the failure of a Burger's circuit to close. On a perfect lattice, any closed path stepping from atom to atom returns to the starting point. Around a dislocation, the circuit fails to close, with the gap defining the Burger's vector **b**. In the continuum description:
+\[\oint\nabla u_\alpha \cdot d\mathbf{s} = b^\alpha\]
+
+This is the vector generalization of vortex circulation in the XY model—each component of displacement has quantized circulation in units of lattice vectors.
+
+The Burger's vector characterizes the topological charge of the dislocation. For the triangular lattice, the smallest Burger's vectors point along the six nearest-neighbor directions with magnitude a. For the square lattice, four elementary dislocations exist. The discreteness of **b** reflects the underlying lattice structure—only displacements that map the lattice onto itself are topologically allowed. This quantization makes dislocations stable topological defects that cannot be eliminated by smooth deformations.
+
+A dislocation represents an extra half-plane of atoms inserted into the crystal. Far from the core, atoms relax to minimize elastic energy while maintaining the topological constraint. The resulting displacement field must be multivalued—circling the dislocation accumulates displacement **b**. This multivaluedness, like the 2π ambiguity in the XY angle, is the mathematical signature of a topological defect.
+
+Unlike vortices which are scalar charges, dislocations carry vector charges. This enriches the physics considerably. Dislocations with opposite Burger's vectors attract and can annihilate, while those with perpendicular vectors interact weakly. The vector nature also means that three dislocations at 120° angles can form a neutral configuration on the triangular lattice—impossible for scalar charges.
+
+**Meta observation**: The quantization of circulation—whether scalar (vortices) or vector (dislocations)—reflects the discrete symmetry of the microscopic system surviving in the continuum limit. Topology remembers what coarse-graining forgets.
+
+**See also:** [[id:PLACEHOLDER-42][zettel:42]], [[id:PLACEHOLDER-44][zettel:44]], [[id:PLACEHOLDER-F4][figure:F4]]

@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID: f8e9a7c6-4d3b-4e8f-9a1c-5d6e7f8a9c3b
+:CUSTOM_ID: 92/388
+:END:
+#+title: Hexatic Correlations
+#+filetags: :physics:spof:ch8:hexaticphase:correlations:quasiorder:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+In the hexatic phase, orientational correlations exhibit quasi-long-range order described by the effective Frank constant theory:
+\[\langle\Psi(\mathbf{x})\Psi^*(\mathbf{0})\rangle = \langle e^{i6[\theta(\mathbf{x}) - \theta(\mathbf{0})]}\rangle = \left(\frac{a}{|\mathbf{x}|}\right)^{\eta_\Psi}\]
+
+where the exponent is:
+\[\eta_\Psi = \frac{18}{\pi K_A}\]
+
+The factor of 36 = 6² in the exponential arises from the six-fold symmetry of the triangular lattice order parameter Ψ = e^{i6θ}.
+
+This power-law decay contrasts with both the solid phase (true long-range orientational order, η_ψ = 0) and the liquid phase (exponential decay). The hexatic represents an intermediate state—no translational order due to unbound dislocations, but quasi-long-range orientational order maintained by the finite Frank constant. The phase is thermodynamically distinct, separated from both solid and liquid by continuous transitions.
+
+The power-law exponent η_ψ varies continuously through the hexatic phase as temperature changes K_A. Near the solid-hexatic transition, K_A diverges and η_ψ → 0, recovering long-range order. Approaching the hexatic-liquid transition, K_A → 72/π and η_ψ → 1/4. At this point, the orientational susceptibility diverges and disclinations unbind, destroying the last vestige of crystalline order.
+
+Experimentally, the hexatic phase manifests as six-fold modulated diffraction patterns without sharp Bragg peaks. The angular intensity distribution I(φ) ~ |∫d²**x** e^{i**k**·**x**}e^{i6θ(**x**)}|² shows six broad maxima whose width increases with momentum transfer according to the power-law decay. This distinctive pattern, intermediate between crystalline spots and liquid rings, provides the experimental signature of hexatic order.
+
+**Meta observation**: The hexatic phase exemplifies how different symmetries can disorder independently. Breaking translational and orientational symmetries at different temperatures creates a new phase of matter with its own characteristic properties and phase transitions.
+
+**See also:** [[id:PLACEHOLDER-49][zettel:49]], [[id:PLACEHOLDER-51][zettel:51]]

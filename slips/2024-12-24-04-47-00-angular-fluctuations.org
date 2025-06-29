@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID: e8f7a9c5-2d4b-4e6f-9a8c-7b3d4e5f8a9c
+:CUSTOM_ID: 92/386
+:END:
+#+title: Angular Fluctuations
+#+filetags: :physics:spof:ch8:fluctuations:correlationfunctions:screening:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The angular fluctuations induced by dislocations relate directly to the dislocation density correlations:
+\[\langle|\tilde{\theta}(\mathbf{q})|^2\rangle = \frac{q_\alpha q_\beta}{q^4}\langle b^\alpha(\mathbf{q})b^\beta(\mathbf{q})\rangle\]
+
+where:
+\[\langle b^\alpha(\mathbf{q})b^\beta(\mathbf{q})\rangle = \int d^2\mathbf{x}\,e^{i\mathbf{q} \cdot \mathbf{x}}\langle b^\alpha(\mathbf{x})b^\beta(\mathbf{0})\rangle\]
+
+characterizes the spatial correlations of dislocation density.
+
+In the solid phase where dislocations are bound into neutral clusters, the neutrality constraint requires **b**(**q**) → 0 as **q** → 0. More specifically, charge neutrality at large scales implies ⟨b^α(**q**)b^β(**q**)⟩ ∝ q_αq_β for small q, leading to finite angular fluctuations: lim_{**q**→0}⟨|θ̃(**q**)|²⟩ = constant. This confirms that bound dislocations don't destroy long-range orientational order.
+
+After dislocation unbinding at T > T_c, the situation changes dramatically. Free dislocations interact via screened forces, giving:
+\[\lim_{|\mathbf{x}| \to \infty}\langle b^\alpha(\mathbf{x})b^\beta(\mathbf{0})\rangle \propto \delta_{\alpha\beta}e^{-|\mathbf{x}|/\xi}\]
+
+where ξ is the screening length. In Fourier space:
+\[\lim_{\mathbf{q} \to 0}\langle b^\alpha(\mathbf{q})b^\beta(\mathbf{q})\rangle \propto \delta_{\alpha\beta}\xi^2\]
+
+This yields divergent angular fluctuations:
+\[\lim_{\mathbf{q} \to 0}\langle|\tilde{\theta}(\mathbf{q})|^2\rangle \propto \frac{\xi^2}{q^2}\]
+
+The 1/q² divergence signals that unbound dislocations generate angular fluctuations growing logarithmically with system size. However, this growth is cut off at the scale ξ, preserving quasi-long-range orientational order in the hexatic phase. Only when ξ becomes comparable to the lattice spacing do orientational correlations decay exponentially.
+
+**Meta observation**: The connection between dislocation correlations and angular fluctuations reveals how topological defects mediate the coupling between different order parameters. The screening length ξ emerges as the fundamental length scale controlling both translational and orientational properties.
+
+**See also:** [[id:PLACEHOLDER-47][zettel:47]], [[id:PLACEHOLDER-49][zettel:49]]

@@ -1,0 +1,48 @@
+:PROPERTIES:
+:ID: c8e9f7a6-7d5c-4e8f-9b4d-6e7f9a8b6d7f
+:CUSTOM_ID: 92/395
+:END:
+#+title: Figure F5: Two-Stage Melting
+#+filetags: :physics:spof:ch8:figure:phasediagram:melting:kthny:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+**Sketch Description:**
+Temperature dependence of key quantities through the two-stage melting transition.
+
+**Main plot:**
+Three panels sharing temperature axis (T), showing T₁ and T₂ as vertical dashed lines:
+
+**Top panel - Correlation lengths:**
+- ξ_t (translational correlation length): 
+  - Finite in solid phase
+  - Diverges as exp(const/√(T₁-T)) approaching T₁
+  - Zero for T > T₁
+- ξ_θ (orientational correlation length):
+  - Infinite for T < T₂  
+  - Diverges as exp(const/√(T₂-T)) approaching T₂
+  - Finite in liquid phase
+
+**Middle panel - Elastic constants:**
+- μ (shear modulus):
+  - Finite for T < T₁ with universal jump at T₁
+  - Approaches 2μ_c/π + const×(T₁-T)^{0.37} near T₁
+  - Zero for T > T₁
+- K_A (Frank constant):
+  - Zero for T < T₁
+  - Rises from zero, proportional to ξ_t² in hexatic
+  - Diverges at T₁ from above
+  - Zero for T > T₂
+
+**Bottom panel - Phase labels:**
+- Solid (T < T₁): "QLR trans. + LR orient."
+- Hexatic (T₁ < T < T₂): "No trans. + QLR orient."  
+- Liquid (T > T₂): "No order"
+
+**Insets showing diffraction patterns:**
+- Solid: Sharp spots (power-law cusps)
+- Hexatic: Six-fold modulated ring
+- Liquid: Uniform ring
+
+**Physical significance:** The intermediate hexatic phase separates positional and orientational ordering temperatures, creating a new state of matter unique to two dimensions.
+
+**See also:** [[id:PLACEHOLDER-15][zettel:15]], [[id:PLACEHOLDER-52][zettel:52]]

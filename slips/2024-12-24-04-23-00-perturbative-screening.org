@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       b8f7e9a3-2c45-4d92-8f16-9e1a3b7c5d84
+:CUSTOM_ID: 92/362
+:END:
+#+title: Perturbative Screening
+#+FILETAGS: :physics:spof:ch8:screening:dielectricconstant:perturbationtheory:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The effective interaction between test charges is modified by the presence of thermally excited vortices. To second order in fugacity y₀, the calculation involves integrating over positions of a neutral pair:
+\[e^{-\beta\mathcal{V}(\mathbf{x}-\mathbf{x}')} = e^{-4\pi^2 KC(\mathbf{x}-\mathbf{x}')} \times \frac{1 + y_0^2\int d^2\mathbf{y}d^2\mathbf{y}'e^{-4\pi^2 KC(\mathbf{y}-\mathbf{y}')+4\pi^2 KD(\mathbf{x},\mathbf{x}';\mathbf{y},\mathbf{y}')} + O(y_0^4)}{1 + y_0^2\int d^2\mathbf{y}d^2\mathbf{y}'e^{-4\pi^2 KC(\mathbf{y}-\mathbf{y}')} + O(y_0^4)}\]
+
+where D is the dipole-dipole interaction between test and internal charges.
+
+The dipole expansion for small separation **r** = **y**' - **y** yields:
+\[D(\mathbf{x},\mathbf{x}';\mathbf{y},\mathbf{y}') = -\mathbf{r} \cdot \nabla_\mathbf{R}[C(\mathbf{x}-\mathbf{R}) - C(\mathbf{x}'-\mathbf{R})] + O(r^3)\]
+
+where **R** = (**y** + **y**')/2 is the dipole center. After angular averaging and integrating by parts:
+\[\int d^2\mathbf{R}[\nabla_\mathbf{R}(C(\mathbf{x}-\mathbf{R}) - C(\mathbf{x}'-\mathbf{R}))]^2 = 2C(\mathbf{x}-\mathbf{x}')\]
+
+The perturbative correction exponentiates to give an effective coupling:
+\[K_{\text{eff}} = K - 4\pi^3 K^2 y_0^2 a^{2\pi K}\int_a^{\infty} dr\,r^{3-2\pi K} + O(y_0^4)\]
+
+The integral converges only for K > 2/π, precisely where isolated vortices are suppressed. For K < 2/π, the integral diverges, signaling the breakdown of perturbation theory and the onset of the plasma phase. The physical picture is clear: bound pairs screen the interaction between test charges, reducing the effective coupling. When pairs dissociate, screening becomes complete and the perturbative expansion fails.
+
+**Meta observation**: The breakdown of perturbation theory often signals a phase transition. Here, the divergence at K = 2/π marks the boundary between a dielectric phase with partial screening and a conducting phase with complete screening.
+
+**See also:** [[id:PLACEHOLDER-23][zettel:23]], [[id:PLACEHOLDER-25][zettel:25]]

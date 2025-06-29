@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       9f8e7d6c-5a4b-3e2f-8c1d-0b9a8e7f6d5e
+:CUSTOM_ID: 92/367
+:END:
+#+title: Stiffness Singularity
+#+filetags: :physics:spof:ch8:criticalbehavior:stiffness:singularity:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The effective stiffness in the low-temperature phase is determined by the fixed point reached under RG flow. Near the transition, trajectories approach the fixed line at x = -b√(T_c - T), where the constant c = -b²(T_c - T) parametrizes the distance from criticality. This yields:
+\[K_{\text{eff}} = \frac{2}{\pi} - \frac{4}{\pi^2}\lim_{\ell\to\infty}x(\ell) = \frac{2}{\pi} + \frac{4b}{\pi^2}\sqrt{T_c - T}\]
+
+The square-root singularity is weaker than typical power laws but stronger than logarithmic corrections. It reflects the marginal nature of the transition—neither truly relevant nor irrelevant perturbations control the critical behavior.
+
+The universal jump in stiffness at T_c is remarkable. As T → T_c⁻, K_eff → 2/π from above. For T > T_c, vortices proliferate and K_eff = 0 (infinite penetration depth). The discontinuous jump ΔK = 2/π is universal, independent of microscopic details. This prediction has been brilliantly confirmed in experiments on superfluid helium films, where the superfluid density ρ_s ∝ K shows precisely this universal jump.
+
+The square-root singularity implies that the system responds anomalously to small perturbations near T_c. The susceptibility to vortex creation diverges, but more weakly than at conventional transitions. This marginal response characterizes systems poised at the boundary between order and disorder, where topological and energetic effects precisely balance.
+
+**Meta observation**: The universal jump combined with the square-root singularity uniquely identifies the Kosterlitz-Thouless transition. No amount of symmetry analysis could predict this behavior—it emerges from the nonlinear dynamics of topological defects.
+
+*See also:* [[id:PLACEHOLDER-28][zettel:28]], [[id:PLACEHOLDER-30][zettel:30]]

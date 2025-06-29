@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       8f3a2b1c-4d5e-6f7a-8b9c-0d1e2f3a4b5c
+:CUSTOM_ID: 92/372
+:END:
+#+title: Strain Tensor
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+#+FILETAGS: :physics:spof:ch8:strain:elasticity:symmetry:
+
+The fundamental object in elasticity theory is not the displacement but the symmetric strain tensor:
+\[u_{ij}(\mathbf{x}) = \frac{1}{2}\left(\partial_i u_j + \partial_j u_i\right)\]
+
+In Fourier space, this becomes:
+\[u_{ij}(\mathbf{q}) = \frac{i}{2}(q_i u_j + q_j u_i)\]
+
+The symmetrization ensures that pure rotations, which cost no elastic energy, don't contribute to the strain.
+
+The strain tensor captures how distances between neighboring atoms change under deformation. To linear order, the squared distance between atoms initially at **x** and **x** + d**x** becomes |d**x**|²(1 + 2u_{ij}dx^i dx^j/|d**x**|²). The diagonal components u₁₁ and u₂₂ represent compression/extension along the coordinate axes, while the off-diagonal component u₁₂ = u₂₁ describes shear deformation.
+
+Translational invariance dictates that elastic energy depends only on strain, not displacement itself. A uniform displacement **u** = **u**₀ simply translates the entire crystal without cost. Similarly, rotational invariance means only the symmetric part of ∂ᵢuⱼ enters the energy—the antisymmetric part ω_{ij} = (∂ᵢuⱼ - ∂ⱼuᵢ)/2 represents local rotation. In two dimensions, there's only one independent component of ω, namely ω₁₂ = -ω₂₁ = -(∂ₓu_y - ∂_yu_x)/2, which proves crucial for understanding orientational order.
+
+The strain tensor formulation naturally separates the three elastic modes in 2D: two compression modes (combinations of u₁₁ and u₂₂) and one shear mode (u₁₂). This decomposition differs from the perhaps more intuitive longitudinal/transverse classification but proves more fundamental for understanding elastic properties and phase transitions.
+
+**Meta observation**: The strain tensor exemplifies a general principle—physical energies depend on invariant combinations of fields. By building invariance into our basic variables, we automatically ensure the resulting theory respects the underlying symmetries.
+
+*See also:* [[id:PLACEHOLDER-33][zettel:33]], [[id:PLACEHOLDER-35][zettel:35]]

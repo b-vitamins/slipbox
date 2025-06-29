@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID: a8e9f7c3-2b5d-4f6a-9c8e-1d3f7a8b9e4c
+:CUSTOM_ID: 92/379
+:END:
+#+title: Orientational Order
+#+filetags: :physics:spof:ch8:orientationalorder:bondangle:rotation:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Crystals break rotational as well as translational symmetry. The local bond angle θ(**x**) between crystalline axes and a fixed reference direction provides the orientational order parameter. For the triangular lattice, six-fold symmetry makes Ψ(**x**) = e^{i6θ(**x**)} the appropriate complex order parameter, while square lattices use e^{i4θ(**x**)}.
+
+The connection between translational and orientational degrees of freedom emerges from considering how displacements affect bond angles. A displacement field **u**(**x**) rotates bonds according to:
+\[\theta(\mathbf{x}) = -\frac{1}{2}\left(\frac{\partial u_y}{\partial x} - \frac{\partial u_x}{\partial y}\right) = -\frac{1}{2}\hat{z} \cdot \nabla \times \mathbf{u}\]
+
+This is precisely the antisymmetric part of the displacement gradient tensor—the local rotation that costs no elastic energy.
+
+The factor of 1/2 has geometric origin. Consider a square with corners displaced by **u**. The rotation angle of the diagonal is approximately (u_y(x+a) - u_y(x))/a - (u_x(y+a) - u_x(y))/a = ∂_xu_y - ∂_yu_x to linear order. The average rotation of the two diagonals gives the factor of 1/2. This geometric derivation shows that θ represents the average local bond rotation, not the rotation of any single bond.
+
+The crucial insight is that continuous displacement fields produce only smooth variations in θ. Creating a point where θ changes by 2π/6 (a disclination in the triangular lattice) requires a singularity in **u**—specifically, a dislocation. This coupling between translational and rotational topological defects proves fundamental to two-dimensional melting. While phonons create smooth distortions affecting both positional and orientational order weakly, dislocations can destroy translational order while preserving orientational coherence.
+
+**Meta observation**: The derivative relationship between displacements and rotations ensures that smooth elastic distortions cannot create rotational defects. Topology enters through singularities in the displacement field—the mathematical origin of the two-stage melting scenario.
+
+**See also:** [[id:PLACEHOLDER-40][zettel:40]], [[id:PLACEHOLDER-42][zettel:42]]

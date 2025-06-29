@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       e7f8a9b2-4c3d-4e5f-9a1b-2c3d4e5f6789
+:CUSTOM_ID: 92/341
+:END:
+#+title: Continuum Limit
+#+FILETAGS: :physics:spof:ch8:fieldtheory:gradientexpansion:coarsegraining:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The passage to the continuum transforms the Hamiltonian into $-\beta\mathcal{H} = -\beta E_0 - \frac{K}{2}\int d^d\mathbf{x}(\nabla\vec{s})^2$, where the discrete index $\mathbf{i}$ becomes a continuous vector $\mathbf{x} \in \mathbb{R}^d$. This gradient expansion captures the dominant low-temperature physics where spin configurations vary slowly over the lattice spacing. The ground state energy $E_0$ shifts the free energy but doesn't affect the statistical mechanics of excitations.
+
+The validity of this continuum approximation requires $|\vec{s}(\mathbf{x}+\mathbf{a}) - \vec{s}(\mathbf{x})| \ll 1$ for lattice vector $\mathbf{a}$. At low temperatures, thermal fluctuations create smooth spin textures satisfying this condition. However, the approximation breaks down for configurations with rapid spatial variations, such as the cores of topological defects. This breakdown is not a failure but a feature—it signals where new physics emerges.
+
+The continuum limit implicitly introduces a momentum cutoff Λ ≈ π/a. Modes with wavelengths shorter than the lattice spacing are integrated out, their effects absorbed into the coupling K. This coarse-graining perspective proves essential for the renormalization group analysis. The field $\vec{s}(\mathbf{x})$ should be understood not as the spin at a mathematical point, but as an average over a small region containing many lattice sites.
+
+*Meta observation*: The continuum limit is both an approximation and an exact statement about universality. While it misses lattice-scale details, it captures the universal long-wavelength physics that determines critical behavior. The art lies in knowing what to keep and what to discard.
+
+*See also:* [[zettel:02][placeholder]], [[zettel:04][placeholder]]

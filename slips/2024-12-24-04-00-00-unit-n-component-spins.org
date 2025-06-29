@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       d3f8a9c2-7b4e-4a5d-9f1b-c8e3d2f4a5b6
+:CUSTOM_ID: 92/339
+:END:
+#+title: Unit n-Component Spins
+#+FILETAGS: :physics:spof:ch8:spinsystems:orderparameter:constraint:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The fundamental objects of study are unit vectors in n-dimensional space residing on lattice sites. We define \(\vec{s}(\mathbf{i}) = (s_1, s_2, \ldots, s_n)\) with the crucial constraint \(|\vec{s}(\mathbf{i})|^2 = s_1^2 + \cdots + s_n^2 = 1\). This constraint confines the order parameter to the surface of an (n-1)-dimensional sphere \(S^{n-1}\), fundamentally distinguishing continuous spin systems from their discrete counterparts.
+
+The unit length constraint has profound consequences. Unlike Ising spins where excitations are localized droplets, continuous spins support long-wavelength Goldstone modes as their lowest energy excitations. The constraint makes the order parameter space compact, enabling topological defects—configurations that cannot be continuously deformed to the ground state. For n=2 (XY model), these are vortices; for n=3 (Heisenberg), they include both vortices and hedgehogs.
+
+The parametrization of this constrained manifold requires care. While locally we can use n-1 independent coordinates, global parametrization is impossible for topological reasons (the hairy ball theorem). This mathematical subtlety manifests physically in the existence of topological defects, which prove crucial for understanding phase transitions in two dimensions.
+
+**Meta observation**: The innocuous-looking constraint \(|\vec{s}|^2 = 1\) is the source of all the rich physics in this chapter. It creates the nonlinearity in the σ-model, enables topological defects, and ultimately leads to the Kosterlitz-Thouless transition. Constraints in field theory are never mere technicalities—they encode the deepest physics.
+
+*See also:* [[zettel:02]], [[zettel:03]], [[zettel:16]]

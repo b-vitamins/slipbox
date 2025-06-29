@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       a8e2f3d9-c761-4b58-9e23-d7f4a9b6c185
+:CUSTOM_ID: 92/356
+:END:
+#+title: Vortex Energy
+#+FILETAGS: :physics:spof:ch8:vortex:energy:entropy:freeenergy:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The energy of a single vortex with charge n consists of core and elastic contributions:
+\[\beta\mathcal{E}_n = \beta\mathcal{E}_n^0(a) + \frac{K}{2}\int_a d^2\mathbf{x}(\nabla\theta)^2 = \beta\mathcal{E}_n^0(a) + \frac{K}{2}\int_a^L(2\pi r\,dr)\left(\frac{n}{r}\right)^2 = \beta\mathcal{E}_n^0(a) + \pi Kn^2\ln\left(\frac{L}{a}\right)\]
+
+The logarithmic divergence with system size L reflects the long-range nature of the vortex distortion field. This divergence is not a pathology but a physical effect—creating an isolated vortex in a finite system costs energy proportional to ln L.
+
+The partition function for a single vortex includes its configurational entropy:
+\[Z_1(n) \approx \left(\frac{L}{a}\right)^2\exp\left[-\beta\mathcal{E}_n^0(a) - \pi Kn^2\ln\left(\frac{L}{a}\right)\right] = y_n^0(a)\left(\frac{L}{a}\right)^{2-\pi Kn^2}\]
+
+where y₀ₙ(a) = exp[-β𝓸ₙ⁰(a)] is the bare fugacity and (L/a)² counts possible vortex positions.
+
+The competition between entropy (∼ 2ln(L/a)) and energy (∼ πKn²ln(L/a)) determines vortex stability. For K > Kₙ = 2/(πn²), energy dominates and Z₁ → 0 as L → ∞, suppressing isolated vortices. For K < Kₙ, entropy wins and vortices proliferate. Elementary vortices (n = ±1) first appear at K_c = 2/π, establishing a lower bound for the transition temperature.
+
+This single-vortex analysis neglects vortex interactions and the constraint of overall charge neutrality. Nevertheless, it correctly identifies the key physics: a temperature-driven competition between configurational entropy favoring disorder and elastic energy favoring order.
+
+**Meta observation**: The logarithmic scaling of both energy and entropy in two dimensions creates a delicate balance. This marginal competition, where neither effect dominates strongly, enables the unusual physics of the Kosterlitz-Thouless transition.
+
+**See also:** [[id:PLACEHOLDER-17][zettel:17]], [[id:PLACEHOLDER-19][zettel:19]]

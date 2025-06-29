@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID: a9e7f3c8-2b4d-4e6a-8f9c-7d2e3f8a9b4c
+:CUSTOM_ID: 92/375
+:END:
+#+title: General Correlations
+#+filetags: :physics:spof:ch8:correlationfunctions:tensorstructure:projection:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The full displacement correlation function combines transverse and longitudinal contributions into a tensor structure:
+\[\langle u_i(\mathbf{q})u_j(\mathbf{q}')\rangle = \frac{(2\pi)^2\delta^2(\mathbf{q} + \mathbf{q}')}{\mu q^2}\left[\delta_{ij} - \frac{\mu + \lambda}{2\mu + \lambda}\frac{q_i q_j}{q^2}\right]\]
+
+This can be understood as a projection operator decomposition. The transverse projector P^T_{ij} = δ_{ij} - q_iq_j/q² projects onto the space perpendicular to **q**, while the longitudinal projector P^L_{ij} = q_iq_j/q² selects the parallel component. The correlation function becomes:
+\[\langle u_i(\mathbf{q})u_j(\mathbf{q}')\rangle = (2\pi)^2\delta^2(\mathbf{q} + \mathbf{q}')\left[\frac{P^T_{ij}}{\mu q^2} + \frac{P^L_{ij}}{(2\mu + \lambda)q^2}\right]\]
+
+The tensor structure ensures that the correlation function transforms properly under rotations—a crucial consistency requirement. Taking the trace yields ⟨|**u**(**q**)|²⟩ = [1/μ + 1/(2μ+λ)]/q², confirming that fluctuations are enhanced when either shear or bulk modulus decreases.
+
+The difference in stiffness between modes has observable consequences. In scattering experiments, the dynamical structure factor shows two acoustic branches with different velocities. In static measurements, the enhanced fluctuations of transverse modes (smaller denominator) dominate long-wavelength physics. This explains why shear modulus μ, not bulk modulus, controls the stability of the crystalline phase.
+
+The momentum-space correlation function transforms to real space as a modified Bessel function, but the asymptotic behavior follows from dimensional analysis: ⟨u_i(**x**)u_j(0)⟩ ~ δ_{ij}ln(|**x**|/a) for large separations. The logarithmic growth signals the marginal stability of two-dimensional crystals.
+
+**Meta observation**: The tensor structure of elastic correlations encodes the vector nature of the broken symmetry. Unlike scalar order parameters, vector fields exhibit polarization-dependent responses that profoundly affect their statistical mechanics.
+
+**See also:** [[id:PLACEHOLDER-36][zettel:36]], [[id:PLACEHOLDER-38][zettel:38]]

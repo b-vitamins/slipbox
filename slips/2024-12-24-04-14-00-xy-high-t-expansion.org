@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       f4a7e8b9-2c3d-4e5f-9a1b-6d8c7f9e2b1a
+:CUSTOM_ID: 92/353
+:END:
+#+title: XY High-T Expansion
+#+FILETAGS: :physics:spof:ch8:xymodel:hightemperature:correlationfunctions:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The two-dimensional XY model exhibits qualitatively different correlation functions in its high and low temperature phases. The high-temperature expansion for the correlation function proceeds from:
+\[\langle\vec{s}_\mathbf{0} \cdot \vec{s}_\mathbf{r}\rangle = \langle\cos(\theta_\mathbf{0} - \theta_\mathbf{r})\rangle = \frac{1}{Z}\prod_{i=1}^N\left(\int_0^{2\pi}\frac{d\theta_i}{2\pi}\right)\cos(\theta_\mathbf{0} - \theta_\mathbf{r})\prod_{\langle i,j\rangle}\left[1 + K\cos(\theta_i - \theta_j) + O(K^2)\right]\]
+
+At each order in K, only graphs where every internal vertex has even degree contribute, due to the angular integration \(\int_0^{2\pi}\frac{d\theta}{2\pi}\cos(n\theta) = \delta_{n,0}\). The leading contribution comes from the unique shortest path connecting 0 to r. Using \(\int_0^{2\pi}\frac{d\theta_1 d\theta_2}{(2\pi)^2}\cos(\theta_1-\theta_2)\cos(\theta_2-\theta_3) = \frac{1}{2}\cos(\theta_1-\theta_3)\), each bond contributes a factor K/2.
+
+Therefore, to lowest order:
+\[\langle\vec{s}_0 \cdot \vec{s}_\mathbf{r}\rangle \approx \left(\frac{K}{2}\right)^r = e^{-r/\xi}\]
+with correlation length \(\xi \approx 1/\ln(2/K)\).
+
+This exponential decay characterizes the disordered phase. The correlation length diverges as K → 2, but the high-temperature expansion breaks down before reaching this point. The expansion assumes K ≪ 1, but the interesting physics occurs when K ~ 1. Nevertheless, it correctly identifies the qualitative nature of the high-temperature phase—exponentially decaying correlations indicating a disordered state with unbound vortices.
+
+**Meta observation**: High-temperature expansions often yield qualitatively correct results even outside their strict regime of validity. The exponential decay of correlations is robust, even if the precise form of ξ(K) requires more sophisticated methods.
+
+**See also:** [[id:PLACEHOLDER-14][zettel:14]], [[id:PLACEHOLDER-16][zettel:16]], [[id:PLACEHOLDER-21][zettel:21]]

@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       b8e4f2a3-7c9d-4e5b-a612-3f4d6e9c8a7b
+:CUSTOM_ID: 92/342
+:END:
+#+title: Constrained Partition Function
+#+FILETAGS: :physics:spof:ch8:partitionfunction:functionalintegral:constraint:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The partition function in the continuum takes the functional integral form \(Z = \int \mathcal{D}[\vec{s}(\mathbf{x})\delta(s(\mathbf{x})^2 - 1)] \exp\left[-\frac{K}{2}\int d^d\mathbf{x}(\nabla\vec{s})^2\right]\). The delta function enforces the unit length constraint at every point, making this a highly nontrivial functional integral. The measure \(\mathcal{D}[\vec{s}]\) includes an implicit product over all spatial points, regularized by the lattice cutoff.
+
+The constraint dramatically alters the physics compared to unconstrained vector fields. Without it, we would have n independent Gaussian fields with trivial correlations. The constraint couples all components, creating an interacting field theory even though the original Hamiltonian contains only quadratic terms. This is the origin of the "nonlinear" in nonlinear σ-model—the nonlinearity enters through the constraint, not the Hamiltonian.
+
+Evaluating this partition function requires careful treatment of the constrained measure. Direct evaluation is generally impossible, necessitating either perturbative expansions or alternative parametrizations. The constraint can be handled by introducing Lagrange multipliers (leading to the CP^{n-1} formulation) or by explicitly parametrizing the sphere (leading to the standard nonlinear σ-model). Each approach illuminates different aspects of the physics.
+
+**Meta observation**: Constraints in statistical mechanics are like conservation laws in dynamics—they reduce degrees of freedom while introducing subtle correlations. The art of theoretical physics often lies in finding the representation where constraints become tractable.
+
+**See also:** [[id:PLACEHOLDER-03][zettel:03]], [[id:PLACEHOLDER-05][zettel:05]]

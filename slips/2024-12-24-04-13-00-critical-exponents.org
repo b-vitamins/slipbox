@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       8f4c9d3e-2a7b-4e5c-b1f9-3c6d8e9f2a47
+:CUSTOM_ID: 92/352
+:END:
+#+title: Critical Exponents
+#+FILETAGS: :physics:spof:ch8:criticalexponents:scaling:anomalousdimension:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The magnetic eigenvalue emerges from analyzing how external fields transform under RG. Adding a term \(-\vec{h} \cdot \int d^d\mathbf{x}\vec{s}(\mathbf{x})\) to the Hamiltonian, the field rescales as h' = b^d ζ h ≡ b^{y_h} h. The eigenvalue is:
+\[y_h = d - \frac{n-1}{2(n-2)}\epsilon = 1 + \frac{n-3}{2(n-2)}\epsilon + O(\epsilon^2)\]
+
+This n-dependent magnetic eigenvalue contrasts with the universal thermal eigenvalue, revealing how different order parameter symmetries affect critical behavior.
+
+From y_h, standard scaling relations yield the anomalous dimension:
+\[\eta = 2 + d - 2y_h = \frac{\epsilon}{n-2}\]
+
+This is remarkable—while η vanishes at lowest order in the 4-ε expansion for φ⁴ theory, it appears at first order in the 2+ε expansion. The physical reason is clear: near two dimensions, the interaction between Goldstone modes is marginal, producing logarithmic corrections to correlation functions even at tree level. These logarithms exponentiate into power laws with non-classical exponents.
+
+The full set of critical exponents at O(ε):
+- ν = 1/ε (correlation length)
+- α = -2/ε (specific heat)  
+- β = 1 - ε/(2(n-2)) (magnetization)
+- γ = 1 + ε/(n-2) (susceptibility)
+- δ = 3 + 2ε/(n-2) (critical isotherm)
+- η = ε/(n-2) (anomalous dimension)
+
+These satisfy the scaling relations αs + 2β + γ = 2 and γ = ν(2-η), providing a consistency check on the calculation.
+
+**Meta observation**: The appearance of η at first order in ε reflects a general principle—marginal operators produce logarithms that can fundamentally alter scaling behavior. This is why d = 2 is special for systems with continuous symmetries.
+
+**See also**: [[id:PLACEHOLDER-13][zettel:13]], [[id:PLACEHOLDER-15][zettel:15]]

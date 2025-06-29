@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       c7f4b2d8-9a3e-4f1b-8c5d-6e7a9f3b2c4d
+:CUSTOM_ID: 92/347
+:END:
+#+title: Gaussian Correlations
+#+FILETAGS: :physics:spof:ch8:correlationfunctions:fluctuations:merminwagner:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Gaussian (non-interacting) theory provides the starting point for understanding fluctuations. The propagator in momentum space,
+\[\langle\pi_\alpha(\mathbf{q})\pi_\beta(\mathbf{q}')\rangle_0 = \frac{\delta_{\alpha\beta}(2\pi)^d\delta^d(\mathbf{q}+\mathbf{q}')}{Kq^2}\]
+transforms to position space as \(\langle\pi_\alpha(\mathbf{x})\pi_\beta(\mathbf{0})\rangle_0 \propto \delta_{\alpha\beta}/|\mathbf{x}|^{d-2}\) for large separations.
+
+The mean square fluctuations reveal the dimensional dependence of ordering:
+\[\langle\pi(\mathbf{x})^2\rangle_0 = \int\frac{d^d\mathbf{q}}{(2\pi)^d}\langle|\vec{\pi}(\mathbf{q})|^2\rangle_0 = \frac{n-1}{K}\int_{1/L}^{1/a}\frac{d^d\mathbf{q}}{(2\pi)^d}\frac{1}{q^2} = \frac{(n-1)K_d(a^{2-d} - L^{2-d})}{K(d-2)}\]
+
+where K_d is the surface area of a unit sphere in d dimensions. For d > 2, fluctuations remain finite even as L → ∞, permitting long-range order. For d ≤ 2, the integral diverges with system size, signaling the destruction of order by thermal fluctuations—a quantitative realization of the Mermin-Wagner theorem.
+
+The marginal dimension d = 2 is particularly subtle. The logarithmic divergence \(\langle\pi^2\rangle \sim \ln(L/a)\) suggests that while true long-range order is impossible, the system might still exhibit quasi-long-range order with power-law correlations. This observation motivates Polyakov's conjecture that T_c ~ O(d-2), making d = 2+ε amenable to perturbative RG analysis.
+
+*Meta observation*: The 1/q² propagator is a calling card of Goldstone modes across physics—from spin waves to phonons to pions. Its dimensional analysis immediately reveals why low dimensions are special: long-wavelength fluctuations accumulate without bound.
+
+*See also:* [[id:PLACEHOLDER-08][zettel:08]], [[id:PLACEHOLDER-10][zettel:10]]

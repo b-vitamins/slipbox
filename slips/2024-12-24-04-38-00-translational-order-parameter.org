@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID: c7e8f9d3-2a4b-4f6c-8e9d-3f7a2b9c4e8d
+:CUSTOM_ID: 92/377
+:END:
+#+title: Translational Order Parameter
+#+filetags: :physics:spof:ch8:orderparameter:reciprocallattice:correlations:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Crystalline order is characterized by density modulations at reciprocal lattice vectors. The order parameter ρ_**G**(**x**) = e^{i**G**·**r**(**x**)} equals unity in the perfect crystal since **G**·**r**₀ = 2πn by definition of reciprocal lattice vectors. Thermal fluctuations reduce this to:
+\[\langle\rho_\mathbf{G}(\mathbf{x})\rangle = \langle e^{i\mathbf{G} \cdot \mathbf{u}(\mathbf{x})}\rangle\]
+
+The correlation function evaluates using Gaussian statistics:
+\[\langle\rho_\mathbf{G}(\mathbf{x})\rho_\mathbf{G}^*(\mathbf{0})\rangle = \langle e^{i\mathbf{G} \cdot [\mathbf{u}(\mathbf{x}) - \mathbf{u}(\mathbf{0})]}\rangle = \exp\left(-\frac{G_\alpha G_\beta}{2}\langle[u_\alpha(\mathbf{x}) - u_\alpha(\mathbf{0})][u_\beta(\mathbf{x}) - u_\beta(\mathbf{0})]\rangle\right)\]
+
+Substituting the displacement correlations and performing the momentum integral:
+\[\langle\rho_\mathbf{G}(\mathbf{x})\rho_\mathbf{G}^*(\mathbf{0})\rangle = \left(\frac{a}{|\mathbf{x}|}\right)^{\eta_G}\]
+
+where the exponent is:
+\[\eta_G = \frac{G^2(3\mu + \lambda)}{4\pi\mu(2\mu + \lambda)}\]
+
+The power-law decay confirms quasi-long-range translational order. The exponent increases with |**G**|², so correlations at larger reciprocal lattice vectors decay faster. This hierarchical disordering means that fine-scale crystalline features wash out before coarse features as temperature increases. The dependence on elastic constants shows that soft solids (small μ) have faster decay, consistent with their proximity to melting.
+
+The order parameter formulation connects directly to diffraction experiments. The intensity at reciprocal lattice vector **G** measures |⟨ρ_**G**⟩|², which decreases with temperature as exp(-G²⟨u²⟩/2)—the Debye-Waller factor. In two dimensions, this approaches zero at any finite temperature for any fixed **G**, confirming absence of true long-range order while the power-law correlations produce observable quasi-Bragg peaks.
+
+**Meta observation**: The reciprocal lattice order parameters provide a complete description of crystalline order, with each **G** probing a different length scale. This multi-scale characterization proves essential for understanding the two-stage melting process in two dimensions.
+
+**See also:** [[id:PLACEHOLDER-38][zettel:38]], [[id:PLACEHOLDER-40][zettel:40]]

@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID: d8f9e3a2-4c7b-4d5e-9a8f-6b3c7e9d2f4a
+:CUSTOM_ID: 92/376
+:END:
+#+title: Position Fluctuations
+#+filetags: :physics:spof:ch8:fluctuations:lindemanncriterion:melting:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The mean square displacement between two atoms separated by distance |**x**| quantifies the destruction of crystalline order:
+\[\langle[\mathbf{u}(\mathbf{x}) - \mathbf{u}(\mathbf{0})]^2\rangle = \int\frac{d^2\mathbf{q}}{(2\pi)^2}\frac{2 - 2\cos(\mathbf{q} \cdot \mathbf{x})}{\mu q^2}\left[\delta_{ii} - \frac{\mu + \lambda}{2\mu + \lambda}\frac{q_i q_i}{q^2}\right]\]
+
+The angular integral over **q** directions yields:
+\[\langle[\mathbf{u}(\mathbf{x}) - \mathbf{u}(\mathbf{0})]^2\rangle = \frac{3\mu + \lambda}{\mu(2\mu + \lambda)} \times \frac{\ln(|\mathbf{x}|/a)}{\pi}\]
+
+The logarithmic growth with separation is the hallmark of two-dimensional crystals. Unlike three dimensions where fluctuations saturate at a finite value proportional to temperature, in two dimensions they grow without bound. This signals the absence of true long-range positional order at any finite temperature.
+
+The prefactor depends on elastic constants in a non-trivial way. The combination (3μ + λ)/[μ(2μ + λ)] equals 2/μ in the limit λ → ∞ (incompressible solid) and approaches 3/(2μ) for λ → 0. Thus fluctuations are always enhanced when the shear modulus decreases, confirming its role as the critical parameter for melting. The Lindemann criterion suggests melting when ⟨u²⟩^{1/2} reaches approximately 0.1-0.15 times the lattice spacing.
+
+The logarithmic divergence has the same origin as in the XY model—the 1/q² propagator in two dimensions. However, crystals have two phonon modes versus one Goldstone mode in XY, leading to enhanced fluctuations. This quantitative difference doesn't change the qualitative physics: both systems exhibit quasi-long-range order with power-law correlations rather than true long-range order.
+
+**Meta observation**: The Lindemann criterion, though heuristic, captures deep physics—crystalline order becomes unsustainable when thermal fluctuations are comparable to lattice spacing. In 2D, this would occur at any finite temperature without the stabilizing effect of power-law quasi-order.
+
+**See also:** [[id:PLACEHOLDER-37][zettel:37]], [[id:PLACEHOLDER-39][zettel:39]]

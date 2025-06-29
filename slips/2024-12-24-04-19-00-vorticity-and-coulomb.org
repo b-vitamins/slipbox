@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       e7f4a3b2-8c9d-4e5f-a1b6-3d2c8f9e7a6b
+:CUSTOM_ID: 92/358
+:END:
+#+title: Vorticity and Coulomb
+#+filetags: :physics:spof:ch8:vorticity:coulombinteraction:mathematicalstructure:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The distortion field **u** ≡ ∇θ in the presence of vortices behaves like a fluid velocity field. For any closed path, Stokes' theorem gives:
+\[\oint\vec{u} \cdot d\vec{s} = \int(d^2\mathbf{x}\hat{z}) \cdot \nabla \times \vec{u}\]
+
+Since the circulation is quantized in units of 2π, the vorticity must be:
+\[\nabla \times \vec{u} = 2\pi\hat{z}\sum_i n_i\delta^2(\mathbf{x} - \mathbf{x}_i)\]
+
+describing point vortices with charges {nᵢ} at locations {**x**ᵢ}.
+
+The mathematical solution parallels electrostatics. Decomposing **u** = **u**₀ - ∇×(ẑψ) where **u**₀ = ∇φ is irrotational, the stream function ψ satisfies:
+\[\nabla^2\psi = 2\pi\sum_i n_i\delta^2(\mathbf{x} - \mathbf{x}_i)\]
+
+This is Poisson's equation in two dimensions with solution:
+\[\psi(\mathbf{x}) = \sum_i n_i\ln|\mathbf{x} - \mathbf{x}_i|\]
+
+The correspondence is exact: vortices in the XY model interact via the two-dimensional Coulomb potential C(r) = ln(r)/(2π). This mapping from an angular field theory to electrostatics is profound. It transforms a problem with periodic variables (angles) into one with unbounded variables (positions), where standard statistical mechanics applies. The constraint of angular periodicity becomes the requirement of charge neutrality.
+
+**Meta observation**: The appearance of logarithmic interactions in two dimensions is universal, arising whenever the field equation is ∇²ψ = source. Whether for vortices, dislocations, or electric charges in 2D, the physics is governed by the same Coulomb gas structure.
+
+**See also:** [[id:PLACEHOLDER-19][zettel:19]], [[id:PLACEHOLDER-21][zettel:21]], [[id:PLACEHOLDER-22][zettel:22]]

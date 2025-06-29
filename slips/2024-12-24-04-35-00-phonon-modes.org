@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID: f8c4d3e9-7a2b-4c5f-9e8d-1a3b5c6f7d9e
+:CUSTOM_ID: 92/374
+:END:
+#+title: Phonon Modes
+#+filetags: :physics:spof:ch8:phonons:goldstonemodes:dispersion:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The broken translational symmetry of the crystal generates two acoustic phonon branches—the Goldstone modes of the ordered phase. In Fourier space, these separate into transverse and longitudinal polarizations. Transverse modes satisfy **q** ⊥ **u** and have energy:
+\[\beta\mathcal{H}_T = \frac{\mu}{2}\int\frac{d^2\mathbf{q}}{(2\pi)^2} q^2 u_T^2\]
+
+yielding the correlation function:
+\[\langle|u_T(\mathbf{q})|^2\rangle = \frac{1}{\mu q^2}\]
+
+Longitudinal modes with **q** ∥ **u** experience additional restoring force from compression:
+\[\beta\mathcal{H}_L = \frac{2\mu + \lambda}{2}\int\frac{d^2\mathbf{q}}{(2\pi)^2} q^2 u_L^2\]
+
+giving:
+\[\langle|u_L(\mathbf{q})|^2\rangle = \frac{1}{(2\mu + \lambda)q^2}\]
+
+Both modes exhibit the characteristic 1/q² behavior of Goldstone modes, ensuring gapless excitations as required by the Goldstone theorem. The distinction between transverse and longitudinal appears only in the stiffness—longitudinal modes are harder to excite due to the additional bulk modulus contribution. In the long-wavelength limit, both modes have linear dispersion ω = c|**q**| with sound velocities c_T = √(μ/ρ) and c_L = √((2μ+λ)/ρ).
+
+The 1/q² propagator has the same dimensional consequences as in the XY model. In three dimensions, positional fluctuations ⟨u²⟩ remain finite, preserving long-range crystalline order. In two dimensions, the logarithmic divergence of fluctuations destroys true long-range order while permitting quasi-long-range order. The parallel with the XY model is precise, though crystals have two soft modes rather than one.
+
+**Meta observation**: The universality of Goldstone physics manifests in the 1/q² propagator appearing across systems—magnons in magnets, phonons in crystals, pions in QCD. The microscopic differences affect only the stiffness constants, not the fundamental long-wavelength structure.
+
+**See also:** [[id:PLACEHOLDER-35][zettel:35]], [[id:PLACEHOLDER-37][zettel:37]]

@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID: b9f8e3d4-7c2a-4e5d-8f9a-1b3c4d6e8a9f
+:CUSTOM_ID: 92/378
+:END:
+#+title: Structure Factor
+#+filetags: :physics:spof:ch8:structurefactor:diffraction:braggpeaks:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The structure factor measured in diffraction experiments is:
+\[S(\mathbf{q}) = \left\langle\left|\sum_{m,n} e^{i\mathbf{q} \cdot \mathbf{r}(m,n)}\right|^2\right\rangle = N\sum_{m,n}\left\langle e^{i\mathbf{q} \cdot [\mathbf{r}(m,n) - \mathbf{r}(0,0)]}\right\rangle\]
+
+where N is the total number of atoms. At zero temperature, this produces delta-function Bragg peaks at reciprocal lattice vectors. Thermal fluctuations modify this dramatically.
+
+For **q** near a reciprocal lattice vector **G**, we can write **q** = **G** + **k** where |**k**| ≪ |**G**|. The sum over lattice sites becomes:
+\[S(\mathbf{q} \approx \mathbf{G}) = N\sum_{m,n} e^{i\mathbf{k} \cdot \mathbf{r}_0(m,n)}\left\langle e^{i\mathbf{q} \cdot [\mathbf{u}(\mathbf{x}) - \mathbf{u}(\mathbf{0})]}\right\rangle\]
+
+Converting the sum to an integral and using the power-law decay of correlations:
+\[S(\mathbf{q} \approx \mathbf{G}) \approx N\int d^2\mathbf{x}\, e^{i\mathbf{k} \cdot \mathbf{x}}\left(\frac{a}{|\mathbf{x}|}\right)^{\eta_G} \approx \frac{N}{|\mathbf{q} - \mathbf{G}|^{2-\eta_G}}\]
+
+The Bragg peaks are replaced by power-law singularities—algebraic cusps rather than delta functions. The integrated intensity remains finite (for η_G < 2), but the peak shape changes qualitatively. Near the peak, the intensity diverges as |**q** - **G**|^{-(2-η_G)}, with the divergence becoming weaker for larger |**G**| or softer crystals (smaller μ).
+
+This modified line shape provides a direct experimental signature of quasi-long-range order. Three-dimensional crystals show sharp Bragg peaks (instrumental resolution limited) with intensity reduced by the Debye-Waller factor. Two-dimensional crystals show power-law cusps whose shape directly reveals the elastic constants through η_G. The observation of such algebraic peaks in lipid multilayers and other quasi-2D systems beautifully confirms the theory.
+
+**Meta observation**: The structure factor bridges microscopic theory and macroscopic measurement. Its evolution from delta functions to power-law cusps to broad peaks tracks the progression from true long-range order through quasi-long-range order to disorder.
+
+**See also:** [[id:PLACEHOLDER-39][zettel:39]], [[id:PLACEHOLDER-41][zettel:41]]

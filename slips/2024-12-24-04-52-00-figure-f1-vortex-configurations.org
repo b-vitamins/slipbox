@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID: e9f8a7d6-3c4b-4e7f-8a9d-2c3e8f7a9b5e
+:CUSTOM_ID: 92/391
+:END:
+#+title: Figure F1: Vortex Configurations
+#+filetags: :physics:spof:ch8:figure:vortex:xymodel:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+**Sketch Description:**
+Two elementary vortices in the XY model, showing spin orientations around n = +1 (left) and n = -1 (right) defects.
+
+**Left vortex (n = +1):** 
+Center point marked with ⊕. Surrounding spins arranged in circle, arrows showing counterclockwise rotation:
+- Top: ↑
+- Right: →
+- Bottom: ↓  
+- Left: ←
+- Intermediate angles interpolate smoothly
+
+**Right vortex (n = -1):**
+Center point marked with ⊖. Surrounding spins arranged in circle, arrows showing clockwise rotation:
+- Top: ↑
+- Right: ←
+- Bottom: ↓
+- Left: →
+- Intermediate angles interpolate smoothly
+
+**Key features:** The angle θ increases by 2π going counterclockwise around the positive vortex, decreases by 2π around the negative vortex. Far from the core, ∇θ = ±θ̂/r where θ̂ is the azimuthal unit vector. The singularity at the core (where θ is undefined) is regularized by the lattice structure over distance ~a.
+
+**Physical significance:** These topological defects cannot be removed by smooth deformations. A positive and negative vortex can annihilate if brought together, but isolated vortices are topologically stable. Their unbinding at the Kosterlitz-Thouless transition destroys quasi-long-range order.
+
+**See also:** [[id:PLACEHOLDER-05][zettel:05]], [[id:PLACEHOLDER-17][zettel:17]], [[id:PLACEHOLDER-18][zettel:18]]

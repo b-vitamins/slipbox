@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       d4f8e9a2-3b7c-4e5d-9f8a-2c1d3e4f5a6b
+:CUSTOM_ID: 92/364
+:END:
+#+title: Dielectric RG
+#+FILETAGS: :physics:spof:ch8:renormalization:dielectricconstant:screening:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The coupling constant K renormalizes due to screening by dipoles with sizes between a and ba. The physical picture parallels dielectric theory: thermal fluctuations create dipoles that polarize in response to external fields, reducing effective interactions. The modified coupling is:
+\[\tilde{K} = K\left[1 - (2\pi^2 K)\int_a^{ba}(2\pi r\,dr)(y_0^2 e^{-4\pi^2 KC(r)})r^2\right]\]
+
+The integrand has transparent physical meaning: y₀²exp(-4π²KC(r)) is the probability of creating a dipole of size r, while r² is its polarizability. The factor 2π²K relates polarization to energy, analogous to β = 1/(k_BT) in conventional statistical mechanics.
+
+For infinitesimal rescaling b = e^{δℓ} ≈ 1 + δℓ, the shell integral gives:
+\[I_d(b) = K_d\Lambda^{d-2}\delta\ell\]
+
+leading to the differential recursion relation:
+\[\frac{dK}{d\ell} = -4\pi^3 K^2 a^4 y_0^2 + O(y_0^4)\]
+
+This can be rewritten for K⁻¹, which plays the role of temperature in the Coulomb gas:
+\[\frac{dK^{-1}}{d\ell} = 4\pi^3 a^4 y_0^2 + O(y_0^4)\]
+
+The one-way nature of this flow (K⁻¹ can only increase) reflects the fact that screening always reduces coupling strength. The flow stops only when y₀ → 0, corresponding to the complete binding of all vortices into dipoles. The competition between this screening-induced flow of K and the entropic flow of y₀ determines the phase structure.
+
+**Meta observation**: The mathematical structure of screening—polarizable objects reducing effective interactions—appears across physics from QED to condensed matter. The universality of this mechanism reflects the general principle that fluctuations mediate forces.
+
+**See also:** [[id:PLACEHOLDER-25][zettel:25]], [[id:PLACEHOLDER-27][zettel:27]], [[id:PLACEHOLDER-D2][figure:D2]]

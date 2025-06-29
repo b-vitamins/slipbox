@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       b3f8d9a1-7c2e-4f5d-8a9b-6e7c8d9f1a2b
+:CUSTOM_ID: 92/351
+:END:
+#+title: Fixed Point Analysis
+#+FILETAGS: :physics:spof:ch8:fixedpoints:criticaltemperature:epsilonexpansion:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+For dimensions d > 2, the RG flow equations admit a nontrivial fixed point. Setting ε = d - 2 as a small parameter and demanding dT/dℓ = 0 yields:
+\[T^* = \frac{\epsilon}{(n-2)K_d\Lambda^{d-2}} = \frac{2\pi\epsilon}{n-2} + O(\epsilon^2)\]
+
+This fixed point exists only for n > 2 and ε > 0, delimiting the regime where continuous phase transitions occur. The critical temperature vanishes as d → 2, consistent with the Mermin-Wagner theorem, yet remains finite for any d > 2.
+
+The stability of this fixed point is determined by linearizing the flow equation around T*:
+\[\frac{d\delta T}{d\ell}\bigg|_{T^*} = \left[-\epsilon + \frac{(n-2)}{\pi}T^*\right]\delta T = [-\epsilon + 2\epsilon]\delta T = \epsilon\,\delta T\]
+
+Thus the thermal eigenvalue y_t = ε, independent of n at this order. This yields the correlation length exponent ν = 1/y_t = 1/ε and specific heat exponent α = 2 - d/ν = -2/ε. The large negative α indicates a very weak specific heat singularity, becoming logarithmic as d → 2.
+
+The ε-expansion provides a systematic framework for calculating critical properties. Higher-order corrections modify these exponents, but the qualitative picture remains: for d slightly above 2, all O(n) models with n > 2 exhibit continuous transitions with similar critical behavior. The n = 2 case stands apart, requiring separate analysis that ultimately leads to the Kosterlitz-Thouless theory.
+
+**Meta observation**: The ε-expansion exemplifies a general strategy in theoretical physics—perturb around a marginal situation where new physics emerges. Here, d = 2 is marginal between ordered and disordered phases, making it the natural expansion point.
+
+*See also:* [[id:PLACEHOLDER-12][zettel:12]], [[id:PLACEHOLDER-14][zettel:14]]

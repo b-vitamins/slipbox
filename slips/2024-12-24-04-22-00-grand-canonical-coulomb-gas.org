@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       f8e3c4d2-9a7b-4e5f-8d1c-6b2a3e4f5c8d
+:CUSTOM_ID: 92/361
+:END:
+#+title: Grand Canonical Coulomb Gas
+#+FILETAGS: :physics:spof:ch8:partitionfunction:coulombgas:neutrality:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The complete partition function of the XY model separates into spin wave and vortex contributions:
+\[Z = \int\mathcal{D}\phi(\mathbf{x})e^{-\frac{K}{2}\int d^2\mathbf{x}(\nabla\phi)^2}\sum_{\{n_i\}}\int d^2\mathbf{x}_i\,e^{-\sum_i\beta\mathcal{E}_{n_i}^0 + 4\pi^2 K\sum_{i<j}n_i n_j C(\mathbf{x}_i - \mathbf{x}_j)} \equiv Z_{\text{s.w.}}Z_Q\]
+
+The spin wave partition function Z_{s.w.} is Gaussian and contributes only to the regular part of the free energy. All singular behavior arises from the vortex partition function Z_Q.
+
+For the minimal model with only elementary vortices nᵢ = ±1, the grand canonical form becomes:
+\[Z_Q = \sum_{N=0}^{\infty} y_0^N \int\prod_{i=1}^N d^2\mathbf{x}_i\,\exp\left[4\pi^2 K\sum_{i<j}q_i q_j C(\mathbf{x}_i - \mathbf{x}_j)\right]\]
+
+where y₀ = exp[-β𝓸₊₁⁰] is the fugacity and qᵢ = ±1 with the crucial constraint ∑ᵢqᵢ = 0.
+
+The neutrality constraint arises from the integration by parts performed in deriving the Hamiltonian—the surface term ∝ (∑ᵢnᵢ)ln L was discarded, valid only for neutral configurations. This constraint fundamentally alters the statistical mechanics. Unlike a conventional gas where particle number can fluctuate freely, the Coulomb gas must maintain exact charge neutrality. This couples the positions and charges, creating correlations even in the high-temperature phase.
+
+The grand canonical formulation with neutrality is the starting point for all subsequent analysis. It encodes the competition between the entropic drive to create vortices (controlled by y₀) and the energetic cost of separating opposite charges (controlled by K).
+
+**Meta observation**: The neutrality constraint transforms a seemingly simple gas of particles into a highly correlated system. Constraints that appear as technical requirements often encode the deepest physics—here, the periodicity of the angular variable.
+
+*See also:* [[id:PLACEHOLDER-22][zettel:22]], [[id:PLACEHOLDER-24][zettel:24]]

@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       d3f9c8e2-7b4a-4e12-9f3d-6c8a1e5b2d47
+:CUSTOM_ID: 92/371
+:END:
+#+title: 2D Solid Distortions
+#+FILETAGS: :physics:spof:ch8:crystal:displacementfield:elasticity:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+A two-dimensional solid at zero temperature forms a perfect lattice with atoms at positions **r**₀(m,n) = m**e**₁ + n**e**₂, where **e**₁ and **e**₂ are basis vectors and (m,n) are integers. Thermal fluctuations displace atoms from their equilibrium positions:
+\[\mathbf{r}(m,n) = \mathbf{r}_0(m,n) + \mathbf{u}(m,n)\]
+
+The displacement field **u**(m,n) plays the role of the angle θ in the XY model—it is the soft variable describing low-energy excitations.
+
+At low temperatures, displacements vary slowly across the lattice, justifying a continuum description **u**(**x**) where **x** is treated as continuous with an implicit cutoff at the lattice spacing a. This coarse-graining assumes |**u**(**x**+**a**) - **u**(**x**)| ≪ a, valid when thermal energy is much less than typical elastic energies. The continuum field **u**(**x**) should be interpreted as an average displacement over a region containing many atoms, not the displacement of a single atom.
+
+The displacement field has two components in a two-dimensional crystal, corresponding to the two broken continuous translation symmetries. Unlike the XY model with one angular variable, the increased number of soft modes in crystals leads to stronger fluctuations. This enhancement ultimately prevents true long-range crystalline order in two dimensions at any finite temperature, though the situation is more subtle than simple disordering.
+
+The analogy between crystals and spin systems extends beyond counting soft modes. Both systems exhibit topological defects (dislocations vs. vortices), both show quasi-long-range order in two dimensions, and both undergo unusual phase transitions driven by defect unbinding. The crystal case is richer due to the vector nature of the displacement field and the existence of both translational and rotational symmetries.
+
+**Meta observation**: The displacement field in crystals, like the phase in superfluids or the angle in XY magnets, represents a broken continuous symmetry. The universality of Goldstone physics ensures similar low-energy behavior across these seemingly disparate systems.
+
+*See also:* [[id:PLACEHOLDER-32][zettel:32]], [[id:PLACEHOLDER-34][zettel:34]]

@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID: a8f9e7d6-5c3b-4e7f-8a9c-4d5e8f9a7c6f
+:CUSTOM_ID: 92/393
+:END:
+#+title: Figure F3: Hyperbolic Trajectories Near K_c
+#+filetags: :physics:spof:ch8:figure:criticalpoint:nonlinearflow:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+**Sketch Description:**
+Detailed view of RG flows near the critical point showing hyperbolic trajectories.
+
+**Axes:**
+- Horizontal: x = K⁻¹ - π/2 (deviation from critical coupling), range -0.1 to +0.1
+- Vertical: y = y₀a² (rescaled fugacity), range 0 to 0.1
+- Origin represents critical point (K_c⁻¹ = π/2, y₀ = 0)
+
+**Hyperbolic curves:**
+Family of curves satisfying x² - π⁴y² = c:
+- c < 0: Hyperbolas with foci on y-axis
+  - Two branches in half-plane y ≥ 0
+  - Left branches (x < 0) flow to fixed line
+  - Right branches (x > 0) flow to infinity
+- c = 0: Critical trajectory x = ±π²y
+  - Straight lines through origin at angle tan⁻¹(1/π²)
+  - Separates bound and unbound phases
+- c > 0: Hyperbolas with foci on x-axis  
+  - Single branch in half-plane y ≥ 0
+  - All flow to infinity (unbound phase)
+
+**Flow arrows:**
+- Along each hyperbola pointing outward from origin
+- Speed increases with distance from origin
+- No linear flow near origin—purely nonlinear dynamics
+
+**Temperature trajectory:**
+- Dashed line showing path of initial conditions as T varies
+- Intersects critical trajectory at T = T_c
+- c = -b²(T_c - T) for this trajectory
+
+**Physical significance:** The nonlinear flow near criticality produces essential singularities rather than power laws. The parameter c measures distance from criticality.
+
+**See also:** [[id:PLACEHOLDER-28][zettel:28]], [[id:PLACEHOLDER-29][zettel:29]]

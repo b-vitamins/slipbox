@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID: c9f8e7a6-3d5b-4e7f-8a9d-2c3e4f8a9b5d
+:CUSTOM_ID: 92/387
+:END:
+#+title: Frank Constant
+#+filetags: :physics:spof:ch8:frankconstant:hexatic:stiffness:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The angular fluctuations in the hexatic phase, where dislocations are unbound but orientational order persists, can be described by an effective Hamiltonian:
+\[\beta\mathcal{H} = \frac{K_A}{2}\int d^2\mathbf{x}(\nabla\theta)^2\]
+
+where K_A is the Frank constant for orientational stiffness. The connection to dislocation properties follows from the angular fluctuation spectrum ⟨|θ(**q**)|²⟩ ∝ ξ²/q² derived in the previous zettel, which implies K_A ∝ ξ².
+
+The proportionality between Frank constant and the square of the screening length has deep physical meaning. In the hexatic phase, dislocations form a plasma with screening length ξ. This screening cuts off the logarithmic interactions between dislocations, effectively confining the angular distortions they produce. The resulting orientational stiffness K_A measures the energy cost of creating angular gradients against this screening background.
+
+As the system approaches the melting transition from above, ξ diverges and so does K_A. This divergence signals the recovery of translational order—infinite screening length means dislocations are bound into neutral pairs, restoring the solid phase. Conversely, approaching the hexatic-liquid transition from below, K_A decreases as more dislocations unbind and ξ shrinks. When K_A falls below the critical value 72/π (for triangular lattices), disclinations unbind and orientational order is lost.
+
+The emergence of the Frank constant from microscopic dislocation dynamics exemplifies effective field theory. The hexatic phase "forgets" the detailed dislocation configurations, remembering only their collective effect through K_A. This coarse-grained description suffices to predict universal properties like the disclination unbinding transition at K_A = 72/π.
+
+**Meta observation**: The Frank constant bridges microscopic (dislocation plasma) and macroscopic (orientational elasticity) descriptions. Its scaling with ξ² reveals how topological defects at one scale generate effective interactions at larger scales.
+
+**See also:** [[id:PLACEHOLDER-48][zettel:48]], [[id:PLACEHOLDER-50][zettel:50]]

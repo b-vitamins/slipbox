@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       a8c9f3e2-7b5d-4e1a-9c6b-2f8e5d3a4b9c
+:CUSTOM_ID: 92/368
+:END:
+#+title: Superfluid Connection
+#+FILETAGS: :physics:spof:ch8:superfluidity:experiments:heliumfilms:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The XY model provides the theoretical framework for understanding superfluidity in two dimensions. The superfluid order parameter ψ(**x**) = Ψe^{iθ} has phase θ(**x**) that maps directly onto the XY spin angle. Gradients in this phase generate superflow with velocity **v**_s = (ℏ/m)∇θ, leading to kinetic energy:
+\[\mathcal{H} = \int d^d\mathbf{x}\,\psi^*\left(-\frac{\hbar^2\nabla^2}{2m}\right)\psi = \frac{\hbar^2\Psi^2}{2m}\int d^d\mathbf{x}(\nabla\theta)^2\]
+
+Comparing with the XY model identifies the stiffness K = ℏ²ρ_s/(2m²k_BT), where ρ_s = mΨ² is the superfluid mass density.
+
+The universal jump ΔK = 2/π at the transition translates to a universal jump in superfluid density. This prediction was spectacularly confirmed by Bishop and Reppy using torsional oscillator measurements on helium films. The superfluid component, experiencing no friction, doesn't participate in the oscillation, changing the moment of inertia. Their measurements on films of varying thickness all showed the same universal jump, providing decisive evidence for the Kosterlitz-Thouless theory.
+
+The square-root singularity K_eff - 2/π ∝ √(T_c - T) appears in the temperature dependence of ρ_s below T_c. This weak singularity explains why early experiments missed the transition—conventional power-law fits failed to capture the essential singularity. Only after theoretical guidance did experimentalists identify the characteristic behavior.
+
+Vortices in superfluids are not mere theoretical constructs but physical objects carrying quantized circulation ∮**v**_s·d**s** = 2πnℏ/m. Their unbinding at T_c destroys superfluidity by allowing dissipative flow. The Kosterlitz-Thouless theory thus provides a microscopic mechanism for the superfluid transition in terms of topological defect proliferation.
+
+**Meta observation**: The mapping between statistical mechanics models and quantum many-body systems exemplifies the power of universality. The same mathematics describes magnetic films, superfluids, superconducting arrays, and even aspects of the early universe.
+
+*See also:* [[id:PLACEHOLDER-29][zettel:29]], [[id:PLACEHOLDER-31][zettel:31]]

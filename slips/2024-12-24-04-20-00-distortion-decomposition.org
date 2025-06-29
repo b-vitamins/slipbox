@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       a7f8d9c2-3b4e-4a5d-8c6f-9e2a1b7c4d3e
+:CUSTOM_ID: 92/359
+:END:
+#+title: Distortion Decomposition
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+#+FILETAGS: :physics:spof:ch8:helmholtzdecomposition:vortexinteraction:energy:
+
+Any two-dimensional vector field admits a Helmholtz decomposition into gradient and curl components. For the distortion field **u** = ∇θ, we write:
+\[\vec{u} = \vec{u}_0 + \vec{u}_1 = \nabla\phi - \nabla \times (\hat{z}\psi)\]
+
+where **u**₀ = ∇φ represents potential flow (spin waves) and **u**₁ = -∇×(ẑψ) captures the rotational flow around vortices.
+
+The total kinetic energy \(\beta\mathcal{H} = \frac{K}{2}\int d^2\mathbf{x}|\vec{u}|^2\) decomposes into three terms:
+\[\beta\mathcal{H} = \int d^2\mathbf{x}\left[(\nabla\phi)^2 - 2\nabla\phi \cdot \nabla \times (\hat{z}\psi) + (\nabla \times \hat{z}\psi)^2\right]\]
+
+The cross term vanishes after integration by parts since ∇·(∇×**v**) = 0 for any vector field. This orthogonality between gradient and curl components is the mathematical expression of the physical fact that spin waves and vortices represent independent excitations.
+
+For the vortex contribution, the identity |∇×(ẑψ)|² = |∇ψ|² (valid in 2D) transforms the energy to:
+\[\beta\mathcal{H}_1 = \frac{K}{2}\int d^2\mathbf{x}(\nabla\psi)^2 = -\frac{K}{2}\int d^2\mathbf{x}\,\psi\nabla^2\psi\]
+
+Substituting the Poisson equation ∇²ψ = 2π∑ᵢnᵢδ²(**x**-**x**ᵢ) yields the vortex interaction energy. This mathematical manipulation reveals how the local constraint of quantized circulation generates long-range forces between vortices.
+
+**Meta observation**: The orthogonality of gradient and curl in two dimensions enables exact separation of fluctuations into harmonic (spin waves) and topological (vortices) sectors. This decomposition is why the Kosterlitz-Thouless transition can be analyzed exactly.
+
+**See also:** [[id:PLACEHOLDER-16][zettel:16]], [[id:PLACEHOLDER-20][zettel:20]], [[id:PLACEHOLDER-22][zettel:22]]

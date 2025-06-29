@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       a7b9c3d8-4e2f-4a8c-9d1b-6f8e3c5b2a17
+:CUSTOM_ID: 92/349
+:END:
+#+title: Spin Renormalization
+#+FILETAGS: :physics:spof:ch8:renormalization:symmetry:coarsegraining:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The renormalization of the spin field emerges naturally from rotational symmetry. After integrating out short-wavelength modes, the coarse-grained spin develops as:
+\[\langle\tilde{\vec{s}}\rangle_0^> = \left\langle\left(\pi_1^< + \pi_1^>, \ldots, \sqrt{1-(\vec{\pi}^< + \vec{\pi}^>)^2}\right)\right\rangle_0^> = \left(1 - \left\langle\frac{(\vec{\pi}^>)^2}{2}\right\rangle_0^> + O(T^2)\right)\left(\pi_1^<, \ldots, \sqrt{1-(\vec{\pi}^<)^2}\right)\]
+
+The factor multiplying the slow-mode spin is identified as the rescaling factor:
+\[\zeta = 1 - \left\langle\frac{(\vec{\pi}^>)^2}{2}\right\rangle_0^> + O(T^2) = 1 - \frac{(n-1)}{2}\frac{I_d(b)}{K} + O(T^2)\]
+
+This represents the length of the coarse-grained spin—integrating out fluctuations effectively reduces the magnetization.
+
+The beauty of this derivation lies in its use of symmetry. Rather than tracking how each coupling transforms (an infinite set for the nonlinear σ-model), we exploit the fact that the coarse-grained configuration must still describe unit spins up to an overall scale. This scale factor ζ captures all effects of the eliminated modes on the spin normalization. The O(n) symmetry dictates that this rescaling must be isotropic, affecting all spin components equally.
+
+The reduction in spin length has a clear physical interpretation. High-frequency fluctuations cause the local spin to wobble rapidly around its average orientation. When we observe only the slow modes, we see a reduced effective moment. This reduction is proportional to the mean square fluctuations of the eliminated modes, which in turn depends on temperature and the number of transverse directions (n-1).
+
+**Meta observation**: Symmetry principles often provide shortcuts through complex calculations. Here, O(n) invariance reduces the problem of tracking infinitely many couplings to finding a single rescaling factor.
+
+*See also:* [[id:PLACEHOLDER-10][zettel:10]], [[id:PLACEHOLDER-12][zettel:12]]

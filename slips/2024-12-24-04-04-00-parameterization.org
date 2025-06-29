@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       a7b8c9d0-1e2f-3a4b-5c6d-7e8f9a0b1c2d
+:CUSTOM_ID: 92/343
+:END:
+#+title: Parameterization (π,σ)
+#+FILETAGS: :physics:spof:ch8:coordinates:jacobian:goldstonemodes:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The key technical step is parametrizing the unit sphere by separating transverse and longitudinal fluctuations: \(\vec{s}(\mathbf{x}) = (\pi_1(\mathbf{x}), \ldots, \pi_{n-1}(\mathbf{x}), \sigma(\mathbf{x})) \equiv (\vec{\pi}(\mathbf{x}), \sigma(\mathbf{x}))\). The constraint \(|\vec{s}|^2 = 1\) determines \(\sigma = \sqrt{1 - \pi^2}\), reducing the n components to n-1 independent fields \(\vec{\pi}\). These represent the Goldstone modes associated with the spontaneously broken rotational symmetry.
+
+The Jacobian for this transformation is crucial and non-trivial. For each spatial point, we must evaluate:
+\[\int d\vec{s} \delta(s^2 - 1) = \int_{-\infty}^{\infty} d\vec{\pi} d\sigma \delta(\pi^2 + \sigma^2 - 1) = \int_{-\infty}^{\infty} \frac{d\vec{\pi}}{2\sqrt{1 - \pi^2}}\]
+
+The factor \(1/\sqrt{1 - \pi^2}\) in the measure is the source of all interactions in the resulting field theory. Near \(\vec{\pi} = 0\) (the chosen ground state), this can be expanded as \(1 + \pi^2/2 + \ldots\), generating an infinite series of self-interactions among the Goldstone modes.
+
+This parametrization explicitly breaks the O(n) symmetry down to O(n-1), corresponding to choosing the ground state \(\vec{s}_0 = (0, \ldots, 0, 1)\). The n-1 components of \(\vec{\pi}\) transform linearly under the unbroken O(n-1), while nonlinearly under the broken generators. This nonlinear realization of symmetry is the hallmark of Goldstone physics.
+
+**Meta observation**: The choice of parametrization is like choosing coordinates in general relativity—the physics is independent of the choice, but calculations may be tractable in one system and hopeless in another. The art is finding coordinates adapted to the problem's symmetries.
+
+**See also:** [[id:PLACEHOLDER-04][zettel:04]], [[id:PLACEHOLDER-06][zettel:06]]

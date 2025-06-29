@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       94b2985f-7786-49cb-9858-33b3e2d238f6
+:CUSTOM_ID: 92/344
+:END:
+#+title: Effective Hamiltonian for π
+#+FILETAGS: :physics:spof:ch8:nonlinearsigmamodel:effectivetheory:interactions:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+After implementing the constraint through the (π,σ) parametrization, the partition function becomes:
+\[Z \propto \int \frac{\mathcal{D}\vec{\pi}(\mathbf{x})}{\sqrt{1-\pi(\mathbf{x})^2}} \exp\left[-\frac{K}{2}\int d^d\mathbf{x}\left[(\nabla\vec{\pi})^2 + \left(\nabla\sqrt{1-\pi^2}\right)^2\right]\right]\]
+
+The gradient of σ introduces crucial nonlinearities: \(\nabla\sigma = \nabla\sqrt{1-\pi^2} = -\vec{\pi} \cdot \nabla\vec{\pi}/\sqrt{1-\pi^2}\). Combined with the Jacobian, we obtain the full effective Hamiltonian:
+\[\beta\mathcal{H}[\vec{\pi}] = \int d^d\mathbf{x}\left[\frac{K}{2}(\nabla\vec{\pi})^2 + \frac{K}{2}\frac{(\vec{\pi} \cdot \nabla\vec{\pi})^2}{1-\pi^2} + \frac{\rho}{2}\ln(1-\pi^2)\right]\]
+
+where ρ = 1/a^d is the density of lattice sites, kept arbitrary for RG purposes.
+
+This effective Hamiltonian encodes all the complexity of the constrained system. The second term represents gradient-gradient interactions arising from the curvature of the sphere. The logarithmic term from the Jacobian provides a "mass-like" term that prevents \(|\vec{\pi}|\) from reaching unity. Together, these nonlinearities ensure that the symmetry of the original O(n) model is preserved, despite the asymmetric parametrization.
+
+The expansion of these nonlinear terms in powers of π generates an infinite series of interactions. To leading order in temperature (where \(\langle\pi^2\rangle \propto T\)), we can organize this series systematically. The quadratic terms give the free Goldstone propagator, while higher orders describe scattering processes that become important near the critical point.
+
+**Meta observation**: The emergence of complex interactions from simple constraints exemplifies a general principle: symmetry determines dynamics. The specific form of the nonlinearities is uniquely fixed by requiring O(n) invariance of the full theory.
+
+**See also:** [[id:PLACEHOLDER-05][zettel:05]], [[id:PLACEHOLDER-07][zettel:07]]
