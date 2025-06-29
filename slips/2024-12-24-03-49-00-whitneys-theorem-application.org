@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       8d0c687e-bd1c-4bb5-86dc-29e26570f498
+:CUSTOM_ID: 92/330
+:END:
+#+TITLE: Whitney's Theorem Application
+#+FILETAGS: :physics:spof:ch7:series:whitney:theorem:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Whitney's theorem transforms the global problem of counting self-intersections into local phase accumulation, enabling the exact solution of the two-dimensional Ising model. This topological result states that for any closed curve in the plane:
+
+\[(n_c)_{\bmod 2} = \left(1 + \frac{\Theta}{2\pi}\right)_{\bmod 2}\]
+
+where \(n_c\) counts self-crossings and \(\Theta\) is the total angle through which the tangent vector rotates.
+
+The theorem's power lies in its locality. While \(n_c\) depends on the curve's global configuration, \(\Theta = \sum_i \theta_i\) accumulates through local turns \(\theta_i\) at each step. This converts the non-Markovian problem of tracking intersections into a Markovian process of tracking angles.
+
+Implementation in the Ising solution:
+
+1. *Phase factor*: Each crossing contributes \((-1)\), so
+   \[(-1)^{n_c} = \exp(i\pi n_c) = -\exp\left(\frac{i\Theta}{2}\right) = -\exp\left(\frac{i}{2}\sum_j \theta_j\right)\]
+
+2. *Directional encoding*: Introduce four states per site for directions \(\mu = 1,2,3,4\) (right, up, left, down). Turning from direction \(\mu\) to \(\mu'\) contributes phase \(\exp(i\theta_{\mu\mu'}/2)\).
+
+3. *Transfer matrix elements*: 
+   \[\langle \mathbf{r}',\mu'|T^*|\mathbf{r},\mu\rangle = \delta_{\text{n.n.}}(\mathbf{r},\mathbf{r}')\exp(i\theta_{\mu\mu'}/2)\]
+   where \(\theta_{\mu\mu'} = \pi/2\) for \(90°\) left turns, \(-\pi/2\) for right turns, \(0\) for straight paths.
+
+4. *No U-turn constraint*: Matrix elements with \(\mu' = -\mu\) vanish, preventing immediate backtracking.
+
+Physical understanding through examples [[id:7.D5]]:
+- *Simple loop* (square): Four \(90°\) left turns give \(\Theta = 4 \times \pi/2 = 2\pi\), hence \(n_c = 0\) (mod 2)
+- *Figure-eight*: Total angle \(\Theta = 0\), giving \(n_c = 1\) (mod 2), confirming one crossing
+- *Complex loops*: Local phase tracking automatically accounts for all crossings
+
+The theorem's validity requires orientable loops in the plane. Three-dimensional generalizations fail—knots and links have topological invariants not captured by local phases. This restricts exact solutions to two dimensions where topology simplifies.
+
+Applications extend beyond the Ising model:
+- *Polymer physics*: Self-avoiding walks with orientation-dependent interactions
+- *Quantum Hall effect*: Berry phases in parameter space  
+- *Lattice gauge theory*: Wilson loops acquiring phases from parallel transport
+- *Knot theory*: Alexander polynomial computations
+
+The deep insight is that global topology can emerge from local geometry. By enlarging the state space to include directional information, Whitney's theorem converts a non-local constraint into additional local degrees of freedom. This trade-off—larger local Hilbert space for simpler dynamics—recurs throughout physics, from gauge theories to topological phases.

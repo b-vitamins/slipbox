@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       d76e3843-1d8a-41c1-b5a9-b568a4735902
+:CUSTOM_ID: 92/282
+:END:
+#+TITLE: 7.3 High-Temperature Expansion Equations
+#+FILETAGS: :physics:spof:ch7:series:hightemperature:expansion:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The high-temperature expansion treats spins as initially independent, with interactions entering perturbatively. The basic expansion in powers of $\beta$ takes the form
+
+\[Z = \operatorname{tr}\left(\mathrm{e}^{-\beta\mathcal{H}}\right) = \operatorname{tr}\left[1 - \beta\mathcal{H} + \frac{\beta^2\mathcal{H}^2}{2} - \cdots\right]\]
+
+with the free energy given by cumulant expansion over non-interacting spins:
+
+\[\frac{\ln Z}{N} = \frac{\ln Z_0}{N} - \beta\frac{\langle\mathcal{H}\rangle_0}{N} + \frac{\beta^2}{2}\frac{\langle\mathcal{H}^2\rangle_0 - \langle\mathcal{H}\rangle_0^2}{N} - \cdots\]
+
+The key organizational principle for the Ising model exploits the property $(σ_i\sigma_j)^2 = 1$ to write each Boltzmann factor as
+
+\[\mathrm{e}^{K\sigma_i\sigma_j} = \cosh K(1 + t\sigma_i\sigma_j)\]
+
+where $t \equiv \tanh K$ emerges as the natural expansion parameter. This choice prevents multiple occupation of bonds in the graphical expansion. Applying this transformation to all bonds yields
+
+\[Z = \sum_{\{\sigma_i\}} \mathrm{e}^{K\sum_{\langle i,j\rangle}\sigma_i\sigma_j} = (\cosh K)^{N_b} \sum_{\{\sigma_i\}} \prod_{\langle i,j\rangle}(1 + t\sigma_i\sigma_j)\]
+
+The product generates $2^{N_b}$ terms representable as graphs with bonds either empty or occupied by a single line. Each site acquires a factor $\sigma_i^{p_i}$ where $p_i$ counts occupied bonds at site $i$. Summing over $\sigma_i = \pm 1$ yields 2 if $p_i$ is even, 0 if odd. Only closed loops survive:
+
+\[Z = 2^N \times (\cosh K)^{N_b} \sum_{\text{All closed graphs}} t^{\text{number of bonds in the graph}}\]
+
+For a $d$-dimensional hypercubic lattice, the smallest closed graph is a square plaquette (4 bonds, $d(d-1)/2$ orientations), followed by hexagons (6 bonds):
+
+\[Z = 2^N(\cosh K)^{dN}\left[1 + \frac{d(d-1)N}{2}t^4 + d(d-1)(2d-3)t^6 + \cdots\right]\]
+
+yielding the free energy per site
+
+\[\frac{\ln Z}{N} = \ln 2 + d\ln\cosh K + \frac{d(d-1)}{2}t^4 + \cdots\]
+
+The graphical representation [[7.D2]] makes manifest that only topologically closed paths contribute, establishing the foundation for both duality arguments [[7.5]] and the connection to random walks [[7.7]]. The choice of $\tanh K$ as expansion parameter proves essential: it naturally emerges in duality relations and prevents the over-counting that would arise with bare coupling $K$.

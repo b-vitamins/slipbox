@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       a8c9e2f7-4d31-4b68-9f24-7e8a5c3d2b91
+:CUSTOM_ID: 92/308
+:END:
+#+TITLE: 7.52 Transfer Matrix Spectra Collection
+#+FILETAGS: :physics:spof:ch7:series:transfermatrix:collection:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The transfer matrix eigenvalues across different models and dimensions reveal universal patterns while encoding model-specific features through their detailed structure. This comprehensive collection enables comparison between simple random walks, constrained paths, and exact solutions.
+
+For unconstrained random walks on hypercubic lattices, the momentum-space eigenvalues follow
+
+\[T(\mathbf{q}) = 2\sum_{\alpha=1}^d \cos q_\alpha\]
+
+In specific dimensions:
+- \(d=1\): \(T(q) = 2\cos q\), bandwidth 4
+- \(d=2\): \(T(q_x,q_y) = 2(\cos q_x + \cos q_y)\), bandwidth 8  
+- \(d=3\): \(T(q_x,q_y,q_z) = 2(\cos q_x + \cos q_y + \cos q_z)\), bandwidth 12
+
+The maximum eigenvalue \(T(\mathbf{0}) = 2d\) determines criticality through \(t_c = 1/(2d)\), while the minimum \(T(\pi,\ldots,\pi) = -2d\) is typically irrelevant for long-distance physics.
+
+The exact two-dimensional solution requires the augmented directional matrix with spectrum determined by
+
+\[\det(1 - tT^*(\mathbf{q})) = (1+t^2)^2 - 2t(1-t^2)(\cos q_x + \cos q_y)\]
+
+This determinant factorizes into four eigenvalues at each momentum, encoding both propagation and topological phases. The critical point occurs when this determinant vanishes at \(\mathbf{q} = \mathbf{0}\), yielding the self-dual condition.
+
+Specializing to one dimension reveals instructive simplifications. The standard Ising transfer matrix (not the walk matrix) has eigenvalues
+
+\[\lambda_\pm = \mathrm{e}^K \pm \mathrm{e}^{-K} = 2\cosh K \pm 2\sinh K\]
+
+The largest eigenvalue \(\lambda_+ = 2\cosh K\) remains non-degenerate for all finite \(K\), confirming the absence of phase transitions. The gap \(\lambda_+ - \lambda_- = 2\mathrm{e}^{-K}\) determines the correlation length \(\xi = 1/K\) for large \(K\).
+
+Near critical points, spectral properties exhibit universal behavior. The gap scales as \(\Delta \sim L^{-z}\) in finite systems of size \(L\), defining the dynamical exponent \(z\). For the Ising model, \(z = 1\) reflects the local nature of the dynamics. The density of states near zero gap follows \(\rho(E) \sim E^{d/z-1}\), determining low-energy thermodynamics.
+
+Spectral degeneracies signal phase transitions. In infinite systems, level crossings occur only at critical points where symmetries enhance. Finite systems exhibit avoided crossings that sharpen into true degeneracies as \(L \to \infty\). The rate of approach reveals correlation length exponents through finite-size scaling.
+
+The transfer matrix spectrum thus provides a complete characterization of critical phenomena. From the largest eigenvalues determining thermodynamics to the full spectrum encoding operator content, spectral analysis bridges microscopic models to universal behavior. Modern developments including conformal field theory and integrability build upon this spectral foundation, demonstrating its enduring importance.

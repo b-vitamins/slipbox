@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       4e2adc40-65f1-4c63-bbb7-d5c55ba65556
+:CUSTOM_ID: 92/313
+:END:
+#+TITLE: 7.21 Confinement Transition
+#+FILETAGS: :physics:spof:ch7:series:confinement:transition:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The confinement-deconfinement transition represents a phase transition without local order parameter, where the fundamental change involves the cost of separating charges rather than symmetry breaking. This phenomenon, discovered in lattice gauge theory, provides the paradigm for understanding quark confinement in quantum chromodynamics.
+
+The transition manifests through Wilson loop behavior [[7.20]]. In the confined phase at low temperature, Wilson loops obey an area law \(\langle W(C) \rangle \sim \exp(-\sigma A)\), indicating that the energy to separate static charges grows linearly with distance. The string tension \(\sigma\) quantifies the energy density of the chromoelectric flux tube binding charges. At high temperature, the deconfined phase exhibits perimeter law scaling \(\langle W(C) \rangle \sim \exp(-\mu P)\), allowing charge separation with finite energy cost.
+
+The physical mechanism involves the condensation of topological excitations. In the confined phase, magnetic monopoles (in the dual description) are dilute, allowing electric flux to form stable strings. Above the transition, monopole proliferation disorders the gauge field, breaking up flux tubes. This disordering transition in dual variables corresponds to the confinement transition in the original gauge theory.
+
+The connection to the Ising model through duality [[7.18]] provides crucial insights. The gauge theory partition function equals the Ising partition function (up to trivial factors), placing both transitions at the same temperature when expressed in dual variables. The Ising ordered phase with \(\langle\sigma\rangle \neq 0\) maps to the confined phase with area law Wilson loops. The disordered Ising phase corresponds to deconfinement with perimeter law behavior.
+
+Elitzur's theorem prohibits conventional order parameters for gauge theories—all local gauge-variant operators have vanishing expectation values [[7.9]]. The Wilson loop circumvents this restriction through gauge invariance, serving as a non-local probe of the vacuum structure. The area versus perimeter distinction reflects fundamentally different organizations of gauge field fluctuations invisible to local measurements.
+
+The universality class of the confinement transition depends on the gauge group and dimension. For \(\mathbb{Z}_2\) gauge theory in three dimensions, the transition belongs to the three-dimensional Ising universality class by duality. For continuous gauge groups, the transition may be first-order (pure SU(3) gauge theory) or absent entirely (pure U(1) in three dimensions remains confined at all temperatures).
+
+Applications extend beyond the original motivation of quark physics. Quantum spin liquids exhibit deconfined phases where spinons and visons propagate independently. Topological phases show analogous transitions between phases with different anyonic excitations. The confinement paradigm thus provides a unified framework for understanding phases distinguished by non-local properties rather than local order parameters.

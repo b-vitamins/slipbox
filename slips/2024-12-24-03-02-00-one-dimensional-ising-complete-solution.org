@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       c7d8f3a2-9b4e-4521-a3c6-d8e9f0a1b2c3
+:CUSTOM_ID: 92/283
+:END:
+#+TITLE: 7.4 One-Dimensional Ising Complete Solution
+#+FILETAGS: :physics:spof:ch7:series:onedimensional:ising:exact:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The one-dimensional Ising model admits exact solution through the graphical method, with strikingly different results for open and closed boundary conditions that converge in the thermodynamic limit. The absence of closed loops on an open chain immediately yields the partition function.
+
+For an open chain of \(N\) sites with \(N_b = N-1\) bonds, no closed graphs can be drawn, giving
+
+\[Z = 2^N \cosh K^{N-1} \times 1 \Longrightarrow \frac{\ln Z}{N} = \ln[2\cosh K] - \frac{\ln[\cosh K]}{N}\]
+
+The surface term \(\mathcal{O}(1/N)\) vanishes thermodynamically. The correlation function calculation proceeds through
+
+\[\langle\sigma_m\sigma_n\rangle = \frac{2^N(\cosh K)^{N-1}}{Z}\sum_{\{\sigma_i\}}\sigma_m\sigma_n\prod_{\langle i,j\rangle}(1 + t\sigma_i\sigma_j)\]
+
+The external spins \(\sigma_m\) and \(\sigma_n\) require an odd number of bonds at these sites for non-zero contribution after summation. The unique graph directly connecting them yields
+
+\[\langle\sigma_m\sigma_n\rangle = t^{|m-n|} = \mathrm{e}^{-|m-n|/\xi}, \quad \text{with} \quad \xi = -\frac{1}{\ln\tanh K}\]
+
+The correlation length diverges as \(\mathrm{e}^{2K}\) for \(K \to \infty\), confirming the absence of power-law corrections found by renormalization group analysis.
+
+A closed chain with \(N\) sites and \(N\) bonds permits one graph circling the entire chain:
+
+\[Z = (2\cosh K)^N[1 + t^N] = 2^N(\cosh K^N + \sinh K^N)\]
+
+The free energy per site becomes
+
+\[\frac{\ln Z}{N} = \ln(2\cosh K) + \frac{\ln[1 + t^N]}{N}\]
+
+The exponentially small correction \(t^N\) replaces the algebraic surface term of the open chain. Correlations now involve two paths around the ring:
+
+\[\langle\sigma_m\sigma_n\rangle = \frac{t^{|m-n|} + t^{N-|m-n|}}{1 + t^N}\]
+
+The expression maintains symmetry under the two distance measurements on the ring. Both boundary conditions confirm the absence of phase transitions in one dimension: finite chains cannot support the infinite correlation length required for criticality, and thermal fluctuations destroy any nascent order when each spin has only two neighbors to align with.

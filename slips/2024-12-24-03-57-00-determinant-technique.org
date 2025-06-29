@@ -1,0 +1,65 @@
+:PROPERTIES:
+:ID:       b8f4c5d2-7a3e-4f16-9e8b-1d2c3e4f5a6b
+:CUSTOM_ID: 92/338
+:END:
+#+TITLE: 7.36 Determinant Technique
+#+FILETAGS: :physics:spof:ch7:series:determinant:technique:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The determinant method transforms the trace over matrix powers into a product over eigenvalues, converting the combinatorial problem of summing paths into an algebraic problem of matrix analysis. This technique yields the exact Ising partition function as an integral over momentum space.
+
+*From Trace to Determinant*:
+
+Starting from the path sum representation:
+\[\frac{\ln Z}{N} = \ln(2\cosh^2 K) - \frac{1}{2N}\operatorname{tr}\left[\sum_{\ell=1}^{\infty}\frac{(tT^*)^\ell}{\ell}\right]\]
+
+The geometric series evaluates to:
+\[\sum_{\ell=1}^{\infty}\frac{(tT^*)^\ell}{\ell} = -\ln(1 - tT^*)\]
+
+Using the matrix identity \(\operatorname{tr}\ln M = \ln\det M\):
+\[\frac{\ln Z}{N} = \ln(2\cosh^2 K) + \frac{1}{2N}\ln\det(1 - tT^*)\]
+
+*Momentum Space Factorization*:
+
+Translational invariance block-diagonalizes \(T^*\):
+\[T^* = \bigoplus_{\mathbf{q}} T^*(\mathbf{q})\]
+
+where each \(T^*(\mathbf{q})\) is a \(4 \times 4\) matrix. The determinant factorizes:
+\[\det(1 - tT^*) = \prod_{\mathbf{q}}\det(1 - tT^*(\mathbf{q}))\]
+
+Converting the product to an integral in the thermodynamic limit:
+\[\frac{\ln Z}{N} = \ln(2\cosh^2 K) + \frac{1}{2}\int\frac{\mathrm{d}^2\mathbf{q}}{(2\pi)^2}\ln\det(1 - tT^*(\mathbf{q}))\]
+
+*Explicit Determinant Calculation*:
+
+For the \(4 \times 4\) matrix at each \(\mathbf{q}\):
+\[\det\begin{pmatrix}
+1-t\mathrm{e}^{-iq_x} & -t\mathrm{e}^{-i(q_x-\frac{\pi}{4})} & 0 & -t\mathrm{e}^{-i(q_x+\frac{\pi}{4})} \\
+-t\mathrm{e}^{-i(q_y+\frac{\pi}{4})} & 1-t\mathrm{e}^{-iq_y} & -t\mathrm{e}^{-i(q_y-\frac{\pi}{4})} & 0 \\
+0 & -t\mathrm{e}^{i(q_x-\frac{\pi}{4})} & 1-t\mathrm{e}^{iq_x} & -t\mathrm{e}^{i(q_x+\frac{\pi}{4})} \\
+-t\mathrm{e}^{i(q_y+\frac{\pi}{4})} & 0 & -t\mathrm{e}^{i(q_y-\frac{\pi}{4})} & 1-t\mathrm{e}^{iq_y}
+\end{pmatrix}\]
+
+Through systematic expansion and trigonometric identities:
+\[\det(1 - tT^*(\mathbf{q})) = (1+t^2)^2 - 2t(1-t^2)(\cos q_x + \cos q_y)\]
+
+*Final Result*:
+
+Substituting back:
+\[\frac{\ln Z}{N} = \ln 2 + \frac{1}{2}\int_{-\pi}^{\pi}\frac{\mathrm{d}q_x\mathrm{d}q_y}{(2\pi)^2}\ln[\cosh^2(2K) - \sinh(2K)(\cos q_x + \cos q_y)]\]
+
+*Key Techniques*:
+
+1. *Matrix logarithm*: \(\ln\det M = \operatorname{tr}\ln M\) relates determinant to trace
+2. *Block diagonalization*: Fourier transform exploits translational symmetry
+3. *Thermodynamic limit*: \(\frac{1}{N}\sum_{\mathbf{q}} \to \int\frac{\mathrm{d}^2\mathbf{q}}{(2\pi)^2}\)
+4. *Algebraic manipulation*: Systematic determinant evaluation
+
+*Advantages*:
+
+- Converts infinite sum to finite integral
+- Identifies singularities through vanishing determinant
+- Enables asymptotic analysis near criticality
+- Generalizes to other integrable models
+
+The determinant technique exemplifies how symmetry (translational invariance) and algebra (matrix analysis) combine to solve seemingly intractable combinatorial problems exactly.

@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       a7b9f2d8-4c6e-4a89-9f12-8e5c3d1b7a94
+:CUSTOM_ID: 92/327
+:END:
+#+TITLE: 7.49 Entropy vs Energy
+#+FILETAGS: :physics:spof:ch7:series:entropy:energy:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Phase transitions emerge from the competition between energy minimization and entropy maximization, with critical points marking where neither dominates. The high-temperature expansion illuminates this balance through the proliferation of paths, revealing temperature as the arbitrator between order and disorder.
+
+At low temperatures, energy dominates. The system minimizes bond energy by aligning spins, creating the ferromagnetic state. Small thermal fluctuations create isolated defects—domain walls in two dimensions or point defects in one dimension—whose energy cost $\Delta E$ suppresses their density as $\mathrm{e}^{-\beta\Delta E}$. Order persists because creating disorder costs more energy than the entropy gain warrants.
+
+At high temperatures, entropy dominates. Random spin configurations maximize entropy $S = Nk_B\ln 2$, overwhelming the energy benefit of alignment. In the loop representation [[7.24]], short loops proliferate because their multiplicity (entropy) compensates for their energy cost. Each bond contributes factor $t = \tanh K < 1$, but $d(d-1)/2$ possible four-bond loops on a $d$-dimensional hypercubic lattice provide entropic weight.
+
+The critical point $t_c = 1/(2d)$ identifies where entropy and energy balance precisely [[7.29]]. Paths of length $\ell$ contribute:
+- *Energy factor*: $t^\ell = (2dt_c)^\ell = 1$ at criticality
+- *Entropy factor*: $\sim (2d)^\ell$ possible paths
+- *Net contribution*: $O(1)$ independent of $\ell$
+
+This scale-invariant balance enables paths of all sizes, generating the long-range correlations characteristic of criticality.
+
+The correlation length embodies this competition. Near $T_c$, the characteristic path length $\bar{\ell} \sim -1/\ln(2dt)$ represents the scale where entropic proliferation balances energetic suppression. Paths shorter than $\bar{\ell}$ are entropically favored; longer paths are energetically suppressed. The correlation length $\xi \sim \bar{\ell}^{1/2}$ measures the spatial extent of these dominant fluctuations.
+
+Universality emerges because the entropy-energy balance depends only on connectivity, not microscopic details. Different models with identical lattice geometry share the same entropic factors (numbers of paths), differing only in the temperature where $t$ reaches the critical value. This explains why diverse physical systems—magnets, fluids, alloys—exhibit identical critical behavior.
+
+The entropy-energy perspective extends beyond equilibrium:
+- *Dynamic transitions*: Activity versus inactivity in kinetically constrained models
+- *Information theory*: Error correction versus information capacity
+- *Optimization*: Cost versus configuration space exploration
+- *Biology*: Function versus mutational robustness
+
+Modern developments quantify this balance precisely. The Yang-Lee theory locates phase transitions where partition function zeros approach the real temperature axis—where entropy and energy contributions interfere destructively. Microcanonical analysis reveals transitions as points where entropy $S(E)$ becomes non-concave.
+
+The profound insight is that phase transitions represent neither pure order nor pure disorder but the critical balance between opposing tendencies. This competition, played out across all length scales simultaneously, generates the rich phenomena of critical behavior.

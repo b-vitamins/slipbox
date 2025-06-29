@@ -1,0 +1,49 @@
+:PROPERTIES:
+:ID:       9f8c3d2e-7a5b-4e86-9d1c-8f3a6b2e4c5a
+:CUSTOM_ID: 92/328
+:END:
+#+TITLE: 7.13 Padé Approximants
+#+FILETAGS: :physics:spof:ch7:series:pade:approximant:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Padé approximants provide powerful analytical continuation of series expansions beyond their radius of convergence, extracting critical behavior from finite series by approximating functions as ratios of polynomials. This method excels when standard Taylor series fail due to nearby singularities.
+
+A Padé approximant $[L/M]$ to a function $f(x) = \sum_{n=0}^{\infty} a_n x^n$ is the rational function
+
+$$\frac{P_L(x)}{Q_M(x)} = \frac{p_0 + p_1 x + \cdots + p_L x^L}{1 + q_1 x + \cdots + q_M x^M}$$
+
+chosen so its Taylor expansion matches the first $L+M+1$ coefficients of $f(x)$. The coefficients satisfy the linear system arising from
+
+$$P_L(x) - f(x)Q_M(x) = O(x^{L+M+1})$$
+
+For critical phenomena, Padé approximants excel at capturing power-law singularities. A function with behavior $f(x) \sim A(1-x/x_c)^{-\alpha}$ near $x_c$ is naturally represented by rationals whose poles approximate the singularity. The critical point emerges as a pole of $Q_M(x)$, while the residue determines the critical exponent.
+
+Application to series analysis proceeds systematically:
+1. Compute multiple approximants $[L/M]$ with $L+M = N$ fixed
+2. Locate poles to estimate $x_c$
+3. Extract exponents from residues
+4. Check convergence as $N$ increases
+
+The method's advantages over ratio analysis [[id:7.2a]]:
+- Handles sign-alternating series naturally
+- Captures multiple singularities simultaneously  
+- Provides analytical continuation into complex plane
+- Often converges faster than Taylor series
+
+For the low-temperature Ising expansion with alternating signs, direct ratio methods fail. Transforming to variable $u = \tanh K$ and applying Padé approximants yields accurate estimates of $K_c$ and critical exponents from modest series lengths. The approximants automatically account for complex-plane singularities that cause sign alternation.
+
+Differential approximants extend the method by satisfying differential equations:
+
+$$Q_M(x)f'(x) + R_M(x)f(x) + S_M(x) = 0$$
+
+These capture essential singularities and logarithmic corrections invisible to standard Padé analysis.
+
+Limitations require careful consideration:
+- Spurious poles may appear, requiring physical insight to identify genuine singularities
+- Convergence is not guaranteed for arbitrary functions
+- Numerical precision limits high-order approximants
+- Multiple singularities can interfere
+
+Modern applications combine Padé analysis with other techniques. Series extrapolation using Padé approximants feeds into finite-size scaling. Borel transformation followed by Padé approximation treats divergent perturbation series. The method remains indispensable for extracting non-perturbative information from perturbative expansions.
+
+The success of Padé approximants reflects a deep principle: critical behavior, dominated by isolated singularities, is naturally captured by rational functions. This matches the physical expectation that phase transitions arise from the competition of a few relevant modes, not the full complexity of the microscopic Hamiltonian.

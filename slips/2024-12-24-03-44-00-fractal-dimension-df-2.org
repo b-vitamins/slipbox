@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       f8e4a9b2-6c3d-4e7a-9f1b-2d3e4f5a6b7c
+:CUSTOM_ID: 92/325
+:END:
+#+TITLE: 7.47 Fractal Dimension d_f=2
+#+FILETAGS: :physics:spof:ch7:series:fractal:dimension:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Random walks possess fractal dimension \(d_f = 2\) independent of the embedding space dimension, a universal property that determines when mean-field theory applies and how critical exponents deviate from classical values. This geometric invariant bridges microscopic dynamics to macroscopic critical behavior.
+
+The fractal dimension relates a walk's mass (number of steps \(\ell\)) to its spatial extent \(R\):
+
+\[M \sim R^{d_f}\]
+
+For random walks, \(R \sim \ell^{1/2}\) by the central limit theorem, yielding \(M = \ell \sim R^2\), hence \(d_f = 2\). This quadratic relationship holds regardless of lattice structure or ambient dimension—a walk in ten dimensions still has \(d_f = 2\).
+
+Physical consequences follow from comparing \(d_f\) with spatial dimension \(d\):
+- *Density*: \(\rho = M/R^d = R^{d_f-d} = R^{2-d}\)
+- *For \(d > 2\)*: Density decreases with size, walks are sparse
+- *For \(d = 2\)*: Constant density, marginal case
+- *For \(d < 2\)*: Density increases, walks are space-filling
+
+Intersection probability between independent walks scales as
+
+\[P_{\text{intersect}} \sim \rho \times M \sim R^{2-d} \times R^2 = R^{4-d}\]
+
+This determines the upper critical dimension [[7.11]]: for \(d > 4\), large walks rarely intersect (\(P \to 0\)), while for \(d < 4\), intersections proliferate (\(P \to \infty\)).
+
+Self-avoiding walks (SAWs) swell beyond random walk size due to excluded volume:
+
+\[R_{\text{SAW}} \sim \ell^{\nu} \quad \text{with} \quad \nu > 1/2\]
+
+The swelling exponent \(\nu\) characterizes how constraints modify the fractal dimension to \(d_f^{\text{SAW}} = 1/\nu < 2\). In the critical dimension \(d = 4\), logarithmic corrections appear: \(R \sim \ell^{1/2}(\ln \ell)^{1/4}\).
+
+The universality of \(d_f = 2\) for random walks reflects the central limit theorem. Each step contributes independently to displacement, yielding Gaussian statistics with variance growing linearly in time. This diffusive scaling survives on all regular lattices, in continuous space, and even with step-length variations.
+
+Critical phenomena inherit this fractal geometry. Near criticality, thermal fluctuations generate paths of all scales with weight \((2dt)^\ell\). At \(t_c = 1/(2d)\), paths become scale-invariant, their fractal structure determining universal properties:
+- Correlation length: \(\xi \sim \ell^{1/2}\) relates to typical path length
+- Specific heat: \(C \sim \xi^{d_f} = \xi^2\) counts path configurations
+- Susceptibility: \(\chi \sim \xi^{2-\eta}\) with \(\eta = 0\) for free walks
+
+The fractal dimension thus provides a geometric origin for critical exponents. Deviations from mean-field theory below \(d = 4\) arise from the modified fractal dimension of self-avoiding walks. This geometric perspective, pioneered by de Gennes, transforms abstract field theory into concrete polymer physics, where phase transitions emerge from the statistics of fluctuating geometric objects.

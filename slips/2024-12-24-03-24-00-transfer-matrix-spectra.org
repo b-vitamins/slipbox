@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       f8a7b3d2-9e4c-4a6f-b8c5-3d2e7f9a1c84
+:CUSTOM_ID: 92/305
+:END:
+#+TITLE: Transfer Matrix Spectra
+#+FILETAGS: :physics:spof:ch7:series:transfermatrix:spectra:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The eigenvalue spectrum of transfer matrices encodes the complete thermodynamic behavior of lattice models, with critical phenomena emerging from spectral degeneracies and gap closures. For random walks on hypercubic lattices, the momentum-space eigenvalues take the universal form
+
+\[T(\mathbf{q}) = 2\sum_{\alpha=1}^d \cos q_\alpha\]
+
+ranging from \(-2d\) at \(\mathbf{q} = (\pi,\pi,\ldots,\pi)\) to \(+2d\) at \(\mathbf{q} = \mathbf{0}\). The maximum eigenvalue governs long-distance properties and determines the critical point through the condition \(tT(\mathbf{0}) = 1\).
+
+The spectral structure reveals dimensionality effects directly. In one dimension, \(T(q) = 2\cos q\) has bandwidth 4 and never develops degeneracies, confirming the absence of phase transitions. Two dimensions yield \(T(q_x,q_y) = 2(\cos q_x + \cos q_y)\) with saddle points where the density of states diverges logarithmically, enabling critical behavior. Higher dimensions progressively smooth the density of states, approaching the Gaussian limit for large \(d\).
+
+The exact two-dimensional solution employs an augmented transfer matrix tracking directional information:
+
+\[T^*(\mathbf{q}) = \begin{pmatrix} 
+\mathrm{e}^{-iq_x} & \mathrm{e}^{-i(q_x-\pi/4)} & 0 & \mathrm{e}^{-i(q_x+\pi/4)} \\ 
+\mathrm{e}^{-i(q_y+\pi/4)} & \mathrm{e}^{-iq_y} & \mathrm{e}^{-i(q_y-\pi/4)} & 0 \\ 
+0 & \mathrm{e}^{i(q_x-\pi/4)} & \mathrm{e}^{iq_x} & \mathrm{e}^{i(q_x+\pi/4)} \\ 
+\mathrm{e}^{i(q_y+\pi/4)} & 0 & \mathrm{e}^{i(q_y-\pi/4)} & \mathrm{e}^{iq_y} 
+\end{pmatrix}\]
+
+This \(4 \times 4\) structure at each wavevector incorporates the topological phases from path crossings. The eigenvalues of \((1-tT^*(\mathbf{q}))\) determine the partition function through the product of determinants over all momenta.
+
+Near criticality, the spectral gap—the difference between the largest and second-largest eigenvalues—closes as \(\Delta \sim \xi^{-1}\) where \(\xi\) is the correlation length. This gap determines the exponential decay rate of correlations: \(\langle\sigma(0)\sigma(r)\rangle \sim \mathrm{e}^{-r/\xi}\) for large separation. At the critical point, the gap vanishes, enabling power-law correlations.
+
+The transfer matrix spectrum connects statistical mechanics to quantum mechanics through the correspondence \(T = \mathrm{e}^{-H}\) where \(H\) represents a quantum Hamiltonian. Critical points map to quantum phase transitions at zero temperature. The Ising transfer matrix corresponds to a free fermion Hamiltonian in one dimension [[7.46]], explaining the exact solvability. The spectral gap becomes the mass gap in the quantum theory, with criticality corresponding to massless excitations.
+
+For finite systems, the spectrum consists of discrete levels whose spacing reveals finite-size scaling. The gap scales as \(\Delta_L \sim L^{-z}\) where \(z\) is the dynamic critical exponent. Level crossings as a function of temperature signal phase transitions even in finite systems. The full spectrum, not just the leading eigenvalue, contains information about the complete tower of scaling operators and their dimensions, connecting to conformal field theory in two dimensions.

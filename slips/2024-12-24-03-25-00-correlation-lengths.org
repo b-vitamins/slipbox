@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       f7c8a9d2-3b5e-4a6f-9c2d-8e7f6b4a1c3d
+:CUSTOM_ID: 92/306
+:END:
+#+TITLE: 7.50 Correlation Lengths
+#+FILETAGS: :physics:spof:ch7:series:correlation:lengths:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The correlation length \(\xi\) sets the fundamental scale for critical phenomena, diverging at phase transitions to enable long-range order. Different theoretical approaches yield consistent results for this central quantity, confirming the robustness of scaling theory.
+
+In the phantom loop approximation, the correlation length emerges from the small-momentum expansion of the propagator:
+
+\[\xi = \left(\frac{1-2dt}{t_c}\right)^{-1/2}\]
+
+where \(t = \tanh K\) and \(t_c = 1/(2d)\). This square-root divergence with exponent \(\nu = 1/2\) reflects the diffusive nature of random walks that dominate the phantom ensemble. Near criticality, \(\xi\) grows as the characteristic size of loops, which execute random walks covering spatial extent proportional to the square root of their length.
+
+The exact two-dimensional result modifies this behavior dramatically. The determinant structure yields a correlation length
+
+\[\xi \sim \left|\frac{t_c}{\delta t}\right| = \left|\frac{t_c}{t-t_c}\right|\]
+
+diverging with exponent \(\nu = 1\), twice the mean-field value. The doubling of \(\nu\) arises from intersection constraints that effectively repel loop segments, swelling configurations beyond their random walk size. The symmetric divergence above and below \(T_c\) reflects the self-dual nature of the critical point.
+
+Physical interpretation clarifies these results. The correlation length measures the spatial range over which spin fluctuations remain coherent. For \(T > T_c\), it sets the size of ordered domains in the paramagnetic phase. For \(T < T_c\), it characterizes the decay of fluctuations around the spontaneous magnetization. At criticality, \(\xi \to \infty\) enables the system-spanning correlations that define second-order phase transitions.
+
+The divergence of \(\xi\) has profound consequences. Thermodynamic quantities develop singularities through integrals over correlated volumes: susceptibility \(\chi \sim \int d^d\mathbf{r}\langle\sigma(0)\sigma(\mathbf{r})\rangle \sim \xi^{2-\eta}\), specific heat \(C \sim \xi^{\alpha/\nu}\), and correlation time \(\tau \sim \xi^z\). The correlation length thus serves as the fundamental quantity from which other divergences follow through scaling relations.
+
+Finite-size effects become important when \(\xi\) approaches system size \(L\). The transition appears rounded for \(\xi > L\), with true critical behavior emerging only in the thermodynamic limit. This interplay enables finite-size scaling analysis: measuring how quantities depend on \(L/\xi\) extracts infinite-system exponents from finite simulations. The correlation length thereby bridges microscopic models to macroscopic critical phenomena, embodying the scale-free physics that makes phase transitions universal.

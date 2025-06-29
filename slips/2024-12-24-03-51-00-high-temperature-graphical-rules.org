@@ -1,0 +1,72 @@
+:PROPERTIES:
+:ID:       a8f3d9e2-7b4c-4e5a-9f2d-8c6b1a3e5d7f
+:CUSTOM_ID: 92/332
+:END:
+#+TITLE: High-Temperature Graphical Rules
+#+FILETAGS: :physics:spof:ch7:series:graphical:rules:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The high-temperature expansion generates partition function terms through specific graphical rules that map bond configurations to statistical weights. These rules transform the abstract sum over spin configurations into a concrete enumeration of closed loops on the lattice.
+
+*Basic Rules*:
+
+1. *Bond occupation*: Each lattice bond is either empty (factor 1) or occupied by a line (factor $t = \tanh K$)
+
+2. *Vertex constraint*: Only 0, 2, or 4 lines can meet at any vertex
+   - 0 lines: $\sigma_i^0 = 1$ survives spin sum
+   - 2 lines: $\sigma_i^2 = 1$ survives  
+   - 4 lines: $\sigma_i^4 = 1$ survives
+   - Odd powers: $\sum_{\sigma_i=\pm 1} \sigma_i^{\text{odd}} = 0$
+
+3. *Result*: Only closed loops contribute to $Z$
+
+*First Terms on Square Lattice* (Figure 7.3):
+
+#+begin_example
+Term 1: Empty lattice
+○—○—○
+|   |   |
+○—○—○
+|   |   |  
+○—○—○
+Weight: 1
+
+Term 2: Single plaquette  
+○—●—○
+|   ■   |
+○—●—○
+Weight: t^4 × (number of plaquettes) = t^4 × N
+
+Term 3: Six-bond loops
+○—●—●—○        ○—○—○—○
+|   ■   ■   |        |   |   |   |
+○—○—○—○   OR   ●—●—●—○
+                    ■   |   ■
+                    ●—●—●—○
+Weight: t^6 × (number of configurations)
+#+end_example
+
+*Generating Function* (Figure 7.2):
+
+Each graph $G$ contributes $t^{|G|}$ where $|G|$ = number of bonds:
+
+$$Z = 2^N(\cosh K)^{N_b} \sum_{G \in \text{closed graphs}} t^{|G|}$$
+
+For $d$-dimensional hypercubic lattice:
+- Smallest loop: square with 4 bonds, $\binom{d}{2} \times N$ orientations
+- Next: 6-bond rectangles and bent paths
+- Weight of $\ell$-bond loop: $t^\ell$
+- Number of $\ell$-step closed walks starting at origin: key enumeration problem
+
+*Connection to Other Methods*:
+
+- *Phantom loops* [[7.24]]: Allow multiple bond occupation
+- *Exact 2D* [[7.8]]: Include $(-1)^{\text{crossings}}$ factor
+- *Transfer matrix* [[7.23]]: Generates all walks systematically
+
+*Physical Interpretation*:
+
+Each loop represents correlated spin regions. At low $t$, only small loops contribute (short-range order). As $t \to t_c$, loops of all sizes proliferate, establishing long-range correlations. The graphical rules thus translate thermal fluctuations into geometric objects whose statistics determine critical behavior.
+
+*Calculation Usage*: 
+To compute $\ln Z/N$ through Equation 7.14, enumerate all topologically distinct closed graphs, count their multiplicities accounting for lattice symmetries, and sum $t^{\text{bonds}}$ weighted by multiplicities.

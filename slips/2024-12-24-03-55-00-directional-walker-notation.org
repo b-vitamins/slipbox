@@ -1,0 +1,92 @@
+:PROPERTIES:
+:ID:       f8d3a9e2-4b67-4c89-a123-8b9c7d2e5f4a
+:CUSTOM_ID: 92/336
+:END:
+#+TITLE: 7.D6 Directional Walker Notation
+#+FILETAGS: :physics:spof:ch7:series:walker:notation:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Figures 7.20-7.21 establish the directional state notation that enables local implementation of Whitney's theorem. By tracking walker orientation at each site, the non-Markovian crossing problem becomes a Markovian evolution with enlarged state space.
+
+*State Space Convention* (Figure 7.20):
+#+begin_example
+        μ = 2
+         ↑
+         |
+μ = 3 ←—●—→ μ = 1
+         |
+         ↓
+        μ = 4
+#+end_example
+
+Each lattice site has four states:
+- \(\mu = 1\): Departing rightward →
+- \(\mu = 2\): Departing upward ↑
+- \(\mu = 3\): Departing leftward ←
+- \(\mu = 4\): Departing downward ↓
+
+*Transfer Matrix Structure* (Figure 7.21):
+
+The \(4 \times 4\) matrix \(T^*\) at each momentum encodes allowed transitions:
+
+#+begin_example
+From\To   →    ↑    ←    ↓
+  →      →→   →↑   ——   →↓
+  ↑      ↑→   ↑↑   ↑←   ——
+  ←      ——   ←↑   ←←   ←↓
+  ↓      ↓→   ——   ↓←   ↓↓
+#+end_example
+
+Where:
+- →→ : Straight motion (θ = 0)
+- →↑ : Left turn (θ = +π/2)
+- →↓ : Right turn (θ = -π/2)
+- —— : U-turn forbidden (no matrix element)
+
+*Phase Accumulation*:
+
+Each allowed transition carries phase \(\exp(i\theta/2)\):
+
+#+begin_example
+Transition  Angle θ   Phase factor
+→ to ↑      +π/2     e^(iπ/4)
+→ to →       0       1
+→ to ↓      -π/2     e^(-iπ/4)
+↑ to ←      +π/2     e^(iπ/4)
+...etc
+#+end_example
+
+*Matrix Elements* (Equation 7.67):
+
+\[\langle x'y',\mu'|T^*|xy,\mu\rangle = \delta_{x',x+\Delta x}\delta_{y',y+\Delta y} \times \exp(i\theta_{\mu'\mu}/2)\]
+
+where \((\Delta x, \Delta y)\) depends on departure direction \(\mu\).
+
+*Example: 4×4 Block for One Site*
+#+begin_example
+     |e^(-iq_x)        e^(-i(q_x-π/4))    0              e^(-i(q_x+π/4))  |
+T* = |e^(-i(q_y+π/4))  e^(-iq_y)         e^(-i(q_y-π/4)) 0               |
+     |0                e^(i(q_x-π/4))     e^(iq_x)        e^(i(q_x+π/4)) |
+     |e^(i(q_y+π/4))   0                  e^(i(q_y-π/4))  e^(iq_y)        |
+#+end_example
+
+*Closing Loops*:
+
+For a path to form a closed loop starting and ending at origin:
+1. Must return to starting position: spatial closure
+2. Must have consistent direction: \(\mu_{\text{final}} = \mu_{\text{initial}}\)
+
+Total loops: \(\sum_{\mu=1}^4 \langle 00,\mu|T^{*\ell}|00,\mu\rangle\)
+
+*Advantages of Directional Tracking*:
+
+1. *Local phases*: Each turn contributes immediately to total phase
+2. *No memory needed*: Walker needs only current direction
+3. *Automatic U-turn exclusion*: Matrix structure forbids \(\mu \to -\mu\)
+4. *Preserves Markovian property*: Despite global constraints
+
+*Physical Meaning*:
+
+The four states represent domain wall orientations in the original spin model. A walker going rightward corresponds to a vertical domain wall with spins ↑ above and ↓ below. Turns represent corners where domain walls change direction, and the accumulated phase tracks the domain's topology.
+
+This notation transforms the two-dimensional Ising model into a one-dimensional quantum problem with internal degrees of freedom, enabling exact solution through transfer matrix diagonalization.

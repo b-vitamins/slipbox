@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       f3d8e9a2-7b4c-4e5f-9a1d-8c6b3d9e7f5a
+:CUSTOM_ID: 92/297
+:END:
+#+TITLE: Critical Point Exact Values
+#+FILETAGS: :physics:spof:ch7:series:critical:exact:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The location of critical points emerges from distinct theoretical approaches that converge on precise values, demonstrating the deep consistency of statistical mechanics. For the two-dimensional Ising model on the square lattice, the self-duality condition uniquely determines
+
+\[K_c = \frac{1}{2}\ln(\sqrt{2}+1) = 0.4406867935...\]
+
+This value satisfies the self-dual equation \(\mathrm{e}^{-2K_c} = \tanh K_c\), which reduces to \(\mathrm{e}^{-4K_c} + 2\mathrm{e}^{-2K_c} - 1 = 0\). The physical root \(\mathrm{e}^{-2K_c} = \sqrt{2} - 1\) corresponds to \(T_c = 2J/[\kappa_B\ln(1+\sqrt{2})] \approx 2.269J/\kappa_B\), placing the transition at finite temperature as required.
+
+The same critical point emerges from entirely different analyses. In terms of the expansion parameter \(t = \tanh K\), the critical value is \(t_c = \sqrt{2} - 1 \approx 0.4142\). The exact solution via transfer matrices [[7.8]] confirms this value through the vanishing of the determinant \(\det(1-t_cT^*(\mathbf{0}))\). The high-temperature series analysis yields the same result from the convergence radius of the loop expansion.
+
+The phantom loop approximation provides instructive comparison. Without intersection constraints, the critical point occurs at \(t_c^{\text{phantom}} = 1/(2d) = 1/4\) for the square lattice. The ratio \(t_c/t_c^{\text{phantom}} = 4(\sqrt{2}-1) \approx 1.657\) quantifies how self-avoidance shifts the transition. This enhancement reflects the effective repulsion between loop segments, requiring stronger coupling to achieve criticality.
+
+Higher-dimensional generalizations lack exact results but benefit from bounds and approximations. The mean-field prediction \(t_c = 1/(2d)\) becomes increasingly accurate as dimension increases, with corrections vanishing as \(1/d\). Series expansions yield \(K_c \approx 0.22165\) for the three-dimensional cubic lattice, while Monte Carlo simulations refine this to \(K_c = 0.2216544(3)\). The approach to mean-field behavior validates the upper critical dimension \(d_u = 4\) above which fluctuations become irrelevant.
+
+The remarkable precision of these critical points enables stringent tests of theoretical predictions. Experimental realizations in magnetic systems, binary alloys, and liquid-gas transitions confirm these values within experimental uncertainty. The agreement between abstract mathematical conditions like self-duality and physical measurements of real materials exemplifies the power of universality in critical phenomena. The exact solvability of two-dimensional systems provides benchmarks for approximate methods applied to more complex problems where exact solutions remain elusive.

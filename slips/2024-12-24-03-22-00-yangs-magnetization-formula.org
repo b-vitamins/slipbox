@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       e7f3c2d4-8a9b-4c56-b1e2-3f5a7d9c8e61
+:CUSTOM_ID: 92/303
+:END:
+#+TITLE: Yang's Magnetization Formula
+#+FILETAGS: :physics:spof:ch7:series:yang:magnetization:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Yang's derivation of the spontaneous magnetization for the two-dimensional Ising model completed Onsager's program by providing the order parameter that directly characterizes the ferromagnetic phase. The exact result
+
+\[m = \begin{cases}
+\left(1 - \sinh^{-4}(2K)\right)^{1/8} & \text{for } T < T_c \\
+0 & \text{for } T \geq T_c
+\end{cases}\]
+
+reveals the delicate nature of two-dimensional order through its weak power-law onset with exponent \(\beta = 1/8\).
+
+The formula's structure encodes deep physics. The argument \(1 - \sinh^{-4}(2K)\) vanishes at the critical point where \(\sinh(2K_c) = 1\), consistent with the self-dual condition. For low temperatures where \(K \to \infty\), the magnetization approaches unity as \(m \approx 1 - \frac{1}{8}\mathrm{e}^{-8K}\), showing that even at zero temperature, quantum fluctuations (manifested through the transfer matrix formalism) prevent perfect alignment.
+
+Near the critical temperature, the formula yields the scaling behavior
+
+\[m \approx B(T_c - T)^{1/8}\]
+
+where the critical amplitude \(B\) can be calculated from the expansion of \(\sinh^{-4}(2K)\) near \(K_c\). The exponent \(\beta = 1/8\) is remarkably small—the smallest possible value consistent with the rigorous inequality \(\beta \geq 1/(2\delta) = 1/30\) derived from thermodynamic stability.
+
+Yang's derivation required sophisticated analysis of the Onsager transfer matrix in the thermodynamic limit. The key insight involved examining the matrix elements between states of opposite magnetization, whose ratio determines the spontaneous symmetry breaking. The calculation demands careful handling of boundary conditions and the limit where system size approaches infinity before the symmetry-breaking field vanishes.
+
+The eighth-root singularity has profound implications. It implies that the ordered phase emerges extremely gradually—much more so than mean-field theory's square-root behavior (\(\beta = 1/2\)). This weak singularity reflects the marginal stability of two-dimensional order against thermal fluctuations. Indeed, continuous symmetries cannot order in two dimensions (Mermin-Wagner theorem), and the discrete Ising symmetry only barely permits long-range order.
+
+Modern perspectives connect Yang's result to conformal field theory, where \(\beta = 1/8\) emerges from the scaling dimension of the order parameter field in the minimal model with central charge \(c = 1/2\). The magnetization curve's entire functional form, not just its critical exponent, provides stringent tests for numerical methods and series expansions. Yang's formula thus stands as both a computational triumph and a window into the subtle nature of phase transitions in reduced dimensions.

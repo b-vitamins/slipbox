@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       a3f7d891-2b4c-4e5a-9f12-8c3d7e9a2b51
+:CUSTOM_ID: 92/291
+:END:
+#+TITLE: 7.23 Transfer Matrix Construction
+#+FILETAGS: :physics:spof:ch7:series:transfermatrix:construction:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The transfer matrix method transforms the enumeration of lattice paths into a linear algebra problem, enabling exact calculation of partition functions and correlation functions through eigenvalue analysis. The fundamental insight recognizes that random walks possess the Markovian property: each step depends only on the current position, not the path history. This allows recursive construction of all paths through matrix multiplication.
+
+The basic transfer matrix \(T\) encodes single-step connectivity on the lattice:
+
+\[\langle\mathbf{r}|T|\mathbf{r}'\rangle = \begin{cases}1 & \text{if }\mathbf{r}\text{ and }\mathbf{r}'\text{ are nearest neighbors} \\ 0 & \text{otherwise}\end{cases}\]
+
+This adjacency matrix generates all \(\ell\)-step walks through the fundamental recursion relation
+
+\[W(\ell) = T^{\ell}\]
+
+where \(\langle\mathbf{r}|W(\ell)|\mathbf{r}'\rangle\) counts paths of length \(\ell\) from \(\mathbf{r}'\) to \(\mathbf{r}\). The proof follows from the Markovian decomposition: any \(\ell\)-step path consists of an \((\ell-1)\)-step path followed by a single step, summing over intermediate positions yields matrix multiplication.
+
+Translational symmetry renders the transfer matrix diagonal in momentum space. The Fourier basis states \(|\mathbf{q}\rangle\) with \(\langle\mathbf{r}|\mathbf{q}\rangle = \mathrm{e}^{i\mathbf{q}\cdot\mathbf{r}}/\sqrt{N}\) are eigenvectors with eigenvalues
+
+\[T(\mathbf{q}) = 2\sum_{\alpha=1}^{d}\cos q_\alpha\]
+
+This result follows from the nearest-neighbor structure: moving in direction \(\pm\hat{\alpha}\) contributes phase factors \(\mathrm{e}^{\pm iq_\alpha}\), summing to \(2\cos q_\alpha\). The spectrum immediately reveals critical properties—the maximum eigenvalue \(T(\mathbf{0}) = 2d\) governs long-distance behavior.
+
+Physical quantities emerge from spectral properties. The two-point correlation function, expressed as a path sum \(\langle\sigma(\mathbf{0})\sigma(\mathbf{r})\rangle \approx \sum_\ell t^\ell\langle\mathbf{r}|T^\ell|\mathbf{0}\rangle\), becomes a geometric series in transfer matrix powers. Evaluating in the eigenbasis yields
+
+\[\langle\sigma(\mathbf{0})\sigma(\mathbf{r})\rangle = \int\frac{\mathrm{d}^d\mathbf{q}}{(2\pi)^d}\frac{\mathrm{e}^{i\mathbf{q}\cdot\mathbf{r}}}{1-tT(\mathbf{q})}\]
+
+The denominator vanishes when \(tT(\mathbf{0}) = 1\), marking the critical point at \(t_c = 1/(2d)\) where paths of arbitrary length proliferate.
+
+The transfer matrix formalism extends beyond simple connectivity. For exact solutions accounting for path intersections [[id:7.35]], directional information augments the state space, yielding \(4N \times 4N\) matrices in two dimensions. Each matrix element acquires a phase factor tracking the path's winding. For spin models with continuous symmetries, the transfer matrix becomes an operator in function space, connecting to quantum field theory through the path integral formulation. The method's power lies in reducing statistical sums over exponentially many configurations to algebraic operations on finite-dimensional matrices, enabling both analytical insights and efficient numerical computations.

@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       a7f3d2c8-9e5b-4d1f-b3a2-6c8e7f4a2b9d
+:CUSTOM_ID: 92/304
+:END:
+#+TITLE: Wilson Loop Results
+#+FILETAGS: :physics:spof:ch7:series:wilson:results:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Wilson loop serves as the fundamental probe of gauge theories, distinguishing confined and deconfined phases through the asymptotic scaling of loop expectation values. For the $\mathbb{Z}_2$ gauge theory dual to the three-dimensional Ising model, the Wilson loop observable $C_S = \langle\prod_{i \in S}\tilde{\sigma}_i\rangle$ exhibits qualitatively different behavior across the phase transition.
+
+In the high-temperature phase, minimal area surfaces dominate:
+
+$$C_S \approx \exp[-\sigma(\tilde{K}) \times \text{Area}(S)]$$
+
+where the string tension $\sigma(\tilde{K}) = -\ln\tanh\tilde{K}$ remains finite. This area law signifies confinement: separating test charges requires energy proportional to distance, mediated by a flux tube of constant energy density. The physical picture involves chromoelectric flux compressed into strings by the disordered gauge field vacuum.
+
+The low-temperature phase exhibits perimeter law scaling:
+
+$$C_S \approx \exp[-\mu(\tilde{K}) \times \text{Perimeter}(S)]$$
+
+with $\mu(\tilde{K}) \approx 2\mathrm{e}^{-8\tilde{K}}$ vanishing exponentially at low temperature. This perimeter law indicates deconfinement: well-separated charges interact with finite energy, allowing arbitrary separation. The ordered gauge field permits flux to spread freely rather than forming strings.
+
+The transition between these regimes occurs precisely at the dual of the Ising critical point. By Kramers-Wannier duality [[7.14]], the gauge theory critical coupling satisfies $\mathrm{e}^{-2\tilde{K}_c} = \tanh K_c^{\text{Ising}}$, placing the confinement transition at the same temperature as Ising ordering. This correspondence is exact: the gauge theory partition function equals the Ising partition function up to trivial factors.
+
+The Wilson loop distinguishes phases without local order parameter, circumventing Elitzur's theorem which forbids spontaneous breaking of gauge symmetry [[7.9]]. Instead of measuring local field expectation values (which vanish identically), the Wilson loop probes the free energy cost of creating separated sources. The area-perimeter transition represents a change in the vacuum structure invisible to local measurements.
+
+Physical interpretation emerges from viewing one dimension as time. A rectangular Wilson loop of spatial extent $L$ and temporal extent $T$ represents pair creation, separation to distance $L$, propagation for time $T$, and annihilation. The amplitude $C_S \sim \exp(-V(L)T)$ reveals the potential $V(L)$. Confinement yields a linear potential $V(L) = \sigma L$, while deconfinement gives $V(L) \to \text{const}$ for large separation.
+
+These results extend to non-Abelian gauge theories modeling the strong interaction. Quantum chromodynamics exhibits confinement at low energies (large distances) where quarks bind into hadrons, transitioning to asymptotic freedom at high energies (short distances) where quarks behave as free particles. The lattice gauge theory provides a non-perturbative framework for understanding this fundamental phenomenon, with Wilson loops as the primary diagnostic tool.

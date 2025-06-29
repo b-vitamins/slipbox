@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       a7b8c9d0-e1f2-3456-7890-abcdef123456
+:CUSTOM_ID: 92/307
+:END:
+#+TITLE: Singular Parts Catalog
+#+FILETAGS: :physics:spof:ch7:series:singular:catalog:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The singular components of free energy near critical points reveal how different approximations capture the essential physics of phase transitions. Comparing these singularities across methods illuminates the role of constraints and dimensionality in determining critical behavior.
+
+For phantom loops in arbitrary dimension, the singular free energy scales as
+
+\[f_{\text{sing}}^{\text{phantom}} \propto \xi^{-d} \propto (t_c - t)^{d/2}\]
+
+This mean-field form follows from dimensional analysis: the correlation length provides the only relevant scale, and free energy density must scale as \(\xi^{-d}\) to maintain extensivity. The resulting specific heat exponent \(\alpha = 2 - d/2\) predicts logarithmic divergence in two dimensions and increasingly weak singularities in higher dimensions.
+
+The phantom result for two dimensions specifically yields
+
+\[f_{\text{sing}}^{\text{phantom}} = \frac{1}{2\pi}\left(\frac{\delta t}{t_c}\right)\ln\left(\frac{\delta t}{t_c}\right)\]
+
+where the logarithm arises from momentum integration near the critical point. The linear dependence on \(\delta t = t_c - t\) reflects the unconstrained nature of phantom loops.
+
+The exact two-dimensional solution profoundly modifies this structure:
+
+\[f_{\text{sing}}^{\text{exact}} = -\frac{1}{\pi}\left(\frac{\delta t}{t_c}\right)^2\ln\left|\frac{\delta t}{t_c}\right|\]
+
+The quadratic dependence on \(\delta t\) emerges from intersection constraints that prevent the argument of the logarithm from vanishing linearly. This modification changes the specific heat from diverging as \((\delta t)^{-1}\) to the weaker logarithmic divergence, demonstrating how topological constraints alter critical behavior.
+
+These singular forms encode universal information through critical amplitudes. The ratio of exact to phantom amplitudes quantifies the effect of self-avoidance. The factor of two difference (1/π versus 1/2π) combined with the different power of \(\delta t\) reveals how significantly intersections modify the free energy landscape near criticality.
+
+For three-dimensional systems, series expansions suggest \(f_{\text{sing}} \propto |t-t_c|^{2-\alpha}\) with \(\alpha \approx 0.11\), intermediate between logarithmic (α=0) and mean-field jump (α=0 for d=4). This non-trivial exponent cannot be calculated exactly but follows from the irrelevant but dangerous role of quartic interactions below four dimensions.
+
+The catalog of singular forms demonstrates a fundamental principle: while critical points are special, their singularities follow universal patterns. The precise form—whether power law, logarithmic, or essential singularity—depends on dimension and symmetry, but the existence of scaling near transitions transcends specific models. These singularities, arising from the competition between energy and entropy at all length scales, represent nature's solution to optimizing order in the presence of fluctuations.

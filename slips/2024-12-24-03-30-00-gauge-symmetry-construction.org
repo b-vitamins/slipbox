@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       b3f4a7e2-9d1c-4a52-8f3e-c2d5f8a9b6e4
+:CUSTOM_ID: 92/311
+:END:
+#+TITLE: 7.19 Gauge Symmetry Construction
+#+FILETAGS: :physics:spof:ch7:series:gauge:symmetry:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Gauge symmetry emerges naturally in the dual description of statistical models, transforming global symmetries into local ones through the reorganization of degrees of freedom. This construction reveals how fundamental principles of particle physics arise from condensed matter systems.
+
+The $\mathbb{Z}_2$ gauge theory dual to the three-dimensional Ising model exemplifies this emergence. Starting with bond spins $\tilde{\sigma}_i = \pm 1$ and plaquette interactions $\tilde{\sigma}_P^1\tilde{\sigma}_P^2\tilde{\sigma}_P^3\tilde{\sigma}_P^4$, the gauge transformation at site $j$ flips all bonds connected to that site:
+
+$$\tilde{\sigma}_{(j,\mu)} \to -\tilde{\sigma}_{(j,\mu)} \quad \text{for all directions } \mu$$
+
+Each plaquette touching site $j$ contains exactly two bonds emanating from $j$. Their product remains invariant under the transformation, preserving the total energy. This local symmetry holds at every site independently, generating a gauge group with $2^N$ elements.
+
+The distinction between global and local symmetries proves fundamental. The original Ising model possesses global $\mathbb{Z}_2$ symmetry: flipping all spins simultaneously leaves the energy unchanged. This symmetry can spontaneously break below $T_c$, selecting one of two magnetized states. By contrast, local gauge symmetry cannot break spontaneously—Elitzur's theorem guarantees that $\langle\tilde{\sigma}_i\rangle = 0$ identically, even in ordered phases [[id:7.9][7.9]].
+
+Physical observables must respect gauge invariance. Single bond operators $\tilde{\sigma}_i$ are gauge-variant and therefore unphysical. Only gauge-invariant combinations like Wilson loops $\prod_{i \in \text{loop}} \tilde{\sigma}_i$ or plaquette products have non-zero expectation values. This constraint dramatically reduces the space of physical observables, explaining why local order parameters cannot exist.
+
+The gauge symmetry construction extends systematically. Starting with any global symmetry group $G$, promoting it to a local symmetry requires:
+- Placing group elements on links
+- Defining matter fields transforming at sites  
+- Constructing invariant interactions from closed paths
+
+For continuous groups, parallel transport and covariant derivatives emerge naturally. The discrete $\mathbb{Z}_2$ case represents the simplest non-trivial example.
+
+Matter fields couple minimally to gauge fields through modified kinetic terms. For Ising spins $s_i$ on sites:
+
+$$-\beta\mathcal{H}_{\text{matter}} = J\sum_{\langle i,j \rangle} s_i\tilde{\sigma}_{ij}s_j$$
+
+Gauge transformations act as $s_i \to -s_i$ and $\tilde{\sigma}_{(i,\mu)} \to -\tilde{\sigma}_{(i,\mu)}$ at site $i$, preserving invariance. This coupling, analogous to the minimal coupling in electromagnetism, allows matter to probe the gauge field configuration.
+
+The profound implication is that gauge theories need not be fundamental. They emerge whenever we reorganize degrees of freedom to make local symmetries manifest. This perspective, developed in condensed matter physics, now influences particle physics through ideas like emergent gravity and gauge-gravity duality.

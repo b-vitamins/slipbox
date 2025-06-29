@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       f8a9e2c1-3b5d-4a7e-9c6f-2d8e1f4a9b3c
+:CUSTOM_ID: 92/284
+:END:
+#+TITLE: 7.5 Two-Dimensional Duality Relations
+#+FILETAGS: :physics:spof:ch7:series:duality:twodimensional:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Kramers-Wannier duality reveals a hidden symmetry relating the square lattice Ising model at high and low temperatures through a remarkable correspondence between their series expansions. The low-temperature expansion takes the form
+
+\[Z = \mathrm{e}^{2NK}\left[1 + N\mathrm{e}^{-4 \times 2K} + 2N\mathrm{e}^{-6 \times 2K} + \cdots\right] = \mathrm{e}^{2NK}\sum_{\text{Islands of (-) spins}}\mathrm{e}^{-2K \times \text{perimeter of island}}\]
+
+while the high-temperature series reads
+
+\[Z = 2^N\cosh K^{2N}\left[1 + N\tanh K^4 + 2N\tanh K^6 + \cdots\right] = 2^N\cosh K^{2N}\sum_{\text{graphs with 2 or 4 lines per site}}\tanh K^{\text{length of graph}}\]
+
+The crucial observation is that boundaries of spin islands serve as acceptable high-temperature graphs and vice versa, establishing a one-to-one correspondence between terms [[7.D3]]. Defining \(g\) to denote the logarithm of either series, the free energy satisfies
+
+\[\frac{\ln Z}{N} = 2K + g(\mathrm{e}^{-2K}) = \ln 2 + 2\ln\cosh K + g(\tanh K)\]
+
+The arguments of \(g\) are related by the duality transformation
+
+\[\mathrm{e}^{-2\tilde{K}} \leftrightarrow \tanh K, \Longrightarrow \tilde{K} = D(K) \equiv -\frac{1}{2}\ln\tanh K\]
+
+This mapping possesses remarkable properties. Using trigonometric identities, one establishes
+
+\[\sinh 2K = \frac{2\tanh K}{1-\tanh^2 K} = \frac{2\mathrm{e}^{-2\tilde{K}}}{1-\mathrm{e}^{-4\tilde{K}}} = \frac{1}{\sinh 2\tilde{K}}\]
+
+yielding the symmetric relation
+
+\[\sinh 2K \cdot \sinh 2\tilde{K} = 1\]
+
+Since \(D(D(K)) = K\), the transformation connects pairs of points, mapping low temperatures to high and vice versa. If \(g(K)\) has a singularity at \(K_c\), it must also be singular at \(\tilde{K}_c\). With the free energy expected to be analytic everywhere except at transitions, the critical point must be self-dual: \(\mathrm{e}^{-2K_c} = \tanh K_c\). This condition yields the quadratic equation \(\mathrm{e}^{-4K_c} + 2\mathrm{e}^{-2K_c} - 1 = 0\), whose physical solution gives
+
+\[K_c = -\frac{1}{2}\ln(\sqrt{2}-1) = \frac{1}{2}\ln(\sqrt{2}+1) = 0.441\cdots\]
+
+The duality extends beyond location of the critical point: it constrains amplitude ratios to unity for many quantities, though provides no direct information about critical exponents. The self-dual nature of the two-dimensional Ising model stands as a special property not shared by its three-dimensional counterpart [[7.6]], making it amenable to exact solution.

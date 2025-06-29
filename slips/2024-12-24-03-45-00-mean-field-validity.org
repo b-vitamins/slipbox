@@ -1,0 +1,47 @@
+:PROPERTIES:
+:ID:       3d8f5a92-b4c7-4e8d-9fa0-c1d2e3f4a5b6
+:CUSTOM_ID: 92/326
+:END:
+#+TITLE: 7.48 Mean Field Validity
+#+FILETAGS: :physics:spof:ch7:series:meanfield:validity:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Mean-field theory becomes exact above the upper critical dimension \(d_u = 4\), where fluctuations contribute only subdominant corrections to the saddle-point approximation. Understanding when and why mean-field theory succeeds illuminates the role of fluctuations in phase transitions.
+
+The Landau-Ginzburg free energy functional
+
+\[\mathcal{F}[\phi] = \int \mathrm{d}^d\mathbf{r} \left[\frac{1}{2}(\nabla\phi)^2 + \frac{1}{2}r\phi^2 + \frac{1}{4!}g\phi^4\right]\]
+
+admits a saddle-point solution \(\phi_0 = \text{const}\) minimizing \(\mathcal{F}\). Mean-field theory evaluates the partition function at this saddle point, neglecting fluctuations \(\delta\phi = \phi - \phi_0\).
+
+The validity criterion emerges from comparing fluctuation corrections to the mean-field result. Gaussian fluctuations contribute
+
+\[\Delta F \sim \int \frac{\mathrm{d}^d\mathbf{k}}{(2\pi)^d} \ln(k^2 + r) \sim \int_0^{\Lambda} k^{d-1}\mathrm{d}k \ln(k^2 + r)\]
+
+For \(d > 2\), this integral converges, giving finite corrections. The quartic term generates additional contributions:
+
+\[\Delta F_{g} \sim g \int \frac{\mathrm{d}^d\mathbf{k}}{(2\pi)^d} \frac{1}{(k^2 + r)^2} \sim g\int_0^{\Lambda} \frac{k^{d-1}\mathrm{d}k}{k^4}\]
+
+This integral converges for \(d > 4\), making \(g\) irrelevant in the renormalization group sense. Mean-field theory becomes asymptotically exact as \(r \to 0\) (approaching criticality).
+
+Physical interpretation through the loop expansion [[7.28]]: fluctuations correspond to loops that can intersect. Above \(d = 4\), the fractal dimension of random walks (\(d_f = 2\)) ensures rare intersections. The phantom loop approximation, which neglects intersections entirely, reproduces mean-field exponents exactly.
+
+Ginzburg criterion quantifies when fluctuations matter. The correlation volume \(\xi^d\) should contain many fluctuating units for mean-field validity:
+
+\[\frac{\langle\phi^2\rangle_{\text{fluct}}}{\phi_0^2} \sim \frac{T}{\xi^{d-2}\phi_0^2} \ll 1\]
+
+Near criticality where \(\xi \to \infty\), this requires \(d > d_u = 4\) for the Ising universality class.
+
+Signatures of mean-field behavior:
+- Critical exponents: \(\beta = 1/2\), \(\gamma = 1\), \(\nu = 1/2\), \(\eta = 0\)
+- Jump discontinuity in specific heat (\(\alpha = 0\) for \(d = 4\))
+- No singular corrections to scaling
+- Equation of state follows Landau theory
+
+Below \(d_u = 4\), fluctuations fundamentally alter critical behavior:
+- Exponents become non-classical and dimension-dependent
+- Scaling functions acquire universal but non-Gaussian forms
+- Perturbation theory requires infinite resummation
+- Crossover phenomena emerge near \(d = 4\)
+
+Mean-field theory's validity above \(d_u\) provides crucial insights. It justifies classical treatments in high dimensions, explains why many materials show near-mean-field behavior, establishes the starting point for systematic expansions, and reveals fluctuations as the origin of universality. The dimension four emerges not as fundamental but as the geometric consequence of random walks in Euclidean space.

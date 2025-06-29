@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       f8e9c7a4-2b5d-4e6f-9a1c-8d3f5e2a7b94
+:CUSTOM_ID: 92/318
+:END:
+#+TITLE: 7.32 Percolation Connection
+#+FILETAGS: :physics:spof:ch7:series:percolation:connection:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The high-temperature expansion reveals an intimate connection between thermal phase transitions and geometric percolation: magnetic ordering occurs when clusters of correlated spins percolate through the system. This correspondence maps thermodynamic criticality onto purely geometric phenomena.
+
+In the graphical representation, bonds with weight \(t = \tanh K\) can be viewed as occupied with probability \(t\). The high-temperature expansion generates all possible bond configurations:
+
+\[Z = 2^N(\cosh K)^{N_b}\sum_{\text{graphs}} t^{|\text{bonds in graph}|}\]
+
+Interpreting this probabilistically, each configuration appears with probability \(t^{|b|}(1-t)^{N_b-|b|}\), precisely the bond percolation ensemble.
+
+The correspondence maps:
+- Thermal correlation length → Percolation correlation length  
+- Magnetic susceptibility → Mean cluster size
+- Spontaneous magnetization → Infinite cluster density
+- Critical temperature → Percolation threshold
+
+For random percolation on a \(d\)-dimensional hypercubic lattice, the critical probability is \(p_c \approx 1/(2d)\) for large \(d\), matching the phantom loop result \(t_c = 1/(2d)\). This agreement is not coincidental—both describe the proliferation of connected structures.
+
+The Fortuin-Kasteleyn representation makes this precise. The partition function can be rewritten as
+
+\[Z = \sum_{\text{bond configs}} 2^{N_{\text{clusters}}} t^{|b|}(1-t)^{N_b-|b|}\]
+
+where \(N_{\text{clusters}}\) counts connected components. Each cluster contributes factor 2 from independently choosing spin orientation. This representation simultaneously encodes thermal and percolative properties.
+
+Near the percolation threshold, geometric quantities exhibit power-law scaling:
+- Cluster size distribution: \(n_s \sim s^{-\tau}\) 
+- Correlation length: \(\xi \sim |p-p_c|^{-\nu_{\text{perc}}}$
+- Infinite cluster density: \(P_\infty \sim (p-p_c)^{\beta_{\text{perc}}}$
+
+These exponents generally differ from thermal exponents due to the different weights in the partition function. However, for the \(q \to 1\) limit of the Potts model, thermal and percolation transitions coincide exactly.
+
+The percolation picture provides intuitive understanding of phase transitions. Below \(T_c\), an infinite cluster spans the system, maintaining long-range order. Thermal fluctuations fragment this cluster, with the correlation length measuring typical fragment size. At \(T_c\), the infinite cluster just disappears, marking the order-disorder transition.
+
+This geometric view enables powerful algorithms. Cluster algorithms exploit the percolation representation to achieve critical slowing down with \(z < 2\). Sweeping through clusters rather than single spins updates correlated regions efficiently. The Swendsen-Wang and Wolff algorithms implement this strategy, revolutionizing Monte Carlo simulations near criticality.
+
+The percolation connection extends beyond classical systems. Quantum phase transitions map to classical percolation in higher dimensions. Directed percolation describes non-equilibrium phase transitions. The profound lesson is that phase transitions, whether thermal, quantum, or dynamic, share a common geometric origin in the emergence of system-spanning structures.

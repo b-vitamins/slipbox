@@ -1,0 +1,72 @@
+:PROPERTIES:
+:ID:       e3f8c9b5-2d4a-4b1c-9e7f-6a8d3c5f2b90
+:CUSTOM_ID: 92/333
+:END:
+#+TITLE: 7.D3 Duality Correspondence Visual
+#+FILETAGS: :physics:spof:ch7:series:duality:visual:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Kramers-Wannier duality emerges from a precise one-to-one mapping between configurations in the low-temperature and high-temperature expansions. Figure 7.5 illustrates this correspondence through the geometric equivalence of spin domain boundaries and closed loops.
+
+*Low-Temperature Configuration*:
+#+begin_example
++ + + + + +
++ + - - + +
++ - - - - +
++ - - - - +
++ + - - + +
++ + + + + +
+#+end_example
+Domain boundary forms closed curve around (-) spin islands.
+
+*Dual High-Temperature Graph*:
+#+begin_example
+○—○—○—○—○—○
+|   |   |   |   |   |
+○—○—●—●—○—○
+|   ●       ●   |
+○—●—○—○—●—○
+|   ●       ●   |  
+○—○—●—●—○—○
+|   |   |   |   |   |
+○—○—○—○—○—○
+#+end_example
+Occupied bonds (●—●) trace the domain boundary.
+
+*Key Observations*:
+
+1. *Boundary ↔ Loop*: Every boundary of overturned spins forms a valid closed graph, and vice versa
+
+2. *Weight Correspondence*:
+   - Low-T: $\exp(-2K \times \text{perimeter})$
+   - High-T: $(\tanh K)^{\text{length}}$
+   - Duality requires: $\mathrm{e}^{-2\tilde{K}} = \tanh K$
+
+3. *Term Matching*: The $n$th term in both expansions counts configurations with the same perimeter/length
+
+*Mathematical Proof of Correspondence*:
+
+Low-temperature partition function:
+$$Z_{\text{low}} = \mathrm{e}^{2NK}\sum_{\text{boundaries}} \mathrm{e}^{-2K \times |\partial|}$$
+
+High-temperature partition function:
+$$Z_{\text{high}} = 2^N(\cosh K)^{2N}\sum_{\text{loops}} (\tanh K)^{|L|}$$
+
+The sums contain identical terms when boundaries $\partial$ and loops $L$ are identified, with $|\partial| = |L|$.
+
+*Implications*:
+
+1. *Critical Point*: Self-dual point where $K_c = \tilde{K}_c$ determines transition
+
+2. *Symmetry*: Free energy functions satisfy $f(K) - f_0(K) = f(\tilde{K}) - \tilde{f}_0(\tilde{K})$ where $f_0$ are analytic backgrounds
+
+3. *Extensions*: 
+   - Potts model: boundaries separate $q$ different spin states
+   - 3D: correspondence fails due to dimension mismatch [[7.D9]]
+
+*Visual Counting Example*:
+- 4-bond square boundary = 4-bond square loop: both have $N$ orientations
+- 6-bond rectangle boundary = 6-bond rectangular loop: both have $2N$ configurations
+- Complex shapes: boundary topology determines loop topology uniquely
+
+This visual correspondence transforms the abstract duality relation into a concrete geometric mapping, making manifest why the two-dimensional Ising model possesses exact self-duality at the critical point.

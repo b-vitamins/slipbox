@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       e3f8a4b2-9c7d-4f6a-8e1b-5a2c3d4f7e8b
+:CUSTOM_ID: 92/320
+:END:
+#+TITLE: Field-Particle Duality
+#+FILETAGS: :physics:spof:ch7:series:duality:fieldparticle:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The high-temperature expansion reveals a fundamental duality between field and particle descriptions: spin correlations propagate either as field fluctuations or as paths of particles hopping through space-time. This equivalence, manifest in the path integral formulation, unifies statistical mechanics with quantum field theory.
+
+In the field picture, correlations arise from the propagator $G(\mathbf{r}) = \langle\phi(\mathbf{r})\phi(0)\rangle$ satisfying $(-\nabla^2 + m^2)G = \delta(\mathbf{r})$. Near criticality where $m \to 0$, long-wavelength modes dominate, yielding power-law correlations. This continuum description emerges from coarse-graining microscopic spins into smooth fields.
+
+The particle picture expresses the same correlations as [[id:7.26]]
+
+$$\langle\sigma(\mathbf{0})\sigma(\mathbf{r})\rangle = \sum_{\text{paths}} (\text{weight})^{\text{length}}$$
+
+Each path represents a particle trajectory from $\mathbf{0}$ to $\mathbf{r}$, weighted by hopping amplitude $t = \tanh K$ per step. The sum over all paths generates the full propagator, with quantum interference between different trajectories determining the final amplitude.
+
+The mathematical equivalence follows from the identity
+
+$$\frac{1}{-\nabla^2 + m^2} = \int_0^{\infty} \mathrm{d}\tau\, \mathrm{e}^{-(-\nabla^2 + m^2)\tau} = \int_0^{\infty} \mathrm{d}\tau\, \mathrm{e}^{\tau\nabla^2}\mathrm{e}^{-m^2\tau}$$
+
+The operator $\mathrm{e}^{\tau\nabla^2}$ evolves a particle by diffusion time $\tau$, while $\mathrm{e}^{-m^2\tau}$ provides exponential damping. Discretizing this evolution generates exactly our lattice path sum.
+
+Critical phenomena emerge when paths proliferate. In the particle language, $t \to t_c$ allows arbitrarily long trajectories, corresponding to $m \to 0$ in field language. The correlation length $\xi \sim m^{-1}$ measures typical path extent. Power-law correlations at criticality reflect the scale-invariant nature of massless particles following fractal trajectories.
+
+The duality extends to interactions. $\phi^4$ field theory corresponds to paths that can intersect, with coupling constant measuring intersection weight. The upper critical dimension $d_u = 4$ emerges because random walk paths (fractal dimension 2) rarely meet in dimensions above 4. Below $d_u$, frequent intersections generate anomalous exponents absent in free field theory.
+
+Quantum mechanics strengthens the correspondence. The path integral
+
+$$\langle\mathbf{r}|\mathrm{e}^{-Ht}|\mathbf{0}\rangle = \int_{\mathbf{x}(0)=\mathbf{0}}^{\mathbf{x}(t)=\mathbf{r}} \mathcal{D}\mathbf{x}(\tau)\, \mathrm{e}^{-\int_0^t \mathcal{L}[\mathbf{x}(\tau)]\mathrm{d}\tau}$$
+
+weights each trajectory by its action, generalizing our discrete path sum. Statistical mechanics at temperature $T$ maps to quantum mechanics in imaginary time $\beta = 1/(k_BT)$.
+
+This duality profoundly impacts calculation methods. Field theory employs diagrammatic perturbation expansions, while particle methods use Monte Carlo sampling of paths. Renormalization acts differently: integrating out short-wavelength fields versus decimating short paths. The equivalence ensures both approaches yield identical universal properties, while their complementary strengths enable tackling different aspects of critical phenomena.

@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       a7f3b9d2-6e4c-4f5a-b8d1-9c2e3f5a7b6d
+:CUSTOM_ID: 92/299
+:END:
+#+TITLE: 7.28 Gaussian Exponents
+#+FILETAGS: :physics:spof:ch7:series:gaussian:exponents:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The phantom loop calculation reproduces mean-field critical exponents exactly, revealing when and why Gaussian behavior emerges from microscopic models. By allowing loops to intersect freely, the calculation maps the interacting spin system onto non-interacting random walks whose universal properties determine critical behavior.
+
+Near the phantom critical point \(t_c = 1/(2d)\), the small-momentum expansion of the propagator denominator yields
+
+\[1 - tT(\mathbf{q}) \approx t_c(\xi^{-2} + q^2)\]
+
+identifying the correlation length
+
+\[\xi = \left(\frac{1-2dt}{t_c}\right)^{-1/2} \propto |t_c - t|^{-\nu} \quad \text{with} \quad \nu = \frac{1}{2}\]
+
+This square-root divergence reflects the diffusive nature of random walks: a walk of \(\ell\) steps typically covers distance \(R \sim \ell^{1/2}\), establishing the fundamental connection between temporal extent and spatial correlation.
+
+The correlation function in position space exhibits the Gaussian forms
+
+\[\langle\sigma(\mathbf{0})\sigma(\mathbf{r})\rangle \propto \begin{cases}
+r^{-(d-2)} & \text{for } r \ll \xi \quad (\eta = 0) \\
+r^{-(d-1)/2}\mathrm{e}^{-r/\xi} & \text{for } r \gg \xi
+\end{cases}\]
+
+The power-law decay at criticality with exponent \(d-2\) corresponds to the Coulomb potential in \(d\) dimensions, reflecting the underlying free field theory. The absence of anomalous dimensions (\(\eta = 0\)) indicates that the field acquires no renormalization beyond its engineering dimension.
+
+The free energy density near criticality scales as
+
+\[f_{\text{sing}} \propto \xi^{-d} \propto (t_c - t)^{d\nu} = (t_c - t)^{d/2}\]
+
+yielding the specific heat exponent
+
+\[\alpha = 2 - d\nu = 2 - \frac{d}{2}\]
+
+This formula predicts logarithmic divergence (\(\alpha = 0\)) in two dimensions, mean-field jump discontinuity (\(\alpha = 0\)) in four dimensions, and negative \(\alpha\) above four dimensions where the singularity weakens to a finite cusp.
+
+The Gaussian exponents satisfy all scaling relations exactly: the hyperscaling relation \(d\nu = 2 - \alpha\), Fisher's relation \(\gamma = \nu(2-\eta)\), and Rushbrooke's inequality \(\alpha + 2\beta + \gamma \geq 2\) (saturated as equality). The magnetic exponents follow from continuation to negative \(t\): \(\beta = \nu d/2 = d/4\) and \(\gamma = 2\nu = 1\), though the phantom approximation fails to capture spontaneous magnetization correctly due to neglected constraints.
+
+These mean-field exponents become exact above the upper critical dimension \(d_u = 4\) where random walks rarely intersect. Below four dimensions, self-avoidance swells the walks, increasing \(\nu\) above \(1/2\) and modifying all exponents through scaling relations. The phantom calculation thus provides the reference point from which real critical behavior deviates, quantifying the role of fluctuations and constraints in determining universality classes.

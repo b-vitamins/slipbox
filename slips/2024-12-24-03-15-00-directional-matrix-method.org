@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       c7f8a9b2-4d3e-4a8f-b692-5e8d9f7c3a2b
+:CUSTOM_ID: 92/296
+:END:
+#+TITLE: 7.35 Directional Matrix Method
+#+FILETAGS: :physics:spof:ch7:series:transfermatrix:directional:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The exact solution of the two-dimensional Ising model requires tracking both position and direction of paths to implement Whitney's theorem locally, expanding the state space from \(N\) sites to \(4N\) position-direction pairs. Each lattice site acquires four states labeled \(\mu = 1,2,3,4\) corresponding to rightward, upward, leftward, and downward directions of path traversal [[7.D6]].
+
+The augmented transfer matrix \(T^*\) encodes both connectivity and phase information:
+
+\[\left\langle x'y',\mu'|T^*|xy,\mu\right\rangle = \delta_{\text{nearest neighbors}} \times \mathrm{e}^{i\theta_{\mu'\mu}/2}\]
+
+where \(\theta_{\mu'\mu}\) represents the angle turned when departing along direction \(\mu\) and continuing along \(\mu'\) at the next site. The phase factor implements Whitney's theorem: the total phase accumulated around a loop equals \(\mathrm{e}^{i\Theta/2}\) where \(\Theta\) is the net turning angle, yielding the required factor \((-1)^{n_c}\) for the crossing parity.
+
+The matrix structure prohibits backtracking—no element connects \(\mu\) to \(-\mu\)—automatically excluding U-turns. In the position basis, the matrix elements involve products of Kronecker deltas for positions and phase factors for directions. Translational invariance enables Fourier transformation over positions while preserving the \(4 \times 4\) directional structure at each wavevector.
+
+The resulting momentum-space blocks take the explicit form
+
+\[T^*(\mathbf{q}) = \begin{pmatrix} \mathrm{e}^{-iq_x} & \mathrm{e}^{-i(q_x-\pi/4)} & 0 & \mathrm{e}^{-i(q_x+\pi/4)} \\ \mathrm{e}^{-i(q_y+\pi/4)} & \mathrm{e}^{-iq_y} & \mathrm{e}^{-i(q_y-\pi/4)} & 0 \\ 0 & \mathrm{e}^{i(q_x-\pi/4)} & \mathrm{e}^{iq_x} & \mathrm{e}^{i(q_x+\pi/4)} \\ \mathrm{e}^{i(q_y+\pi/4)} & 0 & \mathrm{e}^{i(q_y-\pi/4)} & \mathrm{e}^{iq_y} \end{pmatrix}\]
+
+Each element combines a propagation phase from spatial displacement with a turning phase from directional change. The zero elements enforce the no-backtracking constraint, while the \(\pm\pi/4\) phases account for \(90°\) turns.
+
+The genius of this construction lies in converting the non-local problem of counting crossings into local phase accumulation. A walker need not remember its entire path—only its current direction—to correctly weight configurations. This Markovian property preserves the transfer matrix structure \(W^*(\ell) = (T^*)^\ell\) despite the intersection-dependent weights.
+
+The free energy calculation proceeds through the determinant of \((1-tT^*(\mathbf{q}))\) for each wavevector. The \(4 \times 4\) determinant factorizes due to symmetries, ultimately yielding Onsager's integral representation. The critical point emerges when this determinant vanishes, occurring at the self-dual coupling. The directional matrix method thus solves a fundamentally non-local problem through clever augmentation of the state space, demonstrating how topological constraints can be encoded in enlarged but local descriptions.

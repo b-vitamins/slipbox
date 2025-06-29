@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       f4a6d3e9-8b2c-4f1a-9e5d-7c8a3d4f6b9e
+:CUSTOM_ID: 92/324
+:END:
+#+TITLE: 7.46 Fermion Interpretation
+#+FILETAGS: :physics:spof:ch7:series:fermion:interpretation:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The exact solution of the two-dimensional Ising model reveals a hidden fermionic structure: the crossing factors $(-1)^{n_c}$ in the loop expansion mirror fermion exchange statistics, enabling solution through free fermion techniques. This connection between classical spins and quantum fermions exemplifies the profound dualities in statistical mechanics.
+
+The fermionic nature emerges from the signed path sum [[id:7.8]]:
+
+$$S = \sum_{\text{loops}} t^{\text{length}} \times (-1)^{\text{crossings}}$$
+
+When two paths exchange positions, they acquire a minus sign—precisely the antisymmetry characterizing fermions. Whitney's theorem enables local implementation of this global exchange through directional phases, transforming the interacting path problem into free fermions with modified boundary conditions.
+
+Schultz, Mattis, and Lieb formalized this correspondence by mapping the Ising transfer matrix to a quadratic fermion Hamiltonian:
+
+$$T = \exp\left(-\sum_{ij} A_{ij} c_i^\dagger c_j + \sum_{ij} B_{ij}(c_i^\dagger c_j^\dagger + c_i c_j)\right)$$
+
+where $c_i^\dagger, c_i$ are fermion creation/annihilation operators. The Ising spins transform into bilinears of fermion operators through Jordan-Wigner transformation:
+
+$$\sigma_j^z = \prod_{k<j}(1-2c_k^\dagger c_k) \times (1-2c_j^\dagger c_j)$$
+
+This non-local transformation converts local spin interactions into fermion hopping and pairing terms.
+
+The crucial insight is that the resulting fermion Hamiltonian is quadratic—interactions between spins become encoded in the Jordan-Wigner string, not fermion-fermion interactions. Bogoliubov transformation diagonalizes the quadratic form:
+
+$$H = \sum_k \epsilon_k \gamma_k^\dagger \gamma_k$$
+
+where $\gamma_k$ are quasiparticle operators and $\epsilon_k$ their energies. The Ising partition function equals the fermion partition function up to boundary condition subtleties.
+
+Physical interpretation illuminates the correspondence. In the path picture, fermions represent domain walls between spin regions. Creating a fermion at site $j$ flips all spins to its right, generating a domain wall. Fermion worldlines in $(1+1)$-dimensional spacetime cannot cross—attempting to exchange two domain walls returns the original configuration. This topological constraint enforces fermionic statistics.
+
+The fermion spectrum reveals critical properties:
+- Energy gap closes at criticality: $\epsilon_k \sim |k|$ for small $k$
+- Correlation functions map to fermion Green's functions
+- Critical exponents emerge from massless Dirac fermions
+- Conformal invariance reflects linear dispersion
+
+This fermionization extends selectively. The XY model maps to free fermions only at special radii. The three-dimensional Ising model resists fermionization due to the complex topology of surfaces versus lines. Interacting integrable models often hide free fermion or boson structures accessible through sophisticated transformations.
+
+The deep lesson is that classical statistical mechanics can harbor quantum structures. The emergence of fermions from classical spins demonstrates how statistics and topology intertwine, providing both calculational tools and conceptual insights into the nature of phase transitions.

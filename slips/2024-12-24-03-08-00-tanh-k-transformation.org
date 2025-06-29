@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       f7d8e9a2-3b4c-5d6e-8fa7-b1c2d3e4f5a6
+:CUSTOM_ID: 92/289
+:END:
+#+TITLE: 7.3a tanh K Transformation
+#+FILETAGS: :physics:spof:ch7:series:transformation:tanh:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The choice of $\tanh K$ as the natural expansion parameter for the Ising model represents a profound organizational principle that unifies high-temperature expansions, duality relations, and series convergence properties. The transformation exploits the fundamental property $(\sigma_i\sigma_j)^2 = 1$ to rewrite each bond's Boltzmann factor as
+
+$$\mathrm{e}^{K\sigma_i\sigma_j} = \cosh K(1 + t\sigma_i\sigma_j)$$
+
+where $t \equiv \tanh K = (\mathrm{e}^K - \mathrm{e}^{-K})/(\mathrm{e}^K + \mathrm{e}^{-K})$. This decomposition separates the temperature-dependent amplitude $\cosh K$ from the coupling strength $t$, which varies smoothly from 0 at infinite temperature to 1 at zero temperature.
+
+The graphical representation reveals why this parametrization is optimal. In the high-temperature expansion, each bond contributes either factor 1 (unoccupied) or factor $t$ (occupied), with no possibility of multiple occupation since $(t\sigma_i\sigma_j)^n = t^n\sigma_i\sigma_j$ for odd $n$ and $t^n$ for even $n$. Using bare coupling $K$ would generate terms like $K^n(\sigma_i\sigma_j)/n!$, allowing fictitious multiple bond occupations that complicate the graphical enumeration.
+
+The parameter $t$ exhibits remarkable properties across different contexts. In one dimension, the correlation length $\xi = -1/\ln t$ expresses simply in terms of $t$ [[7.17]]. The critical point of phantom loops occurs at $t_c = 1/(2d)$, reflecting the balance between entropic proliferation of paths and their energetic suppression [[7.29]]. Most strikingly, the Kramers-Wannier duality relates low and high temperature models through $\mathrm{e}^{-2\tilde{K}} = \tanh K$ [[7.14]], making $\tanh K$ the natural duality variable.
+
+Series convergence improves dramatically with this choice. While low-temperature expansions in $\mathrm{e}^{-K}$ exhibit sign alternations from complex singularities, the transformed series in $t$ often shows monotonic coefficient behavior. This occurs because the mapping $t = \tanh K$ is analytic except at $K = \pm i\pi/2$, pushing potential singularities to the boundary of the unit disk in the complex $t$-plane.
+
+The deep significance of $\tanh K$ extends beyond computational convenience. It measures the correlation between neighboring spins: $\langle\sigma_i\sigma_j\rangle_{\text{single bond}} = \tanh K$. This physical interpretation as local correlation strength explains its ubiquitous appearance in exact solutions, mean-field theories, and renormalization group flows. The parameter $t$ thus serves simultaneously as expansion variable, correlation measure, and duality coordinate, embodying the multiple facets of the Ising model's mathematical structure.

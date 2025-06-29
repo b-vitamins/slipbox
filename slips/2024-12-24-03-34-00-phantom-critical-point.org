@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       c8f2a9b5-3d4e-4a7b-9e1c-2f8d3a5b6c9e
+:CUSTOM_ID: 92/315
+:END:
+#+TITLE: 7.29 Phantom Critical Point
+#+FILETAGS: :physics:spof:ch7:series:phantom:critical:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The phantom loop approximation yields a critical point at \(t_c = 1/(2d)\) through a transparent physical mechanism: the balance between entropic proliferation and energetic suppression of loops. This mean-field transition illuminates both the success of Gaussian theory above four dimensions and its failure below.
+
+The critical condition emerges from the transfer matrix analysis [[7.7]]. Random walks proliferate with fugacity \(t = \tanh K\) per step, while the number of \(\ell\)-step walks from a given origin grows as \((2d)^\ell\) on a \(d\)-dimensional hypercubic lattice. The partition function for phantom loops diverges when
+
+\[\sum_\ell (2dt)^\ell = \sum_\ell z^\ell \to \infty\]
+
+requiring \(z = 2dt < 1\) for convergence. The critical point \(t_c = 1/(2d)\) marks where arbitrarily long loops contribute equally, destroying the convergence.
+
+Physical interpretation clarifies this criterion. Each lattice bond transmits information between neighboring spins with reliability \(t\). A random walker starting at the origin has \(2d\) initial choices, gaining factor \(2dt\) per step. For \(t < t_c\), this factor is less than unity, exponentially suppressing long paths. At \(t_c\), the suppression exactly cancels proliferation, enabling information to propagate arbitrarily far and establishing long-range order.
+
+The correlation length near the phantom critical point diverges as
+
+\[\xi = \left(\frac{1 - 2dt}{t_c}\right)^{-1/2} \propto (t_c - t)^{-1/2}\]
+
+The square-root divergence reflects the diffusive nature of random walks: paths of length \(\ell \sim 1/(1-2dt)\) typically extend distance \(\xi \sim \ell^{1/2}\). This universal relation between temporal and spatial scales characterizes all phantom loop models regardless of microscopic details.
+
+Comparison with exact results reveals the role of constraints. For the two-dimensional Ising model:
+- Phantom: \(t_c^{\text{phantom}} = 1/4\)
+- Exact: \(t_c^{\text{exact}} = \sqrt{2} - 1 \approx 0.414\)
+
+The ratio \(t_c^{\text{exact}}/t_c^{\text{phantom}} \approx 1.66\) quantifies how self-avoidance shifts the transition. Excluded volume interactions effectively reduce the connectivity, requiring stronger coupling to achieve criticality.
+
+The phantom approximation becomes exact above \(d_u = 4\) where random walks rarely intersect [[7.47]]. The fractal dimension \(d_f = 2\) of random walks implies intersection probability scales as \(\ell^{2d_f}/\ell^d = \ell^{(4-d)/2}\). For \(d > 4\), this vanishes as \(\ell \to \infty\), justifying the phantom treatment. Below four dimensions, intersections proliferate, generating anomalous exponents through effective interactions.
+
+The phantom critical point thus provides the reference state from which real critical behavior emerges. It demonstrates how phase transitions arise from competing entropic and energetic effects, establishes mean-field theory as the high-dimensional limit, and quantifies when fluctuations become important. This geometric understanding through loop proliferation offers intuition often obscured in field-theoretic treatments.

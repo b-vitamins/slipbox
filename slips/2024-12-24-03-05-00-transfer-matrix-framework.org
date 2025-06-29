@@ -1,0 +1,61 @@
+:PROPERTIES:
+:ID:       d2e3f4a5-b6c7-4d8e-9fa0-b1c2d3e4f5a6
+:CUSTOM_ID: 92/286
+:END:
+#+TITLE: 7.7 Transfer Matrix Framework
+#+FILETAGS: :physics:spof:ch7:series:transfermatrix:framework:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The high-temperature series can be systematically summed by mapping closed loops to phantom random walks, revealing both the emergence of Gaussian behavior and the role of intersection constraints. Starting from the general partition function
+
+\[Z = \sum_{\{\sigma_i\}}\mathrm{e}^{K\sum_{\langle ij\rangle}\sigma_i\sigma_j} = 2^N\cosh^{dN}K \times S\]
+
+where \(S\) sums over allowed graphs, we introduce the generating function for single loops
+
+\[\Xi = \text{sum over contribution of all graphs with one loop}\]
+
+and exponentiate to obtain all multi-loop configurations:
+
+\[S' = \exp(\Xi) = 1 + \Xi + \frac{1}{2}(\Xi)^2 + \frac{1}{6}(\Xi)^3 + \cdots\]
+
+This phantom loop approximation allows loops to intersect freely and bonds to be multiply occupied. The resulting free energy becomes
+
+\[\ln S' = N\sum_\ell\frac{t^\ell}{\ell}(\text{number of closed walks of }\ell\text{ steps starting and ending at }\mathbf{0})\]
+
+Introducing the walk counting matrix \(\langle\mathbf{i}|W(\ell)|\mathbf{j}\rangle\) as the number of \(\ell\)-step walks from \(\mathbf{j}\) to \(\mathbf{i}\), we obtain
+
+\[\frac{\ln S'}{N} = \frac{1}{2}\sum_\ell\frac{t^\ell}{\ell}\langle\mathbf{0}|W(\ell)|\mathbf{0}\rangle\]
+
+The factor of 2 accounts for opposite traversal directions. The correlation function similarly becomes
+
+\[\langle\sigma(\mathbf{0})\sigma(\mathbf{r})\rangle = \frac{1}{Z}\sum_{\{\sigma_i\}}\sigma(\mathbf{0})\sigma(\mathbf{r})\prod_{\langle ij\rangle}(1 + t\sigma_i\sigma_j)\]
+
+which in the phantom approximation simplifies to
+
+\[\langle\sigma(\mathbf{0})\sigma(\mathbf{r})\rangle \approx \sum_\ell t^\ell\langle\mathbf{r}|W(\ell)|\mathbf{0}\rangle\]
+
+The Markovian property of random walks enables recursive calculation:
+
+\[\langle\mathbf{r}|W(\ell)|\mathbf{0}\rangle = \sum_{\mathbf{r}'}\langle\mathbf{r}|W(1)|\mathbf{r}'\rangle \times \langle\mathbf{r}'|W(\ell-1)|\mathbf{0}\rangle = \langle\mathbf{r}|TW(\ell-1)|\mathbf{0}\rangle\]
+
+yielding \(W(\ell) = T^\ell\) where the transfer matrix \(T\) has elements
+
+\[\langle\mathbf{r}|T|\mathbf{r}'\rangle = \begin{cases}1 & \text{if }\mathbf{r}\text{ and }\mathbf{r}'\text{ are nearest neighbors} \\ 0 & \text{otherwise}\end{cases}\]
+
+In Fourier space, the eigenvalues are \(T(\mathbf{q}) = 2\sum_{\alpha=1}^d\cos q_\alpha\), giving correlations
+
+\[\langle\sigma(\mathbf{r})\sigma(\mathbf{0})\rangle = \int\frac{\mathrm{d}^d\mathbf{q}}{(2\pi)^d}\frac{\mathrm{e}^{i\mathbf{q}\cdot\mathbf{r}}}{1-2t\sum_\alpha\cos q_\alpha}\]
+
+A singularity occurs at \(t_c = 1/(2d)\) when arbitrarily long paths proliferate. Near criticality, expanding the denominator yields
+
+\[1 - tT(\mathbf{q}) \approx t_c(\xi^{-2} + q^2 + \mathcal{O}(q^4))\]
+
+with correlation length \(\xi = [(1-2dt)/t_c]^{-1/2}\), reproducing Gaussian behavior:
+
+\[\langle\sigma(\mathbf{0})\sigma(\mathbf{r})\rangle \propto \begin{cases}r^{-(d-2)} & \text{for }r < \xi \quad (\eta = 0) \\ r^{-(d-1)/2}\mathrm{e}^{-r/\xi} & \text{for }r > \xi\end{cases}\]
+
+The free energy follows as
+
+\[\frac{\ln S'}{N} = -\frac{1}{2}\int\frac{\mathrm{d}^d\mathbf{q}}{(2\pi)^d}\ln(1-2t\sum_\alpha\cos q_\alpha)\]
+
+yielding \(f_{\text{sing}} \propto \xi^{-d} \propto (t_c - t)^{d/2}\) and heat capacity exponent \(\alpha = 2 - d/2\). This Gaussian behavior emerges because random walks have fractal dimension \(d_f = 2\), making intersections rare for \(d > d_u = 4\).

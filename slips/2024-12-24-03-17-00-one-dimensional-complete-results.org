@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       8f3a2b5c-7d9e-4f1a-b6c4-9e8d3a7b5f2d
+:CUSTOM_ID: 92/298
+:END:
+#+TITLE: One-Dimensional Complete Results
+#+FILETAGS: :physics:spof:ch7:series:onedimensional:complete:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The one-dimensional Ising model admits complete analytical solution, confirming the absence of phase transitions and providing exact expressions for all thermodynamic quantities. The partition function depends sensitively on boundary conditions, though differences vanish thermodynamically.
+
+For an open chain of \(N\) spins:
+
+\[Z_{\text{open}} = 2^N(\cosh K)^{N-1}, \quad \frac{\ln Z}{N} = \ln(2\cosh K) - \frac{\ln\cosh K}{N}\]
+
+For a closed ring:
+
+\[Z_{\text{closed}} = 2^N(\cosh K)^N + 2^N(\sinh K)^N = (2\cosh K)^N[1 + (\tanh K)^N]\]
+
+The free energy per spin converges to \(f = -k_BT\ln(2\cosh K)\) in both cases, with corrections that are algebraic \(\mathcal{O}(1/N)\) for open boundaries but exponentially small \(\mathcal{O}(t^N)\) for periodic conditions.
+
+The correlation function reveals exponential decay without power-law corrections:
+
+\[\langle\sigma_m\sigma_n\rangle = (\tanh K)^{|m-n|} = \exp(-|m-n|/\xi)\]
+
+where the correlation length 
+
+\[\xi = -\frac{1}{\ln\tanh K} = \frac{1}{2\ln\coth K}\]
+
+diverges only at zero temperature. Near \(T = 0\) (large \(K\)), the correlation length grows as \(\xi \approx \frac{1}{2}\mathrm{e}^{2K}\), confirming the absence of quasi-long-range order at any finite temperature. For the closed chain, correlations acquire an additional term:
+
+\[\langle\sigma_m\sigma_n\rangle_{\text{ring}} = \frac{(\tanh K)^{|m-n|} + (\tanh K)^{N-|m-n|}}{1 + (\tanh K)^N}\]
+
+accounting for correlations propagating around the ring.
+
+The absence of phase transitions follows from several perspectives. Graphically, no closed loops can form on a chain, preventing the entropy-driven proliferation that generates criticality in higher dimensions [[7.4]]. Physically, thermal fluctuations inevitably break any incipient order when each spin has only two neighbors. Mathematically, the transfer matrix method yields a largest eigenvalue \(\lambda_{\max} = 2\cosh K\) that remains non-degenerate at all finite temperatures.
+
+These exact results serve as crucial benchmarks. The exponential correlation decay contrasts sharply with power-law critical correlations in two dimensions. The smooth analytic behavior of all thermodynamic functions for \(T > 0\) exemplifies regular behavior away from criticality. The one-dimensional Ising model thus provides the paradigmatic example of a non-critical system, establishing the baseline against which phase transitions in higher dimensions appear as singular phenomena. Extensions to quantum chains, long-range interactions, or random couplings can introduce transitions, highlighting how additional complexity overcomes one-dimensional constraints.

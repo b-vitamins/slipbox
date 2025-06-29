@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       e7c4f2d8-9b3a-4e5f-a1c6-8d7e2f4a6b9c
+:CUSTOM_ID: 92/316
+:END:
+#+TITLE: 7.30 Series to Path Integral
+#+FILETAGS: :physics:spof:ch7:series:pathintegral:connection:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The high-temperature series expansion reveals a deep connection between statistical mechanics and quantum field theory: thermal fluctuations map to quantum paths, with the partition function becoming a path integral over all possible trajectories. This correspondence illuminates both frameworks through their shared geometric structure.
+
+The transformation begins with the correlation function expressed as a sum over paths [[7.26]]:
+
+\[\langle\sigma(\mathbf{0})\sigma(\mathbf{r})\rangle \approx \sum_\ell t^\ell \times (\text{number of paths from } \mathbf{0} \text{ to } \mathbf{r} \text{ in } \ell \text{ steps})\]
+
+Each path carries weight \(t^\ell\) where \(t = \tanh K\) and \(\ell\) is the path length. This discrete sum over lattice paths becomes, in appropriate limits, the continuous path integral of quantum mechanics.
+
+The correspondence maps:
+- Lattice sites → Spatial positions
+- Discrete steps → Time evolution  
+- Transfer matrix \(T\) → Evolution operator \(\mathrm{e}^{-H\tau}\)
+- Thermal weight \(t\) → \(\mathrm{e}^{-\tau}\) where \(\tau\) is imaginary time
+
+The transfer matrix relation \(W(\ell) = T^\ell\) mirrors quantum evolution \(|\psi(t)\rangle = \mathrm{e}^{-iHt/\hbar}|\psi(0)\rangle\). Statistical sums over paths become quantum mechanical amplitudes, with temperature playing the role of imaginary time.
+
+Feynman's path integral formulation makes this precise:
+
+\[\langle\mathbf{r}|\mathrm{e}^{-\beta H}|\mathbf{0}\rangle = \int_{\mathbf{x}(0)=\mathbf{0}}^{\mathbf{x}(\beta)=\mathbf{r}} \mathcal{D}\mathbf{x}(\tau)\, \mathrm{e}^{-S[\mathbf{x}]}\]
+
+where the action \(S[\mathbf{x}] = \int_0^\beta \mathrm{d}\tau \left[\frac{1}{2}m\dot{\mathbf{x}}^2 + V(\mathbf{x})\right]\). For free particles (\(V=0\)), this reduces exactly to our random walk sum after discretization.
+
+The phantom loop approximation corresponds to free field theory. Allowing arbitrary intersections removes interactions between paths, yielding Gaussian propagators. The exact two-dimensional solution includes intersection phases through Whitney's theorem [[7.38]], analogous to including interactions in the field theory. The signs from crossings mirror fermionic exchange statistics.
+
+Critical phenomena emerge when paths proliferate. At the phantom critical point \(t_c = 1/(2d)\), paths of all lengths contribute equally, corresponding to massless particles in the field theory. The correlation length \(\xi\) becomes the inverse mass, diverging at criticality. Power-law correlations at \(T_c\) reflect the \(1/p^2\) propagator of massless fields.
+
+This correspondence extends beyond formal analogy. Renormalization group transformations in statistical mechanics parallel momentum shell integration in field theory. Universal critical exponents correspond to anomalous dimensions of fields. The \(\epsilon\)-expansion around four dimensions maps to dimensional regularization in quantum field theory.
+
+The path integral perspective provides both calculational tools and physical insight. Monte Carlo simulations sample paths probabilistically, cluster algorithms exploit path representations, and exact solutions often emerge from summing geometric series of paths. Most profoundly, the correspondence reveals phase transitions as geometric phenomena—the proliferation and percolation of paths through space-time.

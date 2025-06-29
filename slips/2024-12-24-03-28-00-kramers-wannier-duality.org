@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       c7e3d9a2-8b5f-4a7e-9d1c-2f4e6a8b3c95
+:CUSTOM_ID: 92/309
+:END:
+#+TITLE: 7.15 Kramers-Wannier Duality
+#+FILETAGS: :physics:spof:ch7:series:duality:kramerswannier:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Kramers-Wannier duality stands as one of the most elegant discoveries in statistical mechanics, revealing an exact correspondence between the high-temperature and low-temperature expansions of the two-dimensional Ising model. This hidden symmetry not only determines the critical point but also illuminates the deep mathematical structure underlying phase transitions.
+
+The duality emerges from comparing the graphical expansions at opposite temperature extremes. The low-temperature series enumerates droplets of overturned spins weighted by their perimeter [[7.2]], while the high-temperature series counts closed loops on the lattice weighted by their length [[7.3]]. The profound observation is that droplet boundaries constitute valid loops and vice versa—the two expansions enumerate identical geometric objects with different statistical weights.
+
+This one-to-one correspondence between configurations establishes that if the partition function has the form $Z = \mathrm{e}^{Nf_0(K)}[1 + \text{series in }\mathrm{e}^{-K}]$ at low temperature, it must equal $Z = \mathrm{e}^{Ng_0(K)}[1 + \text{series in }\tanh K]$ at high temperature, where the series have identical coefficients. The functions $f_0$ and $g_0$ represent the analytic background, while the series capture the singular behavior.
+
+The mathematical relationship $\mathrm{e}^{-2\tilde{K}} = \tanh K$ [[7.23]] connects dual temperatures, mapping the entire phase diagram onto itself with ordered and disordered phases interchanged. The transformation satisfies $D(D(K)) = K$, forming an involution that pairs each temperature with its dual partner. Low temperatures ($K \to \infty$) map to high temperatures ($\tilde{K} \to 0$) and vice versa.
+
+The power of duality lies in constraining the critical point. If the system exhibits a unique phase transition, the singular part of the free energy must be invariant under duality: any singularity at $K_c$ implies a corresponding singularity at $\tilde{K}_c = D(K_c)$. Since we expect a single transition, the critical point must be self-dual: $K_c = \tilde{K}_c$. This condition uniquely determines $K_c = \frac{1}{2}\ln(1+\sqrt{2})$ [[7.16]].
+
+Beyond locating the critical point, duality constrains universal properties. Amplitude ratios above and below $T_c$ often equal unity due to the symmetry. The correlation length exponent must be identical on both sides of the transition. While duality alone cannot determine critical exponents, combined with other exact results it provides powerful constraints on the solution.
+
+The duality principle extends beyond the Ising model. The $q$-state Potts model exhibits similar self-duality, while the XY model requires a more sophisticated treatment involving disorder operators. Even when exact self-duality fails, as in three dimensions [[7.18]], the existence of dual descriptions—often as gauge theories—reveals fundamental connections between seemingly disparate physical systems.

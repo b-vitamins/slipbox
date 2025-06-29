@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       754a698e-303a-451d-a39a-0d3050cbe2f4
+:CUSTOM_ID: 92/322
+:END:
+#+TITLE: 7.12 Topological Constraints in Two Dimensions
+#+FILETAGS: :physics:spof:ch7:series:topology:twodimensional:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Two-dimensional systems possess unique topological properties that enable exact solutions while forbidding certain types of order. These constraints, embodied in Whitney's theorem and the Mermin-Wagner theorem, make two dimensions the marginal case for many phase transitions.
+
+Whitney's theorem establishes a fundamental relation between self-intersections and winding angles for planar curves [[7.38]]:
+
+\[(n_c)_{\bmod 2} = \left(1 + \frac{\Theta}{2\pi}\right)_{\bmod 2}\]
+
+where \(n_c\) counts self-crossings and \(\Theta\) is the total angle traversed by the tangent vector. This topological invariant depends only on crossing parity, not detailed curve geometry. The theorem enables local calculation of global properties: accumulating phase \(\mathrm{e}^{i\theta/2}\) at each turn yields the correct crossing factor \((-1)^{n_c}\).
+
+The power of this result lies in converting the non-Markovian problem of counting intersections into a Markovian process of tracking directions. Each walker maintains only its current orientation, accumulating phases through local turns. The enlarged state space (position plus direction) preserves the transfer matrix structure while encoding global topology.
+
+Two dimensions also marks the lower critical dimension for discrete symmetry breaking. The Ising model barely achieves long-range order, with logarithmically diverging specific heat signaling marginal stability. Any reduction in connectivity or increase in fluctuations destroys the transition: the triangular lattice has higher \(T_c\) than square, while one dimension shows no transition.
+
+Conversely, continuous symmetries cannot break in two dimensions, as proven by Mermin-Wagner. The argument relies on the infrared divergence of Goldstone modes:
+
+\[\langle|\vec{m}(\mathbf{r}) - \vec{m}(0)|^2\rangle \sim \int \frac{\mathrm{d}^2\mathbf{k}}{(2\pi)^2} \frac{1-\cos(\mathbf{k} \cdot \mathbf{r})}{k^2} \sim \ln(R/a)\]
+
+Fluctuations grow logarithmically with system size, destroying long-range order at any finite temperature. The XY model exhibits only quasi-long-range order with power-law correlations.
+
+These topological constraints produce remarkable consequences:
+- Exact solvability: Whitney's theorem enables the exact Ising solution
+- Conformal invariance: Two-dimensional critical points possess infinite-dimensional symmetry
+- Kosterlitz-Thouless transitions: Topological defects (vortices) drive transitions without symmetry breaking
+- Quantum Hall effects: Topological invariants characterize incompressible states
+
+The marginal nature of two dimensions appears throughout physics. Quantum field theories in \(1+1\) dimensions often admit exact solutions through integrability. String theory naturally lives in two-dimensional worldsheets. Graphene and other two-dimensional materials exhibit exotic properties stemming from reduced dimensionality.
+
+Topological constraints thus make two dimensions simultaneously special and typical—special in admitting exact solutions and novel phases, typical in sitting at the boundary between ordered and disordered behavior. These constraints, rather than being limitations, provide the mathematical structure enabling profound insights into critical phenomena.

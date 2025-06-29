@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       8694995c-5069-4a20-8e73-639c85011477
+:CUSTOM_ID: 92/317
+:END:
+#+TITLE: 7.31 Information Transfer Picture
+#+FILETAGS: :physics:spof:ch7:series:information:transfer:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Phase transitions emerge from a competition between information transmission and thermal noise, with critical points marking where local correlations propagate globally through path proliferation. This information-theoretic perspective unifies diverse critical phenomena through the common theme of communication across scales.
+
+Each bond in the Ising model transmits information about spin alignment with reliability \(t = \tanh K\). At zero temperature (\(t = 1\)), perfect transmission ensures global order. At infinite temperature (\(t = 0\)), no information passes and spins remain independent. The critical point identifies where partial transmission, amplified by multiple paths, just suffices for long-range communication.
+
+The mechanism becomes quantitative through path counting [[7.29]]. Information from the origin reaches distance \(r\) through all connecting paths. Each \(\ell\)-step path contributes reliability \(t^\ell\), while approximately \((2d)^\ell\) such paths exist. The total information received is
+
+\[I(r) \sim \sum_{\ell \geq r} (2dt)^\ell \times (\text{geometric factors})\]
+
+For \(t < t_c = 1/(2d)\), this sum converges, limiting information to finite range. At \(t_c\), contributions from all path lengths balance, enabling unlimited information propagation and hence long-range order.
+
+The correlation length emerges as the information penetration depth. Near criticality, paths of length \(\bar{\ell} \sim 1/(1-2dt)\) dominate, covering typical distance \(\xi \sim \bar{\ell}^{1/2}\) by random walk scaling. Information decays exponentially beyond this scale: \(\langle\sigma(0)\sigma(r)\rangle \sim \exp(-r/\xi)\), quantifying the range of coherent fluctuations.
+
+This picture illuminates universality. Microscopic details affect single-path reliability \(t\), but the critical criterion \(2dt_c = 1\) depends only on lattice connectivity. Different models with identical geometry share the same information-theoretic constraint, explaining universal critical temperatures within model classes. Anomalous exponents arise when path statistics deviate from random walks due to constraints or interactions.
+
+The information perspective extends to dynamics. Relaxation times diverge at criticality because information must traverse the diverging correlation length. The dynamical exponent \(z\) relates temporal and spatial scales through the information propagation mechanism. For diffusive dynamics, \(z = 2\) reflects the random walk nature of information transfer.
+
+Modern developments strengthen this view. Mutual information serves as an order parameter in topological phases. Entanglement entropy diagnoses quantum criticality. Information-theoretic inequalities bound critical exponents. The renormalization group can be formulated as optimal information coarse-graining.
+
+The profound insight is that phase transitions represent information-theoretic phenomena. Order emerges when local information successfully propagates globally despite thermal degradation. Critical points mark the boundary between local and global information regimes. This perspective transforms phase transitions from thermodynamic curiosities into fundamental information-processing transitions, relevant from condensed matter to neural networks to social systems.

@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       a7e4f9b2-3c8d-4f6a-9b1e-5d8c7a2f0e94
+:CUSTOM_ID: 92/301
+:END:
+#+TITLE: 7.40 Two-Dimensional Critical Behavior: α=0
+#+FILETAGS: :physics:spof:ch7:series:twodimensional:critical:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The two-dimensional Ising model exhibits logarithmic divergence of the specific heat, corresponding to the marginal case $\alpha = 0$ in the standard classification of critical singularities. This behavior emerges from the precise cancellations in the exact solution that produce a qualitatively different singularity than predicted by mean-field theory or phantom loops.
+
+The singular part of the free energy near criticality takes the form
+
+$$\left.\frac{\ln Z}{N}\right|_{\text{sing}} = -\frac{1}{\pi}\left(\frac{\delta t}{t_c}\right)^2\ln\left|\frac{\delta t}{t_c}\right| + \text{analytic terms}$$
+
+where $\delta t = t - t_c$ with $t = \tanh K$. The specific heat, obtained through two temperature derivatives, diverges as
+
+$$C_{\text{sing}} = A_\pm\ln|T - T_c| + \text{regular terms}$$
+
+with equal amplitudes $A_+ = A_- = \pi k_B/2$ above and below $T_c$, establishing perfect symmetry between the two phases.
+
+The logarithmic divergence contrasts sharply with power-law singularities $C \sim |T-T_c|^{-\alpha}$ found in other dimensions. Mathematically, $\alpha = 0$ represents the boundary case where the integral $\int_0^T C(T')\mathrm{d}T'$ converges (giving finite entropy) while $C$ itself diverges. This marginal behavior reflects the special properties of two dimensions where fluctuations are just strong enough to modify mean-field theory qualitatively but not strong enough to generate anomalous dimensions.
+
+The derivation illuminates the origin of logarithmic scaling. Near the critical point, the expansion $A^*(t,\mathbf{q}) \approx 2t_c^2[q^2 + 4(\delta t/t_c)^2]$ shows that the effective mass term scales as $(\delta t)^2$ rather than $\delta t$. This quadratic dependence arises from the intersection constraints that modify the phantom loop sum. The subsequent integration over momenta generates the logarithm:
+
+$$\int_0^\Lambda \frac{q\mathrm{d}q}{q^2 + m^2} = \frac{1}{2}\ln\left(\frac{\Lambda^2 + m^2}{m^2}\right) \approx -\frac{1}{2}\ln m^2$$
+
+for small mass $m \propto \delta t$.
+
+The logarithmic divergence implies several distinctive features. The integrated specific heat (entropy) remains finite through the transition, contrasting with the entropy discontinuity in first-order transitions. The correlation length $\xi \propto |\delta t|^{-1}$ diverges with exponent $\nu = 1$, twice the mean-field value. The critical point appears as an essential singularity in thermodynamic functions, not merely a branch point.
+
+This exact result for $\alpha = 0$ anchors our understanding of critical phenomena. It demonstrates that universality encompasses not just power laws but also logarithmic corrections, establishes two dimensions as the lower critical dimension for the Ising universality class, and provides the definitive test case for approximate methods. The perfect amplitude ratio $A_+/A_- = 1$ reflects the enhanced symmetry at the self-dual critical point.

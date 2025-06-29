@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       a7b9c2d4-8e5f-4a6b-9cd3-1e2f3a4b5c6d
+:CUSTOM_ID: 92/281
+:END:
+#+TITLE: 7.2 Low-Temperature Expansion Equations
+#+FILETAGS: :physics:spof:ch7:series:lowtemperature:expansion:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The low-temperature expansion proceeds from the ferromagnetic ground state with all spins aligned, treating excitations as islands of overturned spins whose energy cost depends on their perimeter. For the Ising model with Hamiltonian \(-\beta\mathcal{H} = K\sum_{\langle i,j\rangle} \sigma_i \sigma_j\) on a \(d\)-dimensional hypercubic lattice, the partition function expands as
+
+\[Z = 2\mathrm{e}^{NdK}\left[1 + N\mathrm{e}^{-4dK} + dN\mathrm{e}^{-4(2d-1)K} + \frac{N(N-2d-1)}{2}\mathrm{e}^{-8dK} + \cdots\right]\]
+
+The factor of 2 accounts for the two ferromagnetic ground states, the second term represents single flipped spins with energy cost \(2K \times 2d\), and the third term captures dimers of negative spins with energy cost \(2K \times (4d-2)\) and multiplicity \(N \times d\). This series reorganizes into the physically transparent form
+
+\[Z \simeq \mathrm{e}^{NdK} \sum_{\text{droplets of } \ominus \text{ spins}} \mathrm{e}^{-2K \times \text{boundary of droplet}}\]
+
+The free energy per site follows from careful cancellation of extensive terms:
+
+\[-\beta f = \frac{\ln Z}{N} = dK + \mathrm{e}^{-4dK} + d\mathrm{e}^{-4(2d-1)K} - \frac{(2d+1)}{2}\mathrm{e}^{-8dK} + \cdots\]
+
+Note the crucial cancellation of the \(N^2\) term from disconnected droplets, ensuring extensivity. The energy per site is
+
+\[\frac{E}{N} = -J\left[d - 4d\mathrm{e}^{-4dK} - 4d(2d-1)\mathrm{e}^{-4(2d-1)K} + 4d(2d+1)\mathrm{e}^{-8dK} + \cdots\right]\]
+
+and the heat capacity
+
+\[\frac{C}{Nk_B} = K^2\left[16d^2\mathrm{e}^{-4dK} + 16d(2d-1)^2\mathrm{e}^{-4(2d-1)K} - 32d^2(2d+1)\mathrm{e}^{-8dK} + \cdots\right]\]
+
+To extract critical parameters from a series \(C = \sum_{\ell=0}^{\infty} a_\ell u^\ell\), we exploit the expected singular form near criticality:
+
+\[C \simeq A\left(1-\frac{u}{u_c}\right)^{-\alpha} = A\sum_{\ell=0}^{\infty} \frac{\alpha(\alpha+1)\cdots(\alpha+\ell-1)}{\ell! u_c^\ell}u^\ell\]
+
+The ratio of successive coefficients reveals both the critical point and exponent:
+
+\[\frac{a_\ell}{a_{\ell-1}} \simeq \frac{1}{u_c}\left(1 + \frac{\alpha-1}{\ell}\right)\]
+
+A plot of \(a_\ell/a_{\ell-1}\) versus \(1/\ell\) yields a straight line with intercept \(u_c^{-1}\) and slope \(u_c^{-1}(\alpha-1)\). The alternating signs in the heat capacity series indicate complex-plane singularities closer than the physical critical point, necessitating variable transformations like \(u = \tanh K\) or more sophisticated Padé approximant methods [[7.13]].

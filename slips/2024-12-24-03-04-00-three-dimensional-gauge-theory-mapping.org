@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       c8f9e3a2-7b5d-4e89-9f2c-3a1b6d8e9f7c
+:CUSTOM_ID: 92/285
+:END:
+#+TITLE: 7.6 Three-Dimensional Gauge Theory Mapping
+#+FILETAGS: :physics:spof:ch7:series:gauge:threedimensional:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The three-dimensional Ising model lacks self-duality but possesses a dual description as a $\mathbb{Z}_2$ lattice gauge theory, revealing deep connections to confinement phenomena in particle physics. The low-temperature series on the cubic lattice expands as
+
+\[Z = \mathrm{e}^{3NK}\left[1 + N\mathrm{e}^{-2K \times 6} + 3N\mathrm{e}^{-2K \times 10} + \cdots\right] = \mathrm{e}^{3NK}\sum_{\text{Islands of (-) spins}}\mathrm{e}^{-2K \times \text{area of island's boundary}}\]
+
+while the high-temperature series takes the incompatible form
+
+\[Z = 2^N\cosh K^{3N}\left[1 + 3N\tanh K^4 + 18N\tanh K^6 + \cdots\right] = 2^N\cosh K^{3N}\sum_{\text{graphs with 2,4, or 6 lines per site}}\tanh K^{\text{number of lines}}\]
+
+The mismatch arises because boundaries are two-dimensional surfaces while high-temperature graphs are one-dimensional. To construct a dual model reproducing the low-temperature series, we place spins $\tilde{\sigma}_i = \pm 1$ on bonds and couple them through plaquette interactions:
+
+\[\tilde{Z} = \sum_{\{\tilde{\sigma}_P^i = \pm 1\}}\prod_{\text{plaquettes } P}(1 + \tanh\tilde{K}\tilde{\sigma}_P^1\tilde{\sigma}_P^2\tilde{\sigma}_P^3\tilde{\sigma}_P^4) \propto \sum_{\{\tilde{\sigma}_i\}}\mathrm{e}^{\tilde{K}\sum_P\tilde{\sigma}_P^1\tilde{\sigma}_P^2\tilde{\sigma}_P^3\tilde{\sigma}_P^4}\]
+
+where $\tilde{K}$ satisfies the duality relation of Equation 7.23. This defines a $\mathbb{Z}_2$ lattice gauge theory with local symmetry: flipping all bond spins emanating from any site leaves the energy invariant since each plaquette sees two sign changes.
+
+Elitzur's theorem prohibits spontaneous breaking of local symmetries—the finite energy cost (6h) for single spin flips ensures continuous variation of expectation values as $h \to 0$. The phase transition manifests through gauge-invariant observables like Wilson loops:
+
+\[C_S = \langle\text{Product of }\tilde{\sigma}\text{ around the loop}\rangle = \left\langle\prod_{i \in S}\tilde{\sigma}_i\right\rangle\]
+
+At high temperatures, the correlation function is dominated by minimal surfaces bounded by the loop:
+
+\[C_S = (\tanh\tilde{K})^{\text{Area of }S}[1 + \mathcal{O}(\tanh\tilde{K}^2)] \approx \exp[-f(\tanh\tilde{K}) \times \text{Area of }S]\]
+
+At low temperatures, starting from the $2^N$ gauge-equivalent ground states, loop excitations cost energy proportional to their perimeter:
+
+\[C_S = 1 - 2P_S\mathrm{e}^{-8\tilde{K}} + \cdots \approx \exp[-2\mathrm{e}^{-8\tilde{K}}P_S + \cdots]\]
+
+The transition from area to perimeter law signals confinement-deconfinement, analogous to quark physics. The gauge theory prototype is QED with action
+
+\[S = \int\mathrm{d}^4\mathbf{x}\left[\bar{\psi}(-i\not\partial + e\not{A} + m)\psi + \frac{1}{4}(\partial_\mu A_\nu - \partial_\nu A_\mu)^2\right]\]
+
+Matter fields couple to gauge fields through
+
+\[-\beta\mathcal{H} = J\sum_{\langle i,j\rangle}s_i\tilde{\sigma}_{ij}s_j + K\sum_P\tilde{\sigma}_P^1\tilde{\sigma}_P^2\tilde{\sigma}_P^3\tilde{\sigma}_P^4\]
+
+preserving gauge invariance under $s_i \mapsto (-1)s_i$, $\tilde{\sigma}_{i,\mu} \mapsto -\tilde{\sigma}_{i,\mu}$ at any site.

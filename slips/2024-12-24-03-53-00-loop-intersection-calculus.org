@@ -1,0 +1,93 @@
+:PROPERTIES:
+:ID:       e4a7f6b2-9c8d-4e5a-b3f1-2a9c7d8e5f4b
+:CUSTOM_ID: 92/334
+:END:
+#+TITLE: 7.D4 Loop Intersection Calculus
+#+FILETAGS: :physics:spof:ch7:series:loop:intersection:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The exact two-dimensional solution requires accounting for loop self-intersections through sign factors. Figures 7.16-7.18 establish the rules that transform the over-counted phantom sum into the exact partition function through systematic cancellations.
+
+*Rule 1: Intersection Point Traversal* (Figure 7.16)
+
+A four-way intersection can be traced by a walker in three ways:
+
+#+begin_example
+Method 1:          Method 2:          Method 3:
+    ↓                  ↓                  ↓
+→—→●←—←          →—→●—→→          →—→●←—←
+    ↓                  ↑                  ↑
+    ↓                  ↑                  ↓
+    
+Weight: +1         Weight: +1         Weight: -1
+(Two loops)       (One loop,         (One loop,
+                   no crossing)       one crossing)
+#+end_example
+
+The sum \(1 + 1 + (-1) = 1\) gives the correct factor for a single graph.
+
+*Rule 2: Double Bond Cancellation* (Figure 7.17)
+
+When a bond is traversed twice:
+
+#+begin_example
+Configuration A:           Configuration B:
+===●==========●===        ===●====><====●===
+   ↑          ↓               ↑    ××    ↓
+   └——————————┘               └——————————┘
+   
+Weight: +1                Weight: -1
+(Same side)               (Opposite sides, crossing)
+#+end_example
+
+These configurations cancel: \((+1) + (-1) = 0\), removing doubly-occupied bonds.
+
+*Exception: U-turns* 
+#+begin_example
+●←—←●
+↓    ↑
+→—→●
+#+end_example
+Cannot be eliminated by crossing, must be explicitly excluded.
+
+*Rule 3: Complex Graph Cancellation* (Figure 7.18)
+
+Multiple applications:
+#+begin_example
+Graph with double bond:
+○—●—●—○
+|  ║  |
+○—●—●—○
+
+Decomposition:
+○—●—●—○     ○—●—●—○
+|  |  |  +  |  X  |  = 0
+○—●—●—○     ○—●—●—○
+Weight: +1    Weight: -1
+#+end_example
+
+*Implementation in Transfer Matrix*:
+
+These rules are encoded through:
+1. No U-turn constraint: \(T^*\) has zero elements for backtracking
+2. Phase tracking: accumulate \(\mathrm{e}^{i\theta/2}\) for turns
+3. Whitney's theorem: total phase gives \((-1)^{n_c}\) automatically
+
+*Physical Interpretation*:
+
+The cancellations reflect quantum interference between different ways of creating the same spin configuration. Paths that cross an odd number of times interfere destructively, while even crossings interfere constructively. This mirrors fermionic statistics where particle exchange introduces minus signs.
+
+*Verification Example*:
+#+begin_example
+Figure-eight loop:
+  ●—●
+ / X \
+●—●—●—●
+
+Direct count: n_c = 1
+Whitney angle: Θ = 0 (two opposite 2π turns)
+Check: (1 + 0/2π) mod 2 = 1 ✓
+Factor: (-1)¹ = -1
+#+end_example
+
+These intersection rules transform the combinatorial problem of constrained path counting into the algebraic problem of matrix diagonalization, enabling Onsager's exact solution.

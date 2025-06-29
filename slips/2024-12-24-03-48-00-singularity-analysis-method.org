@@ -1,0 +1,51 @@
+:PROPERTIES:
+:ID:       a7f3b6e4-9c2d-4a8e-b1f5-3e7c9d5a6b2f
+:CUSTOM_ID: 92/329
+:END:
+#+TITLE: 7.37 Singularity Analysis Method
+#+FILETAGS: :physics:spof:ch7:series:singularity:analysis:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The extraction of critical behavior from exact solutions requires careful analysis of singularities in complex integrals, transforming the mathematical structure of partition functions into physical predictions for observable quantities. This method bridges exact expressions to universal scaling forms.
+
+For the two-dimensional Ising model, the free energy involves integrals of the form
+
+$$\frac{\ln Z}{N} = \int \frac{\mathrm{d}^2\mathbf{q}}{(2\pi)^2} \ln A(t,\mathbf{q})$$
+
+where $A(t,\mathbf{q})$ contains the temperature dependence and momentum structure. Singularities arise when $A(t,\mathbf{q}) \to 0$ for some $\mathbf{q}$.
+
+The systematic procedure:
+
+1. *Locate singular points*: Find where $A(t,\mathbf{q}) = 0$. For the Ising model, this occurs at $\mathbf{q} = \mathbf{0}$ when $t = t_c$.
+
+2. *Expand near singularity*: 
+   $$A(t,\mathbf{q}) \approx A_0(t)[q^2 + m^2(t)]$$
+   where $m^2(t) \propto (t-t_c)^{2x}$ with exponent $x$ determining critical behavior.
+
+3. *Isolate singular contribution*: Split the integral into singular (small $q$) and regular (large $q$) parts:
+   $$\int = \int_{|q|<\Lambda} + \int_{|q|>\Lambda}$$
+
+4. *Evaluate singular integral*: For small momentum cutoff,
+   $$\int_{|q|<\Lambda} \frac{\mathrm{d}^2\mathbf{q}}{(2\pi)^2} \ln(q^2 + m^2) = \frac{1}{4\pi}[(q^2+m^2)\ln(q^2+m^2)]_0^\Lambda$$
+
+5. *Extract scaling*: The $q \to 0$ limit yields
+   $$f_{\text{sing}} \propto m^2 \ln m^2 \propto (t-t_c)^{2x} \ln|t-t_c|$$
+
+For the exact Ising solution, the crucial distinction from phantom loops is $x = 1$ versus $x = 1/2$:
+- *Phantom*: $A(t,\mathbf{q}) \approx t_c[q^2 + 4(t-t_c)/t_c]$ gives $f_{\text{sing}} \propto (t-t_c)\ln|t-t_c|$
+- *Exact*: $A(t,\mathbf{q}) \approx 2t_c^2[q^2 + 4(t-t_c)^2/t_c^2]$ gives $f_{\text{sing}} \propto (t-t_c)^2\ln|t-t_c|$
+
+The method generalizes to other observables:
+- *Correlation functions*: Poles in momentum space determine decay
+- *Susceptibility*: Integrating correlations doubles the singularity power
+- *Magnetization*: Requires analyzing off-diagonal matrix elements
+
+Key technical points:
+- Angular integration in $d$ dimensions contributes factors of $2\pi^{d/2}/\Gamma(d/2)$
+- Branch cuts from logarithms require careful handling of complex values
+- Subdominant singularities contribute corrections to scaling
+- Anisotropic systems need full tensorial analysis
+
+The power of this method lies in its generality. Whether starting from exact solutions, mean-field theory, or renormalization group flows, the same analysis extracts critical exponents. The universality of critical phenomena manifests in only a few types of singularities appearing, regardless of microscopic details.
+
+Modern applications extend to quantum criticality (imaginary time direction), non-equilibrium transitions (complex frequencies), and topological phases (singularities in Berry curvature). The method remains the cornerstone for connecting theoretical predictions to experimental observations of critical behavior.

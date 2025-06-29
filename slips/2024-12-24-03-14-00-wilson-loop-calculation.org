@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       a3f5c2d1-8b4e-4f6a-9c7b-2e1d3a5b7c9f
+:CUSTOM_ID: 92/295
+:END:
+#+TITLE: 7.33 Wilson Loop Calculation
+#+FILETAGS: :physics:spof:ch7:series:wilson:loop:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Wilson loops serve as order parameters for gauge theories, distinguishing phases through the asymptotic scaling of loop correlators with area versus perimeter. For the \(\mathbb{Z}_2\) gauge theory dual to the three-dimensional Ising model [[7.6]], the Wilson loop observable is defined as
+
+\[C_S = \left\langle\prod_{i \in S}\tilde{\sigma}_i\right\rangle\]
+
+where the product extends over all bonds forming a closed loop \(S\). This quantity remains invariant under local gauge transformations since flipping spins at any site changes an even number of bonds on the loop, preserving the product's sign.
+
+The high-temperature calculation proceeds by expanding the Boltzmann factors for plaquettes. Each configuration contributing to \(C_S\) must have an odd number of occupied plaquettes adjacent to each bond on the loop \(S\) to yield a non-zero contribution after spin summation. The minimal configuration consists of a surface bounded by \(S\), giving
+
+\[C_S = (\tanh\tilde{K})^{\text{Area of }S}[1 + \mathcal{O}((\tanh\tilde{K})^2)] \approx \exp[-f(\tanh\tilde{K}) \times \text{Area of }S]\]
+
+This area law signifies confinement: the energy cost of separating gauge charges grows linearly with distance, binding them together with an effective string tension \(f(\tanh\tilde{K})\).
+
+The low-temperature analysis starts from gauge-equivalent ground states with all plaquettes satisfied. Elementary excitations flip single bonds, creating unsatisfied plaquettes at adjacent faces. For a ground state with all \(\tilde{\sigma}_i = +1\), the Wilson loop evaluation yields
+
+\[C_S = 1 - 2P_S\mathrm{e}^{-8\tilde{K}} + \cdots \approx \exp[-2\mathrm{e}^{-8\tilde{K}}P_S + \cdots]\]
+
+where \(P_S\) denotes the loop's perimeter. This perimeter law indicates deconfinement: well-separated charges interact with constant force, allowing arbitrary separation at finite energy cost.
+
+The transition between area and perimeter laws marks a phase transition without local order parameter, as guaranteed by Elitzur's theorem for gauge theories. The physical interpretation becomes transparent when viewing one lattice direction as time. A Wilson loop then represents creating a particle-antiparticle pair, separating them distance \(x\), propagating time \(t\), and annihilating them. The amplitude \(C_S \sim \exp(-U(x)t)\) reveals the interaction potential \(U(x)\).
+
+In the confined phase, \(U(x) = f(\tanh\tilde{K})|x|\) grows linearly—a string connects the particles. This mirrors quark confinement in quantum chromodynamics where the chromoelectric flux tube between quarks generates a linear potential. In the deconfined phase, \(U(x) \to \text{const}\) for large separation, corresponding to asymptotic freedom at short distances. The gauge theory description thus provides a lattice model for fundamental phenomena in particle physics, demonstrating how statistical mechanics illuminates quantum field theory through duality.

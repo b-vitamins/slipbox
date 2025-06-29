@@ -1,0 +1,63 @@
+:PROPERTIES:
+:ID:       c8f3d5a7-9b4e-4821-a632-7e9f8c2d1a36
+:CUSTOM_ID: 92/287
+:END:
+#+TITLE: 7.8 Exact Two-Dimensional Solution Equations
+#+FILETAGS: :physics:spof:ch7:series:exact:twodimensional:onsager:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The exact solution of the two-dimensional Ising model emerges from properly accounting for intersection constraints through a topological phase factor. The key insight is that the correct sum over high-temperature graphs is obtained by
+
+\[S = \sum\text{ collections of loops of random walks with no U-turns } \times t^{\text{number of bonds}} \times (-1)^{\text{number of crossings}}\]
+
+This remarkable formula corrects the phantom loop over-counting through sign alternation [[7.D4]]. The justification rests on two observations: intersection points traversed three ways contribute factors $1 + 1 + (-1) = 1$, while doubly-traversed bonds generate canceling contributions except for prohibited U-turns.
+
+The sum organizes via cumulant expansion:
+
+\[S = \exp\left[\sum(\text{RW}^*\text{s with 1 loop})\right]\]
+
+where RW$^*$ denotes signed walkers without U-turns. The partition function becomes
+
+\[\ln Z = N\ln 2 + 2N\ln\cosh K + \sum(\text{RW}^*\text{s with 1 loop} \times t^{\#\text{ of bonds}})\]
+
+Exploiting translational symmetry yields
+
+\[\frac{\ln Z}{N} = \ln(2\cosh^2 K) + \sum_\ell\frac{t^\ell}{\ell}\langle\mathbf{0}|W^*(\ell)|\mathbf{0}\rangle\]
+
+where $W^*(\ell)$ counts signed loops. Whitney's theorem relates crossing parity to the total turning angle:
+
+\[(n_c)_{\bmod 2} = \left(1 + \frac{\Theta}{2\pi}\right)_{\bmod 2}\]
+
+This enables local calculation of the crossing phase [[7.D5]]:
+
+\[(-1)^{n_c} = -\mathrm{e}^{\frac{i}{2}\sum_{j=1}^\ell\theta_j}\]
+
+Introducing directional labels $\mu = 1,2,3,4$ for right, up, left, down [[7.D6]], we construct $4N \times 4N$ matrices tracking both position and direction. The single-step transfer matrix $T^*$ has elements encoding connectivity and phase:
+
+\[\left\langle x'y',\mu'|T^*|xy,\mu\right\rangle = \delta_{\text{nearest neighbors}} \times \mathrm{e}^{i\theta_{\mu'\mu}/2}\]
+
+In Fourier space, each wavevector yields a $4 \times 4$ block:
+
+\[T^*(\mathbf{q}) = \begin{pmatrix} \mathrm{e}^{-iq_x} & \mathrm{e}^{-i(q_x-\pi/4)} & 0 & \mathrm{e}^{-i(q_x+\pi/4)} \\ \mathrm{e}^{-i(q_y+\pi/4)} & \mathrm{e}^{-iq_y} & \mathrm{e}^{-i(q_y-\pi/4)} & 0 \\ 0 & \mathrm{e}^{i(q_x-\pi/4)} & \mathrm{e}^{iq_x} & \mathrm{e}^{i(q_x+\pi/4)} \\ \mathrm{e}^{i(q_y+\pi/4)} & 0 & \mathrm{e}^{i(q_y-\pi/4)} & \mathrm{e}^{iq_y} \end{pmatrix}\]
+
+The free energy follows from
+
+\[\frac{\ln Z}{N} = \ln(2\cosh^2 K) + \frac{1}{2N}\operatorname{tr}\ln(1-tT^*) = \ln(2\cosh^2 K) + \frac{1}{2}\int\frac{\mathrm{d}^2\mathbf{q}}{(2\pi)^2}\ln\det(1-tT^*(\mathbf{q}))\]
+
+Computing the determinant yields
+
+\[\frac{\ln Z}{N} = \ln(2\cosh^2 K) + \frac{1}{2}\int\frac{\mathrm{d}^2\mathbf{q}}{(2\pi)^2}\ln\left[(1+t^2)^2 - 2t(1-t^2)(\cos q_x + \cos q_y)\right]\]
+
+which simplifies using trigonometric identities to Onsager's form:
+
+\[\frac{\ln Z}{N} = \ln 2 + \frac{1}{2}\int_{-\pi}^{\pi}\frac{\mathrm{d}q_x\mathrm{d}q_y}{(2\pi)^2}\ln\left[\cosh^2(2K) - \sinh(2K)(\cos q_x + \cos q_y)\right]\]
+
+The singularity occurs when the argument vanishes at $\mathbf{q} = \mathbf{0}$, giving $(1-t_c^2-2t_c)^2 = 0$ or $t_c = \sqrt{2} - 1$, confirming the duality result. Near criticality, the argument expands as $A^*(t,\mathbf{q}) \approx 2t_c^2[q^2 + 4(\delta t/t_c)^2]$, crucially quadratic in $\delta t$. This yields
+
+\[\left.\frac{\ln Z}{N}\right|_{\text{sing}} = -\frac{1}{\pi}\left(\frac{\delta t}{t_c}\right)^2\ln\left|\frac{\delta t}{t_c}\right|\]
+
+producing logarithmic heat capacity divergence ($\alpha = 0$) with unit amplitude ratio. Yang's magnetization formula
+
+\[m = \left(1 - \sinh^{-4}(2K)\right)^{1/8}\]
+
+gives exponent $\beta = 1/8$, completing the exact critical exponents: $\alpha = 0$, $\nu = 1$, $\eta = 1/4$, $\beta = 1/8$, $\gamma = 7/4$.

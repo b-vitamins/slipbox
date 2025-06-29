@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       c4a8e7f5-2b9d-4a6e-8f13-9c2d5e3a7b4c
+:CUSTOM_ID: 92/302
+:END:
+#+TITLE: 7.41 Complete Two-Dimensional Exponents
+#+FILETAGS: :physics:spof:ch7:series:twodimensional:exponents:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The two-dimensional Ising model possesses a complete set of exactly known critical exponents that violate mean-field predictions while satisfying all required scaling relations. These exact values, derived through various extensions of Onsager's solution, provide the gold standard against which approximate methods are calibrated.
+
+The thermal exponents characterize singularities in zero field:
+
+- Specific heat: $\alpha = 0$ (logarithmic divergence)
+- Correlation length: $\nu = 1$ 
+- Correlation function decay: $\eta = 1/4$
+
+The magnetic exponents describe behavior in weak fields:
+
+- Spontaneous magnetization: $\beta = 1/8$
+- Susceptibility: $\gamma = 7/4$  
+- Critical isotherm: $\delta = 15$
+
+These values interconnect through exact scaling relations. The hyperscaling relation $2 - \alpha = d\nu$ yields $2 - 0 = 2 \times 1$, confirming two as the spatial dimension. Fisher's scaling law $\gamma = \nu(2-\eta)$ gives $7/4 = 1(2-1/4)$. The Rushbrooke equality $\alpha + 2\beta + \gamma = 2$ becomes $0 + 2(1/8) + 7/4 = 2$. All relations hold exactly, demonstrating the internal consistency of scaling theory.
+
+The magnetization exponent $\beta = 1/8$ emerges from Yang's analysis of Onsager's solution, yielding the celebrated formula
+
+\[m = \left(1 - \sinh^{-4}(2K)\right)^{1/8} \quad \text{for } T < T_c\]
+
+Near criticality this reduces to $m \propto (T_c - T)^{1/8}$, revealing the weak singularity of the order parameter. The small value of $\beta$ implies that magnetization vanishes slowly as temperature approaches $T_c$ from below, contrasting with the mean-field jump discontinuity ($\beta = 1/2$).
+
+The correlation function exponent $\eta = 1/4$ describes the power-law decay at criticality: $\langle\sigma(\mathbf{0})\sigma(\mathbf{r})\rangle_c \sim r^{-1/4}$. This anomalous dimension indicates that the spin field acquires non-trivial scaling dimension $\Delta_\sigma = (d-2+\eta)/2 = 1/8$, precisely matching the magnetization exponent through the scaling relation $\beta = \nu\Delta_\sigma$.
+
+The large value of $\gamma = 7/4$ reflects strong critical fluctuations in two dimensions. The susceptibility $\chi \sim |T-T_c|^{-7/4}$ diverges much more rapidly than mean-field theory predicts ($\gamma = 1$), indicating the enhanced response to external fields near criticality. Combined with $\nu = 1$, this yields the correlation length exponent for the disconnected correlation function.
+
+These exact exponents reveal how dimensionality affects critical behavior. Compared to mean-field values ($\alpha = 0$, $\beta = 1/2$, $\gamma = 1$, $\nu = 1/2$, $\eta = 0$), the two-dimensional exponents show enhanced fluctuations in all channels. The non-zero $\eta$ signals the breakdown of simple scaling, while the small $\beta$ indicates strong suppression of order by fluctuations. These trends continue to the lower critical dimension $d = 1$ where the transition disappears entirely.

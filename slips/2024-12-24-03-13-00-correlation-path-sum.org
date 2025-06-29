@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       c7d4f8e2-9b3a-4e56-a721-3f8c5d9e2b14
+:CUSTOM_ID: 92/294
+:END:
+#+TITLE: 7.26 Correlation Path Sum
+#+FILETAGS: :physics:spof:ch7:series:correlation:path:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The path sum representation of correlation functions transforms the abstract statistical mechanical average into a concrete sum over all paths connecting two points, revealing the geometrical origin of critical behavior. The two-point function in the high-temperature expansion becomes
+
+\[\langle\sigma(\mathbf{0})\sigma(\mathbf{r})\rangle = \frac{1}{Z}\sum_{\{\sigma_i\}}\sigma(\mathbf{0})\sigma(\mathbf{r})\prod_{\langle ij\rangle}(1 + t\sigma_i\sigma_j)\]
+
+The product over bonds generates graphs where the external spins at \(\mathbf{0}\) and \(\mathbf{r}\) appear with odd powers to survive the spin summation. These graphs consist of a path directly connecting the two points plus arbitrary closed loops elsewhere.
+
+In the phantom loop approximation, closed loops factor out of numerator and denominator, yielding the simplified form
+
+\[\langle\sigma(\mathbf{0})\sigma(\mathbf{r})\rangle \approx \sum_{\ell} t^\ell\langle\mathbf{r}|W(\ell)|\mathbf{0}\rangle\]
+
+This expression has profound physical meaning: correlations arise from all possible paths carrying information between the two points, each weighted by \(t^{\text{length}}\) representing the probability of successful transmission along each bond. The sum includes paths of all lengths, from the direct route of \(|\mathbf{r}|\) steps to meandering walks of arbitrary duration.
+
+The transfer matrix formalism [[id:7d9f3e8a-2c4b-4f3e-9a8d-1b7c6e5f8d92][7.23]] enables exact evaluation. Using \(W(\ell) = T^\ell\) and summing the geometric series yields
+
+\[\langle\sigma(\mathbf{0})\sigma(\mathbf{r})\rangle = \langle\mathbf{r}|\frac{1}{1-tT}|\mathbf{0}\rangle = \int\frac{\mathrm{d}^d\mathbf{q}}{(2\pi)^d}\frac{\mathrm{e}^{i\mathbf{q}\cdot\mathbf{r}}}{1-tT(\mathbf{q})}\]
+
+The Fourier representation reveals the correlation length through the small-\(\mathbf{q}\) expansion of the denominator. Near criticality where \(t \to t_c = 1/(2d)\), the denominator becomes \(t_c(\xi^{-2} + q^2)\), identifying \(\xi = [(1-2dt)/t_c]^{-1/2}\) as the correlation length.
+
+The path picture illuminates critical phenomena. For \(t < t_c\), paths are dominated by their line tension, maintaining nearly direct routes between points. The exponential decay \(\exp(-r/\xi)\) reflects the improbability of long paths. At criticality, line tension vanishes and paths of all scales contribute equally, generating power-law correlations. The critical paths are scale-invariant random walks whose fractal properties determine universal exponents.
+
+Beyond the phantom approximation, self-avoidance constraints modify path statistics. In dimensions below four, paths must avoid their own trail, swelling their typical size from \(R \sim \ell^{1/2}\) to \(R \sim \ell^\nu\) with \(\nu > 1/2\). This swelling directly manifests in enhanced correlation lengths and modified critical exponents. The path representation thus provides a geometrical understanding of how local constraints generate long-range correlations, connecting microscopic interactions to macroscopic critical behavior through the statistics of information-carrying paths.
