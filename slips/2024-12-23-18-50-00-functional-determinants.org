@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       67c747dc-64e5-4d38-93c7-c3041d7e51d1
+:CUSTOM_ID: 92/109
+:END:
+#+TITLE: Functional Determinants
+#+FILETAGS: :physics:spof:ch3:determinants:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Functional determinants provide the mathematical framework for computing fluctuation contributions to thermodynamics in statistical field theory. They generalize ordinary matrix determinants to infinite-dimensional spaces, encoding how all possible field configurations contribute to the partition function.
+
+The Gaussian partition function factorizes into mean-field and fluctuation contributions:
+
+\[Z = \int \mathcal{D}\phi \exp(-\mathcal{H}) \propto (\det K)^{-1/2}\]
+
+The determinant of the kernel operator \(K\) captures all fluctuation contributions. For translationally invariant systems, Fourier transformation diagonalizes \(K\), reducing the functional determinant to a product over momentum modes:
+
+\[\det K = \prod_{\mathbf{q}} K(\mathbf{q})\]
+
+where \(K(\mathbf{q}) = K(q^2 + \xi^{-2})\) for the Landau-Ginzburg model.
+
+The free energy follows from the logarithm of the determinant:
+
+\[\beta F_{fluct} = \frac{1}{2}\ln\det K = \frac{1}{2}\sum_{\mathbf{q}} \ln K(\mathbf{q}) = \frac{V}{2}\int \frac{d^d\mathbf{q}}{(2\pi)^d} \ln[K(q^2 + \xi^{-2})]\]
+
+This momentum integral encodes how fluctuations at each wavelength contribute to thermodynamics. The infrared behavior (small \(q\)) determines critical singularities, while the ultraviolet (large \(q\)) yields non-universal corrections.
+
+Regularization issues arise because \(\prod_{\mathbf{q}} K(\mathbf{q})\) formally diverges. Physical observables depend only on determinant ratios, with divergences canceling between numerator and denominator. Temperature derivatives yield finite results:
+
+\[\frac{\partial \ln\det K}{\partial \xi^{-2}} = \sum_{\mathbf{q}} \frac{1}{q^2 + \xi^{-2}} = V \int \frac{d^d\mathbf{q}}{(2\pi)^d} \frac{1}{q^2 + \xi^{-2}}\]
+
+This derivative gives the fluctuation contribution to specific heat, with convergence properties determining critical dimensions.
+
+Functional determinants extend beyond simple quadratic kernels. For differential operators \(\mathcal{D} = -\nabla^2 + V(\mathbf{x})\), the determinant equals the product of eigenvalues, connecting to quantum mechanical spectra. Ratios of determinants appear in instanton calculations, giving non-perturbative corrections. The logarithmic derivative \(\delta\ln\det K/\delta K\) yields correlation functions through the identity \(\text{Tr}(K^{-1}\delta K)\).
+
+Mathematical techniques for evaluation include:
+- Heat kernel methods: \(\ln\det K = -\int_0^\infty \frac{dt}{t}\text{Tr}(e^{-tK})\)
+- Zeta function regularization: \(\ln\det K = -\zeta'_K(0)\) where \(\zeta_K(s) = \text{Tr}(K^{-s})\)
+- Proper time expansion for curved space or inhomogeneous systems
+
+The physical interpretation remains clear: functional determinants count the phase space volume available to fluctuations. Large determinants indicate suppressed fluctuations (stiff systems), while small determinants signal enhanced fluctuations (soft modes). The vanishing of \(\det K\) at a critical point, where zero modes appear, marks the onset of instability and phase transitions.
+
+See also: [[id:3028e20e-7268-406d-b4fd-5b3103ade06d][Fluctuation Free Energy]], [[id:6444aa55-031d-43ca-a069-bbaed0d2e0ed][Functional Integrals]], [[id:f74997a9-7993-446b-8866-eb3ed85448ec][Momentum Space Techniques]]

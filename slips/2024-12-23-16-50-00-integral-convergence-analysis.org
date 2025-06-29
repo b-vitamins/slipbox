@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       9237039d-fa0a-43ed-a5c6-f6b677764098
+:CUSTOM_ID: 92/85
+:END:
+#+TITLE: Integral Convergence Analysis
+#+FILETAGS: :physics:spof:ch3:convergence:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Integral convergence analysis reveals the mathematical origin of critical dimensions and upper critical dimensions in fluctuation theory. Consider a generic momentum integral of the form:
+
+\[\int_0^\infty dq \, q^{d-1-n}\]
+
+For small \(q\), the integrand behaves as \(q^{d-1-n}\) after angular integration. This integral converges at the origin when \(d - 1 - n > -1\), requiring \(n < d\). For large \(q\), convergence demands \(d - 1 - n < -1\), hence \(n > d\). The integral converges for all \(q\) only when no integer \(n\) satisfies this impossible condition, revealing why physical integrals typically require either infrared or ultraviolet regularization.
+
+The fluctuation corrections to thermodynamic quantities involve integrals of the form:
+
+\[\mathcal{F}(d,\xi) = \int \frac{d^d\mathbf{q}}{(2\pi)^d} \frac{1}{(q^2 + \xi^{-2})^m}\]
+
+For the heat capacity correction, \(m = 2\), yielding an integrand that scales as \(q^{d-1-4} = q^{d-5}\) at large \(q\). This converges when \(d - 5 < -1\), or \(d < 4\), identifying the upper critical dimension. Below \(d = 4\), the integral is ultraviolet convergent and dominated by the infrared cutoff \(\xi^{-1}\):
+
+\[\mathcal{F}(d,\xi) \sim \int_0^{\xi^{-1}} dq \, q^{d-1-4} \sim \xi^{-(d-4)}\]
+
+Above \(d = 4\), ultraviolet divergence requires a microscopic cutoff \(\Lambda\), yielding \(\mathcal{F} \sim \Lambda^{d-4}\), independent of \(\xi\). This dimensional crossover at \(d = 4\) separates regimes where fluctuations are either irrelevant corrections (d > 4) or dominant effects (d < 4).
+
+The marginal dimension \(d = 4\) exhibits logarithmic behavior. Here the integral \(\int dq/q^3\) diverges logarithmically at both limits, producing \(\mathcal{F} \sim \ln(\Lambda\xi)\). Such logarithmic corrections signal the breakdown of simple power counting and necessitate more sophisticated renormalization group analysis.
+
+Similar analysis applies to all fluctuation integrals. The susceptibility correction involves \(m = 1\), converging for \(d < 2\) and explaining why mean-field theory fails even for thermodynamic quantities in low dimensions. Dynamic quantities involve integrals over frequency as well as momentum, potentially modifying critical dimensions. The mathematical structure revealed by convergence analysis—power-law scaling below a critical dimension, logarithms at the margin, and constants above—appears throughout physics wherever fluctuations compete with mean-field behavior.
+
+This analysis establishes upper critical dimensions as fundamental mathematical properties rather than approximation artifacts. The dimension where integrals change from convergent to divergent marks where fluctuations transition from corrections to dominant physics. This mathematical foundation underlies the entire structure of critical phenomena and renormalization group theory.
+
+See also: [[id:f74997a9-7993-446b-8866-eb3ed85448ec][Momentum Space Techniques]], [[id:12782f48-6079-48e4-b568-1121225dd5a7][Heat Capacity Corrections]], [[id:39cbb004-8f52-4220-9b8d-46cae5d84138][Ginzburg Region]]

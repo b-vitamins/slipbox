@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       4a410a3a-eb38-4c0f-85f1-d1610a43ed18
+:CUSTOM_ID: 92/107
+:END:
+#+TITLE: Gaussian Approximation Framework
+#+FILETAGS: :physics:spof:ch3:gaussian:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Gaussian approximation provides the foundation for all systematic approaches to critical phenomena by truncating the statistical weight at quadratic order in field fluctuations. This approximation transforms complex many-body problems into exactly solvable theories, establishing the reference point for perturbative corrections and renormalization group analysis.
+
+The Gaussian Hamiltonian retains only quadratic terms in the field variables:
+
+\[\mathcal{H}_{quad}[\phi] = \frac{1}{2}\int d^d\mathbf{x} \phi(\mathbf{x}) K(-\nabla^2 + \xi^{-2}) \phi(\mathbf{x})\]
+
+This simplification enables exact solution through functional integration, yielding Gaussian statistics for all correlation functions. The resulting theory captures essential physics while remaining mathematically tractable: correlation functions equal Green's functions of the differential operator, and thermodynamics reduces to functional determinants.
+
+Physical validity requires that anharmonic terms remain small compared to quadratic ones. For a \(\phi^4\) interaction, this demands \(\langle\phi^2\rangle \ll t/u\), where \(\langle\phi^2\rangle \sim \xi^{2-d}\) from dimensional analysis. The approximation thus holds when \(\xi^{2-d} \ll t/u\), failing as \(\xi \to \infty\) at criticality for \(d < 4\). This mathematical criterion translates physically to requiring small fluctuation amplitudes relative to the mean-field order parameter.
+
+Within its regime of validity, the Gaussian approximation yields exact results for correlation functions, susceptibilities, and fluctuation corrections to thermodynamics. The two-point function equals the inverse quadratic kernel, connecting microscopic interactions to macroscopic correlations. Thermodynamic quantities follow from functional determinants, with critical behavior emerging from the infrared divergence of soft modes.
+
+The framework naturally incorporates different universality classes through the number of order parameter components \(n\). Whether analyzing Ising (\(n = 1\)), XY (\(n = 2\)), or Heisenberg (\(n = 3\)) systems, the same mathematical structure applies, with \(n\) entering only through counting transverse modes. This unification exemplifies the power of field-theoretic methods in statistical physics.
+
+The Gaussian approximation's breakdown signals the onset of genuinely critical behavior. When fluctuation corrections diverge, perturbative expansions around the Gaussian theory fail, necessitating non-perturbative methods like the renormalization group. The critical dimension \(d = 4\) emerges naturally as the boundary where Gaussian theory transitions from quantitatively accurate to qualitatively wrong.
+
+Despite its limitations, the Gaussian framework provides essential physical insights. It correctly predicts the existence of soft modes, the divergence of correlation lengths, and the special role of dimension. Even when quantitatively inaccurate, it captures the mechanism by which local interactions produce long-range correlations. As the zeroth-order term in systematic expansions, Gaussian theory remains indispensable for understanding phase transitions and critical phenomena.
+
+See also: [[id:c64406ae-8c0f-4faa-9ade-cf69b7dc5478][Gaussian Integral Basics]], [[id:6444aa55-031d-43ca-a069-bbaed0d2e0ed][Functional Integrals]], [[id:f0e21c90-5b51-4ee1-bdc6-b097ddb35cc8][Beyond Gaussian Physics]]

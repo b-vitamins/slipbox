@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       d1e3da9a-abb0-4e45-88fb-587b547b2715
+:CUSTOM_ID: 92/97
+:END:
+#+TITLE: Material Examples
+#+FILETAGS: :physics:spof:ch3:materials:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Representative materials from each universality class provide experimental validation of theoretical predictions while demonstrating the practical importance of critical phenomena across diverse physical systems.
+
+Ferromagnetic metals iron (T_c = 1043 K) and nickel (T_c = 627 K) exemplify three-dimensional Heisenberg (\(n = 3\)) behavior. Despite different crystal structures—body-centered cubic for iron, face-centered cubic for nickel—both exhibit identical critical exponents within experimental precision. Magnetization measurements reveal the characteristic square-root temperature dependence below T_c, while susceptibility shows power-law divergence above. Neutron scattering confirms the anticipated spin-wave spectrum and correlation function forms.
+
+Superfluid helium-4 represents the three-dimensional XY (\(n = 2\)) universality class. The lambda transition at 2.17 K appears as a sharp peak in specific heat (shaped like the Greek letter λ), with critical behavior extending over millikelvin ranges accessible through careful cryogenic control. The ability to measure both thermodynamic quantities and superfluid density through torsional oscillator experiments provides comprehensive tests of theoretical predictions. Confined helium in porous media enables studies of dimensional crossover and finite-size effects.
+
+Liquid-gas critical points in carbon dioxide (T_c = 304.13 K, P_c = 73.77 bar) and xenon (T_c = 289.74 K, P_c = 58.42 bar) belong to the three-dimensional Ising (\(n = 1\)) class. These systems offer visual observation of critical opalescence—the sample becomes milky white as density fluctuations scatter light on all length scales. The convenient critical parameters allow precise measurements of compressibility divergence and order parameter (density difference) vanishing. Binary liquid mixtures provide similar physics at atmospheric pressure.
+
+Superconductors like aluminum (T_c = 1.18 K) and tin (T_c = 3.72 K) exhibit mean-field behavior due to their enormous coherence lengths. The order parameter—the Cooper pair wavefunction—can be probed through Josephson tunneling, while specific heat measurements reveal the characteristic BCS discontinuity without logarithmic divergence. Type I superconductors provide the cleanest examples, avoiding complications from vortex physics.
+
+Ferroelectric transitions in triglycine sulfate (TGS, T_c = 322 K) show mean-field behavior for different reasons: the effective long-range dipolar interactions between polarized regions. Dielectric measurements track the order parameter (spontaneous polarization) and susceptibility (dielectric constant) with high precision. The convenience of room-temperature transitions enables extensive studies without cryogenics.
+
+Each material system offers specific experimental advantages while contributing to the universal picture. The agreement of critical exponents within universality classes, despite vast differences in microscopic physics, provides compelling evidence for the theoretical framework of critical phenomena.
+
+See also: [[id:8f3d13bf-f379-41a9-9bc7-d0292f67d6b1][Critical Exponent Values]], [[id:946d05e3-fc1f-4924-a6ba-ba74c10ffde7][Coherence Lengths]], [[id:59a6f3d3-7bd0-4afd-9d63-ac4cfa91b86b][Universal Critical Behavior]]

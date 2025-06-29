@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       2e0349c4-ec89-4fe3-b4c6-59c430f248a3
+:CUSTOM_ID: 92/69
+:END:
+#+TITLE: Correlation Function Definitions
+#+FILETAGS: :physics:spof:ch3:correlations:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The connected correlation function measures genuine correlations between fluctuation fields \(\phi_\alpha\), which represent deviations from the spontaneous magnetization. The "connected" designation indicates that we subtract the disconnected part \(\bar{m}_\alpha \bar{m}_\beta\), isolating genuine correlations from trivial products of averages.
+
+Fourier analysis reveals the momentum-space structure of correlations. Transforming both the fields and the correlation function yields
+
+\[G_{\alpha,\beta}^c(\mathbf{x}, \mathbf{x}') = \frac{1}{V}\sum_{\mathbf{q},\mathbf{q}'} e^{i\mathbf{q} \cdot \mathbf{x} + i\mathbf{q}' \cdot \mathbf{x}'}\langle\phi_{\alpha,\mathbf{q}}\phi_{\beta,\mathbf{q}'}\rangle\]
+
+Substituting the momentum-space correlations from fluctuation mode structure and performing the sum produces the fundamental result
+
+\[G_{\alpha,\beta}^c(\mathbf{x}, \mathbf{x}') = \frac{\delta_{\alpha,\beta}}{V}\sum_\mathbf{q} \frac{e^{i\mathbf{q} \cdot (\mathbf{x} - \mathbf{x}')}}{K(q^2 + \xi_\alpha^{-2})} \equiv -\frac{\delta_{\alpha,\beta}}{K}I_d(\mathbf{x} - \mathbf{x}', \xi_\alpha) \tag{3.12}\]
+
+The function \(I_d(\mathbf{r}, \xi)\) encapsulates the universal spatial structure of correlations in \(d\) dimensions with correlation length \(\xi\). Its mathematical properties determine how fluctuations propagate through space and how different regions of the system influence each other.
+
+The diagonal structure (\(\delta_{\alpha,\beta}\)) reflects the rotational symmetry in the disordered phase and the mode separation in the ordered phase. Different components fluctuate independently in the Gaussian approximation, though nonlinear couplings beyond this approximation can induce cross-correlations. The prefactor \(1/K\) shows that softer systems (smaller \(K\)) exhibit stronger fluctuations, as expected physically.
+
+Integrating the correlation function over all space yields the susceptibility, while its Fourier transform returns the structure factor measured in scattering experiments. This web of connections makes \(G^c\) the central object linking theory to experiment in the study of critical phenomena.
+
+See also: [[id:733f3011-9659-48d1-8d88-58fccc326fca][Fluctuation Mode Structure]], [[id:caf5042c-4b4a-4e58-9f6f-e9e85cce970c][Susceptibility Integrals]], [[id:fb81004f-52fb-4422-8bdd-058a805bb70c][Scattering Theory Foundation]]

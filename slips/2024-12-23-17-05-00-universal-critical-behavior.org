@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       59a6f3d3-7bd0-4afd-9d63-ac4cfa91b86b
+:CUSTOM_ID: 92/88
+:END:
+#+TITLE: Universal Critical Behavior
+#+FILETAGS: :physics:spof:ch3:universality:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Universality represents one of the most profound discoveries in critical phenomena: systems with vastly different microscopic physics exhibit identical critical behavior when they share the same spatial dimension \(d\) and order parameter symmetry \(n\). This universality arises from the diverging correlation length \(\xi \to \infty\) at criticality, which causes the system to "forget" microscopic details while retaining only symmetry and dimensionality.
+
+Critical exponents characterize the universal power laws: \(\xi \sim |t|^{-\nu}\), \(\chi \sim |t|^{-\gamma}\), \(M \sim |t|^{\beta}\), and \(C \sim |t|^{-\alpha}\). Mean-field theory predicts universal values (\(\nu = 1/2\), \(\gamma = 1\), \(\beta = 1/2\), \(\alpha = 0\)) independent of both \(d\) and \(n\). Real systems show \(d\)- and \(n\)-dependent exponents, but within each universality class defined by \((d,n)\), the exponents remain constant.
+
+Universality extends beyond exponents to amplitude ratios and scaling functions. The ratio of correlation lengths above and below \(T_c\), \(\xi_+/\xi_- = \sqrt{2}\) in mean-field theory, takes universal values depending only on universality class. Similarly, the combination \(S(\mathbf{q})\xi^{d-2+\eta}\) at criticality depends only on \(q\xi\), with the scaling function universal within each class.
+
+The concept revolutionized our understanding of phase transitions. Previously, each system required separate analysis; universality revealed deep connections transcending microscopic details. Water and iron, despite different intermolecular forces, belong to the same universality class (3D Ising, \(n = 1\)) and thus share identical critical exponents. Superfluid helium represents 3D XY behavior (\(n = 2\)), while isotropic ferromagnets exhibit 3D Heisenberg (\(n = 3\)) criticality.
+
+Universality has practical implications. Measurements on convenient systems (like binary liquids) apply directly to less accessible ones (like QCD phase transitions) in the same universality class. Theoretical calculations for simplified models capture real experimental behavior. The principle extends beyond equilibrium criticality to dynamic phenomena, surface behavior, and even certain non-equilibrium systems, making universality a unifying principle throughout statistical physics.
+
+The mathematical foundation rests on the renormalization group, which demonstrates how universality emerges from the irrelevance of microscopic details when \(\xi\) exceeds all other length scales. This scale separation transforms qualitatively different microscopic systems into identical effective theories at long wavelengths.
+
+See also: [[id:93796440-8500-4892-9c68-b7f23385b629][Critical Exponent Values]], [[id:231284c0-b569-49f2-87fb-b26119c23020][Correlation Length Divergence]], [[id:a6dc5888-bca4-4665-bff8-dc79b44953ee][Critical Dimensions]]

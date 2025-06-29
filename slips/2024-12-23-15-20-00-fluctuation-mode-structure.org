@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       733f3011-9659-48d1-8d88-58fccc326fca
+:CUSTOM_ID: 92/67
+:END:
+#+TITLE: Fluctuation Mode Structure
+#+FILETAGS: :physics:spof:ch3:fluctuations:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Each Fourier mode behaves as an independent Gaussian random variable with zero mean, reflecting the translational invariance of the system. The factorized form immediately yields the fundamental two-point correlation function in momentum space:
+
+\[\langle\phi_{\alpha,\mathbf{q}}\phi_{\beta,\mathbf{q}'}\rangle = \frac{\delta_{\alpha,\beta}\delta_{\mathbf{q},-\mathbf{q}'}}{K(q^2 + \xi_\alpha^{-2})} \tag{3.9}\]
+
+The Kronecker deltas enforce both mode orthogonality (\(\delta_{\alpha,\beta}\)) and momentum conservation (\(\delta_{\mathbf{q},-\mathbf{q}'}\)), while the denominator encodes the mode-specific susceptibility. The \(q^2\) term represents the gradient energy cost, while \(\xi_\alpha^{-2}\) acts as an effective mass that vanishes for transverse modes in the ordered phase.
+
+This momentum-space structure directly determines the scattering intensity. For elastic scattering from magnetic fluctuations, the structure factor takes the Lorentzian form \(S(\mathbf{q}) \propto 1/(q^2 + \xi^{-2})\), which provides excellent fits to experimental data away from criticality. The width of this Lorentzian in \(q\)-space equals \(\xi^{-1}\), enabling direct extraction of correlation lengths from scattering experiments.
+
+In the ordered phase, the distinction between longitudinal and transverse modes becomes experimentally accessible through polarized neutron scattering. Longitudinal scattering yields a Lorentzian centered at \(\mathbf{q} = 0\) (superimposed on a Bragg peak from the spontaneous magnetization), while transverse scattering exhibits the characteristic \(1/q^2\) divergence of Goldstone modes. This mode structure provides the microscopic foundation for understanding how continuous symmetry breaking manifests in measurable quantities.
+
+See also: [[id:4d3a9bc0-c8b2-43ff-bcaa-393f584e194d][Critical Scattering Form]], [[id:6ab026ae-43e8-4d26-afef-0c3146927867][Stiffness Constants]], [[id:fb81004f-52fb-4422-8bdd-058a805bb70c][Scattering Theory Foundation]]

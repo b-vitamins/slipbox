@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       73a5eb9b-b875-4329-a31d-bfa41a134ea1
+:CUSTOM_ID: 92/100
+:END:
+#+TITLE: Lorentzian Line Shapes
+#+FILETAGS: :physics:spof:ch3:lorentzian:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Lorentzian line shapes in scattering experiments provide the most direct experimental signature of exponentially decaying correlations away from critical points. The characteristic form emerges from the Ornstein-Zernike correlation function in momentum space:
+
+\[S(\mathbf{q}) = \frac{A}{q^2 + \xi^{-2}}\]
+
+where \(A\) is an amplitude factor containing microscopic details. In one dimension, this reduces to the classic Lorentzian \(S(q) = A/(q^2 + \xi^{-2})\), while in three dimensions, angular averaging yields a similar form with modified prefactors. The half-width at half-maximum equals \(\xi^{-1}\), providing a model-independent measurement of the correlation length.
+
+Experimental implementation requires careful attention to instrumental effects. Real measurements convolve the intrinsic Lorentzian with instrumental resolution functions, typically Gaussian in shape. For \(\xi\) much larger than the resolution width, simple deconvolution suffices. Near criticality, where \(\xi\) diverges, sophisticated analysis accounting for beam divergence, wavelength spread, and detector resolution becomes essential.
+
+Temperature-dependent measurements reveal critical behavior through systematic fits. Plotting \(\xi^{-1}(T)\) versus reduced temperature \(t = (T - T_c)/T_c\) on logarithmic scales yields straight lines with slope \(\nu\): \(\xi^{-1} \propto |t|^\nu\). The amplitude ratio \(\xi_+/\xi_-\) above and below \(T_c\) provides a universal test independent of non-universal scales. Integrated intensity measurements yield the susceptibility exponent through \(\int S(\mathbf{q})d^3q \propto \chi \propto |t|^{-\gamma}\).
+
+Multiple scattering complicates analysis when \(\xi\) approaches the photon mean free path. Near critical opalescence, photons scatter multiple times before detection, distorting line shapes and requiring transport theory corrections. Small-angle scattering minimizes these effects by probing longer wavelengths where scattering remains weak.
+
+The breakdown of Lorentzian behavior signals new physics. At criticality, the line shape transforms to a power law \(S(q) \propto q^{-(2-\eta)}\), though the small value of \(\eta \approx 0.03\) makes this deviation subtle. In the ordered phase, transverse scattering shows \(1/q^2\) behavior from Goldstone modes rather than Lorentzian forms. Quantum critical points exhibit \(\omega/T\) scaling that modifies the energy-integrated line shapes.
+
+Modern fitting procedures employ global analysis across multiple temperatures and wavevectors, constraining critical exponents and amplitudes simultaneously. Bayesian methods quantify uncertainties and correlations between parameters. The remarkable agreement between Lorentzian fits and experimental data over wide ranges of \(q\) and \(T\) validates our understanding of critical correlations while providing precision tests of theoretical predictions.
+
+The Lorentzian line shape represents one of the most successful connections between theoretical predictions and experimental observations in critical phenomena, providing a quantitative bridge between microscopic correlations and macroscopic measurements.
+
+See also: [[id:fb81004f-52fb-4422-8bdd-058a805bb70c][Scattering Theory Foundation]], [[id:ba9b268b-d0a5-49e0-8a52-72208e634e0a][Scattering Experiments]], [[id:733f3011-9659-48d1-8d88-58fccc326fca][Fluctuation Mode Structure]]

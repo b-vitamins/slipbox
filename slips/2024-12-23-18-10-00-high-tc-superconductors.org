@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       cc95083d-e9cb-4546-875c-7dff56a05eda
+:CUSTOM_ID: 92/101
+:END:
+#+TITLE: High-Tc Superconductors
+#+FILETAGS: :physics:spof:ch3:superconductors:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+High-temperature superconductors provide the first example of superconducting systems where thermal fluctuations significantly affect critical behavior. Unlike conventional superconductors with their enormous coherence lengths, cuprate superconductors exhibit microscopic \(\xi_0 \sim 10-20\) Å due to short mean free paths and d-wave pairing symmetry.
+
+This small \(\xi_0\) brings the Ginzburg temperature up to observable values. Using the three-dimensional formula \(t_G \sim \xi_0^{-6}\), we find \(t_G \sim 10^{-3}-10^{-2}\) for cuprates, compared to \(10^{-18}\) for aluminum. The quasi-two-dimensional nature further enhances fluctuations, with some estimates suggesting an effective \(t_G \sim 0.1\) when accounting for dimensional crossover. Specific heat measurements indeed show rounding of the mean-field discontinuity over several kelvin ranges.
+
+Fluctuation effects manifest throughout the phase diagram. Above \(T_c\), paraconductivity—excess conductivity from fluctuating Cooper pairs—follows the Aslamazov-Larkin prediction \(\sigma' \propto t^{-1}\) in two dimensions. Magnetization measurements reveal diamagnetic fluctuations extending well above \(T_c\). The Nernst effect, measuring vortex motion, persists to temperatures far exceeding mean-field expectations, suggesting an extended fluctuation regime.
+
+The layered structure enables dimensional crossover studies. For temperatures where \(\xi_c(T) < d\) (interlayer spacing), the system behaves two-dimensionally with enhanced fluctuations. As temperature decreases and \(\xi_c\) exceeds \(d\), three-dimensional behavior emerges. This crossover, absent in conventional superconductors, provides tests of theoretical predictions for anisotropic systems.
+
+Vortex fluctuations dominate transport properties in magnetic fields. The small \(\xi_0\) implies large critical fields but also strong thermal fluctuations of vortex positions. Vortex melting transitions, flux creep, and glassy dynamics all stem from the enhanced role of thermal fluctuations. These phenomena, negligible in conventional superconductors, determine practical applications of high-\(T_c\) materials.
+
+The pseudogap phase above \(T_c\) in underdoped cuprates may represent a fluctuation-induced crossover rather than a true phase transition. Preformed pairs lacking phase coherence contribute to thermodynamic and transport anomalies without establishing true superconductivity. This regime, intermediate between normal metal and superconductor, exemplifies how fluctuations can create new phases absent in mean-field theory.
+
+The observation of fluctuation effects in high-temperature superconductors validates theoretical frameworks developed for but untestable in conventional systems. These materials demonstrate that superconductivity, while often mean-field-like, can exhibit the rich fluctuation phenomena characteristic of other phase transitions when microscopic parameters permit.
+
+See also: [[id:946d05e3-fc1f-4924-a6ba-ba74c10ffde7][Coherence Lengths], [[id:50c6effe-fc5a-4304-a7bd-8376b7de5df6][Ginzburg Region]], [[id:fbd26541-19ff-494d-b576-9bf5f6ece15d][Data Analysis Methods]]

@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       12782f48-6079-48e4-b568-1121225dd5a7
+:CUSTOM_ID: 92/75
+:END:
+#+TITLE: Heat Capacity Corrections
+#+FILETAGS: :physics:spof:ch3:ginzburg:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The heat capacity receives corrections from fluctuations that become dominant near criticality in dimensions below four. The fluctuation contribution to the heat capacity takes the universal form:
+
+\[C_F = \frac{1}{K^2}\int\frac{d^d\mathbf{q}}{(2\pi)^d}\frac{1}{(q^2 + \xi^{-2})^2} \tag{3.60}\]
+
+with correlation length \(\xi\) appropriate to each phase. Dimensional analysis reveals that this integral scales as \([\text{length}]^{4-d}\), signaling qualitatively different behavior above and below \(d = 4\).
+
+For dimensions \(d > 4\), the integral diverges at large \(q\) and is dominated by the ultraviolet cutoff \(\Lambda \sim 1/a\):
+
+\[C_F \simeq \frac{1}{K^2}a^{4-d} \quad \text{for } d > 4\]
+
+This yields a temperature-independent correction that merely shifts the heat capacity baseline without altering the mean-field discontinuity. Fluctuations remain well-behaved microscopic corrections. In contrast, for \(d < 4\) the integral converges at large \(q\) but diverges as \(\xi \to \infty\):
+
+\[C_F \simeq \frac{1}{K^2}\xi^{4-d} \quad \text{for } d < 4 \tag{3.61}\]
+
+Since \(\xi \sim |t|^{-1/2}\), the fluctuation contribution \(C_F \sim |t|^{-(4-d)/2}\) overwhelms the mean-field discontinuity sufficiently close to \(T_c\), producing a power-law divergence with exponent \(\alpha = (4-d)/2\).
+
+The competition between mean-field and fluctuation contributions defines the Ginzburg criterion. Fluctuations dominate when \(C_F\) exceeds the mean-field discontinuity \(\Delta C_{\text{SP}} \sim 1/u\):
+
+\[\frac{|t|^{-(4-d)/2}}{K^2\xi_0^d} \gg \frac{1}{u} \quad \Rightarrow \quad |t| \ll t_G \simeq \frac{1}{(\xi_0^d\Delta C_{\text{SP}})^{2/(4-d)}} \tag{3.62}\]
+
+The Ginzburg temperature \(t_G\) depends crucially on the microscopic length \(\xi_0 = 1/\sqrt{K}\). For conventional systems with \(\xi_0 \sim 1-10\) Å, one finds \(t_G \sim 10^{-1}-10^{-2}\), making fluctuation effects readily observable. Superconductors with \(\xi_0 \sim 1000\) Å yield \(t_G \sim 10^{-18}\), explaining why they exhibit mean-field behavior at all accessible temperatures.
+
+This analysis identifies \(d = 4\) as the upper critical dimension below which fluctuations fundamentally alter critical phenomena, transforming discontinuous mean-field transitions into power-law singularities. The dimensional crossover at \(d = 4\) represents one of the deepest results in critical phenomena, establishing when microscopic fluctuations collectively reorganize to produce new macroscopic behavior.
+
+See also: [[id:3028e20e-7268-406d-b4fd-5b3103ade06d][Fluctuation Free Energy]], [[id:39cbb004-8f52-4220-9b8d-46cae5d84138][Ginzburg Region]], [[id:fde40a31-429d-4163-bfce-f255f164b51c][Coherence Lengths]]

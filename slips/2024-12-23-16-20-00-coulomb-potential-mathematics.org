@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID:       a362af50-44f9-4c9b-aa8a-5d3d1eee8168
+:CUSTOM_ID: 92/79
+:END:
+#+TITLE: Coulomb Potential Mathematics
+#+FILETAGS: :physics:spof:ch3:coulomb:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Coulomb potential in \(d\) dimensions, \(C_d(\mathbf{r})\), emerges as the fundamental Green's function for the Laplacian operator and governs long-range correlations in systems with massless excitations. Defined through the momentum-space integral:
+
+\[C_d(\mathbf{r}) = \int \frac{d^d\mathbf{q}}{(2\pi)^d} \frac{e^{i\mathbf{q} \cdot \mathbf{r}}}{q^2} \tag{3.29}\]
+
+The \(1/q^2\) kernel, characteristic of massless excitations, ensures scale invariance—a dilation of space merely rescales the potential without changing its functional form. This mathematical property underlies the universality of critical phenomena.
+
+The defining differential equation follows from Fourier transformation:
+
+\[\nabla^2 C_d(\mathbf{x}) = \int \frac{d^d\mathbf{q}}{(2\pi)^d} \frac{q^2}{q^2} e^{i\mathbf{q} \cdot \mathbf{x}} = \delta^d(\mathbf{x}) \tag{3.30}\]
+
+Rather than solving via Fourier integrals, Gauss's theorem provides a more physical approach. Integrating both sides over a \(d\)-dimensional sphere of radius \(r\) yields:
+
+\[\int d^d x \nabla^2 C_d = \oint dS \cdot \nabla C_d = 1 \tag{3.31}\]
+
+For a spherically symmetric solution, the surface integral becomes \(S_d r^{d-1} dC_d/dr = 1\), where
+
+\[S_d = \frac{2\pi^{d/2}}{(d/2-1)!} \tag{3.32}\]
+
+is the surface area of a unit \(d\)-sphere. This geometric factor reflects how flux spreads through the available dimensions. Solving the differential equation yields:
+
+\[\frac{dC_d}{dr} = \frac{1}{S_d r^{d-1}} \quad \Rightarrow \quad C_d(r) = \frac{r^{2-d}}{(2-d)S_d} + c_0 \tag{3.33}\]
+
+The integration constant \(c_0\) must be chosen to satisfy appropriate boundary conditions for the physical problem at hand.
+
+The long-distance behavior reveals a fundamental trichotomy:
+
+\[\lim_{r \to \infty} C_d(r) = \begin{cases} c_0 & d > 2 \\ \frac{r^{2-d}}{(2-d)S_d} & d < 2 \\ \frac{\ln(r)}{2\pi} & d = 2 \end{cases} \tag{3.34}\]
+
+For \(d > 2\), the potential approaches a constant at infinity, enabling stable long-range order. For \(d < 2\), the diverging potential signals that long-wavelength fluctuations dominate, destroying order. The marginal dimension \(d = 2\) exhibits logarithmic behavior, placing it at the boundary between order and disorder.
+
+This mathematical structure governs phase fluctuations in superfluids, spin waves in magnets, and more generally any Goldstone mode arising from spontaneous symmetry breaking. The dimension-dependent behavior of \(C_d\) provides the mathematical foundation for the Mermin-Wagner theorem, explaining why continuous symmetries cannot be spontaneously broken in \(d \leq 2\) dimensions with short-range interactions.
+
+See also: [[id:5b06142d-7d7b-4ce6-944e-dc587c198a2b][I_d Explicit Forms]], [[id:ed52cb9d-83cb-4588-a670-84d359dc284d][Phase Fluctuation Theory]], [[id:e0883a37-4d29-4fe1-b4f3-1f182755b53d][Two-Dimensional Physics]]

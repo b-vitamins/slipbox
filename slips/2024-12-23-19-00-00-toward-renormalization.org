@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       fd2c25ab-41ec-413a-8b0c-a46e56056e0d
+:CUSTOM_ID: 92/111
+:END:
+#+TITLE: Toward Renormalization
+#+FILETAGS: :physics:spof:ch3:renormalization:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The systematic failures of mean-field theory and Gaussian approximations revealed throughout this chapter point inexorably toward the need for renormalization group (RG) theory. Each breakdown illuminates a crucial aspect of critical phenomena that demands a fundamentally new theoretical framework.
+
+The chapter's key observations naturally lead to RG concepts:
+
+1. **Scale invariance at criticality**: The power-law forms \(S(q) \sim q^{-(2-\eta)}\) and \(G(r) \sim r^{-(d-2+\eta)}\) reflect the absence of characteristic length scales at \(T_c\). RG formalizes this observation: critical points are fixed points of scale transformations where the system appears statistically identical at all magnifications.
+
+2. **Diverging effective coupling**: The dimensionless combination \(g \sim u\xi^{4-d}/K^2\) grows without bound as \(\xi \to \infty\) for \(d < 4\). RG reinterprets this growth: coupling constants "run" with scale, and their flow determines universal behavior. The dimension \(d = 4\) emerges as the upper critical dimension where coupling constants become marginal.
+
+3. **Gaussian theory breakdown**: Fluctuation corrections scaling as \(\xi^{4-d}\) overwhelm mean-field predictions near criticality. RG explains why: iterative coarse-graining generates new interactions, making the Gaussian fixed point unstable for \(d < 4\). A new, non-trivial fixed point governs critical behavior.
+
+4. **Universality**: Different microscopic systems share identical critical exponents. RG provides the mechanism: systems flow to the same fixed point if they share symmetry and dimensionality. Microscopic details become irrelevant operators that decay under RG flow.
+
+5. **Dimensional dependence**: Critical behavior changes qualitatively with dimension. RG reveals why: fixed point structure depends on \(d\), with different fixed points stable in different dimensions. The \(\epsilon = 4-d\) expansion provides controlled access to three-dimensional physics.
+
+The mathematical structures developed here—functional integrals, momentum shell integration, and operator dimensions—become RG building blocks. The physical insights—competing length scales, relevant versus irrelevant perturbations, and crossover phenomena—find precise formulation in RG language.
+
+RG addresses this chapter's unresolved questions:
+- How do non-Gaussian interactions determine critical exponents?
+- Why does \(d = 4\) play a special role?
+- How can three-dimensional exponents be calculated systematically?
+- What governs crossover between different universal behaviors?
+
+The path forward involves recognizing that criticality requires treating all length scales simultaneously. No single scale dominates; instead, the relationship between scales determines behavior. RG implements this vision through recursive coarse-graining, integrating out short scales to derive effective theories at longer scales. Fixed points of this procedure correspond to scale-invariant critical points.
+
+This chapter establishes why such sophisticated methods are necessary. Mean-field theory fails, perturbation theory diverges, and Gaussian approximations break down—yet experiments show beautiful universal behavior. The resolution lies in embracing the scale-free nature of criticality through renormalization group theory.
+
+The conceptual revolution is profound: instead of seeking exact solutions to complicated problems, RG finds universal solutions to classes of problems. The method transforms the study of critical phenomena from a collection of special cases into a unified theoretical framework, revealing the deep mathematical structure underlying phase transitions in nature.
+
+See also: [[id:a6dc5888-bca4-4665-bff8-dc79b44953ee][Critical Dimensions]], [[id:f0e21c90-5b51-4ee1-bdc6-b097ddb35cc8][Beyond Gaussian Physics]], [[id:59a6f3d3-7bd0-4afd-9d63-ac4cfa91b86b][Universal Critical Behavior]]

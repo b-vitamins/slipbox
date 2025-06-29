@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       e4c4f589-f078-4974-9950-f1d9deca85f8
+:CUSTOM_ID: 92/95
+:END:
+#+TITLE: Saddle Point Validity
+#+FILETAGS: :physics:spof:ch3:saddlepoint:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The validity of saddle point (mean-field) approximations depends critically on spatial dimension and distance from criticality. Understanding when these approximations succeed or fail guides both theoretical approach and experimental interpretation across the full spectrum of phase transition phenomena.
+
+In dimensions \(d > 4\), the approximation proves asymptotically exact at critical points. Fluctuation integrals converge, contributing only finite corrections that don't alter the singular structure of thermodynamic functions. The heat capacity discontinuity, spontaneous magnetization exponent \(\beta = 1/2\), and correlation length exponent \(\nu = 1/2\) emerge correctly from mean-field analysis. Higher dimensions effectively implement mean-field theory through geometry: many neighbors stabilize local averages.
+
+The approximation remains useful even in \(d < 4\) when sufficiently far from criticality. Outside the Ginzburg region, where \(|t| > t_G\), mean-field theory captures qualitative behavior and provides reasonable quantitative estimates. The predicted transition temperature, while not exact, typically lies within factors of two of reality. Phase diagrams retain correct topology even if phase boundaries shift.
+
+Saddle point validity extends beyond temperature distance from criticality. Systems with long-range interactions decaying as \(1/r^\sigma\) with \(\sigma < d\) exhibit mean-field behavior, as each spin effectively interacts with infinitely many others. Quantum systems at zero temperature may show classical critical behavior if quantum fluctuations remain weak. Disordered systems can exhibit mean-field behavior due to the self-averaging of random interactions.
+
+The breakdown of saddle point approximations near critical points in \(d \leq 4\) stems from the diverging correlation length. As \(\xi \to \infty\), fluctuations on all length scales contribute equally, invalidating any single-configuration description. The system explores vast regions of configuration space, sampling dramatically different states with comparable probability. No single "most probable" configuration adequately represents this fluctuating ensemble.
+
+Understanding saddle point validity proves crucial for theoretical strategy. When valid, mean-field theory provides analytical solutions and physical insight. When invalid, perturbative corrections diverge, demanding non-perturbative methods like the renormalization group. The boundary between these regimes—marked by critical dimensions and Ginzburg temperatures—represents one of statistical mechanics' most important conceptual divisions.
+
+The physical intuition behind validity is compelling: mean-field theory assumes each degree of freedom experiences an average field from its neighbors. This becomes exact when either the number of neighbors becomes infinite (high dimensions) or when fluctuations in that average field become negligible (weak coupling or far from criticality). When neither condition holds, the full complexity of correlated fluctuations must be addressed.
+
+See also: [[id:50c6effe-fc5a-4304-a7bd-8376b7de5df6][Ginzburg Region]], [[id:a6dc5888-bca4-4665-bff8-dc79b44953ee][Critical Dimensions]], [[id:42723703-6da3-4a68-9da8-e38012a8a4c6][Beyond Gaussian Physics]]

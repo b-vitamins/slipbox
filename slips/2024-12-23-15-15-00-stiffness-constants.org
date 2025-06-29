@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID: 6ab026ae-43e8-4d26-afef-0c3146927867
+:CUSTOM_ID: 92/66
+:END:
+#+TITLE: Stiffness Constants
+#+FILETAGS: :physics:spof:ch3:stiffness:goldstone:symmetrybreaking:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The longitudinal fluctuations \(\phi_\ell\) experience an effective stiffness given by:
+
+\[\frac{K}{\xi_\ell^2} \equiv t + 12u\bar{m}^2 = \left.\frac{\partial^2\Psi(m)}{\partial\phi_\ell^2}\right|_{\bar{m}} = \begin{cases} t & \text{for } t > 0 \\ -2t & \text{for } t < 0 \end{cases} \tag{3.6}\]
+
+while transverse fluctuations experience the distinct stiffness
+
+\[\frac{K}{\xi_t^2} \equiv t + 4u\bar{m}^2 = \left.\frac{\partial^2\Psi(m)}{\partial\phi_t^2}\right|_{\bar{m}} = \begin{cases} t & \text{for } t > 0 \\ 0 & \text{for } t < 0 \end{cases} \tag{3.7}\]
+
+The physical significance of the length scales \(\xi_\ell\) and \(\xi_t\) becomes apparent through their temperature dependence. In the disordered phase (\(t > 0\)), both modes share identical stiffnesses proportional to \(t\), reflecting the isotropy of the paramagnetic state where all directions are equivalent. The ordered phase (\(t < 0\)) breaks this symmetry dramatically: longitudinal fluctuations encounter a stiffness \(-2t\) that grows with decreasing temperature, while transverse fluctuations experience zero restoring force.
+
+This vanishing transverse stiffness signals the emergence of Goldstone modes—massless excitations arising from the continuous symmetry breaking. The system can rotate its order parameter at no energy cost, leading to long-range transverse correlations. Meanwhile, the longitudinal correlation length follows the universal temperature dependence
+
+\[\xi_\ell = \begin{cases} \xi_0 t^{-1/2} & \text{for } t > 0 \\ \xi_0(-2t)^{-1/2}/\sqrt{2} & \text{for } t < 0 \end{cases} \tag{3.21}\]
+
+where \(\xi_0 = 1/\sqrt{K}\) sets the microscopic length scale. The singular behavior \(\xi_\pm \sim \xi_0 B_\pm |t|^{-\nu_\pm}\) exhibits universal exponents \(\nu_\pm = 1/2\) and amplitude ratio \(B_+/B_- = \sqrt{2}\), while the non-universal prefactor \(\xi_0\) depends on microscopic details. This divergence of \(\xi_\ell\) drives critical phenomena, as fluctuations on all length scales up to \(\xi_\ell\) contribute equally to thermodynamic singularities.
+
+**See also:** [[id:227b3624-a893-4624-bf55-a341680718b1][Fluctuation Mode Structure]] for the momentum space decomposition, [[id:65b656bc-edef-4e0f-bfc7-a6284bf7516d][Goldstone Mode Physics]] for the consequences of vanishing transverse stiffness, [[id:569ac89b-efc8-4dba-a0df-c607730a3766][Landau-Ginzburg Probability]] for the probability distribution context.

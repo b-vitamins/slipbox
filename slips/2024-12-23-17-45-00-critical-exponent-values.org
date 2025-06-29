@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       8f3d13bf-f379-41a9-9bc7-d0292f67d6b1
+:CUSTOM_ID: 92/96
+:END:
+#+TITLE: Critical Exponent Values
+#+FILETAGS: :physics:spof:ch3:exponents:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Experimental measurements of critical exponents provide definitive tests of theoretical predictions and validate the concept of universality. Precise values for three-dimensional systems with short-range interactions demonstrate systematic deviations from mean-field theory:
+
+| System | Examples | α | β | γ | ν |
+|--------|----------|---|---|---|---|
+| Ferromagnets (n=3) | Fe, Ni | -0.1 | 0.4 | 1.3 | 0.7 |
+| Superfluid (n=2) | He⁴ | 0 | 0.3 | 1.3 | 0.7 |
+| Liquid-gas (n=1) | CO₂, Xe | 0.1 | 0.3 | 1.2 | 0.7 |
+| Ferroelectrics/Superconductors | TGS | 0 | 1/2 | 1 | 1/2 |
+| Mean-field theory | — | 0 | 1/2 | 1 | 1/2 |
+
+The pattern reveals profound truths about critical phenomena. Three-dimensional systems with short-range interactions (first three rows) show exponents significantly different from mean-field predictions, with the deviation increasing as the order parameter components decrease from \(n = 3\) to \(n = 1\). The specific heat exponent \(\alpha\) varies most dramatically, from slightly negative for Heisenberg magnets to positive for Ising-like systems, while mean-field theory predicts a simple discontinuity (\(\alpha = 0\)).
+
+Universality manifests strikingly: iron and nickel, despite different crystal structures and exchange interactions, share identical exponents within experimental error. Liquid-gas transitions in chemically distinct substances (CO₂, Xe, SF₆) exhibit the same critical behavior as uniaxial ferromagnets—both belong to the 3D Ising universality class with scalar (\(n = 1\)) order parameters.
+
+The correlation length exponent \(\nu \approx 0.7\) for all three-dimensional systems with short-range forces exceeds the mean-field value 0.5, reflecting enhanced fluctuations near criticality. The order parameter exponent \(\beta \approx 0.3\) falls below mean-field, indicating that fluctuations suppress the ordered phase more than anticipated by saddle-point theory. The susceptibility exponent \(\gamma\) shows smaller but systematic deviations.
+
+Ferroelectrics and conventional superconductors provide the exception, exhibiting mean-field exponents despite three-dimensional structure. The crucial difference lies in their large coherence lengths: \(\xi_0 \sim 1000\) Å for superconductors versus \(\sim 10\) Å for magnets. This pushes the Ginzburg temperature below experimental resolution, making fluctuations unobservable.
+
+Modern experiments achieve remarkable precision—exponents are known to four significant figures for well-studied systems. This accuracy enables tests of theoretical predictions from epsilon expansion, series expansions, and Monte Carlo simulations. The agreement between experiment and modern theory to parts in thousand validates our understanding of critical phenomena while challenging theorists to achieve still higher accuracy.
+
+See also: [[id:59a6f3d3-7bd0-4afd-9d63-ac4cfa91b86b][Universal Critical Behavior]], [[id:d1e3da9a-abb0-4e45-88fb-587b547b2715][Material Examples]], [[id:50c6effe-fc5a-4304-a7bd-8376b7de5df6][Ginzburg Region]]

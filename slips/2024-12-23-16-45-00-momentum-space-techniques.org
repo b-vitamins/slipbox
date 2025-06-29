@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       f74997a9-7993-446b-8866-eb3ed85448ec
+:CUSTOM_ID: 92/84
+:END:
+#+TITLE: Momentum Space Techniques
+#+FILETAGS: :physics:spof:ch3:momentum:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Momentum space techniques provide the practical foundation for evaluating functional integrals and correlation functions in statistical field theory. The conversion from discrete to continuous momentum transforms discrete sums into integrals through the density of states:
+
+\[\frac{1}{V}\sum_\mathbf{q} \to \int \frac{d^d\mathbf{q}}{(2\pi)^d}\]
+
+This conversion factor \(V/(2\pi)^d\) represents the density of states in momentum space, ensuring proper normalization of Fourier transforms and correlation functions.
+
+Practical calculations require careful treatment of both infrared (small \(q\)) and ultraviolet (large \(q\)) limits. The infrared behavior determines universal properties near criticality, where long-wavelength fluctuations dominate. Here the continuum approximation becomes exact as \(q\xi \ll 1\). The ultraviolet region encodes microscopic details and typically requires a cutoff \(\Lambda \sim 1/a\) where \(a\) is the lattice spacing. Different cutoff schemes—sharp cutoff, smooth cutoff, or lattice dispersion—yield the same universal behavior but different non-universal amplitudes.
+
+Spherical symmetry in isotropic systems reduces \(d\)-dimensional integrals to one-dimensional radial integrals:
+
+\[\int \frac{d^d\mathbf{q}}{(2\pi)^d} f(q) = \frac{S_d}{(2\pi)^d} \int_0^\infty dq \, q^{d-1} f(q)\]
+
+where \(S_d = 2\pi^{d/2}/(d/2-1)!\) is the surface area of a unit \(d\)-sphere. This reduction proves essential for evaluating loop integrals in perturbation theory and determining critical dimensions.
+
+Dimensional analysis provides powerful constraints on momentum integrals. An integral \(\int d^dq \, g(q,\xi^{-1})\) must have dimensions \([q]^d \times [g]\). If \(g\) is homogeneous of degree \(-n\), the integral scales as \(\xi^{n-d}\) for \(\xi \to \infty\), immediately revealing convergence properties and critical exponents. For example, the fluctuation integral \(\int d^dq/(q^2 + \xi^{-2})^2\) has \(n = 4\), yielding dimension \([length]^{4-d}\) and identifying \(d = 4\) as the critical dimension.
+
+The momentum space formulation naturally separates universal infrared physics from non-universal ultraviolet details. Critical exponents emerge from the infrared, while amplitudes and correction terms depend on the full integral including the cutoff. This separation underlies the power of the renormalization group, which systematically integrates out high-momentum modes to derive effective theories for long-wavelength physics.
+
+The mathematical machinery developed here—momentum integrals, spherical coordinates, dimensional analysis—provides the foundation for all perturbative calculations in critical phenomena, from Gaussian fluctuations to renormalization group flows.
+
+See also: [[id:9237039d-fa0a-43ed-a5c6-f6b677764098][Integral Convergence Analysis]], [[id:3028e20e-7268-406d-b4fd-5b3103ade06d][Fluctuation Free Energy]], [[id:02d3c7e4-c09b-4809-a1c4-989d154ea5bc][Functional Determinants]]

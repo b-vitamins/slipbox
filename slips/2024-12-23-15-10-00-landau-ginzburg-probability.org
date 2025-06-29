@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID: 569ac89b-efc8-4dba-a0df-c607730a3766
+:CUSTOM_ID: 92/65
+:END:
+#+TITLE: Landau-Ginzburg Probability
+#+FILETAGS: :physics:spof:ch3:landauginzburg:probability:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The statistical weight of field configurations in the Landau-Ginzburg theory follows the Boltzmann distribution:
+
+\[P[\vec{m}(\mathbf{x})] = \frac{1}{Z}\exp\{-\beta\mathcal{H}[\vec{m}(\mathbf{x})]\} \tag{3.3}\]
+
+This functional form encapsulates the competition between the energetic cost of spatial variations (gradient term with stiffness \(K\)), the tendency toward ordering or disordering (mass term with reduced temperature \(t\)), and the stabilizing effect of nonlinearities (quartic term with coupling \(u > 0\)).
+
+To analyze fluctuations around the mean-field solution, we decompose the magnetization into its average value plus fluctuations. For a system that orders along direction \(\hat{e}_1\) with magnitude \(\bar{m}\), we write
+
+\[\vec{m}(\mathbf{x}) = [\bar{m} + \phi_\ell(\mathbf{x})]\hat{e}_1 + \sum_{\alpha=2}^n \phi_{t,\alpha}(\mathbf{x})\hat{e}_\alpha \tag{3.4}\]
+
+Here \(\phi_\ell\) represents longitudinal fluctuations that change the magnitude of order, while \(\phi_{t,\alpha}\) denotes transverse fluctuations in the \(n-1\) directions perpendicular to the ordering direction. This decomposition proves fundamental because longitudinal and transverse modes experience different restoring forces.
+
+Substituting this decomposition into the Hamiltonian and expanding to quadratic order yields
+
+\[\beta\mathcal{H} = V\left(\frac{t}{2}\bar{m}^2 + u\bar{m}^4\right) + \int d^d\mathbf{x}\left[\frac{K}{2}(\nabla\phi_\ell)^2 + \frac{t + 12u\bar{m}^2}{2}\phi_\ell^2\right]\]
+\[+ \int d^d\mathbf{x}\left[\frac{K}{2}(\nabla\phi_t)^2 + \frac{t + 4u\bar{m}^2}{2}\phi_t^2\right] + \mathcal{O}(\phi^3) \tag{3.5}\]
+
+The first term represents the mean-field free energy, while the quadratic terms describe Gaussian fluctuations with mode-dependent stiffnesses. The distinction between the coefficients \(12u\bar{m}^2\) and \(4u\bar{m}^2\) reflects the fundamental asymmetry between longitudinal and transverse fluctuations in the ordered phase, leading directly to Goldstone mode physics.
+
+**See also:** [[id:6ab026ae-43e8-4d26-afef-0c3146927867][Stiffness Constants]] for the mode-dependent restoring forces, [[id:227b3624-a893-4624-bf55-a341680718b1][Fluctuation Mode Structure]] for the momentum space analysis, [[id:65b656bc-edef-4e0f-bfc7-a6284bf7516d][Goldstone Mode Physics]] for the consequences of transverse softness.

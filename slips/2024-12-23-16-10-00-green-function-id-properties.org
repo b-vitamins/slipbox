@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       61ddb9e6-cf71-4c2b-bc53-b847bc39fc58
+:CUSTOM_ID: 92/77
+:END:
+#+TITLE: Green's Function I_d Properties
+#+FILETAGS: :physics:spof:ch3:greens:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Green's function \(I_d(\mathbf{r}, \xi)\) satisfies the screened Poisson equation, providing the fundamental solution for correlation functions in \(d\) dimensions. Rearranging the defining integral yields:
+
+\[(\nabla^2 - \xi^{-2})I_d = -\delta^d(\mathbf{x}) \tag{3.14}\]
+
+This identifies \(I_d\) as the response to a point source with screening length \(\xi\). The mathematical structure reveals how the correlation length \(\xi\) modifies the long-range Coulomb interaction into a finite-range Yukawa potential.
+
+For spherically symmetric solutions, the Laplacian in \(d\) dimensions reduces to:
+
+\[\frac{d^2I_d}{dx^2} + \frac{d-1}{x}\frac{dI_d}{dx} = \frac{I_d}{\xi^2} + \delta^d(\mathbf{x}) \tag{3.15}\]
+
+Away from the origin, we seek solutions with exponential decay modulated by a power law:
+
+\[I_d(x) \propto \frac{\exp(-x/\xi)}{x^p} \tag{3.16}\]
+
+Substituting this ansatz into the differential equation and requiring consistency at different length scales yields two regimes. For \(x \ll \xi\), the \(1/x^2\) terms dominate, requiring \(p(p+1) = p(d-1)\), hence \(p = d-2\). This yields the Coulomb form at short distances where screening is ineffective. For \(x \gg \xi\), the \(1/(x\xi)\) terms dominate, giving \(2p - (d-1) = 0\), thus \(p = (d-1)/2\). The exponential decay at large distances reflects the finite correlation length.
+
+The complete solution smoothly interpolates between these limits. At short distances (\(x \ll \xi\)), the Green's function approaches the unscreened Coulomb potential, while at large distances (\(x \gg \xi\)) it exhibits Yukawa-like exponential decay with a power-law prefactor. This crossover at \(x \sim \xi\) encodes how correlations transition from critical (power-law) to non-critical (exponential) behavior, providing the mathematical foundation for understanding finite-size scaling and the approach to criticality.
+
+The asymptotic forms determine universal correlation function properties and scattering experiments probe different regimes depending on the momentum transfer relative to \(\xi^{-1}\).
+
+See also: [[id:5b06142d-7d7b-4ce6-944e-dc587c198a2b][I_d Explicit Forms]], [[id:a362af50-44f9-4c9b-aa8a-5d3d1eee8168][Coulomb Potential Mathematics]], [[id:2e0349c4-ec89-4fe3-b4c6-59c430f248a3][Correlation Function Definitions]]

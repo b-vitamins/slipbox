@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       231284c0-b569-49f2-87fb-b26119c23020
+:CUSTOM_ID: 92/87
+:END:
+#+TITLE: Correlation Length Divergence
+#+FILETAGS: :physics:spof:ch3:correlation:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The correlation length \(\xi\) serves as the fundamental length scale controlling all aspects of critical behavior. As the critical temperature approaches, \(\xi\) diverges according to the universal power law:
+
+\[\xi_\pm \sim \xi_0 |t|^{-\nu} \quad \text{as } t \to 0\]
+
+where \(t = (T - T_c)/T_c\) is the reduced temperature and \(\nu\) is a universal critical exponent. Mean-field theory predicts \(\nu = 1/2\), though fluctuations modify this value in dimensions \(d < 4\).
+
+The diverging correlation length has profound physical consequences. First, it establishes universality: when \(\xi\) greatly exceeds all microscopic scales, the system "forgets" its microscopic details, depending only on symmetry and dimensionality. Second, it drives thermodynamic singularities through the fundamental scaling \(\chi \sim \xi^{2-\eta}\), connecting spatial correlations to diverging response functions. Third, it produces critical opalescence—strong scattering at all wavelengths comparable to \(\xi\)—making phase transitions visible to the naked eye.
+
+At precisely \(T = T_c\), the correlation length becomes infinite and correlations decay algebraically: \(G(r) \sim r^{-(d-2+\eta)}\). The system becomes scale-invariant, looking statistically similar when viewed at any magnification. This scale invariance underlies the applicability of renormalization group methods, which exploit the absence of characteristic length scales at criticality.
+
+The correlation length also governs dynamic properties through the dynamic scaling hypothesis \(\tau \sim \xi^z\), where \(\tau\) is the characteristic relaxation time and \(z\) is the dynamic critical exponent. Large correlated regions relax slowly, producing critical slowing down. Near \(T_c\), equilibration times diverge, making precise experimental measurements increasingly difficult.
+
+The physical picture is compelling: approaching criticality, islands of correlated spins grow from microscopic to macroscopic sizes. These fluctuating domains, with size set by \(\xi\), contain the seeds of the incipient ordered phase. The competition between thermal disruption and ordering tendency reaches perfect balance at \(T_c\), where domains of all sizes coexist in a scale-invariant, fractal arrangement. This geometric picture of criticality, encoded mathematically in the divergence of \(\xi\), provides deep insight into the nature of phase transitions.
+
+The divergence of \(\xi\) represents the mathematical signature of the critical point and drives all other critical phenomena through dimensional analysis and scaling relationships.
+
+See also: [[id:6ab026ae-43e8-4d26-afef-0c3146927867][Stiffness Constants]], [[id:caf5042c-4b4a-4e58-9f6f-e9e85cce970c][Susceptibility Integrals]], [[id:59a6f3d3-7bd0-4afd-9d63-ac4cfa91b86b][Universal Critical Behavior]]

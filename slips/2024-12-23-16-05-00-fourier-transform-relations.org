@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       ec311713-f539-4ec4-8769-657ab6e985eb
+:CUSTOM_ID: 92/76
+:END:
+#+TITLE: Fourier Transform Relations
+#+FILETAGS: :physics:spof:ch3:fourier:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The fundamental Fourier transform relation in statistical field theory connects real-space correlations to momentum-space structure through the Green's function:
+
+\[I_d(\mathbf{r}, \xi) = \int \frac{d^d\mathbf{q}}{(2\pi)^d} \frac{e^{i\mathbf{q} \cdot \mathbf{r}}}{K(q^2 + \xi^{-2})} \tag{3.13}\]
+
+This function encapsulates how correlations propagate through space with a characteristic length scale \(\xi\). The negative sign is conventional, ensuring positive correlations for ferromagnetic systems. The denominator combines the gradient energy cost (\(q^2\) term) with the mass term (\(\xi^{-2}\)), creating a natural separation between long-wavelength modes (\(q \ll \xi^{-1}\)) and short-wavelength fluctuations (\(q \gg \xi^{-1}\)).
+
+Essential Fourier transform pairs govern the interconversion between real and momentum space representations. For a field \(\phi(\mathbf{x})\) in a volume \(V\), the discrete Fourier transform reads \(\phi(\mathbf{x}) = \sum_\mathbf{q} \phi_\mathbf{q} e^{i\mathbf{q} \cdot \mathbf{x}}/\sqrt{V}\), with inverse \(\phi_\mathbf{q} = \int d^d\mathbf{x} e^{-i\mathbf{q} \cdot \mathbf{x}}\phi(\mathbf{x})/\sqrt{V}\). The \(1/\sqrt{V}\) factors ensure proper normalization of correlation functions. In the thermodynamic limit, sums convert to integrals via \(\sum_\mathbf{q} \to V\int d^d\mathbf{q}/(2\pi)^d\).
+
+The power of Fourier analysis lies in diagonalizing translationally invariant operators. The kernel \(K(\mathbf{x}, \mathbf{x}') = K\delta^d(\mathbf{x} - \mathbf{x}')(-\nabla^2 + \xi^{-2})\) becomes simply \(K(q^2 + \xi^{-2})\) in momentum space, reducing functional integrals to products over modes. Similarly, convolution in real space becomes multiplication in Fourier space, simplifying the calculation of response functions.
+
+Critical phenomena naturally separate into infrared physics (small \(q\), large distances) governing universal behavior, and ultraviolet details (large \(q\), short distances) that depend on microscopic structure. The infrared limit \(q \to 0\) of \(I_d\) yields the Coulomb potential, while the full \(q\)-dependence determines the crossover from power-law to exponential decay. This mathematical structure underpins our understanding of how local interactions produce long-range correlations near critical points.
+
+See also: [[id:61ddb9e6-cf71-4c2b-bc53-b847bc39fc58][Green's Function I_d Properties]], [[id:fb81004f-52fb-4422-8bdd-058a805bb70c][Scattering Theory Foundation]], [[id:6444aa55-031d-43ca-a069-bbaed0d2e0ed][Functional Integrals]]

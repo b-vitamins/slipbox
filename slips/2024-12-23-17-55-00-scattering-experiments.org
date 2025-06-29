@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       ba9b268b-d0a5-49e0-8a52-72208e634e0a
+:CUSTOM_ID: 92/98
+:END:
+#+TITLE: Scattering Experiments
+#+FILETAGS: :physics:spof:ch3:scattering:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Scattering experiments provide the most direct probe of fluctuations near critical points by measuring the structure factor \(S(\mathbf{q})\), which directly encodes spatial correlations in momentum space. Three primary techniques—neutron scattering, X-ray scattering, and light scattering—each offer unique advantages for studying different aspects of critical behavior.
+
+Neutron scattering excels for magnetic systems because neutrons carry magnetic moments that couple directly to unpaired electrons. The measured structure factor follows:
+
+\[S(\mathbf{q}) \propto \langle|m(\mathbf{q})|^2\rangle \propto \frac{1}{q^2 + \xi^{-2}}\]
+
+away from criticality, yielding Lorentzian line shapes with half-width \(\xi^{-1}\). Polarized neutrons distinguish longitudinal from transverse fluctuations: longitudinal scattering maintains the Lorentzian form, while transverse scattering from Goldstone modes shows \(1/q^2\) divergence.
+
+X-ray scattering excels for structural transitions and liquid-gas critical points. Modern synchrotron sources provide intensity and resolution to measure correlation lengths exceeding 10,000 Å. Near liquid-gas critical points, density fluctuations scatter X-rays strongly, producing critical opalescence visible to the naked eye. Small-angle X-ray scattering (SAXS) focuses on \(q \to 0\) behavior, directly probing long-wavelength fluctuations.
+
+Light scattering offers non-invasive measurements of order parameter fluctuations in transparent samples. Dynamic light scattering measures not only static correlations but also relaxation times through the decay of intensity autocorrelation functions. Near critical points, the combination of large static fluctuations and slow dynamics produces strong multiple scattering, requiring careful theoretical analysis.
+
+Extracting critical exponents demands systematic measurements over wide temperature and momentum ranges. The correlation length follows from fitting Lorentzian widths versus temperature: \(\xi^{-1}(T) \propto |t|^\nu\). At criticality, the power-law scattering \(S(q) \propto q^{-(2-\eta)}\) directly yields the anomalous dimension. The integrated intensity provides the susceptibility, giving \(\gamma\) through \(\chi \propto |t|^{-\gamma}\).
+
+Modern experiments achieve relative temperature control to parts in \(10^6\), enabling measurements deep within the critical region. Position-sensitive detectors collect entire diffraction patterns simultaneously, while energy analysis separates elastic from inelastic scattering. Computer-controlled sample environments maintain precise conditions while scanning temperature across the transition.
+
+Challenges include multiple scattering near criticality (when \(\xi\) exceeds the photon mean free path), finite resolution effects (convoluting intrinsic line shapes with instrumental broadening), and critical slowing down (requiring long equilibration times). Nevertheless, scattering experiments remain the gold standard for critical phenomena studies, providing model-independent measurements of fluctuations that directly test theoretical predictions.
+
+See also: [[id:fb81004f-52fb-4422-8bdd-058a805bb70c][Scattering Theory Foundation]], [[id:73a5eb9b-b875-4329-a31d-bfa41a134ea1][Lorentzian Line Shapes]], [[id:516bcfbd-6144-46bd-91c3-5b0f3a821582][Scattering Intensity Profiles]]

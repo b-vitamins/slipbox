@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       ff01f1f5-6720-4385-88aa-15f023c65673
+:CUSTOM_ID: 92/73
+:END:
+#+TITLE: Order Parameter Destruction
+#+FILETAGS: :physics:spof:ch3:merminwagner:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The destruction of long-range order in low dimensions follows from the thermal averaging of the complex order parameter \(\psi(\mathbf{x}) = |\psi(\mathbf{x})|e^{i\theta(\mathbf{x})}\). For a system with uniform amplitude but fluctuating phase, the order parameter correlation function becomes:
+
+\[\langle\psi(\mathbf{x})\psi^*(\mathbf{0})\rangle = \bar{\psi}^2\langle e^{i[\theta(\mathbf{x}) - \theta(\mathbf{0})]}\rangle\]
+
+Evaluating this thermal average requires the Gaussian identity for any linear combination of Gaussian variables \(A\):
+
+\[\langle\exp(\alpha A)\rangle = \exp\left(\frac{\alpha^2}{2}\langle A^2\rangle\right)\]
+
+Applied to the phase difference with \(\alpha = i\), this yields
+
+\[\langle\psi(\mathbf{x})\psi^*(\mathbf{0})\rangle = \bar{\psi}^2\exp\left[-\frac{1}{2}\langle[\theta(\mathbf{x}) - \theta(\mathbf{0})]^2\rangle\right] \tag{3.38}\]
+
+Substituting the phase correlation results, we obtain the explicit spatial dependence:
+
+\[\langle\psi(\mathbf{x})\psi^*(\mathbf{0})\rangle = \bar{\psi}^2\exp\left[-\frac{x^{2-d} - a^{2-d}}{\bar{K}(2-d)S_d}\right]\]
+
+The long-distance behavior exhibits a sharp dimensional dependence:
+
+\[\lim_{x \to \infty}\langle\psi(\mathbf{x})\psi^*(\mathbf{0})\rangle = \begin{cases} \bar{\psi}^2 & \text{for } d > 2 \\ 0 & \text{for } d \leq 2 \end{cases} \tag{3.39}\]
+
+In dimensions \(d > 2\), correlations approach a finite value \(\bar{\psi}^2\), confirming the existence of true long-range order. The saddle-point prediction of spontaneous symmetry breaking remains qualitatively correct, though the order parameter magnitude suffers a finite renormalization from fluctuations. For \(d < 2\), the exponential of a diverging negative argument vanishes, destroying all long-range correlations despite the local tendency toward ordering.
+
+The marginal dimension \(d = 2\) deserves special attention. Here phase fluctuations grow logarithmically, yielding \(\langle\psi(\mathbf{x})\psi^*(\mathbf{0})\rangle \sim |x|^{-1/(2\pi\bar{K})}\). While long-range order in the traditional sense vanishes, correlations decay as a power law rather than exponentially. This quasi-long-range order, characterized by continuously varying critical exponents dependent on temperature through \(\bar{K}(T)\), defines the Berezinskii-Kosterlitz-Thouless phase.
+
+This calculation demonstrates how Goldstone modes—the soft phase fluctuations arising from continuous symmetry breaking—ultimately destroy the very order that created them in low dimensions. The competition between the energetic drive toward local ordering and the entropic proliferation of long-wavelength phase fluctuations lies at the heart of the Mermin-Wagner theorem.
+
+See also: [[id:351f7df5-3a15-4bda-99df-9d18b5bc969f][Phase Correlations]], [[id:15028591-0c87-4a11-b5de-f0360439042a][Mermin-Wagner Theorem]], [[id:e0883a37-4d29-4fe1-b4f3-1f182755b53d][Two-Dimensional Physics]]

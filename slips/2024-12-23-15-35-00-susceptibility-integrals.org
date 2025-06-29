@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       caf5042c-4b4a-4e58-9f6f-e9e85cce970c
+:CUSTOM_ID: 92/70
+:END:
+#+TITLE: Susceptibility Integrals
+#+FILETAGS: :physics:spof:ch3:susceptibility:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The susceptibility emerges from spatially integrating the correlation function, connecting microscopic fluctuations to macroscopic response. For longitudinal modes with finite correlation length \(\xi_\ell\), the susceptibility integral yields:
+
+\[\chi_\ell \propto \int d^d\mathbf{x} G_\ell^c(\mathbf{x}) \propto \xi_\ell^2\]
+
+The integral is dominated by contributions from length scales up to the correlation length \(\xi_\ell\), beyond which correlations decay exponentially. The power-law form \(G^c(x) \sim x^{-(d-2)}\) for \(x < \xi_\ell\) leads directly to the \(\xi_\ell^2\) scaling, which combined with \(\xi_\ell \sim |t|^{-1/2}\) yields the Curie-Weiss divergence \(\chi \sim |t|^{-\gamma}\) with \(\gamma = 1\).
+
+The transverse susceptibility in the ordered phase exhibits qualitatively different behavior due to the absence of a finite correlation length:
+
+\[\chi_t \propto \int d^d\mathbf{x} G_t^c(\mathbf{x}) \propto \int_0^L \frac{d^d x}{x^{d-2}} \propto L^2 \tag{3.23}\]
+
+Here the system size \(L\) provides the only cutoff for the power-law correlations characteristic of Goldstone modes. This \(L^2\) scaling reflects the fundamental difference between massive and massless excitations: while longitudinal fluctuations are confined to regions of size \(\xi_\ell\), transverse Goldstone modes propagate throughout the entire system.
+
+The divergence of susceptibilities at criticality follows from the competition between the correlation function decay and the growing integration volume. In dimensions \(d > 2\), the integral \(\int_0^\xi r^{d-1}dr/r^{d-2} = \int_0^\xi r\,dr \propto \xi^2\) converges, yielding finite susceptibilities away from criticality but divergent ones as \(\xi \to \infty\). For \(d \leq 2\), even the integral to finite \(\xi\) would diverge, signaling the breakdown of long-range order.
+
+The universal amplitude ratios \(A_+/A_-\) and critical exponent \(\gamma = 1\) emerging from this analysis represent mean-field predictions. While the exponent receives corrections from fluctuations in \(d < 4\), the basic physical picture—susceptibility divergence driven by the growing volume of correlated regions—remains valid. This connection between correlation length and thermodynamic response provides one of the most direct experimental signatures of critical phenomena.
+
+See also: [[id:2e0349c4-ec89-4fe3-b4c6-59c430f248a3][Correlation Function Definitions]], [[id:6ab026ae-43e8-4d26-afef-0c3146927867][Stiffness Constants]], [[id:93796440-8500-4892-9c68-b7f23385b629][Critical Exponent Values]]

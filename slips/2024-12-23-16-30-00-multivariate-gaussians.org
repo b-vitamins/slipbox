@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       1a66b200-5705-41ad-9624-73387cbd9623
+:CUSTOM_ID: 92/81
+:END:
+#+TITLE: Multivariate Gaussians
+#+FILETAGS: :physics:spof:ch3:multivariate:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The multivariate Gaussian integral generalizes single-variable results to coupled systems with \(N\) degrees of freedom:
+
+\[\mathcal{J}_N[\mathbf{h}] = \int d^N\phi \, \exp\left[-\frac{1}{2}\sum_{i,j} K_{i,j}\phi_i\phi_j + \sum_i h_i\phi_i\right] \tag{3.43}\]
+
+The symmetric matrix \(\mathbf{K}\) encodes couplings between different degrees of freedom, while the source vector \(\mathbf{h}\) represents external fields. Physical constraints ensure \(\mathbf{K}\) is positive definite, guaranteeing convergent integrals and stable fluctuations.
+
+Diagonalization provides the key to evaluation. The eigenvalue decomposition \(\mathbf{K}\hat{q} = K_q\hat{q}\) yields orthonormal eigenvectors \(\{\hat{q}\}\) that define new coordinates \(\tilde{\phi}_q = \sum_i \hat{q}_i\phi_i\). In this eigenbasis, the quadratic form decouples:
+
+\[\mathcal{J}_N = \prod_{q=1}^N \int_{-\infty}^{\infty} d\tilde{\phi}_q \exp\left[-\frac{K_q}{2}\tilde{\phi}_q^2 + \tilde{h}_q\tilde{\phi}_q\right] = \prod_{q=1}^N \sqrt{\frac{2\pi}{K_q}} \exp\left[\frac{\tilde{h}_q^2}{2K_q}\right] \tag{3.44}\]
+
+The Jacobian of the orthogonal transformation equals unity, preserving the measure. Each mode contributes independently, reducing the problem to a product of one-dimensional integrals.
+
+Returning to the original coordinates yields the compact result:
+
+\[\mathcal{J}_N = \sqrt{\frac{(2\pi)^N}{\det\mathbf{K}}} \exp\left[\sum_{i,j} \frac{K_{i,j}^{-1}}{2}h_ih_j\right] \tag{3.45}\]
+
+The determinant \(\det\mathbf{K} = \prod_q K_q\) captures fluctuation contributions from all modes, while the inverse matrix \(\mathbf{K}^{-1}\) determines the mean configuration and correlations. This structure extends to infinite dimensions in field theory, where \(\det\mathbf{K}\) becomes a functional determinant.
+
+The joint characteristic function encodes all correlation functions:
+
+\[\langle e^{-i\sum_j k_j\phi_j}\rangle = \exp\left[-i\sum_{i,j} K_{i,j}^{-1}h_ik_j - \sum_{i,j} \frac{K_{i,j}^{-1}}{2}k_ik_j\right] \tag{3.46}\]
+
+Derivatives yield the fundamental results:
+
+\[\langle\phi_i\rangle_c = \sum_j K_{i,j}^{-1}h_j, \quad \langle\phi_i\phi_j\rangle_c = K_{i,j}^{-1} \tag{3.47}\]
+
+The mean values follow from solving the linear system \(\mathbf{K}\langle\phi\rangle = \mathbf{h}\), while correlations are given directly by the inverse coupling matrix. This reveals a deep principle: soft modes (small eigenvalues of \(\mathbf{K}\)) exhibit large fluctuations (large elements of \(\mathbf{K}^{-1}\)).
+
+For any linear combination \(A = \sum_i a_i\phi_i\), the cumulant generating function yields:
+
+\[\langle\exp(\alpha A)\rangle = \exp\left(\langle\alpha A\rangle_c + \frac{\alpha^2}{2}\langle A^2\rangle_c\right) \tag{3.48}\]
+
+This identity proves essential for calculating order parameter correlations and response functions throughout statistical physics.
+
+See also: [[id:c64406ae-8c0f-4faa-9ade-cf69b7dc5478][Gaussian Integral Basics]], [[id:6444aa55-031d-43ca-a069-bbaed0d2e0ed][Functional Integrals]], [[id:02d3c7e4-c09b-4809-a1c4-989d154ea5bc][Functional Determinants]]

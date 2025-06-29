@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       8db469c1-ca8a-4d69-bc33-16e51908a8a3
+:CUSTOM_ID: 92/91
+:END:
+#+TITLE: Two-Dimensional Physics
+#+FILETAGS: :physics:spof:ch3:2d:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Two dimensions occupies a special place in statistical physics as the marginal dimension for continuous symmetry breaking. Systems with continuous symmetries cannot exhibit true long-range order in 2D, but phase fluctuations grow only logarithmically:
+
+\[\langle[\theta(\mathbf{x}) - \theta(0)]^2\rangle = \frac{\ln(|\mathbf{x}|/a)}{\pi\bar{K}}\]
+
+Unlike the power-law divergence for \(d < 2\) which completely destroys correlations, this logarithmic growth permits algebraic decay of the order parameter:
+
+\[\langle\psi(\mathbf{x})\psi^*(0)\rangle \sim |\mathbf{x}|^{-\eta(T)}\]
+
+where \(\eta(T) = 1/(2\pi\bar{K})\) depends continuously on temperature through the stiffness \(\bar{K}(T)\). This quasi-long-range order, characterized by temperature-dependent exponents, defines the Berezinskii-Kosterlitz-Thouless (BKT) phase.
+
+The logarithmic Coulomb potential in two dimensions plays a crucial role. Defects in 2D systems—vortices in superfluids, dislocations in crystals—interact via logarithmic potentials, making their statistical mechanics marginal. At low temperatures, vortices bind in neutral pairs, preserving quasi-long-range order. Above the BKT transition temperature, vortices unbind, destroying even power-law correlations.
+
+Two dimensions also marks the lower critical dimension for discrete symmetry breaking. The 2D Ising model exhibits a genuine phase transition with true long-range order below \(T_c\). However, the approach to criticality shows anomalies: logarithmic corrections appear in various quantities, and the specific heat diverges logarithmically rather than showing a power law or discontinuity.
+
+The special properties extend to dynamic phenomena. In 2D, conservation laws impose stronger constraints on transport, leading to anomalous diffusion and divergent transport coefficients. The Mermin-Wagner theorem's dynamic version prohibits certain broken symmetries even at zero temperature when quantum fluctuations are included.
+
+Experimental realizations abound: thin superconducting films, liquid crystal films, absorbed monolayers, and trapped atomic gases all exhibit characteristic 2D behavior. Modern fabrication techniques produce truly 2D materials like graphene, where the interplay of dimensionality and symmetry creates novel phases like quantum Hall states.
+
+The mathematical marginality of two dimensions makes it a theoretical playground where sophisticated techniques—conformal field theory, bosonization, topological methods—find exact application. This rich mathematical structure, combined with experimental accessibility, establishes 2D systems as a crucial testing ground for our understanding of phase transitions and critical phenomena.
+
+See also: [[id:9302663d-a632-4e0a-98d3-f9506fb0ab92][Mermin-Wagner Theorem]], [[id:351f7df5-3a15-4bda-99df-9d18b5bc969f][Phase Correlations]], [[id:a362af50-44f9-4c9b-aa8a-5d3d1eee8168][Coulomb Potential Mathematics]]

@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       e387fa98-7324-449f-a3fd-0afaffb404d0
+:CUSTOM_ID: 92/102
+:END:
+#+TITLE: Modern Experiments
+#+FILETAGS: :physics:spof:ch3:modern:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Modern experimental techniques have revolutionized critical phenomena studies by achieving unprecedented precision in temperature control, spatial resolution, and data acquisition. These advances enable measurements deep within critical regions where earlier experiments failed, revealing subtle deviations from simple power laws and testing sophisticated theoretical predictions.
+
+Synchrotron X-ray sources revolutionized structural and electronic phase transition studies. Third-generation facilities deliver \(10^{13}\) photons/s with 0.001% bandwidth and micron-scale focus. Coherent X-ray scattering probes dynamic heterogeneity through speckle pattern fluctuations. Resonant scattering at absorption edges provides element-specific order parameter measurements. High pressure diamond anvil cells enable critical point studies to 100 GPa, accessing quantum phase transitions.
+
+Ultra-stable temperature control achieves millikelvin resolution over month-long measurements. Active feedback systems compensate for external perturbations while ramping at rates below 1 μK/hour through transitions. Precision thermometry using noise thermometry or fixed-point calibrations eliminates systematic errors. Automated data collection enables dense sampling across critical regions, capturing subtle deviations from power laws.
+
+Modern detectors transform data quality. Position-sensitive detectors collect entire diffraction patterns simultaneously, reducing acquisition times and improving statistics. Energy-resolving detectors separate fluorescence from scattering signals. Single-photon counting eliminates detector nonlinearities. Fast electronics enable correlation spectroscopy down to nanosecond timescales.
+
+Complementary techniques provide comprehensive characterization. Scanning probe microscopies image local order parameter fluctuations with atomic resolution. Optical spectroscopies measure dynamic response functions. NMR and μSR probe local fields and slow dynamics. Ultrasound attenuation reveals coupling between order parameters and strain. Each technique contributes unique information about critical behavior.
+
+Data analysis employs sophisticated statistical methods. Maximum likelihood fitting extracts parameters with rigorous uncertainty quantification. Machine learning algorithms identify phase boundaries in high-dimensional parameter spaces. Finite-size scaling collapses data from different sample sizes onto universal curves. Global fits simultaneously constrain multiple critical exponents, testing scaling relations.
+
+Space-based experiments eliminate gravity effects on fluid critical points, enabling studies of pure critical behavior without density stratification. Microgravity environments extend the critical region accessible to measurement while reducing convection artifacts. These experiments provide definitive tests of theoretical predictions for simple fluids.
+
+These experimental advances enable studies of increasingly exotic systems: quantum critical points, topological phase transitions, glasses and jamming transitions, driven systems far from equilibrium. In each case, modern techniques reveal how fluctuations govern the emergence of new phases of matter, extending critical phenomena concepts beyond their traditional domain.
+
+See also: [[id:ba9b268b-d0a5-49e0-8a52-72208e634e0a][Scattering Experiments]], [[id:fbd26541-19ff-494d-b576-9bf5f6ece15d][Data Analysis Methods]], [[id:8f3d13bf-f379-41a9-9bc7-d0292f67d6b1][Critical Exponent Values]]

@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       ed52cb9d-83cb-4588-a670-84d359dc284d
+:CUSTOM_ID: 92/71
+:END:
+#+TITLE: Phase Fluctuation Theory
+#+FILETAGS: :physics:spof:ch3:goldstone:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+For systems with broken continuous symmetry, phase fluctuations dominate the long-wavelength behavior. The effective Hamiltonian for phase degrees of freedom takes the form:
+
+\[\mathcal{H}[\theta] = \frac{\bar{K}}{2}\int d^d\mathbf{x} (\nabla\theta)^2\]
+
+This effective Hamiltonian captures the energetic cost of phase gradients, with stiffness \(\bar{K}\) related to the superfluid density. The absence of a mass term reflects the Goldstone nature of phase excitations—uniform rotations of the phase cost no energy due to the underlying U(1) symmetry.
+
+Fourier transformation reveals the harmonic structure of phase fluctuations:
+
+\[\mathcal{P}[\theta(\mathbf{q})] \propto \exp\left[-\frac{\bar{K}}{2}\sum_\mathbf{q} q^2|\theta(\mathbf{q})|^2\right] \propto \prod_\mathbf{q} p(\theta_\mathbf{q}) \tag{3.25}\]
+
+Each Fourier mode represents an independent Gaussian variable, leading to the fundamental correlation function
+
+\[\langle\theta_\mathbf{q}\theta_{\mathbf{q}'}\rangle = \frac{\delta_{\mathbf{q},-\mathbf{q}'}}{\bar{K}q^2} \tag{3.26}\]
+
+The \(1/q^2\) dependence, characteristic of massless fields, ensures that long-wavelength phase fluctuations dominate the statistical mechanics. This infrared behavior proves catastrophic for long-range order in low dimensions.
+
+The reality condition \(\theta(-\mathbf{q}) = \theta_\mathbf{q}^*\) for the phase field implies that independent degrees of freedom reside in half of momentum space. Writing \(\theta_\mathbf{q} = \theta_{\mathbf{q},\Re} + i\theta_{\mathbf{q},\Im}\), the Gaussian weight becomes \(\exp[-\bar{K}q^2(\theta_{\mathbf{q},\Re}^2 + \theta_{\mathbf{q},\Im}^2)]\) for \(\mathbf{q} > 0\), yielding \(\langle\theta_{\mathbf{q},\Re}^2\rangle = \langle\theta_{\mathbf{q},\Im}^2\rangle = 1/(2\bar{K}q^2)\).
+
+The phase fluctuation spectrum encodes the fundamental physics of Goldstone modes. Low-energy excitations with small \(q\) experience vanishing restoring force, allowing phase distortions to propagate freely through the system. This soft mode behavior, while preserving local order, ultimately destroys global phase coherence in dimensions \(d \leq 2\) through the accumulation of long-wavelength fluctuations. The mathematical structure here provides the foundation for understanding superfluidity, spin waves, and more generally, the consequences of spontaneously broken continuous symmetries.
+
+See also: [[id:351f7df5-3a15-4bda-99df-9d18b5bc969f][Phase Correlations]], [[id:65b656bc-edef-4e0f-bfc7-a6284bf7516d][Goldstone Mode Physics]], [[id:15028591-0c87-4a11-b5de-f0360439042a][Mermin-Wagner Theorem]]

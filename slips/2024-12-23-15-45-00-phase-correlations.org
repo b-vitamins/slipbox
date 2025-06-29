@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       351f7df5-3a15-4bda-99df-9d18b5bc969f
+:CUSTOM_ID: 92/72
+:END:
+#+TITLE: Phase Correlations
+#+FILETAGS: :physics:spof:ch3:phase:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Phase correlations in real space reveal the dimensional dependence of long-range order in systems with broken continuous symmetry. Starting from the momentum-space correlations of Goldstone modes, the real-space phase correlation function becomes:
+
+\[\langle\theta(\mathbf{x})\theta(\mathbf{x}')\rangle = \int \frac{d^d\mathbf{q}}{(2\pi)^d} \frac{e^{i\mathbf{q} \cdot (\mathbf{x} - \mathbf{x}')}}{{\bar{K}q^2}} = -\frac{C_d(\mathbf{x} - \mathbf{x}')}{\bar{K}} \tag{3.28}\]
+
+where \(C_d(\mathbf{r})\) is the Coulomb potential in \(d\) dimensions. The physical content emerges most clearly from examining phase differences rather than absolute phases. The mean-square phase difference between two points grows as
+
+\[\langle[\theta(\mathbf{x}) - \theta(\mathbf{x}')]^2\rangle = 2\langle\theta(\mathbf{x})^2\rangle - 2\langle\theta(\mathbf{x})\theta(\mathbf{x}')\rangle \tag{3.35}\]
+
+Requiring this to vanish as \(\mathbf{x} \to \mathbf{x}'\) fixes the arbitrary constant in \(C_d\), yielding
+
+\[\langle[\theta(\mathbf{x}) - \theta(\mathbf{x}')]^2\rangle = \frac{2(|\mathbf{x} - \mathbf{x}'|^{2-d} - a^{2-d})}{\bar{K}(2-d)S_d} \tag{3.36}\]
+
+where \(a\) represents a microscopic cutoff and \(S_d = 2\pi^{d/2}/(d/2-1)!\) is the surface area of a unit sphere in \(d\) dimensions.
+
+The dimension-dependent behavior of phase fluctuations reveals a fundamental dichotomy. For \(d > 2\), the phase difference remains bounded even at infinite separation, preserving long-range order. For \(d < 2\), phase differences diverge as \(|\mathbf{x} - \mathbf{x}'|^{2-d}\), destroying any possibility of global phase coherence. The marginal dimension \(d = 2\) exhibits logarithmic growth: \(\langle[\theta(\mathbf{x}) - \theta(0)]^2\rangle = \ln(|\mathbf{x}|/a)/(\pi\bar{K})\), placing it at the boundary between order and disorder.
+
+This analysis demonstrates that thermal phase fluctuations accumulate over large distances in low dimensions. Since physical phases are defined modulo \(2\pi\), unbounded growth of phase differences implies that distant regions lose phase coherence, destroying true long-range order. The mathematical structure here provides the foundation for the Mermin-Wagner theorem and explains why superfluidity and ferromagnetism require three dimensions for true long-range order.
+
+See also: [[id:ed52cb9d-83cb-4588-a670-84d359dc284d][Phase Fluctuation Theory]], [[id:ff01f1f5-6720-4385-88aa-15f023c65673][Order Parameter Destruction]], [[id:15028591-0c87-4a11-b5de-f0360439042a][Mermin-Wagner Theorem]]

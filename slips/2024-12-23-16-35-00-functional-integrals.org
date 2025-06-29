@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       6444aa55-031d-43ca-a069-bbaed0d2e0ed
+:CUSTOM_ID: 92/82
+:END:
+#+TITLE: Functional Integrals
+#+FILETAGS: :physics:spof:ch3:functional:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The functional integral extends multivariate Gaussian integration to the continuum limit where fields \(\phi(\mathbf{x})\) become continuous functions of position. The fundamental expression takes the form:
+
+\[\mathcal{J}[h] = \int \mathcal{D}\phi(\mathbf{x}) \exp\left[-\frac{1}{2}\int d^d\mathbf{x}\int d^d\mathbf{x}' \phi(\mathbf{x})K(\mathbf{x},\mathbf{x}')\phi(\mathbf{x}') + \int d^d\mathbf{x} h(\mathbf{x})\phi(\mathbf{x})\right] \tag{3.49}\]
+
+The notation \(\mathcal{D}\phi(\mathbf{x})\) denotes integration over all possible field configurations—formally an infinite product of integrals at each spatial point. The kernel \(K(\mathbf{x},\mathbf{x}')\) generalizes the coupling matrix, encoding both local interactions and spatial derivatives.
+
+The inverse kernel satisfies the functional analog of matrix inversion:
+
+\[\int d^d\mathbf{x}' K(\mathbf{x},\mathbf{x}')K^{-1}(\mathbf{x}',\mathbf{x}'') = \delta^d(\mathbf{x} - \mathbf{x}'') \tag{3.50}\]
+
+This integral equation determines the Green's function of the differential operator encoded in \(K\). For translationally invariant systems, \(K(\mathbf{x},\mathbf{x}') = K(\mathbf{x} - \mathbf{x}')\), and Fourier transformation diagonalizes the kernel, reducing functional determinants to products over momentum modes.
+
+The continuum limit preserves the correlation structure of the discrete case:
+
+\[\langle\phi(\mathbf{x})\rangle_c = \int d^d\mathbf{x}' K^{-1}(\mathbf{x},\mathbf{x}')h(\mathbf{x}')\]
+
+\[\langle\phi(\mathbf{x})\phi(\mathbf{x}')\rangle_c = K^{-1}(\mathbf{x},\mathbf{x}') \tag{3.51}\]
+
+The connected correlation function equals the inverse kernel, establishing the fundamental connection between interactions (encoded in \(K\)) and correlations (given by \(K^{-1}\)). This reciprocal relationship underlies fluctuation-dissipation theorems throughout statistical physics.
+
+While the normalization constant \((2\pi)^{N/2}\) formally diverges as \(N \to \infty\) in the continuum limit, this overall factor cancels when computing normalized expectation values or correlation functions. The functional integral formalism thus provides a mathematically consistent framework for treating fields as dynamical variables with infinitely many degrees of freedom.
+
+This technology proves essential for systematic perturbation theory and the renormalization group analysis of critical phenomena. The formal manipulations developed here—functional derivatives, path integral quantization, and diagrammatic expansions—extend far beyond equilibrium statistical mechanics to encompass quantum field theory, stochastic processes, and nonequilibrium dynamics.
+
+See also: [[id:1a66b200-5705-41ad-9624-73387cbd9623][Multivariate Gaussians]], [[id:a0745b15-2449-4414-b21f-167ba06e62c1][LG Kernel Structure]], [[id:3028e20e-7268-406d-b4fd-5b3103ade06d][Fluctuation Free Energy]]

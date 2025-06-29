@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       5b06142d-7d7b-4ce6-944e-dc587c198a2b
+:CUSTOM_ID: 92/78
+:END:
+#+TITLE: I_d Explicit Forms
+#+FILETAGS: :physics:spof:ch3:explicit:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The explicit forms of the Green's function \(I_d(\mathbf{r}, \xi)\) reveal the crossover between critical and non-critical regimes through asymptotic expressions in different length scale domains.
+
+At short distances (\(x \ll \xi\)) where screening is negligible, the function reduces to the pure Coulomb potential:
+
+\[I_d(x) \simeq \frac{x^{2-d}}{(2-d)S_d} \quad (x \ll \xi) \tag{3.19}\]
+
+Here \(S_d = 2\pi^{d/2}/(d/2-1)!\) is the surface area of a unit sphere in \(d\) dimensions. The power-law form \(x^{2-d}\) reflects the scale-invariant nature of critical fluctuations at distances smaller than \(\xi\). In three dimensions, this yields the familiar \(1/r\) Coulomb potential, while in two dimensions it produces a logarithmic form.
+
+At large distances where screening dominates, the Green's function transitions to exponential decay:
+
+\[I_d(x) \simeq \frac{\xi^{(3-d)/2}}{(2-d)S_d x^{(d-1)/2}}\exp(-x/\xi) \quad (x \gg \xi) \tag{3.20}\]
+
+The exponential factor \(\exp(-x/\xi)\) ensures correlations vanish beyond the correlation length, while the power-law prefactor \(x^{-(d-1)/2}\) arises from the radial spreading of correlations in \(d\) dimensions. The matching between these asymptotic forms at \(x \sim \xi\) determines the overall normalization.
+
+The crossover between power-law and exponential regimes encodes fundamental physics. At criticality where \(\xi \to \infty\), only the short-distance form survives, yielding scale-invariant correlations \(G(x) \sim x^{2-d}\) throughout the system. Away from criticality, the exponential cutoff at \(\xi\) confines critical fluctuations to finite regions. The dimension-dependent prefactors ensure proper normalization of thermodynamic quantities like susceptibility.
+
+These explicit forms enable practical calculations. Scattering experiments probe the Fourier transform of \(I_d\), yielding Lorentzian line shapes with width \(\xi^{-1}\). Real-space measurements of correlation functions can distinguish the power-law regime (straight line on log-log plot) from the exponential regime (straight line on semi-log plot), with the crossover determining \(\xi\). The universal amplitude ratios between different correlations functions depend only on \(d\) and the symmetry index \(n\), not on microscopic details.
+
+The mathematical structure reveals why \(d = 2\) is special: there \(C_d(x) \sim \ln(x)\) diverges logarithmically, signaling marginal behavior. This logarithmic growth drives the destruction of long-range order in two-dimensional systems with continuous symmetry, while permitting the quasi-long-range order of the Kosterlitz-Thouless phase.
+
+See also: [[id:61ddb9e6-cf71-4c2b-bc53-b847bc39fc58][Green's Function I_d Properties]], [[id:2e0349c4-ec89-4fe3-b4c6-59c430f248a3][Correlation Function Definitions]], [[id:ad9411f3-56cd-489b-ae7e-d011257e4329][Correlation Decay Regimes]]

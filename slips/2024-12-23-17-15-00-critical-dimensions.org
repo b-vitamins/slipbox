@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       a6dc5888-bca4-4665-bff8-dc79b44953ee
+:CUSTOM_ID: 92/90
+:END:
+#+TITLE: Critical Dimensions
+#+FILETAGS: :physics:spof:ch3:dimensions:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Critical dimensions represent fundamental thresholds where the qualitative nature of phase transitions changes dramatically. The upper critical dimension \(d_u = 4\) marks where mean-field theory becomes exact, while the lower critical dimension \(d_\ell\) determines where ordered phases cease to exist.
+
+The upper critical dimension emerges from dimensional analysis of fluctuation integrals. The heat capacity correction involves:
+
+\[\int \frac{d^d\mathbf{q}}{(q^2 + \xi^{-2})^2}\]
+
+which scales as \(\xi^{4-d}\) for large \(\xi\) when \(d < 4\), but remains finite when \(d > 4\). This dimensional analysis reveals why \(d = 4\) is special: below four dimensions, fluctuation corrections diverge at criticality, overwhelming mean-field predictions and producing new critical exponents. Above four dimensions, fluctuations merely add finite corrections to an essentially mean-field transition.
+
+The physical interpretation is illuminating. In high dimensions, each spin has many neighbors, making mean-field theory's assumption of an average molecular field increasingly accurate. The central limit theorem suggests that fluctuations in the molecular field scale as \(1/\sqrt{z}\) where \(z\) is the coordination number. Since \(z\) grows with dimension, fluctuations become negligible in high dimensions. The mathematical boundary at \(d = 4\) marks where this physical intuition becomes exact.
+
+At the marginal dimension \(d = 4\), logarithmic corrections appear: \(C \sim \ln|t|\), \(\chi \sim |t|^{-1}\ln|t|\). These logarithms signal the delicate balance between mean-field behavior and fluctuation effects, requiring careful analysis beyond simple power counting. Field theories in four dimensions often exhibit logarithmic running of coupling constants, as in quantum electrodynamics and the Standard Model.
+
+The lower critical dimension represents a different threshold. Below \(d_\ell\), thermal fluctuations are so strong that ordered phases cannot exist even at zero temperature (for classical systems). The Mermin-Wagner theorem establishes \(d_\ell = 2\) for continuous symmetries through the divergence of Goldstone mode fluctuations. For discrete symmetries lacking soft modes, stronger fluctuations can be tolerated, yielding \(d_\ell = 1\).
+
+Between the critical dimensions, \(d_\ell < d < d_u\), lies the rich territory of anomalous critical behavior. Here fluctuations significantly modify mean-field predictions without completely destroying order. Real three-dimensional systems inhabit this regime, exhibiting non-classical exponents that challenged theorists until the development of renormalization group methods. The existence of both upper and lower critical dimensions reveals phase transitions as a genuinely dimensional phenomenon, with qualitatively different physics emerging as spatial dimension varies.
+
+The concept of critical dimensions extends beyond equilibrium phase transitions to quantum critical points, percolation, and other cooperative phenomena, always marking boundaries between different physical regimes.
+
+See also: [[id:12782f48-6079-48e4-b568-1121225dd5a7][Heat Capacity Corrections]], [[id:9237039d-fa0a-43ed-a5c6-f6b677764098][Integral Convergence Analysis]], [[id:9302663d-a632-4e0a-98d3-f9506fb0ab92][Mermin-Wagner Theorem]]

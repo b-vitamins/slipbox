@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       a0745b15-2449-4414-b21f-167ba06e62c1
+:CUSTOM_ID: 92/83
+:END:
+#+TITLE: LG Kernel Structure
+#+FILETAGS: :physics:spof:ch3:kernel:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Landau-Ginzburg kernel encodes the quadratic fluctuation theory through a differential operator acting on the field configurations. For the standard Landau-Ginzburg Hamiltonian with gradient terms and mass, the kernel takes the form:
+
+\[K(\mathbf{x},\mathbf{x}') = K\delta^d(\mathbf{x} - \mathbf{x}')(-\nabla^2 + \xi^{-2}) \tag{3.53}\]
+
+The delta function enforces locality—points interact only with themselves through the differential operator. The Laplacian \(-\nabla^2\) penalizes spatial variations, favoring smooth configurations, while the mass term \(\xi^{-2}\) provides a local restoring force toward zero field values. The prefactor \(K\) sets the overall energy scale.
+
+Finding the inverse kernel requires solving the differential equation:
+
+\[\int d^d\mathbf{x}'' \delta^d(\mathbf{x} - \mathbf{x}'')(-\nabla^2 + \xi^{-2})K^{-1}(\mathbf{x}'' - \mathbf{x}') = \delta^d(\mathbf{x}' - \mathbf{x})\]
+
+which simplifies to:
+
+\[K(-\nabla^2 + \xi^{-2})K^{-1}(\mathbf{x}) = \delta^d(\mathbf{x}) \tag{3.54,3.55}\]
+
+Comparing with the screened Poisson equation reveals that \(K^{-1}(\mathbf{x}) = -I_d(\mathbf{x})/K\), where \(I_d\) is the screened Coulomb Green's function. This identification \(K^{-1}(\mathbf{x}) = \langle\phi(\mathbf{x})\phi(\mathbf{0})\rangle\) confirms that correlation functions are determined by the Green's function of the quadratic differential operator.
+
+The kernel structure illuminates the physics of critical phenomena. In momentum space, \(K(\mathbf{q}) = K(q^2 + \xi^{-2})\) reveals two regimes: long-wavelength modes with \(q < \xi^{-1}\) experience primarily the mass term and are easily excited, while short-wavelength modes with \(q > \xi^{-1}\) face large gradient energy costs and remain frozen. As \(\xi \to \infty\) at criticality, the mass term vanishes for all finite \(q\), producing scale-invariant fluctuations.
+
+This mathematical framework extends beyond Gaussian theory. Higher-order terms in the Hamiltonian modify the kernel structure perturbatively, leading to momentum-dependent corrections that can be organized using renormalization group methods. The Gaussian kernel represents the fixed point around which critical theories are constructed, with \(K(\mathbf{x},\mathbf{x}')\) encoding the bare propagator that gets dressed by interactions.
+
+The kernel connects microscopic interactions to macroscopic correlations through its inverse. Soft kernels (small eigenvalues) produce long-range correlations, while stiff kernels confine fluctuations to short distances. This duality between interaction strength and correlation length provides the foundation for understanding critical phenomena as a competition between local order and thermal fluctuations.
+
+See also: [[id:6444aa55-031d-43ca-a069-bbaed0d2e0ed][Functional Integrals]], [[id:61ddb9e6-cf71-4c2b-bc53-b847bc39fc58][Green's Function I_d Properties]], [[id:2e0349c4-ec89-4fe3-b4c6-59c430f248a3][Correlation Function Definitions]]

@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       3028e20e-7268-406d-b4fd-5b3103ade06d
+:CUSTOM_ID: 92/74
+:END:
+#+TITLE: Fluctuation Free Energy
+#+FILETAGS: :physics:spof:ch3:freeenergy:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The free energy including Gaussian fluctuations incorporates both the mean-field contribution and the determinant arising from the functional integral over fluctuations. The partition function factorizes into saddle-point and fluctuation contributions:
+
+\[Z = e^{-\beta V f_{\text{SP}}} \times \prod_{\text{modes}} \int d\phi_{\text{mode}} e^{-\beta \mathcal{H}_{\text{quad}}[\phi]}\]
+
+Each Gaussian functional integral yields a determinant of the corresponding differential operator. In momentum space, the kernel becomes diagonal with eigenvalues \(K(\mathbf{q}) = K(q^2 + \xi^{-2})\). The determinant factorizes into a product over all modes:
+
+\[\ln\det\mathbf{K} = \sum_\mathbf{q}\ln K(\mathbf{q}) = V\int\frac{d^d\mathbf{q}}{(2\pi)^d}\ln[K(q^2 + \xi^{-2})] \tag{3.57}\]
+
+The free energy per unit volume, including both the mean-field contribution and Gaussian fluctuations, becomes
+
+\[\beta f = -\frac{\ln Z}{V} = \frac{t\bar{m}^2}{2} + u\bar{m}^4 + \frac{1}{2}\int\frac{d^d\mathbf{q}}{(2\pi)^d}\ln[K(q^2 + \xi_\ell^{-2})]\]
+\[+ \frac{n-1}{2}\int\frac{d^d\mathbf{q}}{(2\pi)^d}\ln[K(q^2 + \xi_t^{-2})] \tag{3.58}\]
+
+The factor \((n-1)\) accounts for the multiple transverse directions in an \(n\)-component order parameter. The logarithmic integrals represent the free energy cost of thermal fluctuations in each mode, with contributions from all wavelengths between the microscopic cutoff \(\Lambda \sim 1/a\) and the system size.
+
+The structure of these fluctuation corrections reveals why mean-field theory eventually fails. The integrals \(\int d^dq\ln(q^2 + \xi^{-2})\) depend sensitively on the dimensionality \(d\) and the correlation length \(\xi\). As \(\xi\) diverges approaching criticality, the fluctuation contributions grow without bound in \(d \leq 4\), overwhelming the mean-field terms. The crossover at \(d = 4\) marks the upper critical dimension where fluctuations change from finite corrections to singular modifications of critical behavior.
+
+This free energy forms the starting point for calculating all thermodynamic quantities including fluctuations. The heat capacity, magnetization, and susceptibility all receive corrections that become dominant near the critical point in dimensions \(d < 4\). The mathematical structure here provides the foundation for systematic expansions beyond mean-field theory, though the Gaussian approximation itself eventually breaks down when fluctuations become too strong.
+
+See also: [[id:12782f48-6079-48e4-b568-1121225dd5a7][Heat Capacity Corrections]], [[id:02d3c7e4-c09b-4809-a1c4-989d154ea5bc][Functional Determinants]], [[id:42723703-6da3-4a68-9da8-e38012a8a4c6][Beyond Gaussian Physics]]

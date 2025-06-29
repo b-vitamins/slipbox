@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       97cb3198-d371-4646-9999-92da8e686aa6
+:CUSTOM_ID: 92/92
+:END:
+#+TITLE: Quasi-Long-Range Order
+#+FILETAGS: :physics:spof:ch3:qlro:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Quasi-long-range order represents an intermediate phase between perfect order and disorder, characterized by power-law decay of correlations rather than exponential decay or true long-range order. This exotic phase emerges in systems where fluctuations are too strong to permit perfect order but insufficient to destroy all correlations.
+
+The signature of quasi-long-range order appears in correlation functions:
+
+\[\langle\psi(\mathbf{x})\psi^*(0)\rangle \sim |\mathbf{x}|^{-\eta(T)}\]
+
+The exponent \(\eta(T)\) varies continuously with temperature, in stark contrast to conventional critical points where exponents are universal constants. For 2D superfluids, \(\eta(T) = 1/(2\pi\rho_s)\) where \(\rho_s\) is the superfluid density, directly connecting thermodynamic properties to correlation decay.
+
+The physical picture illuminates this unusual behavior. Thermal fluctuations create phase distortions that grow logarithmically with distance. While insufficient to completely decorrelate distant regions (as happens for \(d < 2\)), these fluctuations destroy perfect phase alignment. The system retains local order—neighboring spins largely align—but this order degrades continuously with separation, never settling into a uniform state.
+
+Thermodynamically, quasi-long-range order produces striking signatures. The susceptibility diverges as \(\chi \sim L^{2-\eta}\) with system size \(L\), reflecting the absence of a characteristic correlation length. The specific heat shows no singularity at the transition to quasi-long-range order, as the transition is driven by topological defect unbinding rather than symmetry breaking. Structure factors exhibit power-law singularities \(S(\mathbf{q}) \sim q^{\eta-2}\) rather than Bragg peaks, producing diffuse scattering patterns.
+
+Experimental observation requires careful finite-size analysis. In small systems, algebraic and exponential decay can appear similar. Only by studying size dependence can one distinguish true quasi-long-range order: correlations at fixed separation \(r/L\) should remain constant as \(L\) increases, while exponentially decaying correlations weaken with system size.
+
+The concept extends beyond equilibrium physics. Driven systems, quantum critical points, and glassy materials can exhibit quasi-long-range correlations in various contexts. In each case, the absence of a length scale produces scale-invariant behavior reminiscent of, but distinct from, ordinary critical points.
+
+Quasi-long-range order exemplifies how dimensionality constrains possible phases of matter. Neither ordered nor disordered in the conventional sense, these phases exist only in marginal dimensions where competing tendencies—local ordering versus long-wavelength fluctuations—achieve delicate balance. Their study has enriched our understanding of phase transitions, revealing possibilities beyond the traditional ordered/disordered dichotomy.
+
+See also: [[id:8db469c1-ca8a-4d69-bc33-16e51908a8a3][Two-Dimensional Physics]], [[id:ff01f1f5-6720-4385-88aa-15f023c65673][Order Parameter Destruction]], [[id:f38b97b9-48e1-4680-a533-aa731ba2f70a][Scattering Experiments]]

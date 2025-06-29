@@ -1,0 +1,50 @@
+:PROPERTIES:
+:ID:       e93473b8-2a99-45aa-9a6e-2397b20e0495
+:CUSTOM_ID: 92/106
+:END:
+#+TITLE: Heat Capacity Singularities
+#+FILETAGS: :physics:spof:ch3:visualization:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The heat capacity behavior across the phase transition provides striking visual evidence for the upper critical dimension concept. The contrast between high and low dimensions reveals how fluctuations transform discontinuous mean-field transitions into power-law divergences.
+
+**High Dimensions (d > 4):**
+Fluctuations contribute only finite corrections to the mean-field discontinuity:
+
+- **Solid line**: Mean-field prediction with discontinuity
+  \[\Delta C_{SP} = \frac{1}{8u} \text{ at } T_c\]
+  The heat capacity is constant for \(T > T_c\) and jumps discontinuously at the transition.
+
+- **Dashed lines**: Including Gaussian fluctuations adds temperature-independent corrections
+  \[C = C_{background} + \Delta C_{SP} \cdot \theta(T_c - T) + \frac{n}{2K^2}a^{4-d}\]
+  The fluctuation term shifts both branches by a constant amount proportional to the microscopic length \(a^{4-d}\). The discontinuity magnitude remains unchanged.
+
+**Low Dimensions (d < 4):**
+Fluctuation corrections diverge, overwhelming the mean-field discontinuity:
+
+- **Solid line**: Same mean-field discontinuity (for reference)
+  
+- **Dashed curves**: Fluctuation corrections dominate near \(T_c\)
+  \[C_{total} \sim C_{background} + A_\pm|t|^{-(4-d)/2}\]
+  
+  The curves show symmetric divergence approaching \(T_c\) from both sides, with slightly different amplitudes \(A_+\) and \(A_-\). For \(d = 3\), this gives \(C \sim |t|^{-1/2}\), completely obscuring the underlying discontinuity.
+
+**Key Features:**
+1. **Temperature axis**: Reduced temperature \(t = (T-T_c)/T_c\) for scale
+2. **Ginzburg region**: The region \(|t| < t_G\) where fluctuations dominate
+3. **Crossover**: For \(d < 4\), mean-field behavior emerges only for \(|t| > t_G\)
+4. **Logarithmic scale**: The divergence in \(d < 4\) may require log scale on the \(C\) axis
+
+**Critical Dimension d = 4:**
+At the marginal dimension, logarithmic corrections appear:
+\[C \sim \Delta C_{SP} + B\ln|t|\]
+This intermediate behavior represents the delicate balance between mean-field and fluctuation-dominated regimes.
+
+**Physical Message:**
+This figure crystallizes the concept of upper critical dimension. Above \(d = 4\), fluctuations merely renormalize non-universal parameters without changing critical behavior. Below \(d = 4\), fluctuations qualitatively modify the transition, transforming discontinuities into power-law divergences. The dimension \(d = 4\) marks a fundamental boundary in the theory of critical phenomena.
+
+The contrasting panels explain why mean-field theory succeeds for some systems (superconductors, effectively high-dimensional) but fails for others (magnets, fluids in three dimensions). The Ginzburg criterion quantifies when the crossover from left-panel to right-panel behavior occurs.
+
+This visualization demonstrates how dimensional analysis and integral convergence properties translate into observable thermodynamic signatures, providing the conceptual foundation for understanding when mean-field theory applies.
+
+See also: [[id:12782f48-6079-48e4-b568-1121225dd5a7][Heat Capacity Corrections]], [[id:a6dc5888-bca4-4665-bff8-dc79b44953ee][Critical Dimensions]], [[id:50c6effe-fc5a-4304-a7bd-8376b7de5df6][Ginzburg Region]]

@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       fbd26541-19ff-494d-b576-9bf5f6ece15d
+:CUSTOM_ID: 92/103
+:END:
+#+TITLE: Data Analysis Methods
+#+FILETAGS: :physics:spof:ch3:analysis:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Extracting critical exponents from experimental data requires sophisticated statistical analysis to distinguish genuine critical behavior from systematic errors, corrections to scaling, and finite-size effects. Modern data analysis methods employ advanced fitting techniques, uncertainty quantification, and model selection criteria to achieve unprecedented precision in critical exponent determination.
+
+Corrections to scaling systematically modify pure power laws. The leading correction typically takes the form \(Y = A|t|^{-\alpha}(1 + B|t|^{\omega})\) where \(\omega \approx 0.5-0.8\) is the correction exponent. Including these terms dramatically improves fit quality and extends the temperature range yielding reliable exponents. Confluent corrections, analytic background terms, and multiple correction terms may be necessary for high-precision work.
+
+Finite-size effects require careful treatment in systems with limited dimensions. For correlation lengths approaching sample size \(L\), measured exponents cross over from bulk to finite-size values. Finite-size scaling theory predicts \(Y(t,L) = L^{\alpha/\nu}f(L/\xi)\) where \(f\) is a universal scaling function. Measuring systems with multiple sizes and collapsing data onto universal curves simultaneously determines bulk exponents and verifies scaling.
+
+Global fitting procedures constrain multiple quantities simultaneously. Magnetization, susceptibility, and specific heat measurements on the same sample must yield consistent exponents related by scaling laws: \(\alpha + 2\beta + \gamma = 2\). Joint fits enforcing these constraints improve precision and reveal systematic errors. Bayesian methods naturally incorporate prior knowledge about exponent values and uncertainty correlations.
+
+Critical point determination poses particular challenges. Methods include: (1) Finding where \(d\chi/dT\) maximizes, (2) Extrapolating pseudo-critical temperatures \(T_c(L)\) to \(L \to \infty\), (3) Optimizing scaling collapse quality, (4) Matching exponents above and below the transition. Each method has systematic biases; combining multiple approaches provides robust estimates.
+
+Systematic errors often exceed statistical uncertainties. Temperature calibration drift, sample inhomogeneity, and background subtraction introduce biases. Regular calibration checks, multiple sample measurements, and varied experimental protocols reveal these effects. Published exponent values typically quote uncertainties encompassing both statistical and systematic contributions.
+
+Modern computational tools enable sophisticated analyses. Monte Carlo error propagation handles correlated uncertainties. Bootstrap resampling provides model-independent confidence intervals. Information criteria (AIC, BIC) guide model selection between competing correction terms. Symbolic regression discovers optimal fitting functions without assuming specific forms.
+
+Machine learning approaches complement traditional methods. Neural networks can identify phase boundaries in high-dimensional data without prior assumptions about order parameters. Clustering algorithms reveal hidden phases in complex phase diagrams. Gaussian process regression provides non-parametric fits with natural uncertainty quantification.
+
+The culmination of careful data analysis is exponent values precise enough to discriminate between theoretical predictions. Modern experiments achieve 0.1% precision for leading exponents, testing series expansions, field-theoretic calculations, and Monte Carlo results. This interplay between experiment and theory, mediated by sophisticated data analysis, drives progress in understanding critical phenomena.
+
+See also: [[id:73a5eb9b-b875-4329-a31d-bfa41a134ea1][Lorentzian Line Shapes]], [[id:8f3d13bf-f379-41a9-9bc7-d0292f67d6b1][Critical Exponent Values]], [[id:1671dbdf-1832-420e-be62-69257e356bb4][Toward Renormalization]]

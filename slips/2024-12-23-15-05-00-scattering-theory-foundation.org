@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID: 537782fb-124f-4fd6-96d2-14b416999b30
+:CUSTOM_ID: 92/64
+:END:
+#+TITLE: Scattering Theory Foundation
+#+FILETAGS: :physics:spof:ch3:scattering:correlations:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The scattering amplitude from a collection of point scatterers takes the form:
+
+\[A(\mathbf{q}) = \sigma(\mathbf{q})\rho(\mathbf{q}) \tag{3.1}\]
+
+where \(\sigma(\mathbf{q})\) represents the local form factor of individual scattering elements, while the spatial Fourier transform \(\rho(\mathbf{q})\) captures the global arrangement of scatterers. The nature of \(\rho(\mathbf{x})\) depends critically on the probe: light scattering measures atomic density, electron scattering probes charge density, and neutron scattering typically reveals magnetization density.
+
+Since experimental detectors measure time-averaged intensities rather than instantaneous amplitudes, the observed scattering intensity becomes
+
+\[S(\mathbf{q}) \propto \langle|A(\mathbf{q})|^2\rangle \propto \langle|\rho(\mathbf{q})|^2\rangle \tag{3.2}\]
+
+The thermal average \(\langle\bullet\rangle\) replaces time averaging through ergodicity. This intensity \(S(\mathbf{q})\), known as the structure factor or scattering function, directly probes the Fourier transform of density-density correlations. For a uniform system, scattering occurs only in the forward direction (\(\mathbf{q} = 0\)), while deviations from uniformity—particularly long-wavelength fluctuations near critical points—manifest as small-angle scattering.
+
+The profound connection between \(S(\mathbf{q})\) and correlation functions enables extraction of correlation lengths from scattering line shapes. Near critical points, the divergence of correlations produces the phenomenon of critical opalescence, where the system scatters strongly at all wavelengths comparable to the correlation length. The mathematical structure here provides the foundation for all experimental studies of critical phenomena.
+
+**See also:** [[id:569ac89b-efc8-4dba-a0df-c607730a3766][Landau-Ginzburg Probability]] for the statistical weight formulation, [[id:f0f70046-ef11-4860-bac8-63651ee56d77][Correlation Function Definitions]] for the connection to correlations, [[id:f38b97b9-48e1-4680-a533-aa731ba2f70a][Scattering Experiments]] for experimental implementations.

@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       9302663d-a632-4e0a-98d3-f9506fb0ab92
+:CUSTOM_ID: 92/89
+:END:
+#+TITLE: Mermin-Wagner Theorem
+#+FILETAGS: :physics:spof:ch3:merminwagner:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The Mermin-Wagner theorem provides a rigorous proof that continuous symmetries cannot be spontaneously broken in systems with short-range interactions when the spatial dimension satisfies \(d \leq 2\). This fundamental result constrains the possible phases of matter in low dimensions by demonstrating that thermal fluctuations of massless Goldstone modes destroy long-range order.
+
+The theorem's proof hinges on analyzing the divergence of Goldstone mode fluctuations. For a system with \(n\)-component order parameter and continuous \(O(n)\) symmetry, thermal excitation of transverse modes follows:
+
+\[\int \frac{d^d k}{k} \sim \int k^{d-2} dk\]
+
+This integral diverges at small \(k\) for \(d \leq 2\), indicating an infinite accumulation of long-wavelength excitations that destroy long-range order.
+
+The mathematical implementation for superfluids tracks phase fluctuations explicitly. The mean-square phase difference grows as:
+
+\[\langle[\theta(\mathbf{x}) - \theta(0)]^2\rangle \sim \begin{cases}
+|x|^{2-d} & d < 2 \\
+\ln|x| & d = 2 \\
+\text{const} & d > 2
+\end{cases}\]
+
+For \(d \leq 2\), this unbounded growth implies \(\langle e^{i[\theta(\mathbf{x})-\theta(0)]}\rangle \to 0\) as \(|x| \to \infty\), destroying long-range phase coherence. The order parameter correlation function vanishes at large distances, confirming the absence of spontaneous symmetry breaking.
+
+The theorem has profound implications. Two-dimensional ferromagnets with isotropic interactions cannot exist at finite temperature. Thin magnetic films must rely on anisotropy or long-range dipolar forces to achieve ordering. Similarly, true Bose-Einstein condensation is impossible in 2D traps without additional confinement. One-dimensional systems face even stronger constraints, with fluctuations destroying order for any continuous or discrete symmetry.
+
+Important caveats limit the theorem's scope. Systems with long-range interactions (decaying slower than \(r^{-d}\)) can exhibit ordering in low dimensions. Discrete symmetries escape the theorem entirely, as they lack Goldstone modes—hence 2D Ising ferromagnets exist. Most subtly, while true long-range order vanishes in 2D systems with continuous symmetry, quasi-long-range order with power-law correlations remains possible, as realized in the Kosterlitz-Thouless phase.
+
+The Mermin-Wagner theorem exemplifies how mathematical constraints from quantum and statistical mechanics limit physical possibilities. By proving what cannot exist, it sharpens our understanding of what can, guiding both theoretical investigations and experimental designs in reduced dimensions.
+
+See also: [[id:ff01f1f5-6720-4385-88aa-15f023c65673][Order Parameter Destruction]], [[id:8db469c1-ca8a-4d69-bc33-16e51908a8a3][Two-Dimensional Physics]], [[id:6867a48d-29af-4c1c-971c-70d8f4bc81f3][Goldstone Mode Physics]]

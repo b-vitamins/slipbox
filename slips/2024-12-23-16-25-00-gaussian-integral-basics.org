@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       c64406ae-8c0f-4faa-9ade-cf69b7dc5478
+:CUSTOM_ID: 92/80
+:END:
+#+TITLE: Gaussian Integral Basics
+#+FILETAGS: :physics:spof:ch3:gaussian:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The single-variable Gaussian integral provides the foundation for all statistical field theory calculations. The generating function for a harmonic oscillator with stiffness \(K\) coupled to external field \(h\) takes the form:
+
+\[\mathcal{J}_1[h] = \int_{-\infty}^{\infty} d\phi \, \exp\left[-\frac{K}{2}\phi^2 + h\phi\right] = \sqrt{\frac{2\pi}{K}} \exp\left[\frac{h^2}{2K}\right] \tag{3.40}\]
+
+This result encodes the partition function of a harmonic oscillator coupled to an external field \(h\). The prefactor \(\sqrt{2\pi/K}\) represents fluctuation contributions, while the exponential factor captures the mean-field energy of alignment with the source. The stiffness \(K\) controls both the width of fluctuations and the response to external perturbations.
+
+Derivatives with respect to the source field generate moments of the Gaussian distribution through the identity \(\partial/\partial h = \phi\) under the integral sign:
+
+\[\frac{d}{dh}: \int_{-\infty}^{\infty} d\phi \, \phi \, e^{-\frac{K}{2}\phi^2 + h\phi} = \sqrt{\frac{2\pi}{K}} e^{\frac{h^2}{2K}} \cdot \frac{h}{K}\]
+
+\[\frac{d^2}{dh^2}: \int_{-\infty}^{\infty} d\phi \, \phi^2 \, e^{-\frac{K}{2}\phi^2 + h\phi} = \sqrt{\frac{2\pi}{K}} e^{\frac{h^2}{2K}} \cdot \left[\frac{1}{K} + \frac{h^2}{K^2}\right] \tag{3.41}\]
+
+These yield the first two moments: \(\langle\phi\rangle = h/K\) and \(\langle\phi^2\rangle = h^2/K^2 + 1/K\). The cumulants, obtained from derivatives of \(\ln\mathcal{J}_1\), reveal the simple structure: \(\langle\phi\rangle_c = h/K\) and \(\langle\phi^2\rangle_c = \langle\phi^2\rangle - \langle\phi\rangle^2 = 1/K\). All higher cumulants vanish identically, characterizing the Gaussian distribution completely by its mean and variance.
+
+The characteristic function provides a compact encoding of all moments:
+
+\[\langle e^{-ik\phi}\rangle \equiv \exp\left[\sum_{\ell=1}^{\infty} \frac{(-ik)^\ell}{\ell!}\langle\phi^\ell\rangle_c\right] = \exp\left[-ikh - \frac{k^2}{2K}\right] \tag{3.42}\]
+
+The quadratic dependence on \(k\) in the exponent identifies the Gaussian nature of fluctuations. This same structure appears in the central limit theorem, explaining why Gaussian distributions emerge universally from the superposition of many small random contributions.
+
+These basic results extend directly to field theory, where \(\phi\) becomes a function of position and the single integral becomes a functional integral. The mathematical technology developed here—generating functionals, cumulant expansions, and characteristic functions—provides the foundation for perturbative calculations in statistical field theory. The Gaussian integral represents the exactly solvable reference point around which more complex theories are constructed.
+
+See also: [[id:1a66b200-5705-41ad-9624-73387cbd9623][Multivariate Gaussians]], [[id:6444aa55-031d-43ca-a069-bbaed0d2e0ed][Functional Integrals]], [[id:42723703-6da3-4a68-9da8-e38012a8a4c6][Beyond Gaussian Physics]]

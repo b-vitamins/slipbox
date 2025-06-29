@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID:       c26b66f5-ded0-4426-bf02-2dcf8b35114b
+:CUSTOM_ID: 92/105
+:END:
+#+TITLE: Correlation Decay Regimes
+#+FILETAGS: :physics:spof:ch3:visualization:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The correlation function \(G(r)\) exhibits a characteristic crossover between critical and non-critical regimes, with the correlation length \(\xi\) marking the boundary between power-law and exponential behavior. This crossover provides direct visual evidence for the role of \(\xi\) in separating microscopic from macroscopic physics.
+
+**Short-distance regime** (\(r \ll \xi\)):
+\[G(r) \sim \frac{1}{r^{d-2}}\]
+
+On the log-log plot, this appears as a straight line with slope \(-(d-2)\). For \(d = 3\), this gives slope \(-1\); for \(d = 2\), the curve is flat (logarithmic growth). This power-law regime reflects the scale-invariant nature of short-distance physics, independent of the correlation length.
+
+**Long-distance regime** (\(r \gg \xi\)):
+\[G(r) \sim \frac{\xi^{(3-d)/2}}{r^{(d-1)/2}} \exp(-r/\xi)\]
+
+The exponential factor dominates, causing rapid decay beyond \(\xi\). On the log-log plot, this curves downward dramatically, with the curve becoming steeper as \(r\) increases. The power-law prefactor \(r^{-(d-1)/2}\) provides a subleading correction.
+
+**Crossover region** (\(r \sim \xi\)):
+The transition between regimes occurs smoothly around \(r = \xi\), marked clearly on the plot. The full mathematical form is given by \(G(r) = -I_d(r,\xi)/K\), which interpolates seamlessly between the asymptotic limits. The crossover width is of order \(\xi\) itself.
+
+**Key Features:**
+1. **Slope = \(-(d-2)\)** in the power-law regime
+2. **Crossover point** at \(r = \xi\) (mark with vertical dashed line)
+3. **Exponential cutoff** becoming apparent for \(r > 2\xi\)
+4. **Temperature dependence**: As \(T \to T_c\), \(\xi\) increases, pushing the crossover to larger \(r\)
+
+**Multiple Temperature Curves:**
+- Several temperatures showing how increasing \(\xi\) extends the power-law regime
+- At \(T = T_c\) where \(\xi = \infty\): pure power law \(G(r) \sim r^{-(d-2+\eta)}\) throughout
+
+**Physical Significance:**
+This figure demonstrates how the correlation length \(\xi\) separates microscopic from macroscopic physics. Within distance \(\xi\), the system appears critical with scale-invariant correlations. Beyond \(\xi\), thermal fluctuations destroy correlations exponentially. The divergence of \(\xi\) at \(T_c\) extends criticality to macroscopic scales, producing the observable singularities in thermodynamic quantities.
+
+The crossover behavior encoded in \(I_d(r,\xi)\) represents one of the fundamental mathematical structures in critical phenomena, connecting the Coulomb potential at short distances to Yukawa decay at large distances. This visualization reveals how critical behavior emerges gradually as the correlation length grows, rather than appearing suddenly at \(T_c\).
+
+See also: [[id:5b06142d-7d7b-4ce6-944e-dc587c198a2b][I_d Explicit Forms]], [[id:2e0349c4-ec89-4fe3-b4c6-59c430f248a3][Correlation Function Definitions]], [[id:231284c0-b569-49f2-87fb-b26119c23020][Correlation Length Divergence]]

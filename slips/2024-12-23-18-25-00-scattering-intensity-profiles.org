@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       61002377-b3d4-4654-aa55-bd98fe0dcc2b
+:CUSTOM_ID: 92/104
+:END:
+#+TITLE: Scattering Intensity Profiles
+#+FILETAGS: :physics:spof:ch3:visualization:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The scattering intensity profiles \(S(\mathbf{q})\) provide visual evidence for spontaneous symmetry breaking by revealing the qualitative change in fluctuation spectra across the phase transition. These profiles directly encode the momentum-space structure of correlations measured in neutron, X-ray, and light scattering experiments.
+
+**Disordered Phase (t > 0):**
+Above the critical temperature, all directions are equivalent due to rotational symmetry. The scattering intensity shows a single Lorentzian peak:
+
+\[S(q) = \frac{A}{q^2 + \xi^{-2}}\]
+
+The curve peaks at \(q = 0\) with height \(S(0) = A\xi^2\), then decays smoothly. At \(q = \xi^{-1}\), the intensity drops to half maximum. For large \(q \gg \xi^{-1}\), the intensity falls as \(1/q^2\). The width of the peak narrows as \(T \to T_c^+\) since \(\xi \propto |t|^{-1/2}\) diverges.
+
+**Ordered Phase (t < 0):**
+Two distinct curves appear, reflecting broken symmetry:
+
+1. **Longitudinal scattering** (solid line): Maintains Lorentzian form
+   \[S_\ell(q) = \frac{A_\ell}{q^2 + \xi_\ell^{-2}}\]
+   where \(\xi_\ell = \xi_0/\sqrt{2|t|}\). A delta function at \(q = 0\) (not shown) represents the Bragg peak from spontaneous magnetization.
+
+2. **Transverse scattering** (dashed line): Shows pure \(1/q^2\) divergence
+   \[S_t(q) = \frac{A_t}{q^2}\]
+   This power-law form, lacking any characteristic length scale, signals Goldstone modes. The intensity diverges as \(q \to 0\), limited only by system size or instrumental resolution.
+
+**Key Features:**
+- The qualitative difference between phases: identical modes above \(T_c\) versus distinct longitudinal/transverse below
+- The crossover from Lorentzian to power-law behavior for transverse modes signals spontaneous symmetry breaking
+- At \(T_c\) exactly, both modes would show \(S(q) \propto q^{-(2-\eta)}\) with small \(\eta\)
+- Experimental measurement via polarized neutron scattering can isolate each component
+
+**Physical Interpretation:**
+The figure encapsulates how symmetry breaking manifests in fluctuation spectra. Above \(T_c\), all directions are equivalent, yielding identical scattering. Below \(T_c\), the order parameter selects a direction, creating massive longitudinal fluctuations (changing magnitude) and massless transverse fluctuations (rotating direction). This spectral signature provides unambiguous evidence for spontaneous symmetry breaking.
+
+See also: [[id:fb81004f-52fb-4422-8bdd-058a805bb70c][Scattering Theory Foundation]], [[id:733f3011-9659-48d1-8d88-58fccc326fca][Fluctuation Mode Structure]], [[id:6867a48d-29af-4c1c-971c-70d8f4bc81f3][Goldstone Mode Physics]]

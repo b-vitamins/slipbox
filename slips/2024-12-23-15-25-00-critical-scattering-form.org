@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       e361a82a-9085-4566-9e2d-803e22bd473b
+:CUSTOM_ID: 92/68
+:END:
+#+TITLE: Critical Scattering Form
+#+FILETAGS: :physics:spof:ch3:scattering:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The exponent \(\eta\) represents a small positive correction to the mean-field prediction of \(\eta = 0\). While mean-field theory predicts simple \(1/q^2\) scattering at criticality—the same form as Goldstone modes in the ordered phase—real systems exhibit \(\eta \approx 0.03-0.04\) for three-dimensional magnets. This small but measurable deviation signals the breakdown of Gaussian fluctuation theory right at the critical point.
+
+The physical origin of \(\eta\) lies in the anomalous scaling of the magnetization operator itself under renormalization group transformations. In real space, the anomalous dimension manifests as a modification to the power-law decay of correlations: \(G(r) \sim 1/r^{d-2+\eta}\) at criticality, compared to the mean-field prediction of \(1/r^{d-2}\). The same exponent appears in multiple contexts—the critical scattering intensity, the real-space correlation function decay, and the scaling dimension of the order parameter field—reflecting the deep unity of critical phenomena.
+
+Experimentally, \(\eta\) proves challenging to measure accurately because it requires precise data exactly at \(T_c\) where fluctuations are strongest and equilibration times longest. Small-angle neutron scattering provides the cleanest determination, as the \(q\)-dependence can be measured over several decades. The universal value of \(\eta\) for a given universality class (determined by spatial dimension \(d\) and order parameter symmetry \(n\)) provides a stringent test of theoretical predictions beyond mean field.
+
+The appearance of a non-zero \(\eta\) signals that the Gaussian approximation, while capturing much of the physics near criticality, misses subtle but universal corrections that arise from the nonlinear interaction of fluctuations. These corrections become increasingly important as the spatial dimension decreases toward the upper critical dimension \(d_u = 4\).
+
+See also: [[id:fb81004f-52fb-4422-8bdd-058a805bb70c][Scattering Theory Foundation]], [[id:93796440-8500-4892-9c68-b7f23385b629][Critical Exponent Values]], [[id:42723703-6da3-4a68-9da8-e38012a8a4c6][Beyond Gaussian Physics]]
