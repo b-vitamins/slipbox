@@ -2,7 +2,7 @@
 :ID:       94b2985f-7786-49cb-9858-33b3e2d238f6
 :CUSTOM_ID: 92/344
 :END:
-#+title: Effective Hamiltonian for π
+#+TITLE: Effective Hamiltonian for π
 #+FILETAGS: :physics:spof:ch8:nonlinearsigmamodel:effectivetheory:interactions:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -20,4 +20,4 @@ The expansion of these nonlinear terms in powers of π generates an infinite ser
 
 **Meta observation**: The emergence of complex interactions from simple constraints exemplifies a general principle: symmetry determines dynamics. The specific form of the nonlinearities is uniquely fixed by requiring O(n) invariance of the full theory.
 
-**See also:** [[id:PLACEHOLDER-05][zettel:05]], [[id:PLACEHOLDER-07][zettel:07]]
+**See also:** [[id:94b2985f-7786-49cb-9858-33b3e2d238f6][zettel:05]], [[id:c3e8a2f5-9b1d-4e6a-8c7f-2a9b3e4d5f6c][zettel:07]]

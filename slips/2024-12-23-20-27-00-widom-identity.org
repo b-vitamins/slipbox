@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Widom Identity
 #+FILETAGS: :physics:spof:ch4:exponents:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The Widom identity δ - 1 = γ/β relates the critical isotherm exponent δ to the ratio of susceptibility and order parameter exponents, expressing the constraint between field and temperature scaling.
 

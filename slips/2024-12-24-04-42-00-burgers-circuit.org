@@ -2,7 +2,7 @@
 :ID: c8e7f9d4-3b5a-4e6f-9a8c-2d4e5f7a8b9c
 :CUSTOM_ID: 92/381
 :END:
-#+title: Burger's Circuit
+#+TITLE: Burger's Circuit
 #+filetags: :physics:spof:ch8:dislocation:topologicaldefect:burgersvector:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -19,4 +19,4 @@ Unlike vortices which are scalar charges, dislocations carry vector charges. Thi
 
 **Meta observation**: The quantization of circulation—whether scalar (vortices) or vector (dislocations)—reflects the discrete symmetry of the microscopic system surviving in the continuum limit. Topology remembers what coarse-graining forgets.
 
-**See also:** [[id:PLACEHOLDER-42][zettel:42]], [[id:PLACEHOLDER-44][zettel:44]], [[id:PLACEHOLDER-F4][figure:F4]]
+**See also:** [[id:c8e7f9d4-3b5a-4e6f-9a8c-2d4e5f7a8b9c][zettel:42]], [[id:f7a8e9c4-3d6b-4e5f-9a1c-8b2d3e4f7a9b][zettel:44]], [[id:b9f8e7a5-6d4c-4e8f-9a3d-5e6f8a9b7c5f][figure:F4]]

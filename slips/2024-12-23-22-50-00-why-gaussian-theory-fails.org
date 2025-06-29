@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Why Gaussian Theory Fails
 #+FILETAGS: :physics:statistical:fieldtheory:gaussian:failure:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The failure of Gaussian theory below four dimensions necessitates finding a new fixed point where the quartic interaction takes a finite, non-zero value. This Wilson-Fisher fixed point, accessible through ε = 4 - d expansion, controls the true critical behavior in physical dimensions.
 

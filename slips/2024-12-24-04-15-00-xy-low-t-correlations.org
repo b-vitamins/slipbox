@@ -2,7 +2,7 @@
 :ID:       a3d2e8f5-b9c4-4e12-8f7a-2d9b5c6a3e4f
 :CUSTOM_ID: 92/354
 :END:
-#+title: XY Low-T Correlations
+#+TITLE: XY Low-T Correlations
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 #+FILETAGS: :physics:spof:ch8:xymodel:lowtemperature:quasilongrangeorder:
 
@@ -23,4 +23,4 @@ The exponent 1/(2πK) decreases with increasing K (lower temperature), indicatin
 
 **Meta observation**: The logarithmic growth of fluctuations in two dimensions repeatedly appears across physics—from quantum field theory anomalies to conformal field theory. It signals marginal behavior where perturbative and non-perturbative effects compete.
 
-**See also:** [[id:PLACEHOLDER-01][zettel:01]], [[id:PLACEHOLDER-15][zettel:15]], [[id:PLACEHOLDER-21][zettel:21]]
+**See also:** [[id:c68b33e8-4abd-4967-9651-29c8a8a785ab][zettel:01]], [[id:a3d2e8f5-b9c4-4e12-8f7a-2d9b5c6a3e4f][zettel:15]], [[id:a7c9b4e2-8f3d-4a5e-b1c6-d2e7f9a0b8c3][zettel:21]]

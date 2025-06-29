@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Heisenberg Model (n=3) Exponents
 #+FILETAGS: :physics:statistical:heisenberg:exponents:o3:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Critical exponents for the 3D Heisenberg universality class:
 - β = 0.36 (order parameter)

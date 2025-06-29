@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Gaussian Model Setup
 #+FILETAGS: :physics:spof:ch4:gaussian:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The Gaussian model provides the foundational quadratic theory for critical phenomena, establishing the framework for exact calculations and serving as the fixed point for mean-field behavior.
 

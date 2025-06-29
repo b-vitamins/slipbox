@@ -2,7 +2,7 @@
 :ID:       c4a7f8d3-9b2e-4f1a-8c7d-3e5f6a8b9c2d
 :CUSTOM_ID: 92/366
 :END:
-#+title: Critical Trajectory
+#+TITLE: Critical Trajectory
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 #+FILETAGS: :physics:spof:ch8:criticalbehavior:nonlinearflow:hyperbolic:
 
@@ -26,4 +26,4 @@ The nonlinear flow near criticality has profound consequences. Instead of expone
 
 **Meta observation**: Nonlinear RG flows arise when the fixed point is marginal—linear eigenvalues vanish and higher-order terms control the dynamics. The resulting hyperbolic flows create a new universality class distinct from conventional critical phenomena.
 
-**See also:** [[id:PLACEHOLDER-27][zettel:27]], [[id:PLACEHOLDER-29][zettel:29]], [[figure:F3]]
+**See also:** [[id:c4a7f8d3-9b2e-4f1a-8c7d-3e5f6a8b9c2d][zettel:27]], [[id:a8c9f3e2-7b5d-4e1a-9c6b-2f8e5d3a4b9c][zettel:29]], [[figure:F3]]

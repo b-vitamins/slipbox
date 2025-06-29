@@ -2,7 +2,7 @@
 :ID:       d3f9c8e2-7b4a-4e12-9f3d-6c8a1e5b2d47
 :CUSTOM_ID: 92/371
 :END:
-#+title: 2D Solid Distortions
+#+TITLE: 2D Solid Distortions
 #+FILETAGS: :physics:spof:ch8:crystal:displacementfield:elasticity:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -19,4 +19,4 @@ The analogy between crystals and spin systems extends beyond counting soft modes
 
 **Meta observation**: The displacement field in crystals, like the phase in superfluids or the angle in XY magnets, represents a broken continuous symmetry. The universality of Goldstone physics ensures similar low-energy behavior across these seemingly disparate systems.
 
-*See also:* [[id:PLACEHOLDER-32][zettel:32]], [[id:PLACEHOLDER-34][zettel:34]]
+*See also:* [[id:d3f9c8e2-7b4a-4e12-9f3d-6c8a1e5b2d47][zettel:32]], [[id:e3f8a7c2-9b4d-4f1e-8a6b-7c5d9f2a3b8e][zettel:34]]

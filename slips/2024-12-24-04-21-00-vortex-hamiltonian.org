@@ -2,7 +2,7 @@
 :ID:       a7c9b4e2-8f3d-4a5e-b1c6-d2e7f9a0b8c3
 :CUSTOM_ID: 92/360
 :END:
-#+title: Vortex Hamiltonian
+#+TITLE: Vortex Hamiltonian
 #+FILETAGS: :physics:spof:ch8:coulombgas:hamiltonian:interaction:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -21,4 +21,4 @@ This is precisely the Hamiltonian of a two-dimensional Coulomb gas with charges 
 
 **Meta observation**: The emergence of electrostatic interactions from a completely different physical system—spins with local ferromagnetic coupling—exemplifies universality. The long-range nature of topological constraints inevitably leads to Coulomb-like forces.
 
-**See also:** [[id:PLACEHOLDER-20][zettel:20]], [[id:PLACEHOLDER-21][zettel:21]], [[id:PLACEHOLDER-23][zettel:23]]
+**See also:** [[id:a7f8d9c2-3b4e-4a5d-8c6f-9e2a1b7c4d3e][zettel:20]], [[id:a7c9b4e2-8f3d-4a5e-b1c6-d2e7f9a0b8c3][zettel:21]], [[id:b8f7e9a3-2c45-4d92-8f16-9e1a3b7c5d84][zettel:23]]

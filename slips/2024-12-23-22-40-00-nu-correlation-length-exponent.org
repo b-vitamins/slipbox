@@ -4,6 +4,7 @@
 :END:
 #+TITLE: ν (Correlation Length Exponent)
 #+FILETAGS: :physics:statistical:exponents:correlation:nu:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The correlation length exponent ν controls the divergence of the characteristic length scale: ξ ~ |t|^(-ν).
 

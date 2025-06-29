@@ -2,7 +2,7 @@
 :ID: c7e8f9d3-2a4b-4f6c-8e9d-3f7a2b9c4e8d
 :CUSTOM_ID: 92/377
 :END:
-#+title: Translational Order Parameter
+#+TITLE: Translational Order Parameter
 #+filetags: :physics:spof:ch8:orderparameter:reciprocallattice:correlations:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -24,4 +24,4 @@ The order parameter formulation connects directly to diffraction experiments. Th
 
 **Meta observation**: The reciprocal lattice order parameters provide a complete description of crystalline order, with each **G** probing a different length scale. This multi-scale characterization proves essential for understanding the two-stage melting process in two dimensions.
 
-**See also:** [[id:PLACEHOLDER-38][zettel:38]], [[id:PLACEHOLDER-40][zettel:40]]
+**See also:** [[id:c7e8f9d3-2a4b-4f6c-8e9d-3f7a2b9c4e8d][zettel:38]], [[id:a8e9f7c3-2b5d-4f6a-9c8e-1d3f7a8b9e4c][zettel:40]]

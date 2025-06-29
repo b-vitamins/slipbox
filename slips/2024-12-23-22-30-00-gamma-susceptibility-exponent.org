@@ -4,6 +4,7 @@
 :END:
 #+TITLE: γ (Susceptibility Exponent)
 #+FILETAGS: :physics:statistical:exponents:susceptibility:gamma:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The susceptibility exponent γ controls the divergence of response functions: χ ~ |t|^(-γ).
 

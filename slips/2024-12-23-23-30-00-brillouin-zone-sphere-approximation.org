@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Brillouin Zone → Sphere Approximation
 #+FILETAGS: :physics:statistical:visualization:momentum:brillouin:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Transformation from cubic Brillouin zone to spherical cutoff:
 

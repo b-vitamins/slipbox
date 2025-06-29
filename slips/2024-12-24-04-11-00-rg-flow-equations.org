@@ -2,7 +2,7 @@
 :ID:       f7a8e9c3-2b4d-4e6f-9a1b-8c3d5e6f7a9b
 :CUSTOM_ID: 92/350
 :END:
-#+title: RG Flow Equations
+#+TITLE: RG Flow Equations
 #+FILETAGS: :physics:spof:ch8:renormalizationgroup:flowequations:criticalbehavior:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -25,4 +25,4 @@ The factor (n-2) has profound consequences. For n > 2, temperature is relevant e
 
 *Meta observation*: The emergence of (n-2) from (n-1) through subtle cancellations exemplifies how symmetry considerations can produce non-obvious results. The special role of n = 2 was not input but emerged from the calculation.
 
-*See also:* [[id:PLACEHOLDER-11][zettel:11]], [[id:PLACEHOLDER-13][zettel:13]]
+*See also:* [[id:f7a8e9c3-2b4d-4e6f-9a1b-8c3d5e6f7a9b][zettel:11]], [[id:8f4c9d3e-2a7b-4e5c-b1f9-3c6d8e9f2a47][zettel:13]]

@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Homogeneity Mathematical Framework
 #+FILETAGS: :physics:spof:ch4:mathematics:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The mathematical framework for homogeneity derives from the assumption that the free energy must have generalized homogeneous form: f_sing(λ^a t, λ^b h) = λ f_sing(t,h) (Equation 4.2).
 

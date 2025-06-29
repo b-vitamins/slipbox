@@ -4,6 +4,7 @@
 :END:
 #+TITLE: XY Model (n=2) Exponents
 #+FILETAGS: :physics:statistical:xy:exponents:continuous:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Critical exponents for the 3D XY universality class:
 - β = 0.35 (order parameter)

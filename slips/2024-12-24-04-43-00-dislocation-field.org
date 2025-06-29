@@ -2,7 +2,7 @@
 :ID: e9f8a7d3-4c5b-4e6f-8a9d-3b2c4e7f9a8d
 :CUSTOM_ID: 92/382
 :END:
-#+title: Dislocation Field
+#+TITLE: Dislocation Field
 #+filetags: :physics:spof:ch8:displacementfield:singularsolution:elasticity:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -22,4 +22,4 @@ The decomposition **u** = **φ** + ũ, where **φ** represents phonons and ũ ca
 
 **Meta observation**: The distinction between the "bare" topological field ũ* and the physical elastic field ũ exemplifies a general principle—topology provides constraints, but energetics determines the actual configuration within those constraints.
 
-**See also:** [[id:PLACEHOLDER-43][zettel:43]], [[id:PLACEHOLDER-45][zettel:45]]
+**See also:** [[id:e9f8a7d3-4c5b-4e6f-8a9d-3b2c4e7f9a8d][zettel:43]], [[id:a8f9e7c3-2d4b-4f5e-8a7c-3b4d5e6f8a9b][zettel:45]]

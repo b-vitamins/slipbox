@@ -2,7 +2,7 @@
 :ID: a7f9e8c3-5d4b-4e6f-8a2c-3b5d6e7f9a4c
 :CUSTOM_ID: 92/389
 :END:
-#+title: Disclination Energy
+#+TITLE: Disclination Energy
 #+filetags: :physics:spof:ch8:disclination:topologicaldefect:hexaticliquid:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -25,4 +25,4 @@ Disclinations can exist in the solid phase but only as bound pairs separated by 
 
 **Meta observation**: The factor of 6 difference between vortex and disclination charges (2π vs 2π/6) exemplifies how lattice symmetry modifies topological defects. The universal structure (Coulomb gas) remains, but symmetry determines the specific parameters.
 
-**See also:** [[id:PLACEHOLDER-50][zettel:50]], [[id:PLACEHOLDER-52][zettel:52]]
+**See also:** [[id:a7f9e8c3-5d4b-4e6f-8a2c-3b5d6e7f9a4c][zettel:50]], [[id:e9f8a7d6-3c4b-4e7f-8a9d-2c3e8f7a9b5e][zettel:52]]

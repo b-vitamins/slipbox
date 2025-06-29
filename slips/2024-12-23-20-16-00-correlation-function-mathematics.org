@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Correlation Function Mathematics
 #+FILETAGS: :physics:spof:ch4:correlations:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The mathematical structure of correlation functions provides the spatial foundation for critical phenomena, connecting thermodynamic quantities to real-space behavior.
 

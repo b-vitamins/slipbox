@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Gap Exponent
 #+FILETAGS: :physics:spof:ch4:exponents:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The gap exponent Δ is the universal ratio that controls field scaling across all thermodynamic quantities near the critical point. It determines how the magnetic field h scales relative to the reduced temperature t in the scaling hypothesis.
 

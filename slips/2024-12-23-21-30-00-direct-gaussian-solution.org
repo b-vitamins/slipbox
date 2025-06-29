@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Direct Gaussian Solution
 #+FILETAGS: :physics:statistical:fieldtheory:gaussian:solution:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The direct solution reveals several crucial features. First, higher-order gradient terms (L, etc.) do not affect the leading critical behavior, justifying their classification as irrelevant operators. Second, the spherical approximation to the Brillouin zone is adequate for extracting universal properties, as the critical singularities arise from the isotropic long-wavelength modes. Third, the solution is valid only for t > 0 since the model lacks the quartic term needed to stabilize the ordered phase.
 

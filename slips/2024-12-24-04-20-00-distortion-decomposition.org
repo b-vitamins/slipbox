@@ -2,7 +2,7 @@
 :ID:       a7f8d9c2-3b4e-4a5d-8c6f-9e2a1b7c4d3e
 :CUSTOM_ID: 92/359
 :END:
-#+title: Distortion Decomposition
+#+TITLE: Distortion Decomposition
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 #+FILETAGS: :physics:spof:ch8:helmholtzdecomposition:vortexinteraction:energy:
 
@@ -23,4 +23,4 @@ Substituting the Poisson equation ∇²ψ = 2π∑ᵢnᵢδ²(**x**-**x**ᵢ) yi
 
 **Meta observation**: The orthogonality of gradient and curl in two dimensions enables exact separation of fluctuations into harmonic (spin waves) and topological (vortices) sectors. This decomposition is why the Kosterlitz-Thouless transition can be analyzed exactly.
 
-**See also:** [[id:PLACEHOLDER-16][zettel:16]], [[id:PLACEHOLDER-20][zettel:20]], [[id:PLACEHOLDER-22][zettel:22]]
+**See also:** [[id:8f5c9a3e-2d47-4b81-9e4c-7a8f2c9b5d63][zettel:16]], [[id:a7f8d9c2-3b4e-4a5d-8c6f-9e2a1b7c4d3e][zettel:20]], [[id:f8e3c4d2-9a7b-4e5f-8d1c-6b2a3e4f5c8d][zettel:22]]

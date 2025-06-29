@@ -2,7 +2,7 @@
 :ID: d8f9e3a2-4c7b-4d5e-9a8f-6b3c7e9d2f4a
 :CUSTOM_ID: 92/376
 :END:
-#+title: Position Fluctuations
+#+TITLE: Position Fluctuations
 #+filetags: :physics:spof:ch8:fluctuations:lindemanncriterion:melting:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -20,4 +20,4 @@ The logarithmic divergence has the same origin as in the XY model—the 1/q² pr
 
 **Meta observation**: The Lindemann criterion, though heuristic, captures deep physics—crystalline order becomes unsustainable when thermal fluctuations are comparable to lattice spacing. In 2D, this would occur at any finite temperature without the stabilizing effect of power-law quasi-order.
 
-**See also:** [[id:PLACEHOLDER-37][zettel:37]], [[id:PLACEHOLDER-39][zettel:39]]
+**See also:** [[id:d8f9e3a2-4c7b-4d5e-9a8f-6b3c7e9d2f4a][zettel:37]], [[id:b9f8e3d4-7c2a-4e5d-8f9a-1b3c4d6e8a9f][zettel:39]]

@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Saddle Point Results
 #+FILETAGS: :physics:statistical:fieldtheory:saddlepoint:meanfield:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Mean-field free energy scaling form:
 

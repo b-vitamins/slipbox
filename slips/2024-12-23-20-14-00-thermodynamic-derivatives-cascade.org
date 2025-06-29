@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Thermodynamic Derivatives Cascade
 #+FILETAGS: :physics:spof:ch4:thermodynamics:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The thermodynamic derivatives cascade demonstrates how successive derivatives of the free energy generate the complete hierarchy of critical exponents while preserving the scaling structure.
 

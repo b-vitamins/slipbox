@@ -2,7 +2,7 @@
 :ID: f7a8e9c4-3d6b-4e5f-9a1c-8b2d3e4f7a9b
 :CUSTOM_ID: 92/383
 :END:
-#+title: Dislocation Hamiltonian
+#+TITLE: Dislocation Hamiltonian
 #+filetags: :physics:spof:ch8:vectorcoulombgas:interaction:elasticenergy:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -20,4 +20,4 @@ The dislocation gas must satisfy overall neutrality ∑ᵢ**b**ᵢ = 0, a vector
 
 **Meta observation**: The vector nature of topological charges in crystals creates qualitatively new physics. The tensor interaction couples orientational and positional degrees of freedom in ways impossible for scalar theories.
 
-**See also:** [[id:PLACEHOLDER-44][zettel:44]], [[id:PLACEHOLDER-46][zettel:46]]
+**See also:** [[id:f7a8e9c4-3d6b-4e5f-9a1c-8b2d3e4f7a9b][zettel:44]], [[id:d9e8f7a4-3c6b-4d5e-8f7a-2b3c9d8e5f6a][zettel:46]]

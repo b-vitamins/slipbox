@@ -2,7 +2,7 @@
 :ID:       b3f8d9a1-7c2e-4f5d-8a9b-6e7c8d9f1a2b
 :CUSTOM_ID: 92/351
 :END:
-#+title: Fixed Point Analysis
+#+TITLE: Fixed Point Analysis
 #+FILETAGS: :physics:spof:ch8:fixedpoints:criticaltemperature:epsilonexpansion:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -20,4 +20,4 @@ The ε-expansion provides a systematic framework for calculating critical proper
 
 **Meta observation**: The ε-expansion exemplifies a general strategy in theoretical physics—perturb around a marginal situation where new physics emerges. Here, d = 2 is marginal between ordered and disordered phases, making it the natural expansion point.
 
-*See also:* [[id:PLACEHOLDER-12][zettel:12]], [[id:PLACEHOLDER-14][zettel:14]]
+*See also:* [[id:b3f8d9a1-7c2e-4f5d-8a9b-6e7c8d9f1a2b][zettel:12]], [[id:f4a7e8b9-2c3d-4e5f-9a1b-6d8c7f9e2b1a][zettel:14]]

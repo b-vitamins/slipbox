@@ -2,7 +2,7 @@
 :ID:       b8f7e9a3-2c45-4d92-8f16-9e1a3b7c5d84
 :CUSTOM_ID: 92/362
 :END:
-#+title: Perturbative Screening
+#+TITLE: Perturbative Screening
 #+FILETAGS: :physics:spof:ch8:screening:dielectricconstant:perturbationtheory:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -24,4 +24,4 @@ The integral converges only for K > 2/π, precisely where isolated vortices are 
 
 **Meta observation**: The breakdown of perturbation theory often signals a phase transition. Here, the divergence at K = 2/π marks the boundary between a dielectric phase with partial screening and a conducting phase with complete screening.
 
-**See also:** [[id:PLACEHOLDER-23][zettel:23]], [[id:PLACEHOLDER-25][zettel:25]]
+**See also:** [[id:b8f7e9a3-2c45-4d92-8f16-9e1a3b7c5d84][zettel:23]], [[id:d4f8e9a2-3b7c-4e5d-9f8a-2c1d3e4f5a6b][zettel:25]]

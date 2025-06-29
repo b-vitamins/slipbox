@@ -4,6 +4,7 @@
 :END:
 #+TITLE: α (Specific Heat Exponent)
 #+FILETAGS: :physics:statistical:exponents:specificheat:alpha:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The specific heat exponent α controls the divergence of heat capacity at criticality: C ~ |t|^(-α).
 

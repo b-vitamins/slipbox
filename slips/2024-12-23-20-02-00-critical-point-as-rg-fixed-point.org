@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Critical Point as RG Fixed Point
 #+FILETAGS: :physics:spof:ch4:rg:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The critical point corresponds to a fixed point of the renormalization group transformation, characterized by the invariance condition S* = ℜ_b S*. This means scale-invariant theories remain unchanged under coarse-graining operations.
 

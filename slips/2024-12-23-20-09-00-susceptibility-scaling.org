@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Susceptibility Scaling
 #+FILETAGS: :physics:spof:ch4:susceptibility:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The susceptibility χ = ∂²f/∂h² follows from the second derivative of the [[id:a662555e-24b7-4740-a0c4-fabf9e2f11d4][Free Energy Scaling Form]], yielding χ = |t|^(2-α-2Δ) g_χ(h/|t|^Δ) where g_χ(x) = g_f''(x). The susceptibility thus involves the second derivative of the original free energy scaling function, with the power of |t| reduced by 2Δ compared to the free energy itself.
 

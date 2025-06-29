@@ -4,6 +4,7 @@
 :END:
 #+TITLE: RG in Momentum Space
 #+FILETAGS: :physics:statistical:fieldtheory:renormalization:momentum:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The choice z = b^(1+d/2) keeps the gradient term fixed (K' = K), establishing the Gaussian fixed point. This determines the eigenvalues y_t = 2 and y_h = 1 + d/2, from which all critical exponents follow. The momentum space RG clearly shows why the Gaussian fixed point is stable above d = 4: all interaction terms have negative scaling dimensions and flow to zero.
 

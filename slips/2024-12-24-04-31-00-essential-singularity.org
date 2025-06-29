@@ -2,7 +2,7 @@
 :ID: c02e3081-546d-4af0-82c3-7c9c1adc759a
 :CUSTOM_ID: 92/370
 :END:
-#+title: Essential Singularity
+#+TITLE: Essential Singularity
 #+filetags: :physics:spof:ch8:freeenergy:thermodynamics:criticalbehavior:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -22,4 +22,4 @@ The essential singularity encodes the physics of vortex deconfinement. As T → 
 
 **Meta observation**: The absence of thermodynamic signatures doesn't imply absence of a phase transition. The Kosterlitz-Thouless transition teaches us to look beyond thermodynamics to correlation functions and topological properties to fully characterize phases of matter.
 
-**See also:** [[id:PLACEHOLDER-31][zettel:31]], [[id:PLACEHOLDER-33][zettel:33]]
+**See also:** [[id:c02e3081-546d-4af0-82c3-7c9c1adc759a][zettel:31]], [[id:8f3a2b1c-4d5e-6f7a-8b9c-0d1e2f3a4b5c][zettel:33]]

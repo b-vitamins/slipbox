@@ -2,7 +2,7 @@
 :ID: d9f8e7a4-8c6b-4e9f-9a3d-7e8f9a7b8d6f
 :CUSTOM_ID: 92/396
 :END:
-#+title: Diagram D1: Perturbation Diagrams for U₁
+#+TITLE: Diagram D1: Perturbation Diagrams for U₁
 #+filetags: :physics:spof:ch8:diagram:perturbationtheory:vertex:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -37,4 +37,4 @@ The quartic vertex enforces rotational invariance through its tensor structure �
 
 **Renormalization group significance:** Under coarse-graining, the quartic vertex renormalizes the coupling K while the mass vertex tracks the density of degrees of freedom ρ.
 
-**See also:** [[id:PLACEHOLDER-07][zettel:07]], [[id:PLACEHOLDER-10][zettel:10]]
+**See also:** [[id:c3e8a2f5-9b1d-4e6a-8c7f-2a9b3e4d5f6c][zettel:07]], [[id:a7b9c3d8-4e2f-4a8c-9d1b-6f8e3c5b2a17][zettel:10]]

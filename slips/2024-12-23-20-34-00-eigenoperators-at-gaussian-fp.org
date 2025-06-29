@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Eigenoperators at Gaussian FP
 #+FILETAGS: :physics:spof:ch4:operators:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The eigenoperators at the Gaussian fixed point have scaling dimensions y_n = n - d(n/2-1), determining which perturbations are relevant, irrelevant, or marginal under RG flow.
 

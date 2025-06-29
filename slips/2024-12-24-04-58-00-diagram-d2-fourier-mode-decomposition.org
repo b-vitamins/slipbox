@@ -2,7 +2,7 @@
 :ID: e8f9a7d5-9c4b-4e8f-9a2d-8e9f7a8c9d7f
 :CUSTOM_ID: 92/397
 :END:
-#+title: Diagram D2: Fourier Mode Decomposition
+#+TITLE: Diagram D2: Fourier Mode Decomposition
 #+filetags: :physics:spof:ch8:diagram:momentumshell:renormalization:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -41,4 +41,4 @@ For d = 2, this becomes logarithmic: I₂(b) = K₂ln(b)/(2π), signaling margin
 **Physical interpretation:**
 Fast modes represent high-energy fluctuations that can be integrated out, their effect captured by renormalizing couplings of slow modes. The spherical shell ensures isotropy of the coarse-graining procedure. The thickness δℓ = ln(b) of the shell in logarithmic coordinates becomes the "time" parameter for RG flow.
 
-**See also:** [[id:PLACEHOLDER-10][zettel:10]], [[id:PLACEHOLDER-26][zettel:26]]
+**See also:** [[id:a7b9c3d8-4e2f-4a8c-9d1b-6f8e3c5b2a17][zettel:10]], [[id:e7f3a6b2-5d4c-4f8e-9a1b-3c2d8e9f0a7b][zettel:26]]

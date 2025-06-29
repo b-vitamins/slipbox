@@ -4,6 +4,7 @@
 :END:
 #+TITLE: RG as Zooming Out
 #+FILETAGS: :physics:statistical:visualization:renormalization:scale:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The RG as systematic zooming process:
 

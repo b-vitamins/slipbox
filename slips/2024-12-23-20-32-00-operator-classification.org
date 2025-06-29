@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Operator Classification
 #+FILETAGS: :physics:spof:ch4:operators:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The classification of operators by their scaling dimensions y_i determines their fate under RG flow and provides the foundation for understanding universality in critical phenomena.
 

@@ -2,7 +2,7 @@
 :ID: e8f7a9c5-2d4b-4e6f-9a8c-7b3d4e5f8a9c
 :CUSTOM_ID: 92/386
 :END:
-#+title: Angular Fluctuations
+#+TITLE: Angular Fluctuations
 #+filetags: :physics:spof:ch8:fluctuations:correlationfunctions:screening:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -29,4 +29,4 @@ The 1/q² divergence signals that unbound dislocations generate angular fluctuat
 
 **Meta observation**: The connection between dislocation correlations and angular fluctuations reveals how topological defects mediate the coupling between different order parameters. The screening length ξ emerges as the fundamental length scale controlling both translational and orientational properties.
 
-**See also:** [[id:PLACEHOLDER-47][zettel:47]], [[id:PLACEHOLDER-49][zettel:49]]
+**See also:** [[id:e8f7a9c5-2d4b-4e6f-9a8c-7b3d4e5f8a9c][zettel:47]], [[id:f8e9a7c6-4d3b-4e8f-9a1c-5d6e7f8a9c3b][zettel:49]]

@@ -2,7 +2,7 @@
 :ID: d9e8f7a4-3c6b-4d5e-8f7a-2b3c9d8e5f6a
 :CUSTOM_ID: 92/385
 :END:
-#+title: Dislocation-Induced Rotation
+#+TITLE: Dislocation-Induced Rotation
 #+filetags: :physics:spof:ch8:rotation:dislocations:orientationalfield:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -23,4 +23,4 @@ The projection **b**·**q** encodes geometric information: dislocations create r
 
 **Meta observation**: The long-range 1/r rotation field from dislocations contrasts with the short-range exponential decay of translational distortions in the liquid phase. This difference enables the existence of phases with orientational but not translational order.
 
-**See also:** [[id:PLACEHOLDER-46][zettel:46]], [[id:PLACEHOLDER-48][zettel:48]]
+**See also:** [[id:d9e8f7a4-3c6b-4d5e-8f7a-2b3c9d8e5f6a][zettel:46]], [[id:c9f8e7a6-3d5b-4e7f-8a9d-2c3e4f8a9b5d][zettel:48]]

@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Momentum Space RG
 #+FILETAGS: :physics:spof:ch4:rg:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The momentum space implementation of the renormalization group provides a systematic framework for integrating out high-momentum modes while preserving the essential long-wavelength physics.
 

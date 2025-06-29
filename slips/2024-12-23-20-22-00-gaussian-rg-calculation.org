@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Gaussian RG Calculation
 #+FILETAGS: :physics:spof:ch4:rg:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The RG implementation for the Gaussian model demonstrates the systematic momentum-space approach to extracting critical exponents through coarse-graining operations.
 

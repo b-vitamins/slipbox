@@ -2,7 +2,7 @@
 :ID: d8e9f7a5-4c3b-4e6f-9a1d-7c8e5f9a6b4d
 :CUSTOM_ID: 92/390
 :END:
-#+title: Complete Phase Diagram
+#+TITLE: Complete Phase Diagram
 #+filetags: :physics:spof:ch8:phasediagram:melting:kthnytheory:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -35,4 +35,4 @@ This scenario applies to systems where crystalline symmetry permits the hexatic 
 
 **Meta observation**: The two-stage melting exemplifies how different symmetries can break at different temperatures. The mathematical machinery (Coulomb gas, topological defects, RG flows) provides a unified framework for understanding diverse two-dimensional phase transitions.
 
-**See also:** [[id:PLACEHOLDER-51][zettel:51]], all branches
+**See also:** [[id:d8e9f7a5-4c3b-4e6f-9a1d-7c8e5f9a6b4d][zettel:51]], all branches

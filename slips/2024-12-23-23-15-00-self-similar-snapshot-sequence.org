@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Self-Similar Snapshot Sequence
 #+FILETAGS: :physics:statistical:visualization:selfsimilarity:fractal:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Visual sequence showing critical system at different magnifications:
 

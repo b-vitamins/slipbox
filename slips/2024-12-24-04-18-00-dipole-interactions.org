@@ -2,7 +2,7 @@
 :ID:       a8f7c9d2-3e4b-4d5a-b9c1-6f8e2a4d7b9c
 :CUSTOM_ID: 92/357
 :END:
-#+title: Dipole Interactions
+#+TITLE: Dipole Interactions
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 #+FILETAGS: :physics:spof:ch8:vortexdipole:boundpairs:screening:
 
@@ -17,4 +17,4 @@ The dipole picture reconciles two seemingly contradictory facts: vortices are to
 
 *Meta observation*: The requirement of overall neutrality fundamentally alters the statistical mechanics. Instead of asking "how many vortices?" we must ask "how are charges correlated?" This shift from number to correlation is characteristic of topological phase transitions.
 
-*See also:* [[id:PLACEHOLDER-18][zettel:18]], [[id:PLACEHOLDER-20][zettel:20]]
+*See also:* [[id:a8f7c9d2-3e4b-4d5a-b9c1-6f8e2a4d7b9c][zettel:18]], [[id:a7f8d9c2-3b4e-4a5d-8c6f-9e2a1b7c4d3e][zettel:20]]

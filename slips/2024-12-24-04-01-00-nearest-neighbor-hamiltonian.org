@@ -2,7 +2,7 @@
 :ID:       c68b33e8-4abd-4967-9651-29c8a8a785ab
 :CUSTOM_ID: 92/340
 :END:
-#+title: Nearest-Neighbor Hamiltonian
+#+TITLE: Nearest-Neighbor Hamiltonian
 #+FILETAGS: :physics:spof:ch8:hamiltonian:gradientexpansion:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 

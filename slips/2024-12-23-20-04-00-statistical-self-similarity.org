@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Statistical Self-Similarity
 #+FILETAGS: :physics:spof:ch4:fractals:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Critical systems exhibit statistical self-similarity, meaning they look the same at all length scales. This fractal property is mathematically expressed through the scaling relation G(λx) = λ^p G(x), where G is a correlation function and p is the scaling dimension.
 

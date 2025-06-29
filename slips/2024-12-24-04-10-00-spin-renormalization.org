@@ -2,7 +2,7 @@
 :ID:       a7b9c3d8-4e2f-4a8c-9d1b-6f8e3c5b2a17
 :CUSTOM_ID: 92/349
 :END:
-#+title: Spin Renormalization
+#+TITLE: Spin Renormalization
 #+FILETAGS: :physics:spof:ch8:renormalization:symmetry:coarsegraining:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -20,4 +20,4 @@ The reduction in spin length has a clear physical interpretation. High-frequency
 
 **Meta observation**: Symmetry principles often provide shortcuts through complex calculations. Here, O(n) invariance reduces the problem of tracking infinitely many couplings to finding a single rescaling factor.
 
-*See also:* [[id:PLACEHOLDER-10][zettel:10]], [[id:PLACEHOLDER-12][zettel:12]]
+*See also:* [[id:a7b9c3d8-4e2f-4a8c-9d1b-6f8e3c5b2a17][zettel:10]], [[id:b3f8d9a1-7c2e-4f5d-8a9b-6e7c8d9f1a2b][zettel:12]]

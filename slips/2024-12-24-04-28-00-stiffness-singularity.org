@@ -2,7 +2,7 @@
 :ID:       9f8e7d6c-5a4b-3e2f-8c1d-0b9a8e7f6d5e
 :CUSTOM_ID: 92/367
 :END:
-#+title: Stiffness Singularity
+#+TITLE: Stiffness Singularity
 #+filetags: :physics:spof:ch8:criticalbehavior:stiffness:singularity:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -17,4 +17,4 @@ The square-root singularity implies that the system responds anomalously to smal
 
 **Meta observation**: The universal jump combined with the square-root singularity uniquely identifies the Kosterlitz-Thouless transition. No amount of symmetry analysis could predict this behavior—it emerges from the nonlinear dynamics of topological defects.
 
-*See also:* [[id:PLACEHOLDER-28][zettel:28]], [[id:PLACEHOLDER-30][zettel:30]]
+*See also:* [[id:9f8e7d6c-5a4b-3e2f-8c1d-0b9a8e7f6d5e][zettel:28]], [[id:e4f7a3c8-9d2b-4f1e-8c5a-7b6d3e2f4a5c][zettel:30]]

@@ -4,6 +4,7 @@
 :END:
 #+TITLE: 2D Ising Exact Solution
 #+FILETAGS: :physics:statistical:ising:2d:exact:onsager:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Onsager's exact critical exponents for the 2D Ising model:
 - γ = 7/4 (susceptibility)

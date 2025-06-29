@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Why Dimensions Matter Visually
 #+FILETAGS: :physics:statistical:visualization:dimension:hyperscaling:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Visual dimensional counting for correlation blocks:
 

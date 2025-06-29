@@ -2,7 +2,7 @@
 :ID:       c7f4b2d8-9a3e-4f1b-8c5d-6e7a9f3b2c4d
 :CUSTOM_ID: 92/347
 :END:
-#+title: Gaussian Correlations
+#+TITLE: Gaussian Correlations
 #+FILETAGS: :physics:spof:ch8:correlationfunctions:fluctuations:merminwagner:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -19,4 +19,4 @@ The marginal dimension d = 2 is particularly subtle. The logarithmic divergence 
 
 *Meta observation*: The 1/q² propagator is a calling card of Goldstone modes across physics—from spin waves to phonons to pions. Its dimensional analysis immediately reveals why low dimensions are special: long-wavelength fluctuations accumulate without bound.
 
-*See also:* [[id:PLACEHOLDER-08][zettel:08]], [[id:PLACEHOLDER-10][zettel:10]]
+*See also:* [[id:c7f4b2d8-9a3e-4f1b-8c5d-6e7a9f3b2c4d][zettel:08]], [[id:a7b9c3d8-4e2f-4a8c-9d1b-6f8e3c5b2a17][zettel:10]]

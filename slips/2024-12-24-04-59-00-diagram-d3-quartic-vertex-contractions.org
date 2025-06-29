@@ -2,7 +2,7 @@
 :ID: f8e9a7c5-8d3b-4e7f-9a4c-9e8f7a9b8e7f
 :CUSTOM_ID: 92/398
 :END:
-#+title: Diagram D3: Quartic Vertex Contractions
+#+TITLE: Diagram D3: Quartic Vertex Contractions
 #+filetags: :physics:spof:ch8:diagram:wickcontractions:renormalization:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -66,4 +66,4 @@ From 16 total contractions:
 
 The non-vanishing contractions generate the RG flow equations dK/dℓ and dy₀/dℓ.
 
-**See also:** [[id:PLACEHOLDER-10][zettel:10]], [[id:PLACEHOLDER-11][zettel:11]]
+**See also:** [[id:a7b9c3d8-4e2f-4a8c-9d1b-6f8e3c5b2a17][zettel:10]], [[id:f7a8e9c3-2b4d-4e6f-9a1b-8c3d5e6f7a9b][zettel:11]]

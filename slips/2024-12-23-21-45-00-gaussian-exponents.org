@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Gaussian Exponents
 #+FILETAGS: :physics:statistical:fieldtheory:gaussian:exponents:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 These mean-field exponents become exact above the upper critical dimension d = 4, where the quartic interaction is irrelevant. In physical dimensions d = 2 and d = 3, the Gaussian exponents provide a reference point, with real exponents deviating due to the relevant φ⁴ interaction.
 

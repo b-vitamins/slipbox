@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Exponent Relations Complete Set
 #+FILETAGS: :physics:spof:ch4:exponents:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The complete set of exponent relations emerges from the thermodynamic derivatives of the scaling form, providing fundamental constraints on critical behavior.
 

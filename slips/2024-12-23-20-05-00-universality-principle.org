@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Universality Principle
 #+FILETAGS: :physics:spof:ch4:universality:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The universality principle states that systems with different microscopic details can exhibit identical critical behavior, characterized by the same set of critical exponents. This remarkable feature arises because microscopic details correspond to irrelevant operators under renormalization group flow.
 

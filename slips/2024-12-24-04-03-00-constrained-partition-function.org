@@ -2,7 +2,7 @@
 :ID:       b8e4f2a3-7c9d-4e5b-a612-3f4d6e9c8a7b
 :CUSTOM_ID: 92/342
 :END:
-#+title: Constrained Partition Function
+#+TITLE: Constrained Partition Function
 #+FILETAGS: :physics:spof:ch8:partitionfunction:functionalintegral:constraint:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -14,4 +14,4 @@ Evaluating this partition function requires careful treatment of the constrained
 
 **Meta observation**: Constraints in statistical mechanics are like conservation laws in dynamics—they reduce degrees of freedom while introducing subtle correlations. The art of theoretical physics often lies in finding the representation where constraints become tractable.
 
-**See also:** [[id:PLACEHOLDER-03][zettel:03]], [[id:PLACEHOLDER-05][zettel:05]]
+**See also:** [[id:b8e4f2a3-7c9d-4e5b-a612-3f4d6e9c8a7b][zettel:03]], [[id:94b2985f-7786-49cb-9858-33b3e2d238f6][zettel:05]]

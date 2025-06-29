@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Fisher Identity
 #+FILETAGS: :physics:spof:ch4:correlations:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The Fisher identity γ = (2-η)ν connects the susceptibility exponent γ to the correlation length exponent ν and the anomalous dimension η, emerging from the spatial integration of correlation functions.
 

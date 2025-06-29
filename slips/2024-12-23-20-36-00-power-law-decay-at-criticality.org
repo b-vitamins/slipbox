@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Power Law Decay at Criticality
 #+FILETAGS: :physics:spof:ch4:correlations:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 At the critical point, correlation functions exhibit universal power-law decay G^c(x) ~ 1/|x|^(d-2+η), where η is the anomalous dimension characterizing deviations from simple dimensional scaling.
 

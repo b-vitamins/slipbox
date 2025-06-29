@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Basin of Attraction
 #+FILETAGS: :physics:spof:ch4:universality:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The basin of attraction defines the stable manifold of a critical fixed point, encompassing all parameter configurations that flow to the same long-distance physics under repeated RG transformations.
 

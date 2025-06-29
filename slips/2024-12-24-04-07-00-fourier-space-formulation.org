@@ -2,7 +2,7 @@
 :ID:       c3e8a2f5-9b1d-4e6a-8c7f-2a9b3e4d5f6c
 :CUSTOM_ID: 92/346
 :END:
-#+title: Fourier Space Formulation
+#+TITLE: Fourier Space Formulation
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 #+FILETAGS: :physics:spof:ch8:momentumspace:propagator:vertex:
 
@@ -20,4 +20,4 @@ The quadratic term \(-\rho\pi^2/2\) appears trivial in momentum space: \(U_1^{(2
 
 **Meta observation**: Fourier space is the natural language for Goldstone physics. The 1/q² propagator immediately reveals the absence of a mass gap, while the momentum-dependent vertices encode the constraints of broken symmetry.
 
-**See also:** [[id:PLACEHOLDER-07][zettel:07]], [[id:PLACEHOLDER-09][zettel:09]]
+**See also:** [[id:c3e8a2f5-9b1d-4e6a-8c7f-2a9b3e4d5f6c][zettel:07]], [[id:aac6435d-5072-442d-980d-c00409c01983][zettel:09]]

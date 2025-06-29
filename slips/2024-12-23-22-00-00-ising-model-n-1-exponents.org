@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Ising Model (n=1) Exponents
 #+FILETAGS: :physics:statistical:ising:exponents:experimental:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Critical exponents for the 3D Ising universality class:
 - β = 0.32 (order parameter)

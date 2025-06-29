@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Gaussian Fixed Point
 #+FILETAGS: :physics:spof:ch4:gaussian:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The Gaussian fixed point βℋ* = K/2 ∫d^d x (∇m)² represents the scale-invariant quadratic theory that serves as the foundation for understanding critical phenomena in the mean-field regime.
 

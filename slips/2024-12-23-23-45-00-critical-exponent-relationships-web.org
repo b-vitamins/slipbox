@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Critical Exponent Relationships Web
 #+FILETAGS: :physics:statistical:visualization:exponents:relations:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Network diagram of critical exponent relationships:
 

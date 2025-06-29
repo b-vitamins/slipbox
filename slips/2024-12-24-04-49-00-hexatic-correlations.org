@@ -2,7 +2,7 @@
 :ID: f8e9a7c6-4d3b-4e8f-9a1c-5d6e7f8a9c3b
 :CUSTOM_ID: 92/388
 :END:
-#+title: Hexatic Correlations
+#+TITLE: Hexatic Correlations
 #+filetags: :physics:spof:ch8:hexaticphase:correlations:quasiorder:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -22,4 +22,4 @@ Experimentally, the hexatic phase manifests as six-fold modulated diffraction pa
 
 **Meta observation**: The hexatic phase exemplifies how different symmetries can disorder independently. Breaking translational and orientational symmetries at different temperatures creates a new phase of matter with its own characteristic properties and phase transitions.
 
-**See also:** [[id:PLACEHOLDER-49][zettel:49]], [[id:PLACEHOLDER-51][zettel:51]]
+**See also:** [[id:f8e9a7c6-4d3b-4e8f-9a1c-5d6e7f8a9c3b][zettel:49]], [[id:d8e9f7a5-4c3b-4e6f-9a1d-7c8e5f9a6b4d][zettel:51]]

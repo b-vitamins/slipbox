@@ -4,6 +4,7 @@
 :END:
 #+TITLE: β (Order Parameter Exponent)
 #+FILETAGS: :physics:statistical:exponents:orderparameter:beta:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The order parameter exponent β controls the approach to order: m ~ |t|^β for t < 0.
 

@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Gaussian Model Kernel
 #+FILETAGS: :physics:spof:ch4:gaussian:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The Gaussian model exhibits a diagonal structure in momentum space, where the kernel G⁻¹(q) = t + Kq² + Lq⁴ + ... represents the inverse propagator. Each term corresponds to a specific gradient order in real space: the term Kq² arises from (∇m)², while Lq⁴ comes from (∇²m)², and so forth.
 

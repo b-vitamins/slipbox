@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Singular Part Extraction
 #+FILETAGS: :physics:statistical:fieldtheory:singularities:extraction:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 This extraction procedure illustrates general principles for identifying critical singularities. First, singularities arise from infrared physics—the small-momentum, long-wavelength modes. Second, appropriate scaling variables must be introduced to make the t-dependence manifest. Third, the singular part typically emerges from the asymptotic behavior of integrals as scaling variables approach limits.
 

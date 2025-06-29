@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Scaling Relations Summary
 #+FILETAGS: :physics:spof:ch4:exponents:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The complete set of scaling relations among critical exponents reduces the six primary exponents (α, β, γ, δ, ν, η) to only two independent quantities, demonstrating the profound constraints imposed by scaling symmetry.
 

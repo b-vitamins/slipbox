@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Rushbrooke Identity
 #+FILETAGS: :physics:spof:ch4:exponents:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The Rushbrooke identity α + 2β + γ = 2 emerges directly from the homogeneity of thermodynamic functions and represents one of the fundamental constraints on critical exponents.
 

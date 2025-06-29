@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Homogeneous Function Visualization
 #+FILETAGS: :physics:statistical:visualization:scaling:homogeneous:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Log-log plots reveal the power-law structure of critical phenomena:
 

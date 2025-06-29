@@ -4,6 +4,7 @@
 :END:
 #+TITLE: RG Transformation Equations
 #+FILETAGS: :physics:spof:ch4:rg:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Near a fixed point, RG transformations can be linearized as g_i' = b^(y_i) g_i, where g_i are coupling constants and y_i are scaling dimensions. The linearization matrix is (ℜ_b^L)_αβ = ∂S_α'/∂S_β|_(S*), evaluated at the fixed point S*.
 

@@ -4,6 +4,7 @@
 :END:
 #+TITLE: From Direct Solution
 #+FILETAGS: :physics:statistical:fieldtheory:exponents:direct:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The direct solution confirms that higher-order gradient terms like L(∇²m)² don't affect the leading critical behavior—they appear in the integral as Ltx⁴/K² after scaling and vanish as t → 0. This validates their classification as irrelevant operators.
 

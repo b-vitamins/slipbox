@@ -4,6 +4,7 @@
 :END:
 #+TITLE: From RG Analysis
 #+FILETAGS: :physics:statistical:fieldtheory:exponents:renormalization:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The agreement between RG-derived and directly calculated exponents validates the RG procedure and demonstrates its power. While the direct solution requires explicit integration and careful extraction of singularities, the RG approach yields exponents from simple dimensional analysis once the fixed point is identified.
 

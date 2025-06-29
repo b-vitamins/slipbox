@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Parameter Flow
 #+FILETAGS: :physics:spof:ch4:rg:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Parameter flow under RG transformations describes how coupling constants evolve under successive coarse-graining operations, with the linear approximation near fixed points yielding g_i' = b^(yi) g_i.
 

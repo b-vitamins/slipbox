@@ -2,7 +2,7 @@
 :ID: d7f9e8a3-4c6b-4d5e-8a7f-2b3c9e8d4f5a
 :CUSTOM_ID: 92/380
 :END:
-#+title: Orientational Correlations
+#+TITLE: Orientational Correlations
 #+filetags: :physics:spof:ch8:correlations:longrangeorder:surprisingresult:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -26,4 +26,4 @@ The exponential factor exp(-9/(a²μ)) shows that orientational order decreases 
 
 **Meta observation**: The survival of orientational order when translational order is lost exemplifies a general principle—different symmetries can disorder at different temperatures. The mathematical origin (infrared convergence for rotations but not translations) has deep physical consequences.
 
-**See also:** [[id:PLACEHOLDER-41][zettel:41]], [[id:PLACEHOLDER-43][zettel:43]]
+**See also:** [[id:d7f9e8a3-4c6b-4d5e-8a7f-2b3c9e8d4f5a][zettel:41]], [[id:e9f8a7d3-4c5b-4e6f-8a9d-3b2c4e7f9a8d][zettel:43]]

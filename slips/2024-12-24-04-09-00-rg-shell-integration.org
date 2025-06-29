@@ -2,7 +2,7 @@
 :ID:       aac6435d-5072-442d-980d-c00409c01983
 :CUSTOM_ID: 92/348
 :END:
-#+title: RG Shell Integration
+#+TITLE: RG Shell Integration
 #+FILETAGS: :physics:spof:ch8:renormalizationgroup:coarsegraining:momentumshell:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -19,4 +19,4 @@ where \(I_d(b) = \int_{\Lambda/b}^{\Lambda} \frac{d^d\mathbf{k}}{(2\pi)^d}\frac{
 
 **Meta observation**: The momentum shell RG reveals how physics at different scales communicates. High-energy modes don't simply disappear—they renormalize the interactions among low-energy modes. This hierarchical structure is why universality emerges.
 
-**See also:** [[id:PLACEHOLDER-09][zettel:09]], [[id:PLACEHOLDER-11][zettel:11]], [[figure:D2]], [[figure:D3]]
+**See also:** [[id:aac6435d-5072-442d-980d-c00409c01983][zettel:09]], [[id:f7a8e9c3-2b4d-4e6f-9a1b-8c3d5e6f7a9b][zettel:11]], [[figure:D2]], [[figure:D3]]

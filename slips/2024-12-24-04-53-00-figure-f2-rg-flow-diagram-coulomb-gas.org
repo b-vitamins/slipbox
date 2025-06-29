@@ -2,7 +2,7 @@
 :ID: f9e8a7d5-4c3b-4e8f-9a2d-3c4e8f9a7b6e
 :CUSTOM_ID: 92/392
 :END:
-#+title: Figure F2: RG Flow Diagram - Coulomb Gas
+#+TITLE: Figure F2: RG Flow Diagram - Coulomb Gas
 #+filetags: :physics:spof:ch8:figure:renormalizationgroup:phasediagram:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -34,4 +34,4 @@ The flow equation dy₀/dℓ = (2 - πK)y₀ changes sign at K = 2/π. For K > 2
 
 **Physical significance:** This RG flow reveals the Kosterlitz-Thouless transition as a separatrix between two basins of attraction, not a conventional fixed point transition.
 
-**See also:** [[id:PLACEHOLDER-24][zettel:24]], [[id:PLACEHOLDER-25][zettel:25]], [[id:PLACEHOLDER-27][zettel:27]]
+**See also:** [[id:f9d1a2b4-6c8e-4a93-b7f9-3e2d4c5a8b71][zettel:24]], [[id:d4f8e9a2-3b7c-4e5d-9f8a-2c1d3e4f5a6b][zettel:25]], [[id:c4a7f8d3-9b2e-4f1a-8c7d-3e5f6a8b9c2d][zettel:27]]

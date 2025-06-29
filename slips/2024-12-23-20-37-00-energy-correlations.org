@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Energy Correlations
 #+FILETAGS: :physics:spof:ch4:correlations:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Energy correlations at criticality follow the same power-law structure as order parameter correlations but with a distinct anomalous dimension η', leading to the relation α = (2-η')ν connecting the specific heat exponent to correlation properties.
 

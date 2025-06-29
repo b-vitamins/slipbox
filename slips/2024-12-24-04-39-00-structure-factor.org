@@ -2,7 +2,7 @@
 :ID: b9f8e3d4-7c2a-4e5d-8f9a-1b3c4d6e8a9f
 :CUSTOM_ID: 92/378
 :END:
-#+title: Structure Factor
+#+TITLE: Structure Factor
 #+filetags: :physics:spof:ch8:structurefactor:diffraction:braggpeaks:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -23,4 +23,4 @@ This modified line shape provides a direct experimental signature of quasi-long-
 
 **Meta observation**: The structure factor bridges microscopic theory and macroscopic measurement. Its evolution from delta functions to power-law cusps to broad peaks tracks the progression from true long-range order through quasi-long-range order to disorder.
 
-**See also:** [[id:PLACEHOLDER-39][zettel:39]], [[id:PLACEHOLDER-41][zettel:41]]
+**See also:** [[id:b9f8e3d4-7c2a-4e5d-8f9a-1b3c4d6e8a9f][zettel:39]], [[id:d7f9e8a3-4c6b-4d5e-8a7f-2b3c9e8d4f5a][zettel:41]]

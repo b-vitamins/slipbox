@@ -2,7 +2,7 @@
 :ID: a8e9f7c3-2b5d-4f6a-9c8e-1d3f7a8b9e4c
 :CUSTOM_ID: 92/379
 :END:
-#+title: Orientational Order
+#+TITLE: Orientational Order
 #+filetags: :physics:spof:ch8:orientationalorder:bondangle:rotation:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -19,4 +19,4 @@ The crucial insight is that continuous displacement fields produce only smooth v
 
 **Meta observation**: The derivative relationship between displacements and rotations ensures that smooth elastic distortions cannot create rotational defects. Topology enters through singularities in the displacement field—the mathematical origin of the two-stage melting scenario.
 
-**See also:** [[id:PLACEHOLDER-40][zettel:40]], [[id:PLACEHOLDER-42][zettel:42]]
+**See also:** [[id:a8e9f7c3-2b5d-4f6a-9c8e-1d3f7a8b9e4c][zettel:40]], [[id:c8e7f9d4-3b5a-4e6f-9a8c-2d4e5f7a8b9c][zettel:42]]

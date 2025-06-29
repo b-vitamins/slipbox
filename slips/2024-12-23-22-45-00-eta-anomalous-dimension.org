@@ -4,6 +4,7 @@
 :END:
 #+TITLE: η (Anomalous Dimension)
 #+FILETAGS: :physics:statistical:exponents:anomalous:eta:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The anomalous dimension η modifies the classical correlation decay: G(x) ~ 1/|x|^(d-2+η).
 

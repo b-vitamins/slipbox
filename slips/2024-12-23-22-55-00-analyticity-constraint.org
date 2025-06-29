@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Analyticity Constraint
 #+FILETAGS: :physics:statistical:fieldtheory:analyticity:universality:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 This analyticity argument has profound implications. It guarantees that critical exponents are universal properties of the phase transition, independent of the direction of approach. It also constrains the functional form of scaling functions near their boundaries, providing additional relations beyond those from homogeneity alone.
 

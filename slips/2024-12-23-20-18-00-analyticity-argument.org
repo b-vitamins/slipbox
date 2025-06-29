@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Analyticity Argument
 #+FILETAGS: :physics:spof:ch4:universality:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The analyticity argument proves that critical exponents must be universal by showing that thermodynamic smoothness constrains scaling forms on both sides of the phase transition.
 

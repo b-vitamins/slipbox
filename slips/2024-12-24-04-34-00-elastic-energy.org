@@ -2,7 +2,7 @@
 :ID: e3f8a7c2-9b4d-4f1e-8a6b-7c5d9f2a3b8e
 :CUSTOM_ID: 92/373
 :END:
-#+title: Elastic Energy
+#+TITLE: Elastic Energy
 #+filetags: :physics:spof:ch8:elasticity:hamiltonian:lamecoefficients:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -22,4 +22,4 @@ The elastic constants relate to microscopic interactions but their precise value
 
 **Meta observation**: The simplicity of isotropic elasticity—just two parameters—reflects deep symmetry principles. Rotational invariance is so constraining that only two independent quadratic invariants exist from the strain tensor.
 
-**See also:** [[id:PLACEHOLDER-34][zettel:34]], [[id:PLACEHOLDER-36][zettel:36]]
+**See also:** [[id:e3f8a7c2-9b4d-4f1e-8a6b-7c5d9f2a3b8e][zettel:34]], [[id:a9e7f3c8-2b4d-4e6a-8f9c-7d2e3f8a9b4c][zettel:36]]

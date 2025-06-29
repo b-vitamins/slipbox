@@ -2,7 +2,7 @@
 :ID: c9f8e7a6-3d5b-4e7f-8a9d-2c3e4f8a9b5d
 :CUSTOM_ID: 92/387
 :END:
-#+title: Frank Constant
+#+TITLE: Frank Constant
 #+filetags: :physics:spof:ch8:frankconstant:hexatic:stiffness:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -19,4 +19,4 @@ The emergence of the Frank constant from microscopic dislocation dynamics exempl
 
 **Meta observation**: The Frank constant bridges microscopic (dislocation plasma) and macroscopic (orientational elasticity) descriptions. Its scaling with ξ² reveals how topological defects at one scale generate effective interactions at larger scales.
 
-**See also:** [[id:PLACEHOLDER-48][zettel:48]], [[id:PLACEHOLDER-50][zettel:50]]
+**See also:** [[id:c9f8e7a6-3d5b-4e7f-8a9d-2c3e4f8a9b5d][zettel:48]], [[id:a7f9e8c3-5d4b-4e6f-8a2c-3b5d6e7f9a4c][zettel:50]]

@@ -2,7 +2,7 @@
 :ID:       a8e2f3d9-c761-4b58-9e23-d7f4a9b6c185
 :CUSTOM_ID: 92/356
 :END:
-#+title: Vortex Energy
+#+TITLE: Vortex Energy
 #+FILETAGS: :physics:spof:ch8:vortex:energy:entropy:freeenergy:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -22,4 +22,4 @@ This single-vortex analysis neglects vortex interactions and the constraint of o
 
 **Meta observation**: The logarithmic scaling of both energy and entropy in two dimensions creates a delicate balance. This marginal competition, where neither effect dominates strongly, enables the unusual physics of the Kosterlitz-Thouless transition.
 
-**See also:** [[id:PLACEHOLDER-17][zettel:17]], [[id:PLACEHOLDER-19][zettel:19]]
+**See also:** [[id:a8e2f3d9-c761-4b58-9e23-d7f4a9b6c185][zettel:17]], [[id:e7f4a3b2-8c9d-4e5f-a1b6-3d2c8f9e7a6b][zettel:19]]

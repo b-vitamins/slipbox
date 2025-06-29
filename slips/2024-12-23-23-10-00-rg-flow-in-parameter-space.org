@@ -4,6 +4,7 @@
 :END:
 #+TITLE: RG Flow in Parameter Space
 #+FILETAGS: :physics:statistical:visualization:renormalization:flow:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 RG trajectories in (t,h) parameter space:
 

@@ -2,7 +2,7 @@
 :ID: b9f8e7a5-6d4c-4e8f-9a3d-5e6f8a9b7c5f
 :CUSTOM_ID: 92/394
 :END:
-#+title: Figure F4: Dislocation Geometry
+#+TITLE: Figure F4: Dislocation Geometry
 #+filetags: :physics:spof:ch8:figure:dislocation:burgersvector:crystal:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -31,4 +31,4 @@ The displacement field must be multivalued: ∮∇**u**·d**s** = **b**. Near th
 
 **Physical significance:** Dislocations mediate plastic deformation and, in 2D, drive the solid-hexatic transition by unbinding at T₁.
 
-**See also:** [[id:PLACEHOLDER-06][zettel:06]], [[id:PLACEHOLDER-43][zettel:43]], [[id:PLACEHOLDER-44][zettel:44]]
+**See also:** [[id:a7e9f3d2-4b6c-4d8e-9fa0-c1d2e3f4a5b6][zettel:06]], [[id:e9f8a7d3-4c5b-4e6f-8a9d-3b2c4e7f9a8d][zettel:43]], [[id:f7a8e9c4-3d6b-4e5f-9a1c-8b2d3e4f7a9b][zettel:44]]

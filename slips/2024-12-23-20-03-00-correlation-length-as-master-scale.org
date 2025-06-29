@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Correlation Length as Master Scale
 #+FILETAGS: :physics:spof:ch4:correlations:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The correlation length ξ serves as the master scale that determines all singular behavior near the critical point. As the only divergent length scale in the system, it controls the spatial structure of correlations and governs the scaling of all thermodynamic quantities.
 

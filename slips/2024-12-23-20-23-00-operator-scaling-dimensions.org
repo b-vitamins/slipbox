@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Operator Scaling Dimensions
 #+FILETAGS: :physics:spof:ch4:operators:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The scaling dimensions of operators determine their relevance under RG flow, providing the key to understanding which interactions matter for critical behavior.
 

@@ -2,7 +2,7 @@
 :ID:       f9d1a2b4-6c8e-4a93-b7f9-3e2d4c5a8b71
 :CUSTOM_ID: 92/363
 :END:
-#+title: Fugacity Renormalization
+#+TITLE: Fugacity Renormalization
 #+FILETAGS: :physics:spof:ch8:renormalization:fugacity:coreenergy:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -17,4 +17,4 @@ This renormalization differs from conventional field theory where couplings chan
 
 **Meta observation**: Renormalization of topological defects involves both energetic (field fluctuations) and entropic (counting of states) contributions. The interplay between these effects, both scaling logarithmically in 2D, enables the Kosterlitz-Thouless transition.
 
-**See also:** [[id:PLACEHOLDER-24][zettel:24]], [[id:PLACEHOLDER-26][zettel:26]]
+**See also:** [[id:f9d1a2b4-6c8e-4a93-b7f9-3e2d4c5a8b71][zettel:24]], [[id:e7f3a6b2-5d4c-4f8e-9a1b-3c2d8e9f0a7b][zettel:26]]

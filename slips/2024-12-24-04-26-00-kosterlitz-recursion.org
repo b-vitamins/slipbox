@@ -2,7 +2,7 @@
 :ID:       e7f3a6b2-5d4c-4f8e-9a1b-3c2d8e9f0a7b
 :CUSTOM_ID: 92/365
 :END:
-#+title: Kosterlitz Recursion
+#+TITLE: Kosterlitz Recursion
 #+FILETAGS: :physics:spof:ch8:recursionrelations:rgflow:phasediagram:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -22,4 +22,4 @@ The absence of a conventional isolated fixed point reflects the marginal nature 
 
 **Meta observation**: The line of fixed points is not a mathematical curiosity but encodes physical reality—the low-temperature phase of the XY model exhibits continuously variable exponents depending on temperature. This richness is unique to marginal systems.
 
-**See also:** [[id:PLACEHOLDER-26][zettel:26]], [[id:PLACEHOLDER-28][zettel:28]], [[figure:F2]]
+**See also:** [[id:e7f3a6b2-5d4c-4f8e-9a1b-3c2d8e9f0a7b][zettel:26]], [[id:9f8e7d6c-5a4b-3e2f-8c1d-0b9a8e7f6d5e][zettel:28]], [[figure:F2]]

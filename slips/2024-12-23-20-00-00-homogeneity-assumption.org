@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Homogeneity Assumption
 #+FILETAGS: :physics:spof:ch4:scaling:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The homogeneity assumption is the foundational principle underlying all critical phenomena scaling theory. It posits that at criticality, physical quantities exhibit power-law scaling behavior with characteristic exponents.
 

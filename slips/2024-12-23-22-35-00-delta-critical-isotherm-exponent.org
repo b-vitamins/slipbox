@@ -4,6 +4,7 @@
 :END:
 #+TITLE: δ (Critical Isotherm Exponent)
 #+FILETAGS: :physics:statistical:exponents:isotherm:delta:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The critical isotherm exponent δ relates field and order parameter at criticality: h ~ m^δ at t = 0.
 

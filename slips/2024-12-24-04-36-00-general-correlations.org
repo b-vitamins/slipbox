@@ -2,7 +2,7 @@
 :ID: a9e7f3c8-2b4d-4e6a-8f9c-7d2e3f8a9b4c
 :CUSTOM_ID: 92/375
 :END:
-#+title: General Correlations
+#+TITLE: General Correlations
 #+filetags: :physics:spof:ch8:correlationfunctions:tensorstructure:projection:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -20,4 +20,4 @@ The momentum-space correlation function transforms to real space as a modified B
 
 **Meta observation**: The tensor structure of elastic correlations encodes the vector nature of the broken symmetry. Unlike scalar order parameters, vector fields exhibit polarization-dependent responses that profoundly affect their statistical mechanics.
 
-**See also:** [[id:PLACEHOLDER-36][zettel:36]], [[id:PLACEHOLDER-38][zettel:38]]
+**See also:** [[id:a9e7f3c8-2b4d-4e6a-8f9c-7d2e3f8a9b4c][zettel:36]], [[id:c7e8f9d3-2a4b-4f6c-8e9d-3f7a2b9c4e8d][zettel:38]]

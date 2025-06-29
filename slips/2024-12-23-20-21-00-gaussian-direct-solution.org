@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Gaussian Direct Solution
 #+FILETAGS: :physics:spof:ch4:gaussian:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The direct solution of the Gaussian model through exact integration provides the prototype for extracting critical behavior from quadratic theories.
 

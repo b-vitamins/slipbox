@@ -2,7 +2,7 @@
 :ID:       d3f8a9c2-7b4e-4a5d-9f1b-c8e3d2f4a5b6
 :CUSTOM_ID: 92/339
 :END:
-#+title: Unit n-Component Spins
+#+TITLE: Unit n-Component Spins
 #+FILETAGS: :physics:spof:ch8:spinsystems:orderparameter:constraint:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 

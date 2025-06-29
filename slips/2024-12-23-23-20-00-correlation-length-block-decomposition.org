@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Correlation Length Block Decomposition
 #+FILETAGS: :physics:statistical:visualization:correlation:blocks:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 System as array of correlation volumes:
 

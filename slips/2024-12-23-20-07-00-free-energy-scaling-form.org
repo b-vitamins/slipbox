@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Free Energy Scaling Form
 #+FILETAGS: :physics:spof:ch4:scaling:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The free energy scaling form f_sing = |t|^(2-α) g_f(h/|t|^Δ) encapsulates the universal structure of critical phenomena. This form emerges from the [[id:aaeee0ab-91d5-4186-a7b7-8ad92572f72f][Homogeneity Assumption]] and represents the singular part of the free energy in terms of critical exponents and a universal scaling function.
 

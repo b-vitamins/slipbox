@@ -2,7 +2,7 @@
 :ID:       8f3a2b1c-4d5e-6f7a-8b9c-0d1e2f3a4b5c
 :CUSTOM_ID: 92/372
 :END:
-#+title: Strain Tensor
+#+TITLE: Strain Tensor
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 #+FILETAGS: :physics:spof:ch8:strain:elasticity:symmetry:
 
@@ -22,4 +22,4 @@ The strain tensor formulation naturally separates the three elastic modes in 2D:
 
 **Meta observation**: The strain tensor exemplifies a general principle—physical energies depend on invariant combinations of fields. By building invariance into our basic variables, we automatically ensure the resulting theory respects the underlying symmetries.
 
-*See also:* [[id:PLACEHOLDER-33][zettel:33]], [[id:PLACEHOLDER-35][zettel:35]]
+*See also:* [[id:8f3a2b1c-4d5e-6f7a-8b9c-0d1e2f3a4b5c][zettel:33]], [[id:f8c4d3e9-7a2b-4c5f-9e8d-1a3b5c6f7d9e][zettel:35]]

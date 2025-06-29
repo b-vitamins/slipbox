@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Kadanoff Three Steps
 #+FILETAGS: :physics:spof:ch4:rg:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Kadanoff's systematic three-step procedure provides the conceptual foundation for all renormalization group transformations, breaking the complex coarse-graining process into manageable components.
 

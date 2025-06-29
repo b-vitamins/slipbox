@@ -2,7 +2,7 @@
 :ID: c8e9f7a6-7d5c-4e8f-9b4d-6e7f9a8b6d7f
 :CUSTOM_ID: 92/395
 :END:
-#+title: Figure F5: Two-Stage Melting
+#+TITLE: Figure F5: Two-Stage Melting
 #+filetags: :physics:spof:ch8:figure:phasediagram:melting:kthny:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -45,4 +45,4 @@ Three panels sharing temperature axis (T), showing T₁ and T₂ as vertical das
 
 **Physical significance:** The intermediate hexatic phase separates positional and orientational ordering temperatures, creating a new state of matter unique to two dimensions.
 
-**See also:** [[id:PLACEHOLDER-15][zettel:15]], [[id:PLACEHOLDER-52][zettel:52]]
+**See also:** [[id:a3d2e8f5-b9c4-4e12-8f7a-2d9b5c6a3e4f][zettel:15]], [[id:e9f8a7d6-3c4b-4e7f-8a9d-2c3e8f7a9b5e][zettel:52]]

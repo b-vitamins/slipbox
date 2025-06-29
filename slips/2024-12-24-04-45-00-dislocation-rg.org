@@ -2,7 +2,7 @@
 :ID: a8f9e7c3-2d4b-4f5e-8a7c-3b4d5e6f8a9b
 :CUSTOM_ID: 92/384
 :END:
-#+title: Dislocation RG
+#+TITLE: Dislocation RG
 #+filetags: :physics:spof:ch8:renormalizationgroup:vectorcoulomb:cubicterms:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -23,4 +23,4 @@ The cubic terms modify the critical exponents from their XY values. Detailed cal
 
 **Meta observation**: The emergence of new terms in the RG from lattice symmetry illustrates how microscopic details can affect universal properties. While the existence of a transition is universal, its precise critical behavior depends on seemingly minor details like the possibility of three-fold neutral configurations.
 
-**See also:** [[id:PLACEHOLDER-45][zettel:45]], [[id:PLACEHOLDER-47][zettel:47]]
+**See also:** [[id:a8f9e7c3-2d4b-4f5e-8a7c-3b4d5e6f8a9b][zettel:45]], [[id:e8f7a9c5-2d4b-4e6f-9a8c-7b3d4e5f8a9c][zettel:47]]

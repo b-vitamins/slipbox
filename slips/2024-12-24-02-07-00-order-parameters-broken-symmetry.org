@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Order Parameters and Broken Symmetry
 #+FILETAGS: :order:parameter:symmetry:breaking:magnetization:scaling:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Order parameters quantify spontaneous symmetry breaking, vanishing in disordered phases while acquiring non-zero values in ordered states. For the Ising model, the magnetization m = ⟨σᵢ⟩ distinguishes up from down states, breaking Z₂ symmetry. The O(n) models employ vector order parameters m⃗ = ⟨S⃗ᵢ⟩, whose direction breaks rotational symmetry while preserving magnitude.
 

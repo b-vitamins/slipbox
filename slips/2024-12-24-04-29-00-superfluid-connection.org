@@ -2,7 +2,7 @@
 :ID:       a8c9f3e2-7b5d-4e1a-9c6b-2f8e5d3a4b9c
 :CUSTOM_ID: 92/368
 :END:
-#+title: Superfluid Connection
+#+TITLE: Superfluid Connection
 #+FILETAGS: :physics:spof:ch8:superfluidity:experiments:heliumfilms:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -19,4 +19,4 @@ Vortices in superfluids are not mere theoretical constructs but physical objects
 
 **Meta observation**: The mapping between statistical mechanics models and quantum many-body systems exemplifies the power of universality. The same mathematics describes magnetic films, superfluids, superconducting arrays, and even aspects of the early universe.
 
-*See also:* [[id:PLACEHOLDER-29][zettel:29]], [[id:PLACEHOLDER-31][zettel:31]]
+*See also:* [[id:a8c9f3e2-7b5d-4e1a-9c6b-2f8e5d3a4b9c][zettel:29]], [[id:c02e3081-546d-4af0-82c3-7c9c1adc759a][zettel:31]]

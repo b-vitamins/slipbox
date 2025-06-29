@@ -2,7 +2,7 @@
 :ID:       a7b8c9d0-1e2f-3a4b-5c6d-7e8f9a0b1c2d
 :CUSTOM_ID: 92/343
 :END:
-#+title: Parameterization (π,σ)
+#+TITLE: Parameterization (π,σ)
 #+FILETAGS: :physics:spof:ch8:coordinates:jacobian:goldstonemodes:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -17,4 +17,4 @@ This parametrization explicitly breaks the O(n) symmetry down to O(n-1), corresp
 
 **Meta observation**: The choice of parametrization is like choosing coordinates in general relativity—the physics is independent of the choice, but calculations may be tractable in one system and hopeless in another. The art is finding coordinates adapted to the problem's symmetries.
 
-**See also:** [[id:PLACEHOLDER-04][zettel:04]], [[id:PLACEHOLDER-06][zettel:06]]
+**See also:** [[id:a7b8c9d0-1e2f-3a4b-5c6d-7e8f9a0b1c2d][zettel:04]], [[id:a7e9f3d2-4b6c-4d8e-9fa0-c1d2e3f4a5b6][zettel:06]]

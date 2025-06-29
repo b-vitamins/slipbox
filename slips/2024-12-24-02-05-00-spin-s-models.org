@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Spin-s Models
 #+FILETAGS: :lattice:spins:universality:beg:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Spin-s models interpolate between discrete and continuous variables by allowing each site to assume 2s+1 values: s_i ∈ {-s, -s+1, ..., +s}. The interaction Hamiltonian admits polynomial coupling of arbitrary order:
 

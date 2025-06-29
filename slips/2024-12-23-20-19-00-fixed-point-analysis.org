@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Fixed Point Analysis
 #+FILETAGS: :physics:spof:ch4:rg:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Fixed point analysis provides the mathematical foundation for understanding critical behavior through linearization of RG transformations around scale-invariant theories.
 

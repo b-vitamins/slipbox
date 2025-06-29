@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Field Effects and Symmetry Breaking
 #+FILETAGS: :field:symmetry:breaking:magnetic:scaling:rg:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 External fields explicitly break the symmetries that spontaneous ordering would otherwise preserve, fundamentally altering phase transition character. In the Ising model, the magnetic field term hΣᵢσᵢ favors one spin orientation, eliminating the phase transition by removing the degeneracy between up and down states. The free energy becomes analytic for all temperatures when h ≠ 0, with the transition surviving only along the h=0 line.
 

@@ -2,7 +2,7 @@
 :ID: a8f9e7d6-5c3b-4e7f-8a9c-4d5e8f9a7c6f
 :CUSTOM_ID: 92/393
 :END:
-#+title: Figure F3: Hyperbolic Trajectories Near K_c
+#+TITLE: Figure F3: Hyperbolic Trajectories Near K_c
 #+filetags: :physics:spof:ch8:figure:criticalpoint:nonlinearflow:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -39,4 +39,4 @@ Family of curves satisfying x² - π⁴y² = c:
 
 **Physical significance:** The nonlinear flow near criticality produces essential singularities rather than power laws. The parameter c measures distance from criticality.
 
-**See also:** [[id:PLACEHOLDER-28][zettel:28]], [[id:PLACEHOLDER-29][zettel:29]]
+**See also:** [[id:9f8e7d6c-5a4b-3e2f-8c1d-0b9a8e7f6d5e][zettel:28]], [[id:a8c9f3e2-7b5d-4e1a-9c6b-2f8e5d3a4b9c][zettel:29]]

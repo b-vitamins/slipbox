@@ -2,7 +2,7 @@
 :ID:       e4f7a3c8-9d2b-4f1e-8c5a-7b6d3e2f4a5c
 :CUSTOM_ID: 92/369
 :END:
-#+title: Correlation Length
+#+TITLE: Correlation Length
 #+FILETAGS: :physics:spof:ch8:correlationlength:scaling:essentialsingularity:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -24,4 +24,4 @@ The exponential sensitivity of ξ to temperature near T_c makes experimental obs
 
 **Meta observation**: Essential singularities in statistical mechanics signal new universality classes. They arise when the standard machinery of relevant operators and linear scaling breaks down, requiring fundamentally new theoretical approaches.
 
-**See also:** [[id:PLACEHOLDER-30][zettel:30]], [[id:PLACEHOLDER-32][zettel:32]]
+**See also:** [[id:e4f7a3c8-9d2b-4f1e-8c5a-7b6d3e2f4a5c][zettel:30]], [[id:d3f9c8e2-7b4a-4e12-9f3d-6c8a1e5b2d47][zettel:32]]

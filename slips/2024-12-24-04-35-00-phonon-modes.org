@@ -2,7 +2,7 @@
 :ID: f8c4d3e9-7a2b-4c5f-9e8d-1a3b5c6f7d9e
 :CUSTOM_ID: 92/374
 :END:
-#+title: Phonon Modes
+#+TITLE: Phonon Modes
 #+filetags: :physics:spof:ch8:phonons:goldstonemodes:dispersion:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -24,4 +24,4 @@ The 1/q² propagator has the same dimensional consequences as in the XY model. I
 
 **Meta observation**: The universality of Goldstone physics manifests in the 1/q² propagator appearing across systems—magnons in magnets, phonons in crystals, pions in QCD. The microscopic differences affect only the stiffness constants, not the fundamental long-wavelength structure.
 
-**See also:** [[id:PLACEHOLDER-35][zettel:35]], [[id:PLACEHOLDER-37][zettel:37]]
+**See also:** [[id:f8c4d3e9-7a2b-4c5f-9e8d-1a3b5c6f7d9e][zettel:35]], [[id:d8f9e3a2-4c7b-4d5e-9a8f-6b3c7e9d2f4a][zettel:37]]

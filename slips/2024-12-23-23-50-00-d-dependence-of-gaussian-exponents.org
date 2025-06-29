@@ -4,6 +4,7 @@
 :END:
 #+TITLE: d-Dependence of Gaussian Exponents
 #+FILETAGS: :physics:statistical:visualization:dimension:gaussian:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Scaling dimensions vs spatial dimension:
 

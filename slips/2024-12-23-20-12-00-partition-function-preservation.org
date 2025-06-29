@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Partition Function Preservation
 #+FILETAGS: :physics:spof:ch4:rg:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The fundamental constraint Z = Z' requires that the partition function remains invariant under RG transformations. This preservation connects the microscopic coarse-graining of configurations to the macroscopic scaling of thermodynamic quantities, providing the key bridge between geometric and analytical aspects of the renormalization group.
 

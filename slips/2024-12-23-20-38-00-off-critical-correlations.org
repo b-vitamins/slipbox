@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Off-Critical Correlations
 #+FILETAGS: :physics:spof:ch4:correlations:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Off-critical correlations exhibit the Ornstein-Zernike form with exponential cutoff at the correlation length, smoothly interpolating between power-law critical behavior and exponential decay in the ordered or disordered phases.
 

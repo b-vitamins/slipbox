@@ -2,7 +2,7 @@
 :ID:       a7e9f3d2-4b6c-4d8e-9fa0-c1d2e3f4a5b6
 :CUSTOM_ID: 92/345
 :END:
-#+title: Perturbative Expansion
+#+TITLE: Perturbative Expansion
 #+FILETAGS: :physics:spof:ch8:perturbationtheory:temperatureexpansion:vertex:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -17,4 +17,4 @@ In momentum space, the interaction vertex takes a characteristic form involving 
 
 **Meta observation**: The organization of perturbation theory around temperature rather than coupling constant reflects deep physics. Temperature controls the population of Goldstone modes, making it the natural expansion parameter for systems with continuous symmetry breaking.
 
-**See also:** [[id:PLACEHOLDER-06][zettel:06]], [[id:PLACEHOLDER-08][zettel:08]], [[figure:D1]]
+**See also:** [[id:a7e9f3d2-4b6c-4d8e-9fa0-c1d2e3f4a5b6][zettel:06]], [[id:c7f4b2d8-9a3e-4f1b-8c5d-6e7a9f3b2c4d][zettel:08]], [[figure:D1]]

@@ -4,6 +4,7 @@
 :END:
 #+TITLE: Upper Critical Dimension
 #+FILETAGS: :physics:statistical:fieldtheory:dimension:critical:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The existence of an upper critical dimension reconciles the apparent contradiction between the success of mean-field theory in many contexts and its failure for most phase transitions. Systems effectively become high-dimensional when interactions are long-ranged: for interactions decaying as 1/r^(d+σ), the effective dimension is d_eff = d + σ, and mean-field theory applies when d_eff > 4.
 

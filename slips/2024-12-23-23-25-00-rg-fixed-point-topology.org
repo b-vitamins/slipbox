@@ -4,6 +4,7 @@
 :END:
 #+TITLE: RG Fixed Point Topology
 #+FILETAGS: :physics:statistical:visualization:renormalization:fixedpoint:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Fixed point topology in coupling space:
 

@@ -2,7 +2,7 @@
 :ID:       f8e3c4d2-9a7b-4e5f-8d1c-6b2a3e4f5c8d
 :CUSTOM_ID: 92/361
 :END:
-#+title: Grand Canonical Coulomb Gas
+#+TITLE: Grand Canonical Coulomb Gas
 #+FILETAGS: :physics:spof:ch8:partitionfunction:coulombgas:neutrality:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -22,4 +22,4 @@ The grand canonical formulation with neutrality is the starting point for all su
 
 **Meta observation**: The neutrality constraint transforms a seemingly simple gas of particles into a highly correlated system. Constraints that appear as technical requirements often encode the deepest physics—here, the periodicity of the angular variable.
 
-*See also:* [[id:PLACEHOLDER-22][zettel:22]], [[id:PLACEHOLDER-24][zettel:24]]
+*See also:* [[id:f8e3c4d2-9a7b-4e5f-8d1c-6b2a3e4f5c8d][zettel:22]], [[id:f9d1a2b4-6c8e-4a93-b7f9-3e2d4c5a8b71][zettel:24]]

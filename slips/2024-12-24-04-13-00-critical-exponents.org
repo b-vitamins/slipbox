@@ -2,7 +2,7 @@
 :ID:       8f4c9d3e-2a7b-4e5c-b1f9-3c6d8e9f2a47
 :CUSTOM_ID: 92/352
 :END:
-#+title: Critical Exponents
+#+TITLE: Critical Exponents
 #+FILETAGS: :physics:spof:ch8:criticalexponents:scaling:anomalousdimension:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
@@ -28,4 +28,4 @@ These satisfy the scaling relations αs + 2β + γ = 2 and γ = ν(2-η), provid
 
 **Meta observation**: The appearance of η at first order in ε reflects a general principle—marginal operators produce logarithms that can fundamentally alter scaling behavior. This is why d = 2 is special for systems with continuous symmetries.
 
-**See also**: [[id:PLACEHOLDER-13][zettel:13]], [[id:PLACEHOLDER-15][zettel:15]]
+**See also**: [[id:8f4c9d3e-2a7b-4e5c-b1f9-3c6d8e9f2a47][zettel:13]], [[id:a3d2e8f5-b9c4-4e12-8f7a-2d9b5c6a3e4f][zettel:15]]
