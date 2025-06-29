@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       ec7cc3a8-f822-4530-8679-4cb0cfb29970
+:CUSTOM_ID: 92/219
+:END:
+#+TITLE: Cross-Chapter Connections
+#+FILETAGS: :physics:criticalphenomena:connections:synthesis:chapters:
+
+Chapter 5 represents the culmination of the statistical field theory approach to critical phenomena, synthesizing concepts from earlier chapters into a systematic calculational framework.
+
+** From Chapter 2: Mean Field Theory
+
+Chapter 2 introduced mean field critical exponents ($\beta = 1/2$, $\gamma = 1$, $\nu = 1/2$) and revealed their failure below the upper critical dimension. Chapter 5 explains this failure quantitatively: the effective coupling $u\xi^{d-4}$ diverges for $d < 4$, invalidating any perturbative expansion around the mean field solution. The epsilon expansion provides systematic corrections to mean field exponents, with the leading terms vanishing as $\epsilon \to 0$, recovering mean field theory at $d = 4$.
+
+The Landau-Ginzburg Hamiltonian from Chapter 2 becomes the starting point for perturbative RG. The quartic term, treated as small in mean field theory, is revealed to be dangerously relevant below four dimensions. The shift in critical temperature $t_c = -4u(n+2)K_d\Lambda^{d-2}/[(d-2)K]$ found perturbatively explains why mean field theory predicts the wrong transition temperature.
+
+** From Chapter 3: Renormalization Group Concepts
+
+Chapter 3 developed RG conceptually; Chapter 5 implements it computationally. The abstract notions of relevant/irrelevant operators and basins of attraction become concrete through explicit calculation of eigenvalues and eigenvectors. The Gaussian fixed point from Chapter 3 is shown to be unstable for $d < 4$, necessitating the Wilson-Fisher fixed point.
+
+The coarse-graining procedure, schematic in Chapter 3, is performed explicitly using mode separation. The generation of new operators under RG, mentioned abstractly before, is demonstrated through detailed Feynman diagram calculations. The universality hypothesis gains mathematical precision through the codimension-one nature of the critical surface.
+
+** From Chapter 4: Exactly Solvable Models
+
+While Chapter 4 treated special models exactly, Chapter 5 provides a systematic approach to generic systems. The epsilon expansion interpolates between the exactly solvable Gaussian model (at $d = 4$) and the strongly coupled regime in lower dimensions. The large-$n$ limit connects to exactly solvable spherical models, providing a check on perturbative results.
+
+The crossover phenomena seen in exactly solvable models appear naturally in the RG flow near marginal fixed points. The breakdown of simple scaling in certain regimes, observed exactly in Chapter 4, corresponds to the presence of dangerously irrelevant operators identified through perturbative RG.
+
+** Forward Connections
+
+Chapter 5's methods extend beyond equilibrium critical phenomena. The epsilon expansion has been applied to:
+- Dynamic critical phenomena (Model A, B, C dynamics)
+- Quantum phase transitions (with $z \neq 1$)
+- Disordered systems (random field, spin glass problems)
+- Non-equilibrium steady states (driven systems)
+- Conformal field theories (in the $\epsilon \to 2$ limit)
+
+The perturbative RG philosophy—expanding around marginal dimensions—has proven broadly applicable throughout theoretical physics, from particle physics (asymptotic freedom in QCD) to condensed matter (quantum Hall transitions) to cosmology (inflationary perturbations).
+
+** See also:
+- [[id:37e6f3cf-b097-49f5-a4ca-370d674878fa][Landau-Ginzburg Framework]] - Foundation from Chapter 2
+- [[id:8cf6ce5f-2fd2-4d85-b0f5-63338a6d5eca][Critical Exponent Definitions]] - Chapter 2 definitions
+- [[id:58a831bb-76a4-4656-b46e-ad5d7c841780][Universality Principle]] - Chapter 3 concept

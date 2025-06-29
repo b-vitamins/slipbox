@@ -1,0 +1,53 @@
+:PROPERTIES:
+:ID:       85e7c344-fdd8-4124-9faf-79b8bde9b932
+:CUSTOM_ID: 92/201
+:END:
+#+TITLE: Second-Order Diagrams
+#+FILETAGS: :physics:spof:ch5:diagrams:secondorder:enumeration:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The systematic enumeration of second-order contributions illuminates the structure of perturbative renormalization. With two interaction vertices, each decomposable into six field configurations, the \(6 \times 6\) matrix of possibilities organizes the calculation:
+
+#+begin_example
+        [1]    [2]    [3]    [4]    [5]    [6]
+[1]    disc.  disc.  disc.  disc.  disc.  disc.
+[2]    disc.   par.   ---   mtm    par.   ---
+[3]    disc.   ---    Δt    Δt     par.   Δt
+[4]    disc.   mtm    Δt    Δu     par.   Δu
+[5]    disc.   par.   par.  par.   mtm    ---
+[6]    disc.   ---    Δt    Δu     ---   const.
+#+end_example
+
+The notation captures the fate of each contribution: "disc." denotes disconnected diagrams that cancel in cumulants, "par." indicates terms with odd \(\sigma\) powers that vanish by parity, "mtm" marks momentum-forbidden contractions, and \(\Delta t\), \(\Delta u\) show which parameters receive corrections.
+
+The surviving diagrams contributing to the quartic coupling are:
+
+#+begin_example
+[3]×[3]: Two-loop with n factor
+         •──•
+        /    \  
+       (      )  → -4nu² × I₂
+        \    /
+         •──•
+
+[3]×[4], [4]×[3]: Two-loop without closed index loop
+                  •──•
+                 /    \
+                •      • → -8u² × I₂ each
+                 \    /
+                  •──•
+
+[4]×[4]: Two-loop with all external legs
+         •────────•
+         |    |
+         •────────• → -16u² × I₂
+#+end_example
+
+Here \(I_2 = \int d^d\mathbf{k}/[(2\pi)^d(t+K k^2)^2]\) is the fundamental two-loop integral. Summing all contributions yields the renormalized coupling \(\tilde{u} = u - 4(n+8)u^2 I_2\). The factor \((n+8)\) emerges from careful index counting: closed loops contribute \(n\), while the various external leg arrangements contribute the remaining 8. This universal combination pervades the theory, appearing in all physical quantities at this order. The diagrammatic organization transforms an apparently hopeless combinatorial problem into a systematic algorithm, revealing the mathematical structure underlying critical phenomena.
+
+** See also:
+- [[id:c4985306-40cd-40e1-bf08-3fe0f06b4e9d][Diagrammatic Elements]]
+- [[id:aef8674d-1241-400e-8fe0-f133a0e9fb22][Diagrammatic Calculations]]
+- [[id:044a6511-da90-48a9-8c80-6e7c24b3bd38][Second-Order Coarse Graining]]
+- [[id:f9419103-4f07-451a-8828-6e8b700d0586][Second-Order Recursion Relations]]
+- [[id:fbcaaf21-5e53-4161-89f6-ff3be967b757][Diagram Topology Rules]]

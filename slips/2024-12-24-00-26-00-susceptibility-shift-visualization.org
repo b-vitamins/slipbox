@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       0dbd8aa2-8baa-4fa0-bc72-22f82922f2d5
+:CUSTOM_ID: 92/191
+:END:
+#+TITLE: Susceptibility Shift Visualization
+#+FILETAGS: :physics:spof:ch5:susceptibility:criticality:visualization:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The shift of the critical temperature due to interactions manifests clearly in the behavior of the inverse susceptibility. For the non-interacting Gaussian model, \(\chi^{-1} = t\) vanishes linearly at \(t = 0\). The interaction modifies this to \(\chi^{-1}(t) = t + 4u(n+2)\int \frac{\mathrm{d}^d\mathbf{k}}{(2\pi)^d}\frac{1}{t+Kk^2}\), which no longer vanishes at \(t = 0\).
+
+#+begin_example
+χ⁻¹
+ |
+ |
+ |
+ |
+ |
+-+----+---------> t
+tc<0  0
+
+     /
+    / u=0 (Gaussian)
+   /
+  /- - - - - - 
+ /    /
+/    / u≠0 (interacting)
+
+#+end_example
+
+The critical point shifts to \(t_c = -4u(n+2)K_d\Lambda^{d-2}/[(d-2)K] < 0\), a negative value proportional to the interaction strength. This shift has profound consequences. First, it demonstrates that interactions generally suppress ordering, requiring lower temperatures to achieve criticality. Second, the shift scales as \(\Lambda^{d-2}\), revealing the ultraviolet sensitivity of the critical temperature in dimensions \(d > 2\). Most importantly, this first-order calculation already hints at the ultimate failure of perturbation theory: the correction terms diverge as \(t \to t_c\), signaling the need for a non-perturbative approach to critical phenomena.
+
+** See also:
+- [[id:1b498be6-812c-4c7b-98bb-5ee0683acb79][Perturbation Theory Breaks Down Near Criticality]]
+- [[id:454a3afe-562b-4ee0-8eab-5392a5bb4817][Susceptibility Analysis]]
+- [[id:733ebc28-096d-404e-9e2f-74ad3a25a54e][First-Order Coarse Graining]]

@@ -1,0 +1,92 @@
+:PROPERTIES:
+:ID:       f36a1bf4-bd62-49c1-924a-0af519117026
+:CUSTOM_ID: 92/218
+:END:
+#+TITLE: Equation Quick Reference
+#+FILETAGS: :physics:criticalphenomena:equations:reference:index:
+
+Complete index of all numbered equations organized by conceptual purpose, enabling rapid location of any mathematical result.
+
+** Foundational Setup
+- **Hamiltonian decomposition**: (5.1-5.4) → [[id:c8a273c4-cd00-43a2-8cd2-06daeb31f8d5][The Perturbative Hamiltonian]]
+  - (5.1): $\beta\mathcal{H} = \beta\mathcal{H}_0 + U$
+  - (5.2): Gaussian part in momentum space
+  - (5.3-5.4): Interaction $U$ with momentum conservation
+
+** Gaussian Model Results
+- **Propagators**: (5.5-5.6) → [[id:8e05c5ca-9fa5-4603-9368-0a167dae1630][Gaussian Propagators]]
+  - (5.5): Discrete momentum, finite volume
+  - (5.6): Continuous limit
+- **Wick's theorem**: (5.7-5.9) → [[id:8829064c-a63e-4f2a-87a7-70ee600e83c2][Wick's Theorem Complete]]
+  - (5.7): Generating function identity
+  - (5.8): Expansion proof
+  - (5.9): General statement
+
+** Perturbation Theory
+- **Cumulant expansion**: (5.10-5.11) → [[id:35ec114d-85b2-45e8-83cc-c8dd3f0913f8][Cumulant Expansion]]
+  - (5.10): Full expectation value formula
+  - (5.11): Cumulant series
+- **Two-point function**: (5.12-5.17) → [[id:6dd34de2-b432-409c-9936-7d65c6cf3d75][Two-Point Function at O(u)]]
+  - (5.12): First-order expansion
+  - (5.13-5.16): Specific contractions
+  - (5.17): Final result
+- **Susceptibility**: (5.18-5.27) → [[id:454a3afe-562b-4ee0-8eab-5392a5bb4817][Susceptibility Analysis]]
+  - (5.18-5.20): Symmetry constraints
+  - (5.21-5.22): $S(q)$ expansion
+  - (5.23-5.25): Critical temperature shift
+  - (5.26-5.27): Near-critical behavior
+
+** First-Order RG
+- **Coarse graining**: (5.29-5.38) → [[id:733ebc28-096d-404e-9e2f-74ad3a25a54e][First-Order Coarse Graining]]
+  - (5.29-5.33): Mode separation formalism
+  - (5.34-5.37): Calculating $\langle U\rangle_\sigma$
+  - (5.38): Renormalized temperature
+- **Recursion relations**: (5.39-5.45) → [[id:3082db6d-2edb-436d-a129-3d84437aa629][First-Order Recursion Relations]]
+  - (5.39-5.41): Parameter transformations
+  - (5.42): Discrete recursions
+  - (5.43-5.44): Differential form
+  - (5.45): Linear stability matrix
+
+** Second-Order RG
+- **Coarse graining**: (5.47-5.51) → [[id:044a6511-da90-48a9-8c80-6e7c24b3bd38][Second-Order Coarse Graining]]
+  - (5.47): Cumulant structure
+  - (5.48-5.50): Detailed calculations
+  - (5.51): Parameter shifts
+- **Recursion relations**: (5.52-5.54) → [[id:f9419103-4f07-451a-8828-6e8b700d0586][Second-Order Recursion Relations]]
+  - (5.52-5.53): Renormalization
+  - (5.54): Differential equations
+
+** Wilson-Fisher Fixed Point
+- **Fixed point location**: (5.55) → [[id:0d507ade-04dd-47f8-a67e-79074ce82b1a][Wilson-Fisher Fixed Point]]
+  - $u^* = K^2\epsilon/[4(n+8)K_4]$
+  - $t^* = -(n+2)K\Lambda^2\epsilon/[2(n+8)]$
+- **Stability analysis**: (5.56-5.59) → [[id:0d507ade-04dd-47f8-a67e-79074ce82b1a][Wilson-Fisher Fixed Point]], [[id:65bfed0c-c47e-40bf-bb38-131e31e24487][Critical Exponents Complete Set]]
+  - (5.56-5.57): Linearization
+  - (5.58-5.59): Eigenvalues
+- **Fixed point Hamiltonian**: (5.65) → [[id:0d507ade-04dd-47f8-a67e-79074ce82b1a][Wilson-Fisher Fixed Point]]
+
+** Critical Exponents
+- **Primary exponents**: (5.60-5.64) → [[id:65bfed0c-c47e-40bf-bb38-131e31e24487][Critical Exponents Complete Set]]
+  - (5.60): $\nu = 1/2 + (n+2)\epsilon/[4(n+8)]$
+  - (5.61): $\alpha = (4-n)\epsilon/[2(n+8)]$
+  - (5.62): $y_h = 3 - \epsilon/2$
+  - (5.63): $\beta = 1/2 - 3\epsilon/[2(n+8)]$
+  - (5.64): $\gamma = 1 + (n+2)\epsilon/[2(n+8)]$
+
+** Universality Analysis
+- **General operators**: (5.66-5.73) → [[id:177951a3-8877-4624-bace-65e353e88a00][Complete Operator Space]]
+  - (5.66-5.67): Complete Hamiltonian
+  - (5.68-5.69): Scaling dimensions
+  - (5.70-5.73): Eigenvalue spectrum
+
+** Series Properties
+- **Asymptotic expansion**: (5.74-5.75) → [[id:b8900858-9d85-48ee-898c-d4aa4c4a5572][Asymptotic Nature of ε-Expansion]]
+  - (5.74): $\gamma$ to fifth order
+  - (5.75): Borel summation
+- **Large-n limit**: (5.76) → [[id:0325a2b5-9c6d-4c66-a87a-8d5386c18d50][The 1/n Expansion]]
+  - $\nu = 1/(d-2)$ exactly
+
+This index enables navigation without returning to the original text—every equation is captured within its conceptual zettel.
+
+** See also:
+- [[id:417c542c-f264-4f2b-a03b-2eaff4984ebf][Visual Content Map]] - Organization of diagrams and visualizations

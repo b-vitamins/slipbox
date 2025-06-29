@@ -1,0 +1,44 @@
+:PROPERTIES:
+:ID:       177951a3-8877-4624-bace-65e353e88a00
+:CUSTOM_ID: 92/206
+:END:
+#+TITLE: Complete Operator Space
+#+FILETAGS: :physics:spof:ch5:operators:universality:eigenvalues:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The systematic treatment of universality requires considering the most general Hamiltonian consistent with symmetries. Separating quadratic and higher-order terms:
+
+\[\beta \mathcal{H}_{0}=\int \mathrm{d}^{d} \mathbf{x}\left[\frac{t}{2} m^{2}+\frac{K}{2}(\nabla m)^{2}+\frac{L}{2}\left(\nabla^{2} m\right)^{2}+\cdots\right]\]
+
+\[U=\int \mathrm{d}^{d} \mathbf{x}\left[u m^{4}+v m^{2}(\nabla m)^{2}+\cdots+u_{6} m^{6}+\cdots+u_{8} m^{8}+\cdots\right]\]
+
+Under renormalization with \(\mathbf{x} = b\mathbf{x}'\) and \(\tilde{\vec{m}} = \zeta\vec{m}'\), each coupling transforms with a characteristic scaling dimension:
+
+\[\begin{cases}
+t \mapsto b^{2} t \\
+K \mapsto K \text{ (fixed by choice of } \zeta \text{)} \\
+L \mapsto b^{-2} L \\
+u \mapsto b^{4-d} u \\
+v \mapsto b^{2-d} v \\
+u_{6} \mapsto b^{6-2d} u_{6} \\
+u_{8} \mapsto b^{8-3d} u_{8}
+\end{cases}\]
+
+The differential recursion relations to leading order in all couplings yield eigenvalues at the Gaussian fixed point:
+
+\[y_{t}^{0}=2, \quad y_{L}^{0}=-2, \quad y_{u}^{0}=4-d, \quad y_{v}^{0}=2-d, \quad y_{6}^{0}=6-2d, \quad y_{8}^{0}=8-3d\]
+
+At the Wilson-Fisher fixed point, these eigenvalues receive \(\mathcal{O}(\epsilon)\) corrections, but their signs for \(d < 4\) remain unchanged except for \(y_u\):
+
+\[y_{t}=2-\frac{n+2}{n+8} \epsilon, \quad y_{L}=-2+\mathcal{O}(\epsilon), \quad y_{u}=-\epsilon+\mathcal{O}(\epsilon^{2}), \quad y_{v}=-2+\mathcal{O}(\epsilon)\]
+
+The crucial observation is that all operators except \(t\) have negative eigenvalues at the Wilson-Fisher fixed point for \(d < 4\). Higher-order operators have increasingly negative eigenvalues, becoming progressively more irrelevant. The gradient term coefficient \(L\) and composite operators like \(v\) are irrelevant with eigenvalues of order -2, meaning they decay rapidly under RG flow.
+
+This hierarchy of eigenvalues establishes universality. Starting from an arbitrary microscopic Hamiltonian, the RG flow drives all irrelevant couplings to zero, leaving only the relevant direction (temperature) to tune. The system flows to a one-parameter family of theories related by temperature shifts, all sharing the same critical exponents. The multitude of microscopic differences—detailed interaction potentials, lattice structures, further-neighbor couplings—are washed out by the RG flow, leaving only the symmetry class and dimensionality to determine the critical behavior.
+
+** See also:
+- [[id:044a6511-da90-48a9-8c80-6e7c24b3bd38][Second-Order Coarse Graining]]
+- [[id:f9419103-4f07-451a-8828-6e8b700d0586][Second-Order Recursion Relations]]
+- [[id:65bfed0c-c47e-40bf-bb38-131e31e24487][Critical Exponents Complete Set]]
+- [[id:8d6a356d-0764-4fba-9fe9-e4d4e10c8a84][Basin of Attraction]]
+- [[id:db4d68a2-cb3f-45a7-bd6a-e1de03e843b4][Operator Mixing Under RG]]

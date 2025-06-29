@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       3b6dd281-8a83-4424-abf9-d1cd14834174
+:CUSTOM_ID: 92/215
+:END:
+#+TITLE: Visual Grammar of RG
+#+FILETAGS: :physics:criticalphenomena:rg:visualization:grammar:flows:
+
+The renormalization group flow admits a universal visual language that transcends specific models. This grammar encodes the mathematical structure of RG in geometric form, making abstract concepts concrete and revealing patterns across different systems.
+
+Fixed points appear as dots in coupling space where flows stagnate: $dg_i/d\ell = 0$ for all couplings $g_i$. These points are classified by their stability:
+- **Stable (infrared attractive)**: All eigenvalues negative; flows converge from all directions
+- **Unstable (ultraviolet attractive)**: All eigenvalues positive; flows diverge in all directions  
+- **Saddle points**: Mixed eigenvalues; attractive along some directions, repulsive along others
+
+The local flow near fixed points is determined by eigenvalues and eigenvectors:
+#+BEGIN_EXAMPLE
+Relevant (y > 0):    ←•→     Arrows point outward
+Irrelevant (y < 0):  →•←     Arrows point inward
+Marginal (y = 0):    ↻•↺     Circular/slow flow
+#+END_EXAMPLE
+
+The Wilson-Fisher fixed point exemplifies a critical saddle point: one relevant direction (temperature) makes it unstable, while all other directions are irrelevant, creating a basin of attraction of codimension one.
+
+Phase boundaries appear as separatrices—special trajectories that divide regions flowing to different fixed points. The critical surface is the stable manifold of the critical fixed point, separating ordered and disordered phases. Multicritical points occur where multiple phase boundaries meet, corresponding to fixed points with multiple relevant directions.
+
+The visual language extends to crossover phenomena. Near a weakly unstable fixed point, trajectories linger, following approximate scaling before eventually flowing away. This appears as a "critical region" where flows move slowly, explaining why mean field theory works reasonably well even below four dimensions if one doesn't look too closely.
+
+RG flows satisfy crucial properties visible in phase portraits:
+- **Irreversibility**: Flows have a definite direction (toward larger length scales)
+- **No limit cycles**: In unitary theories, flows don't return to themselves
+- **Gradient flow** (in special cases): Flows descend a "height function" 
+
+This visual grammar transforms abstract mathematics into geometric intuition, revealing the universal structures underlying critical phenomena across all of physics.
+
+** See also:
+- [[id:994294f7-c282-4c3b-a694-724ef10aa4aa][First-Order RG Flow]] - Incomplete flows without stable fixed point
+- [[id:b7b3e1e0-4464-463d-94f9-42b82f4f8115][Wilson-Fisher RG Flow]] - Complete flow diagram
+- [[id:6dad994a-6334-42d4-a906-301d66240bbe][Universality Basin Visualization]] - Basin geometry in parameter space

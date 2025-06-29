@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       3e18de51-4767-45fe-9749-2e873c0ba436
+:CUSTOM_ID: 92/209
+:END:
+#+TITLE: Magnetic Field Eigenvalue
+#+FILETAGS: :physics:criticalphenomena:rg:magneticfield:eigenvalue:scaling:
+
+The magnetic field couples linearly to the order parameter through $-\vec{h} \cdot \int d^d\mathbf{x}\vec{m}(\mathbf{x}) = -\vec{h} \cdot \vec{m}(\mathbf{q}=0)$. This term has special properties under renormalization group transformations that reflect its role as the conjugate field to the order parameter.
+
+Under coarse graining, the zero-momentum mode remains unchanged: $\tilde{m}(\mathbf{q}=0) = m(\mathbf{q}=0)$ since all momenta are less than the cutoff. The rescaling step has no effect on this zero-momentum term. Only the field renormalization $\tilde{\vec{m}} = z\vec{m}'$ affects the magnetic field coupling, yielding
+
+\[h' = zh = b^{1+d/2}h\]
+
+where we used $z = b^{1+d/2}[1 + \mathcal{O}(u^2)]$. The correction terms at order $u^2$ do not contribute to the eigenvalue at order $\epsilon$, giving
+
+\[y_h = 1 + \frac{d}{2} + \mathcal{O}(\epsilon^2) = 3 - \frac{\epsilon}{2} + \mathcal{O}(\epsilon^2)\]
+
+The magnetic field eigenvalue exceeds the thermal eigenvalue: $y_h > y_t$ for all $d < 4$. This inequality has profound consequences. Near criticality, the singular part of the free energy scales as $f_s \sim \xi^{-d} \sim |t|^{\nu d}$. Under a change of temperature $\delta t$, the free energy changes by $\delta f_s \sim |t|^{\nu d - 1}$, while under a magnetic field $h$, it changes by $\delta f_s \sim h|t|^{\nu(d-y_h)}$.
+
+The ratio of these responses, $h/|t|^{\Delta}$ with $\Delta = y_h - y_t = 1 + d/2 - y_t$, determines the equation of state. Since $\Delta > 0$, the magnetic field is more relevant than temperature—it has a stronger effect on the critical behavior. This hierarchy explains why the critical isotherm $m \sim h^{1/\delta}$ with $\delta = y_h/(d-y_h)$ is steeper than the spontaneous magnetization curve $m \sim |t|^\beta$.
+
+The universality of $y_h$ within each symmetry class reflects a deep principle: the conjugate field to an order parameter always has the same scaling dimension relative to that order parameter, independent of microscopic details. This principle extends beyond magnetic systems to all phase transitions with a defined order parameter.
+
+** See also:
+- [[id:65bfed0c-c47e-40bf-bb38-131e31e24487][Critical Exponents Complete Set]] - Relationship to other exponents
+- [[id:0d507ade-04dd-47f8-a67e-79074ce82b1a][Wilson-Fisher Fixed Point]] - Fixed point structure

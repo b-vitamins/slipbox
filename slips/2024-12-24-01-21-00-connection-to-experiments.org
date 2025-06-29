@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       439ee9fa-a718-42ee-b8d5-06d6fc7dc17f
+:CUSTOM_ID: 92/213
+:END:
+#+TITLE: Connection to Experiments
+#+FILETAGS: :physics:criticalphenomena:experiments:validation:universality:exponents:
+
+The epsilon expansion provides quantitative predictions for critical exponents that can be directly compared with experiments. For three-dimensional systems ($\epsilon = 1$), the first-order results already show significant improvement over mean field theory, and higher-order calculations with resummation yield remarkable agreement with measurements.
+
+Consider the Ising universality class ($n=1$) in three dimensions. The epsilon expansion at first order gives $\nu = 0.583$, $\beta = 0.333$, $\gamma = 1.167$, compared to mean field values $\nu = 0.5$, $\beta = 0.5$, $\gamma = 1$. Experiments on diverse systems—liquid-gas transitions, binary alloys, uniaxial ferromagnets—yield $\nu = 0.630 \pm 0.002$, $\beta = 0.326 \pm 0.002$, $\gamma = 1.239 \pm 0.002$. The epsilon expansion correctly predicts the trends: $\nu$ increases while $\beta$ decreases relative to mean field theory.
+
+The dependence on $n$ is particularly instructive. The specific heat exponent from first-order epsilon expansion is
+
+\[\alpha = \frac{4-n}{2(n+8)}\epsilon\]
+
+This predicts $\alpha > 0$ for $n < 4$ and $\alpha < 0$ for $n > 4$, with $\alpha = 0$ at $n = 4$. Experiments confirm this sign change: $\alpha \approx 0.11$ for Ising ($n=1$), $\alpha \approx -0.01$ for XY ($n=2$), and $\alpha \approx -0.12$ for Heisenberg ($n=3$) systems. The systematic variation with $n$—missed entirely by mean field theory—validates the epsilon expansion approach.
+
+The expansion also predicts correction-to-scaling exponents. The leading irrelevant eigenvalue $y_u = -\epsilon$ implies corrections of order $|t|^{\epsilon\nu}$ to scaling laws. These corrections are observable in precise experiments and provide additional tests of the theory. The agreement extends to amplitude ratios and other universal combinations, though these require higher-order calculations.
+
+The success is not limited to magnetic systems. The same exponents describe liquid-gas critical points (Ising class), superfluid transitions (XY class), and structural phase transitions. Each universality class, characterized by symmetry and dimensionality, exhibits its predicted exponents regardless of microscopic details. This experimental validation of universality, quantified by the epsilon expansion, represents one of the great triumphs of modern statistical physics.
+
+** See also:
+- [[id:65bfed0c-c47e-40bf-bb38-131e31e24487][Critical Exponents Complete Set]] - Systematic theoretical predictions
+- [[id:b8900858-9d85-48ee-898c-d4aa4c4a5572][Asymptotic Nature of ε-Expansion]] - Resummation methods

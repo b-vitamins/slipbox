@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       044a6511-da90-48a9-8c80-6e7c24b3bd38
+:CUSTOM_ID: 92/200
+:END:
+#+TITLE: Second-Order Coarse Graining
+#+FILETAGS: :physics:spof:ch5:rg:secondorder:coarsegraining:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The second-order calculation reveals a fundamental feature of renormalization: the parameter space is not closed under coarse graining. The effective Hamiltonian after integrating out short wavelength modes becomes
+
+\[\tilde{\mathcal{H}}[\tilde{\vec{m}}]= V \delta f_{b}^{0}+\int_{0}^{\Lambda / b} \frac{\mathrm{d}^{d} \mathbf{q}}{(2 \pi)^{d}}\left(\frac{t+K q^{2}}{2}\right)|\tilde{m}(\mathbf{q})|^{2}+\langle\mathcal{U}\rangle_{\sigma}-\frac{1}{2}\left(\left\langle U^{2}\right\rangle_{\sigma}-\langle\mathcal{U}\rangle_{\sigma}^{2}\right)+O\left(\mathcal{U}^{3}\right)\]
+
+The cumulant \(\langle\mathcal{U}^2\rangle_\sigma - \langle\mathcal{U}\rangle_\sigma^2\) requires evaluating all possible contractions of two quartic vertices with short wavelength modes. With each \(\mathcal{U}\) decomposing into six terms based on \(\tilde{m}\) and \(\sigma\) content, thirty-six possibilities arise. Systematic analysis eliminates many: disconnected terms cancel in the cumulant, odd powers of \(\sigma\) vanish by symmetry, and momentum conservation forbids certain contractions.
+
+The crucial new physics emerges from terms like \([3] \times [3]\), representing \(\sigma^2\tilde{m}^2\) contracted with itself:
+
+\[4 n u^{2} \int_{0}^{\Lambda / b} \frac{\mathrm{d}^{d} \mathbf{q}_{1} \cdots \mathrm{d}^{d} \mathbf{q}_{4}}{(2 \pi)^{4 d}}(2 \pi)^{d} \delta^{d}\left(\sum \mathbf{q}_i\right) \tilde{\vec{m}}\left(\mathbf{q}_{1}\right) \cdot \tilde{\vec{m}}\left(\mathbf{q}_{2}\right) \tilde{\vec{m}}\left(\mathbf{q}_{3}\right) \cdot \tilde{\vec{m}}\left(\mathbf{q}_{4}\right)\]
+\[\times \int \frac{\mathrm{d}^{d} \mathbf{k}}{(2 \pi)^{d}} \frac{1}{\left(t+K k^{2}\right)\left(t+K\left(\mathbf{q}_{1}+\mathbf{q}_{2}-\mathbf{k}\right)^{2}\right)}\]
+
+The momentum-dependent denominator generates new interactions upon expansion. Terms proportional to \(m^2(\nabla m)^2\), \(m^2\nabla^2 m\), and crucially \(m^6\) appear in the effective Hamiltonian. The generation of an infinite hierarchy of operators is generic in interacting field theories. Even if initially absent, all operators consistent with symmetries are produced by renormalization. This proliferation appears to complicate the analysis enormously, but the epsilon expansion will reveal that near four dimensions, only a finite number of couplings control the critical behavior.
+
+** See also:
+- [[id:733ebc28-096d-404e-9e2f-74ad3a25a54e][First-Order Coarse Graining]]
+- [[id:85e7c344-fdd8-4124-9faf-79b8bde9b932][Second-Order Diagrams]]
+- [[id:f9419103-4f07-451a-8828-6e8b700d0586][Second-Order Recursion Relations]]
+- [[id:177951a3-8877-4624-bace-65e353e88a00][Complete Operator Space]]
+- [[id:db4d68a2-cb3f-45a7-bd6a-e1de03e843b4][Operator Mixing Under RG]]

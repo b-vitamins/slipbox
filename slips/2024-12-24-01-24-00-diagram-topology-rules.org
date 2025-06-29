@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       fbcaaf21-5e53-4161-89f6-ff3be967b757
+:CUSTOM_ID: 92/216
+:END:
+#+TITLE: Diagram Topology Rules
+#+FILETAGS: :physics:criticalphenomena:feynmandiagrams:topology:combinatorics:
+
+The systematic enumeration of Feynman diagrams requires understanding their topological structure and the resulting combinatorial factors. These rules transform the algebraic complexity of perturbation theory into a visual counting problem.
+
+**Connectivity** forms the primary classification. Connected diagrams have all vertices linked by propagator lines, while disconnected diagrams fragment into isolated pieces. The fundamental theorem of perturbation theory states that only connected diagrams contribute to cumulants (connected correlation functions). This vastly reduces the number of diagrams to calculate, as disconnected pieces cancel between numerator and denominator of correlation functions.
+
+**Loop counting** determines factors of $n$. Each closed loop of spin indices contributes $\delta_{ii} = n$. The number of loops in a diagram equals $L = I - V + 1$, where $I$ is the number of internal lines and $V$ the number of vertices. This topological invariant is independent of how the diagram is drawn. For example, at second order with two vertices connected by two propagators, $L = 2 - 2 + 1 = 1$, yielding one factor of $n$.
+
+**Symmetry factors** account for topologically equivalent contractions. Consider the second-order contribution $[3] \times [3]$ where both vertices have two $\sigma$ fields contracted together. The four ways to choose which pairs contract yield identical diagrams, giving a symmetry factor of 4. The general rule: divide by the number of permutations leaving the diagram invariant.
+
+**Momentum routing** ensures conservation at each vertex. With momentum conservation $\delta^d(\sum_i \mathbf{k}_i)$ at vertices, one momentum integral is eliminated per vertex. For a connected diagram with $V$ vertices and $I$ internal lines, we integrate over $I - V + 1 = L$ independent loop momenta—the same $L$ that counts spin loops.
+
+**Vertex types** in the $O(n)$ model have paired indices: $m_i m_i m_j m_j$. This structure forbids certain contractions (like three legs to one vertex and one to another) and determines the allowed diagram topologies. Higher-order vertices $m^{2k}$ would have $k$ pairs of indices, leading to different topological constraints.
+
+The beauty of diagrammatic rules is their universality. The same topological principles apply to quantum field theory, many-body physics, and even combinatorial problems. Mastering these rules transforms perturbation theory from brute-force algebra into pattern recognition, revealing the mathematical structure beneath the physics.
+
+** See also:
+- [[id:31cdd88b-857d-4b29-8d8b-be588d414f30][Diagrammatic Rules]] - General framework
+- [[id:c4985306-40cd-40e1-bf08-3fe0f06b4e9d][Diagrammatic Elements]] - Basic building blocks
+- [[id:aef8674d-1241-400e-8fe0-f133a0e9fb22][Diagrammatic Calculations]] - Specific examples
+- [[id:85e7c344-fdd8-4124-9faf-79b8bde9b932][Second-Order Diagrams]] - Systematic enumeration

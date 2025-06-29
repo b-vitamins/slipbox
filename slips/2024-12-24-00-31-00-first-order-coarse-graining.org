@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       733ebc28-096d-404e-9e2f-74ad3a25a54e
+:CUSTOM_ID: 92/196
+:END:
+#+TITLE: First-Order Coarse Graining
+#+FILETAGS: :physics:spof:ch5:rg:coarsegraining:firstorder:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The renormalization group procedure begins by separating field fluctuations into long and short wavelength components. We decompose \(m(\mathbf{q}) = \tilde{m}(\mathbf{q})\) for \(|\mathbf{q}| < \Lambda/b\) and \(m(\mathbf{q}) = \sigma(\mathbf{q})\) for \(\Lambda/b < |\mathbf{q}| < \Lambda\), where \(b > 1\) is the rescaling factor. The partition function becomes
+
+\[Z=\int \mathcal{D} \tilde{\vec{m}}(\mathbf{q}) \mathcal{D} \vec{\sigma}(\mathbf{q}) \exp \left\{-\int_{0}^{\Lambda} \frac{\mathrm{d}^{d} \mathbf{q}}{(2 \pi)^{d}}\left(\frac{t+K q^{2}}{2}\right)\left(|\tilde{m}(\mathbf{q})|^{2}+|\sigma(\mathbf{q})|^{2}\right)-U[\tilde{\vec{m}}, \vec{\sigma}]\right\}\]
+
+The interaction \(\mathcal{U}\) couples long and short wavelength modes, making the integration over \(\vec{\sigma}\) non-trivial. Formally integrating out the short wavelength fluctuations yields
+
+\[\beta \tilde{\mathcal{H}}[\tilde{\vec{m}}]=V \delta f_{b}^{0}+\int_{0}^{\Lambda / b} \frac{\mathrm{d}^{d} \mathbf{q}}{(2 \pi)^{d}}\left(\frac{t+K q^{2}}{2}\right)|\tilde{m}(\mathbf{q})|^{2}-\ln \left\langle\mathrm{e}^{-\mathcal{U}[\tilde{\vec{m}}, \vec{\sigma}]}\right\rangle_{\sigma}\]
+
+where the partial average \(\langle\cdot\rangle_\sigma\) is taken with respect to the Gaussian weight of the short wavelength modes.
+
+At first order in \(u\), we need \(\langle\mathcal{U}[\tilde{\vec{m}},\vec{\sigma}]\rangle_\sigma\). The calculation involves categorizing terms by their field content. Pure \(\tilde{m}^4\) terms remain unchanged. Terms linear in \(\sigma\) vanish by symmetry. The crucial contributions arise from \(\sigma^2\tilde{m}^2\) terms, which after contraction yield
+
+\[-2 n u \int_{0}^{\Lambda / b} \frac{\mathrm{d}^{d} \mathbf{q}}{(2 \pi)^{d}}|\tilde{m}(\mathbf{q})|^{2} \int_{\Lambda / b}^{\Lambda} \frac{\mathrm{d}^{d} \mathbf{k}}{(2 \pi)^{d}} \frac{1}{t+K k^{2}}\]
+
+Combined with similar terms lacking closed loops, the coarse-grained Hamiltonian preserves its form with renormalized parameters:
+
+\[\tilde{t}=t+4 u(n+2) \int_{\Lambda / b}^{\Lambda} \frac{\mathrm{d}^{d} \mathbf{k}}{(2 \pi)^{d}} \frac{1}{t+K k^{2}}, \quad \tilde{K}=K, \quad \tilde{u}=u\]
+
+The gradient coefficient and quartic coupling remain unchanged at this order, while the temperature shifts by an amount proportional to the modes integrated out. This shift accumulates under repeated RG transformations, ultimately generating the critical behavior.
+
+** See also:
+- [[id:0dbd8aa2-8baa-4fa0-bc72-22f82922f2d5][Susceptibility Shift Visualization]]
+- [[id:454a3afe-562b-4ee0-8eab-5392a5bb4817][Susceptibility Analysis]]
+- [[id:3082db6d-2edb-436d-a129-3d84437aa629][First-Order Recursion Relations]]
+- [[id:994294f7-c282-4c3b-a694-724ef10aa4aa][First-Order RG Flow]]
+- [[id:044a6511-da90-48a9-8c80-6e7c24b3bd38][Second-Order Coarse Graining]]

@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       0d507ade-04dd-47f8-a67e-79074ce82b1a
+:CUSTOM_ID: 92/203
+:END:
+#+TITLE: Wilson-Fisher Fixed Point
+#+FILETAGS: :physics:spof:ch5:wilsonfisher:fixedpoint:epsilon:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The non-trivial fixed point emerges from the balance between linear growth and nonlinear suppression in the recursion relations. Setting \(du/d\ell = dt/d\ell = 0\) yields the Wilson-Fisher fixed point located at
+
+\[\left\{\begin{array}{l}
+u^{*}=\frac{K^{2}}{4(n+8) K_{4}} \epsilon+\mathcal{O}\left(\epsilon^{2}\right) \\
+t^{*}=-\frac{(n+2)}{2(n+8)} K \Lambda^{2} \epsilon+\mathcal{O}\left(\epsilon^{2}\right)
+\end{array}\right.\]
+
+where \(\epsilon = 4-d\) and \(K_4 = S_4/(2\pi)^4 = 1/(8\pi^2)\). The fixed point coupling vanishes as \(\epsilon \to 0\), justifying the perturbative treatment near four dimensions. The negative fixed point temperature confirms that fluctuations suppress the ordering tendency.
+
+The fixed point Hamiltonian takes the explicit form
+
+\[\beta \mathcal{H}^{*}=\frac{K}{2} \int_{\Lambda} \mathrm{d}^{d} \mathbf{x}\left[(\nabla m)^{2}-\frac{(n+2)}{(n+8)} \epsilon \Lambda^{2} m^{2}+\frac{\epsilon \Lambda^{-\epsilon}}{2(n+8)} \frac{K}{K_{4}} m^{4}\right]\]
+
+This Hamiltonian depends explicitly on the cutoff \(\Lambda\), unlike the universal exponents it generates. The cutoff dependence is not problematic—it merely reflects our choice of units. Different microscopic models with the same symmetries flow to this same fixed point Hamiltonian up to trivial rescalings.
+
+The linearization around this fixed point determines the critical exponents. The stability matrix at \(\mathcal{O}(\epsilon)\) has a special structure: the element connecting \(\delta u\) to \(\delta t\) vanishes, making the eigenvalues simply the diagonal elements. This simplification is not accidental but reflects the near-marginal nature of the interaction at \(d = 4\). The Wilson-Fisher fixed point continuously deforms from the Gaussian fixed point as \(\epsilon\) increases from zero, providing a controlled interpolation between mean field theory and the strongly fluctuating regime in lower dimensions.
+
+** See also:
+- [[id:f9419103-4f07-451a-8828-6e8b700d0586][Second-Order Recursion Relations]]
+- [[id:b7b3e1e0-4464-463d-94f9-42b82f4f8115][Wilson-Fisher RG Flow]]
+- [[id:65bfed0c-c47e-40bf-bb38-131e31e24487][Critical Exponents Complete Set]]
+- [[id:15c16740-5ced-49e8-8482-e4620b94cc96][Why ε-Expansion Works]]
+- [[id:b8900858-9d85-48ee-898c-d4aa4c4a5572][Asymptotic Nature of ε-Expansion]]

@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       aef8674d-1241-400e-8fe0-f133a0e9fb22
+:CUSTOM_ID: 92/195
+:END:
+#+TITLE: Diagrammatic Calculations
+#+FILETAGS: :physics:spof:ch5:diagrams:calculations:wick:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The first-order correction to the propagator illustrates the power of diagrammatic methods. Computing \(\langle m_\alpha(\mathbf{q})m_\beta(\mathbf{q}')m_i(\mathbf{q}_1)m_i(\mathbf{q}_2)m_j(\mathbf{q}_3)m_j(\mathbf{q}_4)\rangle_0\) requires evaluating fifteen distinct contractions. The systematic enumeration proceeds by first identifying how the external fields \(m_\alpha\) and \(m_\beta\) connect to the vertex.
+
+#+begin_example
+Type 1: External fields to same index (4 diagrams)
+        
+α,q ───────────── i,q₁
+              X    ===> Factor: 4n × integral
+β,q'───────────── i,q₂
+
+Type 2: External fields to different indices (8 diagrams)
+
+α,q ───────────── i,q₁
+       ×      X    ===> Factor: 8 × integral  
+β,q'───────────── j,q₃
+
+Disconnected: External fields to each other (3 diagrams)
+
+α,q ───────────── β,q'
+                   ===> Cancels with ⟨O⟩₀⟨U⟩₀
+    •──X──•
+#+end_example
+
+Each solid line represents a propagator carrying momentum and spin indices. The × symbol indicates index contractions that create loops, yielding factors of \(n\). Type 1 diagrams produce closed loops of \(j\) indices, contributing \(n\delta_{jj} = n\). Type 2 diagrams have no closed loops since all indices connect externally.
+
+The momentum integrals enforce conservation at each vertex. For Type 1, the external momenta enter symmetrically, while for Type 2, they couple to the loop momentum asymmetrically. After summing all contributions and accounting for symmetry factors, the first-order correction emerges as \(-4u(n+2)\) times a universal momentum integral. This factor of \((n+2)\) pervades the theory, arising from the interplay between closed loops (contributing \(n\)) and external line arrangements (contributing 2).
+
+** See also:
+- [[id:31cdd88b-857d-4b29-8d8b-be588d414f30][Diagrammatic Rules]]
+- [[id:c4985306-40cd-40e1-bf08-3fe0f06b4e9d][Diagrammatic Elements]]
+- [[id:6dd34de2-b432-409c-9936-7d65c6cf3d75][Two-Point Function at O(u)]]
+- [[id:85e7c344-fdd8-4124-9faf-79b8bde9b932][Second-Order Diagrams]]
+- [[id:fbcaaf21-5e53-4161-89f6-ff3be967b757][Diagram Topology Rules]]

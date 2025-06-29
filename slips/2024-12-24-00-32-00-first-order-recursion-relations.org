@@ -1,0 +1,44 @@
+:PROPERTIES:
+:ID:       3082db6d-2edb-436d-a129-3d84437aa629
+:CUSTOM_ID: 92/197
+:END:
+#+TITLE: First-Order Recursion Relations
+#+FILETAGS: :physics:spof:ch5:rg:recursion:firstorder:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+After coarse graining, the renormalization group procedure continues with rescaling and renormalization. Setting \(\mathbf{q} = b^{-1}\mathbf{q}'\) restores the momentum cutoff to \(\Lambda\), while the field renormalization \(\tilde{\vec{m}} = z\vec{m}'\) maintains the kinetic term's normalization. The renormalized Hamiltonian parameters transform as
+
+\[t^{\prime}=b^{-d} z^{2} \tilde{t}, \quad K^{\prime}=b^{-d-2} z^{2} K, \quad u^{\prime}=b^{-3 d} z^{4} u\]
+
+Choosing \(z = b^{1+d/2}\) fixes \(K' = K\), establishing the Gaussian fixed point where the gradient coefficient remains invariant. This choice determines the scaling of all other couplings.
+
+The discrete recursion relations at first order become
+
+\[\left\{\begin{array}{l}
+t_{b}^{\prime}=b^{2}\left[t+4 u(n+2) \int_{\Lambda / b}^{\Lambda} \frac{\mathrm{d}^{d} \mathbf{k}}{(2 \pi)^{d}} \frac{1}{t+K k^{2}}\right] \\
+u_{b}^{\prime}=b^{4-d} u
+\end{array}\right.\]
+
+For infinitesimal transformations with \(b = e^\ell\), expanding to first order in \(\delta\ell\) yields the differential flow equations:
+
+\[\left\{\begin{array}{l}
+\frac{\mathrm{d} t}{\mathrm{~d} \ell}=2 t+\frac{4 u(n+2) K_{d} \Lambda^{d}}{t+K \Lambda^{2}} \\
+\frac{\mathrm{d} u}{\mathrm{~d} \ell}=(4-d) u
+\end{array}\right.\]
+
+The \(u\) equation integrates immediately to \(u(\ell) = u_0 e^{(4-d)\ell}\), revealing that \(u\) is relevant for \(d < 4\) and irrelevant for \(d > 4\). The \(t\) equation couples to \(u\), preventing simple integration.
+
+Linearizing near the Gaussian fixed point \((t^* = 0, u^* = 0)\) gives the stability matrix
+
+\[\frac{\mathrm{d}}{\mathrm{d} \ell}\binom{\delta t}{\delta u}=\left(\begin{array}{cc}
+2 & \frac{4(n+2) K_{d} \Lambda^{d-2}}{K} \\
+0 & 4-d
+\end{array}\right)\binom{\delta t}{\delta u}\]
+
+The eigenvalues \(y_t = 2\) and \(y_u = 4-d\) match dimensional analysis, but the eigendirections differ. The temperature direction now includes a component along \(u\), specifically \(t = -4u(n+2)K_d\Lambda^{d-2}/K\), which corresponds exactly to the shift in critical temperature found perturbatively. This mixing of scaling fields with bare couplings is a generic feature of interacting theories.
+
+** See also:
+- [[id:733ebc28-096d-404e-9e2f-74ad3a25a54e][First-Order Coarse Graining]]
+- [[id:994294f7-c282-4c3b-a694-724ef10aa4aa][First-Order RG Flow]]
+- [[id:ccb6d586-d039-42b5-b4fe-1da76046537a][Eigenvalues at Gaussian Fixed Point]]
+- [[id:f9419103-4f07-451a-8828-6e8b700d0586][Second-Order Recursion Relations]]

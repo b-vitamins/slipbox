@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       b8900858-9d85-48ee-898c-d4aa4c4a5572
+:CUSTOM_ID: 92/211
+:END:
+#+TITLE: Asymptotic Nature of ε-Expansion
+#+FILETAGS: :physics:criticalphenomena:rg:epsilonexpansion:asymptotic:borelsummation:
+
+The epsilon expansion, despite its successes, is not a convergent series but an asymptotic one. The expansion of any critical exponent takes the form $X = X_0 + X_1\epsilon + X_2\epsilon^2 + \cdots$, where the coefficients grow factorially at high orders: $|X_p| \sim cp^!a^{-p}$. This divergent behavior is generic in field theory and reflects the non-perturbative structure of the problem.
+
+The factorial growth arises from the proliferation of Feynman diagrams. At $p$th order, the number of diagrams grows faster than exponentially, while each diagram contributes a bounded amount. The series for the exponent $\gamma$ in the Ising model ($n=1$) illustrates the pattern:
+
+\[\gamma=1+0.167 \epsilon+0.077 \epsilon^{2}-0.049 \epsilon^{3}+0.180 \epsilon^{4}-0.415 \epsilon^{5}\]
+
+Evaluating at $\epsilon = 1$ gives the sequence $\{1.000, 1.167, 1.244, 1.195, 1.375, 0.96\}$. The series improves through third order, then begins oscillating with increasing amplitude. This behavior—initial improvement followed by divergence—characterizes asymptotic series.
+
+The Borel summation method extracts finite results from divergent series. Using the integral representation $p! = \int_0^\infty dx \, x^p e^{-x}$, we write
+
+\[f(\epsilon)=\sum_{p} f_{p} \epsilon^{p}=\int_{0}^{\infty} dx \, e^{-x} \sum_{p} \frac{f_{p}(\epsilon x)^{p}}{p!}\]
+
+The series inside the integral converges for small $\epsilon x$, defining a function that can be integrated to yield $f(\epsilon)$. This procedure works when the Borel transform has no singularities on the positive real axis.
+
+For the epsilon expansion, Borel summation yields excellent results. The resummed value $\gamma = 1.2385 \pm 0.0025$ for $d=3$ agrees remarkably with experiments. The method works up to $\epsilon = 2$ (corresponding to $d=2$), where the expansion maintains its asymptotic character without encountering singularities.
+
+The asymptotic nature is not a weakness but an inherent feature. It reflects the fact that critical phenomena involve all length scales simultaneously, making any local expansion ultimately divergent. The epsilon expansion succeeds not despite this divergence but because it correctly organizes the calculation to extract maximum information before the divergence sets in.
+
+** See also:
+- [[id:65bfed0c-c47e-40bf-bb38-131e31e24487][Critical Exponents Complete Set]] - Systematic exponent calculations
+- [[id:15c16740-5ced-49e8-8482-e4620b94cc96][Why ε-Expansion Works]] - Why marginality enables perturbation
+- [[id:0325a2b5-9c6d-4c66-a87a-8d5386c18d50][The 1/n Expansion]] - Alternative systematic approach
+- [[id:0d507ade-04dd-47f8-a67e-79074ce82b1a][Wilson-Fisher Fixed Point]] - Fixed point structure

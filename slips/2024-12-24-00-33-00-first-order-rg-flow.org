@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID:       994294f7-c282-4c3b-a694-724ef10aa4aa
+:CUSTOM_ID: 92/198
+:END:
+#+TITLE: First-Order RG Flow
+#+FILETAGS: :physics:spof:ch5:rg:flow:firstorder:instability:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The renormalization group flow at first order reveals a fundamental inadequacy for describing critical phenomena in dimensions \(d < 4\). The flow equations in the \((t,u)\) plane exhibit only the Gaussian fixed point at the origin, with trajectories determined by
+
+\[\frac{dt/d\ell}{du/d\ell} = \frac{2t + 4u(n+2)K_d\Lambda^d/(t+K\Lambda^2)}{(4-d)u}\]
+
+#+begin_example
+    t ↑
+      |
+      |
+      |
+    --•------→ u
+     /|
+    ↙ |
+   ↙  |
+  ↙   |
+
+      ↗  ↗  ↗     d < 4: u relevant
+     ↗  ↗  ↗      All flows escape to u → ∞
+    ↗  ↗  ↗
+              Gaussian fixed point unstable
+              in TWO directions
+
+              No basin of attraction
+              for critical behavior
+#+end_example
+
+For \(d > 4\), the Gaussian fixed point has one unstable direction along positive \(t\), correctly describing the phase transition. The \(u\) direction is irrelevant, and flows converge to the Gaussian model at long distances. This explains the validity of mean field theory above four dimensions.
+
+For \(d < 4\), however, the situation is problematic. The Gaussian fixed point possesses two relevant directions, making it completely unstable. All RG trajectories flow away toward large \(u\), where perturbation theory breaks down. No other fixed point exists at this order to control the critical behavior. The flow diagram starkly illustrates the failure of first-order perturbation theory to capture the non-trivial critical point known to exist from experiments.
+
+This failure is not merely technical but has deep physical meaning. The runaway flow toward strong coupling reflects the actual physics: fluctuations in low dimensions do indeed become strongly coupled near criticality. The resolution requires going to second order, where the nonlinear term in the \(u\) recursion relation can balance the linear instability and generate a new fixed point at finite coupling. This anticipates Wilson's key insight that critical phenomena in \(d < 4\) are controlled by a non-trivial interacting fixed point accessible perturbatively only near \(d = 4\).
+
+** See also:
+- [[id:3082db6d-2edb-436d-a129-3d84437aa629][First-Order Recursion Relations]]
+- [[id:ccb6d586-d039-42b5-b4fe-1da76046537a][Eigenvalues at Gaussian Fixed Point]]
+- [[id:f9419103-4f07-451a-8828-6e8b700d0586][Second-Order Recursion Relations]]
+- [[id:b7b3e1e0-4464-463d-94f9-42b82f4f8115][Wilson-Fisher RG Flow]]
+- [[id:3b6dd281-8a83-4424-abf9-d1cd14834174][Visual Grammar of RG]]

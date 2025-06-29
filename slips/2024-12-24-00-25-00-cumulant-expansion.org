@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       35ec114d-85b2-45e8-83cc-c8dd3f0913f8
+:CUSTOM_ID: 92/190
+:END:
+#+TITLE: Cumulant Expansion
+#+FILETAGS: :physics:spof:ch5:cumulant:expansion:connected:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The expectation value of any operator in the interacting theory requires careful treatment of the perturbative expansion. Starting from the ratio of path integrals,
+
+\[\langle\mathcal{O}\rangle = \frac{\int \mathcal{D} \vec{m} \mathcal{O}e^{-\beta \mathcal{H}_{0}-\mathcal{U}}}{\int \mathcal{D} \vec{m} \mathrm{e}^{-\beta \mathcal{H}_{0}-\mathcal{U}}}=\frac{\int \mathcal{D} \vec{m} \mathrm{e}^{-\beta \mathcal{H}_{0}} \mathcal{O}\left[1-\mathcal{U}+\mathcal{U}^{2} / 2-\cdots\right]}{\int \mathcal{D} \vec{m} \mathrm{e}^{-\beta \mathcal{H}_{0}}\left[1-\mathcal{U}+\mathcal{U}^{2} / 2-\cdots\right]}\]
+
+we expand the exponential of the interaction. The denominator, representing the interacting partition function, must be inverted—a procedure that generates increasingly complex terms.
+
+After inverting the denominator through geometric series expansion and collecting terms order by order, the result organizes naturally into cumulants:
+
+\[\langle\mathcal{O}\rangle = \sum_{n=0}^{\infty} \frac{(-1)^{n}}{n!}\left\langle\mathcal{O} \mathcal{U}^{n}\right\rangle_{0}^{c}\]
+
+The connected averages or cumulants \(\langle\mathcal{O}\mathcal{U}^n\rangle_0^c\) represent specific combinations of Gaussian expectation values. For instance, the first-order cumulant is \(\langle\mathcal{O}\mathcal{U}\rangle_0^c = \langle\mathcal{O}\mathcal{U}\rangle_0 - \langle\mathcal{O}\rangle_0\langle\mathcal{U}\rangle_0\), where the subtraction removes disconnected pieces.
+
+The profound simplification emerges diagrammatically: only fully connected diagrams contribute to cumulants. Disconnected pieces, which would proliferate without this organization, cancel systematically between numerator and denominator. This cancellation is not accidental but reflects the extensive nature of free energy—disconnected fluctuations in distant regions contribute additively to the partition function but not to local correlations. The cumulant expansion thus transforms an apparently intractable summation over all diagrams into a manageable sum over connected topologies.
+
+** See also:
+- [[id:c8a273c4-cd00-43a2-8cd2-06daeb31f8d5][The Perturbative Hamiltonian]]
+- [[id:8829064c-a63e-4f2a-87a7-70ee600e83c2][Wick's Theorem Complete]]
+- [[id:31cdd88b-857d-4b29-8d8b-be588d414f30][Diagrammatic Rules]]
+- [[id:6dd34de2-b432-409c-9936-7d65c6cf3d75][Two-Point Function at O(u)]]
+- [[id:044a6511-da90-48a9-8c80-6e7c24b3bd38][Second-Order Coarse Graining]]

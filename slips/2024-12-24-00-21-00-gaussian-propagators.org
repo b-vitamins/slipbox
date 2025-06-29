@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       8e05c5ca-9fa5-4603-9368-0a167dae1630
+:CUSTOM_ID: 92/186
+:END:
+#+TITLE: Gaussian Propagators
+#+FILETAGS: :physics:spof:ch5:gaussian:propagators:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The two-point correlation functions in the Gaussian model serve as the fundamental building blocks for all perturbative calculations. In a finite system with discrete momentum modes, the Gaussian weight yields
+
+\[\left\langle m_{\alpha}(\mathbf{q}) m_{\beta}\left(\mathbf{q}^{\prime}\right)\right\rangle_{0}=\frac{\delta_{\mathbf{q},-\mathbf{q}^{\prime}} \delta_{\alpha, \beta} V}{t+K q^{2}+L q^{4}+\cdots}\]
+
+where the subscript 0 denotes expectation values with respect to the unperturbed Hamiltonian. The volume factor \(V\) appears due to the discrete momentum sums.
+
+In the thermodynamic limit, the spectrum becomes continuous and the propagator transforms to
+
+\[\left\langle m_{\alpha}(\mathbf{q}) m_{\beta}\left(\mathbf{q}^{\prime}\right)\right\rangle_{0}=\frac{\delta_{\alpha, \beta}(2 \pi)^{d} \delta^{d}\left(\mathbf{q}+\mathbf{q}^{\prime}\right)}{t+K q^{2}+L q^{4}+\cdots}\]
+
+The delta function enforces momentum conservation—a manifestation of translational invariance. The denominator reveals the characteristic length scale \(\xi \sim (t/K)^{-1/2}\) when higher gradient terms are negligible. These propagators constitute the lines in Feynman diagrams and determine the infrared behavior of the theory. Their simple pole structure at \(t=0\) signals the Gaussian critical point, though interactions will shift this singularity to negative values of \(t\).
+
+** See also:
+- [[id:c8a273c4-cd00-43a2-8cd2-06daeb31f8d5][The Perturbative Hamiltonian]]
+- [[id:8829064c-a63e-4f2a-87a7-70ee600e83c2][Wick's Theorem Complete]]
+- [[id:31cdd88b-857d-4b29-8d8b-be588d414f30][Diagrammatic Rules]]
+- [[id:6dd34de2-b432-409c-9936-7d65c6cf3d75][Two-Point Function at O(u)]]

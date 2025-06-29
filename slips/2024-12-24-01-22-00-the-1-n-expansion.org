@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       0325a2b5-9c6d-4c66-a87a-8d5386c18d50
+:CUSTOM_ID: 92/214
+:END:
+#+TITLE: The 1/n Expansion
+#+FILETAGS: :physics:criticalphenomena:rg:largen:expansion:alternative:
+
+The observation that the Wilson-Fisher fixed point coupling vanishes as $u^* \sim \epsilon/(n+8)$ suggests an alternative expansion in powers of $1/n$ for large $n$. This expansion complements the epsilon expansion by providing exact results in certain limits and serving as a check on the epsilon expansion predictions.
+
+In the limit $n \to \infty$, the fixed point coupling vanishes, making the problem exactly solvable. The thermal eigenvalue from the epsilon expansion becomes
+
+\[y_t = \lim_{n \to \infty}\left[2-\frac{n+2}{n+8}(4-d)\right] = d-2\]
+
+This yields the correlation length exponent
+
+\[\nu = \frac{1}{d-2}\]
+
+remarkably simple and exact for all $2 < d < 4$ in the large-$n$ limit. For $d > 4$, mean field behavior $\nu = 1/2$ is recovered, while for $d < 2$, no ordered phase exists.
+
+The $1/n$ expansion can be developed systematically using several approaches. The saddle-point method exploits the exponential dependence on $n$ in the partition function. Alternatively, exact resummation of certain classes of diagrams—those with maximum powers of $n$ at each order—yields the large-$n$ results. The leading corrections are of order $1/n$, giving
+
+\[\nu = \frac{1}{d-2}\left[1 + \frac{2(4-d)}{(d-2)^2}\frac{1}{n} + \mathcal{O}(1/n^2)\right]\]
+
+The $1/n$ expansion has several advantages. It provides non-perturbative results valid for arbitrary $\epsilon = 4-d$. It can be extended more easily to finite temperature and dynamics. Most importantly, it serves as an independent check on the epsilon expansion. Both expansions yield consistent results in their overlapping regime of validity (small $\epsilon$, large $n$), with the relation
+
+\[\nu = \frac{1}{2} + \frac{\epsilon}{4} + \frac{\epsilon}{4n} + \mathcal{O}(\epsilon^2, \epsilon/n^2)\]
+
+The existence of multiple systematic expansions—in $\epsilon$, in $1/n$, and in high-temperature series—provides confidence in our understanding of critical phenomena. Each expansion illuminates different aspects: epsilon expansion reveals universality near four dimensions, $1/n$ expansion provides exact results in a solvable limit, and series expansions connect to specific models. Together they form a comprehensive framework for calculating critical behavior.
+
+** See also:
+- [[id:0d507ade-04dd-47f8-a67e-79074ce82b1a][Wilson-Fisher Fixed Point]] - Fixed point structure for finite $n$
+- [[id:b8900858-9d85-48ee-898c-d4aa4c4a5572][Asymptotic Nature of ε-Expansion]] - Comparison of expansion methods
+- [[id:65bfed0c-c47e-40bf-bb38-131e31e24487][Critical Exponents Complete Set]] - Systematic calculations

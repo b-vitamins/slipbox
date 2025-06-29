@@ -1,0 +1,57 @@
+:PROPERTIES:
+:ID:       417c542c-f264-4f2b-a03b-2eaff4984ebf
+:CUSTOM_ID: 92/217
+:END:
+#+TITLE: Visual Content Map
+#+FILETAGS: :physics:criticalphenomena:visualization:index:organization:
+
+This map organizes all visual elements in the zettelkasten by their conceptual role, providing rapid access to diagrams and flow pictures.
+
+** Conceptual Flow Diagrams
+
+**RG Phase Portraits**
+- First-order flow (incomplete): [[id:994294f7-c282-4c3b-a694-724ef10aa4aa][First-Order RG Flow]] — Shows runaway to strong coupling
+- Second-order flow (complete): [[id:b7b3e1e0-4464-463d-94f9-42b82f4f8115][Wilson-Fisher RG Flow]] — Wilson-Fisher fixed point emerges
+- Basin of attraction (3D projection): [[id:6dad994a-6334-42d4-a906-301d66240bbe][Universality Basin Visualization]] — Codimension-one critical surface
+- Visual grammar reference: [[id:3b6dd281-8a83-4424-abf9-d1cd14834174][Visual Grammar of RG]] — Universal notation for RG flows
+
+**Physical Visualizations**
+- Susceptibility shift: [[id:0dbd8aa2-8baa-4fa0-bc72-22f82922f2d5][Susceptibility Shift Visualization]] — Critical temperature moves to $t_c < 0$
+- Crossover behavior: implicit in [[id:b7b3e1e0-4464-463d-94f9-42b82f4f8115][Wilson-Fisher RG Flow]] — Gaussian to Wilson-Fisher
+
+** Computational Diagrams
+
+**Feynman Diagram Elements**
+- Basic elements (propagators, vertices): [[id:c4985306-40cd-40e1-bf08-3fe0f06b4e9d][Diagrammatic Elements]] — Building blocks
+- Diagram enumeration rules: [[id:fbcaaf21-5e53-4161-89f6-ff3be967b757][Diagram Topology Rules]] — Topological classification
+
+**Specific Calculations**
+- First-order propagator correction: [[id:aef8674d-1241-400e-8fe0-f133a0e9fb22][Diagrammatic Calculations]] — All 15 contractions illustrated
+- Second-order organization table: [[id:85e7c344-fdd8-4124-9faf-79b8bde9b932][Second-Order Diagrams]] — 36 possibilities systematized
+- Loop diagrams: embedded in [[id:aef8674d-1241-400e-8fe0-f133a0e9fb22][Diagrammatic Calculations]], [[id:85e7c344-fdd8-4124-9faf-79b8bde9b932][Second-Order Diagrams]]
+
+** Structural Visualizations
+
+**Parameter Space Geometry**
+- Operator proliferation: implicit in [[id:044a6511-da90-48a9-8c80-6e7c24b3bd38][Second-Order Coarse Graining]] — Infinite-dimensional coupling space
+- Universality basin: [[id:6dad994a-6334-42d4-a906-301d66240bbe][Universality Basin Visualization]] — Geometric meaning of universality
+- Fixed point structure: [[id:b7b3e1e0-4464-463d-94f9-42b82f4f8115][Wilson-Fisher RG Flow]] — Stable/unstable manifolds
+
+**Hierarchical Organization**
+- Eigenvalue hierarchy: implicit in [[id:177951a3-8877-4624-bace-65e353e88a00][Complete Operator Space]] — Relevant/irrelevant spectrum
+- Length scale separation: throughout RG flows — UV to IR evolution
+
+** Meta-Visualizations
+
+**Conceptual Maps**
+- Chapter flow: Foundation → Perturbation → RG → Results
+- Equation organization: see [[id:f36a1bf4-bd62-49c1-924a-0af519117026][Equation Quick Reference]]
+- Connection structure: This document
+
+The visual elements form a complete narrative: from the failure of naive perturbation theory (susceptibility shift) through the inadequacy of first-order RG (runaway flows) to the resolution via the Wilson-Fisher fixed point (complete flow diagram) and its universal basin of attraction. Each diagram captures a key conceptual step in understanding how universality emerges from the renormalization group.
+
+** See also:
+- [[id:c4985306-40cd-40e1-bf08-3fe0f06b4e9d][Diagrammatic Elements]] - Basic visual building blocks
+- [[id:3b6dd281-8a83-4424-abf9-d1cd14834174][Visual Grammar of RG]] - Universal notation system
+- [[id:fbcaaf21-5e53-4161-89f6-ff3be967b757][Diagram Topology Rules]] - Systematic organization
+- [[id:f36a1bf4-bd62-49c1-924a-0af519117026][Equation Quick Reference]] - Mathematical organization

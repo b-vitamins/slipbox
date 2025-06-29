@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID:       6dad994a-6334-42d4-a906-301d66240bbe
+:CUSTOM_ID: 92/207
+:END:
+#+TITLE: Universality Basin Visualization
+#+FILETAGS: :physics:criticalphenomena:rg:universality:wilson:visualization:
+
+The basin of attraction of the Wilson-Fisher fixed point in the infinite-dimensional coupling space manifests the principle of universality geometrically. Consider a schematic projection onto the three-dimensional space of $(t, u, v)$:
+
+#+BEGIN_EXAMPLE
+           t ↑
+            /|\
+           / | \
+          /  |  \      Critical surface
+         /   |   \     (codimension 1)
+        /    |    \    
+       /     •FP   \   Wilson-Fisher
+      /    .' '.    \  fixed point
+     /   .'  ↙  '.   \
+    /  .'   ↙    '.  \
+   /  '    ↙      '   \
+  /__'____↙________'___\ u
+  \  '   ↙         '   /
+   \ '. ↙         .'  / 
+    \ .↙__________.  /
+     \             v/
+      \           /
+       \_________/
+         
+   Arrows: RG flow
+   Surface: Basin boundary
+   All flows inside surface → FP
+#+END_EXAMPLE
+
+The Wilson-Fisher fixed point sits at negative $t^*$, positive $u^*$, with all other couplings at their fixed point values (typically zero). The basin of attraction forms a codimension-one surface in the full coupling space—microscopic Hamiltonians on one side flow to the ordered phase, while those on the other side flow to the disordered phase.
+
+Within the basin, all trajectories converge to the fixed point along irrelevant directions. The approach to the fixed point is governed by the eigenvalues: fast decay along strongly irrelevant directions ($y \ll 0$), slower decay along marginal directions. Only motion perpendicular to the basin surface, along the relevant eigendirection, takes the system away from criticality.
+
+This geometric picture explains why vastly different microscopic models yield identical critical exponents. Consider two materials with different crystal structures, interaction ranges, and microscopic couplings—represented by two points in coupling space. If both lie within the basin of attraction, RG flow carries them to the same fixed point. Their microscopic differences correspond to different positions along irrelevant directions, which are forgotten under RG flow. Only their shared properties—symmetry and dimensionality—matter for critical behavior.
+
+The codimension-one nature of the critical surface means we need to tune only one parameter (temperature) to reach criticality, regardless of the complexity of the microscopic Hamiltonian. This reduction from infinite dimensions to one is the geometric meaning of universality.
+
+** See also:
+- [[id:177951a3-8877-4624-bace-65e353e88a00][Complete Operator Space]] - Full infinite-dimensional coupling space
+- [[id:8d6a356d-0764-4fba-9fe9-e4d4e10c8a84][Basin of Attraction]] - Mathematical structure
+- [[id:3b6dd281-8a83-4424-abf9-d1cd14834174][Visual Grammar of RG]] - Universal notation for flows

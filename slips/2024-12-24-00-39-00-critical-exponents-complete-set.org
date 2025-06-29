@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID:       65bfed0c-c47e-40bf-bb38-131e31e24487
+:CUSTOM_ID: 92/204
+:END:
+#+TITLE: Critical Exponents Complete Set
+#+FILETAGS: :physics:spof:ch5:exponents:critical:epsilon:universality:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The eigenvalues at the Wilson-Fisher fixed point determine the complete set of critical exponents to order \(\epsilon\). The thermal eigenvalue becomes
+
+\[y_{t}=2-\frac{(n+2)}{(n+8)} \epsilon+\mathcal{O}\left(\epsilon^{2}\right)\]
+
+while the quartic coupling eigenvalue is
+
+\[y_{u}=-\epsilon+\mathcal{O}\left(\epsilon^{2}\right)\]
+
+The negative sign of \(y_u\) for \(d < 4\) confirms that the Wilson-Fisher fixed point is stable along the interaction direction, in contrast to the Gaussian fixed point.
+
+The correlation length exponent follows immediately from the thermal eigenvalue:
+
+\[\nu=\frac{1}{y_{t}}=\frac{1}{2}+\frac{1}{4} \frac{n+2}{n+8} \epsilon+\mathcal{O}\left(\epsilon^{2}\right)\]
+
+The magnetic field requires separate analysis. Adding \(-\vec{h} \cdot \vec{m}(\mathbf{q}=0)\) to the Hamiltonian, this term transforms under RG as \(h' = zh = b^{1+d/2}h\), yielding
+
+\[y_{h}=1+\frac{d}{2}+\mathcal{O}\left(\epsilon^{2}\right)=3-\frac{\epsilon}{2}+\mathcal{O}\left(\epsilon^{2}\right)\]
+
+From these fundamental eigenvalues, all thermodynamic exponents follow via scaling relations:
+
+\[\beta =\frac{d-y_{h}}{y_{t}}=\frac{1}{2}-\frac{3}{2(n+8)} \epsilon+\mathcal{O}\left(\epsilon^{2}\right)\]
+
+\[\gamma =\frac{2 y_{h}-d}{y_{t}}=1+\frac{n+2}{2(n+8)} \epsilon+\mathcal{O}\left(\epsilon^{2}\right)\]
+
+\[\alpha =2-d \nu=\frac{4-n}{2(n+8)} \epsilon+\mathcal{O}\left(\epsilon^{2}\right)\]
+
+These exponents satisfy the scaling relations \(\alpha + 2\beta + \gamma = 2\) and \(\gamma = \nu(2-\eta)\) with \(\eta = 0\) at this order. The systematic decrease of \(\beta\) with dimension and the sign change of \(\alpha\) for \(n > 4\) match experimental observations. For the Ising model (\(n=1\)) in three dimensions (\(\epsilon=1\)), the estimates \(\nu \approx 0.58\), \(\beta \approx 0.33\), \(\gamma \approx 1.19\) compare favorably with experimental values \(\nu \approx 0.63\), \(\beta \approx 0.32\), \(\gamma \approx 1.24\). The agreement improves at higher orders and with more sophisticated resummation techniques.
+
+** See also:
+- [[id:0d507ade-04dd-47f8-a67e-79074ce82b1a][Wilson-Fisher Fixed Point]]
+- [[id:3e18de51-4767-45fe-9749-2e873c0ba436][Magnetic Field Eigenvalue]]
+- [[id:177951a3-8877-4624-bace-65e353e88a00][Complete Operator Space]]
+- [[id:439ee9fa-a718-42ee-b8d5-06d6fc7dc17f][Connection to Experiments]]

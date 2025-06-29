@@ -1,0 +1,49 @@
+:PROPERTIES:
+:ID:       ece5088a-cd7e-4131-8309-195bddec871d
+:CUSTOM_ID: 92/220
+:END:
+#+TITLE: Chapter 5 Synthesis
+#+FILETAGS: :physics:criticalphenomena:synthesis:meta:wilson:insights:
+
+Chapter 5 achieves what seemed impossible: a systematic calculation of universal critical exponents beyond mean field theory. The chapter's intellectual arc moves from apparent failure to triumphant resolution, embodying the modern understanding of critical phenomena.
+
+** The Central Tension
+
+The chapter opens with a paradox. Perturbation theory in the quartic coupling $u$ appears natural since mean field theory suggests $u$ is small. Yet dimensional analysis reveals that the effective coupling $u\xi^{d-4}$ diverges at criticality for $d < 4$, precisely where experiments show non-mean-field behavior. This divergence is not a technical annoyance but reflects deep physics: long-wavelength fluctuations in low dimensions interact strongly regardless of the bare coupling strength.
+
+** The Resolution Through RG
+
+Wilson's genius was recognizing that this failure contains its own resolution. Rather than treating $u$ as small at fixed dimension, we treat $\epsilon = 4-d$ as small and find the non-trivial fixed point at $u^* \sim \epsilon$. This reorganization transforms a divergent expansion in $u$ into a controlled expansion in $\epsilon$.
+
+The technical implementation requires marrying perturbation theory with renormalization group:
+1. Calculate perturbative corrections to correlation functions
+2. Implement RG through mode elimination (coarse-graining)
+3. Find fixed points of the recursion relations
+4. Extract universal eigenvalues determining critical exponents
+
+** Key Insights
+
+**Universality emerges geometrically**: The Wilson-Fisher fixed point has a basin of attraction of codimension one. All microscopic Hamiltonians within this basin flow to the same fixed point, forgetting their differences along irrelevant directions. Only symmetry and dimensionality survive the RG flow to determine critical behavior.
+
+**Operators mix under RG**: Even starting with just $m^2$ and $m^4$ terms, the RG generates all operators consistent with symmetry. The true scaling fields are eigenoperators of the RG transformation, not the bare couplings. This mixing is essential for consistency but does not affect universal quantities.
+
+**The expansion is asymptotic, not convergent**: The factorial growth of high-order terms reflects the non-perturbative nature of critical phenomena. Borel summation extracts finite, accurate results from divergent series. The asymptotic nature is fundamental, not a technical limitation.
+
+** Broader Significance
+
+The epsilon expansion transformed critical phenomena from a collection of empirical observations into a systematic science. Its methods extend throughout physics:
+- **Conceptually**: The idea of expanding around marginal dimensions applies wherever perturbation theory fails in physical dimensions
+- **Technically**: The diagrammatic methods and RG implementation provide templates for other field theories
+- **Philosophically**: The emergence of universality from microscopic complexity exemplifies how simple laws can govern complex phenomena
+
+The chapter embodies the modern physicist's approach: when direct attack fails, reorganize the problem around a different expansion parameter. The epsilon expansion's success validates this strategy and provides a paradigm for understanding emergent phenomena throughout physics.
+
+** See also:
+- [[id:c8a273c4-cd00-43a2-8cd2-06daeb31f8d5][The Perturbative Hamiltonian]] - Starting point
+- [[id:1b498be6-812c-4c7b-98bb-5ee0683acb79][Perturbation Theory Breaks Down]] - The central problem
+- [[id:0d507ade-04dd-47f8-a67e-79074ce82b1a][Wilson-Fisher Fixed Point]] - The resolution
+- [[id:65bfed0c-c47e-40bf-bb38-131e31e24487][Critical Exponents Complete Set]] - The results
+- [[id:8d6a356d-0764-4fba-9fe9-e4d4e10c8a84][Basin of Attraction]] - Geometric understanding
+- [[id:15c16740-5ced-49e8-8482-e4620b94cc96][Why ε-Expansion Works]] - Conceptual foundation
+- [[id:3b6dd281-8a83-4424-abf9-d1cd14834174][Visual Grammar of RG]] - Universal language
+- [[id:ec7cc3a8-f822-4530-8679-4cb0cfb29970][Cross-Chapter Connections]] - Synthesis with other chapters

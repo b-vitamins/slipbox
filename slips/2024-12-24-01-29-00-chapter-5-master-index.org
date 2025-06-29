@@ -1,0 +1,78 @@
+:PROPERTIES:
+:ID:       f8a9b2c3-d4e5-4f67-8901-2345678901ab
+:CUSTOM_ID: 92/221
+:END:
+#+TITLE: Chapter 5 Master Index
+#+FILETAGS: :physics:criticalphenomena:index:masterindex:navigation:
+
+This index provides complete navigation through my Zettelkasten for Chapter 5 "Perturbative renormalization group" of Kardar's Statistical Physics of Fields. The 37 zettels capture all essential physics, mathematics, and visualizations, ensuring I need never return to the original text.
+
+** Foundational Framework (5A-5D)
+- [[id:c8a273c4-cd00-43a2-8cd2-06daeb31f8d5][The Perturbative Hamiltonian]] - Decomposition into Gaussian + interaction
+- [[id:8e05c5ca-9fa5-4603-9368-0a167dae1630][Gaussian Propagators]] - Building blocks for all calculations
+- [[id:1b498be6-812c-4c7b-98bb-5ee0683acb79][Perturbation Theory Breaks Down]] - Why $u\xi^{d-4}$ diverges at criticality
+- [[id:0dbd8aa2-8baa-4fa0-bc72-22f82922f2d5][Susceptibility Shift Visualization]] - Critical temperature moves to $t_c < 0$
+- [[id:8829064c-a63e-4f2a-87a7-70ee600e83c2][Wick's Theorem Complete]] - Computing Gaussian averages systematically
+- [[id:31cdd88b-857d-4b29-8d8b-be588d414f30][Diagrammatic Rules]] - Visual language for perturbation theory
+- [[id:c4985306-40cd-40e1-bf08-3fe0f06b4e9d][Diagrammatic Elements]] - Propagators, vertices, and their meaning
+
+** Perturbative Calculations (5E-5F)
+- [[id:35ec114d-85b2-45e8-83cc-c8dd3f0913f8][Cumulant Expansion]] - Connected correlations simplify calculations
+- [[id:6dd34de2-b432-409c-9936-7d65c6cf3d75][Two-Point Function at O(u)]] - First correction to propagator
+- [[id:454a3afe-562b-4ee0-8eab-5392a5bb4817][Susceptibility Analysis]] - Complete calculation showing $t_c$ shift
+- [[id:aef8674d-1241-400e-8fe0-f133a0e9fb22][Diagrammatic Calculations]] - Visual guide to contractions
+
+** First-Order RG Analysis (5G-5H)
+- [[id:733ebc28-096d-404e-9e2f-74ad3a25a54e][First-Order Coarse Graining]] - Mode elimination procedure
+- [[id:3082db6d-2edb-436d-a129-3d84437aa629][First-Order Recursion Relations]] - Flow equations $dt/d\ell$, $du/d\ell$
+- [[id:994294f7-c282-4c3b-a694-724ef10aa4aa][First-Order RG Flow]] - Runaway to strong coupling for $d < 4$
+- [[id:ccb6d586-d039-42b5-b4fe-1da76046537a][Eigenvalues at Gaussian Fixed Point]] - $y_t = 2$, $y_u = 4-d$
+
+** Second-Order & Wilson-Fisher (5I-5M)
+- [[id:044a6511-da90-48a9-8c80-6e7c24b3bd38][Second-Order Coarse Graining]] - New operators generated
+- [[id:85e7c344-fdd8-4124-9faf-79b8bde9b932][Second-Order Diagrams]] - Systematic enumeration of contributions
+- [[id:f9419103-4f07-451a-8828-6e8b700d0586][Second-Order Recursion Relations]] - Nonlinear term saves the day
+- [[id:0d507ade-04dd-47f8-a67e-79074ce82b1a][Wilson-Fisher Fixed Point]] - $u^* \sim \epsilon$, $t^* \sim -\epsilon$
+- [[id:b7b3e1e0-4464-463d-94f9-42b82f4f8115][Wilson-Fisher RG Flow]] - Complete phase portrait
+- [[id:65bfed0c-c47e-40bf-bb38-131e31e24487][Critical Exponents Complete Set]] - All exponents to O($\epsilon$)
+- [[id:3e18de51-4767-45fe-9749-2e873c0ba436][Magnetic Field Eigenvalue]] - $y_h = 3 - \epsilon/2$
+
+** Universality & Extensions (5N-5T)
+- [[id:177951a3-8877-4624-bace-65e353e88a00][Complete Operator Space]] - All operators and their eigenvalues
+- [[id:8d6a356d-0764-4fba-9fe9-e4d4e10c8a84][Basin of Attraction]] - Codimension-one critical surface
+- [[id:6dad994a-6334-42d4-a906-301d66240bbe][Universality Basin Visualization]] - Geometric view of universality
+- [[id:15c16740-5ced-49e8-8482-e4620b94cc96][Why ε-Expansion Works]] - Marginality at $d = 4$
+- [[id:b8900858-9d85-48ee-898c-d4aa4c4a5572][Asymptotic Nature of ε-Expansion]] - Borel summation required
+- [[id:db4d68a2-cb3f-45a7-bd6a-e1de03e843b4][Operator Mixing Under RG]] - Eigendirections ≠ bare couplings
+- [[id:439ee9fa-a718-42ee-b8d5-06d6fc7dc17f][Connection to Experiments]] - Quantitative validation
+- [[id:0325a2b5-9c6d-4c66-a87a-8d5386c18d50][The 1/n Expansion]] - Alternative systematic approach
+
+** Visual & Organizational (5V-5/Meta)
+- [[id:3b6dd281-8a83-4424-abf9-d1cd14834174][Visual Grammar of RG]] - Universal notation for flows
+- [[id:fbcaaf21-5e53-4161-89f6-ff3be967b757][Diagram Topology Rules]] - Systematic Feynman diagram counting
+- [[id:417c542c-f264-4f2b-a03b-2eaff4984ebf][Visual Content Map]] - All figures and diagrams indexed
+- [[id:f36a1bf4-bd62-49c1-924a-0af519117026][Equation Quick Reference]] - All 76 equations located
+- [[id:ec7cc3a8-f822-4530-8679-4cb0cfb29970][Cross-Chapter Connections]] - Links to Chapters 2, 3, 4
+- [[id:ece5088a-cd7e-4131-8309-195bddec871d][Chapter 5 Synthesis]] - The intellectual arc
+
+** Navigation Paths
+
+*** Path 1: Why Perturbation Theory Fails
+[[id:c8a273c4-cd00-43a2-8cd2-06daeb31f8d5][The Perturbative Hamiltonian]] → [[id:1b498be6-812c-4c7b-98bb-5ee0683acb79][Perturbation Theory Breaks Down]] → [[id:454a3afe-562b-4ee0-8eab-5392a5bb4817][Susceptibility Analysis]] → [[id:994294f7-c282-4c3b-a694-724ef10aa4aa][First-Order RG Flow]] → [[id:f9419103-4f07-451a-8828-6e8b700d0586][Second-Order Recursion Relations]]
+
+*** Path 2: Building the Solution
+[[id:8829064c-a63e-4f2a-87a7-70ee600e83c2][Wick's Theorem Complete]] → [[id:31cdd88b-857d-4b29-8d8b-be588d414f30][Diagrammatic Rules]] → [[id:35ec114d-85b2-45e8-83cc-c8dd3f0913f8][Cumulant Expansion]] → [[id:733ebc28-096d-404e-9e2f-74ad3a25a54e][First-Order Coarse Graining]] → [[id:044a6511-da90-48a9-8c80-6e7c24b3bd38][Second-Order Coarse Graining]] → [[id:f9419103-4f07-451a-8828-6e8b700d0586][Second-Order Recursion Relations]] → [[id:0d507ade-04dd-47f8-a67e-79074ce82b1a][Wilson-Fisher Fixed Point]]
+
+*** Path 3: Calculating Exponents
+[[id:0d507ade-04dd-47f8-a67e-79074ce82b1a][Wilson-Fisher Fixed Point]] → [[id:65bfed0c-c47e-40bf-bb38-131e31e24487][Critical Exponents Complete Set]] → [[id:3e18de51-4767-45fe-9749-2e873c0ba436][Magnetic Field Eigenvalue]] → [[id:439ee9fa-a718-42ee-b8d5-06d6fc7dc17f][Connection to Experiments]]
+
+*** Path 4: Understanding Universality
+[[id:177951a3-8877-4624-bace-65e353e88a00][Complete Operator Space]] → [[id:8d6a356d-0764-4fba-9fe9-e4d4e10c8a84][Basin of Attraction]] → [[id:6dad994a-6334-42d4-a906-301d66240bbe][Universality Basin Visualization]] → [[id:db4d68a2-cb3f-45a7-bd6a-e1de03e843b4][Operator Mixing Under RG]] → [[id:15c16740-5ced-49e8-8482-e4620b94cc96][Why ε-Expansion Works]]
+
+*** Path 5: Technical Mastery
+[[id:6dd34de2-b432-409c-9936-7d65c6cf3d75][Two-Point Function at O(u)]] → [[id:aef8674d-1241-400e-8fe0-f133a0e9fb22][Diagrammatic Calculations]] → [[id:85e7c344-fdd8-4124-9faf-79b8bde9b932][Second-Order Diagrams]] → [[id:fbcaaf21-5e53-4161-89f6-ff3be967b757][Diagram Topology Rules]] → [[id:b8900858-9d85-48ee-898c-d4aa4c4a5572][Asymptotic Nature of ε-Expansion]] → [[id:0325a2b5-9c6d-4c66-a87a-8d5386c18d50][The 1/n Expansion]]
+
+*** Path 6: Visual Understanding
+[[id:0dbd8aa2-8baa-4fa0-bc72-22f82922f2d5][Susceptibility Shift Visualization]] → [[id:994294f7-c282-4c3b-a694-724ef10aa4aa][First-Order RG Flow]] → [[id:b7b3e1e0-4464-463d-94f9-42b82f4f8115][Wilson-Fisher RG Flow]] → [[id:6dad994a-6334-42d4-a906-301d66240bbe][Universality Basin Visualization]] → [[id:3b6dd281-8a83-4424-abf9-d1cd14834174][Visual Grammar of RG]]
+
+**Meta-observation**: This Zettelkasten embodies Wilson's revolutionary insight—that the apparent failure of perturbation theory near criticality contains within it the seeds of a systematic solution. The network structure mirrors the conceptual development: from recognizing the problem (divergence of naive perturbation theory) through technical innovation (combining perturbation theory with RG) to triumphant resolution (the epsilon expansion). Each path through the material reveals different facets of how universality emerges from the renormalization group flow near marginal dimensions.

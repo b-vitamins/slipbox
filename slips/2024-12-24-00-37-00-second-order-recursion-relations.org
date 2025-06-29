@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       f9419103-4f07-451a-8828-6e8b700d0586
+:CUSTOM_ID: 92/202
+:END:
+#+TITLE: Second-Order Recursion Relations
+#+FILETAGS: :physics:spof:ch5:rg:secondorder:recursion:nonlinear:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The second-order calculation modifies the renormalization group transformation fundamentally. After coarse graining to order \(u^2\), the parameters transform as
+
+\[\left\{\begin{array}{l}
+\tilde{K}=K-u^{2} A^{\prime \prime}(0) \\
+\tilde{t}=t+4(n+2) u \int_{\Lambda / b}^{\Lambda} \frac{\mathrm{d}^{d} \mathbf{k}}{(2 \pi)^{d}} \frac{1}{t+K k^{2}}-u^{2} A(0) \\
+\tilde{u}=u-4(n+8) u^{2} \int_{\Lambda / b}^{\Lambda} \frac{\mathrm{d}^{d} \mathbf{k}}{(2 \pi)^{d}} \frac{1}{\left(t+K k^{2}\right)^{2}}
+\end{array}\right.\]
+
+The functions \(A(0)\) and \(A''(0)\) represent contributions from various second-order diagrams to the temperature and gradient terms respectively. Their precise values are not needed for the leading-order epsilon expansion.
+
+The crucial innovation appears in the quartic coupling transformation: a nonlinear term proportional to \(u^2\) now opposes the linear growth. After rescaling and choosing \(z^2 = b^{d+2}[1 + O(u^2)]\) to maintain \(K' = K\), the differential recursion relations become
+
+\[\left\{\begin{array}{l}
+\frac{\mathrm{d} t}{\mathrm{~d} \ell}=2 t+\frac{4 u(n+2) K_{d} \Lambda^{d}}{t+K \Lambda^{2}}-A(t, K, \Lambda) u^{2} \\
+\frac{\mathrm{d} u}{\mathrm{~d} \ell}=(4-d) u-\frac{4(n+8) K_{d} \Lambda^{d}}{\left(t+K \Lambda^{2}\right)^{2}} u^{2}
+\end{array}\right.\]
+
+The nonlinear term in the \(u\) equation changes everything. For \(d < 4\), it can balance the linear instability, permitting a non-trivial fixed point where \(du/d\ell = 0\) at finite \(u^*\). Setting the right-hand side to zero yields
+
+\[u^{*}=\frac{\left(t^{*}+K \Lambda^{2}\right)^{2}(4-d)}{4(n+8) K_{d} \Lambda^{d}}\]
+
+This fixed point exists only for \(d < 4\) and vanishes as \(d \to 4\), suggesting a systematic expansion in \(\epsilon = 4-d\). The corresponding fixed point temperature is determined by requiring \(dt/d\ell = 0\), giving \(t^* < 0\). The negative value confirms that the true critical point occurs below the mean field transition, as fluctuations generally disorder the system. This Wilson-Fisher fixed point controls the critical behavior in all dimensions below four, providing the key to understanding universality.
+
+** See also:
+- [[id:044a6511-da90-48a9-8c80-6e7c24b3bd38][Second-Order Coarse Graining]]
+- [[id:85e7c344-fdd8-4124-9faf-79b8bde9b932][Second-Order Diagrams]]
+- [[id:0d507ade-04dd-47f8-a67e-79074ce82b1a][Wilson-Fisher Fixed Point]]
+- [[id:b7b3e1e0-4464-463d-94f9-42b82f4f8115][Wilson-Fisher RG Flow]]
+- [[id:177951a3-8877-4624-bace-65e353e88a00][Complete Operator Space]]

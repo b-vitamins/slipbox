@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       c8a273c4-cd00-43a2-8cd2-06daeb31f8d5
+:CUSTOM_ID: 92/185
+:END:
+#+TITLE: The Perturbative Hamiltonian
+#+FILETAGS: :physics:spof:ch5:perturbation:hamiltonian:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The central question of perturbative renormalization group theory is whether we can treat the quartic interaction in the Landau-Ginzburg Hamiltonian as a small perturbation to the Gaussian model. The full Hamiltonian takes the form
+
+\[\beta \mathcal{H}= \beta \mathcal{H}_{0}+U \equiv \int \mathrm{d}^{d} \mathbf{x}\left[\frac{t}{2} m^{2}+\frac{K}{2}(\nabla m)^{2}+\frac{L}{2}\left(\nabla^{2} m\right)^{2}+\cdots\right] + u \int \mathrm{d}^{d} \mathbf{x} m^{4}+\cdots\]
+
+where the Gaussian part \(\mathcal{H}_0\) contains all quadratic terms and \(U\) represents the perturbative interactions. The separation appears natural since mean field theory suggests \(u\) is small near the upper critical dimension.
+
+In Fourier space, the Gaussian Hamiltonian becomes diagonal:
+
+\[\beta \mathcal{H}_{0} = \int \frac{\mathrm{d}^{d} \mathbf{q}}{(2 \pi)^{d}} \frac{t+K q^{2}+L q^{4}+\cdots}{2}|m(\mathbf{q})|^{2}\]
+
+This diagonal form makes Gaussian expectation values tractable. The interaction term, however, couples different Fourier modes:
+
+\[U = u \int \frac{\mathrm{d}^{d} \mathbf{q}_{1} \mathrm{~d}^{d} \mathbf{q}_{2} \mathrm{~d}^{d} \mathbf{q}_{3}}{(2 \pi)^{3 d}} m_{\alpha}\left(\mathbf{q}_{1}\right) m_{\alpha}\left(\mathbf{q}_{2}\right) m_{\beta}\left(\mathbf{q}_{3}\right) m_{\beta}\left(-\mathbf{q}_{1}-\mathbf{q}_{2}-\mathbf{q}_{3}\right)+\cdots\]
+
+The momentum conservation encoded in the final argument arises from the spatial integral over the interaction. This coupling between modes is what makes the interacting theory non-trivial and ultimately leads to the breakdown of naive perturbation theory near criticality.
+
+** See also:
+- [[id:8e05c5ca-9fa5-4603-9368-0a167dae1630][Gaussian Propagators]]
+- [[id:1b498be6-812c-4c7b-98bb-5ee0683acb79][Perturbation Theory Breaks Down Near Criticality]]
+- [[id:35ec114d-85b2-45e8-83cc-c8dd3f0913f8][Cumulant Expansion]]

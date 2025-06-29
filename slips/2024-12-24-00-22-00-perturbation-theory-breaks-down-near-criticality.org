@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       1b498be6-812c-4c7b-98bb-5ee0683acb79
+:CUSTOM_ID: 92/187
+:END:
+#+TITLE: Perturbation Theory Breaks Down Near Criticality
+#+FILETAGS: :physics:spof:ch5:perturbation:criticality:breakdown:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The fundamental obstacle to a naive perturbative treatment of the Landau-Ginzburg model emerges from dimensional analysis. The coupling constant \(u\) has dimensions of \([u] = \text{energy} \times \text{length}^d\), which when combined with the gradient coefficient yields the dimensionless ratio \(u/K^2\) with dimensions of length\(^{d-4}\). This immediately reveals that four is the upper critical dimension.
+
+Near the critical point, the only available length scale is the correlation length \(\xi\). The effective dimensionless coupling that controls the perturbation expansion becomes \(g_{\text{eff}} \sim u\xi^{d-4}/K^2\). For dimensions \(d < 4\), this effective coupling diverges as \(\xi \to \infty\) at criticality, regardless of how small the bare coupling \(u\) might be. The perturbation expansion in powers of \(u\) therefore fails precisely where we need it most—at the phase transition.
+
+This breakdown is not merely technical but reflects deep physics. The interaction becomes effectively strong near criticality because long-wavelength fluctuations, which dominate critical phenomena, interact more strongly in lower dimensions. The divergence of \(g_{\text{eff}}\) signals that these fluctuations fundamentally alter the nature of the transition away from mean field behavior. Wilson's genius was recognizing that this apparent failure could be turned into a systematic calculational scheme through the epsilon expansion around \(d = 4\).
+
+** See also:
+- [[id:c8a273c4-cd00-43a2-8cd2-06daeb31f8d5][The Perturbative Hamiltonian]]
+- [[id:454a3afe-562b-4ee0-8eab-5392a5bb4817][Susceptibility Analysis]]
+- [[id:0d507ade-04dd-47f8-a67e-79074ce82b1a][Wilson-Fisher Fixed Point]]
+- [[id:15c16740-5ced-49e8-8482-e4620b94cc96][Why ε-Expansion Works]]

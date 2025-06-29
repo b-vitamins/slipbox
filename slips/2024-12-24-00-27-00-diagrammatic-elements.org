@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       c4985306-40cd-40e1-bf08-3fe0f06b4e9d
+:CUSTOM_ID: 92/192
+:END:
+#+TITLE: Diagrammatic Elements
+#+FILETAGS: :physics:spof:ch5:diagrams:elements:visualization:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The visual grammar of perturbative field theory consists of three fundamental elements that encode the mathematical structure of Feynman diagrams. External points, represented as dots labeled \((\mathbf{q}, \alpha)\), correspond to the fields whose correlation we seek. These are the observables that connect our calculations to physical measurements.
+
+#+begin_example
+External point:     • (q,α)
+
+Propagator:         •────────────────• 
+                    (q,α)    (q',β)
+                    
+Four-point vertex:    i •────•────• i
+                         \ /
+                          X
+                         / \
+                        j •────• j
+#+end_example
+
+Propagator lines connecting two points represent the Gaussian two-point function \(\langle m_\alpha(\mathbf{q})m_\beta(\mathbf{q}')\rangle_0\). The line carries the full structure of the inverse quadratic form: momentum conservation through \(\delta^d(\mathbf{q}+\mathbf{q}')\), spin conservation via \(\delta_{\alpha\beta}\), and the momentum-dependent denominator \((t+Kq^2)^{-1}\) that encodes the critical behavior.
+
+The four-point vertex, depicted as two branches joined by a dotted line, represents the interaction \(u\). Its peculiar structure—with paired spin indices on opposite branches—reflects the \(O(n)\) symmetry of the Hamiltonian. Each vertex enforces momentum conservation through \(\delta^d(\mathbf{k}_1+\mathbf{k}_2+\mathbf{k}_3+\mathbf{k}_4)\) and contributes a factor of \(u\). This visual language transforms the abstract algebra of field correlators into concrete geometric structures whose topologies encode the physics of interacting fluctuations.
+
+** See also:
+- [[id:31cdd88b-857d-4b29-8d8b-be588d414f30][Diagrammatic Rules]]
+- [[id:aef8674d-1241-400e-8fe0-f133a0e9fb22][Diagrammatic Calculations]]
+- [[id:85e7c344-fdd8-4124-9faf-79b8bde9b932][Second-Order Diagrams]]
+- [[id:fbcaaf21-5e53-4161-89f6-ff3be967b757][Diagram Topology Rules]]

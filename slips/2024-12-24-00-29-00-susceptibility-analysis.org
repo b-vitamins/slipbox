@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       454a3afe-562b-4ee0-8eab-5392a5bb4817
+:CUSTOM_ID: 92/194
+:END:
+#+TITLE: Susceptibility Analysis
+#+FILETAGS: :physics:spof:ch5:susceptibility:criticality:analysis:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The structure of the two-point correlation function is constrained by symmetry. Translation and rotation invariance dictate that in real space, \(\langle m_\alpha(\mathbf{x})m_\beta(\mathbf{x}')\rangle = \delta_{\alpha\beta}f(|\mathbf{x}-\mathbf{x}'|)\) for some scalar function \(f\). Fourier transformation preserves this structure, yielding
+
+\[\left\langle m_{\alpha}(\mathbf{q}) m_{\beta}\left(\mathbf{q}^{\prime}\right)\right\rangle = (2 \pi)^{d} \delta^{d}\left(\mathbf{q}+\mathbf{q}^{\prime}\right) \delta_{\alpha \beta} S(q)\]
+
+where \(S(q) = \langle|m_1(\mathbf{q})|^2\rangle\) is the structure factor measured in scattering experiments. The zero-momentum limit gives the magnetic susceptibility: \(\chi = S(0)\).
+
+From the first-order calculation, the inverse susceptibility becomes
+
+\[\chi^{-1}(t)=t+4 u(n+2) \int \frac{\mathrm{d}^{d} \mathbf{k}}{(2 \pi)^{d}} \frac{1}{t+K k^{2}}+\mathcal{O}\left(u^{2}\right)\]
+
+At the Gaussian critical point \(t=0\), this integral evaluates to
+
+\[\chi^{-1}(0) = \frac{4(n+2) u}{K} K_{d}\left(\frac{\Lambda^{d-2}}{d-2}\right)\]
+
+where \(K_d = S_d/(2\pi)^d\) with \(S_d\) the surface area of the unit sphere in \(d\) dimensions. The susceptibility no longer diverges at \(t=0\) but at the shifted critical point determined by \(\chi^{-1}(t_c) = 0\):
+
+\[t_{c} = -\frac{4 u(n+2) K_{d} \Lambda^{d-2}}{(d-2) K} < 0\]
+
+Near this shifted critical point, the susceptibility behaves as
+
+\[\chi^{-1}(t)=\left(t-t_{c}\right)\left[1-\frac{4 u(n+2)}{K^{2}} c\left(\frac{K}{t-t_{c}}\right)^{2-d / 2}+\mathcal{O}\left(u^{2}\right)\right]\]
+
+For \(d < 4\), the correction term diverges as \(t \to t_c\), overwhelming the linear term and invalidating the perturbative expansion precisely where we need it most. This divergence of the effective coupling \(u(t-t_c)^{(d-4)/2}\) is the central challenge that renormalization group methods must overcome.
+
+** See also:
+- [[id:1b498be6-812c-4c7b-98bb-5ee0683acb79][Perturbation Theory Breaks Down Near Criticality]]
+- [[id:0dbd8aa2-8baa-4fa0-bc72-22f82922f2d5][Susceptibility Shift Visualization]]
+- [[id:6dd34de2-b432-409c-9936-7d65c6cf3d75][Two-Point Function at O(u)]]
+- [[id:733ebc28-096d-404e-9e2f-74ad3a25a54e][First-Order Coarse Graining]]
+- [[id:0d507ade-04dd-47f8-a67e-79074ce82b1a][Wilson-Fisher Fixed Point]]

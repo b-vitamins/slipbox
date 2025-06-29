@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       31cdd88b-857d-4b29-8d8b-be588d414f30
+:CUSTOM_ID: 92/189
+:END:
+#+TITLE: Diagrammatic Rules
+#+FILETAGS: :physics:spof:ch5:diagrams:feynman:rules:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The diagrammatic representation transforms the combinatorial complexity of perturbation theory into a visual language. To calculate the \(\ell\)-point expectation value \(\left\langle\prod_{i=1}^{\ell} m_{\alpha_{i}}\left(\mathbf{q}_{i}\right)\right\rangle\) at \(p\)th order in \(u\), one follows a systematic procedure that encodes Wick contractions graphically.
+
+First, draw \(\ell\) external points labeled by \((\mathbf{q}_i, \alpha_i)\) representing the fields in the correlation function. Next, introduce \(p\) four-point vertices, each representing an interaction \(u\). The vertex carries four legs labeled by momenta and spin indices, with two pairs sharing the same spin index: \(\{(\mathbf{k}_1, i), (\mathbf{k}_2, i), (\mathbf{k}_3, j), (\mathbf{k}_4, j)\}\). This non-equivalence of legs is indicated diagrammatically by joining two solid branches with a dotted line.
+
+The unperturbed average is computed by connecting all points pairwise in all topologically distinct ways. Each line represents a propagator \(\delta_{\alpha_1\alpha_2}(2\pi)^d\delta^d(\mathbf{q}_1+\mathbf{q}_2)/(t+Kq_1^2)\), while each vertex contributes \(u(2\pi)^d\delta^d(\mathbf{k}_1+\mathbf{k}_2+\mathbf{k}_3+\mathbf{k}_4)\). After drawing all contractions, integrate over the \(4p\) internal momenta and sum over the \(2p\) internal spin indices. Closed loops yield factors of \(n\), the number of field components.
+
+The numerical prefactor combines \((-1)^p/p!\) from the perturbative expansion with the number of equivalent pairings yielding the same topology. When calculating cumulants, only fully connected diagrams contribute—a tremendous simplification that eliminates vast classes of diagrams and makes the perturbative renormalization group tractable.
+
+** See also:
+- [[id:8e05c5ca-9fa5-4603-9368-0a167dae1630][Gaussian Propagators]]
+- [[id:8829064c-a63e-4f2a-87a7-70ee600e83c2][Wick's Theorem Complete]]
+- [[id:c4985306-40cd-40e1-bf08-3fe0f06b4e9d][Diagrammatic Elements]]
+- [[id:35ec114d-85b2-45e8-83cc-c8dd3f0913f8][Cumulant Expansion]]
+- [[id:6dd34de2-b432-409c-9936-7d65c6cf3d75][Two-Point Function at O(u)]]
+- [[id:aef8674d-1241-400e-8fe0-f133a0e9fb22][Diagrammatic Calculations]]

@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID:       b7b3e1e0-4464-463d-94f9-42b82f4f8115
+:CUSTOM_ID: 92/208
+:END:
+#+TITLE: Wilson-Fisher RG Flow
+#+FILETAGS: :physics:criticalphenomena:rg:wilsonfisher:flow:fixedpoint:
+
+The renormalization group flow at second order reveals the complete phase diagram for $d < 4$. The two fixed points—Gaussian at the origin and Wilson-Fisher at $(t^*, u^*)$—organize the flow in qualitatively different ways:
+
+#+BEGIN_EXAMPLE
+    t ↑                    
+      |    ←  ←  ←  ←      d < 4
+      |  ↗ ← ← ← ← ↖       
+      | ↗ ↖ ← ← ↖ ↖       Gaussian FP: 
+      |↗   ↖ WF•↙  ↖      Two relevant directions
+    ──•──────•────────→ u  (unstable saddle)
+     G|       ↘            
+      |    ↙   ↘ ↘         Wilson-Fisher FP:
+      | ↙ ↙ ↙ ↙ ↘ ↘       One relevant direction
+      ↓  ↙  ↙  ↙  ↘        (stable critical point)
+              
+    Critical trajectory (separatrix)
+#+END_EXAMPLE
+
+The Gaussian fixed point remains a saddle point with two unstable directions. However, the Wilson-Fisher fixed point at $t^* < 0$, $u^* > 0$ has only one unstable direction, with eigenvalue $y_t = 2 - (n+2)\epsilon/(n+8) > 0$. The $u$-direction is now stable with eigenvalue $y_u = -\epsilon < 0$.
+
+The critical trajectory connecting the two fixed points plays a special role. Systems with couplings on this trajectory flow to the Wilson-Fisher fixed point and exhibit critical behavior. The basin of attraction of the Wilson-Fisher fixed point has codimension one, forming a surface in the full coupling space. Systems on one side flow to the ordered phase, while those on the other side flow to the disordered phase.
+
+The flow diagram illustrates several key features:
+
+1. **Crossover**: Near the Gaussian fixed point, trajectories initially follow Gaussian scaling before crossing over to Wilson-Fisher behavior at larger length scales.
+
+2. **Stability**: The Wilson-Fisher fixed point is stable along the $u$-direction, unlike the Gaussian point. This stability is essential for controlling critical behavior.
+
+3. **Universality**: All trajectories within the basin converge to the same fixed point, explaining why different microscopic models share critical exponents.
+
+4. **Perturbative control**: The fixed point positions scale as $u^* \sim \epsilon$, $t^* \sim -\epsilon$, remaining in the perturbative regime for small $\epsilon$.
+
+This flow structure, absent at first order, emerges from the competition between linear instability and nonlinear saturation in the recursion relations. It provides the complete resolution to the problem of critical phenomena in dimensions below four.
+
+** See also:
+- [[id:994294f7-c282-4c3b-a694-724ef10aa4aa][First-Order RG Flow]] - Incomplete picture with runaway
+- [[id:f9419103-4f07-451a-8828-6e8b700d0586][Second-Order Recursion Relations]] - Nonlinear corrections
+- [[id:0d507ade-04dd-47f8-a67e-79074ce82b1a][Wilson-Fisher Fixed Point]] - Fixed point location
+- [[id:6dad994a-6334-42d4-a906-301d66240bbe][Universality Basin Visualization]] - Basin geometry
+- [[id:3b6dd281-8a83-4424-abf9-d1cd14834174][Visual Grammar of RG]] - General flow notation

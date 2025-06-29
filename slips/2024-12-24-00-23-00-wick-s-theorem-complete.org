@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       8829064c-a63e-4f2a-87a7-70ee600e83c2
+:CUSTOM_ID: 92/188
+:END:
+#+TITLE: Wick's Theorem Complete
+#+FILETAGS: :physics:spof:ch5:wick:theorem:gaussian:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+Wick's theorem provides the computational foundation for evaluating Gaussian expectation values of arbitrary products of field variables. The theorem emerges from the fundamental identity for Gaussian integrals:
+
+\[\left\langle\exp \left[\sum_{i} a_{i} m_{i}\right]\right\rangle_{0}=\exp \left[\sum_{i, j} \frac{a_{i} a_{j}}{2}\left\langle m_{i} m_{j}\right\rangle_{0}\right]\]
+
+This identity encodes the complete statistical information of the Gaussian distribution. Expanding both sides in powers of the coefficients \(\{a_i\}\) and matching terms order by order yields the general result:
+
+\[\left\langle\prod_{i=1}^{\ell} m_{i}\right\rangle_{0}= \begin{cases}0 & \text{for } \ell \text{ odd} \\ \text{sum over all pairwise contractions} & \text{for } \ell \text{ even}\end{cases}\]
+
+The vanishing of odd moments reflects the \(\mathbf{m} \to -\mathbf{m}\) symmetry of the Gaussian weight. For even moments, each contraction contributes a propagator, and the sum runs over all distinct ways of pairing the fields. For example, the four-point function decomposes as
+
+\[\left\langle m_{i} m_{j} m_{k} m_{l}\right\rangle_{0}=\left\langle m_{i} m_{j}\right\rangle_{0}\left\langle m_{k} m_{l}\right\rangle_{0}+\left\langle m_{i} m_{k}\right\rangle_{0}\left\langle m_{j} m_{l}\right\rangle_{0}+\left\langle m_{i} m_{l}\right\rangle_{0}\left\langle m_{j} m_{k}\right\rangle_{0}\]
+
+This decomposition into products of two-point functions is the essence of Wick's theorem. It reduces the calculation of arbitrary Gaussian correlators to combinatorics, forming the backbone of perturbative field theory. The theorem's power lies in transforming integrals over exponentially many field configurations into algebraic manipulations of propagators.
+
+** See also:
+- [[id:8e05c5ca-9fa5-4603-9368-0a167dae1630][Gaussian Propagators]]
+- [[id:31cdd88b-857d-4b29-8d8b-be588d414f30][Diagrammatic Rules]]
+- [[id:35ec114d-85b2-45e8-83cc-c8dd3f0913f8][Cumulant Expansion]]
+- [[id:6dd34de2-b432-409c-9936-7d65c6cf3d75][Two-Point Function at O(u)]]

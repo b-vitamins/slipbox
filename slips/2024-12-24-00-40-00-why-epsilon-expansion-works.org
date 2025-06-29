@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       15c16740-5ced-49e8-8482-e4620b94cc96
+:CUSTOM_ID: 92/205
+:END:
+#+TITLE: Why ε-Expansion Works
+#+FILETAGS: :physics:spof:ch5:epsilon:expansion:marginality:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The epsilon expansion succeeds by exploiting the special nature of four dimensions as the borderline between weak and strong coupling. At exactly \(d = 4\), the quartic interaction is marginal—it neither grows nor decays under naive scaling. This marginality means that near four dimensions, the fixed point coupling \(u^* \sim \epsilon\) remains small, validating perturbation theory precisely where naive expansions fail.
+
+The key insight is that criticality requires a delicate balance. For \(d > 4\), the Gaussian fixed point suffices because interactions are irrelevant. For \(d < 4\), interactions are relevant and would naively flow to strong coupling. The Wilson-Fisher fixed point emerges as a compromise: the nonlinear RG flow generates a fixed point at weak but non-zero coupling when \(d\) is slightly below 4. As \(\epsilon = 4-d\) increases, this fixed point moves continuously away from the Gaussian point, providing a controlled deformation.
+
+The expansion works because it organizes the calculation around the correct starting point. Rather than expanding around \(u = 0\) at fixed dimension (which fails for \(d < 4\)), we expand simultaneously in \(u\) and \(\epsilon\), maintaining the ratio \(u^*/\epsilon\) fixed. This reorganization turns the divergent perturbation series in fixed dimension into a controlled expansion in \(\epsilon\). The physics changes qualitatively but continuously as we lower the dimension from 4, making the epsilon expansion a natural framework.
+
+The deeper reason for the expansion's success lies in the renormalization group itself. Near four dimensions, only a few operators are relevant or marginal; the vast majority are irrelevant with large negative eigenvalues. This separation of scales means that despite the complexity of the full problem, the critical behavior is controlled by a low-dimensional surface in the infinite-dimensional space of couplings. The epsilon expansion systematically identifies this critical surface and calculates its properties.
+
+** See also:
+- [[id:1b498be6-812c-4c7b-98bb-5ee0683acb79][Perturbation Theory Breaks Down Near Criticality]]
+- [[id:ccb6d586-d039-42b5-b4fe-1da76046537a][Eigenvalues at Gaussian Fixed Point]]
+- [[id:0d507ade-04dd-47f8-a67e-79074ce82b1a][Wilson-Fisher Fixed Point]]
+- [[id:b8900858-9d85-48ee-898c-d4aa4c4a5572][Asymptotic Nature of ε-Expansion]]
+- [[id:db4d68a2-cb3f-45a7-bd6a-e1de03e843b4][Operator Mixing Under RG]]

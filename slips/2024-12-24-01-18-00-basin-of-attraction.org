@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       8d6a356d-0764-4fba-9fe9-e4d4e10c8a84
+:CUSTOM_ID: 92/210
+:END:
+#+TITLE: Basin of Attraction
+#+FILETAGS: :physics:criticalphenomena:rg:universality:basin:fixedpoint:
+
+The basin of attraction of the Wilson-Fisher fixed point embodies the principle of universality in the mathematical structure of RG flow. In the infinite-dimensional space of all possible couplings consistent with symmetry, the basin forms a codimension-one surface that separates the ordered from disordered phases.
+
+The codimension-one nature follows from the single relevant eigenvalue at the fixed point. The stable manifold, along which systems flow toward the fixed point, has dimension infinity minus one. The unstable manifold, corresponding to the relevant eigendirection with $y_t > 0$, is one-dimensional. Systems precisely on the stable manifold exhibit scale-invariant critical behavior. Those displaced along the unstable direction flow either to the ordered phase (for $t < t^*$) or the disordered phase (for $t > t^*$).
+
+Within the basin, the approach to the fixed point follows a hierarchy of time scales. Strongly irrelevant operators with large negative eigenvalues decay rapidly under RG flow. Marginal operators with eigenvalues near zero decay slowly, potentially affecting preasymptotic behavior. The slowest approach occurs along the least irrelevant direction, typically the quartic coupling with eigenvalue $y_u = -\epsilon$.
+
+The basin concept explains both universality and its limitations. Universality arises because all microscopic Hamiltonians within the basin flow to the same fixed point, forgetting their initial differences along irrelevant directions. The limitations appear in three ways. First, different symmetry classes have different fixed points with distinct basins. Second, dimensionality changes the fixed point structure entirely. Third, certain perturbations like long-range interactions or quenched disorder can modify the fixed point itself, leading to new universality classes.
+
+The practical consequence is remarkable: to determine critical behavior, we need not know the precise microscopic Hamiltonian. We need only identify the symmetry class and verify that no dangerous irrelevant operators are present. The RG flow then guarantees that critical exponents are universal within each basin of attraction. This reduction from infinite complexity to a finite classification represents one of the deepest insights in statistical physics.
+
+** See also:
+- [[id:177951a3-8877-4624-bace-65e353e88a00][Complete Operator Space]] - Full coupling space structure
+- [[id:6dad994a-6334-42d4-a906-301d66240bbe][Universality Basin Visualization]] - Geometric visualization
+- [[id:b7b3e1e0-4464-463d-94f9-42b82f4f8115][Wilson-Fisher RG Flow]] - Flow structure

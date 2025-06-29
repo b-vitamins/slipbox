@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       ccb6d586-d039-42b5-b4fe-1da76046537a
+:CUSTOM_ID: 92/199
+:END:
+#+TITLE: Eigenvalues at Gaussian Fixed Point
+#+FILETAGS: :physics:spof:ch5:eigenvalues:gaussian:fixedpoint:dimensions:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+The stability analysis of the Gaussian fixed point reveals why mean field theory succeeds above four dimensions but fails below. The linearized recursion relations yield eigenvalues that determine the relevance of perturbations:
+
+\[y_t = 2, \quad y_u = 4-d\]
+
+These eigenvalues encode the dimensional analysis of the couplings. The temperature eigenvalue \(y_t = 2 > 0\) is always relevant, driving the system away from criticality along the unstable manifold. This universal value reflects the engineering dimension \([t] = [\text{energy}/\text{volume}] \sim [\text{length}]^{-2}\) under the scale transformation \(\mathbf{x} \to b\mathbf{x}\).
+
+The interaction eigenvalue \(y_u = 4-d\) changes sign at the upper critical dimension. For \(d > 4\), \(y_u < 0\) makes the quartic coupling irrelevant—perturbations in \(u\) decay under renormalization, flowing toward the Gaussian fixed point. The critical behavior is thus controlled by the Gaussian model with mean field exponents. For \(d < 4\), however, \(y_u > 0\) renders the interaction relevant. Any infinitesimal \(u > 0\) grows under renormalization, destabilizing the Gaussian fixed point.
+
+The marginal case \(d = 4\) with \(y_u = 0\) requires special analysis. Here logarithmic corrections modify the mean field behavior, as the interaction neither grows nor shrinks at linear order. The vanishing of \(y_u\) at \(d = 4\) is not accidental but reflects a deeper structure: it signals the dimension where fluctuations become strong enough to qualitatively alter the critical behavior, necessitating a non-perturbative treatment. This dimensional threshold separates the regime of classical critical phenomena from that governed by fluctuations, making four the natural dimension around which to organize a systematic expansion.
+
+** See also:
+- [[id:3082db6d-2edb-436d-a129-3d84437aa629][First-Order Recursion Relations]]
+- [[id:994294f7-c282-4c3b-a694-724ef10aa4aa][First-Order RG Flow]]
+- [[id:0d507ade-04dd-47f8-a67e-79074ce82b1a][Wilson-Fisher Fixed Point]]
+- [[id:15c16740-5ced-49e8-8482-e4620b94cc96][Why ε-Expansion Works]]
