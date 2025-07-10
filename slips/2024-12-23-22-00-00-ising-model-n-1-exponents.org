@@ -22,4 +22,4 @@ Verification of scaling relations:
 
 Modern experiments achieve 0.1% accuracy in exponent determination. The small η = 0.04 indicates nearly classical correlation decay with minimal anomalous scaling.
 
-Cross-references: [[id:e715b16b-8dd4-43b4-99a3-a765bf51f1b7][Scaling Relations Summary]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]
+Cross-references: [[id:0e1f0487-2220-44e8-a38d-ebca00ff2696][Scaling Relations Summary]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]

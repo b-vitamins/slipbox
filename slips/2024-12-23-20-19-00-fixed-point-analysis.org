@@ -18,4 +18,4 @@ Choosing b such that b^(y₁)g₁ = 1 for the most relevant operator: ξ(g₁, g
 
 This yields ν = 1/y₁ and gap exponents Δ_α = y_α/y₁.
 
-See also: [[id:e627ad42-996f-4fcb-bb38-1eab2d8c03ab][Critical Point as RG Fixed Point]], [[id:be961221-98ca-41d4-b32c-3b758e0a69e3][RG Transformation Equations]], [[id:0fada92d-d038-4eab-b37e-73ced8aca89c][RG Fixed Point Topology]]
+See also: [[id:e627ad42-996f-4fcb-bb38-1eab2d8c03ab][Critical Point as RG Fixed Point]], [[id:be961221-98ca-41d4-b32c-3b758e0a69e3][RG Transformation Equations]], [[id:4214ec4a-6a11-4dfa-be2c-a9dc0967cbba][RG Fixed Point Topology]]

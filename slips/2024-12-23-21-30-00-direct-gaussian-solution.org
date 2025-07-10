@@ -10,4 +10,4 @@ The direct solution reveals several crucial features. First, higher-order gradie
 
 Despite this limitation, the Gaussian model correctly describes the approach to criticality from the disordered phase and becomes exact above four dimensions.
 
-Cross-references: [[id:df911964-3bd8-4162-ad2c-20ef23bd4a80][Gaussian Model Setup]], [[id:e0812a92-87a6-438d-af2f-e21271585d5b][Gaussian Direct Solution]], [[id:22caa9ef-cbf1-4986-8227-b5b07053a02e][Gaussian Exponents]]
+Cross-references: [[id:b3c47195-e8d4-4a5f-9f12-7e2a1b3c8d95][Gaussian Model Setup]], [[id:b3c47195-e8d4-4a5f-9f12-7e2a1b3c8d95][Gaussian Direct Solution]], [[id:a8b9c0d1-e2f3-4a5b-c6d7-e8f9a0b1c2d3][Gaussian Exponents]]

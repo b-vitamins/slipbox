@@ -12,4 +12,4 @@ The operator spectrum reveals the dimensional dependence of critical behavior. F
 
 The critical dimension for each operator, where it changes from irrelevant to relevant, is d_n = 2n/(n-2). Thus d₄ = 4 marks where quartic interactions become relevant, d₆ = 3 for sextic, and d₈ = 8/3 for octic. This hierarchy explains why the φ⁴ theory with upper critical dimension four provides the universal description of critical phenomena in physical dimensions. Gradient operators (∇^k m)² have dimensions y = 2k - d, making higher derivatives increasingly irrelevant and justifying the gradient expansion.
 
-See also: [[id:bb36bb0f-369b-4006-98c4-c11bc0d7525d][Gaussian Fixed Point]], [[id:41e16051-695f-4ec8-9400-96847c53ffe6][Operator Scaling Dimensions]], [[id:6393ed47-d4af-4e90-a01a-48b3cba8fbb7][d-Dependence of Gaussian Exponents]]
+See also: [[id:bb36bb0f-369b-4006-98c4-c11bc0d7525d][Gaussian Fixed Point]], [[id:41e16051-695f-4ec8-9400-96847c53ffe6][Operator Scaling Dimensions]], [[id:c8d9e0f1-a2b3-4c4d-e5f6-a7b8c9d0e1f2][d-Dependence of Gaussian Exponents]]

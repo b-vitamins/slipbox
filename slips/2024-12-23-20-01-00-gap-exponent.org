@@ -12,4 +12,4 @@ Defined through the relation Δ = βδ, where β is the order parameter exponent
 
 This universal ratio emerges from the [[id:aaeee0ab-91d5-4186-a7b7-8ad92572f72f][Homogeneity Assumption]] and is systematically derived in [[id:d6401778-fc86-456b-8abd-692f1f4e9a1b][Homogeneity Mathematical Framework]].
 
-See also: [[id:de716b3d-8e3d-4fcd-bdd5-40a813f929b6][Exponent Relations Complete Set]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]
+See also: [[id:5f983926-ed74-4070-91b3-be036b307a89][Exponent Relations Complete Set]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]

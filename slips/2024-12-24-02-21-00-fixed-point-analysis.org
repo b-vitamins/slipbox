@@ -18,4 +18,4 @@ Linearization near fixed points yields critical exponents through \(b^{y_t} = \p
 
 Fixed point analysis reveals the RG's power to classify phase behavior through purely mathematical properties of transformation maps. The fixed point structure—stable disorder, unstable order, no intermediate points—emerges from the recursion relation's analytic properties without thermodynamic reasoning. This mathematical determination of physical behavior exemplifies the RG philosophy: phase transitions represent fixed points of scale transformations, with universality arising from the local flow structure near these special points.
 
-**See also:** [[id:2e4a9f6c-3d1b-8e7f-9a3c-3d1b8e7f9a3c][1D Recursion Relations]] for the flow equations, [[id:4e5a9f7b-2d3c-8f9a-1e4b-2d3c8f9a1e4b][Scaling Forms]] for critical behavior, [[id:5e6a9f8b-3d4c-1f9a-8e5b-3d4c1f9a8e5b][RG Flow Diagrams]] for visualization.
+**See also:** [[id:2e4a9f6c-3d1b-8e7f-9a3c-3d1b8e7f9a3c][1D Recursion Relations]] for the flow equations, [[id:4e5a9f7b-2d3c-8f9a-1e4b-2d3c8f9a1e4b][Scaling Forms]] for critical behavior, [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][RG Flow Diagrams]] for visualization.

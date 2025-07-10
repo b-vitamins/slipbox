@@ -6,7 +6,7 @@
 #+FILETAGS: :physics:spof:ch6:rg:mk:fixedpoint:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
-The Migdal-Kadanoff recursion relation [[id:2e9d8f3c-7a5b-6f2c-8e9d-7a5b6f2c8e9d][MK Recursion Relation]] generates the familiar three-fixed-point structure characteristic of systems with phase transitions. The high-temperature fixed point K*=0 remains stable, with linearization yielding:
+The Migdal-Kadanoff recursion relation [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][MK Recursion Relation]] generates the familiar three-fixed-point structure characteristic of systems with phase transitions. The high-temperature fixed point K*=0 remains stable, with linearization yielding:
 
 \[K \ll 1 \Rightarrow K' \approx \frac{1}{2}\ln(1 + 8K^2) \approx 4K^2 \ll K\]
 
@@ -34,6 +34,6 @@ For b=2 decimation:
 
 This yields critical exponents ν = 1/y_t ≈ 1.34 and α = 2-d/y_t ≈ -0.68, compared to exact values ν = 1 and α = 0. The approximation significantly overestimates correlation length divergence while predicting a stronger specific heat singularity than actually occurs.
 
-The MK fixed point analysis reveals how drastic approximations can still capture qualitative physics while failing quantitatively. The method correctly identifies the phase transition's existence and continuous nature but mislocates it and mischaracterizes its strength. The systematic underestimate of K*—making the system appear more disordered than reality—reflects the neglect of indirect interaction paths that would strengthen ordering. This bias toward disorder pervades the approximation: by keeping only direct bonds, the method underestimates the system's connectivity and hence its tendency to order [[id:3e9d7f8c-6a4b-5e2f-8c9d-6a4b5e2f8c9d][Connectivity and Order]].
+The MK fixed point analysis reveals how drastic approximations can still capture qualitative physics while failing quantitatively. The method correctly identifies the phase transition's existence and continuous nature but mislocates it and mischaracterizes its strength. The systematic underestimate of K*—making the system appear more disordered than reality—reflects the neglect of indirect interaction paths that would strengthen ordering. This bias toward disorder pervades the approximation: by keeping only direct bonds, the method underestimates the system's connectivity and hence its tendency to order [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Connectivity and Order]].
 
-**See also:** [[id:6f8d9c3e-7a5b-4f2c-8e9d-7a5b4f2c8e9d][MK Bond Moving]] for the approximation scheme, [[id:9e8d7f3c-6a5b-4e2f-8c9d-6a5b4e2f8c9d][MK Dimension Dependence]] for d-dimensional results, [[id:4e9d8f3c-7a5b-6e2f-9c8d-7a5b6e2f9c8d][MK Assessment]] for overall evaluation.
+**See also:** [[id:6f8d9c3e-7a5b-4f2c-8e9d-7a5b4f2c8e9d][MK Bond Moving]] for the approximation scheme, [[id:9e8d7f3c-6a5b-4e2f-8c9d-6a5b4e2f8c9d][MK Dimension Dependence]] for d-dimensional results, [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][MK Assessment]] for overall evaluation.

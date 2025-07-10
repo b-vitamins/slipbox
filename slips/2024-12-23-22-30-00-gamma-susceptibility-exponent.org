@@ -12,4 +12,4 @@ The exponent γ appears in the fluctuation-dissipation theorem connecting suscep
 
 The universality of γ within each symmetry class, despite vast differences in microscopic interactions, provided early compelling evidence for the scaling hypothesis before the development of renormalization group theory. The susceptibility divergence represents the system's enhanced response to external perturbations near criticality.
 
-Cross-references: [[id:a662555e-24b7-4740-a0c4-fabf9e2f11d4][Susceptibility Scaling]], [[id:de716b3d-8e3d-4fcd-bdd5-40a813f929b6][Exponent Relations Complete Set]], [[id:461855d0-9227-4da9-ba1b-f8bad53e15ff][Thermodynamic Derivatives Cascade]]
+Cross-references: [[id:a662555e-24b7-4740-a0c4-fabf9e2f11d4][Susceptibility Scaling]], [[id:5f983926-ed74-4070-91b3-be036b307a89][Exponent Relations Complete Set]], [[id:461855d0-9227-4da9-ba1b-f8bad53e15ff][Thermodynamic Derivatives Cascade]]

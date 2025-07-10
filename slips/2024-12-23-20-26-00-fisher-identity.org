@@ -12,4 +12,4 @@ The identity arises from the fluctuation-dissipation relation χ = ∫d^d x G(x)
 
 This fundamental relation bridges thermodynamic response functions and spatial correlation structure, demonstrating how macroscopic susceptibility emerges from microscopic correlations.
 
-See also: [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Correlation Function Mathematics]], [[id:c8411d15-e158-4dca-9c2d-ec9131181805][Power Law Decay at Criticality]], [[id:72332205-efce-4143-bc7b-eb81e91ee691][Susceptibility Scaling]]
+See also: [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Correlation Function Mathematics]], [[id:55d654a9-9ff8-4246-b407-ee9ca4210b24][Power Law Decay at Criticality]], [[id:72332205-efce-4143-bc7b-eb81e91ee691][Susceptibility Scaling]]

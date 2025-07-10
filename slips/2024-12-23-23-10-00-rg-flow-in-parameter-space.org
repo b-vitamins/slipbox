@@ -30,4 +30,4 @@ Physical interpretation:
 
 The "time" spent near S* (in RG steps) determines the range of critical behavior observed.
 
-Cross-references: [[id:0fada92d-d038-4eab-b37e-73ced8aca89c][RG Fixed Point Topology]], [[id:afba5389-ac75-4e21-b0ab-62b8319c7d75][RG Transformation Mathematics]], [[id:0b3907b5-eb1b-4f22-9793-f85e599d9436][Parameter Flow]]
+Cross-references: [[id:4214ec4a-6a11-4dfa-be2c-a9dc0967cbba][RG Fixed Point Topology]], [[id:767b74b1-0c38-41e1-af84-817b283cb1fd][RG Transformation Mathematics]], [[id:a4a97a6c-00b0-4768-b406-8cb556651932][Parameter Flow]]

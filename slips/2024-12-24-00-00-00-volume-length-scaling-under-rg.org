@@ -19,4 +19,4 @@ m(t,h) = b^(y_h-d)m(t',h')
 
 The systematic appearance of the factor b^d in all extensive quantities reflects the fundamental role of dimension in critical phenomena. The RG procedure effectively trades resolution in space (factor b) for movement in parameter space (factors b^y_i).
 
-Cross-references: [[id:afba5389-ac75-4e21-b0ab-62b8319c7d75][RG Transformation Mathematics]], [[id:e44875a8-b5ad-48ad-b47d-1206a5d205c0][Partition Function Preservation]]
+Cross-references: [[id:767b74b1-0c38-41e1-af84-817b283cb1fd][RG Transformation Mathematics]], [[id:8b5c9d1e-2f4a-6e7f-9a8b-3c4d5e6f7a8b][Partition Function Preservation]]

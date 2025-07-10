@@ -12,4 +12,4 @@ Different microscopic systems flow to the same infrared fixed point if they shar
 
 This principle explains why systems as diverse as liquid-gas transitions, magnetic phase transitions, and binary alloys all exhibit the same critical exponents when they belong to the same universality class.
 
-See also: [[id:e627ad42-996f-4fcb-bb38-1eab2d8c03ab][Critical Point as RG Fixed Point]], [[id:429deb29-ca65-406a-ac14-0b33cf975fb0][Fixed Point Analysis]], [[id:0fada92d-d038-4eab-b37e-73ced8aca89c][RG Fixed Point Topology]]
+See also: [[id:e627ad42-996f-4fcb-bb38-1eab2d8c03ab][Critical Point as RG Fixed Point]], [[id:4214ec4a-6a11-4dfa-be2c-a9dc0967cbba][Fixed Point Analysis]], [[id:4214ec4a-6a11-4dfa-be2c-a9dc0967cbba][RG Fixed Point Topology]]

@@ -28,4 +28,4 @@ Visual understanding of dimensional dependence:
 
 Breakdown above d_c = 4: When d > 4, the block picture remains valid but additional length scales (Ginzburg length) enter, invalidating simple counting. The visual block decomposition directly explains both the origin and limitations of hyperscaling.
 
-Cross-references: [[id:e8f9a0b1-c2d3-4e5f-a6b7-c8d9e0f1a2b3][Correlation Length Block Decomposition]], [[id:c8afdb79-823f-4152-803a-64e6694f27dd][Josephson Identity]], [[id:9812fa5a-6ca9-40bf-9382-f9552dc28bdf][Correlation Function Mathematics]]
+Cross-references: [[id:e8f9a0b1-c2d3-4e5f-a6b7-c8d9e0f1a2b3][Correlation Length Block Decomposition]], [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Josephson Identity]], [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Correlation Function Mathematics]]

@@ -12,4 +12,4 @@ The procedure systematically removes modes with momentum Λ/b < |q| < Λ, rescal
 
 For the Gaussian model, modes decouple and the integration is trivial, leading to simple multiplicative renormalization of parameters. Beyond the Gaussian level, mode coupling generates an infinite hierarchy of interactions, requiring truncation schemes. The momentum-space approach clearly reveals why gradient terms like (∇m)² are more relevant than higher derivatives—their coupling constants have higher scaling dimensions y = 2 - k for ∇^k terms, making lower-order gradients more important at long distances.
 
-See also: [[id:9c25f0c0-d069-4853-a6be-48926c6014b0][Kadanoff Three Steps]], [[id:d35cedf1-3a6a-455a-b4d3-2fb37c51915c][Gaussian RG Calculation]], [[id:bba41caf-cad1-4453-a0c6-3a6e42fc0b55][Brillouin Zone Sphere Approximation]]
+See also: [[id:9c25f0c0-d069-4853-a6be-48926c6014b0][Kadanoff Three Steps]], [[id:d35cedf1-3a6a-455a-b4d3-2fb37c51915c][Gaussian RG Calculation]], [[id:a4a97a6c-00b0-4768-b406-8cb556651932][Brillouin Zone Sphere Approximation]]

@@ -12,4 +12,4 @@ In momentum space, the anomalous dimension manifests as G(q) ~ 1/q^(2-η) for sm
 
 The emergence of non-zero η from relevant interactions marks the breakdown of Gaussian theory and the onset of truly critical behavior. Even the small values observed in three dimensions represent a qualitative departure from mean-field predictions. The anomalous dimension quantifies how interactions modify the naive dimensional analysis.
 
-Cross-references: [[id:c8411d15-e158-4dca-9c2d-ec9131181805][Power Law Decay at Criticality]], [[id:9812fa5a-6ca9-40bf-9382-f9552dc28bdf][Correlation Function Mathematics]], [[id:de716b3d-8e3d-4fcd-bdd5-40a813f929b6][Exponent Relations Complete Set]]
+Cross-references: [[id:55d654a9-9ff8-4246-b407-ee9ca4210b24][Power Law Decay at Criticality]], [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Correlation Function Mathematics]], [[id:5f983926-ed74-4070-91b3-be036b307a89][Exponent Relations Complete Set]]

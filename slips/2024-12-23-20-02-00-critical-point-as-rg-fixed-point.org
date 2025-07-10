@@ -12,4 +12,4 @@ At the fixed point, all length scales are equivalent, leading to power-law corre
 
 The fixed point structure explains universality: different microscopic systems flow to the same infrared fixed point, yielding identical critical exponents. This provides the theoretical foundation for understanding why diverse physical systems exhibit the same critical behavior.
 
-See also: [[id:429deb29-ca65-406a-ac14-0b33cf975fb0][Fixed Point Analysis]], [[id:0fada92d-d038-4eab-b37e-73ced8aca89c][RG Fixed Point Topology]], [[id:c8411d15-e158-4dca-9c2d-ec9131181805][Power Law Decay at Criticality]]
+See also: [[id:4214ec4a-6a11-4dfa-be2c-a9dc0967cbba][Fixed Point Analysis]], [[id:4214ec4a-6a11-4dfa-be2c-a9dc0967cbba][RG Fixed Point Topology]], [[id:55d654a9-9ff8-4246-b407-ee9ca4210b24][Power Law Decay at Criticality]]

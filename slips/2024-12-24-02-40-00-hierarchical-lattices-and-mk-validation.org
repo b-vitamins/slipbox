@@ -8,7 +8,7 @@
 
 Hierarchical (Berker) lattices provide exact realization of Migdal-Kadanoff approximations, transforming an uncontrolled approximation into an exact solution for specially constructed geometries. These lattices are built recursively: start with a basic unit (bond, triangle, tetrahedron), then replace each bond by the entire unit, iterating to generate a self-similar fractal structure.
 
-The diamond hierarchical lattice exemplifies the construction. Beginning with two sites connected by b parallel bonds, each bond is replaced by the diamond unit at the next level. After n iterations, the lattice contains 2×b^n sites with hierarchical connectivity. Crucially, the RG transformation on this lattice exactly reproduces the MK recursion relation [[id:2e9d8f3c-7a5b-6f2c-8e9d-7a5b6f2c8e9d][MK Recursion Relation]].
+The diamond hierarchical lattice exemplifies the construction. Beginning with two sites connected by b parallel bonds, each bond is replaced by the diamond unit at the next level. After n iterations, the lattice contains 2×b^n sites with hierarchical connectivity. Crucially, the RG transformation on this lattice exactly reproduces the MK recursion relation [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][MK Recursion Relation]].
 
 For a diamond lattice with b branches, the exact recursion for Ising models reads:
 
@@ -24,4 +24,4 @@ Critical exponents on hierarchical lattices differ from regular lattices but sha
 
 Hierarchical lattices transform the Migdal-Kadanoff approximation from ad hoc manipulation into exact mathematics for specific geometries. This validation principle—that approximations should be exact for some model—recurs throughout physics. Just as mean-field theory is exact for infinite-range models and perturbation theory for weak coupling, MK is exact for hierarchical geometries. The peculiar nature of these lattices—fractal, loopless at finite scales, artificially constructed—mirrors the approximation's limitations. By understanding where MK becomes exact, we comprehend both its successes and failures on regular lattices: it captures hierarchical connectivity while missing loop effects essential for regular lattice criticality.
 
-**See also:** [[id:6f8d9c3e-7a5b-4f2c-8e9d-7a5b4f2c8e9d][MK Bond Moving]] for the approximation, [[id:5f9d8c3e-8a6b-4f2c-9e7d-8a6b4f2c9e7d][Fractal Geometry]] for mathematical structure, [[id:6e9d8f3c-7a5b-4f2c-8d9e-7a5b4f2c8d9e][Exact vs Approximate RG]] for validation principles.
+**See also:** [[id:6f8d9c3e-7a5b-4f2c-8e9d-7a5b4f2c8e9d][MK Bond Moving]] for the approximation, [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Fractal Geometry]] for mathematical structure, [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Exact vs Approximate RG]] for validation principles.

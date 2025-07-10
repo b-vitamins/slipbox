@@ -12,4 +12,4 @@ The crossover at d = 4 from Gaussian to non-Gaussian behavior represents one of 
 
 The quartic term becomes relevant (grows under RG flow) when its scaling dimension becomes positive, which occurs precisely at d = 4. Below this dimension, interactions fundamentally alter the critical behavior from the Gaussian fixed point predictions.
 
-Cross-references: [[id:f005296d-5b11-45df-8b6a-13c5fa3b471e][Eigenoperators at Gaussian FP]], [[id:0972ac7a-fd86-47ca-bdfd-6519f20c93cb][Operator Scaling Dimensions]], [[id:4dfb5d5f-05fd-4192-8cb2-5f42bd13bb97][Upper Critical Dimension]]
+Cross-references: [[id:767b74b1-0c38-41e1-af84-817b283cb1fd][Eigenoperators at Gaussian FP]], [[id:41e16051-695f-4ec8-9400-96847c53ffe6][Operator Scaling Dimensions]], [[id:c2d3e4f5-a6b7-4c8d-e9f0-a1b2c3d4e5f6][Upper Critical Dimension]]

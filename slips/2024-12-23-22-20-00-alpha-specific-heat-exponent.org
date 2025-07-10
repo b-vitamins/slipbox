@@ -12,4 +12,4 @@ In the Gaussian model, α = 2 - d/2, giving divergence for d < 4 and finite limi
 
 The specific heat exponent is particularly sensitive to the spatial dimension and the number of order parameter components, making it a discriminating test of theoretical predictions. The sign change at d = 4 signals the special role of the upper critical dimension.
 
-Cross-references: [[id:d6401778-fc86-456b-8abd-692f1f4e9a1b][Homogeneity Mathematical Framework]], [[id:c8afdb79-823f-4152-803a-64e6694f27dd][Josephson Identity]], [[id:461855d0-9227-4da9-ba1b-f8bad53e15ff][Thermodynamic Derivatives Cascade]]
+Cross-references: [[id:d6401778-fc86-456b-8abd-692f1f4e9a1b][Homogeneity Mathematical Framework]], [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Josephson Identity]], [[id:461855d0-9227-4da9-ba1b-f8bad53e15ff][Thermodynamic Derivatives Cascade]]

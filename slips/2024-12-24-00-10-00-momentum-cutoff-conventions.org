@@ -23,4 +23,4 @@ RG shell integration divides modes:
 
 The spherical approximation becomes exact in the critical limit where only |q| → 0 matters. The systematic reduction of the cutoff by factors of b implements momentum-space RG.
 
-Cross-references: [[id:df911964-3bd8-4162-ad2c-20ef23bd4a80][Gaussian Model Setup]], [[id:5f665483-ba40-445a-bb64-01273ea1d742][Gaussian RG Calculation]], [[id:a2b3c4d5-e6f7-4a8b-c9d0-e1f2a3b4c5d6][Brillouin Zone → Sphere Approximation]]
+Cross-references: [[id:b3c47195-e8d4-4a5f-9f12-7e2a1b3c8d95][Gaussian Model Setup]], [[id:d35cedf1-3a6a-455a-b4d3-2fb37c51915c][Gaussian RG Calculation]], [[id:a2b3c4d5-e6f7-4a8b-c9d0-e1f2a3b4c5d6][Brillouin Zone → Sphere Approximation]]

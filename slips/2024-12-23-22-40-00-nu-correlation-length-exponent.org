@@ -12,4 +12,4 @@ The experimental determination of ν often proceeds indirectly through scatterin
 
 This universal divergence of spatial correlations represents perhaps the most fundamental signature of criticality. The correlation length serves as the natural unit for all length scales in the critical region, making ν a central quantity in the scaling description.
 
-Cross-references: [[id:d61c162e-51ba-4a68-aff2-e34a5e6927fb][Correlation Length as Master Scale]], [[id:c8afdb79-823f-4152-803a-64e6694f27dd][Josephson Identity]], [[id:9812fa5a-6ca9-40bf-9382-f9552dc28bdf][Correlation Function Mathematics]]
+Cross-references: [[id:e2229eaf-efce-4be5-a860-38034580d306][Correlation Length as Master Scale]], [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Josephson Identity]], [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Correlation Function Mathematics]]

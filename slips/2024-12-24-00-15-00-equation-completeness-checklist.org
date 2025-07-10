@@ -11,24 +11,24 @@ Complete equation mapping for Chapter 4 (4.1-4.71):
 - Saddle-point free energy (4.1, 4.3): [[id:e6f7a8b9-c0d1-4e2f-a3b4-c5d6e7f8a9b0][Saddle Point Results]]
 - Homogeneous free energy (4.2, 4.4): [[id:d6401778-fc86-456b-8abd-692f1f4e9a1b][Homogeneity Mathematical Framework]]
 - Thermodynamic derivatives (4.5, 4.6, 4.12, 4.16): [[id:461855d0-9227-4da9-ba1b-f8bad53e15ff][Thermodynamic Derivatives Cascade]]
-- Analyticity argument (4.7-4.11): [[id:99c9b971-6389-474f-ab88-fafd512951bc][Analyticity Argument]]
-- Exponent definitions (4.13, 4.15): [[id:de716b3d-8e3d-4fcd-bdd5-40a813f929b6][Exponent Relations Complete Set]]
-- Scaling identities (4.17): [[id:de716b3d-8e3d-4fcd-bdd5-40a813f929b6][Exponent Relations Complete Set]]
+- Analyticity argument (4.7-4.11): [[id:fbb01064-5ffe-47be-aef8-58e07d1e2a59][Analyticity Argument]]
+- Exponent definitions (4.13, 4.15): [[id:5f983926-ed74-4070-91b3-be036b307a89][Exponent Relations Complete Set]]
+- Scaling identities (4.17): [[id:5f983926-ed74-4070-91b3-be036b307a89][Exponent Relations Complete Set]]
 
 ## Correlation Functions (4.18-4.25)
-- Complete correlation mathematics (4.18-4.25): [[id:9812fa5a-6ca9-40bf-9382-f9552dc28bdf][Correlation Function Mathematics]]
+- Complete correlation mathematics (4.18-4.25): [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Correlation Function Mathematics]]
 
 ## RG Formalism (4.26-4.48)
-- RG transformations (4.26-4.40): [[id:afba5389-ac75-4e21-b0ab-62b8319c7d75][RG Transformation Mathematics]]
+- RG transformations (4.26-4.40): [[id:767b74b1-0c38-41e1-af84-817b283cb1fd][RG Transformation Mathematics]]
 - Volume scaling (4.34, 4.38-4.39): [[id:a0b1c2d3-e4f5-4a6b-c7d8-e9f0a1b2c3d4][Volume/Length Scaling Under RG]]
-- Fixed point analysis (4.41-4.48): [[id:429deb29-ca65-406a-ac14-0b33cf975fb0][Fixed Point Analysis]]
+- Fixed point analysis (4.41-4.48): [[id:4214ec4a-6a11-4dfa-be2c-a9dc0967cbba][Fixed Point Analysis]]
 
 ## Gaussian Model (4.49-4.71)
-- Setup & conventions (4.49-4.52): [[id:df911964-3bd8-4162-ad2c-20ef23bd4a80][Gaussian Model Setup]]
-- Direct solution (4.53-4.60): [[id:e0812a92-87a6-438d-af2f-e21271585d5b][Gaussian Direct Solution]]
-- RG implementation (4.61-4.68): [[id:5f665483-ba40-445a-bb64-01273ea1d742][Gaussian RG Calculation]]
-- Operator dimensions (4.69-4.71): [[id:0972ac7a-fd86-47ca-bdfd-6519f20c93cb][Operator Scaling Dimensions]]
+- Setup & conventions (4.49-4.52): [[id:b3c47195-e8d4-4a5f-9f12-7e2a1b3c8d95][Gaussian Model Setup]]
+- Direct solution (4.53-4.60): [[id:b3c47195-e8d4-4a5f-9f12-7e2a1b3c8d95][Gaussian Direct Solution]]
+- RG implementation (4.61-4.68): [[id:d35cedf1-3a6a-455a-b4d3-2fb37c51915c][Gaussian RG Calculation]]
+- Operator dimensions (4.69-4.71): [[id:41e16051-695f-4ec8-9400-96847c53ffe6][Operator Scaling Dimensions]]
 
 Coverage verification: All 71 equations incorporated with proper context and mathematical development. Cross-reference system ensures no equation stands isolated.
 
-Cross-references: Complete slip network spans [[id:d6401778-fc86-456b-8abd-692f1f4e9a1b][Homogeneity Mathematical Framework]] through [[id:0972ac7a-fd86-47ca-bdfd-6519f20c93cb][Operator Scaling Dimensions]]
+Cross-references: Complete slip network spans [[id:d6401778-fc86-456b-8abd-692f1f4e9a1b][Homogeneity Mathematical Framework]] through [[id:41e16051-695f-4ec8-9400-96847c53ffe6][Operator Scaling Dimensions]]

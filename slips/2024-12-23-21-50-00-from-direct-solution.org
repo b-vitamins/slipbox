@@ -10,4 +10,4 @@ The direct solution confirms that higher-order gradient terms like L(∇²m)² d
 
 The solution also reveals the special role of dimension: for d ≤ 2, the integral for the free energy would diverge at the lower limit, signaling the breakdown of the Gaussian approximation and the need to include interactions. The direct approach thus provides both explicit results and insight into the limitations of quadratic theory.
 
-Cross-references: [[id:b3c47195-e8d4-4a5f-9f12-7e2a1b3c8d95][Direct Gaussian Solution]], [[id:f7d8e9ab-c3d4-4f5e-a6b7-8c9d0e1f2a3b][Singular Part Extraction]], [[id:e0812a92-87a6-438d-af2f-e21271585d5b][Gaussian Direct Solution]]
+Cross-references: [[id:b3c47195-e8d4-4a5f-9f12-7e2a1b3c8d95][Direct Gaussian Solution]], [[id:f7d8e9ab-c3d4-4f5e-a6b7-8c9d0e1f2a3b][Singular Part Extraction]], [[id:b3c47195-e8d4-4a5f-9f12-7e2a1b3c8d95][Gaussian Direct Solution]]

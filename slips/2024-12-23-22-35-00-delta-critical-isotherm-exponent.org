@@ -12,4 +12,4 @@ The measurement of δ requires careful approach to the critical temperature, as 
 
 The universality of δ, like other critical exponents, extends across diverse physical systems from magnets to fluids, demonstrating the profound unity underlying critical phenomena. The critical isotherm represents the cleanest experimental manifestation of scaling behavior.
 
-Cross-references: [[id:461855d0-9227-4da9-ba1b-f8bad53e15ff][Thermodynamic Derivatives Cascade]], [[id:a4b5c6d7-e8f9-4a0b-c1d2-e3f4a5b6c7d8][β (Order Parameter Exponent)]], [[id:de716b3d-8e3d-4fcd-bdd5-40a813f929b6][Exponent Relations Complete Set]]
+Cross-references: [[id:461855d0-9227-4da9-ba1b-f8bad53e15ff][Thermodynamic Derivatives Cascade]], [[id:a4b5c6d7-e8f9-4a0b-c1d2-e3f4a5b6c7d8][β (Order Parameter Exponent)]], [[id:5f983926-ed74-4070-91b3-be036b307a89][Exponent Relations Complete Set]]

@@ -15,7 +15,7 @@ Continuous symmetries fundamentally alter the physics through the Mermin-Wagner 
 Symmetry classification extends beyond equilibrium criticality to dynamic universality classes and quantum phase transitions. The mapping between classical d-dimensional and quantum (d-1)-dimensional systems preserves symmetry content while adding temporal structure. This deep connection between symmetry, dimensionality, and universality provides the theoretical foundation for understanding why simplified lattice models capture real physical phenomena—nature's complexity organizes itself according to these symmetry principles.
 
 ** See also:
-- [[id:c28e2051-0186-4a16-adbf-c255ad7d013a][Ising Model Foundation]]
-- [[id:1d9f52e1-b17a-47c0-a181-d0de520afdbe][O(n) Model Hierarchy]]
-- [[id:e0455732-a000-4676-a471-618304d77efb][Potts Model]]
-- [[id:88a1d693-b085-402f-9fc7-bd1ab16c5640][Model Universality Bridge]]
+- [[id:8c4d6f2a-1e38-4b9c-a7d5-2f8e1c9b0e3a][Ising Model Foundation]]
+- [[id:a4a97a6c-00b0-4768-b406-8cb556651932][O(n) Model Hierarchy]]
+- [[id:2a8f9c4d-5e1b-7a2f-9c8d-4e1b7a2f9c8d][Potts Model]]
+- [[id:3e6f8a9b-4c5d-7e8f-0a1b-4c5d6e7f8a9b][Model Universality Bridge]]

@@ -10,4 +10,4 @@ This extraction procedure illustrates general principles for identifying critica
 
 The same principles apply beyond the Gaussian model, though the technical implementation becomes considerably more complex when interactions are present. The successful extraction of f_sing ~ t^(2-α) with α = 2 - d/2 confirms the hyperscaling relation at the Gaussian level.
 
-Cross-references: [[id:b3c47195-e8d4-4a5f-9f12-7e2a1b3c8d95][Direct Gaussian Solution]], [[id:e0812a92-87a6-438d-af2f-e21271585d5b][Gaussian Direct Solution]], [[id:22caa9ef-cbf1-4986-8227-b5b07053a02e][Gaussian Exponents]]
+Cross-references: [[id:b3c47195-e8d4-4a5f-9f12-7e2a1b3c8d95][Direct Gaussian Solution]], [[id:b3c47195-e8d4-4a5f-9f12-7e2a1b3c8d95][Gaussian Direct Solution]], [[id:a8b9c0d1-e2f3-4a5b-c6d7-e8f9a0b1c2d3][Gaussian Exponents]]

@@ -24,4 +24,4 @@ The concept extends beyond equilibrium physics. Driven systems, quantum critical
 
 Quasi-long-range order exemplifies how dimensionality constrains possible phases of matter. Neither ordered nor disordered in the conventional sense, these phases exist only in marginal dimensions where competing tendencies—local ordering versus long-wavelength fluctuations—achieve delicate balance. Their study has enriched our understanding of phase transitions, revealing possibilities beyond the traditional ordered/disordered dichotomy.
 
-See also: [[id:8db469c1-ca8a-4d69-bc33-16e51908a8a3][Two-Dimensional Physics]], [[id:ff01f1f5-6720-4385-88aa-15f023c65673][Order Parameter Destruction]], [[id:f38b97b9-48e1-4680-a533-aa731ba2f70a][Scattering Experiments]]
+See also: [[id:8db469c1-ca8a-4d69-bc33-16e51908a8a3][Two-Dimensional Physics]], [[id:ff01f1f5-6720-4385-88aa-15f023c65673][Order Parameter Destruction]], [[id:9302663d-a632-4e0a-98d3-f9506fb0ab92][Scattering Experiments]]

@@ -6,7 +6,7 @@
 #+FILETAGS: :physics:spof:ch6:rg:nvl:fixedpoint:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
-The NvL recursion relation [[id:4d8f9c3e-7a2b-5f1c-8e4d-7a2b5f1c8e4d][Convergence Properties]] exhibits three fixed points that organize the phase diagram and determine critical behavior. At high temperature, K*=0 represents complete disorder. The linearization K' ≈ 2K(2/4)² = K/2 confirms stability—the fixed point attracts all high-temperature flows with eigenvalue 1/2 under the b=√3 transformation.
+The NvL recursion relation [[id:8c4d6f2a-1e38-4b9c-a7d5-2f8e1c9b0e3a][Convergence Properties]] exhibits three fixed points that organize the phase diagram and determine critical behavior. At high temperature, K*=0 represents complete disorder. The linearization K' ≈ 2K(2/4)² = K/2 confirms stability—the fixed point attracts all high-temperature flows with eigenvalue 1/2 under the b=√3 transformation.
 
 At low temperature, K*→∞ represents perfect order. For large K, the recursion K' ≈ 2K demonstrates instability—ordered states grow more ordered under coarse-graining. This fixed point's eigenvalue 2 exceeds unity, driving flows toward increasing order.
 
@@ -30,6 +30,6 @@ The eigenvalue exceeds unity, confirming instability as required for a critical 
 
 This yields critical exponents ν = 1/y_t ≈ 1.13 (exact: 1) and α = 2-2/y_t ≈ -0.26 (exact: 0), demonstrating reasonable accuracy despite the approximation's uncontrolled nature.
 
-The fixed point structure validates the NvL philosophy [[id:4e7f9d3c-8b5a-6c2f-9d7c-8b5a6c2f9d7c][Approximation Quality]]: even crude approximations capture universal features. The critical fixed point's existence between stable sinks reflects the phase transition's marginal nature—a delicate balance between order and disorder that RG flow analysis naturally reveals. The eigenvalue calculation's sensitivity to the fixed point location explains why improved truncations yield better exponents: small shifts in K* produce large changes in derivatives. This sensitivity also suggests why perturbative improvements converge slowly—the expansion point lies precisely where the system exhibits maximum fluctuations [[id:6d8f9c3e-7b4a-5f2c-8e9d-7b4a5f2c8e9d][Truncation Effects]].
+The fixed point structure validates the NvL philosophy [[id:3c9f8d4e-9f3a-7e2b-8d5c-9f3a7e2b8d5c][Approximation Quality]]: even crude approximations capture universal features. The critical fixed point's existence between stable sinks reflects the phase transition's marginal nature—a delicate balance between order and disorder that RG flow analysis naturally reveals. The eigenvalue calculation's sensitivity to the fixed point location explains why improved truncations yield better exponents: small shifts in K* produce large changes in derivatives. This sensitivity also suggests why perturbative improvements converge slowly—the expansion point lies precisely where the system exhibits maximum fluctuations [[id:6d8f9c3e-7b4a-5f2c-8e9d-7b4a5f2c8e9d][Truncation Effects]].
 
-**See also:** [[id:5d9f7c3e-8b4a-6e2f-9d5c-8b4a6e2f9d5c][NvL Recursion]] for the flow equations, [[id:3d7f8c2e-9b4a-5f8c-7e3d-9b4a5f8c7e3d][Improved Exponents]] for higher-order results, [[id:2e8f7c3d-9a5b-4f8c-7d3e-9a5b4f8c7d3e][Triangular vs Square]] for lattice comparisons.
+**See also:** [[id:5d9f7c3e-8b4a-6e2f-9d5c-8b4a6e2f9d5c][NvL Recursion]] for the flow equations, [[id:8c9f3d7e-2a5b-4f8c-6a4d-2a5b4f8c6a4d][Improved Exponents]] for higher-order results, [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Triangular vs Square]] for lattice comparisons.

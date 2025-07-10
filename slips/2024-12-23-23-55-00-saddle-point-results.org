@@ -20,4 +20,4 @@ These classical values satisfy all scaling relations exactly, providing a consis
 
 The saddle-point results remain valuable as they become exact in several limits: above four dimensions, for long-range interactions with sufficiently slow decay, and in the thermodynamic limit of infinite-range models. They also provide the starting point for systematic fluctuation expansions around mean-field theory.
 
-Cross-references: [[id:e0812a92-87a6-438d-af2f-e21271585d5b][Gaussian Direct Solution]], [[id:a8b9c0d1-e2f3-4a5b-c6d7-e8f9a0b1c2d3][Gaussian Exponents]]
+Cross-references: [[id:b3c47195-e8d4-4a5f-9f12-7e2a1b3c8d95][Gaussian Direct Solution]], [[id:a8b9c0d1-e2f3-4a5b-c6d7-e8f9a0b1c2d3][Gaussian Exponents]]

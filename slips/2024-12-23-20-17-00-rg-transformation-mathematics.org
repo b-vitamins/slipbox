@@ -20,4 +20,4 @@ This follows from partition function preservation: Z = Z' with V' = V/b^d.
 
 For conjugate pairs contributing ∫d^d x F·X to the Hamiltonian, dimensions satisfy y_X = y_F - d.
 
-See also: [[id:271b4406-4e94-4d46-b80a-51eaaa341016][Partition Function Preservation]], [[id:0b3907b5-eb1b-4f22-9793-f85e599d9436][Parameter Flow]], [[id:be961221-98ca-41d4-b32c-3b758e0a69e3][RG Transformation Equations]]
+See also: [[id:271b4406-4e94-4d46-b80a-51eaaa341016][Partition Function Preservation]], [[id:a4a97a6c-00b0-4768-b406-8cb556651932][Parameter Flow]], [[id:be961221-98ca-41d4-b32c-3b758e0a69e3][RG Transformation Equations]]

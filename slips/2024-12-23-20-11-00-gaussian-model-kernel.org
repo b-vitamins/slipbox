@@ -12,4 +12,4 @@ The diagonal structure in momentum space has profound consequences. First, it en
 
 The coupling to the external field affects only the q = 0 mode, reflecting the uniform nature of the applied magnetic field. This diagonal form is preserved under RG transformations in the Gaussian model, though interactions generally couple different momentum modes, necessitating more sophisticated treatments.
 
-See also: [[id:df911964-3bd8-4162-ad2c-20ef23bd4a80][Gaussian Model Setup]], [[id:22caa9ef-cbf1-4986-8227-b5b07053a02e][Gaussian Exponents]], [[id:e0812a92-87a6-438d-af2f-e21271585d5b][Gaussian Direct Solution]]
+See also: [[id:b3c47195-e8d4-4a5f-9f12-7e2a1b3c8d95][Gaussian Model Setup]], [[id:a8b9c0d1-e2f3-4a5b-c6d7-e8f9a0b1c2d3][Gaussian Exponents]], [[id:b3c47195-e8d4-4a5f-9f12-7e2a1b3c8d95][Gaussian Direct Solution]]

@@ -31,4 +31,4 @@ Away from criticality: Pattern changes under zooming until reaching scale ξ:
 
 This makes clear why the RG is the natural tool for critical phenomena—it systematically implements the scale transformations under which critical systems are invariant.
 
-Cross-references: [[id:c4d5e6f7-a8b9-4c0d-e1f2-a3b4c5d6e7f8][Self-Similar Snapshot Sequence]], [[id:afba5389-ac75-4e21-b0ab-62b8319c7d75][RG Transformation Mathematics]], [[id:a2b3c4d5-e6f7-4a8b-c9d0-e1f2a3b4c5d6][Brillouin Zone → Sphere Approximation]]
+Cross-references: [[id:c4d5e6f7-a8b9-4c0d-e1f2-a3b4c5d6e7f8][Self-Similar Snapshot Sequence]], [[id:767b74b1-0c38-41e1-af84-817b283cb1fd][RG Transformation Mathematics]], [[id:a2b3c4d5-e6f7-4a8b-c9d0-e1f2a3b4c5d6][Brillouin Zone → Sphere Approximation]]

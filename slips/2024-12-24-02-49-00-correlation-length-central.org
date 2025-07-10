@@ -8,13 +8,13 @@
 
 The correlation length ξ serves as the fundamental scale governing critical phenomena, unifying diverse computational approaches through its central role in each method. This length scale, measuring the spatial extent of thermal fluctuations, diverges at criticality, signaling the system's inability to distinguish between phases.
 
-Transfer matrix formalism extracts ξ from eigenvalue ratios [[id:ad4f5e6b-9c3d-7f2e-5e6b-9c3d7f2e5e6b][Correlation from Eigenvalues]]:
+Transfer matrix formalism extracts ξ from eigenvalue ratios [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Correlation from Eigenvalues]]:
 
 \[\xi = -\frac{1}{\ln(\lambda_-/\lambda_+)}\]
 
 The gap between the two largest eigenvalues directly determines correlation decay. This spectral interpretation—correlation length as inverse gap—extends throughout physics from quantum mechanics to stochastic processes. In one dimension, the exact formula ξ = -1/ln(tanh K) reveals exponential divergence at T=0.
 
-Renormalization group tracks ξ through scale transformations [[id:6d8f4c3e-7a9b-5f2c-8e3d-7a9b5f2c8e3d][RG Scale Transformation]]:
+Renormalization group tracks ξ through scale transformations [[id:3c9f8d4e-9f3a-7e2b-8d5c-9f3a7e2b8d5c][RG Scale Transformation]]:
 
 \[\xi' = \xi/b\]
 
@@ -26,4 +26,4 @@ Physical manifestations of ξ appear throughout critical phenomena. Light scatte
 
 The correlation length's universality transcends specific models or methods—it represents the emergent scale where microscopic details yield to collective behavior. This length marks the boundary between microscopic and macroscopic, between fluctuations and mean behavior, between computational tractability and difficulty. Every successful method must grapple with ξ: transfer matrices through spectral gaps, RG through scale invariance, Monte Carlo through dynamic slowing. The divergence of ξ at criticality represents nature's way of saying "all scales matter"—the very condition that makes critical phenomena both beautiful and challenging. Understanding phase transitions ultimately means understanding how and why correlation lengths diverge.
 
-**See also:** [[id:3c9f7d8e-8a9b-5f2c-9e8d-8a9b5f2c9e8d][Scaling Theory]] for critical behavior, [[id:6f9d8c3e-9a7b-5f2c-8e9d-9a7b5f2c8e9d][Critical Slowing Down]] for dynamics, [[id:7f8d9c3e-9a8b-6f2c-8e9d-9a8b6f2c8e9d][Finite Size Scaling]] for simulations.
+**See also:** [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Scaling Theory]] for critical behavior, [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Critical Slowing Down]] for dynamics, [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Visual-Algebraic Dictionary]] for simulations.

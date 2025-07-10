@@ -10,4 +10,4 @@ The choice z = b^(1+d/2) keeps the gradient term fixed (K' = K), establishing th
 
 Below four dimensions, the quartic interaction becomes relevant, signaling the need for a non-perturbative treatment. The momentum space formulation thus provides both a practical calculational tool and deep insight into the dimensional dependence of critical phenomena.
 
-Cross-references: [[id:0b3907b5-eb1b-4f22-9793-f85e599d9436][Parameter Flow]], [[id:5f665483-ba40-445a-bb64-01273ea1d742][Gaussian RG Calculation]], [[id:0972ac7a-fd86-47ca-bdfd-6519f20c93cb][Operator Scaling Dimensions]]
+Cross-references: [[id:a4a97a6c-00b0-4768-b406-8cb556651932][Parameter Flow]], [[id:d35cedf1-3a6a-455a-b4d3-2fb37c51915c][Gaussian RG Calculation]], [[id:41e16051-695f-4ec8-9400-96847c53ffe6][Operator Scaling Dimensions]]

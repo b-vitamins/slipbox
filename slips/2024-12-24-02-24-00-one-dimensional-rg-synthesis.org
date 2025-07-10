@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/246
 :END:
 #+TITLE: One-Dimensional RG Synthesis
-#+FILETAGS: :physics:spof:ch6:rg:synthesis:1d:
+#+FILETAGS: :physics:spof:ch6:rg:synthesis:oned:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The exact RG solution for one-dimensional systems provides the paradigmatic example of renormalization group analysis, revealing both the method's power and its subtleties. The decimation procedure succeeds precisely because the chain topology prevents interaction proliferation—each removed spin couples only to two neighbors, maintaining the nearest-neighbor structure essential for iteration.
@@ -16,4 +16,4 @@ The exactly solvable one-dimensional case serves multiple roles in statistical m
 
 The one-dimensional RG synthesis encapsulates the tension between exact solvability and physical richness. The very features enabling exact solution—factorization of interactions, absence of loops, sequential structure—preclude the collective phenomena that make phase transitions fascinating. Yet this "failure" is instructive: by understanding precisely why one dimension cannot support phase transitions, we identify what higher dimensions must provide. The proliferation of interactions that complicates higher-dimensional RG is not a technical nuisance but the essential ingredient for criticality.
 
-**See also:** [[id:2e4a9f6c-3d1b-8e7f-9a3c-3d1b8e7f9a3c][1D Recursion Relations]] for the exact solution, [[id:3f4d8e9a-5c1b-9f6a-7d3e-5c1b9f6a7d3e][Fixed Point Analysis]] for phase behavior, [[id:7f8c9d1e-6a4b-2f3c-6a4b2f3c6a4b][2D Decimation Complication]] for higher-dimensional challenges.
+**See also:** [[id:2e4a9f6c-3d1b-8e7f-9a3c-3d1b8e7f9a3c][1D Recursion Relations]] for the exact solution, [[id:3f4d8e9a-5c1b-9f6a-7d3e-5c1b9f6a7d3e][Fixed Point Analysis]] for phase behavior, [[id:7f8c9d1e-6a4b-2f3c-8e9d-6a4b2f3c8e9d][2D Decimation Complication]] for higher-dimensional challenges.

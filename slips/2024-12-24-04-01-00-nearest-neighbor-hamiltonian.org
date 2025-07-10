@@ -14,4 +14,4 @@ The transition from discrete to continuum is not merely mathematical convenience
 
 **Meta observation**: The rewriting of dot products as squared differences is a recurring motif in statistical mechanics. It shifts perspective from "reward for alignment" to "penalty for misalignment," facilitating expansions around ordered states. This mirrors the transition from thinking about forces to thinking about potentials in mechanics.
 
-**See also:** [[id:placeholder-01][Placeholder 01]], [[id:placeholder-03][Placeholder 03]]
+**See also:** Placeholder 01, Placeholder 03

@@ -38,4 +38,4 @@ Physical interpretation:
 
 Gradient operators: y_(∇ᵏm)² = 2k - d are always irrelevant for k ≥ 1 in physical dimensions, justifying the derivative expansion.
 
-Cross-references: [[id:0972ac7a-fd86-47ca-bdfd-6519f20c93cb][Operator Scaling Dimensions]], [[id:e4f5a6b7-c8d9-4e0f-a1b2-c3d4e5f6a7b8][Why Gaussian Theory Fails]], [[id:c2d3e4f5-a6b7-4c8d-e9f0-a1b2c3d4e5f6][Upper Critical Dimension]]
+Cross-references: [[id:41e16051-695f-4ec8-9400-96847c53ffe6][Operator Scaling Dimensions]], [[id:e4f5a6b7-c8d9-4e0f-a1b2-c3d4e5f6a7b8][Why Gaussian Theory Fails]], [[id:c2d3e4f5-a6b7-4c8d-e9f0-a1b2c3d4e5f6][Upper Critical Dimension]]

@@ -17,6 +17,6 @@ Despite the enlarged local Hilbert space and complex interactions, the ordered p
 The spin-s hierarchy illuminates a subtle aspect of universality: enlarged microscopic freedom need not generate new universality classes. The BEG model's tricritical point, where three phases meet, represents different physics from the critical point, yet the critical behavior itself remains Ising-like. This exemplifies how symmetry, not complexity, determines universality—a principle that extends to the distinction between Ising, O(n), and Potts models. The proliferation of coupling constants J₁, J₂, ..., J₂ₛ merely provides additional knobs for tuning to criticality without altering its character.
 
 ** See also:
-- [[id:c28e2051-0186-4a16-adbf-c255ad7d013a][Ising Model Foundation]]
-- [[id:1d9f52e1-b17a-47c0-a181-d0de520afdbe][O(n) Model Hierarchy]]
-- [[id:e0455732-a000-4676-a471-618304d77efb][Potts Model]]
+- [[id:8c4d6f2a-1e38-4b9c-a7d5-2f8e1c9b0e3a][Ising Model Foundation]]
+- [[id:a4a97a6c-00b0-4768-b406-8cb556651932][O(n) Model Hierarchy]]
+- [[id:2a8f9c4d-5e1b-7a2f-9c8d-4e1b7a2f9c8d][Potts Model]]

@@ -22,4 +22,4 @@ The exponent η characterizes anomalous scaling beyond simple dimensional analys
 
 Similarly for specific heat with energy correlations: α = (2-η')ν (Equation 4.25)
 
-See also: [[id:b41e2d14-3737-4c1d-b87e-bd501a46ddeb][Correlation Length as Master Scale]], [[id:c8411d15-e158-4dca-9c2d-ec9131181805][Power Law Decay at Criticality]], [[id:1a3b349a-4c19-4c08-a7c5-540314465c18][Correlation Length Block Decomposition]]
+See also: [[id:b41e2d14-3737-4c1d-b87e-bd501a46ddeb][Correlation Length as Master Scale]], [[id:55d654a9-9ff8-4246-b407-ee9ca4210b24][Power Law Decay at Criticality]], [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Correlation Length Block Decomposition]]

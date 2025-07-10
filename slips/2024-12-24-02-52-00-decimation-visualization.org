@@ -8,7 +8,7 @@
 
 *Reference: Figure 6.3 - Renormalization treatment of a one-dimensional chain via decimation by factor b=2*
 
-The decimation procedure's visual representation illuminates why one-dimensional systems permit exact renormalization group treatment [[id:1e8f3d2c-7a9b-4f5c-8d3e-7a9b4f5c8d3e][1D Decimation Success]]. The figure displays three levels: original spins (all sites), decimated spins (even sites removed), and renormalized bonds connecting retained spins.
+The decimation procedure's visual representation illuminates why one-dimensional systems permit exact renormalization group treatment [[id:3c9f8d4e-9f3a-7e2b-8d5c-9f3a7e2b8d5c][1D Decimation Success]]. The figure displays three levels: original spins (all sites), decimated spins (even sites removed), and renormalized bonds connecting retained spins.
 
 **Original configuration**: ─σ₁─σ₂─σ₃─σ₄─σ₅─σ₆─σ₇─σ₈─
 
@@ -20,11 +20,11 @@ The crucial observation: each decimated spin σ₂ᵢ couples only to its immedi
 
 The rescaling factor b=2 emerges naturally: the renormalized lattice has half the sites with twice the spacing. Correlation functions measured in original units transform as G'(r) = G(r/2), implementing the fundamental RG principle of viewing systems at different scales.
 
-The bond transformation visualizes the mathematical formula [[id:2e8f3d2c-7a9b-6f2c-8d3e-7a9b6f2c8d3e][Decimation Mathematics]]:
+The bond transformation visualizes the mathematical formula [[id:3c9f8d4e-9f3a-7e2b-8d5c-9f3a7e2b8d5c][Decimation Mathematics]]:
 - Original: two bonds of strength K connecting three consecutive spins
 - Renormalized: one effective bond of strength K' connecting alternate spins
 - The mapping K → K' incorporates all statistical weights of the decimated spin
 
-This figure encapsulates why one dimension is special: the linear topology prevents interaction proliferation that plagues higher dimensions. Each RG step maintains the chain structure, merely doubling the effective lattice spacing. The visual clarity—seeing exactly which spins are summed and how bonds transform—provides intuition often lost in algebraic manipulations. The decimation by b=2 shown here generalizes to any b, always preserving the crucial property that removed spins couple only to nearest neighbors, enabling exact recursion relations [[id:4d8f3c2e-7a9b-5f2c-8e3d-7a9b5f2c8e3d][Recursion Relations]].
+This figure encapsulates why one dimension is special: the linear topology prevents interaction proliferation that plagues higher dimensions. Each RG step maintains the chain structure, merely doubling the effective lattice spacing. The visual clarity—seeing exactly which spins are summed and how bonds transform—provides intuition often lost in algebraic manipulations. The decimation by b=2 shown here generalizes to any b, always preserving the crucial property that removed spins couple only to nearest neighbors, enabling exact recursion relations [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Recursion Relations]].
 
-**See also:** [[id:9f4c8e2a-1d7b-6e3f-8a4c-1d7b6e3f8a4c][Interaction Proliferation Principle]] for higher dimensions, [[id:5e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Visual RG Methods]] for pedagogical approach, [[id:6e8d9f3c-9a9b-5f2c-8e8d-9a9b5f2c8e8d][Block Spin Transformation]] for alternative schemes.
+**See also:** [[id:9f4c8e2a-1d7b-6e3f-8a4c-1d7b6e3f8a4c][Interaction Proliferation Principle]] for higher dimensions, [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Visual RG Methods]] for pedagogical approach, [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Block Spin Transformation]] for alternative schemes.

@@ -6,28 +6,28 @@
 #+FILETAGS: :physics:spof:ch6:rg:mk:generalization:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
-The Migdal-Kadanoff method generalizes elegantly to arbitrary statistical models through the transfer matrix formalism [[id:8d5c9e3f-7b4a-6f2c-9e8d-7b4a6f2c9e8d][Transfer Matrix Formalism]]. For any one-dimensional system with interactions {K}, the transfer matrix T({K}) generates partition functions through its powers. The MK prescription in d dimensions becomes:
+The Migdal-Kadanoff method generalizes elegantly to arbitrary statistical models through the transfer matrix formalism [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Transfer Matrix Formalism]]. For any one-dimensional system with interactions {K}, the transfer matrix T({K}) generates partition functions through its powers. The MK prescription in d dimensions becomes:
 
 \[T'_b(\{K'\}) = T(\{b^{d-1}K\})^b\]
 
 This compact formula encodes the complete approximation: strengthen bonds by factor b^(d-1) through bond moving, then apply b transfer matrices corresponding to b decimation steps along the retained direction.
 
-For the Potts model [[id:1e9d8f3c-7a5b-6f2c-8e9d-7a5b6f2c8e9d][Potts Model]], the transfer matrix elements are:
+For the Potts model [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Potts Model]], the transfer matrix elements are:
 
 \[\langle S_i|T|S_j\rangle = \exp[K\delta_{S_i,S_j} + h(\delta_{S_i,1} + \delta_{S_j,1})/2]\]
 
 The MK recursion follows from eigenvalue analysis of T({b^(d-1)K})^b, yielding phase diagrams for arbitrary q. The method correctly predicts first-order transitions for large q, though transition locations remain approximate.
 
-For O(n) models [[id:2f8d9c3e-6a5b-7f2c-9d8e-6a5b7f2c9d8e][O(n) Models]], the transfer operator acts on functions on the (n-1)-sphere:
+For O(n) models [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][O(n) Models]], the transfer operator acts on functions on the (n-1)-sphere:
 
 \[\langle\vec{S}_1|T|\vec{S}_2\rangle = \exp[K\vec{S}_1 \cdot \vec{S}_2 + \vec{h} \cdot (\vec{S}_1 + \vec{S}_2)/2]\]
 
-The spherical harmonic expansion [[id:3f9d8c3e-7a6b-5f2c-8e9d-7a6b5f2c8e9d][Spherical Harmonics]] enables analytical progress, though explicit recursion relations exist only for specific n values.
+The spherical harmonic expansion [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Spherical Harmonics]] enables analytical progress, though explicit recursion relations exist only for specific n values.
 
 The method extends to multi-spin interactions, anisotropic couplings, and long-range forces. For interactions decaying as r^(-d-σ), the bond-moving step must account for the modified scaling. The generalized recursion relations often require numerical solution but maintain the MK philosophy: transform complex connectivity into enhanced direct interactions amenable to one-dimensional analysis.
 
 Applications span diverse systems: gauge theories (replacing spin-spin by plaquette interactions), quantum models (with additional imaginary time direction), and random systems (where bond-moving averages over disorder). Each application requires careful consideration of which bonds to move and how to preserve essential physics.
 
-The MK generalization reveals the method's true character: a systematic dimensionality reduction technique that sacrifices geometric fidelity for analytical tractability. Its universal applicability stems from the transfer matrix formalism's generality—any system expressible through local transfer operators admits MK treatment. The method's varying accuracy across models reflects how well direct paths capture each system's essential physics. Success requires that enhanced direct bonds compensate for neglected indirect paths, a balance that depends sensitively on the model's interaction structure and symmetries. The approach thus provides a rapid, if approximate, reconnaissance of phase diagrams across vast model spaces [[id:4f8d9c3e-8a5b-6f2c-9d7e-8a5b6f2c9d7e][Model Space Exploration]].
+The MK generalization reveals the method's true character: a systematic dimensionality reduction technique that sacrifices geometric fidelity for analytical tractability. Its universal applicability stems from the transfer matrix formalism's generality—any system expressible through local transfer operators admits MK treatment. The method's varying accuracy across models reflects how well direct paths capture each system's essential physics. Success requires that enhanced direct bonds compensate for neglected indirect paths, a balance that depends sensitively on the model's interaction structure and symmetries. The approach thus provides a rapid, if approximate, reconnaissance of phase diagrams across vast model spaces [[id:6f8d9c3e-7a5b-4f2c-8e9d-7a5b4f2c8e9d][Model Space Exploration]].
 
 **See also:** [[id:6f8d9c3e-7a5b-4f2c-8e9d-7a5b4f2c8e9d][MK Bond Moving]] for the basic method, [[id:9e8d7f3c-6a5b-4e2f-8c9d-6a5b4e2f8c9d][MK Dimension Dependence]] for d-dimensional behavior, [[id:7f8d9c3e-4a5b-6e2f-9c8d-4a5b6e2f9c8d][Hierarchical Validation]] for exact implementations.

@@ -23,4 +23,4 @@ Symmetry constraints determine allowed operators:
 
 The RG analysis proceeds by tracking how each coupling constant flows under scale transformations, with only relevant operators affecting critical behavior.
 
-Cross-references: [[id:d61c162e-51ba-4a68-aff2-e34a5e6927fb][Universality Principle]], [[id:5a743de9-c8f1-4b2a-9d3e-4f5a6b7c8d90][Gaussian Fixed Point]], [[id:0972ac7a-fd86-47ca-bdfd-6519f20c93cb][Operator Scaling Dimensions]]
+Cross-references: [[id:e2229eaf-efce-4be5-a860-38034580d306][Universality Principle]], [[id:bb36bb0f-369b-4006-98c4-c11bc0d7525d][Gaussian Fixed Point]], [[id:41e16051-695f-4ec8-9400-96847c53ffe6][Operator Scaling Dimensions]]

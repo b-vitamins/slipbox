@@ -10,7 +10,7 @@ The Migdal-Kadanoff method extends naturally to arbitrary dimensions through sys
 
 \[K' = \frac{1}{2}\ln\cosh(2 \times 2^{d-1}K) = \frac{1}{2}\ln\cosh(2^d K)\]
 
-This dimension-dependent recursion exhibits qualitatively different behavior across dimensions. For d=1, it reduces to the exact decimation result [[id:7e9f3c8d-2a4b-5f7c-9d3e-2a4b5f7c9d3e][1D Transfer Matrix]]. For d>1, the approximation becomes increasingly severe as more indirect paths are neglected.
+This dimension-dependent recursion exhibits qualitatively different behavior across dimensions. For d=1, it reduces to the exact decimation result [[id:8b5c9d1e-2f4a-6e7f-9a8b-3c4d5e6f7a8b][1D Transfer Matrix]]. For d>1, the approximation becomes increasingly severe as more indirect paths are neglected.
 
 The high-temperature fixed point analysis yields:
 
@@ -34,4 +34,4 @@ As d→∞, the fixed point approaches K* → 2^(2(1-d)) → 0, while y_t → 1.
 
 The dimensional trends in MK reveal the approximation's fundamental limitation: neglecting indirect paths becomes catastrophic in high dimensions where connectivity proliferates. The method works best near the lower critical dimension where systems are marginally ordered and direct paths dominate. Its failure to reproduce mean-field behavior at high d stems from the bond-moving step's inability to capture the mean-field limit's essential feature—each spin effectively interacting with all others through the mesh of indirect connections. The approximation thus complements mean-field theory: MK excels in low dimensions where fluctuations dominate, while mean-field succeeds in high dimensions where connectivity overwhelms fluctuations [[id:9c8e3f7a-2d5b-4f9c-1a8e-2d5b4f9c1a8e][Dimension Dependence Master]].
 
-**See also:** [[id:8f9d7c3e-5a4b-6e2f-9d7c-5a4b6e2f9d7c][MK Fixed Points]] for critical behavior, [[id:1f8d9c3e-7a5b-6e2f-9d8c-7a5b6e2f9d8c][MK Generalization]] for other lattices, [[id:5e9d8f3c-7a6b-4e2f-9c8d-7a6b4e2f9c8d][Mean Field Validity]] for upper critical dimension.
+**See also:** [[id:8f9d7c3e-5a4b-6e2f-9d7c-5a4b6e2f9d7c][MK Fixed Points]] for critical behavior, [[id:1f8d9c3e-7a5b-6e2f-9d8c-7a5b6e2f9d8c][MK Generalization]] for other lattices, [[id:3d8f5a92-b4c7-4e8d-9fa0-c1d2e3f4a5b6][Mean Field Validity]] for upper critical dimension.

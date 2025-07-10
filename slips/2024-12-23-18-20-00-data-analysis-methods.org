@@ -24,4 +24,4 @@ Machine learning approaches complement traditional methods. Neural networks can 
 
 The culmination of careful data analysis is exponent values precise enough to discriminate between theoretical predictions. Modern experiments achieve 0.1% precision for leading exponents, testing series expansions, field-theoretic calculations, and Monte Carlo results. This interplay between experiment and theory, mediated by sophisticated data analysis, drives progress in understanding critical phenomena.
 
-See also: [[id:73a5eb9b-b875-4329-a31d-bfa41a134ea1][Lorentzian Line Shapes]], [[id:8f3d13bf-f379-41a9-9bc7-d0292f67d6b1][Critical Exponent Values]], [[id:1671dbdf-1832-420e-be62-69257e356bb4][Toward Renormalization]]
+See also: [[id:73a5eb9b-b875-4329-a31d-bfa41a134ea1][Lorentzian Line Shapes]], [[id:8f3d13bf-f379-41a9-9bc7-d0292f67d6b1][Critical Exponent Values]], [[id:946d05e3-fc1f-4924-a6ba-ba74c10ffde7][Toward Renormalization]]

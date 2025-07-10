@@ -18,7 +18,7 @@ In the phantom loop approximation, closed loops factor out of numerator and deno
 
 This expression has profound physical meaning: correlations arise from all possible paths carrying information between the two points, each weighted by \(t^{\text{length}}\) representing the probability of successful transmission along each bond. The sum includes paths of all lengths, from the direct route of \(|\mathbf{r}|\) steps to meandering walks of arbitrary duration.
 
-The transfer matrix formalism [[id:7d9f3e8a-2c4b-4f3e-9a8d-1b7c6e5f8d92][7.23]] enables exact evaluation. Using \(W(\ell) = T^\ell\) and summing the geometric series yields
+The transfer matrix formalism [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][7.23]] enables exact evaluation. Using \(W(\ell) = T^\ell\) and summing the geometric series yields
 
 \[\langle\sigma(\mathbf{0})\sigma(\mathbf{r})\rangle = \langle\mathbf{r}|\frac{1}{1-tT}|\mathbf{0}\rangle = \int\frac{\mathrm{d}^d\mathbf{q}}{(2\pi)^d}\frac{\mathrm{e}^{i\mathbf{q}\cdot\mathbf{r}}}{1-tT(\mathbf{q})}\]
 

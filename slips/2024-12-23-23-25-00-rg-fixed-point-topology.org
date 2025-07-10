@@ -26,4 +26,4 @@ Universality mechanism: Different microscopic Hamiltonians lying within the basi
 
 Crossover behavior occurs near but not at the fixed point—the RG flow initially approaches S* along irrelevant directions, then veers away along relevant directions.
 
-Cross-references: [[id:429deb29-ca65-406a-ac14-0b33cf975fb0][Fixed Point Analysis]], [[id:d61c162e-51ba-4a68-aff2-e34a5e6927fb][Universality Principle]], [[id:a0b1c2d3-e4f5-4a6b-c7d8-e9f0a1b2c3d4][RG Flow in Parameter Space]]
+Cross-references: [[id:4214ec4a-6a11-4dfa-be2c-a9dc0967cbba][Fixed Point Analysis]], [[id:e2229eaf-efce-4be5-a860-38034580d306][Universality Principle]], [[id:a0b1c2d3-e4f5-4a6b-c7d8-e9f0a1b2c3d4][RG Flow in Parameter Space]]

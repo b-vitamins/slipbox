@@ -27,7 +27,7 @@ Implementation in the Ising solution:
 
 4. *No U-turn constraint*: Matrix elements with \(\mu' = -\mu\) vanish, preventing immediate backtracking.
 
-Physical understanding through examples [[id:7.D5]]:
+Physical understanding through examples [[#7.D5]]:
 - *Simple loop* (square): Four \(90°\) left turns give \(\Theta = 4 \times \pi/2 = 2\pi\), hence \(n_c = 0\) (mod 2)
 - *Figure-eight*: Total angle \(\Theta = 0\), giving \(n_c = 1\) (mod 2), confirming one crossing
 - *Complex loops*: Local phase tracking automatically accounts for all crossings

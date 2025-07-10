@@ -12,4 +12,4 @@ The correlation length diverges as ξ ~ |t|^(-ν) where ν is the correlation le
 
 Through hyperscaling relations, the correlation length connects spatial and thermodynamic properties: the free energy density scales as ξ^(-d), linking geometric and energetic aspects of critical phenomena.
 
-See also: [[id:9812fa5a-6ca9-40bf-9382-f9552dc28bdf][Correlation Function Mathematics]], [[id:1a3b349a-4c19-4c08-a7c5-540314465c18][Correlation Length Block Decomposition]], [[id:aaeee0ab-91d5-4186-a7b7-8ad92572f72f][Homogeneity Assumption]]
+See also: [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Correlation Function Mathematics]], [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Correlation Length Block Decomposition]], [[id:aaeee0ab-91d5-4186-a7b7-8ad92572f72f][Homogeneity Assumption]]

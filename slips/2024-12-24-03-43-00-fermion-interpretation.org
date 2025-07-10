@@ -8,7 +8,7 @@
 
 The exact solution of the two-dimensional Ising model reveals a hidden fermionic structure: the crossing factors $(-1)^{n_c}$ in the loop expansion mirror fermion exchange statistics, enabling solution through free fermion techniques. This connection between classical spins and quantum fermions exemplifies the profound dualities in statistical mechanics.
 
-The fermionic nature emerges from the signed path sum [[id:7.8]]:
+The fermionic nature emerges from the signed path sum [[#7.8]]:
 
 $$S = \sum_{\text{loops}} t^{\text{length}} \times (-1)^{\text{crossings}}$$
 

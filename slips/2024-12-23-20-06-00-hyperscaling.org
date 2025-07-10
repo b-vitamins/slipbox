@@ -12,4 +12,4 @@ These relations are valid below the upper critical dimension d_c = 4, where fluc
 
 Hyperscaling emerges from the physical requirement that the free energy density must scale properly with the correlation length: f_sing ~ ξ^(-d). This geometric constraint links thermodynamic and spatial properties of critical systems.
 
-See also: [[id:9812fa5a-6ca9-40bf-9382-f9552dc28bdf][Correlation Function Mathematics]], [[id:c8afdb79-823f-4152-803a-64e6694f27dd][Josephson Identity]], [[id:1a3b349a-4c19-4c08-a7c5-540314465c18][Correlation Length Block Decomposition]]
+See also: [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Correlation Function Mathematics]], [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Josephson Identity]], [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Correlation Length Block Decomposition]]

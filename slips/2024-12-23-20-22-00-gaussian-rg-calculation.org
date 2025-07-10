@@ -18,4 +18,4 @@ Choosing z = b^(1+d/2) to keep K' = K (fixing the kinetic term): t' = b² t, h' 
 
 These eigenvalues reproduce the Gaussian exponents: ν = 1/y_t = 1/2, Δ = y_h/y_t = (1+d/2)/2 = 1/2 + d/4, α = 2 - dν = 2 - d/2.
 
-See also: [[id:6b78d283-9779-4cd9-ade6-d34768db74fa][Gaussian Model Setup]], [[id:23c95cbc-5659-4b27-9e7e-b24b81569aab][Gaussian Direct Solution]], [[id:1e02f461-10f0-4ed7-936a-9bac6fcd0e40][From RG Analysis]]
+See also: [[id:6b78d283-9779-4cd9-ade6-d34768db74fa][Gaussian Model Setup]], [[id:23c95cbc-5659-4b27-9e7e-b24b81569aab][Gaussian Direct Solution]], [[id:e8f9a0b1-c2d3-4e5f-a6b7-c8d9e0f1a2b3][From RG Analysis]]

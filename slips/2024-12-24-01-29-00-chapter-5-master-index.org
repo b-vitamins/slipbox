@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/221
 :END:
 #+TITLE: Chapter 5 Master Index
-#+FILETAGS: :physics:criticalphenomena:index:masterindex:navigation:
+#+FILETAGS: :physics:criticalphenomena:index:masterindex:navigation:extended:
 
 This index provides complete navigation through my Zettelkasten for Chapter 5 "Perturbative renormalization group" of Kardar's Statistical Physics of Fields. The 37 zettels capture all essential physics, mathematics, and visualizations, ensuring I need never return to the original text.
 

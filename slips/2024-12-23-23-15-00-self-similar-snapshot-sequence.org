@@ -30,4 +30,4 @@ Under RG transformation:
 
 Physical manifestations include critical opalescence (density fluctuations on all scales scatter light), fractal domain structures, and scale-free avalanches.
 
-Cross-references: [[id:d61c162e-51ba-4a68-aff2-e34a5e6927fb][Statistical Self-Similarity]], [[id:afba5389-ac75-4e21-b0ab-62b8319c7d75][RG Transformation Mathematics]], [[id:c8411d15-e158-4dca-9c2d-ec9131181805][Power Law Decay at Criticality]]
+Cross-references: [[id:e2229eaf-efce-4be5-a860-38034580d306][Statistical Self-Similarity]], [[id:767b74b1-0c38-41e1-af84-817b283cb1fd][RG Transformation Mathematics]], [[id:55d654a9-9ff8-4246-b407-ee9ca4210b24][Power Law Decay at Criticality]]

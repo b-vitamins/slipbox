@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Distortion Decomposition
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
-#+FILETAGS: :physics:spof:ch8:helmholtzdecomposition:vortexinteraction:energy:
+#+FILETAGS: :physics:spof:ch8:helmholtzdecomp:vortexinteraction:energy:
 
 Any two-dimensional vector field admits a Helmholtz decomposition into gradient and curl components. For the distortion field **u** = ∇θ, we write:
 \[\vec{u} = \vec{u}_0 + \vec{u}_1 = \nabla\phi - \nabla \times (\hat{z}\psi)\]

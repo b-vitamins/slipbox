@@ -20,4 +20,4 @@ This identifies the Gaussian exponents: α_+ = 2 - d/2, Δ = 1/2 + d/4 (Equation
 
 The higher gradient terms (L, etc.) do not affect the leading singularity, confirming their irrelevance at the Gaussian fixed point.
 
-See also: [[id:6b78d283-9779-4cd9-ade6-d34768db74fa][Gaussian Model Setup]], [[id:22caa9ef-cbf1-4986-8227-b5b07053a02e][Gaussian Exponents]], [[id:d35cedf1-3a6a-455a-b4d3-2fb37c51915c][Gaussian RG Calculation]]
+See also: [[id:6b78d283-9779-4cd9-ade6-d34768db74fa][Gaussian Model Setup]], [[id:a8b9c0d1-e2f3-4a5b-c6d7-e8f9a0b1c2d3][Gaussian Exponents]], [[id:d35cedf1-3a6a-455a-b4d3-2fb37c51915c][Gaussian RG Calculation]]

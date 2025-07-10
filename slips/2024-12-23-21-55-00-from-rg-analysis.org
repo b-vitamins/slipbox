@@ -10,4 +10,4 @@ The agreement between RG-derived and directly calculated exponents validates the
 
 Moreover, the RG framework extends naturally beyond the Gaussian model through perturbative corrections in ε = 4 - d, providing a systematic approach to critical phenomena in physical dimensions. The RG eigenvalues also determine dynamic critical exponents and guide the construction of effective theories for critical dynamics.
 
-Cross-references: [[id:0b3907b5-eb1b-4f22-9793-f85e599d9436][Parameter Flow]], [[id:a8b9c0d1-e2f3-4a5b-c6d7-e8f9a0b1c2d3][Gaussian Exponents]], [[id:5f665483-ba40-445a-bb64-01273ea1d742][Gaussian RG Calculation]]
+Cross-references: [[id:a4a97a6c-00b0-4768-b406-8cb556651932][Parameter Flow]], [[id:a8b9c0d1-e2f3-4a5b-c6d7-e8f9a0b1c2d3][Gaussian Exponents]], [[id:d35cedf1-3a6a-455a-b4d3-2fb37c51915c][Gaussian RG Calculation]]

@@ -24,4 +24,4 @@ Critical implications: As ξ → ∞ at criticality, the number of independent b
 
 The block picture underlies finite-size scaling, where system properties depend on the ratio L/ξ rather than L and ξ separately. The renormalization group formalizes this by systematically integrating out fluctuations within blocks of size ba.
 
-Cross-references: [[id:d61c162e-51ba-4a68-aff2-e34a5e6927fb][Correlation Length as Master Scale]], [[id:9812fa5a-6ca9-40bf-9382-f9552dc28bdf][Correlation Function Mathematics]], [[id:c8afdb79-823f-4152-803a-64e6694f27dd][Josephson Identity]]
+Cross-references: [[id:e2229eaf-efce-4be5-a860-38034580d306][Correlation Length as Master Scale]], [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Correlation Function Mathematics]], [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Josephson Identity]]

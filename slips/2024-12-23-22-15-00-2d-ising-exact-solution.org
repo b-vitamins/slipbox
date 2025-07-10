@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/160
 :END:
 #+TITLE: 2D Ising Exact Solution
-#+FILETAGS: :physics:statistical:ising:2d:exact:onsager:
+#+FILETAGS: :physics:statistical:ising:twod:exact:onsager:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Onsager's exact critical exponents for the 2D Ising model:
@@ -30,4 +30,4 @@ Verification of scaling:
 
 The rational exponents arise from conformal field theory in two dimensions, where additional symmetries constrain the critical behavior.
 
-Cross-references: [[id:f0a1b2c3-d4e5-4f6a-b7c8-d9e0f1a2b3c4][Ising Model (n=1) Exponents]], [[id:e715b16b-8dd4-43b4-99a3-a765bf51f1b7][Scaling Relations Summary]]
+Cross-references: [[id:f0a1b2c3-d4e5-4f6a-b7c8-d9e0f1a2b3c4][Ising Model (n=1) Exponents]], [[id:0e1f0487-2220-44e8-a38d-ebca00ff2696][Scaling Relations Summary]]

@@ -15,8 +15,8 @@ Fields enter renormalization group analysis as relevant perturbations with scali
 Fields provide experimental control over phase transitions while revealing theoretical structure. The analytical continuation to imaginary fields connects statistical mechanics to quantum field theory, where symmetry breaking drives mass generation. The response to infinitesimal fields—encoded in susceptibilities—diverges at criticality, signaling long-range correlations. This divergence represents the system's maximal sensitivity when poised between ordered and disordered phases, making critical points ideal for sensing applications despite their theoretical complexity.
 
 ** See also:
-- [[id:c28e2051-0186-4a16-adbf-c255ad7d013a][Ising Model Foundation]]
-- [[id:1d9f52e1-b17a-47c0-a181-d0de520afdbe][O(n) Model Hierarchy]]
-- [[id:e0455732-a000-4676-a471-618304d77efb][Potts Model]]
-- [[id:2b21c13a-9139-4b75-8fde-c5387276d92f][RG Analysis]]
-- [[id:47a23be8-23da-43d0-b491-03181ccf08d8][Correlation Functions]]
+- [[id:8c4d6f2a-1e38-4b9c-a7d5-2f8e1c9b0e3a][Ising Model Foundation]]
+- [[id:a4a97a6c-00b0-4768-b406-8cb556651932][O(n) Model Hierarchy]]
+- [[id:2a8f9c4d-5e1b-7a2f-9c8d-4e1b7a2f9c8d][Potts Model]]
+- [[id:767b74b1-0c38-41e1-af84-817b283cb1fd][RG Analysis]]
+- [[id:397b5adc-48ce-4ef3-ba89-bf63c869503a][Correlation Functions]]

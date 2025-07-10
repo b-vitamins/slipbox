@@ -37,4 +37,4 @@ From homogeneity principles:
 
 Only 2 independent exponents needed—all others follow from scaling relations. Common choices include (ν,η) for correlation-based approach or (α,Δ) for thermodynamic approach.
 
-Cross-references: [[id:de716b3d-8e3d-4fcd-bdd5-40a813f929b6][Exponent Relations Complete Set]], [[id:e715b16b-8dd4-43b4-99a3-a765bf51f1b7][Scaling Relations Summary]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]
+Cross-references: [[id:5f983926-ed74-4070-91b3-be036b307a89][Exponent Relations Complete Set]], [[id:0e1f0487-2220-44e8-a38d-ebca00ff2696][Scaling Relations Summary]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]

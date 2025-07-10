@@ -30,4 +30,4 @@ RG implementation: Integrate out modes in spherical shells Λ/b < |q| < Λ, main
 - Step 2: Rescale q' = bq
 - Step 3: Restore cutoff to Λ
 
-Cross-references: [[id:df911964-3bd8-4162-ad2c-20ef23bd4a80][Gaussian Model Setup]], [[id:5f665483-ba40-445a-bb64-01273ea1d742][Gaussian RG Calculation]], [[id:ec9a6bac-caee-42d3-b4be-6cdab5d0c5d3][Momentum Cutoff Conventions]]
+Cross-references: [[id:b3c47195-e8d4-4a5f-9f12-7e2a1b3c8d95][Gaussian Model Setup]], [[id:d35cedf1-3a6a-455a-b4d3-2fb37c51915c][Gaussian RG Calculation]], [[id:1e8d9f3c-8a9b-6f2c-9e7d-8a9b6f2c9e7d][Momentum Cutoff Conventions]]

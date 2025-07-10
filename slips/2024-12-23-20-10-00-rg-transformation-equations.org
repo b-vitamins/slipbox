@@ -12,4 +12,4 @@ The crucial property of RG transformations is their semi-group structure: succes
 
 The eigenvectors 𝒪ᵢ with eigenvalues b^(yᵢ) are the scaling operators of the theory. Near the fixed point, any Hamiltonian can be expanded as S = S* + Σᵢ gᵢ𝒪ᵢ, where the coupling constants transform simply as gᵢ' = b^(yᵢ) gᵢ. This diagonal form reveals the hierarchy of operators: relevant (yᵢ > 0), irrelevant (yᵢ < 0), and marginal (yᵢ = 0), determining which microscopic details affect macroscopic critical behavior.
 
-See also: [[id:429deb29-ca65-406a-ac14-0b33cf975fb0][Fixed Point Analysis]], [[id:f005296d-5b11-45df-8b6a-13c5fa3b471e][Eigenoperators at Gaussian FP]], [[id:c8411d15-e158-4dca-9c2d-ec9131181805][Power Law Decay at Criticality]]
+See also: [[id:4214ec4a-6a11-4dfa-be2c-a9dc0967cbba][Fixed Point Analysis]], [[id:767b74b1-0c38-41e1-af84-817b283cb1fd][Eigenoperators at Gaussian FP]], [[id:55d654a9-9ff8-4246-b407-ee9ca4210b24][Power Law Decay at Criticality]]

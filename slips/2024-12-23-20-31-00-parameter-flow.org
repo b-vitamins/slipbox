@@ -12,4 +12,4 @@ The parameter flow picture provides deep insight into universality: systems with
 
 The flow equations t' = b^(yt) t and h' = b^(yh) h demonstrate how temperature and field deviations from criticality transform under scale changes, leading directly to scaling forms when the fixed point condition is imposed.
 
-See also: [[id:be961221-98ca-41d4-b32c-3b758e0a69e3][RG Transformation Equations]], [[id:f005296d-5b11-45df-8b6a-13c5fa3b471e][Eigenoperators at Gaussian FP]], [[id:767b74b1-0c38-41e1-af84-817b283cb1fd][RG Transformation Mathematics]]
+See also: [[id:be961221-98ca-41d4-b32c-3b758e0a69e3][RG Transformation Equations]], [[id:767b74b1-0c38-41e1-af84-817b283cb1fd][Eigenoperators at Gaussian FP]], [[id:767b74b1-0c38-41e1-af84-817b283cb1fd][RG Transformation Mathematics]]
