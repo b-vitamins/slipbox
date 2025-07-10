@@ -28,4 +28,4 @@ Similar analysis applies to all fluctuation integrals. The susceptibility correc
 
 This analysis establishes upper critical dimensions as fundamental mathematical properties rather than approximation artifacts. The dimension where integrals change from convergent to divergent marks where fluctuations transition from corrections to dominant physics. This mathematical foundation underlies the entire structure of critical phenomena and renormalization group theory.
 
-See also: [[id:f74997a9-7993-446b-8866-eb3ed85448ec][Momentum Space Techniques]], [[id:12782f48-6079-48e4-b568-1121225dd5a7][Heat Capacity Corrections]], [[id:39cbb004-8f52-4220-9b8d-46cae5d84138][Ginzburg Region]]
+See also: [[id:f74997a9-7993-446b-8866-eb3ed85448ec][Momentum Space Techniques]], [[id:12782f48-6079-48e4-b568-1121225dd5a7][Heat Capacity Corrections]], [[id:50c6effe-fc5a-4304-a7bd-8376b7de5df6][Ginzburg Region]]

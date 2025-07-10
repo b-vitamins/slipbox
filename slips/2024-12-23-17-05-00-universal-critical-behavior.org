@@ -18,4 +18,4 @@ Universality has practical implications. Measurements on convenient systems (lik
 
 The mathematical foundation rests on the renormalization group, which demonstrates how universality emerges from the irrelevance of microscopic details when \(\xi\) exceeds all other length scales. This scale separation transforms qualitatively different microscopic systems into identical effective theories at long wavelengths.
 
-See also: [[id:93796440-8500-4892-9c68-b7f23385b629][Critical Exponent Values]], [[id:231284c0-b569-49f2-87fb-b26119c23020][Correlation Length Divergence]], [[id:a6dc5888-bca4-4665-bff8-dc79b44953ee][Critical Dimensions]]
+See also: [[id:8f3d13bf-f379-41a9-9bc7-d0292f67d6b1][Critical Exponent Values]], [[id:231284c0-b569-49f2-87fb-b26119c23020][Correlation Length Divergence]], [[id:a6dc5888-bca4-4665-bff8-dc79b44953ee][Critical Dimensions]]

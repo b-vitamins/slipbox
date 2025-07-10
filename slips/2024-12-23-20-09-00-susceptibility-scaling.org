@@ -12,4 +12,4 @@ At zero field, the scaling function approaches a constant: g_χ(0) = const, givi
 
 The susceptibility scaling function g_χ(x) describes how the divergence is cut off by finite field. For large x (strong field compared to temperature), dimensional analysis requires g_χ(x) ~ x^(-γ/Δ) to ensure proper field dependence along the critical isotherm. This scaling form enables the collapse of susceptibility data from different temperatures onto a single universal curve when plotted as |t|^γ χ versus h/|t|^Δ, providing a powerful experimental test of scaling.
 
-See also: [[id:22d8738e-34aa-4aae-ab84-9e0300254249][Thermodynamic Derivatives Cascade]], [[id:79c67aed-2ba3-4f2b-ac8e-bcff1df9622c][Magnetization from Free Energy]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]
+See also: [[id:461855d0-9227-4da9-ba1b-f8bad53e15ff][Thermodynamic Derivatives Cascade]], [[id:79c67aed-2ba3-4f2b-ac8e-bcff1df9622c][Magnetization from Free Energy]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]

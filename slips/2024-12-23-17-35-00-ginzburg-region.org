@@ -28,4 +28,4 @@ The physical picture is compelling: inside the Ginzburg region, the correlation 
 
 The Ginzburg region concept extends beyond equilibrium transitions. Dynamic phenomena, first-order transitions, and quantum phase transitions all exhibit analogous crossovers from mean-field to fluctuation-dominated regimes. In each case, identifying the relevant Ginzburg parameter guides theoretical approaches and experimental interpretations, making this criterion a fundamental tool in phase transition studies.
 
-See also: [[id:12782f48-6079-48e4-b568-1121225dd5a7][Heat Capacity Corrections]], [[id:e4c4f589-f078-4974-9950-f1d9deca85f8][Saddle Point Validity]], [[id:fde40a31-429d-4163-bfce-f255f164b51c][Coherence Lengths]]
+See also: [[id:12782f48-6079-48e4-b568-1121225dd5a7][Heat Capacity Corrections]], [[id:e4c4f589-f078-4974-9950-f1d9deca85f8][Saddle Point Validity]], [[id:946d05e3-fc1f-4924-a6ba-ba74c10ffde7][Coherence Lengths]]

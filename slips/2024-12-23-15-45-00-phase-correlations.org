@@ -24,4 +24,4 @@ The dimension-dependent behavior of phase fluctuations reveals a fundamental dic
 
 This analysis demonstrates that thermal phase fluctuations accumulate over large distances in low dimensions. Since physical phases are defined modulo \(2\pi\), unbounded growth of phase differences implies that distant regions lose phase coherence, destroying true long-range order. The mathematical structure here provides the foundation for the Mermin-Wagner theorem and explains why superfluidity and ferromagnetism require three dimensions for true long-range order.
 
-See also: [[id:ed52cb9d-83cb-4588-a670-84d359dc284d][Phase Fluctuation Theory]], [[id:ff01f1f5-6720-4385-88aa-15f023c65673][Order Parameter Destruction]], [[id:15028591-0c87-4a11-b5de-f0360439042a][Mermin-Wagner Theorem]]
+See also: [[id:ed52cb9d-83cb-4588-a670-84d359dc284d][Phase Fluctuation Theory]], [[id:ff01f1f5-6720-4385-88aa-15f023c65673][Order Parameter Destruction]], [[id:9302663d-a632-4e0a-98d3-f9506fb0ab92][Mermin-Wagner Theorem]]

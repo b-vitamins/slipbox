@@ -12,4 +12,4 @@ The argument exemplifies how fundamental thermodynamic principles—in this case
 
 This principle bridges the gap between phenomenological scaling and microscopic theory, showing how thermodynamic requirements alone can determine much of the critical behavior.
 
-Cross-references: [[id:1bb44a5f-852b-4fca-8634-3e3746cc9a1a][Homogeneity Mathematical Framework]], [[id:99c9b971-6389-474f-ab88-fafd512951bc][Analyticity Argument]], [[id:d61c162e-51ba-4a68-aff2-e34a5e6927fb][Universality Principle]]
+Cross-references: [[id:d6401778-fc86-456b-8abd-692f1f4e9a1b][Homogeneity Mathematical Framework]], [[id:99c9b971-6389-474f-ab88-fafd512951bc][Analyticity Argument]], [[id:d61c162e-51ba-4a68-aff2-e34a5e6927fb][Universality Principle]]

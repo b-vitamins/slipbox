@@ -24,4 +24,4 @@ Universal scaling collapse: When plotted as |t|^(-p_Q)Q versus h/|t|^Δ, all dat
 
 Different systems in the same universality class yield identical plots up to non-universal metric factors (vertical and horizontal shifts in log space). This visualization guides experimental analysis—successful data collapse confirms scaling hypothesis and yields critical exponents.
 
-Cross-references: [[id:1bb44a5f-852b-4fca-8634-3e3746cc9a1a][Homogeneity Mathematical Framework]], [[id:22d8738e-34aa-4aae-ab84-9e0300254249][Thermodynamic Derivatives Cascade]], [[id:03135b91-b9bd-4cfc-bf6c-e9ff0279e938][Susceptibility Scaling]]
+Cross-references: [[id:d6401778-fc86-456b-8abd-692f1f4e9a1b][Homogeneity Mathematical Framework]], [[id:461855d0-9227-4da9-ba1b-f8bad53e15ff][Thermodynamic Derivatives Cascade]], [[id:a662555e-24b7-4740-a0c4-fabf9e2f11d4][Susceptibility Scaling]]

@@ -12,4 +12,4 @@ The magnetization scaling function determines the behavior in different regimes.
 
 The equation of state near criticality thus takes the universal form m = |t|^β ℳ(h/|t|^Δ), where the scaling function ℳ encodes the crossover from spontaneous magnetization to field-induced magnetization.
 
-See also: [[id:22d8738e-34aa-4aae-ab84-9e0300254249][Thermodynamic Derivatives Cascade]], [[id:a662555e-24b7-4740-a0c4-fabf9e2f11d4][Free Energy Scaling Form]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]
+See also: [[id:461855d0-9227-4da9-ba1b-f8bad53e15ff][Thermodynamic Derivatives Cascade]], [[id:a662555e-24b7-4740-a0c4-fabf9e2f11d4][Free Energy Scaling Form]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]

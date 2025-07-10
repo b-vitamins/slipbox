@@ -12,4 +12,4 @@ The exponent β relates intimately to the correlation length exponent through hy
 
 The measurement of β through neutron scattering, magnetization, or other order parameter probes provides one of the most direct experimental determinations of critical exponents. The universality of β across different physical systems demonstrates the power of the scaling hypothesis.
 
-Cross-references: [[id:22d8738e-34aa-4aae-ab84-9e0300254249][Thermodynamic Derivatives Cascade]], [[id:de716b3d-8e3d-4fcd-bdd5-40a813f929b6][Exponent Relations Complete Set]], [[id:b416f32e-399e-467e-90d2-b061c88275e1][δ (Critical Isotherm Exponent)]]
+Cross-references: [[id:461855d0-9227-4da9-ba1b-f8bad53e15ff][Thermodynamic Derivatives Cascade]], [[id:de716b3d-8e3d-4fcd-bdd5-40a813f929b6][Exponent Relations Complete Set]], [[id:b416f32e-399e-467e-90d2-b061c88275e1][δ (Critical Isotherm Exponent)]]

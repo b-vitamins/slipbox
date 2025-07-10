@@ -32,4 +32,4 @@ The marginal dimension \(d = 2\) deserves special attention. Here phase fluctuat
 
 This calculation demonstrates how Goldstone modes—the soft phase fluctuations arising from continuous symmetry breaking—ultimately destroy the very order that created them in low dimensions. The competition between the energetic drive toward local ordering and the entropic proliferation of long-wavelength phase fluctuations lies at the heart of the Mermin-Wagner theorem.
 
-See also: [[id:351f7df5-3a15-4bda-99df-9d18b5bc969f][Phase Correlations]], [[id:15028591-0c87-4a11-b5de-f0360439042a][Mermin-Wagner Theorem]], [[id:e0883a37-4d29-4fe1-b4f3-1f182755b53d][Two-Dimensional Physics]]
+See also: [[id:351f7df5-3a15-4bda-99df-9d18b5bc969f][Phase Correlations]], [[id:9302663d-a632-4e0a-98d3-f9506fb0ab92][Mermin-Wagner Theorem]], [[id:8db469c1-ca8a-4d69-bc33-16e51908a8a3][Two-Dimensional Physics]]

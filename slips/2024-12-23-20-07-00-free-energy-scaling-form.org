@@ -12,4 +12,4 @@ The scaling function g_f(x) encapsulates the crossover between different thermod
 
 The scaling form demonstrates that all thermodynamic information near criticality is encoded in two numbers (the exponents) and one function (the scaling function). Different physical systems within the same universality class share identical exponents and scaling functions up to non-universal metric factors. This remarkable simplification from the infinite complexity of microscopic interactions to a single scaling function exemplifies the power of universality in critical phenomena.
 
-See also: [[id:1bb44a5f-852b-4fca-8634-3e3746cc9a1a][Homogeneity Mathematical Framework]], [[id:03135b91-b9bd-4cfc-bf6c-e9ff0279e938][Magnetization from Free Energy]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]
+See also: [[id:d6401778-fc86-456b-8abd-692f1f4e9a1b][Homogeneity Mathematical Framework]], [[id:79c67aed-2ba3-4f2b-ac8e-bcff1df9622c][Magnetization from Free Energy]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]

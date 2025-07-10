@@ -22,4 +22,4 @@ The divergence of susceptibilities at criticality follows from the competition b
 
 The universal amplitude ratios \(A_+/A_-\) and critical exponent \(\gamma = 1\) emerging from this analysis represent mean-field predictions. While the exponent receives corrections from fluctuations in \(d < 4\), the basic physical picture—susceptibility divergence driven by the growing volume of correlated regions—remains valid. This connection between correlation length and thermodynamic response provides one of the most direct experimental signatures of critical phenomena.
 
-See also: [[id:2e0349c4-ec89-4fe3-b4c6-59c430f248a3][Correlation Function Definitions]], [[id:6ab026ae-43e8-4d26-afef-0c3146927867][Stiffness Constants]], [[id:93796440-8500-4892-9c68-b7f23385b629][Critical Exponent Values]]
+See also: [[id:2e0349c4-ec89-4fe3-b4c6-59c430f248a3][Correlation Function Definitions]], [[id:6ab026ae-43e8-4d26-afef-0c3146927867][Stiffness Constants]], [[id:8f3d13bf-f379-41a9-9bc7-d0292f67d6b1][Critical Exponent Values]]

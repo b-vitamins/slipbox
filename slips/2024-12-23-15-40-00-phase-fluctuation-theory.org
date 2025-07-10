@@ -26,4 +26,4 @@ The reality condition \(\theta(-\mathbf{q}) = \theta_\mathbf{q}^*\) for the phas
 
 The phase fluctuation spectrum encodes the fundamental physics of Goldstone modes. Low-energy excitations with small \(q\) experience vanishing restoring force, allowing phase distortions to propagate freely through the system. This soft mode behavior, while preserving local order, ultimately destroys global phase coherence in dimensions \(d \leq 2\) through the accumulation of long-wavelength fluctuations. The mathematical structure here provides the foundation for understanding superfluidity, spin waves, and more generally, the consequences of spontaneously broken continuous symmetries.
 
-See also: [[id:351f7df5-3a15-4bda-99df-9d18b5bc969f][Phase Correlations]], [[id:65b656bc-edef-4e0f-bfc7-a6284bf7516d][Goldstone Mode Physics]], [[id:15028591-0c87-4a11-b5de-f0360439042a][Mermin-Wagner Theorem]]
+See also: [[id:351f7df5-3a15-4bda-99df-9d18b5bc969f][Phase Correlations]], [[id:6867a48d-29af-4c1c-971c-70d8f4bc81f3][Goldstone Mode Physics]], [[id:9302663d-a632-4e0a-98d3-f9506fb0ab92][Mermin-Wagner Theorem]]

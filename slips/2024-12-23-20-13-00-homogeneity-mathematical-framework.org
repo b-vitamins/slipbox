@@ -16,4 +16,4 @@ This identifies the critical exponents as 2-α = d/yt and Δ = yh/yt. The scalin
 
 This framework provides the foundation for all scaling forms in critical phenomena, connecting the [[id:aaeee0ab-91d5-4186-a7b7-8ad92572f72f][Homogeneity Assumption]] to concrete mathematical expressions.
 
-See also: [[id:afba5389-ac75-4e21-b0ab-62b8319c7d75][RG Transformation Mathematics]], [[id:a662555e-24b7-4740-a0c4-fabf9e2f11d4][Free Energy Scaling Form]], [[id:22d8738e-34aa-4aae-ab84-9e0300254249][Thermodynamic Derivatives Cascade]]
+See also: [[id:afba5389-ac75-4e21-b0ab-62b8319c7d75][RG Transformation Mathematics]], [[id:a662555e-24b7-4740-a0c4-fabf9e2f11d4][Free Energy Scaling Form]], [[id:461855d0-9227-4da9-ba1b-f8bad53e15ff][Thermodynamic Derivatives Cascade]]

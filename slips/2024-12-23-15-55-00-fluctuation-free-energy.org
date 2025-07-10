@@ -25,4 +25,4 @@ The structure of these fluctuation corrections reveals why mean-field theory eve
 
 This free energy forms the starting point for calculating all thermodynamic quantities including fluctuations. The heat capacity, magnetization, and susceptibility all receive corrections that become dominant near the critical point in dimensions \(d < 4\). The mathematical structure here provides the foundation for systematic expansions beyond mean-field theory, though the Gaussian approximation itself eventually breaks down when fluctuations become too strong.
 
-See also: [[id:12782f48-6079-48e4-b568-1121225dd5a7][Heat Capacity Corrections]], [[id:02d3c7e4-c09b-4809-a1c4-989d154ea5bc][Functional Determinants]], [[id:42723703-6da3-4a68-9da8-e38012a8a4c6][Beyond Gaussian Physics]]
+See also: [[id:12782f48-6079-48e4-b568-1121225dd5a7][Heat Capacity Corrections]], [[id:67c747dc-64e5-4d38-93c7-c3041d7e51d1][Functional Determinants]], [[id:f0e21c90-5b51-4ee1-bdc6-b097ddb35cc8][Beyond Gaussian Physics]]

@@ -22,4 +22,4 @@ The diagonal structure (\(\delta_{\alpha,\beta}\)) reflects the rotational symme
 
 Integrating the correlation function over all space yields the susceptibility, while its Fourier transform returns the structure factor measured in scattering experiments. This web of connections makes \(G^c\) the central object linking theory to experiment in the study of critical phenomena.
 
-See also: [[id:733f3011-9659-48d1-8d88-58fccc326fca][Fluctuation Mode Structure]], [[id:caf5042c-4b4a-4e58-9f6f-e9e85cce970c][Susceptibility Integrals]], [[id:fb81004f-52fb-4422-8bdd-058a805bb70c][Scattering Theory Foundation]]
+See also: [[id:733f3011-9659-48d1-8d88-58fccc326fca][Fluctuation Mode Structure]], [[id:caf5042c-4b4a-4e58-9f6f-e9e85cce970c][Susceptibility Integrals]], [[id:537782fb-124f-4fd6-96d2-14b416999b30][Scattering Theory Foundation]]

@@ -26,4 +26,4 @@ These explicit forms enable practical calculations. Scattering experiments probe
 
 The mathematical structure reveals why \(d = 2\) is special: there \(C_d(x) \sim \ln(x)\) diverges logarithmically, signaling marginal behavior. This logarithmic growth drives the destruction of long-range order in two-dimensional systems with continuous symmetry, while permitting the quasi-long-range order of the Kosterlitz-Thouless phase.
 
-See also: [[id:61ddb9e6-cf71-4c2b-bc53-b847bc39fc58][Green's Function I_d Properties]], [[id:2e0349c4-ec89-4fe3-b4c6-59c430f248a3][Correlation Function Definitions]], [[id:ad9411f3-56cd-489b-ae7e-d011257e4329][Correlation Decay Regimes]]
+See also: [[id:61ddb9e6-cf71-4c2b-bc53-b847bc39fc58][Green's Function I_d Properties]], [[id:2e0349c4-ec89-4fe3-b4c6-59c430f248a3][Correlation Function Definitions]], [[id:c26b66f5-ded0-4426-bf02-2dcf8b35114b][Correlation Decay Regimes]]

@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       7e35a8f8-4e75-4f00-a876-0b2f4067a7a2
+:CUSTOM_ID: 92/398
+:END:
+#+TITLE: Master Exponent Table
+#+FILETAGS: :physics:spof:ch4:exponents:reference:
+#+SETUPFILE: ~/.config/emacs/setup/setupfile.org
+
+A comprehensive reference table of critical exponents for major universality classes, providing the definitive values needed for quantitative comparison between theory and experiment.
+
+| Universality Class | d | n | α | β | γ | δ | ν | η |
+|-------------------|---|---|-----|-----|-----|-----|-----|-----|
+| **Mean Field** | >4 | any | 0 | 1/2 | 1 | 3 | 1/2 | 0 |
+| **3D Ising** | 3 | 1 | 0.110 | 0.326 | 1.237 | 4.789 | 0.630 | 0.036 |
+| **3D XY** | 3 | 2 | -0.007 | 0.348 | 1.316 | 4.780 | 0.672 | 0.038 |
+| **3D Heisenberg** | 3 | 3 | -0.115 | 0.365 | 1.386 | 4.783 | 0.705 | 0.036 |
+| **2D Ising** | 2 | 1 | 0 | 1/8 | 7/4 | 15 | 1 | 1/4 |
+| **2D XY (KT)** | 2 | 2 | - | - | - | - | - | 1/4 |
+
+**Notes:**
+- Values for 3D systems from high-precision Monte Carlo and series expansion calculations
+- 2D Ising values are exact (Onsager solution)
+- 2D XY exhibits Kosterlitz-Thouless behavior with essential singularities
+- Exponent relations: α + 2β + γ = 2, γ = β(δ-1), dν = 2-α, γ = ν(2-η)
+
+**Experimental Verification:**
+Critical exponents have been measured to 3-4 significant figures in well-controlled experiments, confirming theoretical predictions and establishing universality as a fundamental principle of critical phenomena.
+
+See also: [[id:8f3d13bf-f379-41a9-9bc7-d0292f67d6b1][Critical Exponent Values]], [[id:59a6f3d3-7bd0-4afd-9d63-ac4cfa91b86b][Universal Critical Behavior]], [[id:461855d0-9227-4da9-ba1b-f8bad53e15ff][Thermodynamic Derivatives Cascade]]

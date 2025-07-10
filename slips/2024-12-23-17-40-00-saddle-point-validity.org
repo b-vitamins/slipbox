@@ -20,4 +20,4 @@ Understanding saddle point validity proves crucial for theoretical strategy. Whe
 
 The physical intuition behind validity is compelling: mean-field theory assumes each degree of freedom experiences an average field from its neighbors. This becomes exact when either the number of neighbors becomes infinite (high dimensions) or when fluctuations in that average field become negligible (weak coupling or far from criticality). When neither condition holds, the full complexity of correlated fluctuations must be addressed.
 
-See also: [[id:50c6effe-fc5a-4304-a7bd-8376b7de5df6][Ginzburg Region]], [[id:a6dc5888-bca4-4665-bff8-dc79b44953ee][Critical Dimensions]], [[id:42723703-6da3-4a68-9da8-e38012a8a4c6][Beyond Gaussian Physics]]
+See also: [[id:50c6effe-fc5a-4304-a7bd-8376b7de5df6][Ginzburg Region]], [[id:a6dc5888-bca4-4665-bff8-dc79b44953ee][Critical Dimensions]], [[id:f0e21c90-5b51-4ee1-bdc6-b097ddb35cc8][Beyond Gaussian Physics]]

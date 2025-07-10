@@ -30,4 +30,4 @@ The Ginzburg temperature \(t_G\) depends crucially on the microscopic length \(\
 
 This analysis identifies \(d = 4\) as the upper critical dimension below which fluctuations fundamentally alter critical phenomena, transforming discontinuous mean-field transitions into power-law singularities. The dimensional crossover at \(d = 4\) represents one of the deepest results in critical phenomena, establishing when microscopic fluctuations collectively reorganize to produce new macroscopic behavior.
 
-See also: [[id:3028e20e-7268-406d-b4fd-5b3103ade06d][Fluctuation Free Energy]], [[id:39cbb004-8f52-4220-9b8d-46cae5d84138][Ginzburg Region]], [[id:fde40a31-429d-4163-bfce-f255f164b51c][Coherence Lengths]]
+See also: [[id:3028e20e-7268-406d-b4fd-5b3103ade06d][Fluctuation Free Energy]], [[id:50c6effe-fc5a-4304-a7bd-8376b7de5df6][Ginzburg Region]], [[id:946d05e3-fc1f-4924-a6ba-ba74c10ffde7][Coherence Lengths]]

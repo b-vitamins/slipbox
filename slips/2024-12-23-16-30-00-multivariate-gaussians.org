@@ -40,4 +40,4 @@ For any linear combination \(A = \sum_i a_i\phi_i\), the cumulant generating fun
 
 This identity proves essential for calculating order parameter correlations and response functions throughout statistical physics.
 
-See also: [[id:c64406ae-8c0f-4faa-9ade-cf69b7dc5478][Gaussian Integral Basics]], [[id:6444aa55-031d-43ca-a069-bbaed0d2e0ed][Functional Integrals]], [[id:02d3c7e4-c09b-4809-a1c4-989d154ea5bc][Functional Determinants]]
+See also: [[id:c64406ae-8c0f-4faa-9ade-cf69b7dc5478][Gaussian Integral Basics]], [[id:6444aa55-031d-43ca-a069-bbaed0d2e0ed][Functional Integrals]], [[id:67c747dc-64e5-4d38-93c7-c3041d7e51d1][Functional Determinants]]

@@ -26,4 +26,4 @@ The momentum space formulation naturally separates universal infrared physics fr
 
 The mathematical machinery developed here—momentum integrals, spherical coordinates, dimensional analysis—provides the foundation for all perturbative calculations in critical phenomena, from Gaussian fluctuations to renormalization group flows.
 
-See also: [[id:9237039d-fa0a-43ed-a5c6-f6b677764098][Integral Convergence Analysis]], [[id:3028e20e-7268-406d-b4fd-5b3103ade06d][Fluctuation Free Energy]], [[id:02d3c7e4-c09b-4809-a1c4-989d154ea5bc][Functional Determinants]]
+See also: [[id:9237039d-fa0a-43ed-a5c6-f6b677764098][Integral Convergence Analysis]], [[id:3028e20e-7268-406d-b4fd-5b3103ade06d][Fluctuation Free Energy]], [[id:67c747dc-64e5-4d38-93c7-c3041d7e51d1][Functional Determinants]]

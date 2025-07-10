@@ -10,6 +10,6 @@ The gap exponent Δ is the universal ratio that controls field scaling across al
 
 Defined through the relation Δ = βδ, where β is the order parameter exponent and δ is the critical isotherm exponent. The gap exponent appears in all homogeneous scaling forms, controlling the relative importance of field versus temperature deviations from criticality.
 
-This universal ratio emerges from the [[id:aaeee0ab-91d5-4186-a7b7-8ad92572f72f][Homogeneity Assumption]] and is systematically derived in [[id:1bb44a5f-852b-4fca-8634-3e3746cc9a1a][Homogeneity Mathematical Framework]].
+This universal ratio emerges from the [[id:aaeee0ab-91d5-4186-a7b7-8ad92572f72f][Homogeneity Assumption]] and is systematically derived in [[id:d6401778-fc86-456b-8abd-692f1f4e9a1b][Homogeneity Mathematical Framework]].
 
 See also: [[id:de716b3d-8e3d-4fcd-bdd5-40a813f929b6][Exponent Relations Complete Set]], [[id:7e35a8f8-4e75-4f00-a876-0b2f4067a7a2][Master Exponent Table]]

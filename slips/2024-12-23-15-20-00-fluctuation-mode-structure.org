@@ -16,4 +16,4 @@ This momentum-space structure directly determines the scattering intensity. For 
 
 In the ordered phase, the distinction between longitudinal and transverse modes becomes experimentally accessible through polarized neutron scattering. Longitudinal scattering yields a Lorentzian centered at \(\mathbf{q} = 0\) (superimposed on a Bragg peak from the spontaneous magnetization), while transverse scattering exhibits the characteristic \(1/q^2\) divergence of Goldstone modes. This mode structure provides the microscopic foundation for understanding how continuous symmetry breaking manifests in measurable quantities.
 
-See also: [[id:4d3a9bc0-c8b2-43ff-bcaa-393f584e194d][Critical Scattering Form]], [[id:6ab026ae-43e8-4d26-afef-0c3146927867][Stiffness Constants]], [[id:fb81004f-52fb-4422-8bdd-058a805bb70c][Scattering Theory Foundation]]
+See also: [[id:e361a82a-9085-4566-9e2d-803e22bd473b][Critical Scattering Form]], [[id:6ab026ae-43e8-4d26-afef-0c3146927867][Stiffness Constants]], [[id:537782fb-124f-4fd6-96d2-14b416999b30][Scattering Theory Foundation]]

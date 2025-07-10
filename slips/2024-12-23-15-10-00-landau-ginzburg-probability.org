@@ -25,4 +25,4 @@ Substituting this decomposition into the Hamiltonian and expanding to quadratic 
 
 The first term represents the mean-field free energy, while the quadratic terms describe Gaussian fluctuations with mode-dependent stiffnesses. The distinction between the coefficients \(12u\bar{m}^2\) and \(4u\bar{m}^2\) reflects the fundamental asymmetry between longitudinal and transverse fluctuations in the ordered phase, leading directly to Goldstone mode physics.
 
-**See also:** [[id:6ab026ae-43e8-4d26-afef-0c3146927867][Stiffness Constants]] for the mode-dependent restoring forces, [[id:227b3624-a893-4624-bf55-a341680718b1][Fluctuation Mode Structure]] for the momentum space analysis, [[id:65b656bc-edef-4e0f-bfc7-a6284bf7516d][Goldstone Mode Physics]] for the consequences of transverse softness.
+**See also:** [[id:6ab026ae-43e8-4d26-afef-0c3146927867][Stiffness Constants]] for the mode-dependent restoring forces, [[id:733f3011-9659-48d1-8d88-58fccc326fca][Fluctuation Mode Structure]] for the momentum space analysis, [[id:6867a48d-29af-4c1c-971c-70d8f4bc81f3][Goldstone Mode Physics]] for the consequences of transverse softness.

@@ -38,4 +38,4 @@ For \(d > 2\), the potential approaches a constant at infinity, enabling stable 
 
 This mathematical structure governs phase fluctuations in superfluids, spin waves in magnets, and more generally any Goldstone mode arising from spontaneous symmetry breaking. The dimension-dependent behavior of \(C_d\) provides the mathematical foundation for the Mermin-Wagner theorem, explaining why continuous symmetries cannot be spontaneously broken in \(d \leq 2\) dimensions with short-range interactions.
 
-See also: [[id:5b06142d-7d7b-4ce6-944e-dc587c198a2b][I_d Explicit Forms]], [[id:ed52cb9d-83cb-4588-a670-84d359dc284d][Phase Fluctuation Theory]], [[id:e0883a37-4d29-4fe1-b4f3-1f182755b53d][Two-Dimensional Physics]]
+See also: [[id:5b06142d-7d7b-4ce6-944e-dc587c198a2b][I_d Explicit Forms]], [[id:ed52cb9d-83cb-4588-a670-84d359dc284d][Phase Fluctuation Theory]], [[id:8db469c1-ca8a-4d69-bc33-16e51908a8a3][Two-Dimensional Physics]]

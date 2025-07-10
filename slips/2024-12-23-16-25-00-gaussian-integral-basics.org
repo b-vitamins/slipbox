@@ -28,4 +28,4 @@ The quadratic dependence on \(k\) in the exponent identifies the Gaussian nature
 
 These basic results extend directly to field theory, where \(\phi\) becomes a function of position and the single integral becomes a functional integral. The mathematical technology developed here—generating functionals, cumulant expansions, and characteristic functions—provides the foundation for perturbative calculations in statistical field theory. The Gaussian integral represents the exactly solvable reference point around which more complex theories are constructed.
 
-See also: [[id:1a66b200-5705-41ad-9624-73387cbd9623][Multivariate Gaussians]], [[id:6444aa55-031d-43ca-a069-bbaed0d2e0ed][Functional Integrals]], [[id:42723703-6da3-4a68-9da8-e38012a8a4c6][Beyond Gaussian Physics]]
+See also: [[id:1a66b200-5705-41ad-9624-73387cbd9623][Multivariate Gaussians]], [[id:6444aa55-031d-43ca-a069-bbaed0d2e0ed][Functional Integrals]], [[id:f0e21c90-5b51-4ee1-bdc6-b097ddb35cc8][Beyond Gaussian Physics]]

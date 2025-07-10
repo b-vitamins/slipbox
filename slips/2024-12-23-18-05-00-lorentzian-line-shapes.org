@@ -24,4 +24,4 @@ Modern fitting procedures employ global analysis across multiple temperatures an
 
 The Lorentzian line shape represents one of the most successful connections between theoretical predictions and experimental observations in critical phenomena, providing a quantitative bridge between microscopic correlations and macroscopic measurements.
 
-See also: [[id:fb81004f-52fb-4422-8bdd-058a805bb70c][Scattering Theory Foundation]], [[id:ba9b268b-d0a5-49e0-8a52-72208e634e0a][Scattering Experiments]], [[id:733f3011-9659-48d1-8d88-58fccc326fca][Fluctuation Mode Structure]]
+See also: [[id:537782fb-124f-4fd6-96d2-14b416999b30][Scattering Theory Foundation]], [[id:ba9b268b-d0a5-49e0-8a52-72208e634e0a][Scattering Experiments]], [[id:733f3011-9659-48d1-8d88-58fccc326fca][Fluctuation Mode Structure]]
