@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/349
 :END:
 #+TITLE: Spin Renormalization
-#+FILETAGS: :physics:spof:ch8:renormalization:symmetry:coarsegraining:
+#+FILETAGS: :physics:spof:ch8:renormalization:symmetryprinciple:coarsegraining:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The renormalization of the spin field emerges naturally from rotational symmetry. After integrating out short-wavelength modes, the coarse-grained spin develops as:

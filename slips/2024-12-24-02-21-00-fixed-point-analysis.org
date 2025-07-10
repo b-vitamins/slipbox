@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/243
 :END:
 #+TITLE: Fixed Point Analysis
-#+FILETAGS: :physics:spof:ch6:rg:fixedpoint:analysis:
+#+FILETAGS: :physics:spof:ch6:renormgroup:fixedpoint:analysis:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Fixed points of the RG transformation, satisfying K* = K'(K*), organize the global flow structure and determine phase behavior. The one-dimensional Ising model exhibits two fixed points with contrasting stability:

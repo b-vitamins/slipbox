@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/381
 :END:
 #+TITLE: Burger's Circuit
-#+filetags: :physics:spof:ch8:dislocation:topologicaldefect:burgersvector:
+#+FILETAGS: :physics:spof:ch8:dislocation:topologicaldefect:burgersvector:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 A dislocation is identified through the failure of a Burger's circuit to close. On a perfect lattice, any closed path stepping from atom to atom returns to the starting point. Around a dislocation, the circuit fails to close, with the gap defining the Burger's vector **b**. In the continuum description:

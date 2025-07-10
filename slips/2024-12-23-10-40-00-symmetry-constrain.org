@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/42
 :END:
 #+TITLE: Symmetry Constraints
-#+FILETAGS: :physics:spof:ch2:symmetry:constraints:
+#+FILETAGS: :physics:spof:ch2:symmetryprinciple:constraints:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Symmetry stands as the most powerful organizing principle in constructing statistical field theories. While coarse-graining may obscure microscopic details, it faithfully preserves the symmetries of the underlying Hamiltonian. These surviving symmetries severely constrain the allowed terms in the effective theory, often determining its structure almost completely.

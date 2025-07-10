@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/208
 :END:
 #+TITLE: Wilson-Fisher RG Flow
-#+FILETAGS: :physics:criticalphenomena:rg:wilsonfisher:flow:fixedpoint:
+#+FILETAGS: :physics:criticalphenomena:renormgroup:wilsonfisher:flow:fixedpoint:
 
 The renormalization group flow at second order reveals the complete phase diagram for $d < 4$. The two fixed points—Gaussian at the origin and Wilson-Fisher at $(t^*, u^*)$—organize the flow in qualitatively different ways:
 

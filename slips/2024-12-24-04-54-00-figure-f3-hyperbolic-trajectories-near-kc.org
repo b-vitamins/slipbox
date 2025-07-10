@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/393
 :END:
 #+TITLE: Figure F3: Hyperbolic Trajectories Near K_c
-#+filetags: :physics:spof:ch8:figure:criticalpoint:nonlinearflow:
+#+FILETAGS: :physics:spof:ch8:figure:criticalpoint:nonlinearflow:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 **Sketch Description:**

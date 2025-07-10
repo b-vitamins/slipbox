@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/379
 :END:
 #+TITLE: Orientational Order
-#+filetags: :physics:spof:ch8:orientationalorder:bondangle:rotation:
+#+FILETAGS: :physics:spof:ch8:orientationalorder:bondangle:rotation:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Crystals break rotational as well as translational symmetry. The local bond angle θ(**x**) between crystalline axes and a fixed reference direction provides the orientational order parameter. For the triangular lattice, six-fold symmetry makes Ψ(**x**) = e^{i6θ(**x**)} the appropriate complex order parameter, while square lattices use e^{i4θ(**x**)}.

@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/375
 :END:
 #+TITLE: General Correlations
-#+filetags: :physics:spof:ch8:correlationfunctions:tensorstructure:projection:
+#+FILETAGS: :physics:spof:ch8:correlationfunctions:tensorstructure:projection:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The full displacement correlation function combines transverse and longitudinal contributions into a tensor structure:

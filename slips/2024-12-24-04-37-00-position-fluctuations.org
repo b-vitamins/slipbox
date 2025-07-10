@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/376
 :END:
 #+TITLE: Position Fluctuations
-#+filetags: :physics:spof:ch8:fluctuations:lindemanncriterion:melting:
+#+FILETAGS: :physics:spof:ch8:fluctuations:lindemanncriterion:melting:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The mean square displacement between two atoms separated by distance |**x**| quantifies the destruction of crystalline order:

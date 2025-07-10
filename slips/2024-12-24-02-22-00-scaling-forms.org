@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/244
 :END:
 #+TITLE: Scaling Forms
-#+FILETAGS: :physics:spof:ch6:rg:scaling:critical:
+#+FILETAGS: :physics:spof:ch6:renormgroup:scaling:critical:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The RG transformation generates scaling forms for thermodynamic quantities through the fundamental relation \(\xi' = \xi/b\), encoding how correlation lengths transform under coarse-graining. Near the zero-temperature fixed point, this yields the homogeneous form:

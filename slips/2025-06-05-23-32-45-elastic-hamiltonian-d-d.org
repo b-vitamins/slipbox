@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/13
 :END:
 #+TITLE: Elastic Hamiltonian D D
-#+FILETAGS: :physics:spof:ch1:elasticity:symmetry:
+#+FILETAGS: :physics:spof:ch1:elasticity:symmetryprinciple:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 

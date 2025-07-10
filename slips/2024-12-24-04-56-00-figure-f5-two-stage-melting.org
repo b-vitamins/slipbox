@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/395
 :END:
 #+TITLE: Figure F5: Two-Stage Melting
-#+filetags: :physics:spof:ch8:figure:phasediagram:melting:kthny:
+#+FILETAGS: :physics:spof:ch8:figure:phasediagram:melting:kthny:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 **Sketch Description:**

@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/383
 :END:
 #+TITLE: Dislocation Hamiltonian
-#+filetags: :physics:spof:ch8:vectorcoulombgas:interaction:elasticenergy:
+#+FILETAGS: :physics:spof:ch8:vectorcoulombgas:interaction:elasticenergy:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The elastic energy in the presence of dislocations separates into phonon and dislocation contributions: β𝓗 = β𝓗₀[**φ**] + β𝓗₁. After calculations paralleling the XY model but accounting for the tensor nature of strain, the dislocation Hamiltonian becomes:

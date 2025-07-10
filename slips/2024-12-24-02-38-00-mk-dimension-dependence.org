@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/259
 :END:
 #+TITLE: MK Dimension Dependence
-#+FILETAGS: :physics:spof:ch6:rg:mk:dimension:
+#+FILETAGS: :physics:spof:ch6:renormgroup:migdalkadanoff:dimension:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The Migdal-Kadanoff method extends naturally to arbitrary dimensions through systematic bond strengthening. On a d-dimensional hypercubic lattice, each retained spin connects to 2d neighbors. The bond-moving step [[id:6f8d9c3e-7a5b-4f2c-8e9d-7a5b4f2c8e9d][MK Bond Moving]] strengthens each surviving bond by factor 2^(d-1), accounting for the (d-1) perpendicular directions from which bonds are moved:

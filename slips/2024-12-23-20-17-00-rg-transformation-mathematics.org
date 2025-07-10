@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/129
 :END:
 #+TITLE: RG Transformation Mathematics
-#+FILETAGS: :physics:spof:ch4:rg:
+#+FILETAGS: :physics:spof:ch4:renormgroup:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The mathematical formulation of RG transformations combines coarse-graining, rescaling, and field renormalization in a systematic procedure: m'(x) = ζm̃(x/b) (Equation 4.29). This combines coarse-graining (integration over cells), rescaling (x_new = x_old/b), and field renormalization (factor ζ).

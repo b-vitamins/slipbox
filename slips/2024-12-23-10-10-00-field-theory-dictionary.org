@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/36
 :END:
 #+TITLE: Field Theory Dictionary
-#+FILETAGS: :physics:spof:ch2:classification:symmetry:
+#+FILETAGS: :physics:spof:ch2:classification:symmetryprinciple:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Statistical field theory achieves remarkable economy through its \((n,d)\) classification scheme. The integer \(n\) counts the components of the order parameter field \(\vec{m} \equiv (m_1, m_2, \ldots, m_n) \in \mathbb{R}^n\), while \(d\) specifies the spatial dimensionality \(\mathbf{x} \equiv (x_1, x_2, \ldots, x_d) \in \mathbb{R}^d\). This simple labeling encompasses an extraordinary range of physical phenomena, each sharing the same critical behavior within its universality class.

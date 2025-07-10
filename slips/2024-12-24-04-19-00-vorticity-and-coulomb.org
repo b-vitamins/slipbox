@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/358
 :END:
 #+TITLE: Vorticity and Coulomb
-#+filetags: :physics:spof:ch8:vorticity:coulombinteraction:mathematicalstructure:
+#+FILETAGS: :physics:spof:ch8:vorticity:coulombinteraction:mathstructure:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The distortion field **u** ≡ ∇θ in the presence of vortices behaves like a fluid velocity field. For any closed path, Stokes' theorem gives:

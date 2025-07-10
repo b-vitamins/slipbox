@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/246
 :END:
 #+TITLE: One-Dimensional RG Synthesis
-#+FILETAGS: :physics:spof:ch6:rg:synthesis:oned:
+#+FILETAGS: :physics:spof:ch6:renormgroup:synthesis:oned:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The exact RG solution for one-dimensional systems provides the paradigmatic example of renormalization group analysis, revealing both the method's power and its subtleties. The decimation procedure succeeds precisely because the chain topology prevents interaction proliferation—each removed spin couples only to two neighbors, maintaining the nearest-neighbor structure essential for iteration.

@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/319
 :END:
 #+TITLE: 7.9 Local vs Global Symmetry
-#+FILETAGS: :physics:spof:ch7:series:symmetry:localglobal:
+#+FILETAGS: :physics:spof:ch7:series:symmetryprinciple:localglobal:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The distinction between local and global symmetries fundamentally alters the physics of phase transitions, with Elitzur's theorem establishing that local symmetries cannot spontaneously break. This principle explains why gauge theories require non-local order parameters and exhibit confinement phenomena absent in conventional spin systems.

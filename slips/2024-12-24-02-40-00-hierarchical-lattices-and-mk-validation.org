@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/261
 :END:
 #+TITLE: Hierarchical Lattices and MK Validation
-#+FILETAGS: :physics:spof:ch6:rg:hierarchical:mk:validation:
+#+FILETAGS: :physics:spof:ch6:renormgroup:hierarchical:migdalkadanoff:validation:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Hierarchical (Berker) lattices provide exact realization of Migdal-Kadanoff approximations, transforming an uncontrolled approximation into an exact solution for specially constructed geometries. These lattices are built recursively: start with a basic unit (bond, triangle, tetrahedron), then replace each bond by the entire unit, iterating to generate a self-similar fractal structure.

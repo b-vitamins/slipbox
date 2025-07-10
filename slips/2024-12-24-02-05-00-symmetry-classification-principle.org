@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/227
 :END:
 #+TITLE: Symmetry Classification Principle
-#+FILETAGS: :physics:spof:ch6:lattice:symmetry:universality:
+#+FILETAGS: :physics:spof:ch6:lattice:symmetryprinciple:universality:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Symmetry provides the organizing principle for statistical models, determining both their static universality classes and dynamic behavior. The symmetry group of the Hamiltonian—discrete or continuous, Abelian or non-Abelian—dictates which order parameters can emerge and what phase transitions are possible. This classification transcends specific models: any system with identical symmetry, dimensionality, and interaction range shares the same critical behavior.

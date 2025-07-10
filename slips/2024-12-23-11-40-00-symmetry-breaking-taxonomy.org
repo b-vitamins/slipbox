@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/54
 :END:
 #+TITLE: Symmetry Breaking Taxonomy
-#+FILETAGS: :physics:spof:ch2:symmetry:goldstone:
+#+FILETAGS: :physics:spof:ch2:symmetryprinciple:goldstone:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Phase transitions involve symmetry changes. The distinction between continuous and discrete symmetry breaking determines low-energy excitations, defect structure, and long-range order in low dimensions. This taxonomy organizes understanding of ordered phases.

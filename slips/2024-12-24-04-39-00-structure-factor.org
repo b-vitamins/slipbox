@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/378
 :END:
 #+TITLE: Structure Factor
-#+filetags: :physics:spof:ch8:structurefactor:diffraction:braggpeaks:
+#+FILETAGS: :physics:spof:ch8:structurefactor:diffraction:braggpeaks:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The structure factor measured in diffraction experiments is:

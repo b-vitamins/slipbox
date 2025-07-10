@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/390
 :END:
 #+TITLE: Complete Phase Diagram
-#+filetags: :physics:spof:ch8:phasediagram:melting:kthnytheory:
+#+FILETAGS: :physics:spof:ch8:phasediagram:melting:kthnytheory:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The KTHNY theory predicts two-dimensional crystals melt via two continuous transitions:

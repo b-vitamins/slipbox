@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/257
 :END:
 #+TITLE: MK Bond Moving
-#+FILETAGS: :physics:spof:ch6:rg:mk:bondmoving:
+#+FILETAGS: :physics:spof:ch6:renormgroup:migdalkadanoff:bondmoving:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The Migdal-Kadanoff approximation circumvents interaction proliferation [[id:9f4c8e2a-1d7b-6e3f-8a4c-1d7b6e3f8a4c][Interaction Proliferation Principle]] through a radical simplification: redistribute bonds before decimation to maintain one-dimensional topology. For a square lattice with b=2 decimation [[id:8b5c9d1e-2f4a-6e7f-9a8b-3c4d5e6f7a8b][Square Lattice Decimation]], the procedure removes bonds not connected to retained spins, then doubles the remaining bonds to preserve total interaction strength.

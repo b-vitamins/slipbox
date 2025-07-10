@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/240
 :END:
 #+TITLE: Bond Renormalization
-#+FILETAGS: :physics:spof:ch6:rg:decimation:bond:
+#+FILETAGS: :physics:spof:ch6:renormgroup:decimation:bond:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The renormalization of bonds through decimation transforms microscopic interactions into effective coarse-grained couplings. The general Ising bond energy maintains its functional form under RG:

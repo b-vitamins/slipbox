@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/374
 :END:
 #+TITLE: Phonon Modes
-#+filetags: :physics:spof:ch8:phonons:goldstonemodes:dispersion:
+#+FILETAGS: :physics:spof:ch8:phonons:goldstonemodes:dispersion:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The broken translational symmetry of the crystal generates two acoustic phonon branches—the Goldstone modes of the ordered phase. In Fourier space, these separate into transverse and longitudinal polarizations. Transverse modes satisfy **q** ⊥ **u** and have energy:

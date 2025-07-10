@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/253
 :END:
 #+TITLE: NvL Recursion
-#+FILETAGS: :physics:spof:ch6:rg:nvl:recursion:
+#+FILETAGS: :physics:spof:ch6:renormgroup:nvl:recursion:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The first-order cumulant calculation yields the renormalized Hamiltonian by evaluating inter-cell interactions with intra-cell averages:

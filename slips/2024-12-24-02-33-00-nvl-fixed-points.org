@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/254
 :END:
 #+TITLE: NvL Fixed Points
-#+FILETAGS: :physics:spof:ch6:rg:nvl:fixedpoint:
+#+FILETAGS: :physics:spof:ch6:renormgroup:nvl:fixedpoint:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The NvL recursion relation [[id:8c4d6f2a-1e38-4b9c-a7d5-2f8e1c9b0e3a][Convergence Properties]] exhibits three fixed points that organize the phase diagram and determine critical behavior. At high temperature, K*=0 represents complete disorder. The linearization K' ≈ 2K(2/4)² = K/2 confirms stability—the fixed point attracts all high-temperature flows with eigenvalue 1/2 under the b=√3 transformation.

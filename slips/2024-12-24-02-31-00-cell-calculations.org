@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/252
 :END:
 #+TITLE: Cell Calculations
-#+FILETAGS: :physics:spof:ch6:rg:nvl:calculations:
+#+FILETAGS: :physics:spof:ch6:renormgroup:nvl:calculations:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The NvL method's computational core involves evaluating partition functions and expectation values for isolated three-spin cells. The eight possible spin configurations separate into two classes based on their majority-rule renormalization:

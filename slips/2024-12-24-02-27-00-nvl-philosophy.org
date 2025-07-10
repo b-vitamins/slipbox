@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/249
 :END:
 #+TITLE: NvL Philosophy
-#+FILETAGS: :physics:spof:ch6:rg:nvl:philosophy:
+#+FILETAGS: :physics:spof:ch6:renormgroup:nvl:philosophy:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The Niemeijer-van Leeuwen approach attacks interaction proliferation through systematic perturbation theory, treating inter-cell couplings as weak perturbations to exactly solvable intra-cell problems. Applied to the triangular lattice, the method groups sites into three-spin cells, defining renormalized spins through majority rule:

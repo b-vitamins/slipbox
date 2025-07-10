@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/398
 :END:
 #+TITLE: Diagram D3: Quartic Vertex Contractions
-#+filetags: :physics:spof:ch8:diagram:wickcontractions:renormalization:
+#+FILETAGS: :physics:spof:ch8:diagram:wickcontractions:renormalization:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 **Diagrammatic Content:**

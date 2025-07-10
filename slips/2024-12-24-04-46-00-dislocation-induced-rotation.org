@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/385
 :END:
 #+TITLE: Dislocation-Induced Rotation
-#+filetags: :physics:spof:ch8:rotation:dislocations:orientationalfield:
+#+FILETAGS: :physics:spof:ch8:rotation:dislocations:orientationalfield:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Dislocations create rotations in the crystal through their displacement fields. Using θ = -ẑ·∇×**u**/2 and the dislocation field, the rotation due to a collection of dislocations is:

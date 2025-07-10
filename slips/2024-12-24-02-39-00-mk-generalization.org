@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/260
 :END:
 #+TITLE: MK Generalization
-#+FILETAGS: :physics:spof:ch6:rg:mk:generalization:
+#+FILETAGS: :physics:spof:ch6:renormgroup:migdalkadanoff:generalization:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The Migdal-Kadanoff method generalizes elegantly to arbitrary statistical models through the transfer matrix formalism [[id:8e9d8f3c-9a9b-6f2c-8e8d-9a9b6f2c8e8d][Transfer Matrix Formalism]]. For any one-dimensional system with interactions {K}, the transfer matrix T({K}) generates partition functions through its powers. The MK prescription in d dimensions becomes:

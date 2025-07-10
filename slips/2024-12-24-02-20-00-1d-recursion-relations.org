@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/242
 :END:
 #+TITLE: 1D Recursion Relations
-#+FILETAGS: :physics:spof:ch6:rg:decimation:recursion:
+#+FILETAGS: :physics:spof:ch6:renormgroup:decimation:recursion:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The recursion relations for one-dimensional Ising decimation simplify dramatically in zero field, where the magnetic field term h vanishes. The coupling constant transformation reduces to

@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/182
 :END:
 #+TITLE: General Hamiltonian Forms
-#+FILETAGS: :physics:statistical:hamiltonian:symmetry:expansion:
+#+FILETAGS: :physics:statistical:hamiltonian:symmetryprinciple:expansion:
 
 General Landau-Ginzburg-Wilson Hamiltonian expansion:
 

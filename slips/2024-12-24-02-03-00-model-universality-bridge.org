@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/225
 :END:
 #+TITLE: Model Universality Bridge
-#+FILETAGS: :physics:spof:ch6:lattice:universality:rg:
+#+FILETAGS: :physics:spof:ch6:lattice:universality:renormgroup:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Universality dictates that microscopic details become irrelevant at criticality—all models sharing appropriate symmetries and interaction ranges flow to identical fixed points under renormalization. This profound principle transforms model selection from a question of physical accuracy to one of computational convenience. The Ising, O(n), and Potts models thus represent not approximations but exact descriptions of critical phenomena for their respective symmetry classes.

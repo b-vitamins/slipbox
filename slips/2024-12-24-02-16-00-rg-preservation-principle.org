@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/238
 :END:
 #+TITLE: RG Preservation Principle
-#+FILETAGS: :physics:spof:ch6:rg:decimation:preservation:
+#+FILETAGS: :physics:spof:ch6:renormgroup:decimation:preservation:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The renormalization group achieves scale transformation while preserving the partition function, embodying the fundamental principle that physics remains invariant under systematic coarse-graining. For a system with N spins reduced to N/b degrees of freedom, this preservation requires

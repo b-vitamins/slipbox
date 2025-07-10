@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/200
 :END:
 #+TITLE: Second-Order Coarse Graining
-#+FILETAGS: :physics:spof:ch5:rg:secondorder:coarsegraining:
+#+FILETAGS: :physics:spof:ch5:renormgroup:secondorder:coarsegraining:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The second-order calculation reveals a fundamental feature of renormalization: the parameter space is not closed under coarse graining. The effective Hamiltonian after integrating out short wavelength modes becomes

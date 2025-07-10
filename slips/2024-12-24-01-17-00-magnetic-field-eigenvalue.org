@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/209
 :END:
 #+TITLE: Magnetic Field Eigenvalue
-#+FILETAGS: :physics:criticalphenomena:rg:magneticfield:eigenvalue:scaling:
+#+FILETAGS: :physics:criticalphenomena:renormgroup:magneticfield:eigenvalue:scaling:
 
 The magnetic field couples linearly to the order parameter through $-\vec{h} \cdot \int d^d\mathbf{x}\vec{m}(\mathbf{x}) = -\vec{h} \cdot \vec{m}(\mathbf{q}=0)$. This term has special properties under renormalization group transformations that reflect its role as the conjugate field to the order parameter.
 

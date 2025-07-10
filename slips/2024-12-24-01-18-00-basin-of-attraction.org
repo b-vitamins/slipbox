@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/210
 :END:
 #+TITLE: Basin of Attraction
-#+FILETAGS: :physics:criticalphenomena:rg:universality:basin:fixedpoint:
+#+FILETAGS: :physics:criticalphenomena:renormgroup:universality:basin:fixedpoint:
 
 The basin of attraction of the Wilson-Fisher fixed point embodies the principle of universality in the mathematical structure of RG flow. In the infinite-dimensional space of all possible couplings consistent with symmetry, the basin forms a codimension-one surface that separates the ordered from disordered phases.
 

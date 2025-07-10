@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/198
 :END:
 #+TITLE: First-Order RG Flow
-#+FILETAGS: :physics:spof:ch5:rg:flow:firstorder:instability:
+#+FILETAGS: :physics:spof:ch5:renormgroup:flow:firstorder:instability:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The renormalization group flow at first order reveals a fundamental inadequacy for describing critical phenomena in dimensions \(d < 4\). The flow equations in the \((t,u)\) plane exhibit only the Gaussian fixed point at the origin, with trajectories determined by

@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/367
 :END:
 #+TITLE: Stiffness Singularity
-#+filetags: :physics:spof:ch8:criticalbehavior:stiffness:singularity:
+#+FILETAGS: :physics:spof:ch8:criticalbehavior:stiffness:singularity:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The effective stiffness in the low-temperature phase is determined by the fixed point reached under RG flow. Near the transition, trajectories approach the fixed line at x = -b√(T_c - T), where the constant c = -b²(T_c - T) parametrizes the distance from criticality. This yields:

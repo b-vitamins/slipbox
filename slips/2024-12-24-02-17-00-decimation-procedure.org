@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/239
 :END:
 #+TITLE: Decimation Procedure
-#+FILETAGS: :physics:spof:ch6:rg:decimation:procedure:
+#+FILETAGS: :physics:spof:ch6:renormgroup:decimation:procedure:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Decimation systematically eliminates alternating spins while preserving nearest-neighbor structure through careful accounting of induced interactions. The partition function's bond-factorized form enables sequential summation:

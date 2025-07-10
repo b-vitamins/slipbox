@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/380
 :END:
 #+TITLE: Orientational Correlations
-#+filetags: :physics:spof:ch8:correlations:longrangeorder:surprisingresult:
+#+FILETAGS: :physics:spof:ch8:correlations:longrangeorder:surprisingresult:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The orientational correlation function reveals a remarkable property of two-dimensional crystals:

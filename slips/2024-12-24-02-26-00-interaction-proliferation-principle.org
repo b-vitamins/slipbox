@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/248
 :END:
 #+TITLE: Interaction Proliferation Principle
-#+FILETAGS: :physics:spof:ch6:rg:proliferation:principle:
+#+FILETAGS: :physics:spof:ch6:renormgroup:proliferation:principle:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The proliferation of interactions under real-space RG in dimensions d>1 reflects a fundamental property of spatial networks: removing nodes creates connections among all former neighbors. A decimated spin on a d-dimensional hypercubic lattice couples to 2d neighbors, generating (2d choose 2) = d(2d-1) two-body interactions plus higher-order terms. This combinatorial explosion precludes exact treatment beyond one dimension.

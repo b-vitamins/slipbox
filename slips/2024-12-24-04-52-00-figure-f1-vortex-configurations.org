@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/391
 :END:
 #+TITLE: Figure F1: Vortex Configurations
-#+filetags: :physics:spof:ch8:figure:vortex:xymodel:
+#+FILETAGS: :physics:spof:ch8:figure:vortex:xymodel:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 **Sketch Description:**

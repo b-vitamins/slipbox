@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/247
 :END:
 #+TITLE: 2D Decimation Complication
-#+FILETAGS: :physics:spof:ch6:rg:decimation:twod:proliferation:
+#+FILETAGS: :physics:spof:ch6:renormgroup:decimation:twod:proliferation:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The transition from one to two dimensions fundamentally alters the decimation procedure, transforming exact renormalization into an approximation problem. Consider the square lattice divided into two sublattices for b=√2 decimation. Removing a spin that couples to four neighbors generates interactions among all four, destroying the nearest-neighbor structure preserved in one dimension.

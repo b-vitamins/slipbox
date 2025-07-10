@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/382
 :END:
 #+TITLE: Dislocation Field
-#+filetags: :physics:spof:ch8:displacementfield:singularsolution:elasticity:
+#+FILETAGS: :physics:spof:ch8:displacementfield:singularsolution:elasticity:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The displacement field around dislocations has a singular part analogous to the vortex solution in the XY model. For a collection of dislocations with Burger's vectors {**b**ᵢ} at positions {**x**ᵢ}, the singular contribution to the displacement gradient is:

@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/377
 :END:
 #+TITLE: Translational Order Parameter
-#+filetags: :physics:spof:ch8:orderparameter:reciprocallattice:correlations:
+#+FILETAGS: :physics:spof:ch8:orderparameter:reciprocallattice:correlations:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Crystalline order is characterized by density modulations at reciprocal lattice vectors. The order parameter ρ_**G**(**x**) = e^{i**G**·**r**(**x**)} equals unity in the perfect crystal since **G**·**r**₀ = 2πn by definition of reciprocal lattice vectors. Thermal fluctuations reduce this to:

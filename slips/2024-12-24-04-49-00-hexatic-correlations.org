@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/388
 :END:
 #+TITLE: Hexatic Correlations
-#+filetags: :physics:spof:ch8:hexaticphase:correlations:quasiorder:
+#+FILETAGS: :physics:spof:ch8:hexaticphase:correlations:quasiorder:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 In the hexatic phase, orientational correlations exhibit quasi-long-range order described by the effective Frank constant theory:

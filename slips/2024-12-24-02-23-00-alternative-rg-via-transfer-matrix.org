@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/245
 :END:
 #+TITLE: Alternative RG via Transfer Matrix
-#+FILETAGS: :physics:spof:ch6:rg:transfer:matrix:
+#+FILETAGS: :physics:spof:ch6:renormgroup:transfer:matrix:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The transfer matrix provides an alternative route to RG transformations, connecting the algebraic eigenvalue structure to geometric coarse-graining. For decimation by factor b, the partition function identity \(Z = \operatorname{tr}[(T^b)^{N/b}]\) suggests defining the renormalized transfer matrix through:

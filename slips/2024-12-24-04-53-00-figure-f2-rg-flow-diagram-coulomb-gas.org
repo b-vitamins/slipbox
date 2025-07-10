@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/392
 :END:
 #+TITLE: Figure F2: RG Flow Diagram - Coulomb Gas
-#+filetags: :physics:spof:ch8:figure:renormalizationgroup:phasediagram:
+#+FILETAGS: :physics:spof:ch8:figure:renormalizationgroup:phasediagram:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 **Sketch Description:**

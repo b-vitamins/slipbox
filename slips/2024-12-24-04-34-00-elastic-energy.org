@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/373
 :END:
 #+TITLE: Elastic Energy
-#+filetags: :physics:spof:ch8:elasticity:hamiltonian:lamecoefficients:
+#+FILETAGS: :physics:spof:ch8:elasticity:hamiltonian:lamecoefficients:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The elastic energy functional to quadratic order in strains takes the general form:

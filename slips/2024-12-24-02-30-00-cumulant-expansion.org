@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/251
 :END:
 #+TITLE: Cumulant Expansion
-#+FILETAGS: :physics:spof:ch6:rg:nvl:cumulant:
+#+FILETAGS: :physics:spof:ch6:renormgroup:nvl:cumulant:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The cumulant expansion systematically organizes perturbative corrections through connected correlation functions, providing a hierarchy of approximations with improving accuracy. Starting from the exact relation

@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/215
 :END:
 #+TITLE: Visual Grammar of RG
-#+FILETAGS: :physics:criticalphenomena:rg:visualization:grammar:flows:
+#+FILETAGS: :physics:criticalphenomena:renormgroup:visualization:grammar:flows:
 
 The renormalization group flow admits a universal visual language that transcends specific models. This grammar encodes the mathematical structure of RG in geometric form, making abstract concepts concrete and revealing patterns across different systems.
 

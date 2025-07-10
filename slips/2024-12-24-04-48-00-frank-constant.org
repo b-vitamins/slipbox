@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/387
 :END:
 #+TITLE: Frank Constant
-#+filetags: :physics:spof:ch8:frankconstant:hexatic:stiffness:
+#+FILETAGS: :physics:spof:ch8:frankconstant:hexatic:stiffness:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The angular fluctuations in the hexatic phase, where dislocations are unbound but orientational order persists, can be described by an effective Hamiltonian:

@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/202
 :END:
 #+TITLE: Second-Order Recursion Relations
-#+FILETAGS: :physics:spof:ch5:rg:secondorder:recursion:nonlinear:
+#+FILETAGS: :physics:spof:ch5:renormgroup:secondorder:recursion:nonlinear:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The second-order calculation modifies the renormalization group transformation fundamentally. After coarse graining to order \(u^2\), the parameters transform as

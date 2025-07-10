@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/389
 :END:
 #+TITLE: Disclination Energy
-#+filetags: :physics:spof:ch8:disclination:topologicaldefect:hexaticliquid:
+#+FILETAGS: :physics:spof:ch8:disclination:topologicaldefect:hexaticliquid:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 Disclinations are rotational defects in the hexatic phase, analogous to vortices in the XY model. A path encircling a disclination accumulates bond angle rotation:

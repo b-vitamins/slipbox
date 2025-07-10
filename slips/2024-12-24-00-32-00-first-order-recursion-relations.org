@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/197
 :END:
 #+TITLE: First-Order Recursion Relations
-#+FILETAGS: :physics:spof:ch5:rg:recursion:firstorder:
+#+FILETAGS: :physics:spof:ch5:renormgroup:recursion:firstorder:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 After coarse graining, the renormalization group procedure continues with rescaling and renormalization. Setting \(\mathbf{q} = b^{-1}\mathbf{q}'\) restores the momentum cutoff to \(\Lambda\), while the field renormalization \(\tilde{\vec{m}} = z\vec{m}'\) maintains the kinetic term's normalization. The renormalized Hamiltonian parameters transform as

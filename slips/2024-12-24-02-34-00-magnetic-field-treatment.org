@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/255
 :END:
 #+TITLE: Magnetic Field Treatment
-#+FILETAGS: :physics:spof:ch6:rg:nvl:field:
+#+FILETAGS: :physics:spof:ch6:renormgroup:nvl:field:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The magnetic field enters the NvL formalism as an additional perturbation, preserving the systematic structure while breaking the up-down symmetry. The modified Hamiltonian reads:

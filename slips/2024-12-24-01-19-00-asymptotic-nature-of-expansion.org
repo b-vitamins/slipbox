@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/211
 :END:
 #+TITLE: Asymptotic Nature of ε-Expansion
-#+FILETAGS: :physics:criticalphenomena:rg:epsilonexpansion:asymptotic:borelsummation:
+#+FILETAGS: :physics:criticalphenomena:renormgroup:epsilonexpansion:asymptotic:borelsummation:
 
 The epsilon expansion, despite its successes, is not a convergent series but an asymptotic one. The expansion of any critical exponent takes the form $X = X_0 + X_1\epsilon + X_2\epsilon^2 + \cdots$, where the coefficients grow factorially at high orders: $|X_p| \sim cp^!a^{-p}$. This divergent behavior is generic in field theory and reflects the non-perturbative structure of the problem.
 

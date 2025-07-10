@@ -4,7 +4,7 @@
 :END:
 #+TITLE: Strain Tensor
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
-#+FILETAGS: :physics:spof:ch8:strain:elasticity:symmetry:
+#+FILETAGS: :physics:spof:ch8:strain:elasticity:symmetryprinciple:
 
 The fundamental object in elasticity theory is not the displacement but the symmetric strain tensor:
 \[u_{ij}(\mathbf{x}) = \frac{1}{2}\left(\partial_i u_j + \partial_j u_i\right)\]

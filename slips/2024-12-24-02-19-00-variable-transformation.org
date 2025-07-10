@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/241
 :END:
 #+TITLE: Variable Transformation
-#+FILETAGS: :physics:spof:ch6:rg:decimation:variables:
+#+FILETAGS: :physics:spof:ch6:renormgroup:decimation:variables:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The algebraic solution of RG recursion relations benefits from exponential parametrization, transforming additive bond energies into multiplicative variables:

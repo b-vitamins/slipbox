@@ -3,7 +3,7 @@
 :CUSTOM_ID: 92/370
 :END:
 #+TITLE: Essential Singularity
-#+filetags: :physics:spof:ch8:freeenergy:thermodynamics:criticalbehavior:
+#+FILETAGS: :physics:spof:ch8:freeenergy:thermodynamics:criticalbehavior:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
 The singular part of the free energy density in the high-temperature phase scales as:
