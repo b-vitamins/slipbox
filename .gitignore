@@ -12,6 +12,16 @@ slips/ltximg/
 *.txt~
 *.org~
 
+# Emacs autosave and backup files
+\#*\#
+.\#*
+*~
+*.tmp
+*.bak
+*.swp
+*.swo
+auto-save-list
+
 # LaTeX temporary files
 *.aux
 *.log

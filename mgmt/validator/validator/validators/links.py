@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import List, Dict, Set
 import re
 
-from .base import BaseValidator
+from .base import BaseValidator, is_autosave_or_backup
 from ..models import Slip, Violation, Severity, LinkType
 from ..parser import OrgParser
 
@@ -27,6 +27,8 @@ class InternalLinkValidator(BaseValidator):
             return index
         
         for org_file in self.slips_dir.glob("*.org"):
+            if is_autosave_or_backup(org_file):
+                continue
             try:
                 slip = parser.parse_slip(org_file)
                 
@@ -108,6 +110,8 @@ class OrphanDetector(BaseValidator):
         slip_files = {}
         
         for org_file in self.slips_dir.glob("*.org"):
+            if is_autosave_or_backup(org_file):
+                continue
             try:
                 slip = parser.parse_slip(org_file)
                 slip_id = slip.properties.custom_id or slip.properties.id
@@ -120,6 +124,8 @@ class OrphanDetector(BaseValidator):
         
         # Second pass: build connections
         for org_file in self.slips_dir.glob("*.org"):
+            if is_autosave_or_backup(org_file):
+                continue
             try:
                 slip = parser.parse_slip(org_file)
                 source_id = slip.properties.custom_id or slip.properties.id

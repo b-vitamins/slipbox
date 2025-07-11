@@ -8,6 +8,18 @@ from ..models import Slip, Violation, ValidationResult, Severity
 from ..parser import OrgParser
 
 
+def is_autosave_or_backup(filepath: Path) -> bool:
+    """Check if a file is an autosave or backup file that should be ignored."""
+    filename = filepath.name
+    return (filename.startswith('#') and filename.endswith('#') or
+            filename.startswith('.#') or
+            filename.endswith('~') or
+            filename.endswith('.tmp') or
+            filename.endswith('.bak') or
+            filename.endswith('.swp') or
+            filename.endswith('.swo'))
+
+
 class BaseValidator(ABC):
     """Abstract base class for all validators."""
     
@@ -61,8 +73,8 @@ class ValidationEngine:
         if not slips_dir.exists():
             raise FileNotFoundError(f"Slips directory not found: {slips_dir}")
         
-        # Find all .org files
-        org_files = list(slips_dir.glob("*.org"))
+        # Find all .org files, excluding autosaves and backups
+        org_files = [f for f in slips_dir.glob("*.org") if not is_autosave_or_backup(f)]
         
         for org_file in org_files:
             try:
