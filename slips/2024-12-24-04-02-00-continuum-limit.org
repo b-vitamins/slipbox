@@ -13,5 +13,3 @@ The validity of this continuum approximation requires $|\vec{s}(\mathbf{x}+\math
 The continuum limit implicitly introduces a momentum cutoff Λ ≈ π/a. Modes with wavelengths shorter than the lattice spacing are integrated out, their effects absorbed into the coupling K. This coarse-graining perspective proves essential for the renormalization group analysis. The field $\vec{s}(\mathbf{x})$ should be understood not as the spin at a mathematical point, but as an average over a small region containing many lattice sites.
 
 *Meta observation*: The continuum limit is both an approximation and an exact statement about universality. While it misses lattice-scale details, it captures the universal long-wavelength physics that determines critical behavior. The art lies in knowing what to keep and what to discard.
-
-*See also:* [[zettel:02][placeholder]], [[zettel:04][placeholder]]

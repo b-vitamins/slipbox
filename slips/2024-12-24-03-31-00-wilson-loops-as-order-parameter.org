@@ -22,7 +22,7 @@ The physical interpretation becomes transparent by viewing one dimension as time
 
 The amplitude $\langle W(C) \rangle \sim \exp(-V(R)T)$ reveals the interaction potential $V(R)$ between static sources.
 
-Two distinct behaviors emerge [[#92/298][7.33]]:
+Two distinct behaviors emerge:
 
 *Confined Phase*: $\langle W(C) \rangle \sim \exp(-\sigma \times \text{Area})$  
 The area law implies $V(R) = \sigma R$, a linear confining potential. The string tension $\sigma$ represents the energy per unit length of the chromoelectric flux tube connecting sources. Separating quarks requires infinite energy, ensuring confinement.
@@ -32,6 +32,6 @@ The perimeter law yields $V(R) \to \text{const}$ for large $R$. Sources interact
 
 The transition between these regimes defines the confinement-deconfinement phase transition. Unlike conventional order parameters that measure local symmetry breaking, Wilson loops probe the global structure of gauge field configurations. The area-perimeter transition reflects a change in the proliferation of topological excitations (monopoles in the dual picture) that disorder the gauge field.
 
-The correspondence to the original Ising model illuminates both descriptions [[#92/306][7.43]]. The Ising critical point at $K_c$ maps to the gauge theory transition at $\tilde{K}_c$ where $\mathrm{e}^{-2\tilde{K}_c} = \tanh K_c$. Ising ordering corresponds to gauge theory confinement—both represent ordered phases in their respective variables. The Wilson loop in gauge language translates to a complex disorder operator in the Ising model, creating domain walls that probe the ordered phase.
+The correspondence to the original Ising model illuminates both descriptions. The Ising critical point at $K_c$ maps to the gauge theory transition at $\tilde{K}_c$ where $\mathrm{e}^{-2\tilde{K}_c} = \tanh K_c$. Ising ordering corresponds to gauge theory confinement—both represent ordered phases in their respective variables. The Wilson loop in gauge language translates to a complex disorder operator in the Ising model, creating domain walls that probe the ordered phase.
 
 This framework extends to quantum chromodynamics, where Wilson loops distinguish quark confinement at low energies from asymptotic freedom at high energies. Lattice gauge theory simulations compute Wilson loops to extract string tensions and deconfinement temperatures. The success of this approach validates the deep connection between statistical mechanics and quantum field theory revealed by duality.
