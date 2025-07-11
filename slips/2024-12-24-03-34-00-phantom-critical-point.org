@@ -8,7 +8,7 @@
 
 The phantom loop approximation yields a critical point at \(t_c = 1/(2d)\) through a transparent physical mechanism: the balance between entropic proliferation and energetic suppression of loops. This mean-field transition illuminates both the success of Gaussian theory above four dimensions and its failure below.
 
-The critical condition emerges from the transfer matrix analysis [[7.7]]. Random walks proliferate with fugacity \(t = \tanh K\) per step, while the number of \(\ell\)-step walks from a given origin grows as \((2d)^\ell\) on a \(d\)-dimensional hypercubic lattice. The partition function for phantom loops diverges when
+The critical condition emerges from the transfer matrix analysis (Eq. 7.7). Random walks proliferate with fugacity \(t = \tanh K\) per step, while the number of \(\ell\)-step walks from a given origin grows as \((2d)^\ell\) on a \(d\)-dimensional hypercubic lattice. The partition function for phantom loops diverges when
 
 \[\sum_\ell (2dt)^\ell = \sum_\ell z^\ell \to \infty\]
 
@@ -28,6 +28,6 @@ Comparison with exact results reveals the role of constraints. For the two-dimen
 
 The ratio \(t_c^{\text{exact}}/t_c^{\text{phantom}} \approx 1.66\) quantifies how self-avoidance shifts the transition. Excluded volume interactions effectively reduce the connectivity, requiring stronger coupling to achieve criticality.
 
-The phantom approximation becomes exact above \(d_u = 4\) where random walks rarely intersect [[7.47]]. The fractal dimension \(d_f = 2\) of random walks implies intersection probability scales as \(\ell^{2d_f}/\ell^d = \ell^{(4-d)/2}\). For \(d > 4\), this vanishes as \(\ell \to \infty\), justifying the phantom treatment. Below four dimensions, intersections proliferate, generating anomalous exponents through effective interactions.
+The phantom approximation becomes exact above \(d_u = 4\) where random walks rarely intersect (Eq. 7.47). The fractal dimension \(d_f = 2\) of random walks implies intersection probability scales as \(\ell^{2d_f}/\ell^d = \ell^{(4-d)/2}\). For \(d > 4\), this vanishes as \(\ell \to \infty\), justifying the phantom treatment. Below four dimensions, intersections proliferate, generating anomalous exponents through effective interactions.
 
 The phantom critical point thus provides the reference state from which real critical behavior emerges. It demonstrates how phase transitions arise from competing entropic and energetic effects, establishes mean-field theory as the high-dimensional limit, and quantifies when fluctuations become important. This geometric understanding through loop proliferation offers intuition often obscured in field-theoretic treatments.

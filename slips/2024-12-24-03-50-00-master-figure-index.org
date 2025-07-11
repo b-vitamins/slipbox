@@ -10,55 +10,55 @@ This index catalogs all figures from Chapter 7, distinguishing calculation-criti
 
 *Calculation-Critical Figures* (require exact reproduction):
 
-- *Figure 7.2-7.3*: High-temperature graphical expansion rules [[7.D2][7.D2]]
+- *Figure 7.2-7.3*: High-temperature graphical expansion rules (Eq. 7.D2)
   - Shows how closed loops generate partition function terms
   - Essential for understanding Equations 7.11-7.13
   - First terms: square (4 bonds) and hexagon (6 bonds)
 
-- *Figure 7.5*: Low-T/High-T series correspondence [[7.D3][7.D3]]
+- *Figure 7.5*: Low-T/High-T series correspondence (Eq. 7.D3)
   - One-to-one mapping between droplet boundaries and loops
   - Proves duality relation Equation 7.22
   - Critical for Kramers-Wannier argument
 
-- *Figure 7.16-7.18*: Intersection crossing rules [[7.D4][7.D4]]
+- *Figure 7.16-7.18*: Intersection crossing rules (Eq. 7.D4)
   - Three ways through intersection: factor of 1
   - Double bond traversal: cancellation
   - Justifies signed sum in Equation 7.55
 
-- *Figure 7.19*: Whitney's theorem illustration [[7.D5][7.D5]]
+- *Figure 7.19*: Whitney's theorem illustration (Eq. 7.D5)
   - Shows angle-crossing parity relation
   - Essential for Equation 7.61 proof
   - Examples: simple loop, figure-eight
 
-- *Figure 7.20-7.21*: Directional state notation [[7.D6][7.D6]]
+- *Figure 7.20-7.21*: Directional state notation (Eq. 7.D6)
   - Labels \(\mu = 1,2,3,4\) for four directions
   - Transfer matrix visualization Equation 7.66
   - Phase factors from turns
 
 *Conceptual Figures* (sketch sufficient):
 
-- *Figure 7.1*: Low-energy excitations [[7.D7][7.D7]]
+- *Figure 7.1*: Low-energy excitations (Eq. 7.D7)
   - Single spin flip, dimer, separated flips
   - Energy costs: \(4dK\), \((4d-2)K\), \(8dK\)
 
-- *Figure 7.4*: Chain boundary conditions [[7.D8][7.D8]]
+- *Figure 7.4*: Chain boundary conditions (Eq. 7.D8)
   - Open versus periodic chains
   - Illustrates partition function differences
 
-- *Figure 7.6-7.7*: Duality function [[7.D7][7.D7]]
+- *Figure 7.6-7.7*: Duality function (Eq. 7.D7)
   - \(D(K)\) mapping and fixed point
   - Self-dual point where \(D(K_c) = K_c\)
 
-- *Figure 7.8*: 3D Series comparison [[7.D9][7.D9]]
+- *Figure 7.8*: 3D Series comparison (Eq. 7.D9)
   - Shows why 3D lacks self-duality
   - Surfaces versus loops mismatch
 
 *Cross-Reference Guide*:
-- Low-T expansion visuals → [[7.2][7.2]], [[7.D7][7.D7]]
-- High-T graphical rules → [[7.3][7.3]], [[7.D2][7.D2]]  
-- Duality correspondence → [[7.5][7.5]], [[7.15][7.15]], [[7.D3][7.D3]]
-- Exact solution topology → [[7.8][7.8]], [[7.35][7.35]], [[7.D4][7.D4]], [[7.D5][7.D5]], [[7.D6][7.D6]]
-- 3D gauge theory → [[7.6][7.6]], [[7.18][7.18]], [[7.D9][7.D9]]
+- Low-T expansion visuals → (Eq. 7.2), (Eq. 7.D7)
+- High-T graphical rules → (Eq. 7.3), (Eq. 7.D2)  
+- Duality correspondence → (Eq. 7.5), (Eq. 7.15), (Eq. 7.D3)
+- Exact solution topology → (Eq. 7.8), (Eq. 7.35), (Eq. 7.D4), (Eq. 7.D5), (Eq. 7.D6)
+- 3D gauge theory → (Eq. 7.6), (Eq. 7.18), (Eq. 7.D9)
 
 *Usage Philosophy*: 
 Calculation-critical figures contain irreplaceable mathematical content—graphical rules that define partition functions, topological relations enabling exact solutions, or visual proofs of key theorems. These require careful preservation with annotations showing how visual elements map to equations. Conceptual figures illustrate ideas already captured algebraically and need only capture essential features.

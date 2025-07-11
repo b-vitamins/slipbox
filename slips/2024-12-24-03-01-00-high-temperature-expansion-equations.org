@@ -34,4 +34,4 @@ yielding the free energy per site
 
 \[\frac{\ln Z}{N} = \ln 2 + d\ln\cosh K + \frac{d(d-1)}{2}t^4 + \cdots\]
 
-The graphical representation [[7.D2]] makes manifest that only topologically closed paths contribute, establishing the foundation for both duality arguments [[7.5]] and the connection to random walks [[7.7]]. The choice of $\tanh K$ as expansion parameter proves essential: it naturally emerges in duality relations and prevents the over-counting that would arise with bare coupling $K$.
+The graphical representation (Eq. 7.D2) makes manifest that only topologically closed paths contribute, establishing the foundation for both duality arguments (Eq. 7.5) and the connection to random walks (Eq. 7.7). The choice of $\tanh K$ as expansion parameter proves essential: it naturally emerges in duality relations and prevents the over-counting that would arise with bare coupling $K$.

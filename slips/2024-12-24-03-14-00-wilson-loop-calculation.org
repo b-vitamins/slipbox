@@ -6,7 +6,7 @@
 #+FILETAGS: :physics:spof:ch7:series:wilson:loop:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
-Wilson loops serve as order parameters for gauge theories, distinguishing phases through the asymptotic scaling of loop correlators with area versus perimeter. For the \(\mathbb{Z}_2\) gauge theory dual to the three-dimensional Ising model [[7.6]], the Wilson loop observable is defined as
+Wilson loops serve as order parameters for gauge theories, distinguishing phases through the asymptotic scaling of loop correlators with area versus perimeter. For the \(\mathbb{Z}_2\) gauge theory dual to the three-dimensional Ising model (Eq. 7.6), the Wilson loop observable is defined as
 
 \[C_S = \left\langle\prod_{i \in S}\tilde{\sigma}_i\right\rangle\]
 

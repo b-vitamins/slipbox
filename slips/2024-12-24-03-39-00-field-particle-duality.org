@@ -10,7 +10,7 @@ The high-temperature expansion reveals a fundamental duality between field and p
 
 In the field picture, correlations arise from the propagator $G(\mathbf{r}) = \langle\phi(\mathbf{r})\phi(0)\rangle$ satisfying $(-\nabla^2 + m^2)G = \delta(\mathbf{r})$. Near criticality where $m \to 0$, long-wavelength modes dominate, yielding power-law correlations. This continuum description emerges from coarse-graining microscopic spins into smooth fields.
 
-The particle picture expresses the same correlations as [[#7.26]]
+The particle picture expresses the same correlations as (Eq. 7.26)
 
 $$\langle\sigma(\mathbf{0})\sigma(\mathbf{r})\rangle = \sum_{\text{paths}} (\text{weight})^{\text{length}}$$
 

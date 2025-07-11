@@ -14,4 +14,4 @@ The parametrization of this constrained manifold requires care. While locally we
 
 **Meta observation**: The innocuous-looking constraint \(|\vec{s}|^2 = 1\) is the source of all the rich physics in this chapter. It creates the nonlinearity in the σ-model, enables topological defects, and ultimately leads to the Kosterlitz-Thouless transition. Constraints in field theory are never mere technicalities—they encode the deepest physics.
 
-*See also:* [[zettel:02]], [[zettel:03]], [[zettel:16]]
+*See also:* [zettel:02], [zettel:03], [zettel:16]

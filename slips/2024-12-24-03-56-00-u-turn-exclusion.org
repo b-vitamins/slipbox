@@ -19,7 +19,7 @@ Consider a path segment with immediate backtracking:
   ↑↑
 #+end_example
 
-This creates a "double bond" that should cancel with its crossed version [[7.D4]]:
+This creates a "double bond" that should cancel with its crossed version (Eq. 7.D4):
 #+begin_example
 Same side:        Crossed:
 ●====●           ●=><==●
@@ -65,7 +65,7 @@ In the high-temperature expansion, U-turns would correspond to:
 
 *Contrast with Phantom Loops*:
 
-Phantom loops [[7.24]] allow all paths including U-turns:
+Phantom loops (Eq. 7.24) allow all paths including U-turns:
 - Transfer matrix $T$ has all non-zero nearest-neighbor elements
 - Generates $(2d)^\ell$ walks of length $\ell$
 - Over-counts by including unphysical configurations

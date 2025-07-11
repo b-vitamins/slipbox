@@ -24,7 +24,7 @@ Intersection probability between independent walks scales as
 
 \[P_{\text{intersect}} \sim \rho \times M \sim R^{2-d} \times R^2 = R^{4-d}\]
 
-This determines the upper critical dimension [[7.11]]: for \(d > 4\), large walks rarely intersect (\(P \to 0\)), while for \(d < 4\), intersections proliferate (\(P \to \infty\)).
+This determines the upper critical dimension (Eq. 7.11): for \(d > 4\), large walks rarely intersect (\(P \to 0\)), while for \(d < 4\), intersections proliferate (\(P \to \infty\)).
 
 Self-avoiding walks (SAWs) swell beyond random walk size due to excluded volume:
 

@@ -6,7 +6,7 @@
 #+FILETAGS: :physics:spof:ch7:series:transfermatrix:directional:
 #+SETUPFILE: ~/.config/emacs/setup/setupfile.org
 
-The exact solution of the two-dimensional Ising model requires tracking both position and direction of paths to implement Whitney's theorem locally, expanding the state space from \(N\) sites to \(4N\) position-direction pairs. Each lattice site acquires four states labeled \(\mu = 1,2,3,4\) corresponding to rightward, upward, leftward, and downward directions of path traversal [[7.D6]].
+The exact solution of the two-dimensional Ising model requires tracking both position and direction of paths to implement Whitney's theorem locally, expanding the state space from \(N\) sites to \(4N\) position-direction pairs. Each lattice site acquires four states labeled \(\mu = 1,2,3,4\) corresponding to rightward, upward, leftward, and downward directions of path traversal (Eq. 7.D6).
 
 The augmented transfer matrix \(T^*\) encodes both connectivity and phase information:
 

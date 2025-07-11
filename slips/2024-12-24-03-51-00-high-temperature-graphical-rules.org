@@ -60,9 +60,9 @@ For $d$-dimensional hypercubic lattice:
 
 *Connection to Other Methods*:
 
-- *Phantom loops* [[7.24]]: Allow multiple bond occupation
-- *Exact 2D* [[7.8]]: Include $(-1)^{\text{crossings}}$ factor
-- *Transfer matrix* [[7.23]]: Generates all walks systematically
+- *Phantom loops* (Eq. 7.24): Allow multiple bond occupation
+- *Exact 2D* (Eq. 7.8): Include $(-1)^{\text{crossings}}$ factor
+- *Transfer matrix* (Eq. 7.23): Generates all walks systematically
 
 *Physical Interpretation*:
 

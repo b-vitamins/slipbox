@@ -10,7 +10,7 @@ Phase transitions emerge from a competition between information transmission and
 
 Each bond in the Ising model transmits information about spin alignment with reliability \(t = \tanh K\). At zero temperature (\(t = 1\)), perfect transmission ensures global order. At infinite temperature (\(t = 0\)), no information passes and spins remain independent. The critical point identifies where partial transmission, amplified by multiple paths, just suffices for long-range communication.
 
-The mechanism becomes quantitative through path counting [[7.29]]. Information from the origin reaches distance \(r\) through all connecting paths. Each \(\ell\)-step path contributes reliability \(t^\ell\), while approximately \((2d)^\ell\) such paths exist. The total information received is
+The mechanism becomes quantitative through path counting (Eq. 7.29). Information from the origin reaches distance \(r\) through all connecting paths. Each \(\ell\)-step path contributes reliability \(t^\ell\), while approximately \((2d)^\ell\) such paths exist. The total information received is
 
 \[I(r) \sim \sum_{\ell \geq r} (2dt)^\ell \times (\text{geometric factors})\]
 

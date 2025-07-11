@@ -8,7 +8,7 @@
 
 The three-dimensional Ising model lacks self-duality but possesses an exact dual description as a $\mathbb{Z}_2$ lattice gauge theory, establishing a profound connection between statistical mechanics and fundamental physics. This duality transformation illuminates how local spin interactions generate emergent gauge structures.
 
-The construction begins by recognizing the dimensional mismatch between three-dimensional Ising expansions [[7.6]]. Low-temperature excitations form two-dimensional surfaces (domain walls), while high-temperature graphs are one-dimensional loops. This incompatibility prevents self-duality but suggests placing dual variables on bonds rather than sites, with interactions on plaquettes rather than links.
+The construction begins by recognizing the dimensional mismatch between three-dimensional Ising expansions (Eq. 7.6). Low-temperature excitations form two-dimensional surfaces (domain walls), while high-temperature graphs are one-dimensional loops. This incompatibility prevents self-duality but suggests placing dual variables on bonds rather than sites, with interactions on plaquettes rather than links.
 
 The mapping proceeds systematically. Place Ising spins $\tilde{\sigma}_i = \pm 1$ on bonds of the cubic lattice—these become the gauge field. Define the dual Hamiltonian with four-spin interactions around each plaquette:
 
@@ -16,9 +16,9 @@ $$-\beta\tilde{\mathcal{H}} = \tilde{K}\sum_{\text{plaquettes }P} \tilde{\sigma}
 
 where $\tilde{K}$ satisfies the standard duality relation $\mathrm{e}^{-2\tilde{K}} = \tanh K$. This gauge theory partition function exactly reproduces the low-temperature expansion of the original Ising model when expanded at high temperature, and vice versa.
 
-The crucial feature distinguishing gauge theories is local symmetry [[7.19]]. Flipping all bond spins emanating from any site leaves the energy invariant—each plaquette sees exactly two sign changes that cancel. This local invariance, absent in the original Ising model, fundamentally alters the physics. Elitzur's theorem proves that local symmetries cannot spontaneously break, seemingly paradoxical given that the dual models share the same partition function.
+The crucial feature distinguishing gauge theories is local symmetry (Eq. 7.19). Flipping all bond spins emanating from any site leaves the energy invariant—each plaquette sees exactly two sign changes that cancel. This local invariance, absent in the original Ising model, fundamentally alters the physics. Elitzur's theorem proves that local symmetries cannot spontaneously break, seemingly paradoxical given that the dual models share the same partition function.
 
-The resolution involves recognizing that physical observables differ between dual descriptions. The Ising magnetization $\langle\sigma_i\rangle$ maps to a non-local object in the gauge theory—a disorder operator creating $\mathbb{Z}_2$ flux. Conversely, the gauge-invariant Wilson loop [[7.20]] corresponds to a complex correlation function in the Ising language. The phase transition manifests differently: symmetry breaking in one description becomes confinement-deconfinement in the other.
+The resolution involves recognizing that physical observables differ between dual descriptions. The Ising magnetization $\langle\sigma_i\rangle$ maps to a non-local object in the gauge theory—a disorder operator creating $\mathbb{Z}_2$ flux. Conversely, the gauge-invariant Wilson loop (Eq. 7.20) corresponds to a complex correlation function in the Ising language. The phase transition manifests differently: symmetry breaking in one description becomes confinement-deconfinement in the other.
 
 This duality has far-reaching implications. It demonstrates that gauge theories arise naturally from statistical mechanics without invoking fundamental principles. The confinement transition in the gauge theory, where Wilson loops transition from area to perimeter law, mirrors quark confinement in quantum chromodynamics. The correspondence provides a non-perturbative framework for studying strongly coupled gauge theories through their statistical mechanical duals.
 

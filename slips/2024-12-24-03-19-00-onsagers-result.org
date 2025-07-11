@@ -16,7 +16,7 @@ An equivalent form emphasizes the connection to loop representations:
 
 \[\frac{\ln Z}{N} = \ln(2\cosh^2 K) + \frac{1}{2}\int\frac{\mathrm{d}^2\mathbf{q}}{(2\pi)^2}\ln\left[(1+t^2)^2 - 2t(1-t^2)(\cos q_x + \cos q_y)\right]\]
 
-where \(t = \tanh K\). This version directly emerges from the determinant of the directional transfer matrix [[7.35]], making manifest how topological constraints modify the phantom loop result.
+where \(t = \tanh K\). This version directly emerges from the determinant of the directional transfer matrix (Eq. 7.35), making manifest how topological constraints modify the phantom loop result.
 
 The integral admits evaluation in terms of elliptic integrals, though the resulting expressions offer little additional insight. More illuminating is the singular structure near criticality. The argument of the logarithm expands near \(\mathbf{q} = \mathbf{0}\) as
 
@@ -24,6 +24,6 @@ The integral admits evaluation in terms of elliptic integrals, though the result
 
 The crucial quadratic dependence on \((t-t_c)\) contrasts with the linear dependence in phantom loops, fundamentally altering critical behavior.
 
-Onsager's method employed a transfer matrix of dimension \(2^L\) for a strip of width \(L\), exploiting algebraic symmetries to achieve diagonalization. The thermodynamic limit \(L \to \infty\) requires careful analysis of level crossings where the two largest eigenvalues become degenerate at criticality. Modern derivations using free fermions [[7.46]] or combinatorial methods provide alternative routes to the same result.
+Onsager's method employed a transfer matrix of dimension \(2^L\) for a strip of width \(L\), exploiting algebraic symmetries to achieve diagonalization. The thermodynamic limit \(L \to \infty\) requires careful analysis of level crossings where the two largest eigenvalues become degenerate at criticality. Modern derivations using free fermions (Eq. 7.46) or combinatorial methods provide alternative routes to the same result.
 
 The solution's impact extends far beyond its specific predictions. It definitively established that phase transitions can exhibit non-classical exponents, motivating decades of research culminating in renormalization group theory. It demonstrated that exactly solvable models need not be trivial, inspiring searches for integrability in other systems. Most profoundly, it revealed that local interactions can generate precise mathematical structures—the appearance of elliptic functions from nearest-neighbor couplings exemplifies the emergence of complexity from simplicity that characterizes critical phenomena.

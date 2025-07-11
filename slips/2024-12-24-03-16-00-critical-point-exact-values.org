@@ -12,7 +12,7 @@ The location of critical points emerges from distinct theoretical approaches tha
 
 This value satisfies the self-dual equation \(\mathrm{e}^{-2K_c} = \tanh K_c\), which reduces to \(\mathrm{e}^{-4K_c} + 2\mathrm{e}^{-2K_c} - 1 = 0\). The physical root \(\mathrm{e}^{-2K_c} = \sqrt{2} - 1\) corresponds to \(T_c = 2J/[\kappa_B\ln(1+\sqrt{2})] \approx 2.269J/\kappa_B\), placing the transition at finite temperature as required.
 
-The same critical point emerges from entirely different analyses. In terms of the expansion parameter \(t = \tanh K\), the critical value is \(t_c = \sqrt{2} - 1 \approx 0.4142\). The exact solution via transfer matrices [[7.8]] confirms this value through the vanishing of the determinant \(\det(1-t_cT^*(\mathbf{0}))\). The high-temperature series analysis yields the same result from the convergence radius of the loop expansion.
+The same critical point emerges from entirely different analyses. In terms of the expansion parameter \(t = \tanh K\), the critical value is \(t_c = \sqrt{2} - 1 \approx 0.4142\). The exact solution via transfer matrices (Eq. 7.8) confirms this value through the vanishing of the determinant \(\det(1-t_cT^*(\mathbf{0}))\). The high-temperature series analysis yields the same result from the convergence radius of the loop expansion.
 
 The phantom loop approximation provides instructive comparison. Without intersection constraints, the critical point occurs at \(t_c^{\text{phantom}} = 1/(2d) = 1/4\) for the square lattice. The ratio \(t_c/t_c^{\text{phantom}} = 4(\sqrt{2}-1) \approx 1.657\) quantifies how self-avoidance shifts the transition. This enhancement reflects the effective repulsion between loop segments, requiring stronger coupling to achieve criticality.
 

@@ -8,7 +8,7 @@
 
 Two-dimensional systems possess unique topological properties that enable exact solutions while forbidding certain types of order. These constraints, embodied in Whitney's theorem and the Mermin-Wagner theorem, make two dimensions the marginal case for many phase transitions.
 
-Whitney's theorem establishes a fundamental relation between self-intersections and winding angles for planar curves [[7.38]]:
+Whitney's theorem establishes a fundamental relation between self-intersections and winding angles for planar curves (Eq. 7.38):
 
 \[(n_c)_{\bmod 2} = \left(1 + \frac{\Theta}{2\pi}\right)_{\bmod 2}\]
 

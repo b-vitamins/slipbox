@@ -34,4 +34,4 @@ The ratio of successive coefficients reveals both the critical point and exponen
 
 \[\frac{a_\ell}{a_{\ell-1}} \simeq \frac{1}{u_c}\left(1 + \frac{\alpha-1}{\ell}\right)\]
 
-A plot of \(a_\ell/a_{\ell-1}\) versus \(1/\ell\) yields a straight line with intercept \(u_c^{-1}\) and slope \(u_c^{-1}(\alpha-1)\). The alternating signs in the heat capacity series indicate complex-plane singularities closer than the physical critical point, necessitating variable transformations like \(u = \tanh K\) or more sophisticated Padé approximant methods [[7.13]].
+A plot of \(a_\ell/a_{\ell-1}\) versus \(1/\ell\) yields a straight line with intercept \(u_c^{-1}\) and slope \(u_c^{-1}(\alpha-1)\). The alternating signs in the heat capacity series indicate complex-plane singularities closer than the physical critical point, necessitating variable transformations like \(u = \tanh K\) or more sophisticated Padé approximant methods (Eq. 7.13).

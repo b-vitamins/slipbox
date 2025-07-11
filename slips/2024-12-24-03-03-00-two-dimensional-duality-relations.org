@@ -14,7 +14,7 @@ while the high-temperature series reads
 
 \[Z = 2^N\cosh K^{2N}\left[1 + N\tanh K^4 + 2N\tanh K^6 + \cdots\right] = 2^N\cosh K^{2N}\sum_{\text{graphs with 2 or 4 lines per site}}\tanh K^{\text{length of graph}}\]
 
-The crucial observation is that boundaries of spin islands serve as acceptable high-temperature graphs and vice versa, establishing a one-to-one correspondence between terms [[7.D3]]. Defining \(g\) to denote the logarithm of either series, the free energy satisfies
+The crucial observation is that boundaries of spin islands serve as acceptable high-temperature graphs and vice versa, establishing a one-to-one correspondence between terms (Eq. 7.D3). Defining \(g\) to denote the logarithm of either series, the free energy satisfies
 
 \[\frac{\ln Z}{N} = 2K + g(\mathrm{e}^{-2K}) = \ln 2 + 2\ln\cosh K + g(\tanh K)\]
 
@@ -34,4 +34,4 @@ Since \(D(D(K)) = K\), the transformation connects pairs of points, mapping low 
 
 \[K_c = -\frac{1}{2}\ln(\sqrt{2}-1) = \frac{1}{2}\ln(\sqrt{2}+1) = 0.441\cdots\]
 
-The duality extends beyond location of the critical point: it constrains amplitude ratios to unity for many quantities, though provides no direct information about critical exponents. The self-dual nature of the two-dimensional Ising model stands as a special property not shared by its three-dimensional counterpart [[7.6]], making it amenable to exact solution.
+The duality extends beyond location of the critical point: it constrains amplitude ratios to unity for many quantities, though provides no direct information about critical exponents. The self-dual nature of the two-dimensional Ising model stands as a special property not shared by its three-dimensional counterpart (Eq. 7.6), making it amenable to exact solution.

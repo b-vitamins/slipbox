@@ -10,7 +10,7 @@ The distinction between local and global symmetries fundamentally alters the phy
 
 A global symmetry transformation acts identically on all degrees of freedom: in the Ising model, flipping every spin $\sigma_i \to -\sigma_i$ leaves the energy invariant. This $\mathbb{Z}_2$ symmetry can spontaneously break below $T_c$, with the system selecting one of two magnetized states. The order parameter $\langle\sigma_i\rangle \neq 0$ directly measures this symmetry breaking.
 
-Local gauge symmetry operates independently at each site. In the $\mathbb{Z}_2$ gauge theory [[7.19]], flipping all bonds emanating from any single site leaves every plaquette energy unchanged—two bonds per plaquette flip, preserving their product. This generates a group with $2^N$ independent transformations, one per site, vastly larger than the two-element global symmetry group.
+Local gauge symmetry operates independently at each site. In the $\mathbb{Z}_2$ gauge theory (Eq. 7.19), flipping all bonds emanating from any single site leaves every plaquette energy unchanged—two bonds per plaquette flip, preserving their product. This generates a group with $2^N$ independent transformations, one per site, vastly larger than the two-element global symmetry group.
 
 Elitzur's theorem proves that local symmetries cannot spontaneously break. The essential argument recognizes that even with a symmetry-breaking field $h$, the energy cost of flipping variables at a single site remains finite ($O(h)$ in the gauge theory). As $h \to 0$, any gauge-variant expectation value must vanish continuously. This contrasts with global symmetries where the energy cost grows as $Nh$, potentially supporting discontinuous magnetization as $h \to 0^+$.
 
@@ -20,7 +20,7 @@ The implications are profound:
 - Phase transitions cannot be detected by local measurements
 - Confinement replaces conventional ordering as the signature of broken phase
 
-The resolution involves recognizing that phases differ in their response to non-local probes. Wilson loops [[7.20]] distinguish phases through area versus perimeter scaling without requiring local symmetry breaking. The confined phase exhibits hidden order invisible to local measurements but manifest in the binding of test charges.
+The resolution involves recognizing that phases differ in their response to non-local probes. Wilson loops (Eq. 7.20) distinguish phases through area versus perimeter scaling without requiring local symmetry breaking. The confined phase exhibits hidden order invisible to local measurements but manifest in the binding of test charges.
 
 This principle extends broadly. In quantum chromodynamics, local SU(3) gauge invariance prevents quark condensates while permitting confinement. In condensed matter, emergent gauge theories in quantum spin liquids exhibit fractionalization without conventional order. Topological phases possess local symmetries (often with additional constraints) that protect their exotic properties.
 

@@ -24,7 +24,7 @@ Application to series analysis proceeds systematically:
 3. Extract exponents from residues
 4. Check convergence as $N$ increases
 
-The method's advantages over ratio analysis [[#7.2a]]:
+The method's advantages over ratio analysis (Eq. 7.2a):
 - Handles sign-alternating series naturally
 - Captures multiple singularities simultaneously  
 - Provides analytical continuation into complex plane

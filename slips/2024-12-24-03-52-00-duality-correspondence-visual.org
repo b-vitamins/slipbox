@@ -62,7 +62,7 @@ The sums contain identical terms when boundaries $\partial$ and loops $L$ are id
 
 3. *Extensions*: 
    - Potts model: boundaries separate $q$ different spin states
-   - 3D: correspondence fails due to dimension mismatch [[7.D9]]
+   - 3D: correspondence fails due to dimension mismatch (Eq. 7.D9)
 
 *Visual Counting Example*:
 - 4-bond square boundary = 4-bond square loop: both have $N$ orientations

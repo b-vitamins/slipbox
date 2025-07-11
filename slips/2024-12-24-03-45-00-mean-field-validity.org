@@ -24,7 +24,7 @@ For \(d > 2\), this integral converges, giving finite corrections. The quartic t
 
 This integral converges for \(d > 4\), making \(g\) irrelevant in the renormalization group sense. Mean-field theory becomes asymptotically exact as \(r \to 0\) (approaching criticality).
 
-Physical interpretation through the loop expansion [[7.28]]: fluctuations correspond to loops that can intersect. Above \(d = 4\), the fractal dimension of random walks (\(d_f = 2\)) ensures rare intersections. The phantom loop approximation, which neglects intersections entirely, reproduces mean-field exponents exactly.
+Physical interpretation through the loop expansion (Eq. 7.28): fluctuations correspond to loops that can intersect. Above \(d = 4\), the fractal dimension of random walks (\(d_f = 2\)) ensures rare intersections. The phantom loop approximation, which neglects intersections entirely, reproduces mean-field exponents exactly.
 
 Ginzburg criterion quantifies when fluctuations matter. The correlation volume \(\xi^d\) should contain many fluctuating units for mean-field validity:
 

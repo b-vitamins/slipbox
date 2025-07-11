@@ -14,7 +14,7 @@ $$\tilde{\sigma}_{(j,\mu)} \to -\tilde{\sigma}_{(j,\mu)} \quad \text{for all dir
 
 Each plaquette touching site $j$ contains exactly two bonds emanating from $j$. Their product remains invariant under the transformation, preserving the total energy. This local symmetry holds at every site independently, generating a gauge group with $2^N$ elements.
 
-The distinction between global and local symmetries proves fundamental. The original Ising model possesses global $\mathbb{Z}_2$ symmetry: flipping all spins simultaneously leaves the energy unchanged. This symmetry can spontaneously break below $T_c$, selecting one of two magnetized states. By contrast, local gauge symmetry cannot break spontaneously—Elitzur's theorem guarantees that $\langle\tilde{\sigma}_i\rangle = 0$ identically, even in ordered phases [[#7.9][7.9]].
+The distinction between global and local symmetries proves fundamental. The original Ising model possesses global $\mathbb{Z}_2$ symmetry: flipping all spins simultaneously leaves the energy unchanged. This symmetry can spontaneously break below $T_c$, selecting one of two magnetized states. By contrast, local gauge symmetry cannot break spontaneously—Elitzur's theorem guarantees that $\langle\tilde{\sigma}_i\rangle = 0$ identically, even in ordered phases (Eq. 7.9).
 
 Physical observables must respect gauge invariance. Single bond operators $\tilde{\sigma}_i$ are gauge-variant and therefore unphysical. Only gauge-invariant combinations like Wilson loops $\prod_{i \in \text{loop}} \tilde{\sigma}_i$ or plaquette products have non-zero expectation values. This constraint dramatically reduces the space of physical observables, explaining why local order parameters cannot exist.
 

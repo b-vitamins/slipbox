@@ -10,7 +10,7 @@ The exact solution of the two-dimensional Ising model emerges from properly acco
 
 \[S = \sum\text{ collections of loops of random walks with no U-turns } \times t^{\text{number of bonds}} \times (-1)^{\text{number of crossings}}\]
 
-This remarkable formula corrects the phantom loop over-counting through sign alternation [[7.D4]]. The justification rests on two observations: intersection points traversed three ways contribute factors $1 + 1 + (-1) = 1$, while doubly-traversed bonds generate canceling contributions except for prohibited U-turns.
+This remarkable formula corrects the phantom loop over-counting through sign alternation (Eq. 7.D4). The justification rests on two observations: intersection points traversed three ways contribute factors $1 + 1 + (-1) = 1$, while doubly-traversed bonds generate canceling contributions except for prohibited U-turns.
 
 The sum organizes via cumulant expansion:
 
@@ -28,11 +28,11 @@ where $W^*(\ell)$ counts signed loops. Whitney's theorem relates crossing parity
 
 \[(n_c)_{\bmod 2} = \left(1 + \frac{\Theta}{2\pi}\right)_{\bmod 2}\]
 
-This enables local calculation of the crossing phase [[7.D5]]:
+This enables local calculation of the crossing phase (Eq. 7.D5):
 
 \[(-1)^{n_c} = -\mathrm{e}^{\frac{i}{2}\sum_{j=1}^\ell\theta_j}\]
 
-Introducing directional labels $\mu = 1,2,3,4$ for right, up, left, down [[7.D6]], we construct $4N \times 4N$ matrices tracking both position and direction. The single-step transfer matrix $T^*$ has elements encoding connectivity and phase:
+Introducing directional labels $\mu = 1,2,3,4$ for right, up, left, down (Eq. 7.D6), we construct $4N \times 4N$ matrices tracking both position and direction. The single-step transfer matrix $T^*$ has elements encoding connectivity and phase:
 
 \[\left\langle x'y',\mu'|T^*|xy,\mu\right\rangle = \delta_{\text{nearest neighbors}} \times \mathrm{e}^{i\theta_{\mu'\mu}/2}\]
 

@@ -8,9 +8,9 @@
 
 One-dimensional systems cannot support phase transitions at finite temperature due to the fatal combination of limited connectivity and the dominance of fluctuations. This fundamental limitation illuminates why dimensionality plays such a crucial role in statistical mechanics.
 
-The graphical expansion provides immediate insight [[7.4]]. On a chain, no closed loops can form—any path must eventually backtrack, preventing the entropy-driven proliferation of configurations that generates criticality in higher dimensions. The partition function factorizes into independent bond contributions, yielding smooth analytic behavior at all finite temperatures.
+The graphical expansion provides immediate insight (Eq. 7.4). On a chain, no closed loops can form—any path must eventually backtrack, preventing the entropy-driven proliferation of configurations that generates criticality in higher dimensions. The partition function factorizes into independent bond contributions, yielding smooth analytic behavior at all finite temperatures.
 
-From an information-theoretic perspective [[7.31]], one dimension offers a single channel for information propagation. A domain wall (kink) between up and down spin regions costs finite energy $2J$ regardless of system size. Thermal fluctuations inevitably create such defects with density $\rho \sim \mathrm{e}^{-2\beta J}$, destroying long-range order at any $T > 0$. The typical domain size $\xi \sim \rho^{-1} = \mathrm{e}^{2\beta J}$ remains finite.
+From an information-theoretic perspective (Eq. 7.31), one dimension offers a single channel for information propagation. A domain wall (kink) between up and down spin regions costs finite energy $2J$ regardless of system size. Thermal fluctuations inevitably create such defects with density $\rho \sim \mathrm{e}^{-2\beta J}$, destroying long-range order at any $T > 0$. The typical domain size $\xi \sim \rho^{-1} = \mathrm{e}^{2\beta J}$ remains finite.
 
 The transfer matrix analysis confirms this rigorously. The largest eigenvalue
 

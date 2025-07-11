@@ -10,9 +10,9 @@ Phase transitions emerge from the competition between energy minimization and en
 
 At low temperatures, energy dominates. The system minimizes bond energy by aligning spins, creating the ferromagnetic state. Small thermal fluctuations create isolated defects—domain walls in two dimensions or point defects in one dimension—whose energy cost $\Delta E$ suppresses their density as $\mathrm{e}^{-\beta\Delta E}$. Order persists because creating disorder costs more energy than the entropy gain warrants.
 
-At high temperatures, entropy dominates. Random spin configurations maximize entropy $S = Nk_B\ln 2$, overwhelming the energy benefit of alignment. In the loop representation [[7.24]], short loops proliferate because their multiplicity (entropy) compensates for their energy cost. Each bond contributes factor $t = \tanh K < 1$, but $d(d-1)/2$ possible four-bond loops on a $d$-dimensional hypercubic lattice provide entropic weight.
+At high temperatures, entropy dominates. Random spin configurations maximize entropy $S = Nk_B\ln 2$, overwhelming the energy benefit of alignment. In the loop representation (Eq. 7.24), short loops proliferate because their multiplicity (entropy) compensates for their energy cost. Each bond contributes factor $t = \tanh K < 1$, but $d(d-1)/2$ possible four-bond loops on a $d$-dimensional hypercubic lattice provide entropic weight.
 
-The critical point $t_c = 1/(2d)$ identifies where entropy and energy balance precisely [[7.29]]. Paths of length $\ell$ contribute:
+The critical point $t_c = 1/(2d)$ identifies where entropy and energy balance precisely (Eq. 7.29). Paths of length $\ell$ contribute:
 - *Energy factor*: $t^\ell = (2dt_c)^\ell = 1$ at criticality
 - *Entropy factor*: $\sim (2d)^\ell$ possible paths
 - *Net contribution*: $O(1)$ independent of $\ell$
