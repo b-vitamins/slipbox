@@ -1,0 +1,15 @@
+# Treat management tools as infrastructure (don't count in language stats)
+mgmt/* linguist-vendored
+
+# Ensure .org files are properly recognized as the primary content
+*.org linguist-language=Org
+setupfile.org linguist-language=Org
+
+# Mark generated LaTeX preview images as generated
+slips/ltximg/* linguist-generated
+
+# Exclude bibliography from language stats (it's data, not code)
+bibliography/* linguist-vendored
+
+# Force recognition of Org files with heavy LaTeX content
+slips/*.org linguist-language=Org linguist-detectable
