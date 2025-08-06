@@ -1,0 +1,39 @@
+elpa/
+.claude/settings.local.json
+.fleeting/
+.git/tags-index
+
+# Org-mode generated files
+slips/ltximg/
+**/ltximg/
+*.tex
+*.pdf
+*.html
+*.txt~
+*.org~
+
+# Emacs autosave and backup files
+\#*\#
+.\#*
+*~
+*.tmp
+*.bak
+*.swp
+*.swo
+auto-save-list
+
+# LaTeX temporary files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+
+# Python temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
