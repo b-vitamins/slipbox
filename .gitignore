@@ -1,6 +1,7 @@
 elpa/
 .claude/settings.local.json
 .fleeting/
+fleeting/
 .git/tags-index
 
 # Org-mode generated files
